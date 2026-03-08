@@ -1,0 +1,149 @@
+"use client";
+
+import React, { useRef, useState } from "react";
+import Link from "next/link";
+import { ArrowLeft, Layout, Compass, LayoutDashboard, AlignJustify } from "lucide-react";
+import CopyButton from "@/components/CopyButton";
+import CopyAllButton from "@/components/CopyAllButton";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
+import { ThemeProvider, useTheme } from "@/lib/ThemeContext";
+
+type LayoutMode = "full" | "compact";
+const LAYOUTS: { id: LayoutMode; label: string; desc: string; icon: React.ElementType }[] = [
+  { id: "full", label: "Full Health Check", desc: "All assessments + actions", icon: LayoutDashboard },
+  { id: "compact", label: "Quick Check", desc: "Health indicators only", icon: AlignJustify },
+];
+
+function PlanningDomainHealthCheckContent() {
+  const { colors: C, styles: S } = useTheme();
+  const [layout, setLayout] = useState<LayoutMode>("full");
+  const fullPageRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
+  const healthRef = useRef<HTMLDivElement>(null);
+  const depsRef = useRef<HTMLDivElement>(null);
+  const actionsRef = useRef<HTMLDivElement>(null);
+
+  const accent = "#DC2626"; const accentDark = "#991B1B";
+  const descStyle: React.CSSProperties = { fontFamily: S.font, fontSize: "11px", fontStyle: "italic", color: "#475569", padding: "10px 14px", lineHeight: "1.6", borderBottom: `1px solid ${C.border}`, backgroundColor: C.white };
+
+  const renderTitleBanner = () => (
+    <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody>
+      <tr><td style={{ backgroundColor: accent, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: "4px solid #F59E0B", textAlign: "center" as const }}>📋 PLANNING DOMAIN HEALTH CHECK</td></tr>
+      <tr><td style={{ backgroundColor: accentDark, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PMBOK® 7 Alignment Pack &nbsp;|&nbsp; Performance Domain 4 of 8</td></tr>
+      <tr><td style={descStyle}><strong style={{ fontStyle: "italic" }}>Plan quality, readiness, dependency clarity, critical path assumptions, and planning risks.</strong> Good plans aren’t just schedules — they’re living frameworks that adapt. This check ensures your planning remains fit-for-purpose.</td></tr>
+    </tbody></table>
+  );
+
+  const renderHeader = () => (
+    <div ref={headerRef} style={{ marginBottom: "12px" }}>
+      <table style={S.tbl}><tbody>
+        <tr><td style={{ ...S.tdLabel, width: "18%" }}>Project Name</td><td style={{ ...S.td0, width: "32%" }}>[Project Name]</td><td style={{ ...S.tdLabel, width: "18%" }}>Check Date</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Week #</td><td style={S.tdAlt}>[Week X of Y]</td><td style={S.tdLabelAlt}>Overall Domain Health</td><td style={S.tdAlt}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>🟡 Watch</span></td></tr>
+      </tbody></table>
+      <CopyButton targetRef={headerRef} label="Copy Section" />
+    </div>
+  );
+
+  const renderHealth = () => (
+    <div ref={healthRef} style={{ marginBottom: "12px" }}>
+      <div style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</div>
+      <CopyButton targetRef={healthRef} label="Copy Section" />
+      <table style={S.tbl}>
+        <thead><tr>
+          <th style={{ ...S.thPrimary, backgroundColor: accent }}>Indicator</th>
+          <th style={{ ...S.thPrimary, backgroundColor: accent, width: "8%", textAlign: "center" as const }}>Status</th>
+          <th style={{ ...S.thPrimary, backgroundColor: accent }}>Evidence / Signal</th>
+          <th style={{ ...S.thPrimary, backgroundColor: accent, width: "8%", textAlign: "center" as const }}>Trend</th>
+        </tr></thead>
+        <tbody>
+          {[
+            { ind: "Plan completeness", s: "🟢", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, ev: "[All core plan components exist; baselines set for scope, schedule, cost]", trend: "→" },
+            { ind: "Plan currency (up to date)", s: "🟢", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, ev: "[Plan updated after Sprint 4; incorporates approved changes]", trend: "→" },
+            { ind: "Dependency clarity", s: "🟡", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ev: "[3 of 8 external dependencies unconfirmed; vendor timeline unclear]", trend: "↘" },
+            { ind: "Critical path confidence", s: "🟡", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ev: "[Critical path runs through vendor integration; 0 days float remaining]", trend: "↘" },
+            { ind: "Estimation accuracy", s: "🟢", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, ev: "[Sprint estimates within 15% accuracy; improving with each sprint]", trend: "↗" },
+            { ind: "Planning assumptions still valid", s: "🟡", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ev: "[Assumption about vendor API availability by Sprint 5 is at risk]", trend: "↘" },
+            { ind: "Resource plan alignment", s: "🟢", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, ev: "[Resources aligned except QA overload flagged in Team Health Check]", trend: "→" },
+          ].map((r, i) => {
+            const bg = i % 2 === 1 ? C.rowAlt : C.white;
+            return (<tr key={i}><td style={{ ...S.td0, backgroundColor: bg, fontWeight: 600, fontSize: "11px" }}>{r.ind}</td><td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}><span style={S.badge(r.sBg, r.sFg)}>{r.s}</span></td><td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>{r.ev}</td><td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "14px" }}>{r.trend}</td></tr>);
+          })}
+        </tbody>
+      </table>
+      <p style={S.subNote}>🟢 = Healthy &nbsp;|&nbsp; 🟡 = Watch &nbsp;|&nbsp; 🔴 = Needs Intervention &nbsp;|&nbsp; Trend: ↗ Improving → Stable ↘ Declining</p>
+    </div>
+  );
+
+  const renderDeps = () => (
+    <div ref={depsRef} style={{ marginBottom: "12px" }}>
+      <div style={S.sectionBanner(accentDark)}>🔗 DEPENDENCY &amp; ASSUMPTION STATUS</div>
+      <CopyButton targetRef={depsRef} label="Copy Section" />
+      <table style={S.tbl}>
+        <thead><tr>
+          <th style={S.thSecondary}>Dependency / Assumption</th>
+          <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Type</th>
+          <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Status</th>
+          <th style={{ ...S.thSecondary, width: "25%" }}>Impact if Fails</th>
+        </tr></thead>
+        <tbody>
+          {[
+            { item: "[Vendor delivers API by Sprint 5]", type: "External", s: "🟡", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, impact: "[Critical path delay of 2–3 weeks; cascading impact on UAT timeline]" },
+            { item: "[Data migration scripts tested in staging by Phase 2]", type: "Internal", s: "🟢", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, impact: "[On track; staging environment ready; scripts 80% tested]" },
+            { item: "[Security review completed before go-live]", type: "Internal", s: "🟢", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, impact: "[Scheduled for Week 12; IT Security team confirmed availability]" },
+            { item: "[SSO integration with existing identity provider]", type: "External", s: "🟡", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, impact: "[Waiting on IT Security for config details; may delay user provisioning]" },
+            { item: "[Training environment available 4 weeks before go-live]", type: "Internal", s: "🟢", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, impact: "[Infrastructure team confirmed; sandbox scheduled for Week 10]" },
+          ].map((r, i) => {
+            const bg = i % 2 === 1 ? C.rowAlt : C.white;
+            return (<tr key={i}><td style={{ ...S.td0, backgroundColor: bg, fontSize: "11px" }}>{r.item}</td><td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "10px" }}>{r.type}</td><td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}><span style={S.badge(r.sBg, r.sFg)}>{r.s}</span></td><td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>{r.impact}</td></tr>);
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+
+  const renderActions = () => (
+    <div ref={actionsRef} style={{ marginBottom: "12px" }}>
+      <div style={S.sectionBanner(accent)}>⚡ PLANNING ACTIONS THIS WEEK</div>
+      <CopyButton targetRef={actionsRef} label="Copy Section" />
+      <table style={S.tbl}>
+        <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "8%" }}>Due</th><th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Done?</th></tr></thead>
+        <tbody>
+          {[
+            { act: "[Escalate vendor API timeline to sponsor; request direct vendor-to-vendor call]", owner: "[PM]", due: "[Tue]", done: "⬜" },
+            { act: "[Develop schedule compression plan (fast-tracking or crashing) for critical path]", owner: "[PM]", due: "[Thu]", done: "⬜" },
+            { act: "[Follow up with IT Security on SSO configuration details]", owner: "[Tech Lead]", due: "[Wed]", done: "⬜" },
+            { act: "[Validate Sprint 5 backlog readiness; confirm all stories estimated and accepted]", owner: "[BA + PM]", due: "[Fri]", done: "⬜" },
+          ].map((r, i) => {
+            const bg = i % 2 === 1 ? C.rowAlt : C.white;
+            return (<tr key={i}><td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontWeight: 700, color: accent }}>{i + 1}</td><td style={{ ...S.td0, backgroundColor: bg, fontSize: "11px" }}>{r.act}</td><td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>{r.owner}</td><td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>{r.due}</td><td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "14px" }}>{r.done}</td></tr>);
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+
+  const renderFooter = () => (
+    <table style={{ ...S.tbl, marginTop: "8px" }}><tbody><tr><td style={{ backgroundColor: accent, color: "#FEF2F2", padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PMBOK® 7 Alignment Pack • Domain Health Check 4/8 • © 2026</td></tr></tbody></table>
+  );
+
+  const renderFullLayout = () => (<>{renderTitleBanner()}{renderHeader()}{renderHealth()}{renderDeps()}{renderActions()}{renderFooter()}</>);
+  const renderCompactLayout = () => (<>{renderTitleBanner()}{renderHeader()}{renderHealth()}{renderActions()}{renderFooter()}</>);
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-red-50/20">
+      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50"><div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"><div className="flex items-center gap-3"><div className="w-9 h-9 rounded-lg bg-red-600 flex items-center justify-center"><Layout size={18} className="text-white" /></div><div><h1 className="text-lg font-bold text-slate-900 leading-tight">ExecNoteShop</h1><p className="text-xs text-slate-500 -mt-0.5">Professional Template Studio</p></div></div><span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-50 border border-red-100 text-red-700 text-xs font-semibold"><Compass size={11} /> Domain 4/8</span></div></header>
+      <div className="max-w-6xl mx-auto px-6 py-8">
+        <div className="flex items-center justify-between mb-6"><Link href="/pmbok7-alignment-pack" className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-teal-600 transition-colors"><ArrowLeft size={14} /> Back to PMBOK 7 Alignment Pack</Link><CopyAllButton targetRef={fullPageRef} /></div>
+        <div className="mb-6"><div className="flex items-center gap-3 mb-2"><div className="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center"><Compass size={20} className="text-red-600" /></div><div><h2 className="text-2xl font-extrabold text-slate-900">Planning Domain Health Check</h2><p className="text-xs font-medium text-red-600">Performance Domain 4/8</p></div></div><p className="text-sm text-slate-600 mt-2 max-w-3xl">Plan quality, readiness, dependency clarity, critical path assumptions, and planning risks.</p></div>
+        <ThemeSwitcher />
+        <div data-copy-exclude="true" className="mb-6"><p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Layout</p><div className="flex flex-wrap gap-2">{LAYOUTS.map((l) => { const Icon = l.icon; const isActive = layout === l.id; return (<button key={l.id} onClick={() => setLayout(l.id)} className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold transition-all ${isActive ? "bg-red-600 text-white border-red-600 shadow-md shadow-red-200" : "bg-white text-slate-600 border-slate-200 hover:border-red-300 hover:text-red-700"}`}><Icon size={15} /> <span>{l.label}</span> <span className={`text-[10px] font-medium ${isActive ? "text-red-200" : "text-slate-400"}`}>{l.desc}</span></button>); })}</div></div>
+        <div ref={fullPageRef} style={{ fontFamily: S.font }}>{layout === "full" && renderFullLayout()}{layout === "compact" && renderCompactLayout()}</div>
+        <div className="flex justify-center mt-8 mb-12"><CopyAllButton targetRef={fullPageRef} /></div>
+      </div>
+    </div>
+  );
+}
+
+export default function PlanningDomainHealthCheckPage() {
+  return (<ThemeProvider><PlanningDomainHealthCheckContent /></ThemeProvider>);
+}

@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+  --color-brand-900: #312e81;
+
+  --color-accent-500: #0ea5e9;
+  --color-accent-600: #0284c7;
+
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--color-text-primary);
+  background: var(--color-surface-alt);
+}
+
+/* Copy feedback animation */
+@keyframes copyFlash {
+  0% { background-color: #dcfce7; }
+  100% { background-color: transparent; }
+}
+
+.copy-flash {
+  animation: copyFlash 0.6s ease-out;
+}
+
+/* Table styles for template content */
+.template-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.template-table th,
+.template-table td {
+  border: 1px solid var(--color-border);
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.template-table th {
+  background-color: var(--color-brand-600);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.template-table tr:nth-child(even) td {
+  background-color: var(--color-surface-alt);
+}
+
+.template-table tr:hover td {
+  background-color: var(--color-brand-50);
+}
+
+/* Section block styles */
+.template-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.template-section:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.template-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.template-section h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-brand-700);
+  margin: 0;
+}
+
+/* Status badge styles */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-green { background: #dcfce7; color: #166534; }
+.status-yellow { background: #fef9c3; color: #854d0e; }
+.status-red { background: #fee2e2; color: #991b1b; }
+.status-blue { background: #dbeafe; color: #1e40af; }
+.status-gray { background: #f1f5f9; color: #475569; }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
