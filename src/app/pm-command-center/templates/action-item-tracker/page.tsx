@@ -31,11 +31,11 @@ function ActionItemTrackerContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F3AF; ACTION ITEM TRACKER</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> ACTION ITEM TRACKER</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  |  PM Command Center  |  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Action Item Tracker is the central repository for all project action items from meetings, reviews, and status updates.</strong> It tracks ownership, due dates, priority, and completion status to ensure accountability and follow-through.<br /><br />
-          Update this tracker <strong style={{ fontStyle: "italic" }}>after every meeting and during weekly status reviews</strong>. Aligns with PMBOK Integration Management &#x2014; Monitoring &amp; Controlling.
+          Update this tracker <strong style={{ fontStyle: "italic" }}>after every meeting and during weekly status reviews</strong>. Aligns with PMBOK Integration Management — Monitoring & Controlling.
         </td></tr>
       </tbody>
     </table>
@@ -62,12 +62,12 @@ function ActionItemTrackerContent() {
     { id: "AI-006", action: "[e.g., Brief VP Ops on Q3 efficiency metrics from pilot]", source: "Engagement Plan", owner: "[PM]", assigned: "[MM/DD]", due: "[MM/DD]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, status: "New", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg },
     { id: "AI-007", action: "[e.g., Recruit 5 user champions from each department]", source: "Engagement Plan", owner: "[Change Mgr]", assigned: "[MM/DD]", due: "[MM/DD]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, status: "In Progress", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
     { id: "AI-008", action: "[e.g., Update risk register with new vendor delivery risk]", source: "Risk Review", owner: "[PM]", assigned: "[MM/DD]", due: "[MM/DD]", pri: "Low", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, status: "Complete", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-    { id: "[AI-###]", action: "[Add action item]", source: "", owner: "", assigned: "", due: "", pri: "&#x2014;", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
+    { id: "[AI-###]", action: "[Add action item]", source: "", owner: "", assigned: "", due: "", pri: "—", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; ACTION ITEM REGISTER</div>
+      <div style={S.sectionBanner()}>📋 ACTION ITEM REGISTER</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -101,7 +101,7 @@ function ActionItemTrackerContent() {
 
   const renderAging = () => (
     <div ref={agingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x23F0; OVERDUE / AGING ITEMS</div>
+      <div style={S.sectionBanner(C.secondary)}> OVERDUE / AGING ITEMS</div>
       <CopyButton targetRef={agingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -117,13 +117,13 @@ function ActionItemTrackerContent() {
           <tr><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>[AI-###]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Add overdue item]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}></td><td style={{ ...S.tdAlt, fontSize: "11px" }}></td><td style={{ ...S.tdAlt, textAlign: "center" as const }}></td><td style={{ ...S.tdAlt, textAlign: "center" as const }}></td></tr>
         </tbody>
       </table>
-      <p style={S.subNote}>Aging thresholds: <strong>&#x1F7E2; &lt;3 days</strong> = On track &#x2022; <strong>&#x1F7E1; 3-5 days</strong> = At risk &#x2022; <strong>&#x1F534; &gt;5 days</strong> = Escalate to PM/Sponsor</p>
+      <p style={S.subNote}>Aging thresholds: <strong>🟢 &lt;3 days</strong> = On track • <strong>🟡 3-5 days</strong> = At risk • <strong>🔴 &gt;5 days</strong> = Escalate to PM/Sponsor</p>
     </div>
   );
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; ACTION ITEM SUMMARY</div>
+      <div style={S.sectionBanner()}>📊 ACTION ITEM SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -142,9 +142,9 @@ function ActionItemTrackerContent() {
       </table>
       <table style={{ ...S.tbl, marginTop: "8px" }}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Overdue Items</td><td style={S.td0}>[1] item overdue by [3] days &#x2014; approaching escalation threshold</td></tr>
-          <tr><td style={S.tdLabelAlt}>Completion Rate</td><td style={S.tdAlt}>[25%] complete &#x2014; [75%] open (target: close all High within 5 business days)</td></tr>
-          <tr><td style={S.tdLabel}>Top Source</td><td style={S.td0}>[Status/CCB Meetings] &#x2014; [5] of [8] items originated from meetings</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Overdue Items</td><td style={S.td0}>[1] item overdue by [3] days — approaching escalation threshold</td></tr>
+          <tr><td style={S.tdLabelAlt}>Completion Rate</td><td style={S.tdAlt}>[25%] complete — [75%] open (target: close all High within 5 business days)</td></tr>
+          <tr><td style={S.tdLabel}>Top Source</td><td style={S.td0}>[Status/CCB Meetings] — [5] of [8] items originated from meetings</td></tr>
         </tbody>
       </table>
     </div>
@@ -152,7 +152,7 @@ function ActionItemTrackerContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -184,7 +184,7 @@ function ActionItemTrackerContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Target size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Action Item Tracker</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Monitoring &amp; Controlling</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Monitoring & Controlling</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Central action item register with aging analysis and summary dashboard. Full Tracker includes aging and summary; Quick Tracker shows the register only.</p>

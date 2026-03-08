@@ -69,7 +69,7 @@ function ProjectCharterContent() {
 
   const renderBusinessCase = () => (
     <div ref={businessCaseRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>2 — BUSINESS CASE &amp; OBJECTIVES</div>
+      <div style={S.sectionBanner()}>2 — BUSINESS CASE & OBJECTIVES</div>
       <CopyButton targetRef={businessCaseRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "28%" }}>Element</th><th style={S.thSecondary}>Description</th></tr></thead>
@@ -240,13 +240,13 @@ function ProjectCharterContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>PMBOK Response Strategies: <strong>Mitigate</strong> (reduce probability/impact) · <strong>Transfer</strong> (shift to third party) · <strong>Avoid</strong> (eliminate threat) · <strong>Accept</strong> (acknowledge &amp; monitor)</p>
+      <p style={S.subNote}>PMBOK Response Strategies: <strong>Mitigate</strong> (reduce probability/impact) · <strong>Transfer</strong> (shift to third party) · <strong>Avoid</strong> (eliminate threat) · <strong>Accept</strong> (acknowledge & monitor)</p>
     </div>
   );
 
   const renderAssumptions = () => (
     <div ref={assumptionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>8 — ASSUMPTIONS &amp; CONSTRAINTS</div>
+      <div style={S.sectionBanner()}>8 — ASSUMPTIONS & CONSTRAINTS</div>
       <CopyButton targetRef={assumptionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

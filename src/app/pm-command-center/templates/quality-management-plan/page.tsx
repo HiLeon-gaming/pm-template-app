@@ -35,11 +35,11 @@ function QualityManagementPlanContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x2705; QUALITY MANAGEMENT PLAN</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> Quality Management Plan</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  |  PM Command Center  |  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Quality Management Plan defines quality standards, metrics, and the quality assurance (QA) and quality control (QC) activities that ensure project deliverables meet stakeholder expectations.</strong> It distinguishes between process quality (QA) and product quality (QC).<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>quality planning</strong> to establish quality expectations. Aligns with PMBOK Quality Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>quality planning</strong> to establish quality expectations. Aligns with PMBOK Quality Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -59,7 +59,7 @@ function QualityManagementPlanContent() {
 
   const renderStandards = () => (
     <div ref={standardsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CF; QUALITY STANDARDS &amp; POLICIES</div>
+      <div style={S.sectionBanner()}> QUALITY STANDARDS & POLICIES</div>
       <CopyButton targetRef={standardsRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -67,7 +67,7 @@ function QualityManagementPlanContent() {
           <tr><td style={S.tdLabelAlt}>Quality Philosophy</td><td style={S.tdAlt}>[Prevention over inspection. Build quality into the process rather than finding defects after the fact.]</td></tr>
           <tr><td style={S.tdLabel}>Applicable Standards</td><td style={S.td0}>[ISO 9001:2015 | IEEE 730 | OWASP Top 10 | Organization coding standards v3.2 | WCAG 2.1 AA]</td></tr>
           <tr><td style={S.tdLabelAlt}>Regulatory Requirements</td><td style={S.tdAlt}>[SOX compliance for financial data | GDPR for personal data handling | Section 508 accessibility]</td></tr>
-          <tr><td style={S.tdLabel}>Definition of Done</td><td style={S.td0}>[Code reviewed, unit tested (&#x2265;80% coverage), integration tested, documented, deployed to staging, PO accepted]</td></tr>
+          <tr><td style={S.tdLabel}>Definition of Done</td><td style={S.td0}>[Code reviewed, unit tested (80% coverage), integration tested, documented, deployed to staging, PO accepted]</td></tr>
         </tbody>
       </table>
     </div>
@@ -75,7 +75,7 @@ function QualityManagementPlanContent() {
 
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; QUALITY METRICS</div>
+      <div style={S.sectionBanner(C.secondary)}> QUALITY METRICS</div>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -87,13 +87,13 @@ function QualityManagementPlanContent() {
         </tr></thead>
         <tbody>
           {[
-            { metric: "Defect Density", target: "[&#x2264;2 per KLOC]", current: "[1.5/KLOC]", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, method: "[Static analysis + testing defects / lines of code]" },
-            { metric: "Code Coverage", target: "[&#x2265;80%]", current: "[78%]", status: "At Risk", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, method: "[Automated unit test coverage via SonarQube]" },
-            { metric: "UAT Pass Rate", target: "[&#x2265;95%]", current: "[N/A]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, method: "[Test cases passed / total test cases executed]" },
+            { metric: "Defect Density", target: "[<2 per KLOC]", current: "[1.5/KLOC]", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, method: "[Static analysis + testing defects / lines of code]" },
+            { metric: "Code Coverage", target: "[80%]", current: "[78%]", status: "At Risk", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, method: "[Automated unit test coverage via SonarQube]" },
+            { metric: "UAT Pass Rate", target: "[95%]", current: "[N/A]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, method: "[Test cases passed / total test cases executed]" },
             { metric: "P1 Defects at Go-Live", target: "[0]", current: "[0]", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, method: "[Critical/blocker defects open at release date]" },
-            { metric: "User Satisfaction", target: "[&#x2265;4.0/5.0]", current: "[N/A]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, method: "[Post-deployment survey within 2 weeks of go-live]" },
+            { metric: "User Satisfaction", target: "[4.0/5.0]", current: "[N/A]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, method: "[Post-deployment survey within 2 weeks of go-live]" },
             { metric: "Requirement Coverage", target: "[100%]", current: "[93%]", status: "At Risk", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, method: "[Requirements traced to test cases in RTM]" },
-            { metric: "Defect Closure Rate", target: "[&#x2265;90% per sprint]", current: "[92%]", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, method: "[Defects resolved / defects opened per sprint]" },
+            { metric: "Defect Closure Rate", target: "[90% per sprint]", current: "[92%]", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, method: "[Defects resolved / defects opened per sprint]" },
             { metric: "Performance SLA", target: "[<2s page load]", current: "[1.8s]", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, method: "[Automated performance testing via JMeter/Lighthouse]" },
           ].map((m, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -112,7 +112,7 @@ function QualityManagementPlanContent() {
 
   const renderQA = () => (
     <div ref={qaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F50D; QUALITY ASSURANCE (QA) ACTIVITIES</div>
+      <div style={S.sectionBanner()}> QUALITY ASSURANCE (QA) ACTIVITIES</div>
       <CopyButton targetRef={qaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -146,18 +146,18 @@ function QualityManagementPlanContent() {
 
   const renderQC = () => (
     <div ref={qcRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F9EA; QUALITY CONTROL (QC) ACTIVITIES</div>
+      <div style={S.sectionBanner(C.secondary)}> QUALITY CONTROL (QC) ACTIVITIES</div>
       <CopyButton targetRef={qcRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
           <th style={{ ...S.thSecondary, width: "20%" }}>QC Activity</th>
           <th style={{ ...S.thSecondary, width: "12%", textAlign: "center" as const }}>Phase</th>
-          <th style={S.thSecondary}>Description &amp; Exit Criteria</th>
+          <th style={S.thSecondary}>Description & Exit Criteria</th>
           <th style={{ ...S.thSecondary, width: "10%" }}>Owner</th>
         </tr></thead>
         <tbody>
           {[
-            { act: "Unit Testing", phase: "Dev", desc: "[Developer-written tests for individual components; exit: &#x2265;80% code coverage, all tests pass]", owner: "[Dev Team]" },
+            { act: "Unit Testing", phase: "Dev", desc: "[Developer-written tests for individual components; exit: 80% code coverage, all tests pass]", owner: "[Dev Team]" },
             { act: "Integration Testing", phase: "Dev", desc: "[Test interactions between modules and external systems; exit: all integration points verified]", owner: "[QA Team]" },
             { act: "System Testing", phase: "Test", desc: "[End-to-end testing of complete system against requirements; exit: all P1/P2 test cases pass]", owner: "[QA Lead]" },
             { act: "Performance Testing", phase: "Test", desc: "[Load, stress, and endurance testing; exit: SLA targets met under expected load]", owner: "[QA Team]" },
@@ -181,7 +181,7 @@ function QualityManagementPlanContent() {
 
   const renderRoles = () => (
     <div ref={rolesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F465; QUALITY ROLES &amp; RESPONSIBILITIES</div>
+      <div style={S.sectionBanner()}> QUALITY ROLES & RESPONSIBILITIES</div>
       <CopyButton targetRef={rolesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -209,7 +209,7 @@ function QualityManagementPlanContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -248,7 +248,7 @@ function QualityManagementPlanContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><CheckCircle size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Quality Management Plan</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Quality Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Quality Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Defines quality standards, metrics, QA and QC activities, and quality roles. Full Plan includes all sections; Quick Plan focuses on standards and metrics.</p>

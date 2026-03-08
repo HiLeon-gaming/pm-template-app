@@ -36,11 +36,11 @@ function ProjectHandoffChecklistContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4E4; PROJECT HANDOFF CHECKLIST</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>📤 PROJECT HANDOFF CHECKLIST</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Project Handoff Checklist ensures a smooth transition from the project team to the operations/support team.</strong> It verifies that all technical, operational, documentation, training, and administrative handoff activities are complete before the project team is released.<br /><br />
-          Complete this checklist <strong style={{ fontStyle: "italic" }}>during the transition period between go-live and formal project closure</strong>. Aligns with PMBOK Integration Management &#x2014; Close Project or Phase.
+          Complete this checklist <strong style={{ fontStyle: "italic" }}>during the transition period between go-live and formal project closure</strong>. Aligns with PMBOK Integration Management — Close Project or Phase.
         </td></tr>
       </tbody>
     </table>
@@ -88,44 +88,44 @@ function ProjectHandoffChecklistContent() {
   );
 
   const techItems = [
-    { item: "[Production environment deployed and verified]", owner: "[DevOps]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[All services running; health checks passing]" },
-    { item: "[Database backups configured and tested]", owner: "[DBA]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Daily backups; 30-day retention; restore tested]" },
-    { item: "[Monitoring and alerting configured]", owner: "[IT Ops]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Uptime, CPU, memory, error rate alerts active]" },
-    { item: "[SSL certificates and security configs documented]", owner: "[Security]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Cert expiry: MM/DD/YYYY; renewal process documented]" },
-    { item: "[Service account credentials transferred to ops vault]", owner: "[DevOps]", status: "&#x23F3; Pending", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, notes: "[Scheduled for [MM/DD]]" },
-    { item: "[Add technical item]", owner: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, notes: "" },
+    { item: "[Production environment deployed and verified]", owner: "[DevOps]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[All services running; health checks passing]" },
+    { item: "[Database backups configured and tested]", owner: "[DBA]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Daily backups; 30-day retention; restore tested]" },
+    { item: "[Monitoring and alerting configured]", owner: "[IT Ops]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Uptime, CPU, memory, error rate alerts active]" },
+    { item: "[SSL certificates and security configs documented]", owner: "[Security]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Cert expiry: MM/DD/YYYY; renewal process documented]" },
+    { item: "[Service account credentials transferred to ops vault]", owner: "[DevOps]", status: "Pending", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, notes: "[Scheduled for [MM/DD]]" },
+    { item: "[Add technical item]", owner: "", status: "-", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, notes: "" },
   ];
   const opsItems = [
-    { item: "[Incident response procedures documented and reviewed]", owner: "[IT Ops]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Severity 1-4 response matrix included]" },
-    { item: "[Escalation matrix finalized with contact info]", owner: "[PM]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[L1 &#x2192; L2 &#x2192; L3 &#x2192; Vendor contacts]" },
-    { item: "[SLA/SLO targets defined and agreed]", owner: "[IT Ops]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[99.5% uptime; 4hr P1 response; 24hr P2 response]" },
-    { item: "[Support team trained on application]", owner: "[Support Mgr]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[6 support staff certified; shadowing complete]" },
-    { item: "[Known issues and workarounds documented]", owner: "[QA Lead]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[3 minor known issues with workarounds]" },
+    { item: "[Incident response procedures documented and reviewed]", owner: "[IT Ops]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Severity 1-4 response matrix included]" },
+    { item: "[Escalation matrix finalized with contact info]", owner: "[PM]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[L1 → L2 → L3 → Vendor contacts]" },
+    { item: "[SLA/SLO targets defined and agreed]", owner: "[IT Ops]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[99.5% uptime; 4hr P1 response; 24hr P2 response]" },
+    { item: "[Support team trained on application]", owner: "[Support Mgr]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[6 support staff certified; shadowing complete]" },
+    { item: "[Known issues and workarounds documented]", owner: "[QA Lead]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[3 minor known issues with workarounds]" },
   ];
   const docItems = [
-    { item: "[Admin guide and system architecture documentation]", owner: "[Tech Lead]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Stored in [SharePoint/Confluence]]" },
-    { item: "[API documentation and integration specs]", owner: "[Dev Lead]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Swagger docs + postman collection]" },
-    { item: "[Operational runbooks (deploy, rollback, DR)]", owner: "[DevOps]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Step-by-step with screenshots]" },
-    { item: "[User guides and FAQ documents]", owner: "[BA]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Online help + PDF versions available]" },
-    { item: "[Configuration management documentation]", owner: "[DevOps]", status: "&#x23F3; Pending", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, notes: "[Due [MM/DD] &#x2014; environment configs]" },
+    { item: "[Admin guide and system architecture documentation]", owner: "[Tech Lead]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Stored in [SharePoint/Confluence]]" },
+    { item: "[API documentation and integration specs]", owner: "[Dev Lead]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Swagger docs + postman collection]" },
+    { item: "[Operational runbooks (deploy, rollback, DR)]", owner: "[DevOps]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Step-by-step with screenshots]" },
+    { item: "[User guides and FAQ documents]", owner: "[BA]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Online help + PDF versions available]" },
+    { item: "[Configuration management documentation]", owner: "[DevOps]", status: "Pending", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, notes: "[Due [MM/DD] — environment configs]" },
   ];
   const trainingItems = [
-    { item: "[End-user training completed for all departments]", owner: "[Training Mgr]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[150 users across 3 depts; 95% completion]" },
-    { item: "[Admin/power user training completed]", owner: "[Training Mgr]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[8 admins certified; can manage configs]" },
-    { item: "[Training materials archived and accessible]", owner: "[Training Mgr]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[LMS course + recorded sessions + job aids]" },
-    { item: "[Support team knowledge transfer complete]", owner: "[PM]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[3 KT sessions completed; quiz passed by all]" },
+    { item: "[End-user training completed for all departments]", owner: "[Training Mgr]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[150 users across 3 depts; 95% completion]" },
+    { item: "[Admin/power user training completed]", owner: "[Training Mgr]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[8 admins certified; can manage configs]" },
+    { item: "[Training materials archived and accessible]", owner: "[Training Mgr]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[LMS course + recorded sessions + job aids]" },
+    { item: "[Support team knowledge transfer complete]", owner: "[PM]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[3 KT sessions completed; quiz passed by all]" },
   ];
   const adminItems = [
-    { item: "[Project team access permissions revoked/transferred]", owner: "[IT Ops]", status: "&#x23F3; Pending", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, notes: "[Scheduled for closure date +5 days]" },
-    { item: "[Vendor contracts transitioned to ops management]", owner: "[Procurement]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Vendor B contract &#x2192; IT Ops; renewal Q4]" },
-    { item: "[Project financials closed and final invoice paid]", owner: "[PM]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Final cost: $595K; under budget by $17.7K]" },
-    { item: "[Project SharePoint/repo archived]", owner: "[PM]", status: "&#x2705; Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Read-only archive created; PMO notified]" },
-    { item: "[Project team formally released]", owner: "[PM]", status: "&#x23F3; Pending", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, notes: "[After closure signoff &#x2014; [MM/DD]]" },
+    { item: "[Project team access permissions revoked/transferred]", owner: "[IT Ops]", status: "Pending", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, notes: "[Scheduled for closure date +5 days]" },
+    { item: "[Vendor contracts transitioned to ops management]", owner: "[Procurement]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Vendor B contract → IT Ops; renewal Q4]" },
+    { item: "[Project financials closed and final invoice paid]", owner: "[PM]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Final cost: $595K; under budget by $17.7K]" },
+    { item: "[Project SharePoint/repo archived]", owner: "[PM]", status: "Done", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, notes: "[Read-only archive created; PMO notified]" },
+    { item: "[Project team formally released]", owner: "[PM]", status: "Pending", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, notes: "[After closure signoff — [MM/DD]]" },
   ];
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x270D;&#xFE0F; HANDOFF ACCEPTANCE</div>
+      <div style={S.sectionBanner(C.secondary)}> HANDOFF ACCEPTANCE</div>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -152,22 +152,22 @@ function ProjectHandoffChecklistContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
   const renderFullLayout = () => (
     <>{renderTitleBanner()}{renderHeader()}
       <table style={LT}><tbody><tr>
-        <td style={{ ...LC, width: "50%", paddingRight: "6px" }}>{checkSection(techRef, "\u2699\uFE0F TECHNICAL HANDOFF", undefined, techItems)}{checkSection(docRef, "\uD83D\uDCC4 DOCUMENTATION", undefined, docItems)}{checkSection(adminRef, "\uD83D\uDCC1 ADMINISTRATIVE CLOSURE", undefined, adminItems)}</td>
-        <td style={{ ...LC, width: "50%", paddingLeft: "6px" }}>{checkSection(opsRef, "\uD83D\uDD27 OPERATIONAL READINESS", C.secondary, opsItems)}{checkSection(trainingRef, "\uD83C\uDF93 TRAINING & KNOWLEDGE TRANSFER", C.secondary, trainingItems)}{renderSignoff()}</td>
+        <td style={{ ...LC, width: "50%", paddingRight: "6px" }}>{checkSection(techRef, "TECHNICAL HANDOFF", undefined, techItems)}{checkSection(docRef, "DOCUMENTATION", undefined, docItems)}{checkSection(adminRef, "ADMINISTRATIVE CLOSURE", undefined, adminItems)}</td>
+        <td style={{ ...LC, width: "50%", paddingLeft: "6px" }}>{checkSection(opsRef, "OPERATIONAL READINESS", C.secondary, opsItems)}{checkSection(trainingRef, "TRAINING & KNOWLEDGE TRANSFER", C.secondary, trainingItems)}{renderSignoff()}</td>
       </tr></tbody></table>
       {renderFooter()}
     </>
   );
 
   const renderCompactLayout = () => (
-    <>{renderTitleBanner()}{renderHeader()}{checkSection(techRef, "\u2699\uFE0F TECHNICAL HANDOFF", undefined, techItems)}{checkSection(opsRef, "\uD83D\uDD27 OPERATIONAL READINESS", C.secondary, opsItems)}{renderFooter()}</>
+    <>{renderTitleBanner()}{renderHeader()}{checkSection(techRef, "TECHNICAL HANDOFF", undefined, techItems)}{checkSection(opsRef, "OPERATIONAL READINESS", C.secondary, opsItems)}{renderFooter()}</>
   );
 
   return (
@@ -191,7 +191,7 @@ function ProjectHandoffChecklistContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Send size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Project Handoff Checklist</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Close Project or Phase</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Close Project or Phase</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Comprehensive handoff checklist covering technical, operational, documentation, training, and administrative categories. Full Checklist includes all categories and signoff; Quick Checklist shows core items only.</p>

@@ -34,11 +34,11 @@ function BenefitsRealizationTrackerContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4C8; BENEFITS REALIZATION TRACKER</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>📈 BENEFITS REALIZATION TRACKER</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Benefits Realization Tracker monitors whether the project delivers the expected business benefits after go-live.</strong> It connects project deliverables to measurable business outcomes and tracks realization over time against the original business case.<br /><br />
-          Begin tracking at <strong style={{ fontStyle: "italic" }}>go-live and continue through the benefits realization period (typically 6-12 months post-launch)</strong>. Aligns with PMBOK Benefits Management &#x2014; Strategic &amp; Business Management.
+          Begin tracking at <strong style={{ fontStyle: "italic" }}>go-live and continue through the benefits realization period (typically 6-12 months post-launch)</strong>. Aligns with PMBOK Benefits Management — Strategic & Business Management.
         </td></tr>
       </tbody>
     </table>
@@ -64,12 +64,12 @@ function BenefitsRealizationTrackerContent() {
     { id: "B4", benefit: "[Cross-sell revenue increase]", cat: "Revenue", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, target: "[+$500K/yr]", baseline: "[$1.2M/yr]", current: "[$1.35M/yr]", pct: "[30%]", status: "At Risk", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, owner: "[VP Sales]" },
     { id: "B5", benefit: "[Employee satisfaction (CRM users)]", cat: "People", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, target: "[+20 pts]", baseline: "[62 NPS]", current: "[74 NPS]", pct: "[60%]", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, owner: "[HR]" },
     { id: "B6", benefit: "[Regulatory compliance achievement]", cat: "Compliance", cBg: C.badgeRedBg, cFg: C.badgeRedFg, target: "[100%]", baseline: "[75%]", current: "[100%]", pct: "[100%]", status: "Achieved", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, owner: "[CISO]" },
-    { id: "[B#]", benefit: "[Add benefit]", cat: "&#x2014;", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, target: "", baseline: "", current: "", pct: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, owner: "" },
+    { id: "[B#]", benefit: "[Add benefit]", cat: "—", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, target: "", baseline: "", current: "", pct: "", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, owner: "" },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F3AF; BENEFITS REGISTER</div>
+      <div style={S.sectionBanner()}>🎯 BENEFITS REGISTER</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -105,7 +105,7 @@ function BenefitsRealizationTrackerContent() {
 
   const renderMeasure = () => (
     <div ref={measureRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CF; MEASUREMENT PLAN</div>
+      <div style={S.sectionBanner(C.secondary)}> MEASUREMENT PLAN</div>
       <CopyButton targetRef={measureRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -117,10 +117,10 @@ function BenefitsRealizationTrackerContent() {
         </tr></thead>
         <tbody>
           {[
-            { id: "B1", kpi: "[Customer retention rate &#x2014; % of customers retained quarter-over-quarter]", source: "[CRM Reports]", freq: "Quarterly", by: "[Analytics]" },
-            { id: "B2", kpi: "[Avg ticket resolution time &#x2014; hours from open to resolved]", source: "[ServiceDesk]", freq: "Monthly", by: "[Support Mgr]" },
+            { id: "B1", kpi: "[Customer retention rate — % of customers retained quarter-over-quarter]", source: "[CRM Reports]", freq: "Quarterly", by: "[Analytics]" },
+            { id: "B2", kpi: "[Avg ticket resolution time — hours from open to resolved]", source: "[ServiceDesk]", freq: "Monthly", by: "[Support Mgr]" },
             { id: "B3", kpi: "[Manual data entry hours per week]", source: "[Time Tracking]", freq: "Monthly", by: "[Ops Mgr]" },
-            { id: "B4", kpi: "[Cross-sell revenue &#x2014; $ from existing customer upsells]", source: "[CRM + Finance]", freq: "Quarterly", by: "[Finance]" },
+            { id: "B4", kpi: "[Cross-sell revenue — $ from existing customer upsells]", source: "[CRM + Finance]", freq: "Quarterly", by: "[Finance]" },
             { id: "B5", kpi: "[Employee NPS survey score for CRM users]", source: "[Survey Tool]", freq: "Semi-annual", by: "[HR]" },
             { id: "B6", kpi: "[Regulatory compliance audit score]", source: "[Audit Report]", freq: "Annual", by: "[Compliance]" },
           ].map((m, i) => {
@@ -140,16 +140,16 @@ function BenefitsRealizationTrackerContent() {
 
   const renderROI = () => (
     <div ref={roiRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4B0; ROI SUMMARY</div>
+      <div style={S.sectionBanner()}>💰 ROI SUMMARY</div>
       <CopyButton targetRef={roiRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Total Project Cost</td><td style={{ ...S.td0, fontWeight: 700 }}>$[595,000]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Annual Benefits (Projected)</td><td style={S.tdAlt}>$[850,000] &#x2014; efficiency savings + revenue increase + compliance avoidance</td></tr>
-          <tr><td style={S.tdLabel}>Annual Benefits (Actual YTD)</td><td style={S.td0}>$[425,000] at [6] months &#x2014; on track for $[850K] annualized</td></tr>
-          <tr><td style={S.tdLabelAlt}>Payback Period</td><td style={S.tdAlt}>Projected: [8.4 months] &#x2022; Actual trending: [8.4 months] &#x2014; <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>On Track</span></td></tr>
-          <tr><td style={S.tdLabel}>3-Year ROI</td><td style={S.td0}>Projected: [329%] &#x2022; Current trajectory: [329%] &#x2014; ($2.55M benefits &#x2F; $595K cost)</td></tr>
-          <tr><td style={S.tdLabelAlt}>NPV (3-Year, 8% discount)</td><td style={S.tdAlt}>$[1,601,000] &#x2014; strongly positive net present value</td></tr>
+          <tr><td style={S.tdLabelAlt}>Annual Benefits (Projected)</td><td style={S.tdAlt}>$[850,000] — efficiency savings + revenue increase + compliance avoidance</td></tr>
+          <tr><td style={S.tdLabel}>Annual Benefits (Actual YTD)</td><td style={S.td0}>$[425,000] at [6] months — on track for $[850K] annualized</td></tr>
+          <tr><td style={S.tdLabelAlt}>Payback Period</td><td style={S.tdAlt}>Projected: [8.4 months] • Actual trending: [8.4 months] — <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>On Track</span></td></tr>
+          <tr><td style={S.tdLabel}>3-Year ROI</td><td style={S.td0}>Projected: [329%] • Current trajectory: [329%] — ($2.55M benefits / $595K cost)</td></tr>
+          <tr><td style={S.tdLabelAlt}>NPV (3-Year, 8% discount)</td><td style={S.tdAlt}>$[1,601,000] — strongly positive net present value</td></tr>
         </tbody>
       </table>
     </div>
@@ -157,7 +157,7 @@ function BenefitsRealizationTrackerContent() {
 
   const renderTimeline = () => (
     <div ref={timelineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4C5; REALIZATION TIMELINE</div>
+      <div style={S.sectionBanner(C.secondary)}>📅 REALIZATION TIMELINE</div>
       <CopyButton targetRef={timelineRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -168,11 +168,11 @@ function BenefitsRealizationTrackerContent() {
         </tr></thead>
         <tbody>
           {[
-            { ms: "[Go-Live]", date: "[MM/DD]", status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, benefits: "[System operational; compliance achieved; data entry reduction begins]" },
-            { ms: "[+3 Months]", date: "[MM/DD]", status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, benefits: "[Efficiency gains measurable; user adoption stabilized at 95%]" },
-            { ms: "[+6 Months &#x2014; Current]", date: "[MM/DD]", status: "&#x1F7E1;", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, benefits: "[50% of annual benefits realized; cross-sell revenue trailing]" },
-            { ms: "[+9 Months]", date: "[MM/DD]", status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, benefits: "[75% of annual benefits; retention target should be fully achieved]" },
-            { ms: "[+12 Months &#x2014; Final Review]", date: "[MM/DD]", status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, benefits: "[100% benefits realization; formal ROI report to steering committee]" },
+            { ms: "[Go-Live]", date: "[MM/DD]", status: "✅", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, benefits: "[System operational; compliance achieved; data entry reduction begins]" },
+            { ms: "[+3 Months]", date: "[MM/DD]", status: "✅", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, benefits: "[Efficiency gains measurable; user adoption stabilized at 95%]" },
+            { ms: "[+6 Months — Current]", date: "[MM/DD]", status: "🟡", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, benefits: "[50% of annual benefits realized; cross-sell revenue trailing]" },
+            { ms: "[+9 Months]", date: "[MM/DD]", status: "⬜", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, benefits: "[75% of annual benefits; retention target should be fully achieved]" },
+            { ms: "[+12 Months — Final Review]", date: "[MM/DD]", status: "⬜", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, benefits: "[100% benefits realization; formal ROI report to steering committee]" },
           ].map((t, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -189,7 +189,7 @@ function BenefitsRealizationTrackerContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -227,7 +227,7 @@ function BenefitsRealizationTrackerContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><TrendingUp size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Benefits Realization Tracker</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Benefits Management &#x2022; Strategic &amp; Business Management</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Benefits Management • Strategic & Business Management</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Tracks post-launch business benefits against the original business case with measurement plan and ROI analysis. Full Tracker includes measurement, ROI, and timeline; Quick Tracker shows the register only.</p>

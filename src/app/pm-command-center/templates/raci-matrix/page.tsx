@@ -34,11 +34,11 @@ function RACIMatrixContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4CA; RACI MATRIX</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>👥 RACI MATRIX</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop | PM Command Center | PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The RACI Matrix clarifies roles and responsibilities for every key deliverable or decision.</strong> Each activity has exactly one Accountable person, with Responsible, Consulted, and Informed parties clearly identified to eliminate ambiguity.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>resource and communications planning</strong> to ensure clear ownership. Aligns with PMBOK Resource Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>resource and communications planning</strong> to ensure clear ownership. Aligns with PMBOK Resource Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -66,7 +66,7 @@ function RACIMatrixContent() {
 
   const renderLegend = () => (
     <div ref={legendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4D6; RACI LEGEND</div>
+      <div style={S.sectionBanner()}>📖 RACI LEGEND</div>
       <CopyButton targetRef={legendRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -98,15 +98,15 @@ function RACIMatrixContent() {
   const activities = [
     { activity: "Approve Project Charter", raci: ["A", "R", "C", "", "", "I", "I"] },
     { activity: "Develop Project Management Plan", raci: ["I", "A/R", "C", "C", "C", "C", "I"] },
-    { activity: "Define Scope &amp; WBS", raci: ["I", "A", "R", "C", "C", "C", ""] },
-    { activity: "Gather &amp; Document Requirements", raci: ["C", "I", "A/R", "C", "C", "", "I"] },
+    { activity: "Define Scope & WBS", raci: ["I", "A", "R", "C", "C", "C", ""] },
+    { activity: "Gather & Document Requirements", raci: ["C", "I", "A/R", "C", "C", "", "I"] },
     { activity: "Create System Design", raci: ["", "I", "C", "R", "", "A/R", ""] },
     { activity: "Develop / Build Solution", raci: ["", "I", "C", "A/R", "I", "C", ""] },
-    { activity: "Execute Testing &amp; QA", raci: ["", "I", "C", "C", "A/R", "", ""] },
+    { activity: "Execute Testing & QA", raci: ["", "I", "C", "C", "A/R", "", ""] },
     { activity: "Manage UAT", raci: ["I", "A", "R", "C", "R", "", "C"] },
     { activity: "Deploy to Production", raci: ["I", "A", "", "R", "C", "C", ""] },
-    { activity: "Manage Change &amp; Training", raci: ["I", "I", "C", "", "", "", "A/R"] },
-    { activity: "Manage Risks &amp; Issues", raci: ["C", "A/R", "C", "C", "C", "C", "I"] },
+    { activity: "Manage Change & Training", raci: ["I", "I", "C", "", "", "", "A/R"] },
+    { activity: "Manage Risks & Issues", raci: ["C", "A/R", "C", "C", "C", "C", "I"] },
     { activity: "Approve Budget Changes", raci: ["A", "R", "I", "I", "I", "I", "I"] },
     { activity: "Close Project", raci: ["A", "R", "C", "C", "C", "I", "C"] },
     { activity: "[Add Activity]", raci: ["", "", "", "", "", "", ""] },
@@ -114,7 +114,7 @@ function RACIMatrixContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CB; RACI ASSIGNMENT MATRIX</div>
+      <div style={S.sectionBanner(C.secondary)}>📋 RACI ASSIGNMENT MATRIX</div>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -130,20 +130,20 @@ function RACIMatrixContent() {
                 const baseCode = val.replace("/", "").charAt(0);
                 const rc = raciColors[baseCode] || raciColors[""];
                 return (<td key={j} style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}>
-                  {val ? <span style={{ ...S.badge(rc.bg, rc.fg), fontWeight: 800 }}>{val}</span> : <span style={{ color: C.textMuted, fontSize: "10px" }}>&#x2014;</span>}
+                  {val ? <span style={{ ...S.badge(rc.bg, rc.fg), fontWeight: 800 }}>{val}</span> : <span style={{ color: C.textMuted, fontSize: "10px" }}>—</span>}
                 </td>);
               })}
             </tr>);
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>A/R = both Accountable and Responsible (when one person does and owns the work). Every row must have exactly one &#x201C;A&#x201D;.</p>
+      <p style={S.subNote}>A/R = both Accountable and Responsible (when one person does and owns the work). Every row must have exactly one “A”.</p>
     </div>
   );
 
   const renderAnalysis = () => (
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F50D; RACI ANALYSIS</div>
+      <div style={S.sectionBanner()}>🔍 RACI ANALYSIS</div>
       <CopyButton targetRef={analysisRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -165,9 +165,9 @@ function RACIMatrixContent() {
               if (val === "I") counts.I++;
             });
             const bg = ri % 2 === 1 ? C.rowAlt : C.white;
-            const obs = counts.A > 5 ? "[May be overloaded as Accountable &#x2014; consider delegation]" :
-              counts.R > 6 ? "[Heavy workload &#x2014; monitor capacity]" :
-              (counts.R + counts.A + counts.C + counts.I) < 3 ? "[Low involvement &#x2014; verify if needed on project]" : "[Balanced assignment]";
+            const obs = counts.A > 5 ? "[May be overloaded as Accountable — consider delegation]" :
+              counts.R > 6 ? "[Heavy workload — monitor capacity]" :
+              (counts.R + counts.A + counts.C + counts.I) < 3 ? "[Low involvement — verify if needed on project]" : "[Balanced assignment]";
             return (<tr key={ri}>
               <td style={{ ...S.td0, backgroundColor: bg, fontWeight: 700, fontSize: "11px" }}>{r}</td>
               <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}><span style={S.badge(raciColors.R.bg, raciColors.R.fg)}>{counts.R}</span></td>
@@ -184,7 +184,7 @@ function RACIMatrixContent() {
 
   const renderGuidelines = () => (
     <div ref={guidelinesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x2705; RACI GUIDELINES</div>
+      <div style={S.sectionBanner(C.secondary)}>✅ RACI GUIDELINES</div>
       <CopyButton targetRef={guidelinesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -194,9 +194,9 @@ function RACIMatrixContent() {
         </tr></thead>
         <tbody>
           {[
-            { rule: "One &#x201C;A&#x201D; Per Row", desc: "Every activity must have exactly one Accountable person. No more, no less." },
-            { rule: "Minimize &#x201C;R&#x201D; Per Row", desc: "Too many Responsible parties causes confusion. Aim for 1&#x2013;3 per activity." },
-            { rule: "Avoid Vertical Overload", desc: "If one person has too many A&#x2019;s or R&#x2019;s, they may be a bottleneck. Redistribute." },
+            { rule: "One “A” Per Row", desc: "Every activity must have exactly one Accountable person. No more, no less." },
+            { rule: "Minimize “R” Per Row", desc: "Too many Responsible parties causes confusion. Aim for 1–3 per activity." },
+            { rule: "Avoid Vertical Overload", desc: "If one person has too many A’s or R’s, they may be a bottleneck. Redistribute." },
             { rule: "No Empty Rows", desc: "Every activity needs at least an A and an R (can be the same person)." },
             { rule: "No Empty Columns", desc: "Every person should have at least one assignment. Remove if not needed." },
             { rule: "Review With Stakeholders", desc: "Walk through the matrix with each stakeholder to confirm understanding and agreement." },
@@ -215,7 +215,7 @@ function RACIMatrixContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -254,7 +254,7 @@ function RACIMatrixContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Grid3X3 size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">RACI Matrix</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Resource Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Resource Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Clarifies Responsible, Accountable, Consulted, and Informed roles for every key activity. Full RACI includes analysis and guidelines; Quick RACI shows the matrix with legend.</p>

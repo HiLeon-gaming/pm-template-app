@@ -33,11 +33,11 @@ function RTMContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F517; REQUIREMENTS TRACEABILITY MATRIX</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> REQUIREMENTS TRACEABILITY MATRIX</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  |  PM Command Center  |  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The RTM links each requirement to its business objective, design element, test case, and delivery status.</strong> It ensures every requirement is accounted for throughout the project lifecycle and nothing falls through the cracks.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>scope planning and throughout execution</strong> to maintain traceability. Aligns with PMBOK Scope Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>scope planning and throughout execution</strong> to maintain traceability. Aligns with PMBOK Scope Management  Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -63,12 +63,12 @@ function RTMContent() {
     { id: "REQ-005", desc: "[e.g., Email notification on invoice approval/rejection]", pri: "Could Have", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, biz: "OBJ-3", wbs: "1.3.4", design: "DS-011", test: "TC-022", status: "Deferred", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
     { id: "REQ-006", desc: "[e.g., Role-based access control for finance users]", pri: "Must Have", pBg: C.badgeRedBg, pFg: C.badgeRedFg, biz: "OBJ-1", wbs: "1.3.3", design: "DS-003", test: "TC-010", status: "Testing", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
     { id: "REQ-007", desc: "[e.g., Audit trail for all invoice changes]", pri: "Must Have", pBg: C.badgeRedBg, pFg: C.badgeRedFg, biz: "OBJ-1", wbs: "1.3.3", design: "DS-005", test: "TC-014", status: "Approved", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-    { id: "[REQ-###]", desc: "[Add requirement]", pri: "&#x2014;", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, biz: "", wbs: "", design: "", test: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
+    { id: "[REQ-###]", desc: "[Add requirement]", pri: "", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, biz: "", wbs: "", design: "", test: "", status: "", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
   ];
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; TRACEABILITY MATRIX</div>
+      <div style={S.sectionBanner()}> TRACEABILITY MATRIX</div>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -97,13 +97,13 @@ function RTMContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>Priority uses MoSCoW: <strong>Must Have</strong> (critical) &#x2022; <strong>Should Have</strong> (important) &#x2022; <strong>Could Have</strong> (nice-to-have) &#x2022; <strong>Won&#x2019;t Have</strong> (deferred)</p>
+      <p style={S.subNote}>Priority uses MoSCoW: <strong>Must Have</strong> (critical)  <strong>Should Have</strong> (important)  <strong>Could Have</strong> (nice-to-have)  <strong>Won't Have</strong> (deferred)</p>
     </div>
   );
 
   const renderCoverage = () => (
     <div ref={coverageRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; COVERAGE ANALYSIS</div>
+      <div style={S.sectionBanner(C.secondary)}> COVERAGE ANALYSIS</div>
       <CopyButton targetRef={coverageRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -118,7 +118,7 @@ function RTMContent() {
             { metric: "Traced to Business Objective", count: "[30]", pct: "100%", note: "[All requirements linked to at least one objective]" },
             { metric: "Traced to Design", count: "[28]", pct: "93%", note: "[2 requirements pending design mapping]" },
             { metric: "Traced to Test Case", count: "[26]", pct: "87%", note: "[4 requirements pending test case creation]" },
-            { metric: "Tested &amp; Verified", count: "[18]", pct: "60%", note: "[12 remaining in current sprint]" },
+            { metric: "Tested & Verified", count: "[18]", pct: "60%", note: "[12 remaining in current sprint]" },
             { metric: "Deferred / Out of Scope", count: "[2]", pct: "7%", note: "[Moved to Phase 2 backlog]" },
           ].map((m, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -136,7 +136,7 @@ function RTMContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4DD; STATUS SUMMARY</div>
+      <div style={S.sectionBanner()}> STATUS SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -150,7 +150,7 @@ function RTMContent() {
             { status: "Approved", count: "[12]", pct: "[40%]", action: "[Ready for development]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { status: "In Development", count: "[8]", pct: "[27%]", action: "[Monitor sprint progress]", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg },
             { status: "In Testing", count: "[6]", pct: "[20%]", action: "[Track defect resolution]", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
-            { status: "Verified / Complete", count: "[2]", pct: "[7%]", action: "[No action &#x2014; closed]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
+            { status: "Verified / Complete", count: "[2]", pct: "[7%]", action: "[No action  closed]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { status: "Deferred", count: "[2]", pct: "[7%]", action: "[Moved to Phase 2 backlog]", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
           ].map((s, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -168,7 +168,7 @@ function RTMContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop  PM Command Center  2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -207,7 +207,7 @@ function RTMContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Link2 size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Requirements Traceability Matrix</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Scope Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Scope Management  Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Links every requirement to business objectives, design elements, test cases, and delivery status. Full RTM includes coverage analysis and status summary; Quick Matrix shows the traceability table only.</p>

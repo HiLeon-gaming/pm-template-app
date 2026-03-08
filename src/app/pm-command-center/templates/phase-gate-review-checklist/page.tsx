@@ -37,11 +37,11 @@ function PhaseGateReviewChecklistContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F6E1;&#xFE0F; PHASE GATE REVIEW CHECKLIST</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> Phase Gate Review Checklist</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  |  PM Command Center  |  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Phase Gate Review Checklist provides standardized criteria for evaluating project readiness to proceed from one phase to the next.</strong> Each gate has mandatory and recommended criteria that must be satisfied before the project can advance.<br /><br />
-          Conduct gate reviews at <strong style={{ fontStyle: "italic" }}>each phase transition point</strong>. Aligns with PMBOK Integration Management &#x2014; Governance Framework.
+          Conduct gate reviews at <strong style={{ fontStyle: "italic" }}>each phase transition point</strong>. Aligns with PMBOK Integration Management — Governance Framework.
         </td></tr>
       </tbody>
     </table>
@@ -53,7 +53,7 @@ function PhaseGateReviewChecklistContent() {
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "18%" }}>Project Name</td><td style={{ ...S.td0, width: "32%" }}>[Project Name]</td><td style={{ ...S.tdLabel, width: "18%" }}>Review Date</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY]</td></tr>
           <tr><td style={S.tdLabelAlt}>Project Manager</td><td style={S.tdAlt}>[Name, PMP]</td><td style={S.tdLabelAlt}>Gate Reviewer</td><td style={S.tdAlt}>[PMO Director / Sponsor]</td></tr>
-          <tr><td style={S.tdLabel}>Current Gate</td><td style={S.td0}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Gate 2 &#x2014; Planning Complete</span></td><td style={S.tdLabel}>Decision</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>&#x2705; GO</span> / <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>&#x26A0;&#xFE0F; Conditional</span> / <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>&#x1F6D1; No-Go</span></td></tr>
+          <tr><td style={S.tdLabel}>Current Gate</td><td style={S.td0}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Gate 2 — Planning Complete</span></td><td style={S.tdLabel}>Decision</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}> GO</span> / <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}> Conditional</span> / <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}> No-Go</span></td></tr>
         </tbody>
       </table>
       <CopyButton targetRef={headerRef} label="Copy Section" />
@@ -89,48 +89,48 @@ function PhaseGateReviewChecklistContent() {
   );
 
   const g1Items = [
-    { criteria: "[Project charter approved and signed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[Charter v1.0 signed MM/DD]" },
-    { criteria: "[Business case validated with financial analysis]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[ROI 329% over 3 years; NPV positive]" },
-    { criteria: "[Stakeholder register created]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[18 stakeholders identified and categorized]" },
-    { criteria: "[Project manager assigned with authority defined]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[PM assignment letter on file]" },
-    { criteria: "[High-level scope and constraints documented]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[Included in charter Section 3]" },
+    { criteria: "[Project charter approved and signed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[Charter v1.0 signed MM/DD]" },
+    { criteria: "[Business case validated with financial analysis]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[ROI 329% over 3 years; NPV positive]" },
+    { criteria: "[Stakeholder register created]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[18 stakeholders identified and categorized]" },
+    { criteria: "[Project manager assigned with authority defined]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[PM assignment letter on file]" },
+    { criteria: "[High-level scope and constraints documented]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[Included in charter Section 3]" },
   ];
   const g2Items = [
-    { criteria: "[Project management plan approved]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[PMP v1.0 approved MM/DD]" },
-    { criteria: "[Scope baseline established (WBS + scope statement)]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[WBS 4 levels; 54 user stories baselined]" },
-    { criteria: "[Schedule baseline with milestones]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[30.5 weeks; 6 milestones; critical path defined]" },
-    { criteria: "[Budget baseline with EVM setup]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[$690,750 total including contingency]" },
-    { criteria: "[Risk register with initial assessment]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[12 risks identified; 3 High, 5 Med, 4 Low]" },
-    { criteria: "[Resource allocation confirmed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x26A0;&#xFE0F;", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, evidence: "[7/8 confirmed; QA resource pending HR approval]" },
-    { criteria: "[Communications plan distributed]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[Sent to all stakeholders MM/DD]" },
-    { criteria: "[Change control process established]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: "&#x2705;", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[CCB charter signed; CR form distributed]" },
+    { criteria: "[Project management plan approved]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[PMP v1.0 approved MM/DD]" },
+    { criteria: "[Scope baseline established (WBS + scope statement)]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[WBS 4 levels; 54 user stories baselined]" },
+    { criteria: "[Schedule baseline with milestones]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[30.5 weeks; 6 milestones; critical path defined]" },
+    { criteria: "[Budget baseline with EVM setup]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[$690,750 total including contingency]" },
+    { criteria: "[Risk register with initial assessment]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[12 risks identified; 3 High, 5 Med, 4 Low]" },
+    { criteria: "[Resource allocation confirmed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Conditional", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, evidence: "[7/8 confirmed; QA resource pending HR approval]" },
+    { criteria: "[Communications plan distributed]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[Sent to all stakeholders MM/DD]" },
+    { criteria: "[Change control process established]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: " GO", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, evidence: "[CCB charter signed; CR form distributed]" },
   ];
   const g3Items = [
-    { criteria: "[All scope deliverables produced]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "[Pending &#x2014; execution in progress]" },
-    { criteria: "[Quality metrics within thresholds]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[All high risks mitigated or accepted]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[UAT plan approved and resources confirmed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Training materials developed]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[All scope deliverables produced]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "[Pending — execution in progress]" },
+    { criteria: "[Quality metrics within thresholds]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[All high risks mitigated or accepted]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[UAT plan approved and resources confirmed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Training materials developed]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
   ];
   const g4Items = [
-    { criteria: "[UAT complete with sign-off]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Go-live readiness confirmed (infra, data, security)]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Rollback plan documented and tested]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[End-user training completed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Support team trained and ready]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[UAT complete with sign-off]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Go-live readiness confirmed (infra, data, security)]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Rollback plan documented and tested]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[End-user training completed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Support team trained and ready]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
   ];
   const g5Items = [
-    { criteria: "[All deliverables formally accepted]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Lessons learned session completed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Project handoff to operations complete]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Final project financials closed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Benefits realization plan activated]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
-    { criteria: "[Project closure report signed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: "&#x2B1C;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[All deliverables formally accepted]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Lessons learned session completed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Project handoff to operations complete]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Final project financials closed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Benefits realization plan activated]", type: "Recommended", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
+    { criteria: "[Project closure report signed]", type: "Mandatory", tBg: C.badgeRedBg, tFg: C.badgeRedFg, status: " Pending", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, evidence: "" },
   ];
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; GATE STATUS SUMMARY</div>
+      <div style={S.sectionBanner()}>📊 GATE STATUS SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -143,11 +143,11 @@ function PhaseGateReviewChecklistContent() {
         </tr></thead>
         <tbody>
           {[
-            { gate: "Gate 1 &#x2014; Initiation Complete", mand: "4", pass: "4", pend: "0", dec: "&#x2705; GO", dBg: C.badgeGreenBg, dFg: C.badgeGreenFg, date: "[MM/DD]" },
-            { gate: "Gate 2 &#x2014; Planning Complete", mand: "6", pass: "5", pend: "1", dec: "&#x26A0;&#xFE0F; Conditional", dBg: C.badgeAmberBg, dFg: C.badgeAmberFg, date: "[MM/DD]" },
-            { gate: "Gate 3 &#x2014; Execution Complete", mand: "4", pass: "0", pend: "4", dec: "&#x2B1C; Pending", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg, date: "" },
-            { gate: "Gate 4 &#x2014; Go-Live Ready", mand: "4", pass: "0", pend: "4", dec: "&#x2B1C; Pending", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg, date: "" },
-            { gate: "Gate 5 &#x2014; Closure Complete", mand: "5", pass: "0", pend: "5", dec: "&#x2B1C; Pending", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg, date: "" },
+            { gate: "Gate 1 — Initiation Complete", mand: "4", pass: "4", pend: "0", dec: " GO", dBg: C.badgeGreenBg, dFg: C.badgeGreenFg, date: "[MM/DD]" },
+            { gate: "Gate 2 — Planning Complete", mand: "6", pass: "5", pend: "1", dec: " Conditional", dBg: C.badgeAmberBg, dFg: C.badgeAmberFg, date: "[MM/DD]" },
+            { gate: "Gate 3 — Execution Complete", mand: "4", pass: "0", pend: "4", dec: " Pending", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg, date: "" },
+            { gate: "Gate 4 — Go-Live Ready", mand: "4", pass: "0", pend: "4", dec: " Pending", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg, date: "" },
+            { gate: "Gate 5 — Closure Complete", mand: "5", pass: "0", pend: "5", dec: " Pending", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg, date: "" },
           ].map((g, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -166,7 +166,7 @@ function PhaseGateReviewChecklistContent() {
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x270D;&#xFE0F; GATE REVIEW SIGNOFF</div>
+      <div style={S.sectionBanner(C.secondary)}>✍️ GATE REVIEW SIGNOFF</div>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -195,7 +195,7 @@ function PhaseGateReviewChecklistContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -203,13 +203,13 @@ function PhaseGateReviewChecklistContent() {
     <>{renderTitleBanner()}{renderHeader()}
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "6px" }}>
-          {gateSection(gate1Ref, "&#x1F6E1;&#xFE0F; GATE 1 \u2014 INITIATION COMPLETE", undefined, g1Items)}
-          {gateSection(gate3Ref, "&#x1F6E1;&#xFE0F; GATE 3 \u2014 EXECUTION COMPLETE", undefined, g3Items)}
-          {gateSection(gate5Ref, "&#x1F6E1;&#xFE0F; GATE 5 \u2014 CLOSURE COMPLETE", undefined, g5Items)}
+          {gateSection(gate1Ref, " Gate 1 — Initiation Complete", undefined, g1Items)}
+          {gateSection(gate3Ref, " Gate 3 — Execution Complete", undefined, g3Items)}
+          {gateSection(gate5Ref, " Gate 5 — Closure Complete", undefined, g5Items)}
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "6px" }}>
-          {gateSection(gate2Ref, "&#x1F6E1;&#xFE0F; GATE 2 \u2014 PLANNING COMPLETE", C.secondary, g2Items)}
-          {gateSection(gate4Ref, "&#x1F6E1;&#xFE0F; GATE 4 \u2014 GO-LIVE READY", C.secondary, g4Items)}
+          {gateSection(gate2Ref, " Gate 2 — Planning Complete", C.secondary, g2Items)}
+          {gateSection(gate4Ref, " Gate 4 — Go-Live Ready", C.secondary, g4Items)}
         </td>
       </tr></tbody></table>
       {renderSummary()}{renderSignoff()}{renderFooter()}
@@ -217,7 +217,7 @@ function PhaseGateReviewChecklistContent() {
   );
 
   const renderCompactLayout = () => (
-    <>{renderTitleBanner()}{renderHeader()}{gateSection(gate2Ref, "&#x1F6E1;&#xFE0F; GATE 2 \u2014 PLANNING COMPLETE (CURRENT)", undefined, g2Items)}{renderSignoff()}{renderFooter()}</>
+    <>{renderTitleBanner()}{renderHeader()}{gateSection(gate2Ref, " Gate 2 — Planning Complete (CURRENT)", undefined, g2Items)}{renderSignoff()}{renderFooter()}</>
   );
 
   return (
@@ -241,7 +241,7 @@ function PhaseGateReviewChecklistContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><ShieldCheck size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Phase Gate Review Checklist</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Governance Framework</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Governance Framework</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Standardized criteria for all 5 phase gates with mandatory/recommended items and signoff. Full Checklist shows all gates; Quick Checklist shows current gate only.</p>

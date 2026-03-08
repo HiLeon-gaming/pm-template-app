@@ -36,11 +36,11 @@ function ProjectSelectionMatrixContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F3AF; PROJECT SELECTION MATRIX</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> PROJECT SELECTION MATRIX</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  PM Command Center  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Project Selection Matrix uses a weighted scoring model to objectively evaluate and prioritize competing project proposals against strategic criteria.</strong> Each project is scored on predefined criteria, weighted by organizational importance, to produce a composite ranking.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>portfolio planning, budget allocation,</strong> or <strong style={{ fontStyle: "italic" }}>investment committee reviews</strong>. Aligns with PMBOK Integration Management &#x2014; Initiating Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>portfolio planning, budget allocation,</strong> or <strong style={{ fontStyle: "italic" }}>investment committee reviews</strong>. Aligns with PMBOK Integration Management — Initiating Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -52,7 +52,7 @@ function ProjectSelectionMatrixContent() {
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "18%" }}>Portfolio / Program</td><td style={{ ...S.td0, width: "32%" }}>[Portfolio Name]</td><td style={{ ...S.tdLabel, width: "18%" }}>Date</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY]</td></tr>
           <tr><td style={S.tdLabelAlt}>Prepared By</td><td style={S.tdAlt}>[Name, Title]</td><td style={S.tdLabelAlt}>Fiscal Year</td><td style={S.tdAlt}>[FY20XX]</td></tr>
-          <tr><td style={S.tdLabel}>Scoring Scale</td><td colSpan={3} style={S.td0}>1 = Low &nbsp;|&nbsp; 2 = Below Average &nbsp;|&nbsp; 3 = Average &nbsp;|&nbsp; 4 = Above Average &nbsp;|&nbsp; 5 = High</td></tr>
+          <tr><td style={S.tdLabel}>Scoring Scale</td><td colSpan={3} style={S.td0}>1 = Low  2 = Below Average  3 = Average  4 = Above Average  5 = High</td></tr>
         </tbody>
       </table>
       <CopyButton targetRef={headerRef} label="Copy Section" />
@@ -73,12 +73,12 @@ function ProjectSelectionMatrixContent() {
     { name: "Project Alpha", scores: [5, 4, 3, 4, 5, 4, 5] },
     { name: "Project Beta", scores: [4, 5, 4, 3, 3, 3, 4] },
     { name: "Project Gamma", scores: [3, 3, 5, 5, 2, 4, 3] },
-    { name: "[Project D]", scores: [0, 0, 0, 0, 0, 0, 0] },
+    { name: "Project D", scores: [0, 0, 0, 0, 0, 0, 0] },
   ];
 
   const renderCriteria = () => (
     <div ref={criteriaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x2696;&#xFE0F; SELECTION CRITERIA &amp; WEIGHTS</div>
+      <div style={S.sectionBanner()}> SELECTION CRITERIA & WEIGHTS</div>
       <CopyButton targetRef={criteriaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -117,7 +117,7 @@ function ProjectSelectionMatrixContent() {
 
     return (
       <div ref={scoringRef} style={{ marginBottom: "12px" }}>
-        <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; WEIGHTED SCORING MATRIX</div>
+        <div style={S.sectionBanner(C.secondary)}> WEIGHTED SCORING MATRIX</div>
         <CopyButton targetRef={scoringRef} label="Copy Section" />
         <table style={S.tbl}>
           <thead><tr>
@@ -133,7 +133,7 @@ function ProjectSelectionMatrixContent() {
                   const raw = p.scores[ci];
                   const ws = Math.round(raw * (c.weight / 100) * 100) / 100;
                   return (<td key={pi} style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "11px" }}>
-                    {raw > 0 ? <>{raw} <span style={{ color: C.textMuted, fontSize: "10px" }}>({ws})</span></> : "&#x2014;"}
+                    {raw > 0 ? <>{raw} <span style={{ color: C.textMuted, fontSize: "10px" }}>({ws})</span></> : "—"}
                   </td>);
                 })}
               </tr>);
@@ -142,21 +142,21 @@ function ProjectSelectionMatrixContent() {
               <td style={{ ...S.td0, fontWeight: 800, backgroundColor: C.primary, color: C.white }}>WEIGHTED TOTAL</td>
               {weighted.map((p, i) => (
                 <td key={i} style={{ ...S.td0, textAlign: "center" as const, fontWeight: 800, backgroundColor: p.total === maxScore && p.total > 0 ? C.accent : C.primary, color: C.white, fontSize: "14px" }}>
-                  {p.total > 0 ? p.total.toFixed(2) : "&#x2014;"}
-                  {p.total === maxScore && p.total > 0 && " &#x2B50;"}
+                  {p.total > 0 ? p.total.toFixed(2) : "—"}
+                  {p.total === maxScore && p.total > 0 && " "}
                 </td>
               ))}
             </tr>
           </tbody>
         </table>
-        <p style={S.subNote}>Score format: Raw Score (Weighted Score). Weighted Score = Raw &#xD7; Weight%. Highest total = recommended project.</p>
+        <p style={S.subNote}>Score format: Raw Score (Weighted Score). Weighted Score = Raw  Weight%. Highest total = recommended project.</p>
       </div>
     );
   };
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4DD; PROJECT SUMMARIES</div>
+      <div style={S.sectionBanner()}> PROJECT SUMMARIES</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -171,7 +171,7 @@ function ProjectSelectionMatrixContent() {
             { name: "Project Alpha", cost: "$[amount]", dur: "[X months]", benefits: "[e.g., 30% efficiency gain, regulatory compliance]", risk: "Med", rBg: C.badgeAmberBg, rFg: C.badgeAmberFg },
             { name: "Project Beta", cost: "$[amount]", dur: "[X months]", benefits: "[e.g., $500K revenue increase, market expansion]", risk: "Med", rBg: C.badgeAmberBg, rFg: C.badgeAmberFg },
             { name: "Project Gamma", cost: "$[amount]", dur: "[X months]", benefits: "[e.g., Technical debt reduction, platform modernization]", risk: "Low", rBg: C.badgeGreenBg, rFg: C.badgeGreenFg },
-            { name: "[Project D]", cost: "$[amount]", dur: "[X months]", benefits: "[Key benefits]", risk: "&#x2014;", rBg: C.badgeGrayBg, rFg: C.badgeGrayFg },
+            { name: "[Project D]", cost: "$[amount]", dur: "[X months]", benefits: "[Key benefits]", risk: "—", rBg: C.badgeGrayBg, rFg: C.badgeGrayFg },
           ].map((p, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -189,11 +189,11 @@ function ProjectSelectionMatrixContent() {
 
   const renderRecommendation = () => (
     <div ref={recommendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F3C6; RECOMMENDATION &amp; DECISION</div>
+      <div style={S.sectionBanner(C.secondary)}> RECOMMENDATION & DECISION</div>
       <CopyButton targetRef={recommendRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Recommended Project</td><td style={{ ...S.td0, fontWeight: 700 }}>[Project Alpha &#x2014; highest weighted score]</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Recommended Project</td><td style={{ ...S.td0, fontWeight: 700 }}>[Project Alpha — highest weighted score]</td></tr>
           <tr><td style={S.tdLabelAlt}>Rationale</td><td style={S.tdAlt}>[Summarize why this project ranks highest and best serves organizational strategy.]</td></tr>
           <tr><td style={S.tdLabel}>Alternate Selection</td><td style={S.td0}>[If constraints prevent #1, recommend Project Beta as second choice.]</td></tr>
           <tr><td style={S.tdLabelAlt}>Decision Date</td><td style={S.tdAlt}>[MM/DD/YYYY]</td></tr>
@@ -205,7 +205,7 @@ function ProjectSelectionMatrixContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop  PM Command Center  2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -244,7 +244,7 @@ function ProjectSelectionMatrixContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Target size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Project Selection Matrix</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Initiating Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Initiating Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Weighted scoring model to evaluate and rank competing project proposals. Full Matrix includes criteria definitions and project summaries; Quick Compare shows the scoring matrix and recommendation only.</p>

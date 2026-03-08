@@ -34,11 +34,11 @@ function ResourceManagementPlanContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F465; RESOURCE MANAGEMENT PLAN</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>👥 RESOURCE MANAGEMENT PLAN</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Resource Management Plan describes how project resources (human and physical) are identified, acquired, managed, and released.</strong> It defines roles, responsibilities, team structure, acquisition strategies, and development activities.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>resource planning</strong> to ensure adequate staffing and skill coverage. Aligns with PMBOK Resource Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>resource planning</strong> to ensure adequate staffing and skill coverage. Aligns with PMBOK Resource Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -58,7 +58,7 @@ function ResourceManagementPlanContent() {
 
   const renderRoles = () => (
     <div ref={rolesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; ROLES &amp; RESPONSIBILITIES</div>
+      <div style={S.sectionBanner()}>ROLES & RESPONSIBILITIES</div>
       <CopyButton targetRef={rolesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -77,7 +77,7 @@ function ResourceManagementPlanContent() {
             { role: "Development Lead", resp: "[Code development, technical implementation, unit testing, code reviews]", auth: "Med", reports: "[PM]", fte: "100%" },
             { role: "QA Lead", resp: "[Test strategy, test case creation, defect management, UAT support]", auth: "Med", reports: "[PM]", fte: "75%" },
             { role: "Change Manager", resp: "[Training, communications, adoption strategy, resistance management]", auth: "Low", reports: "[PM]", fte: "50%" },
-            { role: "[Add Role]", resp: "[Responsibilities]", auth: "&#x2014;", reports: "[Manager]", fte: "[X]%" },
+            { role: "[Add Role]", resp: "[Responsibilities]", auth: "—", reports: "[Manager]", fte: "[X]%" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -95,7 +95,7 @@ function ResourceManagementPlanContent() {
 
   const renderRoster = () => (
     <div ref={rosterRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4C7; TEAM ROSTER</div>
+      <div style={S.sectionBanner(C.secondary)}>📇 TEAM ROSTER</div>
       <CopyButton targetRef={rosterRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -134,15 +134,15 @@ function ResourceManagementPlanContent() {
 
   const renderAcquisition = () => (
     <div ref={acquisitionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F50D; RESOURCE ACQUISITION STRATEGY</div>
+      <div style={S.sectionBanner()}>🔍 RESOURCE ACQUISITION STRATEGY</div>
       <CopyButton targetRef={acquisitionRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Internal Resources</td><td style={S.td0}>[Describe how internal staff will be acquired. Example: &#x201C;Resource requests submitted to functional managers by [date]; allocation confirmed within 5 business days.&#x201D;]</td></tr>
-          <tr><td style={S.tdLabelAlt}>External / Contract Resources</td><td style={S.tdAlt}>[Describe contractor or vendor staffing. Example: &#x201C;SOW issued to preferred vendor list; 2 contractors needed for development from [date] to [date].&#x201D;]</td></tr>
-          <tr><td style={S.tdLabel}>Resource Conflicts</td><td style={S.td0}>[How will conflicts be resolved? Example: &#x201C;Escalate to PMO for prioritization; sponsor has final authority.&#x201D;]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Resource Release</td><td style={S.tdAlt}>[When and how are resources released? Example: &#x201C;Released at phase completion; 2-week notice to functional managers.&#x201D;]</td></tr>
-          <tr><td style={S.tdLabel}>Backup / Contingency</td><td style={S.td0}>[Backup plan if key resources leave. Example: &#x201C;Cross-training plan for critical roles; vendor bench available within 2 weeks.&#x201D;]</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Internal Resources</td><td style={S.td0}>[Describe how internal staff will be acquired. Example: “Resource requests submitted to functional managers by [date]; allocation confirmed within 5 business days.”]</td></tr>
+          <tr><td style={S.tdLabelAlt}>External / Contract Resources</td><td style={S.tdAlt}>[Describe contractor or vendor staffing. Example: “SOW issued to preferred vendor list; 2 contractors needed for development from [date] to [date].”]</td></tr>
+          <tr><td style={S.tdLabel}>Resource Conflicts</td><td style={S.td0}>[How will conflicts be resolved? Example: “Escalate to PMO for prioritization; sponsor has final authority.”]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Resource Release</td><td style={S.tdAlt}>[When and how are resources released? Example: “Released at phase completion; 2-week notice to functional managers.”]</td></tr>
+          <tr><td style={S.tdLabel}>Backup / Contingency</td><td style={S.td0}>[Backup plan if key resources leave. Example: “Cross-training plan for critical roles; vendor bench available within 2 weeks.”]</td></tr>
         </tbody>
       </table>
     </div>
@@ -150,7 +150,7 @@ function ResourceManagementPlanContent() {
 
   const renderDevelopment = () => (
     <div ref={developmentRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4DA; TEAM DEVELOPMENT &amp; PERFORMANCE</div>
+      <div style={S.sectionBanner(C.secondary)}>📚 TEAM DEVELOPMENT & PERFORMANCE</div>
       <CopyButton targetRef={developmentRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -165,7 +165,7 @@ function ResourceManagementPlanContent() {
             { act: "Training Plan", desc: "[Required certifications, tool training (Jira, Confluence), methodology training]", freq: "As Needed", owner: "[PM / HR]" },
             { act: "Performance Reviews", desc: "[Individual check-ins, project contribution assessments, feedback sessions]", freq: "Monthly", owner: "[PM]" },
             { act: "Knowledge Transfer", desc: "[Documentation standards, pair programming, shadowing, brown bag sessions]", freq: "Bi-weekly", owner: "[Tech Lead]" },
-            { act: "Conflict Resolution", desc: "[Escalation path: team &#x2192; PM &#x2192; sponsor. Use collaborative problem-solving first.]", freq: "As Needed", owner: "[PM]" },
+            { act: "Conflict Resolution", desc: "[Escalation path: team → PM → sponsor. Use collaborative problem-solving first.]", freq: "As Needed", owner: "[PM]" },
             { act: "Recognition", desc: "[Acknowledge contributions in status reports, team awards, sponsor recognition]", freq: "Ongoing", owner: "[PM]" },
           ].map((a, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -183,7 +183,7 @@ function ResourceManagementPlanContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -222,7 +222,7 @@ function ResourceManagementPlanContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><UserCog size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Resource Management Plan</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Resource Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Resource Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Defines roles, team roster, acquisition strategy, and development activities. Full Plan covers all sections; Quick Plan focuses on team roster and role definitions.</p>

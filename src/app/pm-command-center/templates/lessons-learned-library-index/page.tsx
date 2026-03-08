@@ -34,11 +34,11 @@ function LessonsLearnedLibraryIndexContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4DA; LESSONS LEARNED LIBRARY INDEX</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>📚 LESSONS LEARNED LIBRARY INDEX</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Lessons Learned Library Index is the organizational repository that aggregates lessons from all completed projects.</strong> It enables project managers to search past lessons by category, project type, and knowledge area before starting new projects, preventing repeated mistakes and replicating successes.<br /><br />
-          Maintain this library as a <strong style={{ fontStyle: "italic" }}>living organizational knowledge base</strong>. Update after every project closure. Aligns with PMBOK Integration Management &#x2014; Manage Project Knowledge &#x2014; Organizational Process Assets.
+          Maintain this library as a <strong style={{ fontStyle: "italic" }}>living organizational knowledge base</strong>. Update after every project closure. Aligns with PMBOK Integration Management — Manage Project Knowledge — Organizational Process Assets.
         </td></tr>
       </tbody>
     </table>
@@ -50,7 +50,7 @@ function LessonsLearnedLibraryIndexContent() {
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "18%" }}>Organization</td><td style={{ ...S.td0, width: "32%" }}>[Organization / PMO Name]</td><td style={{ ...S.tdLabel, width: "18%" }}>Last Updated</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY]</td></tr>
           <tr><td style={S.tdLabelAlt}>Library Owner</td><td style={S.tdAlt}>[PMO Director / Knowledge Manager]</td><td style={S.tdLabelAlt}>Total Entries</td><td style={S.tdAlt}>[47] lessons from [8] projects</td></tr>
-          <tr><td style={S.tdLabel}>Coverage Period</td><td style={S.td0}>[2023] &#x2014; [2026]</td><td style={S.tdLabel}>Next Review</td><td style={S.td0}>[Quarterly &#x2014; MM/DD/YYYY]</td></tr>
+          <tr><td style={S.tdLabel}>Coverage Period</td><td style={S.td0}>[2023] — [2026]</td><td style={S.tdLabel}>Next Review</td><td style={S.td0}>[Quarterly — MM/DD/YYYY]</td></tr>
         </tbody>
       </table>
       <CopyButton targetRef={headerRef} label="Copy Section" />
@@ -58,22 +58,21 @@ function LessonsLearnedLibraryIndexContent() {
   );
 
   const entries = [
-    { id: "LL-CRM-001", project: "[CRM Implementation]", year: "2026", cat: "Stakeholder", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[User champion network drove 95% adoption vs 80% target]", applicability: "All user-facing projects" },
-    { id: "LL-CRM-002", project: "[CRM Implementation]", year: "2026", cat: "Scope", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "&#x1F7E1; Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[6 CRs added 17% to schedule &#x2014; initial requirements elicitation insufficient]", applicability: "All projects" },
-    { id: "LL-CRM-003", project: "[CRM Implementation]", year: "2026", cat: "Resource", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "&#x1F534; Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, lesson: "[Dev Lead at 110% &#x2014; burnout materialized, velocity dropped 20%]", applicability: "All projects" },
-    { id: "LL-ERP-001", project: "[ERP Upgrade]", year: "2025", cat: "Vendor", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[Phased vendor engagement with milestone payments kept delivery on track]", applicability: "Vendor-dependent projects" },
-    { id: "LL-ERP-002", project: "[ERP Upgrade]", year: "2025", cat: "Testing", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, type: "&#x1F7E1; Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[UAT period was too short &#x2014; critical defects found in first week of production]", applicability: "All software projects" },
-    { id: "LL-CLOUD-001", project: "[Cloud Migration]", year: "2025", cat: "Technical", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[Automated testing pipeline caught 85% of defects before QA]", applicability: "All development projects" },
-    { id: "LL-CLOUD-002", project: "[Cloud Migration]", year: "2025", cat: "Technical", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "&#x1F534; Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, lesson: "[Test environment instability caused 2-week cumulative QA delay]", applicability: "All projects" },
-    { id: "LL-SEC-001", project: "[Security Compliance]", year: "2024", cat: "Process", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[Early regulatory engagement prevented rework &#x2014; 3-month time savings]", applicability: "Compliance projects" },
-    { id: "LL-MOB-001", project: "[Mobile App v2]", year: "2024", cat: "Scope", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "&#x1F534; Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, lesson: "[Feature creep from marketing resulted in 40% budget overrun]", applicability: "Product development projects" },
-    { id: "LL-DW-001", project: "[Data Warehouse]", year: "2024", cat: "Data", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "&#x1F7E1; Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[Data quality assessment should be done BEFORE migration planning, not during]", applicability: "Data/migration projects" },
-    { id: "[LL-###-###]", project: "[Add project]", year: "", cat: "&#x2014;", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, type: "&#x2014;", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, lesson: "[Add lesson]", applicability: "" },
+    { id: "LL-CRM-001", project: "[CRM Implementation]", year: "2026", cat: "Stakeholder", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "🟢 Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[User champion network drove 95% adoption vs 80% target]", applicability: "All user-facing projects" },
+    { id: "LL-CRM-002", project: "[CRM Implementation]", year: "2026", cat: "Scope", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "🟡 Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[6 CRs added 17% to schedule — initial requirements elicitation insufficient]", applicability: "All projects" },
+    { id: "LL-CRM-003", project: "[CRM Implementation]", year: "2026", cat: "Resource", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "🔴 Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, lesson: "[Dev Lead at 110% — burnout materialized, velocity dropped 20%]", applicability: "All projects" },
+    { id: "LL-ERP-001", project: "[ERP Upgrade]", year: "2025", cat: "Vendor", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "🟢 Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[Phased vendor engagement with milestone payments kept delivery on track]", applicability: "Vendor-dependent projects" },
+    { id: "LL-ERP-002", project: "[ERP Upgrade]", year: "2025", cat: "Testing", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, type: "🟡 Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[UAT period was too short — critical defects found in first week of production]", applicability: "All software projects" },
+    { id: "LL-CLOUD-001", project: "[Cloud Migration]", year: "2025", cat: "Technical", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "🟢 Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[Automated testing pipeline caught 85% of defects before QA]", applicability: "All development projects" },
+    { id: "LL-CLOUD-002", project: "[Cloud Migration]", year: "2025", cat: "Technical", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "🔴 Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, lesson: "[Test environment instability caused 2-week cumulative QA delay]", applicability: "All projects" },
+    { id: "LL-SEC-001", project: "[Security Compliance]", year: "2024", cat: "Process", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, type: "🟢 Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[Early regulatory engagement prevented rework — 3-month time savings]", applicability: "Compliance projects" },
+    { id: "LL-MOB-001", project: "[Mobile App v2]", year: "2024", cat: "Scope", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "🔴 Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, lesson: "[Feature creep from marketing resulted in 40% budget overrun]", applicability: "Product development projects" },
+    { id: "[LL-###-###]", project: "[Add project]", year: "", cat: "—", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, type: "—", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, lesson: "[Add lesson]", applicability: "" },
   ];
 
   const renderIndex = () => (
     <div ref={indexRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; LIBRARY INDEX</div>
+      <div style={S.sectionBanner()}> LIBRARY INDEX</div>
       <CopyButton targetRef={indexRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -105,7 +104,7 @@ function LessonsLearnedLibraryIndexContent() {
 
   const renderSearch = () => (
     <div ref={searchRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F50D; SEARCH &amp; FILTER GUIDE</div>
+      <div style={S.sectionBanner(C.secondary)}>🔍 SEARCH & FILTER GUIDE</div>
       <CopyButton targetRef={searchRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -114,10 +113,10 @@ function LessonsLearnedLibraryIndexContent() {
         </tr></thead>
         <tbody>
           <tr><td style={{ ...S.tdLabel }}>By Category</td><td style={S.td0}><span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>Stakeholder</span> <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Scope</span> <span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>Resource</span> <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Vendor</span> <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Testing</span> <span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>Technical</span> <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Process</span> <span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>Data</span></td></tr>
-          <tr><td style={S.tdLabelAlt}>By Type</td><td style={S.tdAlt}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>&#x1F7E2; Win</span> <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>&#x1F7E1; Improve</span> <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>&#x1F534; Avoid</span></td></tr>
-          <tr><td style={S.tdLabel}>By Project Type</td><td style={S.td0}>Software Development &#x2022; Infrastructure &#x2022; Data/Migration &#x2022; Compliance &#x2022; Product Development</td></tr>
-          <tr><td style={S.tdLabelAlt}>By PMBOK Knowledge Area</td><td style={S.tdAlt}>Integration &#x2022; Scope &#x2022; Schedule &#x2022; Cost &#x2022; Quality &#x2022; Resource &#x2022; Communications &#x2022; Risk &#x2022; Procurement &#x2022; Stakeholder</td></tr>
-          <tr><td style={S.tdLabel}>By Year</td><td style={S.td0}>2024 &#x2022; 2025 &#x2022; 2026</td></tr>
+          <tr><td style={S.tdLabelAlt}>By Type</td><td style={S.tdAlt}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>🟢 Win</span> <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>🟡 Improve</span> <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>🔴 Avoid</span></td></tr>
+          <tr><td style={S.tdLabel}>By Project Type</td><td style={S.td0}>Software Development • Infrastructure • Data/Migration • Compliance • Product Development</td></tr>
+          <tr><td style={S.tdLabelAlt}>By PMBOK Knowledge Area</td><td style={S.tdAlt}>Integration • Scope • Schedule • Cost • Quality • Resource • Communications • Risk • Procurement • Stakeholder</td></tr>
+          <tr><td style={S.tdLabel}>By Year</td><td style={S.td0}>2024 • 2025 • 2026</td></tr>
         </tbody>
       </table>
       <p style={S.subNote}>Tip: Before starting a new project, search by project type and relevant PMBOK knowledge areas to find applicable lessons.</p>
@@ -126,15 +125,15 @@ function LessonsLearnedLibraryIndexContent() {
 
   const renderAnalytics = () => (
     <div ref={analyticsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; LIBRARY ANALYTICS</div>
+      <div style={S.sectionBanner()}>📊 LIBRARY ANALYTICS</div>
       <CopyButton targetRef={analyticsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
           <th style={S.thSecondary}>Category</th>
           <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Total</th>
-          <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>&#x1F7E2; Wins</th>
-          <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>&#x1F7E1; Improve</th>
-          <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>&#x1F534; Avoid</th>
+          <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>🟢 Wins</th>
+          <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>🟡 Improve</th>
+          <th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>🔴 Avoid</th>
           <th style={S.thSecondary}>Top Insight</th>
         </tr></thead>
         <tbody>
@@ -165,7 +164,7 @@ function LessonsLearnedLibraryIndexContent() {
 
   const renderTop = () => (
     <div ref={topRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F3AF; TOP 5 MOST-REFERENCED LESSONS</div>
+      <div style={S.sectionBanner(C.secondary)}>🎯 TOP 5 MOST-REFERENCED LESSONS</div>
       <CopyButton targetRef={topRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -176,11 +175,11 @@ function LessonsLearnedLibraryIndexContent() {
         </tr></thead>
         <tbody>
           {[
-            { lesson: "[Invest more time in requirements elicitation; add scope freeze milestone]", refs: "[6 projects]", action: "&#x2705; PMO Standard", aBg: C.badgeGreenBg, aFg: C.badgeGreenFg },
-            { lesson: "[Cap resource allocation at 90%; require cross-training for critical roles]", refs: "[5 projects]", action: "&#x2705; Policy Updated", aBg: C.badgeGreenBg, aFg: C.badgeGreenFg },
-            { lesson: "[Provision dedicated test environment before development starts]", refs: "[4 projects]", action: "&#x1F7E1; In Progress", aBg: C.badgeAmberBg, aFg: C.badgeAmberFg },
-            { lesson: "[Establish user champion network during planning for user-facing projects]", refs: "[3 projects]", action: "&#x2705; Best Practice", aBg: C.badgeGreenBg, aFg: C.badgeGreenFg },
-            { lesson: "[Mandate automated testing framework setup in Sprint 0]", refs: "[3 projects]", action: "&#x1F7E1; Piloting", aBg: C.badgeAmberBg, aFg: C.badgeAmberFg },
+            { lesson: "[Invest more time in requirements elicitation; add scope freeze milestone]", refs: "[6 projects]", action: "✅ PMO Standard", aBg: C.badgeGreenBg, aFg: C.badgeGreenFg },
+            { lesson: "[Cap resource allocation at 90%; require cross-training for critical roles]", refs: "[5 projects]", action: "✅ Policy Updated", aBg: C.badgeGreenBg, aFg: C.badgeGreenFg },
+            { lesson: "[Provision dedicated test environment before development starts]", refs: "[4 projects]", action: "🟡 In Progress", aBg: C.badgeAmberBg, aFg: C.badgeAmberFg },
+            { lesson: "[Establish user champion network during planning for user-facing projects]", refs: "[3 projects]", action: "✅ Best Practice", aBg: C.badgeGreenBg, aFg: C.badgeGreenFg },
+            { lesson: "[Mandate automated testing framework setup in Sprint 0]", refs: "[3 projects]", action: "🟡 Piloting", aBg: C.badgeAmberBg, aFg: C.badgeAmberFg },
           ].map((t, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -198,7 +197,7 @@ function LessonsLearnedLibraryIndexContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -236,7 +235,7 @@ function LessonsLearnedLibraryIndexContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Library size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Lessons Learned Library Index</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Organizational Process Assets</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Organizational Process Assets</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Organizational knowledge repository indexing lessons from all completed projects with search guide and analytics. Full Library includes search and analytics; Quick Index shows the library index only.</p>

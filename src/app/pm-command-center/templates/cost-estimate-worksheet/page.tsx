@@ -35,11 +35,11 @@ function CostEstimateContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4B0; COST ESTIMATE WORKSHEET</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>💰 COST ESTIMATE WORKSHEET</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Cost Estimate Worksheet provides a detailed bottom-up estimate of all project costs including labor, non-labor, and contingency reserves.</strong> It forms the basis for the cost baseline and project budget.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>cost estimating</strong> to build a defensible project budget. Aligns with PMBOK Cost Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>cost estimating</strong> to build a defensible project budget. Aligns with PMBOK Cost Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -60,7 +60,7 @@ function CostEstimateContent() {
 
   const renderLabor = () => (
     <div ref={laborRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4BC; LABOR COSTS</div>
+      <div style={S.sectionBanner()}>LABOR COSTS</div>
       <CopyButton targetRef={laborRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -104,7 +104,7 @@ function CostEstimateContent() {
 
   const renderNonLabor = () => (
     <div ref={nonLaborRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4E6; NON-LABOR COSTS</div>
+      <div style={S.sectionBanner(C.secondary)}>📦 NON-LABOR COSTS</div>
       <CopyButton targetRef={nonLaborRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -121,7 +121,7 @@ function CostEstimateContent() {
             { cat: "Hardware", desc: "[e.g., Development workstations, testing devices]", qty: "[3]", unit: "$[2,500]", total: "$[7,500]" },
             { cat: "Training", desc: "[e.g., End-user training, admin training, materials]", qty: "[1]", unit: "$[15,000]", total: "$[15,000]" },
             { cat: "Vendor / Contractor", desc: "[e.g., Specialist consultant for integration work]", qty: "[200 hrs]", unit: "$[175]", total: "$[35,000]" },
-            { cat: "Travel &amp; Expenses", desc: "[e.g., Site visits, workshops, stakeholder meetings]", qty: "[1]", unit: "$[5,000]", total: "$[5,000]" },
+            { cat: "Travel & Expenses", desc: "[e.g., Site visits, workshops, stakeholder meetings]", qty: "[1]", unit: "$[5,000]", total: "$[5,000]" },
             { cat: "[Add Category]", desc: "[Description]", qty: "", unit: "", total: "" },
           ].map((n, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -144,7 +144,7 @@ function CostEstimateContent() {
 
   const renderContingency = () => (
     <div ref={contingencyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x26A0;&#xFE0F; CONTINGENCY &amp; MANAGEMENT RESERVES</div>
+      <div style={S.sectionBanner()}>⚠️ CONTINGENCY & MANAGEMENT RESERVES</div>
       <CopyButton targetRef={contingencyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -164,7 +164,7 @@ function CostEstimateContent() {
 
   const renderBasis = () => (
     <div ref={basisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4D6; BASIS OF ESTIMATE</div>
+      <div style={S.sectionBanner(C.secondary)}>📖 BASIS OF ESTIMATE</div>
       <CopyButton targetRef={basisRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -180,7 +180,7 @@ function CostEstimateContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4B5; COST ESTIMATE SUMMARY</div>
+      <div style={S.sectionBanner()}>💵 COST ESTIMATE SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -211,7 +211,7 @@ function CostEstimateContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -250,7 +250,7 @@ function CostEstimateContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Calculator size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Cost Estimate Worksheet</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Cost Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Cost Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Bottom-up cost estimate with labor, non-labor, contingency, and management reserves. Full Worksheet shows all detail sections; Quick Estimate shows the summary only.</p>

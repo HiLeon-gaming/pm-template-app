@@ -31,11 +31,11 @@ function DecisionLogContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x2696;&#xFE0F; DECISION LOG</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>✅ DECISION LOG</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop | PM Command Center | PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Decision Log records all significant project decisions, including the rationale, alternatives considered, decision-maker, and downstream impact.</strong> It serves as an audit trail and prevents revisiting closed decisions.<br /><br />
-          Log decisions <strong style={{ fontStyle: "italic" }}>as they occur throughout the project lifecycle</strong>. Aligns with PMBOK Integration Management &#x2014; Monitoring &amp; Controlling.
+          Log decisions <strong style={{ fontStyle: "italic" }}>as they occur throughout the project lifecycle</strong>. Aligns with PMBOK Integration Management — Monitoring & Controlling.
         </td></tr>
       </tbody>
     </table>
@@ -54,17 +54,17 @@ function DecisionLogContent() {
   );
 
   const decisions = [
-    { id: "D-001", date: "[MM/DD]", dec: "[e.g., Approved CR-003 &#x2014; $25K security audit added to scope and budget]", cat: "Change", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, by: "[CCB]", rationale: "[Security compliance requirement; regulatory deadline Q4]", alternatives: "[Defer to Phase 2; reduce scope to partial audit]", impact: "[+$25K budget; +5 days schedule; security compliance achieved]", status: "Final", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-    { id: "D-002", date: "[MM/DD]", dec: "[e.g., Tightened change control &#x2014; all CRs require written impact analysis]", cat: "Process", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, by: "[PM/Sponsor]", rationale: "[3 CRs in one week; scope creep risk elevated to Critical]", alternatives: "[Maintain current process; add verbal pre-screening only]", impact: "[+1-2 days per CR; better scope control; reduced scope creep risk]", status: "Final", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
+    { id: "D-001", date: "[MM/DD]", dec: "[e.g., Approved CR-003 — $25K security audit added to scope and budget]", cat: "Change", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, by: "[CCB]", rationale: "[Security compliance requirement; regulatory deadline Q4]", alternatives: "[Defer to Phase 2; reduce scope to partial audit]", impact: "[+$25K budget; +5 days schedule; security compliance achieved]", status: "Final", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
+    { id: "D-002", date: "[MM/DD]", dec: "[e.g., Tightened change control — all CRs require written impact analysis]", cat: "Process", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, by: "[PM/Sponsor]", rationale: "[3 CRs in one week; scope creep risk elevated to Critical]", alternatives: "[Maintain current process; add verbal pre-screening only]", impact: "[+1-2 days per CR; better scope control; reduced scope creep risk]", status: "Final", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
     { id: "D-003", date: "[MM/DD]", dec: "[e.g., Selected Vendor B for data migration services]", cat: "Vendor", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, by: "[PM + Procurement]", rationale: "[Best value score: cost 85/100, capability 92/100, references 88/100]", alternatives: "[Vendor A (cheaper, lower capability); Vendor C (highest capability, over budget)]", impact: "[$85K contract; 12-week engagement; meets quality and timeline requirements]", status: "Final", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
     { id: "D-004", date: "[MM/DD]", dec: "[e.g., Approved extra requirements review session Friday PM]", cat: "Schedule", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, by: "[PM]", rationale: "[M3 milestone 3 days behind; stakeholder availability caused delay]", alternatives: "[Accept 3-day delay; compress testing phase instead]", impact: "[M3 recovery expected; no downstream schedule impact if successful]", status: "Final", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
     { id: "D-005", date: "[MM/DD]", dec: "[e.g., Deferred reporting module enhancements to Phase 2]", cat: "Scope", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, by: "[Steering Committee]", rationale: "[Timeline protection; core functionality prioritized for go-live]", alternatives: "[Include partial enhancements; extend timeline by 3 weeks]", impact: "[Scope reduced by 4 user stories; schedule protected; Phase 2 backlog updated]", status: "Final", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-    { id: "[D-###]", date: "", dec: "[Add decision]", cat: "&#x2014;", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, by: "", rationale: "", alternatives: "", impact: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
+    { id: "[D-###]", date: "", dec: "[Add decision]", cat: "—", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, by: "", rationale: "", alternatives: "", impact: "", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; DECISION REGISTER</div>
+      <div style={S.sectionBanner()}>📋 DECISION REGISTER</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -100,7 +100,7 @@ function DecisionLogContent() {
 
   const renderPending = () => (
     <div ref={pendingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x23F3; PENDING DECISIONS</div>
+      <div style={S.sectionBanner(C.secondary)}> PENDING DECISIONS</div>
       <CopyButton targetRef={pendingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -113,7 +113,7 @@ function DecisionLogContent() {
         <tbody>
           <tr><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>D-006</td><td style={{ ...S.td0, fontSize: "11px" }}>[Approve additional QA resource ($12K) for Sprint 4 testing ramp-up]</td><td style={{ ...S.td0, fontSize: "11px" }}>[Sponsor]</td><td style={{ ...S.td0, fontSize: "11px" }}>[MM/DD]</td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>High</span></td></tr>
           <tr><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>D-007</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Confirm go-live date hold or approve 1-week extension]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Steering Committee]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[MM/DD]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>High</span></td></tr>
-          <tr><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>D-008</td><td style={{ ...S.td0, fontSize: "11px" }}>[Authorize Dev Lead workload redistribution &#x2014; may impact velocity 10%]</td><td style={{ ...S.td0, fontSize: "11px" }}>[PM/Sponsor]</td><td style={{ ...S.td0, fontSize: "11px" }}>[MM/DD]</td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Med</span></td></tr>
+          <tr><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>D-008</td><td style={{ ...S.td0, fontSize: "11px" }}>[Authorize Dev Lead workload redistribution — may impact velocity 10%]</td><td style={{ ...S.td0, fontSize: "11px" }}>[PM/Sponsor]</td><td style={{ ...S.td0, fontSize: "11px" }}>[MM/DD]</td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Med</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -121,15 +121,15 @@ function DecisionLogContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; DECISION SUMMARY</div>
+      <div style={S.sectionBanner()}>📊 DECISION SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Total Decisions Logged</td><td style={S.td0}>[5] finalized decisions across [4] categories</td></tr>
-          <tr><td style={S.tdLabelAlt}>Pending Decisions</td><td style={S.tdAlt}>[3] decisions awaiting resolution &#x2022; [2] High priority</td></tr>
-          <tr><td style={S.tdLabel}>Decision Categories</td><td style={S.td0}>Change [1] &#x2022; Process [1] &#x2022; Vendor [1] &#x2022; Schedule [1] &#x2022; Scope [1]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Pending Decisions</td><td style={S.tdAlt}>[3] decisions awaiting resolution • [2] High priority</td></tr>
+          <tr><td style={S.tdLabel}>Decision Categories</td><td style={S.td0}>Change [1] • Process [1] • Vendor [1] • Schedule [1] • Scope [1]</td></tr>
           <tr><td style={S.tdLabelAlt}>Avg Decision Time</td><td style={S.tdAlt}>[3] business days from request to final decision</td></tr>
-          <tr><td style={S.tdLabel}>Next Review</td><td style={S.td0}>[MM/DD/YYYY] &#x2014; [Steering Committee Meeting]</td></tr>
+          <tr><td style={S.tdLabel}>Next Review</td><td style={S.td0}>[MM/DD/YYYY] — [Steering Committee Meeting]</td></tr>
         </tbody>
       </table>
     </div>
@@ -137,7 +137,7 @@ function DecisionLogContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -169,7 +169,7 @@ function DecisionLogContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Scale size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Decision Log</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Monitoring &amp; Controlling</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Monitoring & Controlling</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Records all significant project decisions with rationale, alternatives, and impact. Full Log includes pending decisions and summary; Quick Log shows the register only.</p>

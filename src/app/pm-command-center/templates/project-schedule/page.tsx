@@ -34,11 +34,11 @@ function ProjectScheduleContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4C5; PROJECT SCHEDULE / MILESTONE PLAN</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> PROJECT SCHEDULE / MILESTONE PLAN</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  |  PM Command Center  |  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Project Schedule defines the timeline for all project activities, milestones, and dependencies.</strong> It establishes the schedule baseline against which progress is measured using Earned Value Management (EVM) metrics.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>schedule planning</strong> and update throughout execution. Aligns with PMBOK Schedule Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>schedule planning</strong> and update throughout execution. Aligns with PMBOK Schedule Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -59,7 +59,7 @@ function ProjectScheduleContent() {
 
   const renderMilestones = () => (
     <div ref={milestonesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F3C1; KEY MILESTONES</div>
+      <div style={S.sectionBanner()}>📅 KEY MILESTONES</div>
       <CopyButton targetRef={milestonesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -102,7 +102,7 @@ function ProjectScheduleContent() {
 
   const renderTasks = () => (
     <div ref={tasksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CB; TASK SCHEDULE (SAMPLE)</div>
+      <div style={S.sectionBanner(C.secondary)}> TASK SCHEDULE (SAMPLE)</div>
       <CopyButton targetRef={tasksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -148,7 +148,7 @@ function ProjectScheduleContent() {
 
   const renderDeps = () => (
     <div ref={depsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F517; KEY DEPENDENCIES</div>
+      <div style={S.sectionBanner()}>🔗 KEY DEPENDENCIES</div>
       <CopyButton targetRef={depsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -178,13 +178,13 @@ function ProjectScheduleContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>Dependency types: <strong>FS</strong> (Finish-to-Start) &#x2022; <strong>SS</strong> (Start-to-Start) &#x2022; <strong>FF</strong> (Finish-to-Finish) &#x2022; <strong>SF</strong> (Start-to-Finish)</p>
+      <p style={S.subNote}>Dependency types: <strong>FS</strong> (Finish-to-Start) • <strong>SS</strong> (Start-to-Start) • <strong>FF</strong> (Finish-to-Finish) • <strong>SF</strong> (Start-to-Finish)</p>
     </div>
   );
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; SCHEDULE HEALTH</div>
+      <div style={S.sectionBanner(C.secondary)}> SCHEDULE HEALTH</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -193,8 +193,8 @@ function ProjectScheduleContent() {
           <tr><td style={S.tdLabel}>Total Float (non-CP tasks)</td><td style={S.td0}>[XX] days</td></tr>
           <tr><td style={S.tdLabelAlt}>Schedule Variance (SV)</td><td style={S.tdAlt}>[SV = EV - PV = $XXX] <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Favorable</span></td></tr>
           <tr><td style={S.tdLabel}>Schedule Performance Index (SPI)</td><td style={S.td0}>[SPI = EV/PV = X.XX] <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>&gt;1.0</span></td></tr>
-          <tr><td style={S.tdLabelAlt}>Milestones On Track</td><td style={S.tdAlt}>[X of Y] &#x2014; [X]% on schedule</td></tr>
-          <tr><td style={S.tdLabel}>Next Key Milestone</td><td style={S.td0}>[Milestone Name] &#x2014; [Date]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Milestones On Track</td><td style={S.tdAlt}>[X of Y] — [X]% on schedule</td></tr>
+          <tr><td style={S.tdLabel}>Next Key Milestone</td><td style={S.td0}>[Milestone Name] — [Date]</td></tr>
         </tbody>
       </table>
     </div>
@@ -202,7 +202,7 @@ function ProjectScheduleContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -241,7 +241,7 @@ function ProjectScheduleContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Calendar size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Project Schedule / Milestone Plan</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Schedule Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Schedule Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Defines milestones, task schedule, dependencies, and schedule health metrics. Full Schedule includes detailed tasks and dependencies; Milestone View shows key milestones and health summary.</p>

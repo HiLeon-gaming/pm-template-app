@@ -31,11 +31,11 @@ function ChangeControlLogContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F504; CHANGE CONTROL LOG</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> CHANGE CONTROL LOG</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop | PM Command Center | PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Change Control Log tracks all change requests through the formal change management process, from submission through CCB review to implementation or rejection.</strong> It ensures all scope, schedule, and budget changes are formally evaluated and approved before implementation.<br /><br />
-          Maintain this log as part of <strong style={{ fontStyle: "italic" }}>Integrated Change Control throughout execution</strong>. Aligns with PMBOK Integration Management &#x2014; Perform Integrated Change Control.
+          Maintain this log as part of <strong style={{ fontStyle: "italic" }}>Integrated Change Control throughout execution</strong>. Aligns with PMBOK Integration Management — Perform Integrated Change Control.
         </td></tr>
       </tbody>
     </table>
@@ -60,12 +60,12 @@ function ChangeControlLogContent() {
     { id: "CR-004", date: "[MM/DD]", title: "[e.g., Add advanced analytics dashboard to Phase 1]", type: "Scope", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, requestor: "[VP Sales]", schedule: "+3 weeks", budget: "+$42,000", quality: "None", status: "Rejected", sBg: C.badgeRedBg, sFg: C.badgeRedFg, ccbDate: "[MM/DD]" },
     { id: "CR-005", date: "[MM/DD]", title: "[e.g., Extend UAT period from 2 weeks to 3 weeks]", type: "Schedule", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, requestor: "[QA Lead]", schedule: "+1 week", budget: "+$8,000", quality: "Improved coverage", status: "Under Review", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ccbDate: "[Pending]" },
     { id: "CR-006", date: "[MM/DD]", title: "[e.g., Replace vendor API with in-house microservice]", type: "Technical", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, requestor: "[Dev Lead]", schedule: "+2 weeks", budget: "-$5,000", quality: "Better control", status: "Under Review", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ccbDate: "[Pending]" },
-    { id: "[CR-###]", date: "", title: "[Add change request]", type: "&#x2014;", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, requestor: "", schedule: "", budget: "", quality: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, ccbDate: "" },
+    { id: "[CR-###]", date: "", title: "[Add change request]", type: "—", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, requestor: "", schedule: "", budget: "", quality: "", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, ccbDate: "" },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; CHANGE REQUEST REGISTER</div>
+      <div style={S.sectionBanner()}> CHANGE REQUEST REGISTER</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -103,7 +103,7 @@ function ChangeControlLogContent() {
 
   const renderImpact = () => (
     <div ref={impactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; CUMULATIVE CHANGE IMPACT</div>
+      <div style={S.sectionBanner(C.secondary)}> CUMULATIVE CHANGE IMPACT</div>
       <CopyButton targetRef={impactRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -137,16 +137,16 @@ function ChangeControlLogContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; CHANGE CONTROL SUMMARY</div>
+      <div style={S.sectionBanner()}> CHANGE CONTROL SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Total CRs Submitted</td><td style={S.td0}>[6] change requests logged</td></tr>
-          <tr><td style={S.tdLabelAlt}>Approved</td><td style={S.tdAlt}>[3] approved &#x2022; cumulative impact: +$78K budget, +4.5 weeks schedule</td></tr>
+          <tr><td style={S.tdLabelAlt}>Approved</td><td style={S.tdAlt}>[3] approved • cumulative impact: +$78K budget, +4.5 weeks schedule</td></tr>
           <tr><td style={S.tdLabel}>Rejected</td><td style={S.td0}>[1] rejected (CR-004: advanced analytics deferred to Phase 2)</td></tr>
-          <tr><td style={S.tdLabelAlt}>Under Review</td><td style={S.tdAlt}>[2] pending CCB review &#x2014; next CCB meeting [MM/DD]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Under Review</td><td style={S.tdAlt}>[2] pending CCB review — next CCB meeting [MM/DD]</td></tr>
           <tr><td style={S.tdLabel}>Avg Processing Time</td><td style={S.td0}>[4] business days from submission to CCB decision</td></tr>
-          <tr><td style={S.tdLabelAlt}>Change Control Health</td><td style={S.tdAlt}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>&#x1F7E1; Amber</span> &#x2014; 3 CRs this week exceeds 2/month threshold; enforcement tightened</td></tr>
+          <tr><td style={S.tdLabelAlt}>Change Control Health</td><td style={S.tdAlt}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>🟡 Amber</span> — 3 CRs this week exceeds 2/month threshold; enforcement tightened</td></tr>
         </tbody>
       </table>
     </div>
@@ -154,7 +154,7 @@ function ChangeControlLogContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • &copy; 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -186,7 +186,7 @@ function ChangeControlLogContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><GitPullRequest size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Change Control Log</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Integrated Change Control</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Integrated Change Control</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Tracks all change requests through formal CCB review with cumulative impact analysis. Full Log includes impact analysis and summary; Quick Log shows the register only.</p>

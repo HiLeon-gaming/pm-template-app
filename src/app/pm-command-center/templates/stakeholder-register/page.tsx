@@ -37,11 +37,11 @@ function StakeholderRegisterContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F465; STAKEHOLDER REGISTER</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>👥 STAKEHOLDER REGISTER</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Stakeholder Register identifies all individuals and groups who can affect or be affected by the project.</strong> It captures their interest, influence, engagement level, communication preferences, and management strategies.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>project initiation and throughout planning</strong> to ensure all stakeholders are identified and managed. Aligns with PMBOK Stakeholder Management &#x2014; Initiating Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>project initiation and throughout planning</strong> to ensure all stakeholders are identified and managed. Aligns with PMBOK Stakeholder Management — Initiating Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -68,7 +68,7 @@ function StakeholderRegisterContent() {
 
   const renderGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; POWER / INTEREST GRID</div>
+      <div style={S.sectionBanner()}>📊 POWER / INTEREST GRID</div>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Map each stakeholder into the appropriate quadrant based on their power to influence outcomes and interest in the project.</p>
       <table style={LT}>
@@ -108,12 +108,12 @@ function StakeholderRegisterContent() {
     { name: "[e.g., James Liu]", role: "VP Engineering", org: "[Dept]", power: "High", interest: "Medium", attitude: "Supportive", pBg: "#FEF3C7", pFg: "#D97706", aBg: "#DBEAFE", aFg: "#2563EB" },
     { name: "[e.g., Maria Gomez]", role: "End User Lead", org: "[Dept]", power: "Low", interest: "High", attitude: "Neutral", pBg: "#DBEAFE", pFg: "#2563EB", aBg: "#F3F4F6", aFg: "#6B7280" },
     { name: "[e.g., David Park]", role: "CFO", org: "[Dept]", power: "High", interest: "Low", attitude: "Resistant", pBg: "#FEE2E2", pFg: "#DC2626", aBg: "#FEE2E2", aFg: "#DC2626" },
-    { name: "[Add stakeholder]", role: "", org: "", power: "&#x2014;", interest: "&#x2014;", attitude: "&#x2014;", pBg: "#F3F4F6", pFg: "#6B7280", aBg: "#F3F4F6", aFg: "#6B7280" },
+    { name: "[Add stakeholder]", role: "", org: "", power: "—", interest: "—", attitude: "—", pBg: "#F3F4F6", pFg: "#6B7280", aBg: "#F3F4F6", aFg: "#6B7280" },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CB; STAKEHOLDER REGISTER</div>
+      <div style={S.sectionBanner(C.secondary)}>📋 STAKEHOLDER REGISTER</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -145,7 +145,7 @@ function StakeholderRegisterContent() {
 
   const renderEngagement = () => (
     <div ref={engagementRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F3AF; ENGAGEMENT ASSESSMENT</div>
+      <div style={S.sectionBanner()}>🎯 ENGAGEMENT ASSESSMENT</div>
       <CopyButton targetRef={engagementRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -159,7 +159,7 @@ function StakeholderRegisterContent() {
             { who: "[Sponsor]", cur: "Supportive", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, des: "Leading", dBg: C.badgeBlueBg, dFg: C.badgeBlueFg, act: "[Schedule monthly executive briefings; involve in steering committee]" },
             { who: "[VP Eng]", cur: "Neutral", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, des: "Supportive", dBg: C.badgeGreenBg, dFg: C.badgeGreenFg, act: "[Technical deep-dive sessions; early architecture review]" },
             { who: "[End Users]", cur: "Resistant", cBg: C.badgeRedBg, cFg: C.badgeRedFg, des: "Supportive", dBg: C.badgeGreenBg, dFg: C.badgeGreenFg, act: "[Demos, pilot group, feedback loops, champion network]" },
-            { who: "[Add]", cur: "&#x2014;", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, des: "&#x2014;", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg, act: "" },
+            { who: "[Add]", cur: "—", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, des: "—", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg, act: "" },
           ].map((e, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -171,13 +171,13 @@ function StakeholderRegisterContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>Engagement levels per PMBOK: <strong>Unaware</strong> &#x2192; <strong>Resistant</strong> &#x2192; <strong>Neutral</strong> &#x2192; <strong>Supportive</strong> &#x2192; <strong>Leading</strong></p>
+      <p style={S.subNote}>Engagement levels per PMBOK: <strong>Unaware</strong> → <strong>Resistant</strong> → <strong>Neutral</strong> → <strong>Supportive</strong> → <strong>Leading</strong></p>
     </div>
   );
 
   const renderComm = () => (
     <div ref={commRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4EC; COMMUNICATION PREFERENCES</div>
+      <div style={S.sectionBanner(C.secondary)}>📬 COMMUNICATION PREFERENCES</div>
       <CopyButton targetRef={commRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -211,7 +211,7 @@ function StakeholderRegisterContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -250,7 +250,7 @@ function StakeholderRegisterContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Users size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Stakeholder Register</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Stakeholder Management &#x2022; Initiating Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Stakeholder Management • Initiating Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Identifies all stakeholders with power/interest grid, engagement assessment, and communication preferences. Full Register includes the grid; Quick Register is a compact register + communications view.</p>

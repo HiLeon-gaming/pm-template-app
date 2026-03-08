@@ -34,7 +34,7 @@ function MeetingAgendaMinutesContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4DD; MEETING AGENDA &amp; MINUTES</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>📝 MEETING AGENDA & MINUTES</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>This template combines the meeting agenda (distributed before) and minutes (captured during and distributed after) into a single document.</strong> It ensures meetings are structured, productive, and result in clear decisions and action items.<br /><br />
@@ -48,7 +48,7 @@ function MeetingAgendaMinutesContent() {
     <div ref={headerRef} style={{ marginBottom: "12px" }}>
       <table style={S.tbl}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "18%" }}>Meeting Title</td><td style={{ ...S.td0, width: "32%" }}>[e.g., Weekly Status Review]</td><td style={{ ...S.tdLabel, width: "18%" }}>Date / Time</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY, HH:MM &#x2013; HH:MM]</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "18%" }}>Meeting Title</td><td style={{ ...S.td0, width: "32%" }}>[e.g., Weekly Status Review]</td><td style={{ ...S.tdLabel, width: "18%" }}>Date / Time</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY, HH:MM – HH:MM]</td></tr>
           <tr><td style={S.tdLabelAlt}>Project Name</td><td style={S.tdAlt}>[Project Name]</td><td style={S.tdLabelAlt}>Location</td><td style={S.tdAlt}>[Room / Virtual Link]</td></tr>
           <tr><td style={S.tdLabel}>Facilitator</td><td style={S.td0}>[Name]</td><td style={S.tdLabel}>Note Taker</td><td style={S.td0}>[Name]</td></tr>
         </tbody>
@@ -63,11 +63,11 @@ function MeetingAgendaMinutesContent() {
         </tr></thead>
         <tbody>
           {[
-            { name: "[Name 1]", role: "[PM]", req: "Yes", att: "&#x2705;", notes: "" },
-            { name: "[Name 2]", role: "[Sponsor]", req: "Yes", att: "&#x2705;", notes: "" },
-            { name: "[Name 3]", role: "[BA Lead]", req: "Yes", att: "&#x2705;", notes: "" },
-            { name: "[Name 4]", role: "[Dev Lead]", req: "Yes", att: "&#x274C;", notes: "[Sent delegate]" },
-            { name: "[Name 5]", role: "[QA Lead]", req: "Optional", att: "&#x2705;", notes: "" },
+            { name: "[Name 1]", role: "[PM]", req: "Yes", att: "", notes: "" },
+            { name: "[Name 2]", role: "[Sponsor]", req: "Yes", att: "", notes: "" },
+            { name: "[Name 3]", role: "[BA Lead]", req: "Yes", att: "", notes: "" },
+            { name: "[Name 4]", role: "[Dev Lead]", req: "Yes", att: "", notes: "[Sent delegate]" },
+            { name: "[Name 5]", role: "[QA Lead]", req: "Optional", att: "", notes: "" },
             { name: "[Add attendee]", role: "", req: "", att: "", notes: "" },
           ].map((a, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -87,7 +87,7 @@ function MeetingAgendaMinutesContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; AGENDA</div>
+      <div style={S.sectionBanner()}> AGENDA</div>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -101,12 +101,12 @@ function MeetingAgendaMinutesContent() {
           {[
             { topic: "Opening / Roll Call", time: "5 min", presenter: "[Facilitator]", type: "Info", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg },
             { topic: "Review Previous Action Items", time: "10 min", presenter: "[PM]", type: "Review", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg },
-            { topic: "[e.g., Schedule Status &amp; Milestone Update]", time: "15 min", presenter: "[PM]", type: "Discussion", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg },
+            { topic: "[e.g., Schedule Status & Milestone Update]", time: "15 min", presenter: "[PM]", type: "Discussion", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg },
             { topic: "[e.g., Budget / EVM Review]", time: "10 min", presenter: "[PM]", type: "Info", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg },
-            { topic: "[e.g., Risk &amp; Issue Review]", time: "10 min", presenter: "[PM]", type: "Discussion", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg },
+            { topic: "[e.g., Risk & Issue Review]", time: "10 min", presenter: "[PM]", type: "Discussion", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg },
             { topic: "[e.g., Change Request CR-003 Review]", time: "10 min", presenter: "[BA]", type: "Decision", tBg: C.badgeRedBg, tFg: C.badgeRedFg },
             { topic: "New Business / Open Floor", time: "5 min", presenter: "[All]", type: "Discussion", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg },
-            { topic: "Action Item Review &amp; Close", time: "5 min", presenter: "[Facilitator]", type: "Review", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg },
+            { topic: "Action Item Review & Close", time: "5 min", presenter: "[Facilitator]", type: "Review", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg },
           ].map((a, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -124,13 +124,13 @@ function MeetingAgendaMinutesContent() {
           </tr>
         </tbody>
       </table>
-      <p style={S.subNote}>Meeting objective: [State the primary purpose. Example: &#x201C;Review project status, resolve blockers, and approve CR-003.&#x201D;]</p>
+      <p style={S.subNote}>Meeting objective: [State the primary purpose. Example: “Review project status, resolve blockers, and approve CR-003.”]</p>
     </div>
   );
 
   const renderMinutes = () => (
     <div ref={minutesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4DD; MEETING MINUTES (KEY DISCUSSION POINTS)</div>
+      <div style={S.sectionBanner(C.secondary)}> MEETING MINUTES (KEY DISCUSSION POINTS)</div>
       <CopyButton targetRef={minutesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -141,7 +141,7 @@ function MeetingAgendaMinutesContent() {
         <tbody>
           {[
             { topic: "Schedule Status", summary: "[e.g., On track overall. M3 (Requirements Baselined) delayed by 3 days due to stakeholder availability. Mitigation: extra review session scheduled for Friday.]" },
-            { topic: "Budget Review", summary: "[e.g., CPI = 1.13 (under budget). Vendor consulting line fully committed &#x2014; any additional work requires CR. Contingency 87% available.]" },
+            { topic: "Budget Review", summary: "[e.g., CPI = 1.13 (under budget). Vendor consulting line fully committed — any additional work requires CR. Contingency 87% available.]" },
             { topic: "Risk Review", summary: "[e.g., R2 (scope creep) elevated to Critical. 3 CRs submitted this week. PM recommends tighter change control enforcement. No new risks identified.]" },
             { topic: "CR-003 Review", summary: "[e.g., $25K security audit request. Impact analysis presented. All CCB members recommend approval. Formal vote: Approved unanimously.]" },
             { topic: "[Add topic]", summary: "[Discussion notes]" },
@@ -160,7 +160,7 @@ function MeetingAgendaMinutesContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x2705; DECISIONS MADE</div>
+      <div style={S.sectionBanner()}> DECISIONS MADE</div>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -171,8 +171,8 @@ function MeetingAgendaMinutesContent() {
         </tr></thead>
         <tbody>
           {[
-            { id: "D1", dec: "[e.g., CR-003 approved &#x2014; $25K security audit to be added to scope and budget baseline]", by: "[CCB / Sponsor]", date: "[MM/DD]" },
-            { id: "D2", dec: "[e.g., Change control enforcement tightened &#x2014; all CRs require written impact analysis before CCB review]", by: "[PM / Sponsor]", date: "[MM/DD]" },
+            { id: "D1", dec: "[e.g., CR-003 approved — $25K security audit to be added to scope and budget baseline]", by: "[CCB / Sponsor]", date: "[MM/DD]" },
+            { id: "D2", dec: "[e.g., Change control enforcement tightened — all CRs require written impact analysis before CCB review]", by: "[PM / Sponsor]", date: "[MM/DD]" },
             { id: "D3", dec: "[e.g., Extra requirements review session approved for Friday to close M3 gap]", by: "[PM]", date: "[MM/DD]" },
             { id: "[D#]", dec: "[Add decision]", by: "", date: "" },
           ].map((d, i) => {
@@ -191,7 +191,7 @@ function MeetingAgendaMinutesContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F3AF; ACTION ITEMS</div>
+      <div style={S.sectionBanner(C.secondary)}> ACTION ITEMS</div>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -208,7 +208,7 @@ function MeetingAgendaMinutesContent() {
             { id: "AI-2", action: "[e.g., Schedule extra requirements review session for Friday PM]", owner: "[BA]", due: "[MM/DD]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg, status: "New", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg },
             { id: "AI-3", action: "[e.g., Distribute updated change control process document to all team leads]", owner: "[PM]", due: "[MM/DD]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, status: "New", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg },
             { id: "AI-4", action: "[e.g., Complete vendor security audit SOW and submit to procurement]", owner: "[QA Lead]", due: "[MM/DD]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, status: "New", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg },
-            { id: "[AI-#]", action: "[Add action item]", owner: "", due: "", pri: "&#x2014;", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
+            { id: "[AI-#]", action: "[Add action item]", owner: "", due: "", pri: "—", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
           ].map((a, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -228,7 +228,7 @@ function MeetingAgendaMinutesContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -266,8 +266,8 @@ function MeetingAgendaMinutesContent() {
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Clock size={20} className="text-indigo-600" /></div>
             <div>
-              <h2 className="text-2xl font-extrabold text-slate-900">Meeting Agenda &amp; Minutes</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Communications Management &#x2022; Executing Process Group</p>
+              <h2 className="text-2xl font-extrabold text-slate-900">Meeting Agenda & Minutes</h2>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Communications Management • Executing Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Combined agenda and minutes template with decisions and action items. Full Template includes all sections; Quick Agenda shows the agenda and attendees only.</p>

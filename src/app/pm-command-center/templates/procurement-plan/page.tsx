@@ -35,11 +35,11 @@ function ProcurementPlanContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F6D2; PROCUREMENT PLAN</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>🛒 PROCUREMENT PLAN</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Procurement Plan defines how goods and services will be acquired from external sources.</strong> It includes make-or-buy decisions, contract types, vendor selection criteria, and the procurement timeline.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>procurement planning</strong> to establish sourcing strategy. Aligns with PMBOK Procurement Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>procurement planning</strong> to establish sourcing strategy. Aligns with PMBOK Procurement Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -59,14 +59,14 @@ function ProcurementPlanContent() {
 
   const renderStrategy = () => (
     <div ref={strategyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; PROCUREMENT STRATEGY</div>
+      <div style={S.sectionBanner()}> PROCUREMENT STRATEGY</div>
       <CopyButton targetRef={strategyRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Procurement Approach</td><td style={S.td0}>[Describe overall approach. Example: &#x201C;Competitive bid for software licenses; sole-source for specialized consulting; internal resources for PM and BA.&#x201D;]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Procurement Authority</td><td style={S.tdAlt}>[Who can authorize purchases? Example: &#x201C;PM: &lt;$10K; Sponsor: $10K-$50K; Procurement Dept: &gt;$50K&#x201D;]</td></tr>
-          <tr><td style={S.tdLabel}>Procurement Policies</td><td style={S.td0}>[Reference organizational procurement policies. Example: &#x201C;Must use approved vendor list; 3 bids required for &gt;$25K&#x201D;]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Standard Contract Types</td><td style={S.tdAlt}>[e.g., Fixed Price (FP) for defined scope; Time &amp; Materials (T&amp;M) for advisory work; Cost Plus (CPFF) for R&amp;D]</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Procurement Approach</td><td style={S.td0}>[Describe overall approach. Example: Competitive bid for software licenses; sole-source for specialized consulting; internal resources for PM and BA.]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Procurement Authority</td><td style={S.tdAlt}>[Who can authorize purchases? Example: PM: &lt;$10K; Sponsor: $10K-$50K; Procurement Dept: &gt;$50K]</td></tr>
+          <tr><td style={S.tdLabel}>Procurement Policies</td><td style={S.td0}>[Reference organizational procurement policies. Example: Must use approved vendor list; 3 bids required for &gt;$25K]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Standard Contract Types</td><td style={S.tdAlt}>[e.g., Fixed Price (FP) for defined scope; Time & Materials (T&M) for advisory work; Cost Plus (CPFF) for R&D]</td></tr>
         </tbody>
       </table>
     </div>
@@ -74,7 +74,7 @@ function ProcurementPlanContent() {
 
   const renderItems = () => (
     <div ref={itemsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4E6; PROCUREMENT ITEMS</div>
+      <div style={S.sectionBanner(C.secondary)}> PROCUREMENT ITEMS</div>
       <CopyButton targetRef={itemsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -93,7 +93,7 @@ function ProcurementPlanContent() {
             { id: "P3", item: "[Testing Tools License]", mb: "Buy", mBg: C.badgeBlueBg, mFg: C.badgeBlueFg, contract: "FP", val: "$[5,000]", status: "Contracted", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, note: "[Annual license; auto-renewal]" },
             { id: "P4", item: "[Training Development]", mb: "Make", mBg: C.badgeGreenBg, mFg: C.badgeGreenFg, contract: "N/A", val: "$[15,000]", status: "Planned", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg, note: "[Internal change management team will develop]" },
             { id: "P5", item: "[Security Audit]", mb: "Buy", mBg: C.badgeBlueBg, mFg: C.badgeBlueFg, contract: "FP", val: "$[12,000]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, note: "[Needed 4 weeks before go-live]" },
-            { id: "[P#]", item: "[Add item]", mb: "&#x2014;", mBg: C.badgeGrayBg, mFg: C.badgeGrayFg, contract: "", val: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, note: "" },
+            { id: "[P#]", item: "[Add item]", mb: "—", mBg: C.badgeGrayBg, mFg: C.badgeGrayFg, contract: "", val: "", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, note: "" },
           ].map((p, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -113,7 +113,7 @@ function ProcurementPlanContent() {
 
   const renderSelection = () => (
     <div ref={selectionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x2696;&#xFE0F; VENDOR SELECTION CRITERIA</div>
+      <div style={S.sectionBanner()}> VENDOR SELECTION CRITERIA</div>
       <CopyButton targetRef={selectionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -126,9 +126,9 @@ function ProcurementPlanContent() {
           {[
             { crit: "Technical Capability", weight: "30%", guide: "[Does vendor have proven expertise in the required technology stack?]" },
             { crit: "Cost / Value", weight: "25%", guide: "[Total cost of ownership including licensing, support, and hidden costs]" },
-            { crit: "Experience &amp; References", weight: "15%", guide: "[Relevant project experience; client references; case studies]" },
-            { crit: "Support &amp; SLA", weight: "15%", guide: "[Response times, availability, escalation procedures, penalty clauses]" },
-            { crit: "Cultural Fit &amp; Communication", weight: "10%", guide: "[Communication style, timezone overlap, collaboration approach]" },
+            { crit: "Experience & References", weight: "15%", guide: "[Relevant project experience; client references; case studies]" },
+            { crit: "Support & SLA", weight: "15%", guide: "[Response times, availability, escalation procedures, penalty clauses]" },
+            { crit: "Cultural Fit & Communication", weight: "10%", guide: "[Communication style, timezone overlap, collaboration approach]" },
             { crit: "Financial Stability", weight: "5%", guide: "[Company size, years in business, financial health indicators]" },
           ].map((c, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -146,7 +146,7 @@ function ProcurementPlanContent() {
 
   const renderTimeline = () => (
     <div ref={timelineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4C5; PROCUREMENT TIMELINE</div>
+      <div style={S.sectionBanner(C.secondary)}> PROCUREMENT TIMELINE</div>
       <CopyButton targetRef={timelineRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -162,8 +162,8 @@ function ProcurementPlanContent() {
             { act: "Develop SOW / RFP", start: "[MM/DD]", end: "[MM/DD]", owner: "[PM]", status: "Complete", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, del: "[SOW document for each procurement item]" },
             { act: "Issue RFP to Vendors", start: "[MM/DD]", end: "[MM/DD]", owner: "[Procurement]", status: "Complete", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, del: "[RFP distributed to qualified vendor list]" },
             { act: "Vendor Response Period", start: "[MM/DD]", end: "[MM/DD]", owner: "[Vendors]", status: "In Progress", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg, del: "[Vendor proposals received]" },
-            { act: "Evaluate &amp; Score Proposals", start: "[MM/DD]", end: "[MM/DD]", owner: "[Eval Team]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, del: "[Completed vendor scorecard]" },
-            { act: "Vendor Selection &amp; Negotiation", start: "[MM/DD]", end: "[MM/DD]", owner: "[PM + Legal]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, del: "[Selected vendor; negotiated terms]" },
+            { act: "Evaluate & Score Proposals", start: "[MM/DD]", end: "[MM/DD]", owner: "[Eval Team]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, del: "[Completed vendor scorecard]" },
+            { act: "Vendor Selection & Negotiation", start: "[MM/DD]", end: "[MM/DD]", owner: "[PM + Legal]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, del: "[Selected vendor; negotiated terms]" },
             { act: "Contract Execution", start: "[MM/DD]", end: "[MM/DD]", owner: "[Legal]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, del: "[Signed contract; PO issued]" },
             { act: "Vendor Onboarding", start: "[MM/DD]", end: "[MM/DD]", owner: "[PM]", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, del: "[Vendor access, kickoff, integration]" },
           ].map((t, i) => {
@@ -184,14 +184,14 @@ function ProcurementPlanContent() {
 
   const renderContract = () => (
     <div ref={contractRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4DD; CONTRACT MANAGEMENT</div>
+      <div style={S.sectionBanner()}>📋 CONTRACT MANAGEMENT</div>
       <CopyButton targetRef={contractRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Contract Administration</td><td style={S.td0}>[PM monitors vendor performance; Procurement manages contract amendments; Legal reviews compliance]</td></tr>
           <tr><td style={S.tdLabelAlt}>Performance Monitoring</td><td style={S.tdAlt}>[Monthly vendor scorecards; SLA compliance tracking; deliverable quality reviews]</td></tr>
           <tr><td style={S.tdLabel}>Payment Terms</td><td style={S.td0}>[Net 30; milestone-based payments; 10% holdback until final acceptance]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Dispute Resolution</td><td style={S.tdAlt}>[PM &#x2192; Procurement Manager &#x2192; Legal &#x2192; Mediation/Arbitration per contract terms]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Dispute Resolution</td><td style={S.tdAlt}>[PM → Procurement Manager → Legal → Mediation/Arbitration per contract terms]</td></tr>
           <tr><td style={S.tdLabel}>Contract Closure</td><td style={S.td0}>[Formal acceptance of all deliverables; final invoice reconciliation; lessons learned; vendor evaluation]</td></tr>
         </tbody>
       </table>
@@ -200,7 +200,7 @@ function ProcurementPlanContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -239,7 +239,7 @@ function ProcurementPlanContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><ShoppingCart size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Procurement Plan</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Procurement Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Procurement Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Defines sourcing strategy, procurement items, vendor selection criteria, and timeline. Full Plan includes all sections; Quick Plan shows items and timeline only.</p>

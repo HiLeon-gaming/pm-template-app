@@ -34,11 +34,11 @@ function RiskAssessmentMatrixContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F534; RISK ASSESSMENT MATRIX</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> RISK ASSESSMENT MATRIX</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  PM Command Center  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
-          <strong style={{ fontStyle: "italic" }}>The Risk Assessment Matrix (Probability-Impact Matrix) provides a visual tool for prioritizing risks based on their likelihood and potential impact.</strong> It maps each risk to a 5&#xD7;5 grid to determine severity ratings that drive response prioritization.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>qualitative risk analysis</strong> to prioritize the risk register. Aligns with PMBOK Risk Management &#x2014; Planning Process Group.
+          <strong style={{ fontStyle: "italic" }}>The Risk Assessment Matrix (Probability-Impact Matrix) provides a visual tool for prioritizing risks based on their likelihood and potential impact.</strong> It maps each risk to a 5×5 grid to determine severity ratings that drive response prioritization.<br /><br />
+          Use this template during <strong style={{ fontStyle: "italic" }}>qualitative risk analysis</strong> to prioritize the risk register. Aligns with PMBOK Risk Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -77,11 +77,11 @@ function RiskAssessmentMatrixContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F534; PROBABILITY &#xD7; IMPACT MATRIX (5&#xD7;5)</div>
+      <div style={S.sectionBanner()}> PROBABILITY × IMPACT MATRIX (5×5)</div>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
-          <th style={{ ...S.thPrimary, width: "18%", textAlign: "center" as const }}>Probability &#x2193; / Impact &#x2192;</th>
+          <th style={{ ...S.thPrimary, width: "18%", textAlign: "center" as const }}>Probability / Impact →</th>
           {impLabels.map((l, i) => (<th key={i} style={{ ...S.thPrimary, textAlign: "center" as const, fontSize: "9px", padding: "6px 4px" }}>{l}</th>))}
         </tr></thead>
         <tbody>
@@ -103,13 +103,13 @@ function RiskAssessmentMatrixContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>Score = Probability &#xD7; Impact. Risk IDs plotted on the matrix correspond to entries in the Risk Register.</p>
+      <p style={S.subNote}>Score = Probability × Impact. Risk IDs plotted on the matrix correspond to entries in the Risk Register.</p>
     </div>
   );
 
   const renderScale = () => (
     <div ref={scaleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CF; PROBABILITY &amp; IMPACT SCALES</div>
+      <div style={S.sectionBanner(C.secondary)}> PROBABILITY & IMPACT SCALES</div>
       <CopyButton targetRef={scaleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -168,7 +168,7 @@ function RiskAssessmentMatrixContent() {
 
   const renderThreshold = () => (
     <div ref={thresholdRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F3AF; RISK THRESHOLDS &amp; RESPONSE TRIGGERS</div>
+      <div style={S.sectionBanner()}> RISK THRESHOLDS & RESPONSE TRIGGERS</div>
       <CopyButton targetRef={thresholdRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -201,7 +201,7 @@ function RiskAssessmentMatrixContent() {
 
   const renderPlot = () => (
     <div ref={plotRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CD; RISK PLOT SUMMARY</div>
+      <div style={S.sectionBanner(C.secondary)}> RISK PLOT SUMMARY</div>
       <CopyButton targetRef={plotRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -239,7 +239,7 @@ function RiskAssessmentMatrixContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -278,10 +278,10 @@ function RiskAssessmentMatrixContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Grid3X3 size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Risk Assessment Matrix</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Risk Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Risk Management • Planning Process Group</p>
             </div>
           </div>
-          <p className="text-sm text-slate-600 mt-2 max-w-3xl">Visual 5&#xD7;5 probability-impact heat map with defined scales, thresholds, and risk plots. Full Matrix includes scales and response thresholds; Quick Matrix shows the heat map and risk plot.</p>
+          <p className="text-sm text-slate-600 mt-2 max-w-3xl">Visual 5×5 probability-impact heat map with defined scales, thresholds, and risk plots. Full Matrix includes scales and response thresholds; Quick Matrix shows the heat map and risk plot.</p>
         </div>
         <ThemeSwitcher />
         <div data-copy-exclude="true" className="mb-6">

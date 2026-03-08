@@ -36,11 +36,11 @@ function ProjectManagementPlanContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4D8; PROJECT MANAGEMENT PLAN</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> PROJECT MANAGEMENT PLAN</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop | PM Command Center | PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Project Management Plan is the master document that defines how the project is executed, monitored, controlled, and closed.</strong> It integrates and consolidates all subsidiary management plans and baselines across the ten PMBOK knowledge areas.<br /><br />
-          Use this template to <strong style={{ fontStyle: "italic" }}>consolidate all planning outputs</strong> into a single reference. Aligns with PMBOK Integration Management &#x2014; Planning Process Group.
+          Use this template to <strong style={{ fontStyle: "italic" }}>consolidate all planning outputs</strong> into a single reference. Aligns with PMBOK Integration Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -61,17 +61,17 @@ function ProjectManagementPlanContent() {
 
   const renderOverview = () => (
     <div ref={overviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>1 &#x2014; PROJECT OVERVIEW</div>
+      <div style={S.sectionBanner()}>1 — PROJECT OVERVIEW</div>
       <CopyButton targetRef={overviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Project Purpose</td><td style={S.td0}>[Summarize why this project exists and what business need it addresses]</td></tr>
           <tr><td style={S.tdLabelAlt}>Project Objectives</td><td style={S.tdAlt}>[List SMART objectives from the Project Charter]</td></tr>
           <tr><td style={S.tdLabel}>Success Criteria</td><td style={S.td0}>[Measurable criteria for project success]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Project Approach</td><td style={S.tdAlt}>[e.g., Waterfall, Agile, Hybrid &#x2014; describe the methodology and rationale]</td></tr>
-          <tr><td style={S.tdLabel}>Life Cycle Description</td><td style={S.td0}>[e.g., Initiation &#x2192; Planning &#x2192; Execution &#x2192; Monitoring &amp; Control &#x2192; Closing]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Key Assumptions</td><td style={S.tdAlt}>[Reference Assumptions &amp; Constraints Log]</td></tr>
-          <tr><td style={S.tdLabel}>Key Constraints</td><td style={S.td0}>[Reference Assumptions &amp; Constraints Log]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Project Approach</td><td style={S.tdAlt}>[e.g., Waterfall, Agile, Hybrid — describe the methodology and rationale]</td></tr>
+          <tr><td style={S.tdLabel}>Life Cycle Description</td><td style={S.td0}>[e.g., Initiation → Planning → Execution → Monitoring & Control → Closing]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Key Assumptions</td><td style={S.tdAlt}>[Reference Assumptions & Constraints Log]</td></tr>
+          <tr><td style={S.tdLabel}>Key Constraints</td><td style={S.td0}>[Reference Assumptions & Constraints Log]</td></tr>
         </tbody>
       </table>
     </div>
@@ -79,7 +79,7 @@ function ProjectManagementPlanContent() {
 
   const renderBaselines = () => (
     <div ref={baselinesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>2 &#x2014; PROJECT BASELINES</div>
+      <div style={S.sectionBanner(C.secondary)}>2 — PROJECT BASELINES</div>
       <CopyButton targetRef={baselinesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -112,7 +112,7 @@ function ProjectManagementPlanContent() {
 
   const renderKnowledge = () => (
     <div ref={knowledgeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>3 &#x2014; SUBSIDIARY MANAGEMENT PLANS</div>
+      <div style={S.sectionBanner()}>3 — SUBSIDIARY MANAGEMENT PLANS</div>
       <CopyButton targetRef={knowledgeRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -151,7 +151,7 @@ function ProjectManagementPlanContent() {
 
   const renderProcess = () => (
     <div ref={processRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>4 &#x2014; PROJECT GOVERNANCE &amp; PROCESSES</div>
+      <div style={S.sectionBanner(C.secondary)}>4 — PROJECT GOVERNANCE & PROCESSES</div>
       <CopyButton targetRef={processRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -159,11 +159,11 @@ function ProjectManagementPlanContent() {
           <th style={S.thSecondary}>Description</th>
         </tr></thead>
         <tbody>
-          <tr><td style={S.tdLabel}>Change Control Process</td><td style={S.td0}>[Change requests submitted via CR form &#x2192; Impact analysis &#x2192; CCB review &#x2192; Approve/Reject &#x2192; Update baselines]</td></tr>
+          <tr><td style={S.tdLabel}>Change Control Process</td><td style={S.td0}>[Change requests submitted via CR form → Impact analysis → CCB review → Approve/Reject → Update baselines]</td></tr>
           <tr><td style={S.tdLabelAlt}>Configuration Management</td><td style={S.tdAlt}>[Document naming conventions, version control, storage location, access controls]</td></tr>
-          <tr><td style={S.tdLabel}>Issue Escalation Path</td><td style={S.td0}>[Team Lead &#x2192; PM &#x2192; Sponsor &#x2192; Steering Committee. Escalation within 24hrs if unresolved.]</td></tr>
+          <tr><td style={S.tdLabel}>Issue Escalation Path</td><td style={S.td0}>[Team Lead → PM → Sponsor → Steering Committee. Escalation within 24hrs if unresolved.]</td></tr>
           <tr><td style={S.tdLabelAlt}>Decision Authority</td><td style={S.tdAlt}>[PM: decisions &lt;$10K / &lt;1 week impact. Sponsor: $10K-$50K. Steering Committee: &gt;$50K or &gt;2 weeks impact.]</td></tr>
-          <tr><td style={S.tdLabel}>Reporting Cadence</td><td style={S.td0}>[Weekly status reports (Mon), Bi-weekly steering committee (1st &amp; 3rd Thu), Monthly executive dashboard]</td></tr>
+          <tr><td style={S.tdLabel}>Reporting Cadence</td><td style={S.td0}>[Weekly status reports (Mon), Bi-weekly steering committee (1st & 3rd Thu), Monthly executive dashboard]</td></tr>
           <tr><td style={S.tdLabelAlt}>Lessons Learned Process</td><td style={S.tdAlt}>[Captured at each phase gate and sprint retrospective; logged in Lessons Learned Register]</td></tr>
           <tr><td style={S.tdLabel}>Phase Gate Criteria</td><td style={S.td0}>[Define Go/No-Go criteria for each phase transition. Reference Phase Gate Review Checklist.]</td></tr>
         </tbody>
@@ -173,7 +173,7 @@ function ProjectManagementPlanContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>5 &#x2014; PMP APPROVAL</div>
+      <div style={S.sectionBanner()}>5 — PMP APPROVAL</div>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -199,7 +199,7 @@ function ProjectManagementPlanContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -232,7 +232,7 @@ function ProjectManagementPlanContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><BookOpen size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Project Management Plan</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Master planning document integrating all subsidiary plans and baselines. Full PMP covers all knowledge areas and governance; Quick PMP focuses on overview, baselines, and approval.</p>

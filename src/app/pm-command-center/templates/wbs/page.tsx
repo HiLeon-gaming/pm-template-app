@@ -33,11 +33,11 @@ function WBSContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F333; WORK BREAKDOWN STRUCTURE (WBS)</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> WORK BREAKDOWN STRUCTURE (WBS)</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  |  PM Command Center  |  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The WBS hierarchically decomposes the total scope of work into manageable work packages.</strong> Each level represents an increasingly detailed definition of project work. The WBS dictionary provides descriptions, acceptance criteria, and owners for each element.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>scope definition</strong> to create the scope baseline. Aligns with PMBOK Scope Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>scope definition</strong> to create the scope baseline. Aligns with PMBOK Scope Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -63,18 +63,18 @@ function WBSContent() {
     { code: "1.1.3", name: "Conduct Kickoff Meeting", level: 2, type: "WP" },
     { code: "1.2", name: "Planning", level: 1, type: "Phase" },
     { code: "1.2.1", name: "Develop Project Management Plan", level: 2, type: "WP" },
-    { code: "1.2.2", name: "Define Scope &amp; WBS", level: 2, type: "WP" },
+    { code: "1.2.2", name: "Define Scope & WBS", level: 2, type: "WP" },
     { code: "1.2.3", name: "Develop Schedule", level: 2, type: "WP" },
-    { code: "1.2.4", name: "Estimate Costs &amp; Budget", level: 2, type: "WP" },
+    { code: "1.2.4", name: "Estimate Costs & Budget", level: 2, type: "WP" },
     { code: "1.2.5", name: "Plan Risk Management", level: 2, type: "WP" },
     { code: "1.3", name: "Execution", level: 1, type: "Phase" },
     { code: "1.3.1", name: "Requirements Gathering", level: 2, type: "WP" },
     { code: "1.3.2", name: "System Design", level: 2, type: "WP" },
     { code: "1.3.3", name: "Development / Build", level: 2, type: "WP" },
-    { code: "1.3.4", name: "Testing &amp; QA", level: 2, type: "WP" },
-    { code: "1.3.5", name: "Training &amp; Change Management", level: 2, type: "WP" },
+    { code: "1.3.4", name: "Testing & QA", level: 2, type: "WP" },
+    { code: "1.3.5", name: "Training & Change Management", level: 2, type: "WP" },
     { code: "1.4", name: "Deployment", level: 1, type: "Phase" },
-    { code: "1.4.1", name: "UAT Execution &amp; Sign-off", level: 2, type: "WP" },
+    { code: "1.4.1", name: "UAT Execution & Sign-off", level: 2, type: "WP" },
     { code: "1.4.2", name: "Production Deployment", level: 2, type: "WP" },
     { code: "1.4.3", name: "Post-Go-Live Support", level: 2, type: "WP" },
     { code: "1.5", name: "Closing", level: 1, type: "Phase" },
@@ -85,7 +85,7 @@ function WBSContent() {
 
   const renderHierarchy = () => (
     <div ref={hierarchyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; WBS HIERARCHY</div>
+      <div style={S.sectionBanner()}> WBS HIERARCHY</div>
       <CopyButton targetRef={hierarchyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -114,29 +114,29 @@ function WBSContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>Level 0 = Project | Level 1 = Phase/Deliverable | Level 2 = Work Package (lowest level for estimating &amp; assigning)</p>
+      <p style={S.subNote}>Level 0 = Project | Level 1 = Phase/Deliverable | Level 2 = Work Package (lowest level for estimating & assigning)</p>
     </div>
   );
 
   const renderDictionary = () => (
     <div ref={dictionaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4D6; WBS DICTIONARY (SAMPLE)</div>
+      <div style={S.sectionBanner(C.secondary)}> WBS DICTIONARY (SAMPLE)</div>
       <CopyButton targetRef={dictionaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
           <th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}>WBS Code</th>
           <th style={{ ...S.thSecondary, width: "16%" }}>Work Package</th>
-          <th style={S.thSecondary}>Description &amp; Acceptance Criteria</th>
+          <th style={S.thSecondary}>Description & Acceptance Criteria</th>
           <th style={{ ...S.thSecondary, width: "10%" }}>Owner</th>
           <th style={{ ...S.thSecondary, width: "10%", textAlign: "right" as const }}>Est. Hours</th>
         </tr></thead>
         <tbody>
           {[
             { code: "1.1.1", wp: "Develop Charter", desc: "[Draft project charter with objectives, scope, stakeholders; accepted when sponsor signs]", owner: "[PM]", hrs: "[40]" },
-            { code: "1.2.2", wp: "Define Scope &amp; WBS", desc: "[Create scope statement and WBS decomposition; accepted when baseline approved]", owner: "[PM]", hrs: "[60]" },
+            { code: "1.2.2", wp: "Define Scope & WBS", desc: "[Create scope statement and WBS decomposition; accepted when baseline approved]", owner: "[PM]", hrs: "[60]" },
             { code: "1.3.1", wp: "Requirements", desc: "[Elicit, analyze, document requirements; accepted when BRD is signed off]", owner: "[BA]", hrs: "[120]" },
             { code: "1.3.3", wp: "Development", desc: "[Code, unit test all modules per design specs; accepted when all unit tests pass]", owner: "[Dev Lead]", hrs: "[400]" },
-            { code: "1.3.4", wp: "Testing &amp; QA", desc: "[Execute test cases, log defects, retest; accepted when exit criteria met]", owner: "[QA Lead]", hrs: "[160]" },
+            { code: "1.3.4", wp: "Testing & QA", desc: "[Execute test cases, log defects, retest; accepted when exit criteria met]", owner: "[QA Lead]", hrs: "[160]" },
             { code: "1.4.2", wp: "Deployment", desc: "[Deploy to production per runbook; accepted when smoke tests pass]", owner: "[DevOps]", hrs: "[40]" },
             { code: "[X.X.X]", wp: "[Add WP]", desc: "[Description and acceptance criteria]", owner: "[Role]", hrs: "[hrs]" },
           ].map((d, i) => {
@@ -156,7 +156,7 @@ function WBSContent() {
 
   const renderEffort = () => (
     <div ref={effortRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4C8; EFFORT SUMMARY BY PHASE</div>
+      <div style={S.sectionBanner()}>📈 EFFORT SUMMARY BY PHASE</div>
       <CopyButton targetRef={effortRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -197,7 +197,7 @@ function WBSContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop  PM Command Center  2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -236,7 +236,7 @@ function WBSContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><GitBranch size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Work Breakdown Structure</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Scope Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Scope Management  Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Hierarchical decomposition of total scope into work packages with dictionary and effort estimates. Full WBS includes hierarchy, dictionary, and effort summary; Quick WBS shows the hierarchy only.</p>

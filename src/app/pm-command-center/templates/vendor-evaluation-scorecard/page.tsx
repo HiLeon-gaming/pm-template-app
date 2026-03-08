@@ -34,11 +34,11 @@ function VendorEvaluationContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F3C6; VENDOR EVALUATION SCORECARD</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> VENDOR EVALUATION SCORECARD</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop | PM Command Center | PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Vendor Evaluation Scorecard provides an objective, weighted comparison of vendor proposals against predefined selection criteria.</strong> Each evaluator scores independently, then scores are consolidated to produce a defensible vendor recommendation.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>vendor selection</strong> after receiving proposals. Aligns with PMBOK Procurement Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>vendor selection</strong> after receiving proposals. Aligns with PMBOK Procurement Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -50,7 +50,7 @@ function VendorEvaluationContent() {
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "18%" }}>Project Name</td><td style={{ ...S.td0, width: "32%" }}>[Project Name]</td><td style={{ ...S.tdLabel, width: "18%" }}>RFP / Bid #</td><td style={{ ...S.td0, width: "32%" }}>[RFP-YYYY-###]</td></tr>
           <tr><td style={S.tdLabelAlt}>Evaluator</td><td style={S.tdAlt}>[Name, Title]</td><td style={S.tdLabelAlt}>Date</td><td style={S.tdAlt}>[MM/DD/YYYY]</td></tr>
-          <tr><td style={S.tdLabel}>Scoring Scale</td><td colSpan={3} style={S.td0}>1 = Does Not Meet &nbsp;|&nbsp; 2 = Partially Meets &nbsp;|&nbsp; 3 = Meets &nbsp;|&nbsp; 4 = Exceeds &nbsp;|&nbsp; 5 = Significantly Exceeds</td></tr>
+          <tr><td style={S.tdLabel}>Scoring Scale</td><td colSpan={3} style={S.td0}>1 = Does Not Meet | 2 = Partially Meets | 3 = Meets | 4 = Exceeds | 5 = Significantly Exceeds</td></tr>
         </tbody>
       </table>
       <CopyButton targetRef={headerRef} label="Copy Section" />
@@ -60,9 +60,9 @@ function VendorEvaluationContent() {
   const criteria = [
     { name: "Technical Capability", weight: 30 },
     { name: "Cost / Value Proposition", weight: 25 },
-    { name: "Experience &amp; References", weight: 15 },
-    { name: "Support &amp; SLA Terms", weight: 15 },
-    { name: "Cultural Fit &amp; Communication", weight: 10 },
+    { name: "Experience & References", weight: 15 },
+    { name: "Support & SLA Terms", weight: 15 },
+    { name: "Cultural Fit & Communication", weight: 10 },
     { name: "Financial Stability", weight: 5 },
   ];
 
@@ -75,7 +75,7 @@ function VendorEvaluationContent() {
 
   const renderCriteria = () => (
     <div ref={criteriaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x2696;&#xFE0F; EVALUATION CRITERIA</div>
+      <div style={S.sectionBanner()}> EVALUATION CRITERIA</div>
       <CopyButton targetRef={criteriaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -117,7 +117,7 @@ function VendorEvaluationContent() {
 
     return (
       <div ref={scoringRef} style={{ marginBottom: "12px" }}>
-        <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; WEIGHTED SCORING MATRIX</div>
+        <div style={S.sectionBanner(C.secondary)}> WEIGHTED SCORING MATRIX</div>
         <CopyButton targetRef={scoringRef} label="Copy Section" />
         <table style={S.tbl}>
           <thead><tr>
@@ -133,7 +133,7 @@ function VendorEvaluationContent() {
                   const raw = v.scores[ci];
                   const ws = Math.round(raw * (c.weight / 100) * 100) / 100;
                   return (<td key={vi} style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "11px" }}>
-                    {raw > 0 ? <>{raw} <span style={{ color: C.textMuted, fontSize: "10px" }}>({ws})</span></> : <span style={{ color: C.textMuted }}>&#x2014;</span>}
+                    {raw > 0 ? <>{raw} <span style={{ color: C.textMuted, fontSize: "10px" }}>({ws})</span></> : <span style={{ color: C.textMuted }}>—</span>}
                   </td>);
                 })}
               </tr>);
@@ -142,8 +142,8 @@ function VendorEvaluationContent() {
               <td style={{ ...S.td0, fontWeight: 800, backgroundColor: C.primary, color: C.white }}>WEIGHTED TOTAL</td>
               {weighted.map((v, i) => (
                 <td key={i} style={{ ...S.td0, textAlign: "center" as const, fontWeight: 800, backgroundColor: v.total === maxScore && v.total > 0 ? C.accent : C.primary, color: C.white, fontSize: "14px" }}>
-                  {v.total > 0 ? v.total.toFixed(2) : "&#x2014;"}
-                  {v.total === maxScore && v.total > 0 && " &#x2B50;"}
+                  {v.total > 0 ? v.total.toFixed(2) : "—"}
+                  {v.total === maxScore && v.total > 0 && " "}
                 </td>
               ))}
             </tr>
@@ -153,26 +153,26 @@ function VendorEvaluationContent() {
                 const sorted = [...weighted].filter(w => w.total > 0).sort((a, b) => b.total - a.total);
                 const rank = sorted.findIndex(w => w.name === v.name) + 1;
                 return (<td key={i} style={{ ...S.td0, textAlign: "center" as const, fontWeight: 800, backgroundColor: C.secondary, color: C.white, fontSize: "13px" }}>
-                  {v.total > 0 ? `#${rank}` : "&#x2014;"}
+                  {v.total > 0 ? `#${rank}` : "—"}
                 </td>);
               })}
             </tr>
           </tbody>
         </table>
-        <p style={S.subNote}>Score format: Raw Score (Weighted Score). Weighted = Raw &#xD7; Weight%. Highest weighted total = recommended vendor.</p>
+        <p style={S.subNote}>Score format: Raw Score (Weighted Score). Weighted = Raw × Weight%. Highest weighted total = recommended vendor.</p>
       </div>
     );
   };
 
   const renderProsCons = () => (
     <div ref={prosConsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4DD; VENDOR STRENGTHS &amp; CONCERNS</div>
+      <div style={S.sectionBanner()}> VENDOR STRENGTHS & CONCERNS</div>
       <CopyButton targetRef={prosConsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
           <th style={{ ...S.thSecondary, width: "16%" }}>Vendor</th>
-          <th style={{ ...S.thSecondary, width: "42%", color: "#059669" }}>&#x2705; Strengths</th>
-          <th style={{ ...S.thSecondary, width: "42%", color: "#DC2626" }}>&#x26A0;&#xFE0F; Concerns</th>
+          <th style={{ ...S.thSecondary, width: "42%", color: "#059669" }}> Strengths</th>
+          <th style={{ ...S.thSecondary, width: "42%", color: "#DC2626" }}>⚠️ Concerns</th>
         </tr></thead>
         <tbody>
           {[
@@ -194,13 +194,13 @@ function VendorEvaluationContent() {
 
   const renderRecommend = () => (
     <div ref={recommendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F3C6; RECOMMENDATION &amp; DECISION</div>
+      <div style={S.sectionBanner(C.secondary)}> RECOMMENDATION & DECISION</div>
       <CopyButton targetRef={recommendRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Recommended Vendor</td><td style={{ ...S.td0, fontWeight: 700 }}>[Vendor A &#x2014; highest weighted score of X.XX]</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Recommended Vendor</td><td style={{ ...S.td0, fontWeight: 700 }}>[Vendor A — highest weighted score of X.XX]</td></tr>
           <tr><td style={S.tdLabelAlt}>Rationale</td><td style={S.tdAlt}>[Summarize why this vendor is the best choice, addressing both strengths and mitigations for concerns.]</td></tr>
-          <tr><td style={S.tdLabel}>Proposed Contract Type</td><td style={S.td0}>[e.g., Time &amp; Materials with not-to-exceed cap of $XX,XXX]</td></tr>
+          <tr><td style={S.tdLabel}>Proposed Contract Type</td><td style={S.td0}>[e.g., Time & Materials with not-to-exceed cap of $XX,XXX]</td></tr>
           <tr><td style={S.tdLabelAlt}>Negotiation Points</td><td style={S.tdAlt}>[e.g., Negotiate 10% discount for multi-year commitment; stronger SLA penalties; IP ownership clause]</td></tr>
           <tr><td style={S.tdLabel}>Alternative Vendor</td><td style={S.td0}>[Vendor C as backup if negotiations fail with Vendor A]</td></tr>
           <tr><td style={S.tdLabelAlt}>Decision Required By</td><td style={S.tdAlt}>[MM/DD/YYYY]</td></tr>
@@ -234,7 +234,7 @@ function VendorEvaluationContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -273,7 +273,7 @@ function VendorEvaluationContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Award size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Vendor Evaluation Scorecard</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Procurement Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Procurement Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Weighted scoring comparison of vendor proposals with strengths/concerns analysis and recommendation. Full Scorecard includes all sections; Quick Compare shows the scoring matrix and recommendation.</p>

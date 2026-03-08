@@ -33,11 +33,11 @@ function RiskRegisterContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x26A0;&#xFE0F; RISK REGISTER</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> RISK REGISTER</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  PM Command Center  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Risk Register is the central repository for all identified project risks, their probability, impact, response strategies, and current status.</strong> It is a living document updated throughout the project lifecycle.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>risk identification and throughout monitoring</strong>. Aligns with PMBOK Risk Management &#x2014; Planning &amp; Monitoring Process Groups.
+          Use this template during <strong style={{ fontStyle: "italic" }}>risk identification and throughout monitoring</strong>. Aligns with PMBOK Risk Management — Planning & Monitoring Process Groups.
         </td></tr>
       </tbody>
     </table>
@@ -63,12 +63,12 @@ function RiskRegisterContent() {
     { id: "R5", desc: "[e.g., Budget overrun due to underestimated effort]", cat: "Cost", cBg: C.badgeRedBg, cFg: C.badgeRedFg, prob: "Low", imp: "High", score: "8", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, sLbl: "Medium", strategy: "Mitigate", owner: "[PM]", status: "Monitoring", stBg: C.badgeAmberBg, stFg: C.badgeAmberFg },
     { id: "R6", desc: "[e.g., User adoption lower than expected]", cat: "Stakeholder", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, prob: "Med", imp: "Med", score: "9", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, sLbl: "Medium", strategy: "Mitigate", owner: "[Change Mgr]", status: "Open", stBg: C.badgeRedBg, stFg: C.badgeRedFg },
     { id: "R7", desc: "[e.g., Security vulnerability discovered in testing]", cat: "Technical", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, prob: "Low", imp: "Very High", score: "10", sBg: C.badgeRedBg, sFg: C.badgeRedFg, sLbl: "High", strategy: "Avoid", owner: "[QA Lead]", status: "Closed", stBg: C.badgeGreenBg, stFg: C.badgeGreenFg },
-    { id: "[R#]", desc: "[Add risk]", cat: "&#x2014;", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, prob: "", imp: "", score: "", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, sLbl: "&#x2014;", strategy: "", owner: "", status: "&#x2014;", stBg: C.badgeGrayBg, stFg: C.badgeGrayFg },
+    { id: "[R#]", desc: "[Add risk]", cat: "—", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, prob: "", imp: "", score: "", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, sLbl: "—", strategy: "", owner: "", status: "—", stBg: C.badgeGrayBg, stFg: C.badgeGrayFg },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; RISK LOG</div>
+      <div style={S.sectionBanner()}>📋 RISK LOG</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -101,13 +101,13 @@ function RiskRegisterContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>P = Probability (1-5) &#x2022; I = Impact (1-5) &#x2022; Score = P &#xD7; I &#x2022; Rating: Critical (16-25) | High (10-15) | Medium (5-9) | Low (1-4)</p>
+      <p style={S.subNote}>P = Probability (1-5) • I = Impact (1-5) • Score = P × I • Rating: Critical (16-25) | High (10-15) | Medium (5-9) | Low (1-4)</p>
     </div>
   );
 
   const renderResponse = () => (
     <div ref={responseRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F6E1;&#xFE0F; RISK RESPONSE PLANS</div>
+      <div style={S.sectionBanner(C.secondary)}> RISK RESPONSE PLANS</div>
       <CopyButton targetRef={responseRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -137,13 +137,13 @@ function RiskRegisterContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>Strategies: <strong>Avoid</strong> (eliminate threat) &#x2022; <strong>Mitigate</strong> (reduce P or I) &#x2022; <strong>Transfer</strong> (shift to 3rd party) &#x2022; <strong>Accept</strong> (acknowledge &amp; monitor) &#x2022; <strong>Escalate</strong> (above PM authority)</p>
+      <p style={S.subNote}>Strategies: <strong>Avoid</strong> (eliminate threat) • <strong>Mitigate</strong> (reduce P or I) • <strong>Transfer</strong> (shift to 3rd party) • <strong>Accept</strong> (acknowledge & monitor) • <strong>Escalate</strong> (above PM authority)</p>
     </div>
   );
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; RISK SUMMARY DASHBOARD</div>
+      <div style={S.sectionBanner()}>📊 RISK SUMMARY DASHBOARD</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -155,9 +155,9 @@ function RiskRegisterContent() {
           <th style={S.thSecondary}>Trend</th>
         </tr></thead>
         <tbody>
-          <tr><td style={S.td0}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>Critical</span></td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[1]</td><td style={{ ...S.td0, textAlign: "center" as const }}>[0]</td><td style={{ ...S.td0, textAlign: "center" as const }}>[0]</td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[1]</td><td style={{ ...S.td0, fontSize: "11px" }}>[Stable &#x2014; scope creep risk requires active management]</td></tr>
-          <tr><td style={S.tdAlt}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>High</span></td><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700 }}>[2]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}>[0]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}>[1]</td><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700 }}>[3]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Improving &#x2014; security risk closed after remediation]</td></tr>
-          <tr><td style={S.td0}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Medium</span></td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[1]</td><td style={{ ...S.td0, textAlign: "center" as const }}>[2]</td><td style={{ ...S.td0, textAlign: "center" as const }}>[0]</td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[3]</td><td style={{ ...S.td0, fontSize: "11px" }}>[Stable &#x2014; monitoring API and budget risks]</td></tr>
+          <tr><td style={S.td0}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>Critical</span></td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[1]</td><td style={{ ...S.td0, textAlign: "center" as const }}>[0]</td><td style={{ ...S.td0, textAlign: "center" as const }}>[0]</td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[1]</td><td style={{ ...S.td0, fontSize: "11px" }}>[Stable — scope creep risk requires active management]</td></tr>
+          <tr><td style={S.tdAlt}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>High</span></td><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700 }}>[2]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}>[0]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}>[1]</td><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700 }}>[3]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Improving — security risk closed after remediation]</td></tr>
+          <tr><td style={S.td0}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Medium</span></td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[1]</td><td style={{ ...S.td0, textAlign: "center" as const }}>[2]</td><td style={{ ...S.td0, textAlign: "center" as const }}>[0]</td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[3]</td><td style={{ ...S.td0, fontSize: "11px" }}>[Stable — monitoring API and budget risks]</td></tr>
           <tr><td style={S.tdAlt}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Low</span></td><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700 }}>[0]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}>[0]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}>[0]</td><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700 }}>[0]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[None identified at this rating]</td></tr>
         </tbody>
       </table>
@@ -165,9 +165,9 @@ function RiskRegisterContent() {
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Total Risks Identified</td><td style={S.td0}>[7] risks across [5] categories</td></tr>
           <tr><td style={S.tdLabelAlt}>Open / Active Risks</td><td style={S.tdAlt}>[4] open + [2] monitoring = [6] active</td></tr>
-          <tr><td style={S.tdLabel}>Total Contingency Allocated</td><td style={S.td0}>$[62,775] &#x2014; $[8,000] used &#x2014; $[54,775] remaining</td></tr>
-          <tr><td style={S.tdLabelAlt}>Top Risk This Period</td><td style={S.tdAlt}>[R2 &#x2014; Scope creep: 3 CRs submitted this week, approaching trigger threshold]</td></tr>
-          <tr><td style={S.tdLabel}>Next Risk Review</td><td style={S.td0}>[MM/DD/YYYY] &#x2014; [Weekly risk review meeting with project team]</td></tr>
+          <tr><td style={S.tdLabel}>Total Contingency Allocated</td><td style={S.td0}>$[62,775] — $[8,000] used — $[54,775] remaining</td></tr>
+          <tr><td style={S.tdLabelAlt}>Top Risk This Period</td><td style={S.tdAlt}>[R2 — Scope creep: 3 CRs submitted this week, approaching trigger threshold]</td></tr>
+          <tr><td style={S.tdLabel}>Next Risk Review</td><td style={S.td0}>[MM/DD/YYYY] — [Weekly risk review meeting with project team]</td></tr>
         </tbody>
       </table>
     </div>
@@ -175,7 +175,7 @@ function RiskRegisterContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -208,7 +208,7 @@ function RiskRegisterContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><AlertTriangle size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Risk Register</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Risk Management &#x2022; Planning &amp; Monitoring</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Risk Management • Planning & Monitoring</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Central repository for identified risks with probability, impact, response strategies, and status tracking. Full Register includes response plans and dashboard; Quick Register shows the risk log only.</p>

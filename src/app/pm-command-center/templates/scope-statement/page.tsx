@@ -34,11 +34,11 @@ function ScopeStatementContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4D1; PROJECT SCOPE STATEMENT</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>📋 PROJECT SCOPE STATEMENT</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop | PM Command Center | PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Project Scope Statement describes the project scope, major deliverables, exclusions, assumptions, and constraints.</strong> It serves as the foundation for the WBS and provides a documented basis for making future project decisions.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>scope planning</strong> to establish what is and is not included. Aligns with PMBOK Scope Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>scope planning</strong> to establish what is and is not included. Aligns with PMBOK Scope Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -59,14 +59,14 @@ function ScopeStatementContent() {
 
   const renderScopeDesc = () => (
     <div ref={scopeDescRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>1 &#x2014; SCOPE DESCRIPTION</div>
+      <div style={S.sectionBanner()}>1 — SCOPE DESCRIPTION</div>
       <CopyButton targetRef={scopeDescRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Product Scope</td><td style={S.td0}>[Describe the features and functions of the product, service, or result. Example: &#x201C;An automated invoicing system that generates, sends, and tracks invoices with ERP integration.&#x201D;]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Project Scope</td><td style={S.tdAlt}>[Describe the work required to deliver the product. Example: &#x201C;Requirements gathering, system design, development, testing, training, and deployment of the invoicing module.&#x201D;]</td></tr>
-          <tr><td style={S.tdLabel}>Business Objectives</td><td style={S.td0}>[Link to charter objectives. Example: &#x201C;Reduce invoice errors by 95%, cut processing time by 60%.&#x201D;]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Project Boundaries</td><td style={S.tdAlt}>[Define what this project covers and where it ends. Example: &#x201C;Covers US operations only; EMEA rollout is a separate project.&#x201D;]</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Product Scope</td><td style={S.td0}>[Describe the features and functions of the product, service, or result. Example: ❌An automated invoicing system that generates, sends, and tracks invoices with ERP integration.]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Project Scope</td><td style={S.tdAlt}>[Describe the work required to deliver the product. Example: ❌Requirements gathering, system design, development, testing, training, and deployment of the invoicing module.]</td></tr>
+          <tr><td style={S.tdLabel}>Business Objectives</td><td style={S.td0}>[Link to charter objectives. Example: ❌Reduce invoice errors by 95%, cut processing time by 60%.]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Project Boundaries</td><td style={S.tdAlt}>[Define what this project covers and where it ends. Example: ❌Covers US operations only; EMEA rollout is a separate project.]</td></tr>
         </tbody>
       </table>
     </div>
@@ -74,7 +74,7 @@ function ScopeStatementContent() {
 
   const renderDeliverables = () => (
     <div ref={deliverablesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>2 &#x2014; PROJECT DELIVERABLES</div>
+      <div style={S.sectionBanner(C.secondary)}>2 — PROJECT DELIVERABLES</div>
       <CopyButton targetRef={deliverablesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -92,7 +92,7 @@ function ScopeStatementContent() {
             { id: "D4", name: "Test Results", desc: "[UAT test cases, execution results, defect resolution log]", phase: "Execution", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
             { id: "D5", name: "Training Materials", desc: "[User guides, quick-reference cards, video tutorials]", phase: "Execution", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
             { id: "D6", name: "Deployment Package", desc: "[Release notes, runbook, rollback plan]", phase: "Closing", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
-            { id: "D7", name: "[Add Deliverable]", desc: "[Description]", phase: "[Phase]", pri: "&#x2014;", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg },
+            { id: "D7", name: "[Add Deliverable]", desc: "[Description]", phase: "[Phase]", pri: "—", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg },
           ].map((d, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={d.id}>
@@ -110,7 +110,7 @@ function ScopeStatementContent() {
 
   const renderExclusions = () => (
     <div ref={exclusionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>3 &#x2014; EXCLUSIONS (OUT OF SCOPE)</div>
+      <div style={S.sectionBanner()}>3 — EXCLUSIONS (OUT OF SCOPE)</div>
       <CopyButton targetRef={exclusionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -143,7 +143,7 @@ function ScopeStatementContent() {
 
   const renderAcceptance = () => (
     <div ref={acceptanceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>4 &#x2014; ACCEPTANCE CRITERIA</div>
+      <div style={S.sectionBanner(C.secondary)}>4 — ACCEPTANCE CRITERIA</div>
       <CopyButton targetRef={acceptanceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -173,15 +173,15 @@ function ScopeStatementContent() {
 
   const renderConstraints = () => (
     <div ref={constraintsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>5 &#x2014; ASSUMPTIONS &amp; CONSTRAINTS</div>
+      <div style={S.sectionBanner()}>5 — ASSUMPTIONS & CONSTRAINTS</div>
       <CopyButton targetRef={constraintsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
-          <th style={{ ...S.thSecondary, width: "50%" }}>&#x2705; Assumptions</th>
-          <th style={{ ...S.thPrimary, width: "50%" }}>&#x1F6A7; Constraints</th>
+          <th style={{ ...S.thSecondary, width: "50%" }}>✅ Assumptions</th>
+          <th style={{ ...S.thPrimary, width: "50%" }}>📋 Constraints</th>
         </tr></thead>
         <tbody>
-          <tr><td style={S.td0}>[e.g., Requirements will be stable after sign-off with minimal changes]</td><td style={S.td0}>[e.g., Must use existing technology stack &#x2014; no new platforms]</td></tr>
+          <tr><td style={S.td0}>[e.g., Requirements will be stable after sign-off with minimal changes]</td><td style={S.td0}>[e.g., Must use existing technology stack — no new platforms]</td></tr>
           <tr><td style={S.tdAlt}>[e.g., Test environment will be available 4 weeks before UAT]</td><td style={S.tdAlt}>[e.g., Go-live must occur during the Q4 change window]</td></tr>
           <tr><td style={S.td0}>[e.g., Vendor will provide API documentation on time]</td><td style={S.td0}>[e.g., No more than 3 concurrent projects for shared resources]</td></tr>
           <tr><td style={S.tdAlt}>[Add assumption]</td><td style={S.tdAlt}>[Add constraint]</td></tr>
@@ -192,7 +192,7 @@ function ScopeStatementContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>6 &#x2014; SCOPE APPROVAL</div>
+      <div style={S.sectionBanner(C.secondary)}>6 — SCOPE APPROVAL</div>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -219,7 +219,7 @@ function ScopeStatementContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -258,7 +258,7 @@ function ScopeStatementContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><FileText size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Project Scope Statement</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Scope Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Scope Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Defines the project and product scope with deliverables, exclusions, acceptance criteria, and constraints. Full Scope Statement includes all 6 sections; Quick Scope focuses on scope description, deliverables, and exclusions.</p>

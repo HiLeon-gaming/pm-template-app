@@ -33,11 +33,11 @@ function LessonsLearnedRegisterContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4A1; LESSONS LEARNED REGISTER</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>💡 LESSONS LEARNED REGISTER</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Lessons Learned Register captures knowledge gained during the project that can improve future project performance.</strong> It documents what went well, what could be improved, and what should be avoided, with actionable recommendations for the organization.<br /><br />
-          Collect lessons <strong style={{ fontStyle: "italic" }}>throughout the project lifecycle, not just at closure</strong>. Conduct formal lessons learned sessions at phase gates and project close. Aligns with PMBOK Integration Management &#x2014; Manage Project Knowledge.
+          Collect lessons <strong style={{ fontStyle: "italic" }}>throughout the project lifecycle, not just at closure</strong>. Conduct formal lessons learned sessions at phase gates and project close. Aligns with PMBOK Integration Management — Manage Project Knowledge.
         </td></tr>
       </tbody>
     </table>
@@ -57,20 +57,20 @@ function LessonsLearnedRegisterContent() {
   );
 
   const lessons = [
-    { id: "LL-001", phase: "Initiating", cat: "Stakeholder", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, desc: "[Early stakeholder mapping identified 3 previously unknown influencers who became project champions]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Conduct stakeholder analysis workshop in first 2 weeks of all future projects]" },
-    { id: "LL-002", phase: "Planning", cat: "Scope", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "&#x1F7E1; Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "[Initial requirements elicitation was insufficient &#x2014; 6 CRs submitted during execution, adding 17% to schedule]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Add scope freeze milestone; invest 2x time in requirements workshops; require BA sign-off before baseline]" },
-    { id: "LL-003", phase: "Planning", cat: "Resource", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "&#x1F534; Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "[Dev Lead assigned at 110% utilization &#x2014; burnout risk materialized, velocity dropped 20% in Sprint 5]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Cap resource allocation at 90%; require cross-training plan for all critical roles; no single points of failure]" },
-    { id: "LL-004", phase: "Executing", cat: "Vendor", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, desc: "[Weekly vendor checkpoint meetings kept integration on track despite documentation gaps]", impact: "Med", iBg: C.badgeAmberBg, iFg: C.badgeAmberFg, rec: "[Include weekly vendor progress reports as contract requirement; assign PM liaison for all vendor engagements]" },
-    { id: "LL-005", phase: "Executing", cat: "Quality", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, desc: "[Automated testing pipeline caught 85% of defects before QA, reducing QA cycle by 30%]", impact: "Med", iBg: C.badgeAmberBg, iFg: C.badgeAmberFg, rec: "[Mandate automated testing framework setup in Sprint 0 for all development projects]" },
-    { id: "LL-006", phase: "Executing", cat: "Technical", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: "&#x1F534; Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "[Test environment instability caused 2-week cumulative QA delay &#x2014; shared environment with other projects]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Provision dedicated test environment in project charter; include infra readiness as Phase Gate 1 criteria]" },
-    { id: "LL-007", phase: "M&C", cat: "Change Mgmt", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: "&#x1F7E1; Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "[Change control process was too informal initially &#x2014; 3 CRs in one week before enforcement tightened]", impact: "Med", iBg: C.badgeAmberBg, iFg: C.badgeAmberFg, rec: "[Implement formal change control from Day 1; require written impact analysis for all CRs before CCB review]" },
-    { id: "LL-008", phase: "Closing", cat: "Adoption", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, desc: "[User champion network achieved 95% adoption in 30 days vs 80% target &#x2014; champions drove peer-to-peer training]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Establish champion network during planning phase for all user-facing projects; budget for champion incentives]" },
-    { id: "[LL-###]", phase: "", cat: "&#x2014;", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, type: "&#x2014;", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, desc: "[Add lesson]", impact: "", iBg: C.badgeGrayBg, iFg: C.badgeGrayFg, rec: "" },
+    { id: "LL-001", phase: "Initiating", cat: "Stakeholder", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: " Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, desc: "[Early stakeholder mapping identified 3 previously unknown influencers who became project champions]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Conduct stakeholder analysis workshop in first 2 weeks of all future projects]" },
+    { id: "LL-002", phase: "Planning", cat: "Scope", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: " Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "[Initial requirements elicitation was insufficient — 6 CRs submitted during execution, adding 17% to schedule]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Add scope freeze milestone; invest 2x time in requirements workshops; require BA sign-off before baseline]" },
+    { id: "LL-003", phase: "Planning", cat: "Resource", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: " Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "[Dev Lead assigned at 110% utilization — burnout risk materialized, velocity dropped 20% in Sprint 5]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Cap resource allocation at 90%; require cross-training plan for all critical roles; no single points of failure]" },
+    { id: "LL-004", phase: "Executing", cat: "Vendor", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: " Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, desc: "[Weekly vendor checkpoint meetings kept integration on track despite documentation gaps]", impact: "Med", iBg: C.badgeAmberBg, iFg: C.badgeAmberFg, rec: "[Include weekly vendor progress reports as contract requirement; assign PM liaison for all vendor engagements]" },
+    { id: "LL-005", phase: "Executing", cat: "Quality", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, type: " Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, desc: "[Automated testing pipeline caught 85% of defects before QA, reducing QA cycle by 30%]", impact: "Med", iBg: C.badgeAmberBg, iFg: C.badgeAmberFg, rec: "[Mandate automated testing framework setup in Sprint 0 for all development projects]" },
+    { id: "LL-006", phase: "Executing", cat: "Technical", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, type: " Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "[Test environment instability caused 2-week cumulative QA delay — shared environment with other projects]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Provision dedicated test environment in project charter; include infra readiness as Phase Gate 1 criteria]" },
+    { id: "LL-007", phase: "M&C", cat: "Change Mgmt", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, type: " Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "[Change control process was too informal initially — 3 CRs in one week before enforcement tightened]", impact: "Med", iBg: C.badgeAmberBg, iFg: C.badgeAmberFg, rec: "[Implement formal change control from Day 1; require written impact analysis for all CRs before CCB review]" },
+    { id: "LL-008", phase: "Closing", cat: "Adoption", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, type: " Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, desc: "[User champion network achieved 95% adoption in 30 days vs 80% target — champions drove peer-to-peer training]", impact: "High", iBg: C.badgeRedBg, iFg: C.badgeRedFg, rec: "[Establish champion network during planning phase for all user-facing projects; budget for champion incentives]" },
+    { id: "[LL-###]", phase: "", cat: "—", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, type: "—", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, desc: "[Add lesson]", impact: "", iBg: C.badgeGrayBg, iFg: C.badgeGrayFg, rec: "" },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; LESSON LOG</div>
+      <div style={S.sectionBanner()}>📋 LESSON LOG</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -102,15 +102,15 @@ function LessonsLearnedRegisterContent() {
 
   const renderAnalysis = () => (
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; LESSON ANALYSIS BY CATEGORY</div>
+      <div style={S.sectionBanner(C.secondary)}>📊 LESSON ANALYSIS BY CATEGORY</div>
       <CopyButton targetRef={analysisRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
           <th style={S.thSecondary}>Category</th>
           <th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}>Total</th>
-          <th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}>&#x1F7E2; Wins</th>
-          <th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}>&#x1F7E1; Improve</th>
-          <th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}>&#x1F534; Avoid</th>
+          <th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}> Wins</th>
+          <th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}> Improve</th>
+          <th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}> Avoid</th>
         </tr></thead>
         <tbody>
           {[
@@ -136,7 +136,7 @@ function LessonsLearnedRegisterContent() {
 
   const renderRec = () => (
     <div ref={recRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F3AF; TOP ORGANIZATIONAL RECOMMENDATIONS</div>
+      <div style={S.sectionBanner()}>🎯 TOP ORGANIZATIONAL RECOMMENDATIONS</div>
       <CopyButton targetRef={recRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -147,9 +147,9 @@ function LessonsLearnedRegisterContent() {
         </tr></thead>
         <tbody>
           {[
-            { rec: "[Invest more time in requirements elicitation &#x2014; add scope freeze milestone to project methodology]", owner: "[PMO]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
+            { rec: "[Invest more time in requirements elicitation — add scope freeze milestone to project methodology]", owner: "[PMO]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
             { rec: "[Cap resource allocation at 90% and require cross-training plan for all critical roles]", owner: "[Resource Mgr]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
-            { rec: "[Provision dedicated test environments &#x2014; add infra readiness to Phase Gate 1 criteria]", owner: "[IT Ops]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
+            { rec: "[Provision dedicated test environments — add infra readiness to Phase Gate 1 criteria]", owner: "[IT Ops]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
             { rec: "[Establish user champion network during planning phase for all user-facing projects]", owner: "[Change Mgmt]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
             { rec: "[Mandate automated testing framework in Sprint 0 for all development projects]", owner: "[QA Practice]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
           ].map((r, i) => {
@@ -169,7 +169,7 @@ function LessonsLearnedRegisterContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -207,7 +207,7 @@ function LessonsLearnedRegisterContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Lightbulb size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Lessons Learned Register</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Manage Project Knowledge</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Manage Project Knowledge</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Captures project knowledge with wins, improvements, and avoidance items. Full Register includes analysis and recommendations; Quick Register shows the lesson log only.</p>

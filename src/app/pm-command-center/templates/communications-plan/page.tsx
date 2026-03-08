@@ -33,11 +33,11 @@ function CommunicationsPlanContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4E3; COMMUNICATIONS PLAN</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> COMMUNICATIONS PLAN</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  PM Command Center  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Communications Plan defines who needs what information, when, how, and from whom.</strong> It ensures the right stakeholders receive the right information at the right time through the right channels.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>communications planning</strong> to establish information flow. Aligns with PMBOK Communications Management &#x2014; Planning Process Group.
+          Use this template during <strong style={{ fontStyle: "italic" }}>communications planning</strong> to establish information flow. Aligns with PMBOK Communications Management — Planning Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -57,7 +57,7 @@ function CommunicationsPlanContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; COMMUNICATIONS MATRIX</div>
+      <div style={S.sectionBanner()}>COMMUNICATIONS MATRIX</div>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -73,13 +73,13 @@ function CommunicationsPlanContent() {
           {[
             { comm: "Steering Committee", aud: "[Sponsor, CIO, VP]", method: "Meeting", freq: "Monthly", owner: "[PM]", content: "[Executive summary, budget/schedule status, key risks, decisions needed]", dir: "Push", dBg: C.badgeRedBg, dFg: C.badgeRedFg },
             { comm: "Weekly Status Report", aud: "[Sponsor, Stakeholders]", method: "Email", freq: "Weekly", owner: "[PM]", content: "[RAG status, milestones, risks, issues, action items, EVM metrics]", dir: "Push", dBg: C.badgeRedBg, dFg: C.badgeRedFg },
-            { comm: "Team Standup", aud: "[Project Team]", method: "Meeting", freq: "Daily", owner: "[PM/SM]", content: "[Yesterday, today, blockers &#x2014; 15 min timebox]", dir: "Interactive", dBg: C.badgeBlueBg, dFg: C.badgeBlueFg },
+            { comm: "Team Standup", aud: "[Project Team]", method: "Meeting", freq: "Daily", owner: "[PM/SM]", content: "[Yesterday, today, blockers — 15 min timebox]", dir: "Interactive", dBg: C.badgeBlueBg, dFg: C.badgeBlueFg },
             { comm: "Sprint Review / Demo", aud: "[PO, Stakeholders]", method: "Meeting", freq: "Bi-weekly", owner: "[Dev Lead]", content: "[Completed features demo, feedback collection, backlog updates]", dir: "Interactive", dBg: C.badgeBlueBg, dFg: C.badgeBlueFg },
             { comm: "Risk Review", aud: "[PM, Team Leads]", method: "Meeting", freq: "Weekly", owner: "[PM]", content: "[Risk register review, new risks, trigger status, response updates]", dir: "Interactive", dBg: C.badgeBlueBg, dFg: C.badgeBlueFg },
             { comm: "Change Advisory Board", aud: "[CCB Members]", method: "Meeting", freq: "As Needed", owner: "[PM]", content: "[CR review, impact analysis, approval decisions]", dir: "Interactive", dBg: C.badgeBlueBg, dFg: C.badgeBlueFg },
             { comm: "Project Dashboard", aud: "[All Stakeholders]", method: "Portal", freq: "Real-time", owner: "[PM]", content: "[Live metrics, schedule, budget, quality KPIs]", dir: "Pull", dBg: C.badgeGreenBg, dFg: C.badgeGreenFg },
             { comm: "Go-Live Comms", aud: "[All Users, Mgmt]", method: "Email + Town Hall", freq: "One-time", owner: "[Change Mgr]", content: "[Release announcement, training resources, support contacts, FAQs]", dir: "Push", dBg: C.badgeRedBg, dFg: C.badgeRedFg },
-            { comm: "[Add communication]", aud: "", method: "", freq: "", owner: "", content: "", dir: "&#x2014;", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg },
+            { comm: "[Add communication]", aud: "", method: "", freq: "", owner: "", content: "", dir: "—", dBg: C.badgeGrayBg, dFg: C.badgeGrayFg },
           ].map((c, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -94,13 +94,13 @@ function CommunicationsPlanContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}><strong>Push</strong> = sender initiates (email, report) &#x2022; <strong>Pull</strong> = receiver retrieves (dashboard, wiki) &#x2022; <strong>Interactive</strong> = two-way exchange (meeting, workshop)</p>
+      <p style={S.subNote}><strong>Push</strong> = sender initiates (email, report) • <strong>Pull</strong> = receiver retrieves (dashboard, wiki) • <strong>Interactive</strong> = two-way exchange (meeting, workshop)</p>
     </div>
   );
 
   const renderEscalation = () => (
     <div ref={escalationRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F6A8; ESCALATION MATRIX</div>
+      <div style={S.sectionBanner(C.secondary)}>🚨 ESCALATION MATRIX</div>
       <CopyButton targetRef={escalationRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -131,13 +131,13 @@ function CommunicationsPlanContent() {
 
   const renderTools = () => (
     <div ref={toolsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F6E0;&#xFE0F; COMMUNICATION TOOLS &amp; CHANNELS</div>
+      <div style={S.sectionBanner()}> COMMUNICATION TOOLS & CHANNELS</div>
       <CopyButton targetRef={toolsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
           <th style={{ ...S.thSecondary, width: "18%" }}>Tool / Channel</th>
           <th style={{ ...S.thSecondary, width: "14%", textAlign: "center" as const }}>Type</th>
-          <th style={S.thSecondary}>Purpose &amp; Usage Guidelines</th>
+          <th style={S.thSecondary}>Purpose & Usage Guidelines</th>
           <th style={{ ...S.thSecondary, width: "14%" }}>Access</th>
         </tr></thead>
         <tbody>
@@ -164,7 +164,7 @@ function CommunicationsPlanContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -203,7 +203,7 @@ function CommunicationsPlanContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><MessageSquare size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Communications Plan</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Communications Management &#x2022; Planning Process Group</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Communications Management • Planning Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Defines stakeholder communication needs with matrix, escalation paths, and tools. Full Plan includes all sections; Quick Plan shows the communications matrix only.</p>

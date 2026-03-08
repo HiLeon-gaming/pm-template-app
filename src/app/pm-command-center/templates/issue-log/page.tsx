@@ -31,11 +31,11 @@ function IssueLogContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F6A8; ISSUE LOG</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}> ISSUE LOG</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop  |  PM Command Center  |  PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Issue Log tracks problems that have already occurred and require resolution.</strong> Unlike risks (which are uncertain future events), issues are current problems impacting the project that need immediate attention and resolution.<br /><br />
-          Maintain this log throughout <strong style={{ fontStyle: "italic" }}>project execution and monitoring</strong>. Aligns with PMBOK Integration Management &#x2014; Monitoring &amp; Controlling.
+          Maintain this log throughout <strong style={{ fontStyle: "italic" }}>project execution and monitoring</strong>. Aligns with PMBOK Integration Management — Monitoring & Controlling.
         </td></tr>
       </tbody>
     </table>
@@ -56,16 +56,16 @@ function IssueLogContent() {
   const issues = [
     { id: "I-001", desc: "[e.g., Test environment intermittent connectivity causing QA delays]", cat: "Technical", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg, impact: "[2 days QA delay; blocking Sprint 3 testing]", owner: "[IT Ops]", raised: "[MM/DD]", target: "[MM/DD]", status: "Open", sBg: C.badgeRedBg, sFg: C.badgeRedFg },
     { id: "I-002", desc: "[e.g., M3 milestone delayed 3 days due to stakeholder availability]", cat: "Schedule", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg, impact: "[Requirements baseline delayed; downstream schedule impact TBD]", owner: "[PM]", raised: "[MM/DD]", target: "[MM/DD]", status: "In Progress", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
-    { id: "I-003", desc: "[e.g., Vendor API documentation incomplete &#x2014; integration team blocked]", cat: "Vendor", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, impact: "[Integration work paused; 1 developer idle]", owner: "[PM]", raised: "[MM/DD]", target: "[MM/DD]", status: "In Progress", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
+    { id: "I-003", desc: "[e.g., Vendor API documentation incomplete — integration team blocked]", cat: "Vendor", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, impact: "[Integration work paused; 1 developer idle]", owner: "[PM]", raised: "[MM/DD]", target: "[MM/DD]", status: "In Progress", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
     { id: "I-004", desc: "[e.g., Data quality issues in legacy system migration source]", cat: "Data", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, impact: "[Additional data cleansing effort needed; est. 3 days]", owner: "[DBA]", raised: "[MM/DD]", target: "[MM/DD]", status: "Open", sBg: C.badgeRedBg, sFg: C.badgeRedFg },
     { id: "I-005", desc: "[e.g., Security scan found 2 medium vulnerabilities in Sprint 2 code]", cat: "Quality", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, pri: "Low", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, impact: "[Remediation required before UAT; no schedule impact]", owner: "[Dev Lead]", raised: "[MM/DD]", target: "[MM/DD]", status: "Resolved", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
     { id: "I-006", desc: "[e.g., Budget approval for CR-003 delayed by finance review process]", cat: "Process", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, pri: "Low", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, impact: "[Security audit start delayed 1 week]", owner: "[PM]", raised: "[MM/DD]", target: "[MM/DD]", status: "Closed", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-    { id: "[I-###]", desc: "[Add issue]", cat: "&#x2014;", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, pri: "", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, impact: "", owner: "", raised: "", target: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
+    { id: "[I-###]", desc: "[Add issue]", cat: "—", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg, pri: "", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, impact: "", owner: "", raised: "", target: "", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; ISSUE REGISTER</div>
+      <div style={S.sectionBanner()}>📋 ISSUE REGISTER</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -96,13 +96,13 @@ function IssueLogContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>Priority: <strong>High</strong> = Blocking progress &#x2022; <strong>Med</strong> = Impacting but workaround exists &#x2022; <strong>Low</strong> = Minor impact, can be deferred</p>
+      <p style={S.subNote}>Priority: <strong>High</strong> = Blocking progress • <strong>Med</strong> = Impacting but workaround exists • <strong>Low</strong> = Minor impact, can be deferred</p>
     </div>
   );
 
   const renderEscalation = () => (
     <div ref={escalationRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4E2; ESCALATED ISSUES</div>
+      <div style={S.sectionBanner(C.secondary)}>⚠️ ESCALATED ISSUES</div>
       <CopyButton targetRef={escalationRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -113,8 +113,8 @@ function IssueLogContent() {
           <th style={{ ...S.thSecondary, width: "12%", textAlign: "center" as const }}>Resolution</th>
         </tr></thead>
         <tbody>
-          <tr><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>I-001</td><td style={{ ...S.td0, fontSize: "11px" }}>[Test environment connectivity &#x2014; blocking QA team]</td><td style={{ ...S.td0, fontSize: "11px" }}>[IT Director]</td><td style={{ ...S.td0, fontSize: "11px" }}>[MM/DD]</td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Pending</span></td></tr>
-          <tr><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>I-003</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Vendor API documentation gaps &#x2014; integration blocked]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Vendor Account Mgr]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[MM/DD]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Pending</span></td></tr>
+          <tr><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>I-001</td><td style={{ ...S.td0, fontSize: "11px" }}>[Test environment connectivity — blocking QA team]</td><td style={{ ...S.td0, fontSize: "11px" }}>[IT Director]</td><td style={{ ...S.td0, fontSize: "11px" }}>[MM/DD]</td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Pending</span></td></tr>
+          <tr><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700, color: C.secondary }}>I-003</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Vendor API documentation gaps — integration blocked]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[Vendor Account Mgr]</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[MM/DD]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Pending</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -122,16 +122,16 @@ function IssueLogContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CA; ISSUE SUMMARY</div>
+      <div style={S.sectionBanner()}>📊 ISSUE SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Total Issues Logged</td><td style={S.td0}>[6] issues across [5] categories</td></tr>
-          <tr><td style={S.tdLabelAlt}>Open Issues</td><td style={S.tdAlt}>[2] open &#x2022; [2] in progress &#x2022; [1] resolved &#x2022; [1] closed</td></tr>
+          <tr><td style={S.tdLabelAlt}>Open Issues</td><td style={S.tdAlt}>[2] open • [2] in progress • [1] resolved • [1] closed</td></tr>
           <tr><td style={S.tdLabel}>Critical / Blocking</td><td style={S.td0}>[2] high-priority issues currently blocking progress</td></tr>
-          <tr><td style={S.tdLabelAlt}>Escalated Issues</td><td style={S.tdAlt}>[2] issues escalated to management &#x2014; awaiting resolution</td></tr>
+          <tr><td style={S.tdLabelAlt}>Escalated Issues</td><td style={S.tdAlt}>[2] issues escalated to management — awaiting resolution</td></tr>
           <tr><td style={S.tdLabel}>Avg Resolution Time</td><td style={S.td0}>[5] business days (target: [3] days for High, [5] days for Med)</td></tr>
-          <tr><td style={S.tdLabelAlt}>Next Review</td><td style={S.tdAlt}>[MM/DD/YYYY] &#x2014; [Weekly status meeting]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Next Review</td><td style={S.tdAlt}>[MM/DD/YYYY] — [Weekly status meeting]</td></tr>
         </tbody>
       </table>
     </div>
@@ -139,7 +139,7 @@ function IssueLogContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -171,7 +171,7 @@ function IssueLogContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><AlertCircle size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Issue Log</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Monitoring &amp; Controlling</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Monitoring & Controlling</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Tracks current problems requiring resolution with priority, impact, and escalation tracking. Full Log includes escalation and summary; Quick Log shows the register only.</p>

@@ -36,11 +36,11 @@ function AssumptionsConstraintsContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4D3; ASSUMPTIONS &amp; CONSTRAINTS LOG</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>📓 ASSUMPTIONS & CONSTRAINTS LOG</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>This living document tracks all project assumptions, constraints, and external dependencies with their validation status.</strong> Assumptions that prove false become risks; constraints define the boundaries within which the project must operate.<br /><br />
-          Review and update this log at <strong style={{ fontStyle: "italic" }}>every planning gate, status meeting,</strong> and <strong style={{ fontStyle: "italic" }}>change request review</strong>. Aligns with PMBOK Integration Management &#x2014; Initiating Process Group.
+          Review and update this log at <strong style={{ fontStyle: "italic" }}>every planning gate, status meeting,</strong> and <strong style={{ fontStyle: "italic" }}>change request review</strong>. Aligns with PMBOK Integration Management — Initiating Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -60,7 +60,7 @@ function AssumptionsConstraintsContent() {
 
   const renderAssumptions = () => (
     <div ref={assumptionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x2705; ASSUMPTIONS LOG</div>
+      <div style={S.sectionBanner()}>✅ ASSUMPTIONS LOG</div>
       <CopyButton targetRef={assumptionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -78,7 +78,7 @@ function AssumptionsConstraintsContent() {
             { id: "A3", desc: "[e.g., SMEs will be available for 20% of their time during requirements phase]", impact: "Med", iBg: C.badgeAmberBg, iFg: C.badgeAmberFg, status: "Open", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg, owner: "[BA]", date: "[MM/DD]" },
             { id: "A4", desc: "[e.g., Vendor API documentation is accurate and current]", impact: "Med", iBg: C.badgeAmberBg, iFg: C.badgeAmberFg, status: "Invalid", sBg: C.badgeRedBg, sFg: C.badgeRedFg, owner: "[Dev Lead]", date: "[MM/DD]" },
             { id: "A5", desc: "[e.g., Training can be completed in 2 weeks]", impact: "Low", iBg: C.badgeGreenBg, iFg: C.badgeGreenFg, status: "Open", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg, owner: "[PM]", date: "[MM/DD]" },
-            { id: "A6", desc: "[Add assumption]", impact: "&#x2014;", iBg: C.badgeGrayBg, iFg: C.badgeGrayFg, status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, owner: "", date: "" },
+            { id: "A6", desc: "[Add assumption]", impact: "—", iBg: C.badgeGrayBg, iFg: C.badgeGrayFg, status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, owner: "", date: "" },
           ].map((a, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={a.id}>
@@ -92,13 +92,13 @@ function AssumptionsConstraintsContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>Status: <strong>Open</strong> (not yet validated) &#x2192; <strong>Validated</strong> (confirmed true) &#x2192; <strong>Invalid</strong> (proved false &#x2014; convert to risk)</p>
+      <p style={S.subNote}>Status: <strong>Open</strong> (not yet validated) ❌ <strong>Validated</strong> (confirmed true) ❌ <strong>Invalid</strong> (proved false — convert to risk)</p>
     </div>
   );
 
   const renderConstraints = () => (
     <div ref={constraintsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F6A7; CONSTRAINTS LOG</div>
+      <div style={S.sectionBanner(C.secondary)}>🚫 CONSTRAINTS LOG</div>
       <CopyButton targetRef={constraintsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -110,12 +110,12 @@ function AssumptionsConstraintsContent() {
         </tr></thead>
         <tbody>
           {[
-            { id: "C1", cat: "Schedule", desc: "[e.g., Must go-live by Dec 31, 2026 &#x2014; fiscal year-end deadline]", sev: "High", sBg: C.badgeRedBg, sFg: C.badgeRedFg, mit: "[Fast-track critical path; reduce scope if needed]" },
+            { id: "C1", cat: "Schedule", desc: "[e.g., Must go-live by Dec 31, 2026 — fiscal year-end deadline]", sev: "High", sBg: C.badgeRedBg, sFg: C.badgeRedFg, mit: "[Fast-track critical path; reduce scope if needed]" },
             { id: "C2", cat: "Budget", desc: "[e.g., Total budget capped at $500K with no additional funding available]", sev: "High", sBg: C.badgeRedBg, sFg: C.badgeRedFg, mit: "[Phased delivery; prioritize must-have features]" },
             { id: "C3", cat: "Resource", desc: "[e.g., Max 3 FTEs allocated; no external contractors permitted]", sev: "Med", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, mit: "[Skill cross-training; focus on highest-value work]" },
             { id: "C4", cat: "Regulatory", desc: "[e.g., Must comply with SOX / HIPAA / GDPR requirements]", sev: "High", sBg: C.badgeRedBg, sFg: C.badgeRedFg, mit: "[Engage compliance team early; build into requirements]" },
-            { id: "C5", cat: "Technical", desc: "[e.g., Must integrate with existing SAP ERP &#x2014; no system replacement]", sev: "Med", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, mit: "[API-first approach; validate integration early]" },
-            { id: "C6", cat: "[Category]", desc: "[Add constraint]", sev: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, mit: "" },
+            { id: "C5", cat: "Technical", desc: "[e.g., Must integrate with existing SAP ERP — no system replacement]", sev: "Med", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, mit: "[API-first approach; validate integration early]" },
+            { id: "C6", cat: "[Category]", desc: "[Add constraint]", sev: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, mit: "" },
           ].map((c, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={c.id}>
@@ -133,7 +133,7 @@ function AssumptionsConstraintsContent() {
 
   const renderDeps = () => (
     <div ref={depsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F517; EXTERNAL DEPENDENCIES</div>
+      <div style={S.sectionBanner()}>🔗 EXTERNAL DEPENDENCIES</div>
       <CopyButton targetRef={depsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -149,7 +149,7 @@ function AssumptionsConstraintsContent() {
             { id: "D1", desc: "[e.g., Network infrastructure upgrade must complete before UAT]", dep: "[IT Ops]", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, date: "[MM/DD]", owner: "[IT Mgr]" },
             { id: "D2", desc: "[e.g., Vendor contract must be signed before development starts]", dep: "[Procurement]", status: "At Risk", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, date: "[MM/DD]", owner: "[PM]" },
             { id: "D3", desc: "[e.g., Data migration from legacy system]", dep: "[DBA Team]", status: "Not Started", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg, date: "[MM/DD]", owner: "[Dev Lead]" },
-            { id: "D4", desc: "[Add dependency]", dep: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, date: "", owner: "" },
+            { id: "D4", desc: "[Add dependency]", dep: "", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, date: "", owner: "" },
           ].map((d, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={d.id}>
@@ -168,7 +168,7 @@ function AssumptionsConstraintsContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; LOG SUMMARY DASHBOARD</div>
+      <div style={S.sectionBanner(C.secondary)}>📋 LOG SUMMARY DASHBOARD</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -180,8 +180,8 @@ function AssumptionsConstraintsContent() {
           <th style={S.thSecondary}>Notes</th>
         </tr></thead>
         <tbody>
-          <tr><td style={{ ...S.td0, fontWeight: 700 }}>Assumptions</td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[5]</td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>[3]</span></td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>[1]</span></td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>[1]</span></td><td style={{ ...S.td0, fontSize: "11px" }}>[1 invalid &#x2014; converted to Risk R-XX]</td></tr>
-          <tr><td style={{ ...S.tdAlt, fontWeight: 700 }}>Constraints</td><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700 }}>[5]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>[3 High]</span></td><td style={{ ...S.tdAlt, textAlign: "center" as const }}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>[2 Med]</span></td><td style={{ ...S.tdAlt, textAlign: "center" as const }}>&#x2014;</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[No changes since last review]</td></tr>
+          <tr><td style={{ ...S.td0, fontWeight: 700 }}>Assumptions</td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[5]</td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>[3]</span></td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>[1]</span></td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>[1]</span></td><td style={{ ...S.td0, fontSize: "11px" }}>[1 invalid — converted to Risk R-XX]</td></tr>
+          <tr><td style={{ ...S.tdAlt, fontWeight: 700 }}>Constraints</td><td style={{ ...S.tdAlt, textAlign: "center" as const, fontWeight: 700 }}>[5]</td><td style={{ ...S.tdAlt, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>[3 High]</span></td><td style={{ ...S.tdAlt, textAlign: "center" as const }}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>[2 Med]</span></td><td style={{ ...S.tdAlt, textAlign: "center" as const }}>—</td><td style={{ ...S.tdAlt, fontSize: "11px" }}>[No changes since last review]</td></tr>
           <tr><td style={{ ...S.td0, fontWeight: 700 }}>Dependencies</td><td style={{ ...S.td0, textAlign: "center" as const, fontWeight: 700 }}>[3]</td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>[1 On Track]</span></td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>[1 At Risk]</span></td><td style={{ ...S.td0, textAlign: "center" as const }}><span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>[1 Not Started]</span></td><td style={{ ...S.td0, fontSize: "11px" }}>[D2 escalated to Procurement VP]</td></tr>
         </tbody>
       </table>
@@ -190,7 +190,7 @@ function AssumptionsConstraintsContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -228,8 +228,8 @@ function AssumptionsConstraintsContent() {
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><ClipboardList size={20} className="text-indigo-600" /></div>
             <div>
-              <h2 className="text-2xl font-extrabold text-slate-900">Assumptions &amp; Constraints Log</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Initiating Process Group</p>
+              <h2 className="text-2xl font-extrabold text-slate-900">Assumptions & Constraints Log</h2>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Initiating Process Group</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Living document tracking all project assumptions, constraints, and dependencies with validation status. Full Log includes all three registers plus a summary dashboard; Quick Log shows assumptions and constraints only.</p>

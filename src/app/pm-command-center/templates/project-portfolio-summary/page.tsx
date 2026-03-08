@@ -35,11 +35,11 @@ function ProjectPortfolioSummaryContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4BC; PROJECT PORTFOLIO SUMMARY</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>💼 PROJECT PORTFOLIO SUMMARY</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Project Portfolio Summary provides a consolidated view of all active projects across the organization.</strong> It enables portfolio-level decision making by showing health status, resource allocation, financial performance, and strategic alignment for each project in the portfolio.<br /><br />
-          Present at <strong style={{ fontStyle: "italic" }}>monthly portfolio review meetings and quarterly steering committee sessions</strong>. Aligns with PMBOK Portfolio Management &#x2014; Strategic &amp; Business Management.
+          Present at <strong style={{ fontStyle: "italic" }}>monthly portfolio review meetings and quarterly steering committee sessions</strong>. Aligns with PMBOK Portfolio Management — Strategic & Business Management.
         </td></tr>
       </tbody>
     </table>
@@ -51,7 +51,7 @@ function ProjectPortfolioSummaryContent() {
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "18%" }}>Portfolio Name</td><td style={{ ...S.td0, width: "32%" }}>[IT Project Portfolio / Enterprise PMO]</td><td style={{ ...S.tdLabel, width: "18%" }}>Report Date</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY]</td></tr>
           <tr><td style={S.tdLabelAlt}>Portfolio Manager</td><td style={S.tdAlt}>[Name, PfMP/PMP]</td><td style={S.tdLabelAlt}>Review Period</td><td style={S.tdAlt}>[Month / Quarter]</td></tr>
-          <tr><td style={S.tdLabel}>Active Projects</td><td style={S.td0}>[8] active &#x2022; [2] on hold &#x2022; [1] closing</td><td style={S.tdLabel}>Total Portfolio Budget</td><td style={S.td0}>$[4.2M]</td></tr>
+          <tr><td style={S.tdLabel}>Active Projects</td><td style={S.td0}>[8] active • [2] on hold • [1] closing</td><td style={S.tdLabel}>Total Portfolio Budget</td><td style={S.td0}>$[4.2M]</td></tr>
         </tbody>
       </table>
       <CopyButton targetRef={headerRef} label="Copy Section" />
@@ -59,19 +59,19 @@ function ProjectPortfolioSummaryContent() {
   );
 
   const projects = [
-    { id: "PRJ-001", name: "[CRM Implementation]", sponsor: "[VP Sales]", pm: "[Name]", phase: "Executing", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, health: "&#x1F7E2;", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$595K", pctComp: "85%", priority: "1", strategic: "Revenue" },
-    { id: "PRJ-002", name: "[ERP Upgrade]", sponsor: "[CFO]", pm: "[Name]", phase: "Planning", pBg: C.badgeBlueBg, pFg: C.badgeBlueFg, health: "&#x1F7E2;", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$1.2M", pctComp: "15%", priority: "2", strategic: "Efficiency" },
-    { id: "PRJ-003", name: "[Cloud Migration]", sponsor: "[CTO]", pm: "[Name]", phase: "Executing", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, health: "&#x1F7E1;", hBg: C.badgeAmberBg, hFg: C.badgeAmberFg, budget: "$850K", pctComp: "60%", priority: "1", strategic: "Infrastructure" },
-    { id: "PRJ-004", name: "[Mobile App v2]", sponsor: "[VP Product]", pm: "[Name]", phase: "Executing", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, health: "&#x1F534;", hBg: C.badgeRedBg, hFg: C.badgeRedFg, budget: "$420K", pctComp: "45%", priority: "2", strategic: "Revenue" },
-    { id: "PRJ-005", name: "[Data Warehouse]", sponsor: "[CDO]", pm: "[Name]", phase: "Initiating", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, health: "&#x1F7E2;", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$380K", pctComp: "5%", priority: "3", strategic: "Analytics" },
-    { id: "PRJ-006", name: "[Security Compliance]", sponsor: "[CISO]", pm: "[Name]", phase: "Executing", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, health: "&#x1F7E2;", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$275K", pctComp: "70%", priority: "1", strategic: "Compliance" },
-    { id: "PRJ-007", name: "[HR Portal Refresh]", sponsor: "[CHRO]", pm: "[Name]", phase: "On Hold", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, health: "&#x1F7E1;", hBg: C.badgeAmberBg, hFg: C.badgeAmberFg, budget: "$180K", pctComp: "30%", priority: "4", strategic: "People" },
-    { id: "PRJ-008", name: "[Customer Portal]", sponsor: "[VP CX]", pm: "[Name]", phase: "Planning", pBg: C.badgeBlueBg, pFg: C.badgeBlueFg, health: "&#x1F7E2;", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$310K", pctComp: "10%", priority: "2", strategic: "CX" },
+    { id: "PRJ-001", name: "[CRM Implementation]", sponsor: "[VP Sales]", pm: "[Name]", phase: "Executing", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, health: "🟢", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$595K", pctComp: "85%", priority: "1", strategic: "Revenue" },
+    { id: "PRJ-002", name: "[ERP Upgrade]", sponsor: "[CFO]", pm: "[Name]", phase: "Planning", pBg: C.badgeBlueBg, pFg: C.badgeBlueFg, health: "🟢", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$1.2M", pctComp: "15%", priority: "2", strategic: "Efficiency" },
+    { id: "PRJ-003", name: "[Cloud Migration]", sponsor: "[CTO]", pm: "[Name]", phase: "Executing", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, health: "🟡", hBg: C.badgeAmberBg, hFg: C.badgeAmberFg, budget: "$850K", pctComp: "60%", priority: "1", strategic: "Infrastructure" },
+    { id: "PRJ-004", name: "[Mobile App v2]", sponsor: "[VP Product]", pm: "[Name]", phase: "Executing", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, health: "🔴", hBg: C.badgeRedBg, hFg: C.badgeRedFg, budget: "$420K", pctComp: "45%", priority: "2", strategic: "Revenue" },
+    { id: "PRJ-005", name: "[Data Warehouse]", sponsor: "[CDO]", pm: "[Name]", phase: "Initiating", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, health: "🟢", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$380K", pctComp: "5%", priority: "3", strategic: "Analytics" },
+    { id: "PRJ-006", name: "[Security Compliance]", sponsor: "[CISO]", pm: "[Name]", phase: "Executing", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, health: "🟢", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$275K", pctComp: "70%", priority: "1", strategic: "Compliance" },
+    { id: "PRJ-007", name: "[HR Portal Refresh]", sponsor: "[CHRO]", pm: "[Name]", phase: "On Hold", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, health: "🟡", hBg: C.badgeAmberBg, hFg: C.badgeAmberFg, budget: "$180K", pctComp: "30%", priority: "4", strategic: "People" },
+    { id: "PRJ-008", name: "[Customer Portal]", sponsor: "[VP CX]", pm: "[Name]", phase: "Planning", pBg: C.badgeBlueBg, pFg: C.badgeBlueFg, health: "🟢", hBg: C.badgeGreenBg, hFg: C.badgeGreenFg, budget: "$310K", pctComp: "10%", priority: "2", strategic: "CX" },
   ];
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; PORTFOLIO REGISTER</div>
+      <div style={S.sectionBanner()}>📋 PORTFOLIO REGISTER</div>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -107,13 +107,13 @@ function ProjectPortfolioSummaryContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F6A6; PORTFOLIO HEALTH OVERVIEW</div>
+      <div style={S.sectionBanner(C.secondary)}>🚦 PORTFOLIO HEALTH OVERVIEW</div>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Green (On Track)</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>5 projects</span> &#x2014; PRJ-001, 002, 005, 006, 008</td></tr>
-          <tr><td style={S.tdLabelAlt}>Amber (At Risk)</td><td style={S.tdAlt}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>2 projects</span> &#x2014; PRJ-003 (schedule delay), PRJ-007 (on hold &#x2014; resource conflict)</td></tr>
-          <tr><td style={S.tdLabel}>Red (Off Track)</td><td style={S.td0}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>1 project</span> &#x2014; PRJ-004 (scope creep + budget overrun, escalation required)</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "28%" }}>Green (On Track)</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>5 projects</span> — PRJ-001, 002, 005, 006, 008</td></tr>
+          <tr><td style={S.tdLabelAlt}>Amber (At Risk)</td><td style={S.tdAlt}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>2 projects</span> — PRJ-003 (schedule delay), PRJ-007 (on hold — resource conflict)</td></tr>
+          <tr><td style={S.tdLabel}>Red (Off Track)</td><td style={S.td0}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>1 project</span> — PRJ-004 (scope creep + budget overrun, escalation required)</td></tr>
           <tr><td style={S.tdLabelAlt}>Executive Summary</td><td style={S.tdAlt}>[62% of portfolio on track. PRJ-004 requires steering committee decision on scope reduction or additional funding. PRJ-007 on hold pending Q3 resource availability.]</td></tr>
         </tbody>
       </table>
@@ -122,7 +122,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderFin = () => (
     <div ref={finRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4B0; PORTFOLIO FINANCIALS</div>
+      <div style={S.sectionBanner()}>💰 PORTFOLIO FINANCIALS</div>
       <CopyButton targetRef={finRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -134,8 +134,8 @@ function ProjectPortfolioSummaryContent() {
           {[
             { metric: "Total Portfolio Budget", val: "$[4,210,000]", note: "Sum of all approved project budgets" },
             { metric: "Total Spent to Date", val: "$[1,890,000]", note: "45% of total budget consumed" },
-            { metric: "Portfolio CPI (Weighted)", val: "[1.04]", note: "&#x1F7E2; Slightly under budget overall" },
-            { metric: "Portfolio SPI (Weighted)", val: "[0.92]", note: "&#x1F7E1; Slightly behind schedule (PRJ-003, 004 dragging)" },
+            { metric: "Portfolio CPI (Weighted)", val: "[1.04]", note: "🟢 Slightly under budget overall" },
+            { metric: "Portfolio SPI (Weighted)", val: "[0.92]", note: "🟡 Slightly behind schedule (PRJ-003, 004 dragging)" },
             { metric: "Forecast at Completion", val: "$[4,048,000]", note: "Expected to finish $162K under total budget" },
             { metric: "Contingency Remaining", val: "$[320,000]", note: "7.6% of total portfolio budget" },
           ].map((f, i) => {
@@ -153,7 +153,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderResource = () => (
     <div ref={resourceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F465; RESOURCE ALLOCATION</div>
+      <div style={S.sectionBanner(C.secondary)}>👥 RESOURCE ALLOCATION</div>
       <CopyButton targetRef={resourceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -187,7 +187,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderRisk = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x26A0;&#xFE0F; PORTFOLIO-LEVEL RISKS</div>
+      <div style={S.sectionBanner()}>⚠️ PORTFOLIO-LEVEL RISKS</div>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -199,8 +199,8 @@ function ProjectPortfolioSummaryContent() {
         </tr></thead>
         <tbody>
           {[
-            { risk: "[Resource contention &#x2014; BA and PM pools at 100% utilization]", rating: "High", rBg: C.badgeRedBg, rFg: C.badgeRedFg, affected: "[All active]", mit: "[Contractor pipeline; prioritize by strategic value]" },
-            { risk: "[Budget pressure &#x2014; PRJ-004 may need additional $60K]", rating: "High", rBg: C.badgeRedBg, rFg: C.badgeRedFg, affected: "[PRJ-004, Portfolio]", mit: "[Scope reduction option presented to steering committee]" },
+            { risk: "[Resource contention — BA and PM pools at 100% utilization]", rating: "High", rBg: C.badgeRedBg, rFg: C.badgeRedFg, affected: "[All active]", mit: "[Contractor pipeline; prioritize by strategic value]" },
+            { risk: "[Budget pressure — PRJ-004 may need additional $60K]", rating: "High", rBg: C.badgeRedBg, rFg: C.badgeRedFg, affected: "[PRJ-004, Portfolio]", mit: "[Scope reduction option presented to steering committee]" },
             { risk: "[Vendor dependency across 3 projects]", rating: "Med", rBg: C.badgeAmberBg, rFg: C.badgeAmberFg, affected: "[PRJ-001, 003, 008]", mit: "[Consolidated vendor management; shared contract terms]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -219,7 +219,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -257,7 +257,7 @@ function ProjectPortfolioSummaryContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><Briefcase size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Project Portfolio Summary</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Portfolio Management &#x2022; Strategic &amp; Business Management</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Portfolio Management • Strategic & Business Management</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Consolidated portfolio view with health, financials, resource allocation, and portfolio-level risks. Full Summary includes all sections; Quick Summary shows the register only.</p>

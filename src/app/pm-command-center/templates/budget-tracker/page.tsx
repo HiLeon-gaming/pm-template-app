@@ -34,11 +34,11 @@ function BudgetTrackerContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4B5; BUDGET TRACKER</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>💵 BUDGET TRACKER</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Budget Tracker monitors actual spending against the cost baseline using Earned Value Management (EVM) metrics.</strong> It provides early warning of budget variances and forecasts the estimate at completion (EAC).<br /><br />
-          Update this template <strong style={{ fontStyle: "italic" }}>weekly or at each reporting period</strong> to maintain financial control. Aligns with PMBOK Cost Management &#x2014; Monitoring &amp; Controlling.
+          Update this template <strong style={{ fontStyle: "italic" }}>weekly or at each reporting period</strong> to maintain financial control. Aligns with PMBOK Cost Management — Monitoring & Controlling.
         </td></tr>
       </tbody>
     </table>
@@ -58,7 +58,7 @@ function BudgetTrackerContent() {
 
   const renderBudget = () => (
     <div ref={budgetRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; BUDGET BY CATEGORY</div>
+      <div style={S.sectionBanner()}>≤ BUDGET BY CATEGORY</div>
       <CopyButton targetRef={budgetRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -72,14 +72,14 @@ function BudgetTrackerContent() {
         </tr></thead>
         <tbody>
           {[
-            { cat: "Labor &#x2014; Internal", budget: "$[400,000]", actual: "$[180,000]", commit: "$[120,000]", remain: "$[100,000]", pct: "75%", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-            { cat: "Labor &#x2014; Contractors", budget: "$[119,250]", actual: "$[45,000]", commit: "$[35,000]", remain: "$[39,250]", pct: "67%", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-            { cat: "Software &amp; Licenses", budget: "$[10,000]", actual: "$[10,000]", commit: "$[0]", remain: "$[0]", pct: "100%", status: "Spent", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
+            { cat: "Labor — Internal", budget: "$[400,000]", actual: "$[180,000]", commit: "$[120,000]", remain: "$[100,000]", pct: "75%", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
+            { cat: "Labor — Contractors", budget: "$[119,250]", actual: "$[45,000]", commit: "$[35,000]", remain: "$[39,250]", pct: "67%", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
+            { cat: "Software & Licenses", budget: "$[10,000]", actual: "$[10,000]", commit: "$[0]", remain: "$[0]", pct: "100%", status: "Spent", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
             { cat: "Cloud Infrastructure", budget: "$[36,000]", actual: "$[18,000]", commit: "$[18,000]", remain: "$[0]", pct: "100%", status: "Committed", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
             { cat: "Hardware", budget: "$[7,500]", actual: "$[7,500]", commit: "$[0]", remain: "$[0]", pct: "100%", status: "Spent", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
             { cat: "Training", budget: "$[15,000]", actual: "$[0]", commit: "$[0]", remain: "$[15,000]", pct: "0%", status: "Not Started", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
             { cat: "Vendor / Consulting", budget: "$[35,000]", actual: "$[21,000]", commit: "$[14,000]", remain: "$[0]", pct: "100%", status: "At Risk", sBg: C.badgeRedBg, sFg: C.badgeRedFg },
-            { cat: "Travel &amp; Expenses", budget: "$[5,000]", actual: "$[2,500]", commit: "$[0]", remain: "$[2,500]", pct: "50%", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
+            { cat: "Travel & Expenses", budget: "$[5,000]", actual: "$[2,500]", commit: "$[0]", remain: "$[2,500]", pct: "50%", status: "On Track", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { cat: "Contingency Reserve", budget: "$[62,775]", actual: "$[8,000]", commit: "$[0]", remain: "$[54,775]", pct: "13%", status: "Available", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg },
           ].map((b, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -109,7 +109,7 @@ function BudgetTrackerContent() {
 
   const renderEVM = () => (
     <div ref={evmRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; EARNED VALUE METRICS</div>
+      <div style={S.sectionBanner(C.secondary)}>≥ EARNED VALUE METRICS</div>
       <CopyButton targetRef={evmRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -121,12 +121,12 @@ function BudgetTrackerContent() {
         </tr></thead>
         <tbody>
           {[
-            { metric: "Budget at Completion (BAC)", formula: "&#x2014;", val: "$[690,525]", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, interp: "[Total approved budget excluding management reserve]" },
-            { metric: "Planned Value (PV)", formula: "&#x2014;", val: "$[345,263]", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, interp: "[Value of work planned to date (50% of BAC)]" },
-            { metric: "Earned Value (EV)", formula: "&#x2014;", val: "$[330,000]", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, interp: "[Value of work actually completed to date]" },
-            { metric: "Actual Cost (AC)", formula: "&#x2014;", val: "$[292,000]", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, interp: "[Total cost incurred to date]" },
-            { metric: "Cost Variance (CV)", formula: "EV - AC", val: "+$[38,000]", status: "Favorable", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, interp: "[Under budget &#x2014; spending less than value earned]" },
-            { metric: "Schedule Variance (SV)", formula: "EV - PV", val: "-$[15,263]", status: "Behind", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, interp: "[Slightly behind schedule &#x2014; less value earned than planned]" },
+            { metric: "Budget at Completion (BAC)", formula: "—", val: "$[690,525]", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, interp: "[Total approved budget excluding management reserve]" },
+            { metric: "Planned Value (PV)", formula: "—", val: "$[345,263]", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, interp: "[Value of work planned to date (50% of BAC)]" },
+            { metric: "Earned Value (EV)", formula: "—", val: "$[330,000]", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, interp: "[Value of work actually completed to date]" },
+            { metric: "Actual Cost (AC)", formula: "—", val: "$[292,000]", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, interp: "[Total cost incurred to date]" },
+            { metric: "Cost Variance (CV)", formula: "EV - AC", val: "+$[38,000]", status: "Favorable", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, interp: "[Under budget — spending less than value earned]" },
+            { metric: "Schedule Variance (SV)", formula: "EV - PV", val: "-$[15,263]", status: "Behind", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, interp: "[Slightly behind schedule — less value earned than planned]" },
             { metric: "Cost Performance Index (CPI)", formula: "EV / AC", val: "[1.13]", status: "Favorable", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, interp: "[>1.0 = under budget. Getting $1.13 of value per $1 spent]" },
             { metric: "Schedule Performance Index (SPI)", formula: "EV / PV", val: "[0.96]", status: "At Risk", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, interp: "[<1.0 = behind schedule. Completing 96% of planned work]" },
           ].map((e, i) => {
@@ -146,7 +146,7 @@ function BudgetTrackerContent() {
 
   const renderForecast = () => (
     <div ref={forecastRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F52E; FORECAST &amp; ESTIMATE AT COMPLETION</div>
+      <div style={S.sectionBanner()}>≥ FORECAST & ESTIMATE AT COMPLETION</div>
       <CopyButton targetRef={forecastRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -159,7 +159,7 @@ function BudgetTrackerContent() {
         <tbody>
           {[
             { method: "EAC (CPI-based)", formula: "BAC / CPI", eac: "$[611,084]", vac: "+$[79,441]", interp: "[If current cost efficiency continues]" },
-            { method: "EAC (SPI &#xD7; CPI)", formula: "AC + (BAC-EV)/(CPI&#xD7;SPI)", eac: "$[624,200]", vac: "+$[66,325]", interp: "[Factoring both cost and schedule performance]" },
+            { method: "EAC (SPI × CPI)", formula: "AC + (BAC-EV)/(CPI×SPI)", eac: "$[624,200]", vac: "+$[66,325]", interp: "[Factoring both cost and schedule performance]" },
             { method: "EAC (Bottom-up)", formula: "AC + ETC", eac: "$[650,000]", vac: "+$[40,525]", interp: "[Re-estimated remaining work packages]" },
             { method: "EAC (Original plan)", formula: "AC + (BAC-EV)", eac: "$[652,525]", vac: "+$[38,000]", interp: "[If remaining work costs as originally planned]" },
           ].map((f, i) => {
@@ -180,15 +180,15 @@ function BudgetTrackerContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F3AF; BUDGET HEALTH SUMMARY</div>
+      <div style={S.sectionBanner(C.secondary)}>🎯 BUDGET HEALTH SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
-          <tr><td style={{ ...S.tdLabel, width: "30%" }}>Overall Budget Status</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Under Budget</span> &#x2014; CPI = 1.13</td></tr>
-          <tr><td style={S.tdLabelAlt}>Overall Schedule Status</td><td style={S.tdAlt}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Slightly Behind</span> &#x2014; SPI = 0.96</td></tr>
-          <tr><td style={S.tdLabel}>Contingency Used</td><td style={S.td0}>$[8,000] of $[62,775] &#x2014; [13%] consumed</td></tr>
-          <tr><td style={S.tdLabelAlt}>Mgmt Reserve Status</td><td style={S.tdAlt}>$[0] of $[31,388] &#x2014; [0%] consumed &#x2014; <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Untouched</span></td></tr>
-          <tr><td style={S.tdLabel}>Key Concern</td><td style={S.td0}>[Vendor consulting budget fully committed &#x2014; any additional work requires CR approval]</td></tr>
+          <tr><td style={{ ...S.tdLabel, width: "30%" }}>Overall Budget Status</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Under Budget</span> — CPI = 1.13</td></tr>
+          <tr><td style={S.tdLabelAlt}>Overall Schedule Status</td><td style={S.tdAlt}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Slightly Behind</span> — SPI = 0.96</td></tr>
+          <tr><td style={S.tdLabel}>Contingency Used</td><td style={S.td0}>$[8,000] of $[62,775] — [13%] consumed</td></tr>
+          <tr><td style={S.tdLabelAlt}>Mgmt Reserve Status</td><td style={S.tdAlt}>$[0] of $[31,388] — [0%] consumed — <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Untouched</span></td></tr>
+          <tr><td style={S.tdLabel}>Key Concern</td><td style={S.td0}>[Vendor consulting budget fully committed — any additional work requires CR approval]</td></tr>
           <tr><td style={S.tdLabelAlt}>Recommended Action</td><td style={S.tdAlt}>[Monitor SPI; accelerate critical path tasks; submit CR for vendor budget if integration scope expands]</td></tr>
         </tbody>
       </table>
@@ -197,7 +197,7 @@ function BudgetTrackerContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -230,7 +230,7 @@ function BudgetTrackerContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><TrendingUp size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Budget Tracker</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Cost Management &#x2022; Monitoring &amp; Controlling</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Cost Management • Monitoring & Controlling</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Monitors spending against the cost baseline with EVM metrics and forecast. Full Tracker shows all budget detail, EVM, and forecasting; Quick Dashboard shows health summary and EVM metrics.</p>

@@ -37,11 +37,11 @@ function WeeklyStatusReportContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4CA; WEEKLY STATUS REPORT</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>📊 WEEKLY STATUS REPORT</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Weekly Status Report provides stakeholders with a concise summary of project health, accomplishments, upcoming activities, and key risks/issues.</strong> It uses RAG (Red/Amber/Green) indicators and EVM metrics for objective reporting.<br /><br />
-          Distribute this report <strong style={{ fontStyle: "italic" }}>every Friday by end of business</strong> to all stakeholders per the Communications Plan. Aligns with PMBOK Communications Management &#x2014; Monitoring &amp; Controlling.
+          Distribute this report <strong style={{ fontStyle: "italic" }}>every Friday by end of business</strong> to all stakeholders per the Communications Plan. Aligns with PMBOK Communications Management — Monitoring & Controlling.
         </td></tr>
       </tbody>
     </table>
@@ -52,7 +52,7 @@ function WeeklyStatusReportContent() {
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "18%" }}>Project Name</td><td style={{ ...S.td0, width: "32%" }}>[Project Name]</td><td style={{ ...S.tdLabel, width: "18%" }}>Report Date</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Project Manager</td><td style={S.tdAlt}>[Name, PMP]</td><td style={S.tdLabelAlt}>Reporting Period</td><td style={S.tdAlt}>[Week of MM/DD &#x2013; MM/DD]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Project Manager</td><td style={S.tdAlt}>[Name, PMP]</td><td style={S.tdLabelAlt}>Reporting Period</td><td style={S.tdAlt}>[Week of MM/DD – MM/DD]</td></tr>
           <tr><td style={S.tdLabel}>Sponsor</td><td style={S.td0}>[Name, Title]</td><td style={S.tdLabel}>Distribution</td><td style={S.td0}>[Sponsor, Steering Committee, Team Leads]</td></tr>
         </tbody>
       </table>
@@ -62,7 +62,7 @@ function WeeklyStatusReportContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F6A6; PROJECT HEALTH DASHBOARD</div>
+      <div style={S.sectionBanner()}>Project Health Dashboard</div>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -73,14 +73,14 @@ function WeeklyStatusReportContent() {
         </tr></thead>
         <tbody>
           {[
-            { dim: "Overall", status: "&#x1F7E1; Amber", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, trend: "&#x2192; Stable", comment: "[On track for budget; slightly behind on schedule &#x2014; recovery plan in place]" },
-            { dim: "Schedule", status: "&#x1F7E1; Amber", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, trend: "&#x2192; Stable", comment: "[SPI 0.96 &#x2014; M3 delayed 3 days; extra review session scheduled to close gap]" },
-            { dim: "Budget", status: "&#x1F7E2; Green", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, trend: "&#x2191; Improving", comment: "[CPI 1.13 &#x2014; under budget; vendor line fully committed but manageable]" },
-            { dim: "Scope", status: "&#x1F7E1; Amber", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, trend: "&#x2193; Declining", comment: "[3 CRs submitted this week &#x2014; change control enforcement tightened per CCB decision]" },
-            { dim: "Quality", status: "&#x1F7E2; Green", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, trend: "&#x2192; Stable", comment: "[Code coverage at 78% (target 80%); defect density 1.5/KLOC within target]" },
-            { dim: "Risk", status: "&#x1F7E1; Amber", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, trend: "&#x2192; Stable", comment: "[7 risks tracked; R2 (scope creep) elevated to Critical; 87% contingency available]" },
-            { dim: "Resources", status: "&#x1F7E2; Green", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, trend: "&#x2192; Stable", comment: "[All positions filled; Dev Lead at 110% &#x2014; monitoring for burnout]" },
-            { dim: "Stakeholders", status: "&#x1F7E2; Green", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, trend: "&#x2191; Improving", comment: "[User awareness campaign launched; 5 champions recruited; sponsor engagement strong]" },
+            { dim: "Overall", status: "Amber", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, trend: "Stable", comment: "[On track for budget; slightly behind on schedule — recovery plan in place]" },
+            { dim: "Schedule", status: "Amber", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, trend: "Stable", comment: "[SPI 0.96 — M3 delayed 3 days; extra review session scheduled to close gap]" },
+            { dim: "Budget", status: "Green", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, trend: "Improving", comment: "[CPI 1.13 — under budget; vendor line fully committed but manageable]" },
+            { dim: "Scope", status: "Amber", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, trend: "Declining", comment: "[3 CRs submitted this week — change control enforcement tightened per CCB decision]" },
+            { dim: "Quality", status: "Green", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, trend: "Stable", comment: "[Code coverage at 78% (target 80%); defect density 1.5/KLOC within target]" },
+            { dim: "Risk", status: "Amber", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, trend: "Stable", comment: "[7 risks tracked; R2 (scope creep) elevated to Critical; 87% contingency available]" },
+            { dim: "Resources", status: "Green", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, trend: "Stable", comment: "[All positions filled; Dev Lead at 110% — monitoring for burnout]" },
+            { dim: "Stakeholders", status: "Green", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, trend: "Improving", comment: "[User awareness campaign launched; 5 champions recruited; sponsor engagement strong]" },
           ].map((h, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -92,13 +92,13 @@ function WeeklyStatusReportContent() {
           })}
         </tbody>
       </table>
-      <p style={S.subNote}>&#x1F7E2; Green = On Track &#x2022; &#x1F7E1; Amber = At Risk / Needs Attention &#x2022; &#x1F534; Red = Off Track / Escalation Required</p>
+      <p style={S.subNote}>Green = On Track • Amber = At Risk / Needs Attention • Red = Off Track / Escalation Required</p>
     </div>
   );
 
   const renderAccomplishments = () => (
     <div ref={accomplishmentsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x2705; KEY ACCOMPLISHMENTS THIS WEEK</div>
+      <div style={S.sectionBanner(C.secondary)}>Key Accomplishments This Week</div>
       <CopyButton targetRef={accomplishmentsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -108,12 +108,12 @@ function WeeklyStatusReportContent() {
         </tr></thead>
         <tbody>
           {[
-            { acc: "[e.g., Completed system design review &#x2014; all stakeholders approved architecture]", cat: "Scope", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg },
+            { acc: "[e.g., Completed system design review — all stakeholders approved architecture]", cat: "Scope", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg },
             { acc: "[e.g., CR-003 ($25K security audit) approved by CCB and baselines updated]", cat: "Change", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg },
-            { acc: "[e.g., Sprint 3 delivered &#x2014; 12/14 user stories completed (86% velocity)]", cat: "Delivery", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg },
-            { acc: "[e.g., User champion network established &#x2014; 5 champions across 3 departments]", cat: "Stakeholder", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg },
+            { acc: "[e.g., Sprint 3 delivered — 12/14 user stories completed (86% velocity)]", cat: "Delivery", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg },
+            { acc: "[e.g., User champion network established — 5 champions across 3 departments]", cat: "Stakeholder", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg },
             { acc: "[e.g., Vendor integration milestone 2 of 4 completed on schedule]", cat: "Vendor", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg },
-            { acc: "[Add accomplishment]", cat: "&#x2014;", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg },
+            { acc: "[Add accomplishment]", cat: "—", cBg: C.badgeGrayBg, cFg: C.badgeGrayFg },
           ].map((a, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -129,7 +129,7 @@ function WeeklyStatusReportContent() {
 
   const renderPlanned = () => (
     <div ref={plannedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4C5; PLANNED ACTIVITIES NEXT WEEK</div>
+      <div style={S.sectionBanner()}>Planned Activities Next Week</div>
       <CopyButton targetRef={plannedRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -140,12 +140,12 @@ function WeeklyStatusReportContent() {
         </tr></thead>
         <tbody>
           {[
-            { act: "[e.g., Begin Sprint 4 &#x2014; focus on reporting module (8 user stories)]", owner: "[Dev Lead]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
+            { act: "[e.g., Begin Sprint 4 — focus on reporting module (8 user stories)]", owner: "[Dev Lead]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
             { act: "[e.g., Complete extra requirements review session to close M3 gap]", owner: "[BA]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
             { act: "[e.g., Start integration testing for API endpoints (Phase 1)]", owner: "[QA Lead]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
             { act: "[e.g., Distribute updated change control process to all team leads]", owner: "[PM]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
             { act: "[e.g., Vendor integration milestone 3 kickoff meeting]", owner: "[PM]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
-            { act: "[Add activity]", owner: "", pri: "&#x2014;", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg },
+            { act: "[Add activity]", owner: "", pri: "—", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg },
           ].map((p, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -162,7 +162,7 @@ function WeeklyStatusReportContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x26A0;&#xFE0F; TOP RISKS &amp; ISSUES</div>
+      <div style={S.sectionBanner(C.secondary)}>Top Risks & Issues</div>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -175,10 +175,10 @@ function WeeklyStatusReportContent() {
         </tr></thead>
         <tbody>
           {[
-            { id: "R2", type: "Risk", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "[Scope creep &#x2014; 3 CRs submitted this week; approaching trigger threshold]", rating: "Critical", rBg: C.badgeRedBg, rFg: C.badgeRedFg, status: "Open", ssBg: C.badgeRedBg, ssFg: C.badgeRedFg, owner: "[BA]" },
-            { id: "R1", type: "Risk", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "[Key developer burnout &#x2014; Dev Lead at 110% utilization]", rating: "High", rBg: C.badgeRedBg, rFg: C.badgeRedFg, status: "Monitoring", ssBg: C.badgeAmberBg, ssFg: C.badgeAmberFg, owner: "[PM]" },
-            { id: "I1", type: "Issue", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "[M3 milestone delayed 3 days &#x2014; stakeholder availability for review]", rating: "Med", rBg: C.badgeAmberBg, rFg: C.badgeAmberFg, status: "Active", ssBg: C.badgeRedBg, ssFg: C.badgeRedFg, owner: "[PM]" },
-            { id: "I2", type: "Issue", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "[Test environment intermittent connectivity &#x2014; affecting QA productivity]", rating: "Med", rBg: C.badgeAmberBg, rFg: C.badgeAmberFg, status: "Active", ssBg: C.badgeRedBg, ssFg: C.badgeRedFg, owner: "[IT Ops]" },
+            { id: "R2", type: "Risk", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "[Scope creep — 3 CRs submitted this week; approaching trigger threshold]", rating: "Critical", rBg: C.badgeRedBg, rFg: C.badgeRedFg, status: "Open", ssBg: C.badgeRedBg, ssFg: C.badgeRedFg, owner: "[BA]" },
+            { id: "R1", type: "Risk", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "[Key developer burnout — Dev Lead at 110% utilization]", rating: "High", rBg: C.badgeRedBg, rFg: C.badgeRedFg, status: "Monitoring", ssBg: C.badgeAmberBg, ssFg: C.badgeAmberFg, owner: "[PM]" },
+            { id: "I1", type: "Issue", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "[M3 milestone delayed 3 days — stakeholder availability for review]", rating: "Med", rBg: C.badgeAmberBg, rFg: C.badgeAmberFg, status: "Active", ssBg: C.badgeRedBg, ssFg: C.badgeRedFg, owner: "[PM]" },
+            { id: "I2", type: "Issue", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "[Test environment intermittent connectivity — affecting QA productivity]", rating: "Med", rBg: C.badgeAmberBg, rFg: C.badgeAmberFg, status: "Active", ssBg: C.badgeRedBg, ssFg: C.badgeRedFg, owner: "[IT Ops]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -197,7 +197,7 @@ function WeeklyStatusReportContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F3AF; OPEN ACTION ITEMS</div>
+      <div style={S.sectionBanner()}>Open Action Items</div>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -213,7 +213,7 @@ function WeeklyStatusReportContent() {
             { id: "AI-2", action: "[Schedule extra requirements review]", owner: "[BA]", due: "[MM/DD]", status: "Complete", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { id: "AI-3", action: "[Distribute updated change control process]", owner: "[PM]", due: "[MM/DD]", status: "New", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg },
             { id: "AI-4", action: "[Resolve test environment connectivity issue]", owner: "[IT Ops]", due: "[MM/DD]", status: "In Progress", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
-            { id: "[AI-#]", action: "[Add action]", owner: "", due: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
+            { id: "[AI-#]", action: "[Add action]", owner: "", due: "", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
           ].map((a, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -231,7 +231,7 @@ function WeeklyStatusReportContent() {
 
   const renderMilestones = () => (
     <div ref={milestonesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F3C1; MILESTONE STATUS</div>
+      <div style={S.sectionBanner(C.secondary)}>Milestone Status</div>
       <CopyButton targetRef={milestonesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -268,16 +268,16 @@ function WeeklyStatusReportContent() {
 
   const renderBudget = () => (
     <div ref={budgetRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4B5; BUDGET SNAPSHOT</div>
+      <div style={S.sectionBanner()}>💵 BUDGET SNAPSHOT</div>
       <CopyButton targetRef={budgetRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>BAC (Total Budget)</td><td style={{ ...S.td0, fontWeight: 700 }}>$[690,525]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Actual Cost to Date</td><td style={S.tdAlt}>$[292,000] &#x2014; [42%] of budget</td></tr>
-          <tr><td style={S.tdLabel}>CPI (Cost Performance)</td><td style={S.td0}>[1.13] &#x2014; <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Under Budget</span></td></tr>
-          <tr><td style={S.tdLabelAlt}>SPI (Schedule Performance)</td><td style={S.tdAlt}>[0.96] &#x2014; <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Slightly Behind</span></td></tr>
-          <tr><td style={S.tdLabel}>EAC (Estimate at Completion)</td><td style={S.td0}>$[611,084] &#x2014; projected $[79,441] under budget</td></tr>
-          <tr><td style={S.tdLabelAlt}>Contingency Remaining</td><td style={S.tdAlt}>$[54,775] of $[62,775] &#x2014; [87%] available</td></tr>
+          <tr><td style={S.tdLabelAlt}>Actual Cost to Date</td><td style={S.tdAlt}>$[292,000] — [42%] of budget</td></tr>
+          <tr><td style={S.tdLabel}>CPI (Cost Performance)</td><td style={S.td0}>[1.13] — <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Under Budget</span></td></tr>
+          <tr><td style={S.tdLabelAlt}>SPI (Schedule Performance)</td><td style={S.tdAlt}>[0.96] — <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Slightly Behind</span></td></tr>
+          <tr><td style={S.tdLabel}>EAC (Estimate at Completion)</td><td style={S.td0}>$[611,084] — projected $[79,441] under budget</td></tr>
+          <tr><td style={S.tdLabelAlt}>Contingency Remaining</td><td style={S.tdAlt}>$[54,775] of $[62,775] — [87%] available</td></tr>
         </tbody>
       </table>
     </div>
@@ -285,7 +285,7 @@ function WeeklyStatusReportContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -324,7 +324,7 @@ function WeeklyStatusReportContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><BarChart3 size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Weekly Status Report</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Communications Management &#x2022; Monitoring &amp; Controlling</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Communications Management • Monitoring & Controlling</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">The most frequently used PM artifact. Full Report includes RAG health dashboard, accomplishments, risks/issues, milestones, and EVM budget snapshot. Quick Update shows health, accomplishments, and next week only.</p>

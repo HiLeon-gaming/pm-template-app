@@ -34,11 +34,11 @@ function ChangeRequestLogContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F504; CHANGE REQUEST LOG</td></tr>
-        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>🔄 CHANGE REQUEST LOG</td></tr>
+        <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop | PM Command Center | PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Change Request Log tracks all proposed changes to the project scope, schedule, cost, or quality baselines.</strong> Each CR goes through a formal evaluation, impact analysis, and CCB decision before implementation.<br /><br />
-          Use this template to <strong style={{ fontStyle: "italic" }}>maintain change control discipline</strong> throughout the project. Aligns with PMBOK Integration Management &#x2014; Monitoring &amp; Controlling Process Group.
+          Use this template to <strong style={{ fontStyle: "italic" }}>maintain change control discipline</strong> throughout the project. Aligns with PMBOK Integration Management — Monitoring & Controlling Process Group.
         </td></tr>
       </tbody>
     </table>
@@ -62,12 +62,12 @@ function ChangeRequestLogContent() {
     { id: "CR-003", title: "[e.g., Add $25K for security audit]", type: "Cost", tBg: C.badgeRedBg, tFg: C.badgeRedFg, requestor: "[Name]", date: "[MM/DD]", pri: "High", pBg: C.badgeRedBg, pFg: C.badgeRedFg, status: "Approved", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
     { id: "CR-004", title: "[e.g., Remove mobile app from v1]", type: "Scope", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, requestor: "[Name]", date: "[MM/DD]", pri: "Low", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg, status: "Rejected", sBg: C.badgeRedBg, sFg: C.badgeRedFg },
     { id: "CR-005", title: "[e.g., Change vendor from X to Y]", type: "Procurement", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, requestor: "[Name]", date: "[MM/DD]", pri: "Med", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, status: "Under Review", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
-    { id: "[CR-###]", title: "[Add change request]", type: "&#x2014;", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, requestor: "", date: "", pri: "&#x2014;", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
+    { id: "[CR-###]", title: "[Add change request]", type: "—", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, requestor: "", date: "", pri: "—", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg },
   ];
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; CHANGE REQUEST REGISTER</div>
+      <div style={S.sectionBanner()}> CHANGE REQUEST REGISTER</div>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -99,7 +99,7 @@ function ChangeRequestLogContent() {
 
   const renderForm = () => (
     <div ref={formRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4DD; CHANGE REQUEST FORM (TEMPLATE)</div>
+      <div style={S.sectionBanner(C.secondary)}> CHANGE REQUEST FORM (TEMPLATE)</div>
       <CopyButton targetRef={formRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -108,9 +108,9 @@ function ChangeRequestLogContent() {
           <tr><td style={S.tdLabel}>Requested By</td><td style={S.td0}>[Name, Role, Date]</td></tr>
           <tr><td style={S.tdLabelAlt}>Change Type</td><td style={S.tdAlt}><span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>Scope</span> <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Schedule</span> <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>Cost</span> <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Quality</span> <span style={S.badge(C.badgeGrayBg, C.badgeGrayFg)}>Other</span></td></tr>
           <tr><td style={S.tdLabel}>Description of Change</td><td style={S.td0}>[Detailed description of what is being requested and why]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Justification / Business Need</td><td style={S.tdAlt}>[Why is this change needed? What happens if we don&#x2019;t do it?]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Justification / Business Need</td><td style={S.tdAlt}>[Why is this change needed? What happens if we don’t do it?]</td></tr>
           <tr><td style={S.tdLabel}>Affected Deliverables</td><td style={S.td0}>[List WBS elements, requirements, or documents impacted]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Affected Baselines</td><td style={S.tdAlt}>[Scope / Schedule / Cost &#x2014; check all that apply]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Affected Baselines</td><td style={S.tdAlt}>[Scope / Schedule / Cost — check all that apply]</td></tr>
         </tbody>
       </table>
     </div>
@@ -118,7 +118,7 @@ function ChangeRequestLogContent() {
 
   const renderImpact = () => (
     <div ref={impactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x26A0;&#xFE0F; IMPACT ANALYSIS</div>
+      <div style={S.sectionBanner()}> IMPACT ANALYSIS</div>
       <CopyButton targetRef={impactRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -172,7 +172,7 @@ function ChangeRequestLogContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; CR SUMMARY DASHBOARD</div>
+      <div style={S.sectionBanner(C.secondary)}> CR SUMMARY DASHBOARD</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -194,7 +194,7 @@ function ChangeRequestLogContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -233,7 +233,7 @@ function ChangeRequestLogContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><RefreshCw size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Change Request Log</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Monitoring &amp; Controlling</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Monitoring & Controlling</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Tracks all change requests with formal evaluation, impact analysis, and CCB decisions. Full CR Log includes the form template and impact analysis; Quick Log shows the register and summary dashboard.</p>

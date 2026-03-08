@@ -34,11 +34,11 @@ function ResourceAllocationContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x1F4CA; RESOURCE ALLOCATION TRACKER</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>📊 RESOURCE ALLOCATION TRACKER</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Resource Allocation Tracker monitors how team members are assigned across project tasks and time periods.</strong> It identifies over-allocation, under-utilization, and capacity gaps to enable proactive resource management decisions.<br /><br />
-          Use this template during <strong style={{ fontStyle: "italic" }}>execution and monitoring</strong> to balance workloads. Aligns with PMBOK Resource Management &#x2014; Monitoring &amp; Controlling.
+          Use this template during <strong style={{ fontStyle: "italic" }}>execution and monitoring</strong> to balance workloads. Aligns with PMBOK Resource Management — Monitoring & Controlling.
         </td></tr>
       </tbody>
     </table>
@@ -77,7 +77,7 @@ function ResourceAllocationContent() {
 
   const renderAlloc = () => (
     <div ref={allocRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4CB; WEEKLY ALLOCATION (% OF TIME)</div>
+      <div style={S.sectionBanner()}>📋 WEEKLY ALLOCATION (% OF TIME)</div>
       <CopyButton targetRef={allocRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -97,10 +97,10 @@ function ResourceAllocationContent() {
               {t.allocs.map((a, j) => {
                 const ab = getAllocBadge(a);
                 return (<td key={j} style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}>
-                  {a > 0 ? <span style={S.badge(ab.bg, ab.fg)}>{a}%</span> : <span style={{ color: C.textMuted, fontSize: "10px" }}>&#x2014;</span>}
+                  {a > 0 ? <span style={S.badge(ab.bg, ab.fg)}>{a}%</span> : <span style={{ color: C.textMuted, fontSize: "10px" }}>—</span>}
                 </td>);
               })}
-              <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}><span style={{ ...S.badge(avgBadge.bg, avgBadge.fg), fontWeight: 800 }}>{avg > 0 ? `${avg}%` : "&#x2014;"}</span></td>
+              <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}><span style={{ ...S.badge(avgBadge.bg, avgBadge.fg), fontWeight: 800 }}>{avg > 0 ? `${avg}%` : "—"}</span></td>
             </tr>);
           })}
           <tr>
@@ -114,13 +114,13 @@ function ResourceAllocationContent() {
           </tr>
         </tbody>
       </table>
-      <p style={S.subNote}>Color key: <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>&#x2264;50%</span> <span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>51-80%</span> <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>81-100%</span> <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>&gt;100%</span></p>
+      <p style={S.subNote}>Color key: <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>≤50%</span> <span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>51-80%</span> <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>81-100%</span> <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>&gt;100%</span></p>
     </div>
   );
 
   const renderUtil = () => (
     <div ref={utilRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4C8; UTILIZATION ANALYSIS</div>
+      <div style={S.sectionBanner(C.secondary)}>📈 UTILIZATION ANALYSIS</div>
       <CopyButton targetRef={utilRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -135,10 +135,10 @@ function ResourceAllocationContent() {
           {[
             { name: "[Sarah Chen]", planned: "[40]", actual: "[42]", util: "105%", status: "Over", sBg: C.badgeRedBg, sFg: C.badgeRedFg, note: "[Working overtime on risk mitigation]" },
             { name: "[James Liu]", planned: "[40]", actual: "[36]", util: "90%", status: "On Target", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, note: "[Requirements phase winding down]" },
-            { name: "[Maria Gomez]", planned: "[40]", actual: "[44]", util: "110%", status: "Over", sBg: C.badgeRedBg, sFg: C.badgeRedFg, note: "[Sprint crunch &#x2014; monitor burnout risk]" },
+            { name: "[Maria Gomez]", planned: "[40]", actual: "[44]", util: "110%", status: "Over", sBg: C.badgeRedBg, sFg: C.badgeRedFg, note: "[Sprint crunch — monitor burnout risk]" },
             { name: "[David Park]", planned: "[30]", actual: "[28]", util: "93%", status: "On Target", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, note: "[Ramping up for testing phase]" },
-            { name: "[Lisa Wong]", planned: "[20]", actual: "[12]", util: "60%", status: "Under", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, note: "[Available capacity &#x2014; can support other projects]" },
-            { name: "[Add resource]", planned: "", actual: "", util: "", status: "&#x2014;", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, note: "" },
+            { name: "[Lisa Wong]", planned: "[20]", actual: "[12]", util: "60%", status: "Under", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, note: "[Available capacity — can support other projects]" },
+            { name: "[Add resource]", planned: "", actual: "", util: "", status: "—", sBg: C.badgeGrayBg, sFg: C.badgeGrayFg, note: "" },
           ].map((u, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -157,7 +157,7 @@ function ResourceAllocationContent() {
 
   const renderForecast = () => (
     <div ref={forecastRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F52E; RESOURCE FORECAST</div>
+      <div style={S.sectionBanner()}>🔮 RESOURCE FORECAST</div>
       <CopyButton targetRef={forecastRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -171,9 +171,9 @@ function ResourceAllocationContent() {
           {[
             { role: "Senior Developer", cur: "[2]", need: "[3]", gap: "-1", gBg: C.badgeRedBg, gFg: C.badgeRedFg, action: "[Request contractor from vendor; needed by [date]]" },
             { role: "QA Engineer", cur: "[1]", need: "[2]", gap: "-1", gBg: C.badgeRedBg, gFg: C.badgeRedFg, action: "[Internal transfer request submitted to QA dept]" },
-            { role: "Business Analyst", cur: "[1]", need: "[1]", gap: "0", gBg: C.badgeGreenBg, gFg: C.badgeGreenFg, action: "[Adequate &#x2014; will release 40% in Wk 5]" },
+            { role: "Business Analyst", cur: "[1]", need: "[1]", gap: "0", gBg: C.badgeGreenBg, gFg: C.badgeGreenFg, action: "[Adequate — will release 40% in Wk 5]" },
             { role: "DBA", cur: "[0]", need: "[1]", gap: "-1", gBg: C.badgeAmberBg, gFg: C.badgeAmberFg, action: "[Part-time support from shared DBA pool; 20% allocation]" },
-            { role: "[Add role]", cur: "", need: "", gap: "&#x2014;", gBg: C.badgeGrayBg, gFg: C.badgeGrayFg, action: "" },
+            { role: "[Add role]", cur: "", need: "", gap: "—", gBg: C.badgeGrayBg, gFg: C.badgeGrayFg, action: "" },
           ].map((f, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -191,15 +191,15 @@ function ResourceAllocationContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; CAPACITY SUMMARY</div>
+      <div style={S.sectionBanner(C.secondary)}>📊 CAPACITY SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "30%" }}>Total Team Members</td><td style={S.td0}>[6] active resources</td></tr>
-          <tr><td style={S.tdLabelAlt}>Avg Team Utilization</td><td style={S.tdAlt}>[87]% &#x2014; <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Near Capacity</span></td></tr>
-          <tr><td style={S.tdLabel}>Over-Allocated Resources</td><td style={S.td0}>[2] &#x2014; [Sarah Chen, Maria Gomez] &#x2014; <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>Action Needed</span></td></tr>
-          <tr><td style={S.tdLabelAlt}>Under-Utilized Resources</td><td style={S.tdAlt}>[1] &#x2014; [Lisa Wong at 60%] &#x2014; available for reallocation</td></tr>
-          <tr><td style={S.tdLabel}>Open Resource Gaps</td><td style={S.td0}>[3] positions &#x2014; Sr Dev, QA Engineer, DBA (part-time)</td></tr>
+          <tr><td style={S.tdLabelAlt}>Avg Team Utilization</td><td style={S.tdAlt}>[87]% — <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Near Capacity</span></td></tr>
+          <tr><td style={S.tdLabel}>Over-Allocated Resources</td><td style={S.td0}>[2] — [Sarah Chen, Maria Gomez] — <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>Action Needed</span></td></tr>
+          <tr><td style={S.tdLabelAlt}>Under-Utilized Resources</td><td style={S.tdAlt}>[1] — [Lisa Wong at 60%] — available for reallocation</td></tr>
+          <tr><td style={S.tdLabel}>Open Resource Gaps</td><td style={S.td0}>[3] positions — Sr Dev, QA Engineer, DBA (part-time)</td></tr>
           <tr><td style={S.tdLabelAlt}>Key Risk</td><td style={S.tdAlt}>[Dev Lead burnout risk if sprint pace continues; need additional developer by Wk 3]</td></tr>
         </tbody>
       </table>
@@ -208,7 +208,7 @@ function ResourceAllocationContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -247,7 +247,7 @@ function ResourceAllocationContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><BarChart3 size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Resource Allocation Tracker</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Resource Management &#x2022; Monitoring &amp; Controlling</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Resource Management • Monitoring & Controlling</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Monitors team allocation across time periods with utilization analysis and capacity forecasting. Full Tracker includes all sections; Quick View shows weekly allocation and capacity summary.</p>

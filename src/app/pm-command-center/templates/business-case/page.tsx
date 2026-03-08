@@ -166,7 +166,7 @@ function BusinessCaseContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ RISKS &amp; DEPENDENCIES</div>
+      <div style={S.sectionBanner()}>⚠️ RISKS & DEPENDENCIES</div>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -197,7 +197,7 @@ function BusinessCaseContent() {
 
   const renderRecommendation = () => (
     <div ref={recommendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🏆 RECOMMENDATION &amp; DECISION</div>
+      <div style={S.sectionBanner(C.secondary)}>🏆 RECOMMENDATION & DECISION</div>
       <CopyButton targetRef={recommendRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

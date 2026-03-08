@@ -36,11 +36,11 @@ function ProjectClosureReportContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}>
       <tbody>
-        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>&#x2705; PROJECT CLOSURE REPORT</td></tr>
+        <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${C.accent}`, textAlign: "center" as const }}>✅ PROJECT CLOSURE REPORT</td></tr>
         <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PM Command Center &nbsp;|&nbsp; PMBOK Aligned</td></tr>
         <tr><td style={descStyle}>
           <strong style={{ fontStyle: "italic" }}>The Project Closure Report formally documents the completion of all project work, confirms deliverable acceptance, and transitions the project to operations.</strong> It captures final performance metrics, open items, and lessons learned for organizational knowledge.<br /><br />
-          Complete this report <strong style={{ fontStyle: "italic" }}>after all deliverables are accepted and before the project team is released</strong>. Aligns with PMBOK Integration Management &#x2014; Close Project or Phase.
+          Complete this report <strong style={{ fontStyle: "italic" }}>after all deliverables are accepted and before the project team is released</strong>. Aligns with PMBOK Integration Management — Close Project or Phase.
         </td></tr>
       </tbody>
     </table>
@@ -61,15 +61,15 @@ function ProjectClosureReportContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4DD; EXECUTIVE SUMMARY</div>
+      <div style={S.sectionBanner()}>EXECUTIVE SUMMARY</div>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "22%" }}>Project Objective</td><td style={S.td0}>[e.g., Implement an enterprise CRM system to improve customer retention by 15% and reduce support ticket resolution time by 25%]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Final Status</td><td style={S.tdAlt}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>&#x2705; Completed</span> &#x2014; All deliverables accepted, go-live successful, warranty period complete</td></tr>
-          <tr><td style={S.tdLabel}>Duration</td><td style={S.td0}>Planned: [26 weeks] &#x2022; Actual: [30.5 weeks] &#x2022; Variance: [+4.5 weeks (+17%)]</td></tr>
-          <tr><td style={S.tdLabelAlt}>Budget</td><td style={S.tdAlt}>Planned: $[612,750] &#x2022; Actual: $[595,000] &#x2022; Variance: [-$17,750 (-2.9%)] &#x2022; <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Under Budget</span></td></tr>
-          <tr><td style={S.tdLabel}>Scope</td><td style={S.td0}>[54] user stories delivered of [54] planned (100%) &#x2022; [6] change requests approved during execution</td></tr>
+          <tr><td style={S.tdLabelAlt}>Final Status</td><td style={S.tdAlt}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Completed</span> — All deliverables accepted, go-live successful, warranty period complete</td></tr>
+          <tr><td style={S.tdLabel}>Duration</td><td style={S.td0}>Planned: [26 weeks] • Actual: [30.5 weeks] • Variance: [+4.5 weeks (+17%)]</td></tr>
+          <tr><td style={S.tdLabelAlt}>Budget</td><td style={S.tdAlt}>Planned: $[612,750] • Actual: $[595,000] • Variance: [-$17,750 (-2.9%)] • <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Under Budget</span></td></tr>
+          <tr><td style={S.tdLabel}>Scope</td><td style={S.td0}>[54] user stories delivered of [54] planned (100%) • [6] change requests approved during execution</td></tr>
           <tr><td style={S.tdLabelAlt}>Key Achievement</td><td style={S.tdAlt}>[e.g., System launched on revised date with 100% planned functionality; 95% user adoption within 30 days; zero critical defects in production]</td></tr>
         </tbody>
       </table>
@@ -78,7 +78,7 @@ function ProjectClosureReportContent() {
 
   const renderPerformance = () => (
     <div ref={performanceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CA; FINAL PERFORMANCE METRICS</div>
+      <div style={S.sectionBanner(C.secondary)}>FINAL PERFORMANCE METRICS</div>
       <CopyButton targetRef={performanceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -96,7 +96,7 @@ function ProjectClosureReportContent() {
             { metric: "Final CPI", base: "[1.00]", actual: "[1.03]", variance: "+3%", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, comment: "[Consistently under budget throughout project]" },
             { metric: "Final SPI", base: "[1.00]", actual: "[0.85]", variance: "-15%", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, comment: "[Behind due to approved scope additions; re-baselined twice]" },
             { metric: "Scope Delivery", base: "[48] stories", actual: "[54] stories", variance: "+12.5%", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, comment: "[All approved CRs delivered; no deferred items]" },
-            { metric: "Quality (Defects)", base: "&#x2264;[2]/KLOC", actual: "[1.2]/KLOC", variance: "-40%", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, comment: "[Well within quality targets; 0 critical defects in prod]" },
+            { metric: "Quality (Defects)", base: "≤[2]/KLOC", actual: "[1.2]/KLOC", variance: "-40%", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, comment: "[Well within quality targets; 0 critical defects in prod]" },
             { metric: "User Adoption", base: "[80%] @ 30d", actual: "[95%] @ 30d", variance: "+19%", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, comment: "[Champion network and training program highly effective]" },
           ].map((m, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -105,7 +105,7 @@ function ProjectClosureReportContent() {
               <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "11px" }}>{m.base}</td>
               <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "11px", fontWeight: 700 }}>{m.actual}</td>
               <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontWeight: 700 }}>{m.variance}</td>
-              <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}><span style={S.badge(m.sBg, m.sFg)}>&#x2022;</span></td>
+              <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const }}><span style={S.badge(m.sBg, m.sFg)}>•</span></td>
               <td style={{ ...S.td0, backgroundColor: bg, fontSize: "11px" }}>{m.comment}</td>
             </tr>);
           })}
@@ -116,7 +116,7 @@ function ProjectClosureReportContent() {
 
   const renderDeliverable = () => (
     <div ref={deliverableRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4E6; DELIVERABLE ACCEPTANCE</div>
+      <div style={S.sectionBanner()}>DELIVERABLE ACCEPTANCE</div>
       <CopyButton targetRef={deliverableRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -128,11 +128,11 @@ function ProjectClosureReportContent() {
         </tr></thead>
         <tbody>
           {[
-            { del: "[e.g., CRM Application &#x2014; all modules deployed to production]", acc: "&#x2705; Yes", by: "[Sponsor]", date: "[MM/DD]" },
-            { del: "[e.g., Data Migration &#x2014; legacy data verified and reconciled]", acc: "&#x2705; Yes", by: "[Data Owner]", date: "[MM/DD]" },
-            { del: "[e.g., User Training &#x2014; 150 users certified across 3 departments]", acc: "&#x2705; Yes", by: "[Training Mgr]", date: "[MM/DD]" },
-            { del: "[e.g., Technical Documentation &#x2014; admin guide, API docs, runbooks]", acc: "&#x2705; Yes", by: "[IT Ops]", date: "[MM/DD]" },
-            { del: "[e.g., Warranty Period &#x2014; 30-day support period completed]", acc: "&#x2705; Yes", by: "[Sponsor]", date: "[MM/DD]" },
+            { del: "[e.g., CRM Application — all modules deployed to production]", acc: "Yes", by: "[Sponsor]", date: "[MM/DD]" },
+            { del: "[e.g., Data Migration — legacy data verified and reconciled]", acc: "Yes", by: "[Data Owner]", date: "[MM/DD]" },
+            { del: "[e.g., User Training — 150 users certified across 3 departments]", acc: "Yes", by: "[Training Mgr]", date: "[MM/DD]" },
+            { del: "[e.g., Technical Documentation — admin guide, API docs, runbooks]", acc: "Yes", by: "[IT Ops]", date: "[MM/DD]" },
+            { del: "[e.g., Warranty Period — 30-day support period completed]", acc: "Yes", by: "[Sponsor]", date: "[MM/DD]" },
             { del: "[Add deliverable]", acc: "", by: "", date: "" },
           ].map((d, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -151,7 +151,7 @@ function ProjectClosureReportContent() {
 
   const renderOpen = () => (
     <div ref={openRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x1F4CC; OPEN ITEMS &amp; TRANSITION</div>
+      <div style={S.sectionBanner(C.secondary)}>OPEN ITEMS & TRANSITION</div>
       <CopyButton targetRef={openRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -163,10 +163,10 @@ function ProjectClosureReportContent() {
         </tr></thead>
         <tbody>
           {[
-            { item: "[e.g., Phase 2 backlog &#x2014; 4 deferred user stories + analytics dashboard]", type: "Backlog", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, to: "[Product Owner]", due: "[Q3 planning]" },
-            { item: "[e.g., Performance tuning &#x2014; optimize report generation query (non-critical)]", type: "Defect", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, to: "[Support Team]", due: "[MM/DD]" },
-            { item: "[e.g., Vendor contract renewal &#x2014; annual license review due Q4]", type: "Contract", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, to: "[Procurement]", due: "[MM/DD]" },
-            { item: "[Add open item]", type: "&#x2014;", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, to: "", due: "" },
+            { item: "[e.g., Phase 2 backlog — 4 deferred user stories + analytics dashboard]", type: "Backlog", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, to: "[Product Owner]", due: "[Q3 planning]" },
+            { item: "[e.g., Performance tuning — optimize report generation query (non-critical)]", type: "Defect", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, to: "[Support Team]", due: "[MM/DD]" },
+            { item: "[e.g., Vendor contract renewal — annual license review due Q4]", type: "Contract", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, to: "[Procurement]", due: "[MM/DD]" },
+            { item: "[Add open item]", type: "—", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, to: "", due: "" },
           ].map((o, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -184,7 +184,7 @@ function ProjectClosureReportContent() {
 
   const renderLessons = () => (
     <div ref={lessonsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>&#x1F4A1; KEY LESSONS LEARNED (TOP 5)</div>
+      <div style={S.sectionBanner()}>💡 KEY LESSONS LEARNED (TOP 5)</div>
       <CopyButton targetRef={lessonsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -195,11 +195,11 @@ function ProjectClosureReportContent() {
         </tr></thead>
         <tbody>
           {[
-            { type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[User champion network drove 95% adoption vs 80% target]", rec: "[Establish champion network on all future projects during planning phase]" },
-            { type: "&#x1F7E2; Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[Proactive vendor management kept integration on track]", rec: "[Include weekly vendor checkpoints in all vendor-dependent projects]" },
-            { type: "&#x1F7E1; Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[6 change requests added 17% to schedule &#x2014; initial scope definition insufficient]", rec: "[Invest more time in requirements elicitation; add scope freeze milestone]" },
-            { type: "&#x1F7E1; Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[Dev Lead burnout risk materialized &#x2014; single point of failure]", rec: "[Ensure cross-training and no resource exceeds 90% allocation]" },
-            { type: "&#x1F534; Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, lesson: "[Test environment instability caused 2-week cumulative QA delay]", rec: "[Provision dedicated test environment before development starts; include in project charter]" },
+            { type: "🟢 Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[User champion network drove 95% adoption vs 80% target]", rec: "[Establish champion network on all future projects during planning phase]" },
+            { type: "🟢 Win", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lesson: "[Proactive vendor management kept integration on track]", rec: "[Include weekly vendor checkpoints in all vendor-dependent projects]" },
+            { type: "🟡 Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[6 change requests added 17% to schedule — initial scope definition insufficient]", rec: "[Invest more time in requirements elicitation; add scope freeze milestone]" },
+            { type: "🟡 Improve", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lesson: "[Dev Lead burnout risk materialized — single point of failure]", rec: "[Ensure cross-training and no resource exceeds 90% allocation]" },
+            { type: "🔴 Avoid", tBg: C.badgeRedBg, tFg: C.badgeRedFg, lesson: "[Test environment instability caused 2-week cumulative QA delay]", rec: "[Provision dedicated test environment before development starts; include in project charter]" },
           ].map((l, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>
@@ -217,7 +217,7 @@ function ProjectClosureReportContent() {
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>&#x270D;&#xFE0F; FORMAL CLOSURE SIGNOFF</div>
+      <div style={S.sectionBanner(C.secondary)}>✍️ FORMAL CLOSURE SIGNOFF</div>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -244,7 +244,7 @@ function ProjectClosureReportContent() {
 
   const renderFooter = () => (
     <table style={{ ...S.tbl, marginTop: "8px" }}>
-      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop &#x2022; PM Command Center &#x2022; &#xA9; 2026 All Rights Reserved</td></tr></tbody>
+      <tbody><tr><td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PM Command Center • © 2026 All Rights Reserved</td></tr></tbody>
     </table>
   );
 
@@ -283,7 +283,7 @@ function ProjectClosureReportContent() {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><CheckCircle2 size={20} className="text-indigo-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Project Closure Report</h2>
-              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management &#x2022; Close Project or Phase</p>
+              <p className="text-xs font-medium text-indigo-600">PMBOK Integration Management • Close Project or Phase</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Formal project completion document with performance metrics, deliverable acceptance, lessons learned, and signoff. Full Report includes all sections; Quick Summary shows summary and performance only.</p>
