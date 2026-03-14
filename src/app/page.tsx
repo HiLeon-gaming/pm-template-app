@@ -13,6 +13,7 @@ import {
   Star,
   Package,
   Users,
+  Shield,
 } from "lucide-react";
 
 const products = [
@@ -158,6 +159,30 @@ const products = [
       "1:1, staff, project & exec templates",
       "Decision log & action tracker",
       "Follow-up email scripts (copy/paste)",
+    ],
+  },
+  {
+    id: "ea-cos-command-center",
+    title: "EA / Chief of Staff Command Center",
+    subtitle: "For Executive Assistants & Chiefs of Staff",
+    description:
+      "The complete operating system for being the engine behind a leader. Requests, calendar strategy, meeting prep, stakeholder management, travel logistics, and executive briefs — all in one notebook.",
+    icon: Shield,
+    href: "/ea-cos-command-center",
+    color: "purple",
+    bgClass: "bg-purple-600",
+    lightBgClass: "bg-purple-50",
+    hoverBgClass: "hover:bg-purple-100",
+    textClass: "text-purple-600",
+    hoverBorderClass: "hover:border-purple-300",
+    shadowClass: "hover:shadow-purple-100/50",
+    badgeClass: "bg-purple-100 text-purple-700",
+    templateCount: "62+",
+    highlights: [
+      "Executive inbox & request triage",
+      "Meeting brief builder & follow-ups",
+      "Stakeholder CRM & relationship plans",
+      "Travel, events & weekly exec briefs",
     ],
   },
 ];
