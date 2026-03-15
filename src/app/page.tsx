@@ -14,6 +14,7 @@ import {
   Package,
   Users,
   Shield,
+  Target,
 } from "lucide-react";
 
 const products = [
@@ -40,6 +41,7 @@ const products = [
       "RAG dashboards & EVM tracking",
       "Stakeholder & risk management",
     ],
+    commandHref: "/pm-command-center/templates/command-center",
   },
   {
     id: "ba-command-center",
@@ -64,6 +66,7 @@ const products = [
       "Process modeling & gap analysis",
       "UAT planning & sign-off",
     ],
+    commandHref: "/ba-command-center/templates/command-center",
   },
   {
     id: "todo-master",
@@ -88,6 +91,7 @@ const products = [
       "Meeting agendas & 1-on-1s",
       "Habit & goal trackers",
     ],
+    commandHref: "/todo-master/templates/command-center",
   },
   {
     id: "pmbok7-alignment-pack",
@@ -112,6 +116,7 @@ const products = [
       "Measurement & uncertainty toolkit",
       "PMO / audit readiness proof",
     ],
+    commandHref: "/pmbok7-alignment-pack/templates/command-center",
   },
   {
     id: "agile-command-center",
@@ -136,6 +141,7 @@ const products = [
       "Backlog prioritization (MoSCoW + WSJF)",
       "Retros, demos & stakeholder feedback",
     ],
+    commandHref: "/agile-command-center/templates/command-center",
   },
   {
     id: "meetings-hub",
@@ -160,6 +166,7 @@ const products = [
       "Decision log & action tracker",
       "Follow-up email scripts (copy/paste)",
     ],
+    commandHref: "/meetings-hub/templates/command-center",
   },
   {
     id: "ea-cos-command-center",
@@ -184,6 +191,32 @@ const products = [
       "Stakeholder CRM & relationship plans",
       "Travel, events & weekly exec briefs",
     ],
+    commandHref: "/ea-cos-command-center/templates/command-center",
+  },
+  {
+    id: "okr-hub",
+    title: "OKR & Operating Rhythm Hub",
+    subtitle: "Strategy-to-Execution System for Leaders & Teams",
+    description:
+      "Turn strategy into weekly action with OKRs, KPIs, and a repeatable operating rhythm. Quarterly planning, weekly execution cockpits, initiative tracking, and business reviews — all in one notebook.",
+    icon: Target,
+    href: "/okr-hub",
+    color: "amber",
+    bgClass: "bg-amber-600",
+    lightBgClass: "bg-amber-50",
+    hoverBgClass: "hover:bg-amber-100",
+    textClass: "text-amber-600",
+    hoverBorderClass: "hover:border-amber-300",
+    shadowClass: "hover:shadow-amber-100/50",
+    badgeClass: "bg-amber-100 text-amber-700",
+    templateCount: "54+",
+    highlights: [
+      "OKR builder + scoring system",
+      "Weekly priorities cockpit",
+      "KPI review → actions workflow",
+      "QBR one-pager + decision log",
+    ],
+    commandHref: "/okr-hub/templates/command-center",
   },
 ];
 
@@ -320,6 +353,16 @@ export default function HomePage() {
                       </div>
                     ))}
                   </div>
+
+                  {p.commandHref && (
+                    <Link
+                      href={p.commandHref}
+                      className={`mt-4 inline-flex items-center justify-center rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-600 hover:text-white ${p.bgClass} hover:shadow-md transition-all duration-200`}
+                    >
+                      <ClipboardList size={13} className="mr-2" />
+                      Open Command Center
+                    </Link>
+                  )}
 
                   <div
                     className={`mt-5 pt-4 border-t border-slate-100 flex items-center gap-2 text-sm font-bold ${p.textClass}`}

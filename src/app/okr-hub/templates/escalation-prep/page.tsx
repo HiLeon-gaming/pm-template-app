@@ -1,0 +1,183 @@
+"use client";
+
+import React, { useRef, useState } from "react";
+import Link from "next/link";
+import { ArrowLeft, Layout, ArrowUpCircle, LayoutDashboard, AlignJustify } from "lucide-react";
+import CopyButton from "@/components/CopyButton";
+import CopyAllButton from "@/components/CopyAllButton";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
+import { ThemeProvider, useTheme } from "@/lib/ThemeContext";
+
+type LayoutMode = "full" | "compact";
+const LAYOUTS: { id: LayoutMode; label: string; desc: string; icon: React.ElementType }[] = [
+  { id: "full", label: "Full Prep", desc: "Context + options + recommendation + decision ask", icon: LayoutDashboard },
+  { id: "compact", label: "Quick Prep", desc: "Summary + recommendation only", icon: AlignJustify },
+];
+
+function EscalationPrepContent() {
+  const { colors: C, styles: S } = useTheme();
+  const [layout, setLayout] = useState<LayoutMode>("full");
+  const fullRef = useRef<HTMLDivElement>(null);
+  const ctxRef = useRef<HTMLDivElement>(null);
+  const optRef = useRef<HTMLDivElement>(null);
+  const recRef = useRef<HTMLDivElement>(null);
+  const tipsRef = useRef<HTMLDivElement>(null);
+
+  const accent = "#6366F1";
+
+  const LT: React.CSSProperties = { width: "100%", borderCollapse: "collapse" as const, border: "none", fontFamily: S.font };
+  const LC: React.CSSProperties = { verticalAlign: "top" as const, padding: "0", border: "none" };
+
+  const renderTitleBanner = () => (
+    <table style={{ ...S.tbl, marginBottom: "4px" }}><tbody>
+      <tr><td style={{ backgroundColor: C.primary, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: `4px solid ${accent}`, textAlign: "center" as const }}>ESCALATION PREP PAGE</td></tr>
+      <tr><td style={{ backgroundColor: C.secondary, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; OKR &amp; Operating Rhythm Hub &nbsp;|&nbsp; Context &bull; Options &bull; Recommendation &bull; Decision Needed</td></tr>
+    </tbody></table>
+  );
+
+  const renderCtx = () => (
+    <div ref={ctxRef} style={{ marginBottom: "12px" }}>
+      <div style={S.sectionBanner("#DC2626")}>ESCALATION CONTEXT</div>
+      <CopyButton targetRef={ctxRef} label="Copy Section" />
+      <p style={{ ...S.subNote, marginBottom: "6px" }}>Use this page when you need to escalate something to leadership. Don&apos;t just say &ldquo;we have a problem.&rdquo; Come with context, options, and a recommendation.</p>
+      <table style={S.tbl}><tbody>
+        <tr><td style={S.tdLabel}>Escalated By</td><td style={S.td0}>[Your name / role]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Date</td><td style={S.tdAlt}>[Date]</td></tr>
+        <tr><td style={S.tdLabel}>Escalated To</td><td style={S.td0}>[Name / role — who needs to decide?]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Issue / Topic</td><td style={{ ...S.tdAlt, fontWeight: 700, color: "#DC2626" }}>[e.g., Enterprise pipeline is critically thin — only 1 deal in pipeline. Need to change approach.]</td></tr>
+        <tr><td style={S.tdLabel}>Impacts</td><td style={S.td0}>[e.g., KR 2.2 — Close 3 enterprise deals. Currently 0.33 score. At risk of 0.00 if no action.]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Urgency</td><td style={S.tdAlt}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>High</span> — Decision needed by [date] or we lose another week.</td></tr>
+        <tr><td style={S.tdLabel}>What I&apos;ve Already Tried</td><td style={S.td0}>[e.g., 50 cold emails (2% response), 20 LinkedIn messages (5% response), 3 warm intros (1 meeting scheduled)]</td></tr>
+      </tbody></table>
+    </div>
+  );
+
+  const renderOpt = () => (
+    <div ref={optRef} style={{ marginBottom: "12px" }}>
+      <div style={S.sectionBanner(accent)}>OPTIONS</div>
+      <CopyButton targetRef={optRef} label="Copy Section" />
+      <table style={S.tbl}>
+        <thead><tr>
+          <th style={{ ...S.thPrimary, width: "8%", textAlign: "center" as const }}>Option</th>
+          <th style={S.thPrimary}>Description</th>
+          <th style={{ ...S.thPrimary, width: "20%" }}>Pros</th>
+          <th style={{ ...S.thPrimary, width: "20%" }}>Cons</th>
+          <th style={{ ...S.thPrimary, width: "8%", textAlign: "center" as const }}>Cost</th>
+        </tr></thead>
+        <tbody>
+          {[
+            { opt: "A", desc: "Hire outsourced SDR agency for 3 months. Personalized enterprise outreach.", pros: "Fast to deploy (1 week). Experienced in enterprise. No long-term commitment.", cons: "$15K/mo. Less control over messaging. Ramp-up time: 2 weeks.", cost: "$45K" },
+            { opt: "B", desc: "Hire internal SDR. Full-time, dedicated to enterprise.", pros: "Full control. Builds institutional knowledge. Long-term investment.", cons: "$80K/yr salary + benefits. 4-6 week hiring timeline. Slow start.", cost: "$80K/yr" },
+            { opt: "C", desc: "Double down on referral program only. No new headcount.", pros: "Zero additional cost. Leverages existing relationships.", cons: "Unpredictable volume. May not generate enough pipeline. Slow.", cost: "$0" },
+          ].map((r, i) => {
+            const bg = i % 2 === 1 ? C.rowAlt : C.white;
+            return (
+              <tr key={i}>
+                <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontWeight: 800, fontSize: "16px", color: accent }}>{r.opt}</td>
+                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px", fontWeight: 600 }}>{r.desc}</td>
+                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "9px", color: "#059669" }}>{r.pros}</td>
+                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "9px", color: "#DC2626" }}>{r.cons}</td>
+                <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "10px", fontWeight: 700 }}>{r.cost}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+
+  const renderRecAndTips = () => (
+    <div ref={recRef} style={{ marginBottom: "12px" }}>
+      <CopyButton targetRef={recRef} label="Copy Section" />
+      <table style={LT}><tbody><tr>
+        <td style={{ ...LC, width: "55%", paddingRight: "4px" }}>
+          <table style={S.tbl}>
+            <thead><tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>✅ MY RECOMMENDATION</td></tr></thead>
+            <tbody>
+              <tr><td style={S.tdLabel}>Recommended Option</td><td style={{ ...S.td0, fontWeight: 800, fontSize: "14px", color: accent }}>[e.g., Option A — Outsourced SDR agency]</td></tr>
+              <tr><td style={S.tdLabelAlt}>Why</td><td style={S.tdAlt}>[Fastest to deploy. Pipeline needed NOW. Can switch later if ROI proves out.]</td></tr>
+              <tr><td style={S.tdLabel}>If Approved, Next Steps</td><td style={S.td0}>[1. Sign contract Fri. 2. Kickoff Mon. 3. First outreach Week 5.]</td></tr>
+              <tr><td style={S.tdLabelAlt}>Decision Needed By</td><td style={{ ...S.tdAlt, fontWeight: 700, color: "#DC2626" }}>[This Friday — every week of delay = 1 fewer week of outreach.]</td></tr>
+            </tbody>
+          </table>
+        </td>
+        <td style={{ ...LC, width: "45%", paddingLeft: "4px" }}>
+          <table style={S.tbl}>
+            <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>💡 ESCALATION TIPS</td></tr></thead>
+            <tbody>
+              {[
+                { color: "#DC2626", tip: "Never escalate without a recommendation.", detail: "Leaders want to approve your solution, not solve your problem." },
+                { color: accent, tip: "Include 'what I've already tried'.", detail: "Shows you've done the work. Prevents 'have you tried X?' loops." },
+                { color: "#D97706", tip: "Set a deadline for the decision.", detail: "No deadline = limbo. 'Decision needed by Friday' creates urgency." },
+                { color: "#059669", tip: "Keep it to one page.", detail: "If a leader needs >5 min to understand, you haven't distilled enough." },
+              ].map((r, i) => {
+                const bg = i % 2 === 1 ? C.rowAlt : C.white;
+                return (
+                  <tr key={i}>
+                    <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px", padding: "5px 10px" }}>
+                      <strong style={{ color: r.color }}>{r.tip}</strong><br />
+                      <span style={{ fontSize: "9px", color: C.textMuted }}>{r.detail}</span>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </td>
+      </tr></tbody></table>
+    </div>
+  );
+
+  const renderFooter = () => (
+    <table style={{ ...S.tbl, marginTop: "8px" }}><tbody><tr>
+      <td style={{ backgroundColor: C.primary, color: C.footerText, padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>
+        ExecNoteShop &bull; OKR &amp; Operating Rhythm Hub &bull; &copy; 2026 All Rights Reserved
+      </td>
+    </tr></tbody></table>
+  );
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50/30">
+      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center"><Layout size={18} className="text-white" /></div>
+            <div><h1 className="text-lg font-bold text-slate-900 leading-tight">ExecNoteShop</h1><p className="text-xs text-slate-500 -mt-0.5">Professional Template Studio</p></div>
+          </div>
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold"><ArrowUpCircle size={11} />Escalation</span>
+        </div>
+      </header>
+      <div className="max-w-6xl mx-auto px-6 py-8">
+        <div className="flex items-center justify-between mb-6">
+          <Link href="/okr-hub" className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-600 transition-colors"><ArrowLeft size={14} />Back to OKR Hub</Link>
+          <CopyAllButton targetRef={fullRef} />
+        </div>
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center"><ArrowUpCircle size={20} className="text-indigo-600" /></div>
+            <div><h2 className="text-2xl font-extrabold text-slate-900">Escalation Prep Page</h2><p className="text-xs font-medium text-indigo-600">Context &bull; Options &bull; Recommendation &bull; Decision Needed</p></div>
+          </div>
+          <p className="text-sm text-slate-600 mt-2 max-w-3xl">Prepare escalations properly. Context, options, recommendation, and a clear decision ask.</p>
+        </div>
+        <ThemeSwitcher />
+        <div data-copy-exclude="true" className="mb-6">
+          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">View Mode</p>
+          <div className="flex flex-wrap gap-2">
+            {LAYOUTS.map((l) => { const Icon = l.icon; const isActive = layout === l.id; return (
+              <button key={l.id} onClick={() => setLayout(l.id)} className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold transition-all ${isActive ? "bg-indigo-600 text-white border-indigo-600 shadow-md shadow-indigo-200" : "bg-white text-slate-600 border-slate-200 hover:border-indigo-300 hover:text-indigo-700"}`}>
+                <Icon size={15} /><span>{l.label}</span><span className={`text-[10px] font-medium ${isActive ? "text-indigo-200" : "text-slate-400"}`}>{l.desc}</span>
+              </button>
+            ); })}
+          </div>
+        </div>
+        <div ref={fullRef} style={{ fontFamily: S.font }}>
+          {layout === "full" && <>{renderTitleBanner()}{renderCtx()}{renderOpt()}{renderRecAndTips()}{renderFooter()}</>}
+          {layout === "compact" && <>{renderTitleBanner()}{renderCtx()}{renderRecAndTips()}{renderFooter()}</>}
+        </div>
+        <div className="flex justify-center mt-8 mb-12"><CopyAllButton targetRef={fullRef} /></div>
+      </div>
+    </div>
+  );
+}
+
+export default function EscalationPrepPage() { return <ThemeProvider><EscalationPrepContent /></ThemeProvider>; }
