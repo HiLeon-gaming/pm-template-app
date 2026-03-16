@@ -15,6 +15,7 @@ import {
   Users,
   Shield,
   Target,
+  Handshake,
 } from "lucide-react";
 
 const products = [
@@ -217,6 +218,31 @@ const products = [
       "QBR one-pager + decision log",
     ],
     commandHref: "/okr-hub/templates/command-center",
+  },
+  {
+    id: "relationship-hub",
+    title: "Relationship & Stakeholder Management Hub",
+    subtitle: "For Professionals Who Manage People, Trust & Follow-Through",
+    description:
+      "Your complete OneNote system for managing stakeholder relationships like a pro. Profiles, commitments, follow-ups, meeting prep, risk tracking, and executive summaries \u2014 all in one notebook.",
+    icon: Handshake,
+    href: "/relationship-hub",
+    color: "rose",
+    bgClass: "bg-rose-600",
+    lightBgClass: "bg-rose-50",
+    hoverBgClass: "hover:bg-rose-100",
+    textClass: "text-rose-600",
+    hoverBorderClass: "hover:border-rose-300",
+    shadowClass: "hover:shadow-rose-100/50",
+    badgeClass: "bg-rose-100 text-rose-700",
+    templateCount: "58+",
+    highlights: [
+      "Stakeholder profiles (CRM-lite)",
+      "Commitments log & follow-up queue",
+      "Relationship health scorecard",
+      "Meeting prep & follow-up email builder",
+    ],
+    commandHref: "/relationship-hub/templates/command-center",
   },
 ];
 
