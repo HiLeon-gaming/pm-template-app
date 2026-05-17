@@ -206,12 +206,18 @@ function sanitizeAllElements(root: HTMLElement): void {
   });
 }
 
-/* ─── 5. Ghost rows — force column widths via padding ───────── */
+/* ─── 5. Ghost rows — force column widths via spacer images ─── */
+
+/** 1×1 transparent GIF used as a width-forcing spacer. */
+const SPACER_GIF =
+  "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
 
 /**
- * OneNote auto-sizes table columns to fit content, ignoring width
- * declarations.  Ghost rows contain invisible cells whose horizontal
- * padding physically forces each column to the desired pixel width.
+ * OneNote auto-sizes table columns to fit content, ignoring all
+ * width declarations (CSS and HTML attributes).  Ghost rows use
+ * transparent spacer images with explicit width/height attributes
+ * to physically force each column to the desired pixel width.
+ * OneNote MUST render <img> tags and respect their dimensions.
  */
 function injectGhostRows(root: HTMLElement): void {
   root.querySelectorAll("table").forEach((table) => {
@@ -227,25 +233,22 @@ function injectGhostRows(root: HTMLElement): void {
     if (widths.every((w) => w === 0)) return;
 
     const ghostRow = document.createElement("tr");
-    ghostRow.style.cssText =
-      "font-size:1px;line-height:1px;height:1px;max-height:1px;" +
-      "mso-line-height-rule:exactly;overflow:hidden";
 
     for (let i = 0; i < cells.length; i++) {
       const ghostCell = document.createElement("td");
-      const w = widths[i];
+      ghostCell.style.cssText =
+        "padding:0;border:none;font-size:0;line-height:0;height:0";
 
+      const w = widths[i];
       if (w > 0) {
-        const pad = Math.max(1, Math.floor(w / 2) - 1);
-        ghostCell.style.cssText =
-          `padding:0 ${pad}px;font-size:1px;line-height:1px;height:1px;` +
-          "max-height:1px;border:none;color:white;overflow:hidden";
-      } else {
-        ghostCell.style.cssText =
-          "font-size:1px;line-height:1px;height:1px;max-height:1px;" +
-          "border:none;overflow:hidden";
+        const img = document.createElement("img");
+        img.src = SPACER_GIF;
+        img.width = w;
+        img.height = 1;
+        img.alt = "";
+        img.style.cssText = "display:block;border:none";
+        ghostCell.appendChild(img);
       }
-      ghostCell.innerHTML = "\u00a0";
 
       const cs = cells[i].getAttribute("colspan");
       if (cs) ghostCell.setAttribute("colspan", cs);
@@ -277,8 +280,8 @@ function findWidestRow(table: HTMLTableElement): HTMLTableRowElement | null {
 
 /**
  * Wrap clipboard content in a fixed-width outer table.  A spacer
- * row with horizontal padding physically forces the table (and the
- * OneNote outline container) to be TARGET_WIDTH_PX pixels wide.
+ * row contains a transparent image whose width attribute forces
+ * OneNote to create a container at least TARGET_WIDTH_PX wide.
  */
 function wrapInOuterTable(root: HTMLElement): void {
   const wrapper = document.createElement("table");
@@ -291,17 +294,18 @@ function wrapInOuterTable(root: HTMLElement): void {
 
   const tbody = document.createElement("tbody");
 
-  // Spacer row — forces the table to be at least TARGET_WIDTH_PX wide
+  // Spacer row — transparent image forces the container width
   const spacerRow = document.createElement("tr");
-  spacerRow.style.cssText =
-    "font-size:1px;line-height:1px;height:1px;max-height:1px;" +
-    "mso-line-height-rule:exactly;overflow:hidden";
   const spacerCell = document.createElement("td");
-  const halfW = Math.floor(TARGET_WIDTH_PX / 2);
   spacerCell.style.cssText =
-    `padding:0 ${halfW}px;font-size:1px;line-height:1px;height:1px;` +
-    "max-height:1px;border:none;color:white;overflow:hidden";
-  spacerCell.innerHTML = "\u00a0";
+    "padding:0;border:none;font-size:0;line-height:0;height:0";
+  const spacerImg = document.createElement("img");
+  spacerImg.src = SPACER_GIF;
+  spacerImg.width = TARGET_WIDTH_PX;
+  spacerImg.height = 1;
+  spacerImg.alt = "";
+  spacerImg.style.cssText = "display:block;border:none";
+  spacerCell.appendChild(spacerImg);
   spacerRow.appendChild(spacerCell);
   tbody.appendChild(spacerRow);
 
