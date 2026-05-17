@@ -32,120 +32,57 @@ export async function copyElementToClipboard(el: HTMLElement): Promise<void> {
 /* ────────────────────────────────────────────────────────────────
  * OneNote / Word HTML sanitiser
  *
- * OneNote's HTML engine supports only a small subset of CSS.
- * Supported on cells: background-color, border, color, font-*,
- *   padding, text-align, width.
- * NOT supported: border-collapse, border-radius, letter-spacing,
- *   text-transform, line-height, display:inline-block, etc.
+ * OneNote's HTML engine supports only a small subset of CSS and
+ * ignores ALL width declarations (percentage and pixel).  Tables
+ * auto-size to fit their content.
  *
  * Strategy:
- *  1. Duplicate key CSS as HTML attributes (bgcolor, width,
- *     align, valign, cellspacing, cellpadding) which OneNote
- *     handles more reliably than CSS equivalents.
- *  2. Strip / convert unsupported CSS so OneNote doesn't silently
- *     discard it and fall back to unwanted defaults.
- *  3. Convert section-banner <div>s to single-cell <table>s
- *     because OneNote renders table-cell backgrounds much more
- *     reliably than styled divs.
+ *  1. Convert banner <div>s to single-cell <table>s.
+ *  2. Convert percentage widths to fixed pixel widths (720px
+ *     reference) — feeds ghost-row calculations.
+ *  3. Duplicate key CSS as HTML attributes (bgcolor, width,
+ *     align, valign, cellspacing, cellpadding).
+ *  4. Strip / convert unsupported CSS.
+ *  5. Inject ghost rows with horizontal padding to physically
+ *     force columns to the correct pixel widths.
+ *  6. Wrap everything in a fixed-width outer table so OneNote
+ *     creates a wide enough outline container.
  * ──────────────────────────────────────────────────────────── */
 
+/**
+ * Target width for the template in pixels.
+ * Approximates a standard OneNote container on a letter-sized page.
+ */
+const TARGET_WIDTH_PX = 720;
+
 function sanitizeForOffice(root: HTMLElement): void {
+  convertBannerDivsToTables(root);
+  convertPercentToPixelWidths(root);
   sanitizeTables(root);
   sanitizeCells(root);
   sanitizeAllElements(root);
-  convertBannerDivsToTables(root);
+  injectGhostRows(root);
+  wrapInOuterTable(root);
 }
 
-/** Add HTML table attributes that OneNote respects as fallbacks. */
-function sanitizeTables(root: HTMLElement): void {
-  root.querySelectorAll("table").forEach((table) => {
-    // cellspacing="0" is the HTML-attribute equivalent of
-    // border-collapse:collapse — critical for eliminating the
-    // double-border / extra-gap problem in OneNote.
-    table.setAttribute("cellspacing", "0");
-    table.setAttribute("cellpadding", "0");
+/* ─── 1. Banner div → table conversion ──────────────────────── */
 
-    // Layout tables (border:none) need an explicit attribute
-    const border = table.style.border;
-    if (!border || border === "none") {
-      table.setAttribute("border", "0");
-    }
-
-    if (table.style.width) {
-      table.setAttribute("width", table.style.width);
-    }
-  });
-}
-
-/** Duplicate cell CSS to HTML attributes for broader compatibility. */
-function sanitizeCells(root: HTMLElement): void {
-  root.querySelectorAll("td, th").forEach((cell) => {
-    const el = cell as HTMLElement;
-
-    if (el.style.backgroundColor) {
-      el.setAttribute("bgcolor", el.style.backgroundColor);
-    }
-    if (el.style.width) {
-      el.setAttribute("width", el.style.width);
-    }
-    if (el.style.verticalAlign) {
-      el.setAttribute("valign", el.style.verticalAlign);
-    }
-    if (el.style.textAlign) {
-      el.setAttribute("align", el.style.textAlign);
-    }
-  });
-}
-
-/** Strip unsupported CSS and convert text-transform to real text. */
-function sanitizeAllElements(root: HTMLElement): void {
-  root.querySelectorAll("*").forEach((node) => {
-    const el = node as HTMLElement;
-    if (!el.style) return;
-
-    // Convert text-transform:uppercase to actual uppercase characters
-    if (el.style.textTransform === "uppercase") {
-      el.style.removeProperty("text-transform");
-      el.childNodes.forEach((child) => {
-        if (child.nodeType === Node.TEXT_NODE && child.textContent) {
-          child.textContent = child.textContent.toUpperCase();
-        }
-      });
-    }
-
-    // Remove properties OneNote silently ignores
-    el.style.removeProperty("letter-spacing");
-    el.style.removeProperty("border-radius");
-    el.style.removeProperty("line-height");
-    el.style.removeProperty("border-collapse");
-  });
-}
-
-/**
- * Section banners are styled <div>s with a background colour and
- * a bottom border.  OneNote renders table cells with background
- * colours far more reliably than standalone divs, so we wrap each
- * banner in a single-cell table during copy.
- */
 function convertBannerDivsToTables(root: HTMLElement): void {
   root.querySelectorAll("div").forEach((div) => {
-    // Identify section banners by their characteristic styling
     if (!div.style.backgroundColor || !div.style.borderBottom) return;
-    // Skip if this div contains complex child elements (not a simple banner)
     if (div.querySelector("table, div")) return;
 
     const table = document.createElement("table");
     table.setAttribute("cellspacing", "0");
     table.setAttribute("cellpadding", "0");
-    table.setAttribute("width", "100%");
+    table.setAttribute("width", String(TARGET_WIDTH_PX));
     table.setAttribute("border", "0");
-    table.style.width = "100%";
+    table.style.width = `${TARGET_WIDTH_PX}px`;
 
     const tbody = document.createElement("tbody");
     const tr = document.createElement("tr");
     const td = document.createElement("td");
 
-    // Transfer all inline styles from the div to the td
     td.style.cssText = div.style.cssText;
     td.setAttribute("bgcolor", div.style.backgroundColor);
     td.innerHTML = div.innerHTML;
@@ -156,4 +93,229 @@ function convertBannerDivsToTables(root: HTMLElement): void {
 
     div.parentNode?.replaceChild(table, div);
   });
+}
+
+/* ─── 2. Percentage → pixel width conversion ────────────────── */
+
+function convertPercentToPixelWidths(root: HTMLElement): void {
+  walkForWidths(root, TARGET_WIDTH_PX);
+}
+
+function walkForWidths(el: HTMLElement, availWidth: number): void {
+  for (const child of Array.from(el.children)) {
+    if (!(child instanceof HTMLElement)) continue;
+    if (child.tagName === "TABLE") {
+      resolveTableWidths(child as HTMLTableElement, availWidth);
+    } else {
+      walkForWidths(child, availWidth);
+    }
+  }
+}
+
+function resolveTableWidths(
+  table: HTMLTableElement,
+  availWidth: number,
+): void {
+  let tableWidth = availWidth;
+  const pct = parsePercent(table.style.width);
+  if (pct !== null) {
+    tableWidth = Math.round((availWidth * pct) / 100);
+  }
+  table.style.width = `${tableWidth}px`;
+
+  for (const row of Array.from(table.rows)) {
+    for (const cell of Array.from(row.cells)) {
+      let cellWidth: number | null = null;
+      const cellPct = parsePercent(cell.style.width);
+      if (cellPct !== null) {
+        cellWidth = Math.round((tableWidth * cellPct) / 100);
+        cell.style.width = `${cellWidth}px`;
+      }
+      walkForWidths(cell, cellWidth ?? tableWidth);
+    }
+  }
+}
+
+function parsePercent(value: string | undefined | null): number | null {
+  if (!value) return null;
+  const match = value.match(/^(\d+(?:\.\d+)?)%$/);
+  return match ? parseFloat(match[1]) : null;
+}
+
+/* ─── 3. HTML attribute duplication ─────────────────────────── */
+
+function sanitizeTables(root: HTMLElement): void {
+  root.querySelectorAll("table").forEach((table) => {
+    table.setAttribute("cellspacing", "0");
+    table.setAttribute("cellpadding", "0");
+
+    const border = table.style.border;
+    if (!border || border === "none") {
+      table.setAttribute("border", "0");
+    }
+
+    if (table.style.width) {
+      table.setAttribute("width", stripUnits(table.style.width));
+    }
+  });
+}
+
+function sanitizeCells(root: HTMLElement): void {
+  root.querySelectorAll("td, th").forEach((cell) => {
+    const el = cell as HTMLElement;
+
+    if (el.style.backgroundColor) {
+      el.setAttribute("bgcolor", el.style.backgroundColor);
+    }
+    if (el.style.width) {
+      el.setAttribute("width", stripUnits(el.style.width));
+    }
+    if (el.style.verticalAlign) {
+      el.setAttribute("valign", el.style.verticalAlign);
+    }
+    if (el.style.textAlign) {
+      el.setAttribute("align", el.style.textAlign);
+    }
+  });
+}
+
+function stripUnits(value: string): string {
+  return value.replace(/px$/i, "").replace(/%$/i, "");
+}
+
+/* ─── 4. Unsupported CSS cleanup ────────────────────────────── */
+
+function sanitizeAllElements(root: HTMLElement): void {
+  root.querySelectorAll("*").forEach((node) => {
+    const el = node as HTMLElement;
+    if (!el.style) return;
+
+    if (el.style.textTransform === "uppercase") {
+      el.style.removeProperty("text-transform");
+      el.childNodes.forEach((child) => {
+        if (child.nodeType === Node.TEXT_NODE && child.textContent) {
+          child.textContent = child.textContent.toUpperCase();
+        }
+      });
+    }
+
+    el.style.removeProperty("letter-spacing");
+    el.style.removeProperty("border-radius");
+    el.style.removeProperty("line-height");
+    el.style.removeProperty("border-collapse");
+  });
+}
+
+/* ─── 5. Ghost rows — force column widths via padding ───────── */
+
+/**
+ * OneNote auto-sizes table columns to fit content, ignoring width
+ * declarations.  Ghost rows contain invisible cells whose horizontal
+ * padding physically forces each column to the desired pixel width.
+ */
+function injectGhostRows(root: HTMLElement): void {
+  root.querySelectorAll("table").forEach((table) => {
+    const templateRow = findWidestRow(table);
+    if (!templateRow || templateRow.cells.length <= 1) return;
+
+    const cells = Array.from(templateRow.cells);
+    const widths: number[] = cells.map((cell) => {
+      const w = parseInt(cell.style.width, 10);
+      return isNaN(w) ? 0 : w;
+    });
+
+    if (widths.every((w) => w === 0)) return;
+
+    const ghostRow = document.createElement("tr");
+    ghostRow.style.cssText =
+      "font-size:1px;line-height:1px;height:1px;max-height:1px;" +
+      "mso-line-height-rule:exactly;overflow:hidden";
+
+    for (let i = 0; i < cells.length; i++) {
+      const ghostCell = document.createElement("td");
+      const w = widths[i];
+
+      if (w > 0) {
+        const pad = Math.max(1, Math.floor(w / 2) - 1);
+        ghostCell.style.cssText =
+          `padding:0 ${pad}px;font-size:1px;line-height:1px;height:1px;` +
+          "max-height:1px;border:none;color:white;overflow:hidden";
+      } else {
+        ghostCell.style.cssText =
+          "font-size:1px;line-height:1px;height:1px;max-height:1px;" +
+          "border:none;overflow:hidden";
+      }
+      ghostCell.innerHTML = "\u00a0";
+
+      const cs = cells[i].getAttribute("colspan");
+      if (cs) ghostCell.setAttribute("colspan", cs);
+
+      ghostRow.appendChild(ghostCell);
+    }
+
+    const firstSection =
+      table.querySelector("thead") || table.querySelector("tbody");
+    if (firstSection) {
+      firstSection.insertBefore(ghostRow, firstSection.firstChild);
+    }
+  });
+}
+
+function findWidestRow(table: HTMLTableElement): HTMLTableRowElement | null {
+  let best: HTMLTableRowElement | null = null;
+  let maxCells = 0;
+  for (const row of Array.from(table.rows)) {
+    if (row.cells.length > maxCells) {
+      maxCells = row.cells.length;
+      best = row;
+    }
+  }
+  return best;
+}
+
+/* ─── 6. Outer wrapper table ────────────────────────────────── */
+
+/**
+ * Wrap clipboard content in a fixed-width outer table.  A spacer
+ * row with horizontal padding physically forces the table (and the
+ * OneNote outline container) to be TARGET_WIDTH_PX pixels wide.
+ */
+function wrapInOuterTable(root: HTMLElement): void {
+  const wrapper = document.createElement("table");
+  wrapper.setAttribute("width", String(TARGET_WIDTH_PX));
+  wrapper.setAttribute("cellspacing", "0");
+  wrapper.setAttribute("cellpadding", "0");
+  wrapper.setAttribute("border", "0");
+  wrapper.style.cssText =
+    `width:${TARGET_WIDTH_PX}px;table-layout:fixed;border:none`;
+
+  const tbody = document.createElement("tbody");
+
+  // Spacer row — forces the table to be at least TARGET_WIDTH_PX wide
+  const spacerRow = document.createElement("tr");
+  spacerRow.style.cssText =
+    "font-size:1px;line-height:1px;height:1px;max-height:1px;" +
+    "mso-line-height-rule:exactly;overflow:hidden";
+  const spacerCell = document.createElement("td");
+  const halfW = Math.floor(TARGET_WIDTH_PX / 2);
+  spacerCell.style.cssText =
+    `padding:0 ${halfW}px;font-size:1px;line-height:1px;height:1px;` +
+    "max-height:1px;border:none;color:white;overflow:hidden";
+  spacerCell.innerHTML = "\u00a0";
+  spacerRow.appendChild(spacerCell);
+  tbody.appendChild(spacerRow);
+
+  // Content row — holds all the actual template content
+  const contentRow = document.createElement("tr");
+  const contentCell = document.createElement("td");
+  contentCell.style.cssText = "padding:0;border:none;vertical-align:top";
+
+  while (root.firstChild) {
+    contentCell.appendChild(root.firstChild);
+  }
+
+  contentRow.appendChild(contentCell);
+  tbody.appendChild(contentRow);
+  wrapper.appendChild(tbody);
+  root.appendChild(wrapper);
 }
