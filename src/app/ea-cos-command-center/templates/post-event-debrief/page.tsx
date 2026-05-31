@@ -35,7 +35,7 @@ function PostEventDebriefContent() {
 
   const renderOverview = () => (
     <div ref={overviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>EVENT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>EVENT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={overviewRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Event Name</td><td style={{ ...S.td0, fontWeight: 700 }}>[Event Title]</td></tr>
@@ -52,7 +52,7 @@ function PostEventDebriefContent() {
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>WHAT WORKED WELL</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>WHAT WORKED WELL</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             {[
               "[Venue was perfect — right size, good AV, easy parking]",
@@ -67,7 +67,7 @@ function PostEventDebriefContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>WHAT DIDN&apos;T WORK / IMPROVE NEXT TIME</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>WHAT DIDN&apos;T WORK / IMPROVE NEXT TIME</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             {[
               "[AV had a 10-min delay at start — test earlier next time]",
@@ -88,7 +88,7 @@ function PostEventDebriefContent() {
 
   const renderFollowups = () => (
     <div ref={followupsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>FOLLOW-UP ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>FOLLOW-UP ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={followupsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

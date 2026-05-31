@@ -36,7 +36,7 @@ function PrepContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MEETING CONTEXT &amp; OBJECTIVES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MEETING CONTEXT &amp; OBJECTIVES</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Complete this 24&ndash;48 hours before the meeting. Walking in prepared is the single biggest differentiator between PMs who get results and PMs who waste everyone&apos;s time.</p>
       <table style={S.tbl}>
@@ -71,7 +71,7 @@ function PrepContent() {
 
   const renderTalking = () => (
     <div ref={talkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>TALKING POINTS &amp; KEY MESSAGES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>TALKING POINTS &amp; KEY MESSAGES</td></tr></tbody></table>
       <CopyButton targetRef={talkRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Prepare 3&ndash;5 key points. Frame everything in terms of what THEY care about. Lead with what matters to them, not what matters to you.</p>
       <table style={S.tbl}>
@@ -104,7 +104,7 @@ function PrepContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>RISKS, LANDMINES &amp; TOUGH QUESTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>RISKS, LANDMINES &amp; TOUGH QUESTIONS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Anticipate what could go wrong. What tough questions might they ask? What topics are sensitive? Prepare your responses in advance.</p>
       <table style={S.tbl}>

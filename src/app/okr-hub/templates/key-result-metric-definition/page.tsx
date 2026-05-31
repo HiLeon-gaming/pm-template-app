@@ -36,7 +36,7 @@ function MetricDefContent() {
 
   const renderDef = () => (
     <div ref={defRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>METRIC DEFINITION TABLE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>METRIC DEFINITION TABLE</td></tr></tbody></table>
       <CopyButton targetRef={defRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>For each Key Result, define EXACTLY how it&apos;s measured. This prevents arguments about &ldquo;what counts&rdquo; and ensures everyone calculates progress the same way.</p>
       <table style={S.tbl}>

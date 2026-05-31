@@ -35,7 +35,7 @@ function DecisionMapContent() {
 
   const renderMap = () => (
     <div ref={mapRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; DECISION AUTHORITY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; DECISION AUTHORITY</td></tr></tbody></table>
       <CopyButton targetRef={mapRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Map what this stakeholder can approve, block, or influence. Knowing this prevents you from asking the wrong person for a decision and speeds up execution. Update whenever their authority or role changes.</p>
       <table style={S.tbl}>
@@ -78,7 +78,7 @@ function DecisionMapContent() {
 
   const renderEscalation = () => (
     <div ref={escRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ESCALATION &amp; DECISION DEADLOCK PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ESCALATION &amp; DECISION DEADLOCK PLAN</td></tr></tbody></table>
       <CopyButton targetRef={escRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>When decisions stall or get blocked, this plan tells you exactly what to do. Fill this out proactively so you&apos;re never stuck waiting without options.</p>
       <table style={S.tbl}>

@@ -77,7 +77,7 @@ function ReadingLogContent() {
 
   const renderDetailedSection = (label: string, items: typeof BOOKS, ref: React.RefObject<HTMLDivElement | null>, bannerColor?: string) => (  // eslint-disable-line @typescript-eslint/no-explicit-any
     <div ref={ref} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(bannerColor)}>{label}</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(bannerColor)}>{label}</td></tr></tbody></table>
       <CopyButton targetRef={ref} label="Copy Section" />
       {items.map((item, i) => (
         <table key={i} style={{ ...S.tbl, marginBottom: "6px" }}>
@@ -148,7 +148,7 @@ function ReadingLogContent() {
 
   const renderGoal = () => (
     <div ref={goalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🎯 LEARNING GOAL PROGRESS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🎯 LEARNING GOAL PROGRESS</td></tr></tbody></table>
       <CopyButton targetRef={goalRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

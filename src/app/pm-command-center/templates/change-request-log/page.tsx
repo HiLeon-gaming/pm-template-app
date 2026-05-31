@@ -99,7 +99,7 @@ function ChangeRequestLogContent() {
 
   const renderForm = () => (
     <div ref={formRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> CHANGE REQUEST FORM (TEMPLATE)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> CHANGE REQUEST FORM (TEMPLATE)</td></tr></tbody></table>
       <CopyButton targetRef={formRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -172,7 +172,7 @@ function ChangeRequestLogContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> CR SUMMARY DASHBOARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> CR SUMMARY DASHBOARD</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

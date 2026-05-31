@@ -88,7 +88,7 @@ function ProjectCharterContent() {
 
   const renderScope = () => (
     <div ref={scopeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>3 — HIGH-LEVEL SCOPE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>3 — HIGH-LEVEL SCOPE</td></tr></tbody></table>
       <CopyButton targetRef={scopeRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "28%" }}>Category</th><th style={S.thSecondary}>Details</th></tr></thead>
@@ -139,7 +139,7 @@ function ProjectCharterContent() {
 
   const renderMilestones = () => (
     <div ref={milestoneRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>5 — MILESTONE SCHEDULE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>5 — MILESTONE SCHEDULE</td></tr></tbody></table>
       <CopyButton targetRef={milestoneRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -208,7 +208,7 @@ function ProjectCharterContent() {
 
   const renderRisks = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>7 — INITIAL RISK REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>7 — INITIAL RISK REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -265,7 +265,7 @@ function ProjectCharterContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>9 — CHARTER APPROVAL SIGNATURES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>9 — CHARTER APPROVAL SIGNATURES</td></tr></tbody></table>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

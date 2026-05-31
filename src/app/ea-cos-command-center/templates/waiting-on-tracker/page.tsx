@@ -32,7 +32,7 @@ function WaitingOnTrackerContent() {
 
   const renderTable = () => (
     <div ref={tableRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 RESPONSES &amp; DELIVERABLES WE&apos;RE WAITING ON</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 RESPONSES &amp; DELIVERABLES WE&apos;RE WAITING ON</td></tr></tbody></table>
       <CopyButton targetRef={tableRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track what you&apos;re waiting on from others. Follow up without nagging — just check this list daily.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function WaitingOnTrackerContent() {
 
   const renderAging = () => (
     <div ref={agingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚦 AGING ALERT RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚦 AGING ALERT RULES</td></tr></tbody></table>
       <CopyButton targetRef={agingRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "4px" }}>

@@ -33,7 +33,7 @@ function StakeholderUpdateContent() {
 
   const renderUpdate = () => (
     <div ref={updateRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER UPDATE — FILL &amp; SEND</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER UPDATE — FILL &amp; SEND</td></tr></tbody></table>
       <CopyButton targetRef={updateRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Fill in the brackets. Copy. Paste into Slack, email, or your update channel. Takes 5 minutes.</p>
       <table style={S.tbl}><tbody>
@@ -86,7 +86,7 @@ function StakeholderUpdateContent() {
 
   const renderEx = () => (
     <div ref={exRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>EXAMPLE: COMPLETED UPDATE (Slack / Email)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>EXAMPLE: COMPLETED UPDATE (Slack / Email)</td></tr></tbody></table>
       <CopyButton targetRef={exRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2", whiteSpace: "pre-line" as const }}>
@@ -113,7 +113,7 @@ Next week: Onboard SDR agency. Ship onboarding design. Launch pulse survey.`}
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>STAKEHOLDER UPDATE TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>STAKEHOLDER UPDATE TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>

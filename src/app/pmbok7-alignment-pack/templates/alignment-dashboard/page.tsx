@@ -98,7 +98,7 @@ function AlignmentDashboardContent() {
 
   const renderPrinciple = () => (
     <div ref={principleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>⚖️ PRINCIPLE FOCUS AREAS (This Period)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>⚖️ PRINCIPLE FOCUS AREAS (This Period)</td></tr></tbody></table>
       <CopyButton targetRef={principleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -144,7 +144,7 @@ function AlignmentDashboardContent() {
 
   const renderOutcomes = () => (
     <div ref={outcomesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>📈 TOP OUTCOMES & MEASUREMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>📈 TOP OUTCOMES & MEASUREMENT</td></tr></tbody></table>
       <CopyButton targetRef={outcomesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

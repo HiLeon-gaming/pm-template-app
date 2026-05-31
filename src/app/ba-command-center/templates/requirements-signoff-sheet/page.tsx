@@ -104,7 +104,7 @@ function SignoffContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✅ APPROVAL SIGNATURES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✅ APPROVAL SIGNATURES</td></tr></tbody></table>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>By signing below, I confirm that I have reviewed the requirements documents listed above and approve them as the baselined requirements for this project.</p>
       <table style={S.tbl}>
@@ -193,7 +193,7 @@ function SignoffContent() {
 
   const renderHistory = () => (
     <div ref={historyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📜 VERSION HISTORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📜 VERSION HISTORY</td></tr></tbody></table>
       <CopyButton targetRef={historyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

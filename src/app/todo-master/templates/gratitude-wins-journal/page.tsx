@@ -106,7 +106,7 @@ function GratitudeContent() {
 
   const renderWeeklyWins = () => (
     <div ref={winsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🏆 WEEKLY WINS LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🏆 WEEKLY WINS LOG</td></tr></tbody></table>
       <CopyButton targetRef={winsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -169,7 +169,7 @@ function GratitudeContent() {
 
   const renderMonthlySummary = () => (
     <div ref={monthlyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📊 MONTHLY ACCOMPLISHMENT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📊 MONTHLY ACCOMPLISHMENT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={monthlyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

@@ -95,7 +95,7 @@ function ExecutiveDashboardContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> PROJECT HEALTH SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> PROJECT HEALTH SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -145,7 +145,7 @@ function ExecutiveDashboardContent() {
 
   const renderMilestone = () => (
     <div ref={milestoneRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🏁 MILESTONE STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🏁 MILESTONE STATUS</td></tr></tbody></table>
       <CopyButton targetRef={milestoneRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -212,7 +212,7 @@ function ExecutiveDashboardContent() {
 
   const renderDecision = () => (
     <div ref={decisionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✅ DECISIONS NEEDED FROM LEADERSHIP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✅ DECISIONS NEEDED FROM LEADERSHIP</td></tr></tbody></table>
       <CopyButton targetRef={decisionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

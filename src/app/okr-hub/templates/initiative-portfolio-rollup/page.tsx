@@ -36,7 +36,7 @@ function InitiativePortfolioContent() {
 
   const renderRag = () => (
     <div ref={ragRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ALL INITIATIVES — RAG STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ALL INITIATIVES — RAG STATUS</td></tr></tbody></table>
       <CopyButton targetRef={ragRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every initiative this quarter with Red/Amber/Green health. Leadership can see at a glance: what&apos;s on track, what needs help, and what&apos;s blocked.</p>
       <table style={S.tbl}>

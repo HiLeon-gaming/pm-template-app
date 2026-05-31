@@ -36,7 +36,7 @@ function BriefContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>EXECUTIVE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>EXECUTIVE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>One page. That&apos;s your limit. This brief tells leadership: who are the key stakeholders, where do things stand, what are the risks, what do you need. If they read nothing else, they should understand the stakeholder landscape from this page alone.</p>
       <table style={S.tbl}>
@@ -64,7 +64,7 @@ function BriefContent() {
 
   const renderDetail = () => (
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>KEY STAKEHOLDER STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>KEY STAKEHOLDER STATUS</td></tr></tbody></table>
       <CopyButton targetRef={detailRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -102,7 +102,7 @@ function BriefContent() {
 
   const renderAsks = () => (
     <div ref={asksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>KEY RISKS &amp; ASKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>KEY RISKS &amp; ASKS</td></tr></tbody></table>
       <CopyButton targetRef={asksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

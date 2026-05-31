@@ -103,7 +103,7 @@ function ChangeRequestContent() {
 
   const renderImpact = () => (
     <div ref={impactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>⚡ IMPACT ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>⚡ IMPACT ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={impactRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -247,7 +247,7 @@ function ChangeRequestContent() {
 
   const renderImplementation = () => (
     <div ref={implRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔨 IMPLEMENTATION PLAN (if approved)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔨 IMPLEMENTATION PLAN (if approved)</td></tr></tbody></table>
       <CopyButton targetRef={implRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

@@ -71,7 +71,7 @@ function ProductRoadmapContent() {
 
   const renderHorizons = () => (
     <div ref={horizonRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 THREE-HORIZON ROADMAP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 THREE-HORIZON ROADMAP</td></tr></tbody></table>
       <CopyButton targetRef={horizonRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>NOW = committed this sprint/release &nbsp;|&nbsp; NEXT = planned for next 1–2 releases &nbsp;|&nbsp; LATER = exploring / validating</p>
       <table style={LT}><tbody><tr>
@@ -105,7 +105,7 @@ function ProductRoadmapContent() {
 
   const renderDetail = () => (
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 INITIATIVE DETAIL (NOW HORIZON)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 INITIATIVE DETAIL (NOW HORIZON)</td></tr></tbody></table>
       <CopyButton targetRef={detailRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -142,7 +142,7 @@ function ProductRoadmapContent() {
 
   const renderMilestones = () => (
     <div ref={milestonesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🏁 KEY MILESTONES &amp; DATES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🏁 KEY MILESTONES &amp; DATES</td></tr></tbody></table>
       <CopyButton targetRef={milestonesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

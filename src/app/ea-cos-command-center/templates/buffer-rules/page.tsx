@@ -34,7 +34,7 @@ function BufferRulesContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STANDARD BUFFER RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STANDARD BUFFER RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Back-to-back meetings burn out executives. Build in breathing room automatically.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function BufferRulesContent() {
     <div ref={examplesRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>WITHOUT BUFFERS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>WITHOUT BUFFERS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.0", padding: "10px 14px" }}>
               <strong>9:00</strong> — Leadership sync (runs 5 min over)<br />
@@ -86,7 +86,7 @@ function BufferRulesContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>WITH BUFFERS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>WITH BUFFERS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.0", padding: "10px 14px" }}>
               <strong>9:00</strong> — Leadership sync<br />

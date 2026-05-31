@@ -77,7 +77,7 @@ function BacklogMasterContent() {
 
   const renderEpics = () => (
     <div ref={epicsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🏗️ EPICS &amp; STORIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🏗️ EPICS &amp; STORIES</td></tr></tbody></table>
       <CopyButton targetRef={epicsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Organize your backlog by Epic → Stories. Each story should be small enough to complete in one sprint.</p>
 
@@ -108,7 +108,7 @@ function BacklogMasterContent() {
 
   const renderStories = () => (
     <div ref={storiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 FLAT STORY LIST (ALL EPICS)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 FLAT STORY LIST (ALL EPICS)</td></tr></tbody></table>
       <CopyButton targetRef={storiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -150,7 +150,7 @@ function BacklogMasterContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 BACKLOG HEALTH SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 BACKLOG HEALTH SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

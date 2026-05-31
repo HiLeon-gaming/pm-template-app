@@ -35,7 +35,7 @@ function WaitingContent() {
 
   const renderList = () => (
     <div ref={listRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ITEMS WAITING ON OTHERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ITEMS WAITING ON OTHERS</td></tr></tbody></table>
       <CopyButton targetRef={listRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Everything you&apos;re blocked on or waiting for from someone else. Review daily. Follow up proactively &mdash; don&apos;t wait for things to arrive. If it&apos;s been &gt;3 days with no update, ping them.</p>
       <table style={S.tbl}>
@@ -83,7 +83,7 @@ function WaitingContent() {
 
   const renderAging = () => (
     <div ref={agingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>AGING ANALYSIS &mdash; ITEMS OVERDUE OR AT RISK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>AGING ANALYSIS &mdash; ITEMS OVERDUE OR AT RISK</td></tr></tbody></table>
       <CopyButton targetRef={agingRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Items that are past their expected date or at high risk of being late. These need escalation or a different approach.</p>
       <table style={S.tbl}>

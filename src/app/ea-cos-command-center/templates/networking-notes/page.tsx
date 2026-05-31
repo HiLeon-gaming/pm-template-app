@@ -32,7 +32,7 @@ function NetworkingNotesContent() {
 
   const renderContacts = () => (
     <div ref={contactsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>NEW CONTACTS &amp; INTRODUCTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>NEW CONTACTS &amp; INTRODUCTIONS</td></tr></tbody></table>
       <CopyButton targetRef={contactsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Conferences, contacts, introductions, follow-ups. Expands value beyond operations.</p>
       <table style={S.tbl}>
@@ -70,7 +70,7 @@ function NetworkingNotesContent() {
 
   const renderEvents = () => (
     <div ref={eventsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>UPCOMING NETWORKING EVENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>UPCOMING NETWORKING EVENTS</td></tr></tbody></table>
       <CopyButton targetRef={eventsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

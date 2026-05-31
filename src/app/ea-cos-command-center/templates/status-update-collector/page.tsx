@@ -32,7 +32,7 @@ function StatusUpdateCollectorContent() {
 
   const renderTemplate = () => (
     <div ref={templateRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STANDARD UPDATE FORMAT (Send to Team Leads)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STANDARD UPDATE FORMAT (Send to Team Leads)</td></tr></tbody></table>
       <CopyButton targetRef={templateRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Standard format for updates to reduce noise. Easier weekly briefings for the exec.</p>
       <table style={S.tbl}>
@@ -71,7 +71,7 @@ function StatusUpdateCollectorContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>EXEC BRIEFING SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>EXEC BRIEFING SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Week Of</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[MM/DD/YYYY]</td></tr>

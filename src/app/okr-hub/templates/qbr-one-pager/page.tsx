@@ -37,7 +37,7 @@ function QBROnePagerContent() {
 
   const renderScore = () => (
     <div ref={scoreRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>FINAL OKR SCORES — Q[X] [YEAR]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>FINAL OKR SCORES — Q[X] [YEAR]</td></tr></tbody></table>
       <CopyButton targetRef={scoreRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -82,7 +82,7 @@ function QBROnePagerContent() {
 
   const renderLessons = () => (
     <div ref={lessonsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>LESSONS LEARNED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>LESSONS LEARNED</td></tr></tbody></table>
       <CopyButton targetRef={lessonsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

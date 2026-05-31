@@ -72,7 +72,7 @@ function TaskBreakdownContent() {
 
   const renderBreakdown = () => (
     <div ref={breakdownRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔨 STORY → TASK BREAKDOWN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔨 STORY → TASK BREAKDOWN</td></tr></tbody></table>
       <CopyButton targetRef={breakdownRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Break each story into small tasks (2–8 hours each). Helps teams who need extra structure beyond the story level.</p>
 
@@ -99,7 +99,7 @@ function TaskBreakdownContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💡 TASK BREAKDOWN TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 TASK BREAKDOWN TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {["Keep tasks between 2–8 hours. Anything bigger should be split further.",

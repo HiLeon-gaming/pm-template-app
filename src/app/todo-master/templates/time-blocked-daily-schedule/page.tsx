@@ -114,7 +114,7 @@ function TimeBlockedContent() {
   /* ── Color-coded legend ── */
   const renderLegend = () => (
     <div ref={legendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📊 ACTIVITY CATEGORY LEGEND</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📊 ACTIVITY CATEGORY LEGEND</td></tr></tbody></table>
       <CopyButton targetRef={legendRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -260,7 +260,7 @@ function TimeBlockedContent() {
   /* ── Notes & Tomorrow Prep ── */
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📝 SCHEDULE NOTES &amp; TOMORROW PREP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📝 SCHEDULE NOTES &amp; TOMORROW PREP</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

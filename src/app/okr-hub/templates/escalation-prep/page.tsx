@@ -37,7 +37,7 @@ function EscalationPrepContent() {
 
   const renderCtx = () => (
     <div ref={ctxRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ESCALATION CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ESCALATION CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={ctxRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Use this page when you need to escalate something to leadership. Don&apos;t just say &ldquo;we have a problem.&rdquo; Come with context, options, and a recommendation.</p>
       <table style={S.tbl}><tbody>
@@ -54,7 +54,7 @@ function EscalationPrepContent() {
 
   const renderOpt = () => (
     <div ref={optRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>OPTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>OPTIONS</td></tr></tbody></table>
       <CopyButton targetRef={optRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

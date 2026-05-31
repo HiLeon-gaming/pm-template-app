@@ -38,7 +38,7 @@ function KickoffContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>QUARTER CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>QUARTER CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={S.tdLabel}>Quarter</td><td style={S.td0}>[Q1 / Q2 / Q3 / Q4] [Year]</td></tr>
@@ -52,7 +52,7 @@ function KickoffContent() {
 
   const renderOKR = () => (
     <div ref={okrRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>COMPANY OKRs THIS QUARTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>COMPANY OKRs THIS QUARTER</td></tr></tbody></table>
       <CopyButton targetRef={okrRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -160,7 +160,7 @@ function KickoffContent() {
 
   const renderRhythm = () => (
     <div ref={rhythmRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>OPERATING RHYTHM THIS QUARTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>OPERATING RHYTHM THIS QUARTER</td></tr></tbody></table>
       <CopyButton targetRef={rhythmRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -193,7 +193,7 @@ function KickoffContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>QUARTER RULES (Non-Negotiable)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>QUARTER RULES (Non-Negotiable)</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>

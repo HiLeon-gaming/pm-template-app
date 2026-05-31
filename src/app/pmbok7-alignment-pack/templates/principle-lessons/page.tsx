@@ -46,7 +46,7 @@ function PrincipleLessonsContent() {
 
   const renderLessons = () => (
     <div ref={lessonsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 LESSONS BY PRINCIPLE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 LESSONS BY PRINCIPLE</td></tr></tbody></table>
       <CopyButton targetRef={lessonsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -80,7 +80,7 @@ function PrincipleLessonsContent() {
 
   const renderInsights = () => (
     <div ref={insightsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💡 TOP INSIGHTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 TOP INSIGHTS</td></tr></tbody></table>
       <CopyButton targetRef={insightsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Most Impactful Lesson</td><td style={S.td0}>[Team culture investment (Principle 2) had the highest ROI — it enabled improvements across every other principle]</td></tr>
@@ -93,7 +93,7 @@ function PrincipleLessonsContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ KNOWLEDGE TRANSFER ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ KNOWLEDGE TRANSFER ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

@@ -174,7 +174,7 @@ function WeeklyPlannerContent() {
 
   const renderGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📋 DAILY TASK GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📋 DAILY TASK GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       {/* Row 1: Mon–Thu (2×2 grid) */}
       <table style={LT}>
@@ -273,7 +273,7 @@ function WeeklyPlannerContent() {
 
   const renderDayList = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📋 DAILY TASK LIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📋 DAILY TASK LIST</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       {/* Weekdays in 2-col pairs */}
       <table style={LT}>
@@ -309,7 +309,7 @@ function WeeklyPlannerContent() {
   /* ── Appointments & Meetings ── */
   const renderAppointments = () => (
     <div ref={apptRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📆 APPOINTMENTS &amp; MEETINGS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📆 APPOINTMENTS &amp; MEETINGS</td></tr></tbody></table>
       <CopyButton targetRef={apptRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

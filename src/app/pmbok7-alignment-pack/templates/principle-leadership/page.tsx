@@ -46,7 +46,7 @@ function PrincipleLeadershipContent() {
 
   const renderCheck = () => (
     <div ref={checkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ LEADERSHIP BEHAVIOR CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ LEADERSHIP BEHAVIOR CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={checkRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thPrimary, backgroundColor: accent, width: "5%", textAlign: "center" as const }}>✔</th><th style={{ ...S.thPrimary, backgroundColor: accent }}>Behavior / Practice</th><th style={{ ...S.thPrimary, backgroundColor: accent, width: "8%", textAlign: "center" as const }}>Status</th></tr></thead>
@@ -71,7 +71,7 @@ function PrincipleLeadershipContent() {
 
   const renderEvidence = () => (
     <div ref={evidenceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 EVIDENCE &amp; EXAMPLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 EVIDENCE &amp; EXAMPLES</td></tr></tbody></table>
       <CopyButton targetRef={evidenceRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Servant Leadership</td><td style={S.td0}>[Resolved 2 blockers within 24 hours this week; shielded team from organizational noise during sprint]</td></tr>
@@ -85,7 +85,7 @@ function PrincipleLeadershipContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

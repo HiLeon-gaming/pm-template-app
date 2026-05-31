@@ -36,7 +36,7 @@ function ArchiveContent() {
 
   const renderTransition = () => (
     <div ref={transRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>TRANSITION CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>TRANSITION CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={transRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>When a stakeholder changes roles, you move to a new project, or ownership transfers &mdash; don&apos;t let institutional knowledge disappear. This template captures everything the next person needs to know about each stakeholder relationship. A clean handoff protects the relationship and the project.</p>
       <table style={S.tbl}>
@@ -64,7 +64,7 @@ function ArchiveContent() {
 
   const renderHandoff = () => (
     <div ref={handoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>STAKEHOLDER HANDOFF NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>STAKEHOLDER HANDOFF NOTES</td></tr></tbody></table>
       <CopyButton targetRef={handoffRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>For each key stakeholder, capture the essential context the next person needs. Don&apos;t just list facts &mdash; share the nuance. What works with this person? What to avoid? What promises were made?</p>
       <table style={S.tbl}>
@@ -104,7 +104,7 @@ function ArchiveContent() {
 
   const renderLessons = () => (
     <div ref={lessonsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>LESSONS &amp; ADVICE FOR THE NEXT PERSON</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>LESSONS &amp; ADVICE FOR THE NEXT PERSON</td></tr></tbody></table>
       <CopyButton targetRef={lessonsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

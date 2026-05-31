@@ -37,7 +37,7 @@ function ScoreboardContent() {
 
   const renderScore = () => (
     <div ref={scoreRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>CURRENT QUARTER SCORES — Q[X] [YEAR]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>CURRENT QUARTER SCORES — Q[X] [YEAR]</td></tr></tbody></table>
       <CopyButton targetRef={scoreRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Update these weekly. The score tells you exactly how much progress you&apos;ve made toward each Key Result. Formula: (Current - Baseline) / (Target - Baseline).</p>
       <table style={S.tbl}>
@@ -129,7 +129,7 @@ function ScoreboardContent() {
 
   const renderWeekly = () => (
     <div ref={weeklyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>WEEKLY SCORE TRACKER (Progress Over Time)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>WEEKLY SCORE TRACKER (Progress Over Time)</td></tr></tbody></table>
       <CopyButton targetRef={weeklyRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Update the &ldquo;Current&rdquo; value for each KR every week. This lets you see trends and catch problems early.</p>
       <table style={S.tbl}>

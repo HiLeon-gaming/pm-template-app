@@ -35,7 +35,7 @@ function CommitmentsContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ALL ACTIVE COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ALL ACTIVE COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every promise you make to a stakeholder goes here. Every promise they make to you goes here. Nothing falls through the cracks. Review this list every Monday morning and every Friday afternoon.</p>
       <table style={S.tbl}>
@@ -84,7 +84,7 @@ function CommitmentsContent() {
 
   const renderOverdue = () => (
     <div ref={overdueRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>OVERDUE &amp; AT-RISK COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>OVERDUE &amp; AT-RISK COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={overdueRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Anything overdue or at risk of being missed. These need immediate attention. Nothing destroys trust faster than a dropped commitment.</p>
       <table style={S.tbl}>

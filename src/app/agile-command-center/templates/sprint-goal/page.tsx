@@ -46,7 +46,7 @@ function SprintGoalContent() {
 
   const renderGoal = () => (
     <div ref={goalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 SPRINT GOAL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 SPRINT GOAL</td></tr></tbody></table>
       <CopyButton targetRef={goalRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ backgroundColor: accent + "15", padding: "16px", fontFamily: S.font, fontSize: "14px", fontWeight: 700, border: `2px solid ${accent}40`, color: C.primary, textAlign: "center" as const }}>
@@ -63,7 +63,7 @@ function SprintGoalContent() {
 
   const renderBacklog = () => (
     <div ref={backlogRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 SPRINT BACKLOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 SPRINT BACKLOG</td></tr></tbody></table>
       <CopyButton targetRef={backlogRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -106,7 +106,7 @@ function SprintGoalContent() {
 
   const renderScope = () => (
     <div ref={scopeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📦 IN / OUT OF SPRINT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📦 IN / OUT OF SPRINT</td></tr></tbody></table>
       <CopyButton targetRef={scopeRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>

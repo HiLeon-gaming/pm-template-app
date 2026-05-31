@@ -35,7 +35,7 @@ function CommPlanContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER COMMUNICATION MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER COMMUNICATION MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Define WHO gets WHAT information, HOW often, through WHICH channel, and WHO owns the communication. Different stakeholders need different levels of detail at different frequencies. One size does NOT fit all.</p>
       <table style={S.tbl}>
@@ -78,7 +78,7 @@ function CommPlanContent() {
 
   const renderCalendar = () => (
     <div ref={calendarRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>COMMUNICATION CALENDAR &mdash; THIS MONTH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>COMMUNICATION CALENDAR &mdash; THIS MONTH</td></tr></tbody></table>
       <CopyButton targetRef={calendarRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Plot your communications on the calendar so nothing falls through the cracks. Block time in your calendar for writing updates and prep.</p>
       <table style={S.tbl}>

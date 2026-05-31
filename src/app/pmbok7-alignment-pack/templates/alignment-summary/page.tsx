@@ -47,7 +47,7 @@ function AlignmentSummaryContent() {
 
   const renderPrinciples = () => (
     <div ref={principlesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 12 PRINCIPLES ALIGNMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 12 PRINCIPLES ALIGNMENT</td></tr></tbody></table>
       <CopyButton targetRef={principlesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -82,7 +82,7 @@ function AlignmentSummaryContent() {
 
   const renderDomains = () => (
     <div ref={domainsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🏥 8 DOMAIN HEALTH SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🏥 8 DOMAIN HEALTH SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={domainsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -113,7 +113,7 @@ function AlignmentSummaryContent() {
 
   const renderEvidence = () => (
     <div ref={evidenceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 ALIGNMENT EVIDENCE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 ALIGNMENT EVIDENCE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={evidenceRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Artifacts Produced</td><td style={S.td0}>[41 PMBOK 7 alignment artifacts completed; all sections A-G documented]</td></tr>
@@ -127,7 +127,7 @@ function AlignmentSummaryContent() {
 
   const renderVerdict = () => (
     <div ref={verdictRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>✅ ALIGNMENT VERDICT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>✅ ALIGNMENT VERDICT</td></tr></tbody></table>
       <CopyButton targetRef={verdictRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Overall Alignment</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>🟢 82% — Strong Alignment to PMBOK® 7</span></td></tr>

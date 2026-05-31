@@ -217,7 +217,7 @@ function CommandCenterContent() {
             </tbody>
           </table>
 
-          <div style={S.sectionBanner(accent)}>TEMPLATE INDEX &mdash; QUICK NAVIGATION</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>TEMPLATE INDEX &mdash; QUICK NAVIGATION</td></tr></tbody></table>
 
           {gridRows.map((row, ri) => (
             <table key={ri} style={{ ...LT, marginTop: "8px", marginBottom: ri < gridRows.length - 1 ? "0" : "12px" }}>
@@ -240,7 +240,7 @@ function CommandCenterContent() {
             </table>
           ))}
 
-          <div style={S.sectionBanner(accentDark)}>HOW TO USE THIS PACKAGE</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>HOW TO USE THIS PACKAGE</td></tr></tbody></table>
 
           <table style={{ ...S.tbl, marginBottom: "4px" }}>
             <tbody>

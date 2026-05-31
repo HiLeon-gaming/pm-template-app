@@ -47,7 +47,7 @@ function SprintRetroContent() {
 
   const renderSSC = () => (
     <div ref={sscRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💬 START / STOP / CONTINUE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💬 START / STOP / CONTINUE</td></tr></tbody></table>
       <CopyButton targetRef={sscRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "33.33%", paddingRight: "4px" }}>
@@ -86,7 +86,7 @@ function SprintRetroContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎯 IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Pick 1-3 actions max. More than 3 = nothing gets done. Assign an owner and review next retro.</p>
       <table style={S.tbl}>
@@ -147,7 +147,7 @@ function SprintRetroContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>❤️ TEAM HEALTH CHECK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>❤️ TEAM HEALTH CHECK</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -119,7 +119,7 @@ function AcceptanceCriteriaContent() {
 
   const renderScenarios = () => (
     <div ref={scenarioRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🧪 TEST SCENARIOS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🧪 TEST SCENARIOS</td></tr></tbody></table>
       <CopyButton targetRef={scenarioRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Detailed test scenarios derived from the acceptance criteria above. Each scenario maps to one or more AC items.</p>
       <table style={S.tbl}>
@@ -185,7 +185,7 @@ function AcceptanceCriteriaContent() {
           </table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "5px" }}>
-          <div style={S.sectionBanner(C.secondary)}>🐛 DEFECTS FROM FAILED CRITERIA</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🐛 DEFECTS FROM FAILED CRITERIA</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead>
               <tr>

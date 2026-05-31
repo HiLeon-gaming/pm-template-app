@@ -36,7 +36,7 @@ function PrioritizationContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>IMPACT vs. EFFORT QUADRANTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>IMPACT vs. EFFORT QUADRANTS</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Plot each initiative on the grid below. The quadrant tells you what to do with it. Start with Quick Wins, then tackle Big Bets. Avoid Time Sinks.</p>
       <table style={{ ...S.tbl, marginBottom: "4px" }}>

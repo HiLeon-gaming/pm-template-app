@@ -118,7 +118,7 @@ function WorkshopContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📅 TIMED AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📅 TIMED AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -189,7 +189,7 @@ function WorkshopContent() {
 
   const renderOutputs = () => (
     <div ref={outputsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📦 WORKSHOP OUTPUTS &amp; ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📦 WORKSHOP OUTPUTS &amp; ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={outputsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

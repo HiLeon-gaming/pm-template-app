@@ -255,7 +255,7 @@ function DailyStandupContent() {
   /* ── Action Items ── */
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📋 ACTION ITEMS &amp; FOLLOW-UPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📋 ACTION ITEMS &amp; FOLLOW-UPS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

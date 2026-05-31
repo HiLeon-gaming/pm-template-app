@@ -37,7 +37,7 @@ function OKRRolloutContent() {
 
   const renderAud = () => (
     <div ref={audRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>AUDIENCE MAP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>AUDIENCE MAP</td></tr></tbody></table>
       <CopyButton targetRef={audRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Different audiences need different messages. Executives want the &ldquo;so what.&rdquo; Managers want the &ldquo;how.&rdquo; ICs want the &ldquo;what does this mean for me.&rdquo;</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function OKRRolloutContent() {
 
   const renderMsg = () => (
     <div ref={msgRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>KEY MESSAGES (Use These Across All Channels)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>KEY MESSAGES (Use These Across All Channels)</td></tr></tbody></table>
       <CopyButton targetRef={msgRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[

@@ -46,7 +46,7 @@ function DecisionLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Record every significant decision so nobody asks &ldquo;why did we do that?&rdquo; later.</p>
       <table style={S.tbl}>
@@ -87,7 +87,7 @@ function DecisionLogContent() {
 
   const renderPending = () => (
     <div ref={pendingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⏳ PENDING DECISIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⏳ PENDING DECISIONS</td></tr></tbody></table>
       <CopyButton targetRef={pendingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -123,7 +123,7 @@ function DecisionLogContent() {
 
   const renderPrinciples = () => (
     <div ref={principlesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 DECISION-MAKING PRINCIPLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 DECISION-MAKING PRINCIPLES</td></tr></tbody></table>
       <CopyButton targetRef={principlesRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>

@@ -37,7 +37,7 @@ function InitiativeBrainstormContent() {
 
   const renderIdeas = () => (
     <div ref={ideasRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>INITIATIVE IDEAS (Brainstorm All Options)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>INITIATIVE IDEAS (Brainstorm All Options)</td></tr></tbody></table>
       <CopyButton targetRef={ideasRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>List every possible project, initiative, or action that could move a Key Result. Don&apos;t filter yet — just capture. You&apos;ll prioritize in the next section.</p>
       <table style={S.tbl}>
@@ -87,7 +87,7 @@ function InitiativeBrainstormContent() {
 
   const renderEval = () => (
     <div ref={evalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>EVALUATION CRITERIA (How to Pick Winners)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>EVALUATION CRITERIA (How to Pick Winners)</td></tr></tbody></table>
       <CopyButton targetRef={evalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -32,7 +32,7 @@ function CloseoutChecklistContent() {
 
   const renderCheck = () => (
     <div ref={checkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ CLOSEOUT STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ CLOSEOUT STEPS</td></tr></tbody></table>
       <CopyButton targetRef={checkRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "30%" }}>Request / Task Name</td><td style={S.td0}>[Original request description]</td></tr>
@@ -73,7 +73,7 @@ function CloseoutChecklistContent() {
 
   const renderNotify = () => (
     <div ref={notifyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>📧 NOTIFICATION TEMPLATE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>📧 NOTIFICATION TEMPLATE</td></tr></tbody></table>
       <CopyButton targetRef={notifyRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.0", padding: "14px 18px" }}>

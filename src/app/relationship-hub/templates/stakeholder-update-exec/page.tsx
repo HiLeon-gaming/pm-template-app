@@ -36,7 +36,7 @@ function ExecContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>EXECUTIVE SUMMARY (30-SECOND READ)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>EXECUTIVE SUMMARY (30-SECOND READ)</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Executives read the first 3 lines and decide if they need to read more. Lead with the headline, then RAG status, then the single most important thing they need to know. If they stop reading here, they should still understand the situation.</p>
       <table style={S.tbl}>
@@ -63,7 +63,7 @@ function ExecContent() {
 
   const renderDetail = () => (
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>DETAILED STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>DETAILED STATUS</td></tr></tbody></table>
       <CopyButton targetRef={detailRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -99,7 +99,7 @@ function ExecContent() {
 
   const renderAsks = () => (
     <div ref={asksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>DECISIONS &amp; ASKS FROM LEADERSHIP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>DECISIONS &amp; ASKS FROM LEADERSHIP</td></tr></tbody></table>
       <CopyButton targetRef={asksRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Be explicit about what you need from leadership. Come with options and a recommendation. Never present a problem without a proposed solution.</p>
       <table style={S.tbl}>

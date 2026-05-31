@@ -130,7 +130,7 @@ function MeetingAgendaMinutesContent() {
 
   const renderMinutes = () => (
     <div ref={minutesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> MEETING MINUTES (KEY DISCUSSION POINTS)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> MEETING MINUTES (KEY DISCUSSION POINTS)</td></tr></tbody></table>
       <CopyButton targetRef={minutesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -191,7 +191,7 @@ function MeetingAgendaMinutesContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

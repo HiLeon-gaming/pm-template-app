@@ -35,7 +35,7 @@ function VIPMeetingPrepContent() {
 
   const renderDetails = () => (
     <div ref={detailsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MEETING DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MEETING DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={detailsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>VIP Name / Title</td><td style={{ ...S.td0, fontWeight: 700, fontSize: "13px" }}>[Name &mdash; Title, Organization]</td></tr>
@@ -50,7 +50,7 @@ function VIPMeetingPrepContent() {
 
   const renderIntel = () => (
     <div ref={intelRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>VIP INTEL &amp; CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>VIP INTEL &amp; CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={intelRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Background / Bio</td><td style={S.td0}>[Key facts: career history, recent news, board seats, known interests]</td></tr>
@@ -66,7 +66,7 @@ function VIPMeetingPrepContent() {
     <div ref={strategyRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>TALKING POINTS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>TALKING POINTS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.0", padding: "10px 14px" }}>
               <strong style={{ color: "#059669" }}>Opening:</strong> &ldquo;[Warm opener — reference last interaction or recent win]&rdquo;<br /><br />
@@ -78,7 +78,7 @@ function VIPMeetingPrepContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>RISKS &amp; OBJECTION PREP</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>RISKS &amp; OBJECTION PREP</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.0", padding: "10px 14px" }}>
               <strong style={{ color: "#DC2626" }}>If they push back on:</strong><br />

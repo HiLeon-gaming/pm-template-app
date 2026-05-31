@@ -35,7 +35,7 @@ function MeetingBriefContent() {
 
   const renderHeader = () => (
     <div ref={headerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📍 MEETING DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📍 MEETING DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={headerRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "20%" }}>Meeting Name</td><td style={{ ...S.td0, fontWeight: 700 }}>[Meeting Title]</td></tr>
@@ -78,7 +78,7 @@ function MeetingBriefContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📝 AGENDA &amp; DOCS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📝 AGENDA &amp; DOCS</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -116,7 +116,7 @@ function MeetingBriefContent() {
     <div ref={talkingRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#F59E0B")}>💬 TALKING POINTS FOR EXEC</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#F59E0B")}>💬 TALKING POINTS FOR EXEC</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               <strong style={{ color: "#F59E0B" }}>Opening:</strong> &ldquo;[Thanks for making time. Today we need to align on X and decide Y.]&rdquo;<br /><br />
@@ -128,7 +128,7 @@ function MeetingBriefContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>⚠️ RISKS &amp; LANDMINES</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>⚠️ RISKS &amp; LANDMINES</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               <strong style={{ color: "#DC2626" }}>Watch for:</strong><br />

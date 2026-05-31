@@ -35,7 +35,7 @@ function NegotiationContent() {
 
   const renderPositions = () => (
     <div ref={posRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>NEGOTIATION POSITIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>NEGOTIATION POSITIONS</td></tr></tbody></table>
       <CopyButton targetRef={posRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Before any negotiation, know exactly what you want, what they want, and where the overlap is. The PM who walks in without a prep sheet loses. Fill this out before every negotiation &mdash; resource requests, scope discussions, timeline negotiations, vendor talks.</p>
       <table style={S.tbl}>
@@ -69,7 +69,7 @@ function NegotiationContent() {
 
   const renderTradeoffs = () => (
     <div ref={tradeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>TRADEOFF MATRIX &mdash; WHAT CAN YOU FLEX?</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>TRADEOFF MATRIX &mdash; WHAT CAN YOU FLEX?</td></tr></tbody></table>
       <CopyButton targetRef={tradeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every negotiation has multiple dimensions. Know which ones you can flex on and which are non-negotiable. If you give on timeline, can you hold on scope? If they give on budget, can you flex on approach?</p>
       <table style={S.tbl}>

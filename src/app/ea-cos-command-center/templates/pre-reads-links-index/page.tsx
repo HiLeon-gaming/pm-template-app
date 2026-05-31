@@ -32,7 +32,7 @@ function PreReadsContent() {
 
   const renderIndex = () => (
     <div ref={indexRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 MEETING PACK &mdash; All Docs in One Place</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 MEETING PACK &mdash; All Docs in One Place</td></tr></tbody></table>
       <CopyButton targetRef={indexRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>No more &ldquo;where&apos;s the deck?&rdquo; — every doc for upcoming meetings lives here.</p>
       <table style={S.tbl}>
@@ -70,7 +70,7 @@ function PreReadsContent() {
 
   const renderArchive = () => (
     <div ref={archiveRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6B7280")}>📁 STANDING DOCS &amp; REFERENCE LINKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6B7280")}>📁 STANDING DOCS &amp; REFERENCE LINKS</td></tr></tbody></table>
       <CopyButton targetRef={archiveRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

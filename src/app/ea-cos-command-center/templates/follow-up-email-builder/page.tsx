@@ -34,7 +34,7 @@ function FollowUpEmailContent() {
 
   const renderEmail = () => (
     <div ref={emailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>EMAIL TEMPLATE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>EMAIL TEMPLATE</td></tr></tbody></table>
       <CopyButton targetRef={emailRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "12%" }}>To</td><td style={S.td0}>[Recipients]</td></tr>
@@ -92,7 +92,7 @@ function FollowUpEmailContent() {
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>DO THIS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>DO THIS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; Send within 2 hours of the meeting<br />
@@ -104,7 +104,7 @@ function FollowUpEmailContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>AVOID THIS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>AVOID THIS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; Sending next day (momentum lost)<br />

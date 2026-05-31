@@ -35,7 +35,7 @@ function TrustContent() {
 
   const renderTrustLists = () => (
     <div ref={trustRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME]</td></tr></tbody></table>
       <CopyButton targetRef={trustRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Document what builds and breaks trust with this specific person. Everyone is different. What delights one stakeholder might annoy another. Review this list before every important interaction.</p>
       <table style={LT}><tbody><tr>
@@ -99,7 +99,7 @@ function TrustContent() {
 
   const renderRepair = () => (
     <div ref={repairRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>TRUST REPAIR PLAYBOOK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>TRUST REPAIR PLAYBOOK</td></tr></tbody></table>
       <CopyButton targetRef={repairRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>When trust is damaged, act fast. The longer you wait, the harder it is to repair. Use this playbook to guide your recovery.</p>
       <table style={S.tbl}>

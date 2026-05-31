@@ -35,7 +35,7 @@ function TerminologyContent() {
 
   const renderTerms = () => (
     <div ref={termsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>KEY TERMS &amp; DEFINITIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>KEY TERMS &amp; DEFINITIONS</td></tr></tbody></table>
       <CopyButton targetRef={termsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every term used in this hub, explained in plain English. Bookmark this page and refer back whenever you see an unfamiliar term.</p>
       <table style={S.tbl}>
@@ -81,7 +81,7 @@ function TerminologyContent() {
 
   const renderFrameworks = () => (
     <div ref={framRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#8B5CF6")}>FRAMEWORKS &amp; MODELS USED IN THIS HUB</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#8B5CF6")}>FRAMEWORKS &amp; MODELS USED IN THIS HUB</td></tr></tbody></table>
       <CopyButton targetRef={framRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>These are the thinking models referenced across multiple templates. Understanding them makes every template more powerful.</p>
       <table style={S.tbl}>

@@ -46,7 +46,7 @@ function DefinitionOfDoneContent() {
 
   const renderChecklist = () => (
     <div ref={checklistRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DoD CHECKLIST — Story Must Pass ALL Before Marking Complete</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DoD CHECKLIST — Story Must Pass ALL Before Marking Complete</td></tr></tbody></table>
       <CopyButton targetRef={checklistRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -90,7 +90,7 @@ function DefinitionOfDoneContent() {
 
   const renderExamples = () => (
     <div ref={examplesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📖 DONE vs. NOT DONE — EXAMPLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📖 DONE vs. NOT DONE — EXAMPLES</td></tr></tbody></table>
       <CopyButton targetRef={examplesRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -121,7 +121,7 @@ function DefinitionOfDoneContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔍 DoD HEALTH CHECK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔍 DoD HEALTH CHECK</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

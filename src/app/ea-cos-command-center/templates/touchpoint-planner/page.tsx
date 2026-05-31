@@ -32,7 +32,7 @@ function TouchpointPlannerContent() {
 
   const renderSchedule = () => (
     <div ref={scheduleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>UPCOMING TOUCHPOINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>UPCOMING TOUCHPOINTS</td></tr></tbody></table>
       <CopyButton targetRef={scheduleRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Who needs a check-in this week/month? Prevents neglected relationships.</p>
       <table style={S.tbl}>
@@ -70,7 +70,7 @@ function TouchpointPlannerContent() {
 
   const renderOverdue = () => (
     <div ref={overdueRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>OVERDUE / NEGLECTED RELATIONSHIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>OVERDUE / NEGLECTED RELATIONSHIPS</td></tr></tbody></table>
       <CopyButton targetRef={overdueRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

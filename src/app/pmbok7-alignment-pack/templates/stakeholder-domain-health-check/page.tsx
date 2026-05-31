@@ -46,7 +46,7 @@ function StakeholderDomainHealthCheckContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>📊 HEALTH INDICATORS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>📊 HEALTH INDICATORS</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -80,7 +80,7 @@ function StakeholderDomainHealthCheckContent() {
 
   const renderMap = () => (
     <div ref={mapRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#991B1B")}>👥 POWER / INTEREST SNAPSHOT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#991B1B")}>👥 POWER / INTEREST SNAPSHOT</td></tr></tbody></table>
       <CopyButton targetRef={mapRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -115,7 +115,7 @@ function StakeholderDomainHealthCheckContent() {
 
   const renderFriction = () => (
     <div ref={frictionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>⚠️ TOP FRICTION POINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>⚠️ TOP FRICTION POINTS</td></tr></tbody></table>
       <CopyButton targetRef={frictionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -145,7 +145,7 @@ function StakeholderDomainHealthCheckContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#991B1B")}>⚡ STAKEHOLDER ACTIONS THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#991B1B")}>⚡ STAKEHOLDER ACTIONS THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

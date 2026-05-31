@@ -166,7 +166,7 @@ function DailyTaskPlannerContent() {
 
   const renderTaskList = () => (
     <div ref={tasksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✅ MASTER TASK LIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✅ MASTER TASK LIST</td></tr></tbody></table>
       <CopyButton targetRef={tasksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -206,7 +206,7 @@ function DailyTaskPlannerContent() {
 
   const renderSchedule = () => (
     <div ref={scheduleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🕐 TIME-BLOCKED SCHEDULE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🕐 TIME-BLOCKED SCHEDULE</td></tr></tbody></table>
       <CopyButton targetRef={scheduleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -243,7 +243,7 @@ function DailyTaskPlannerContent() {
 
   const renderCalls = () => (
     <div ref={callsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📞 CALLS / EMAILS / FOLLOW-UPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📞 CALLS / EMAILS / FOLLOW-UPS</td></tr></tbody></table>
       <CopyButton targetRef={callsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

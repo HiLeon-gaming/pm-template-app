@@ -32,7 +32,7 @@ function ReadThisFirstContent() {
 
   const renderSections = () => (
     <>
-      <div style={S.sectionBanner(accent)}>WHAT&apos;S INSIDE &mdash; 8 SECTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>WHAT&apos;S INSIDE &mdash; 8 SECTIONS</td></tr></tbody></table>
       <table style={{ ...S.tbl, marginBottom: "8px" }}>
         <thead><tr>
           <th style={{ ...S.thPrimary, width: "5%", textAlign: "center" as const }}>#</th>
@@ -68,7 +68,7 @@ function ReadThisFirstContent() {
 
   const renderHowToUse = () => (
     <>
-      <div style={S.sectionBanner("#059669")}>HOW TO USE THESE TEMPLATES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>HOW TO USE THESE TEMPLATES</td></tr></tbody></table>
       <table style={{ ...S.tbl, marginBottom: "8px" }}>
         <thead><tr>
           <th style={{ ...S.thPrimary, width: "8%", textAlign: "center" as const }}>Step</th>
@@ -99,7 +99,7 @@ function ReadThisFirstContent() {
 
   const renderFeatures = () => (
     <>
-      <div style={S.sectionBanner("#0EA5E9")}>KEY FEATURES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>KEY FEATURES</td></tr></tbody></table>
       <table style={{ ...S.tbl, marginBottom: "8px" }}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.2", padding: "12px 16px" }}>
           <strong style={{ color: "#0EA5E9" }}>&#127912; Multiple Themes</strong> &mdash; Switch between 5 professional color themes. Every template adapts instantly.<br />
@@ -115,7 +115,7 @@ function ReadThisFirstContent() {
 
   const renderQuickStart = () => (
     <>
-      <div style={S.sectionBanner("#DC2626")}>RECOMMENDED STARTING TEMPLATES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>RECOMMENDED STARTING TEMPLATES</td></tr></tbody></table>
       <table style={{ ...S.tbl, marginBottom: "8px" }}>
         <thead><tr>
           <th style={S.thPrimary}>Template</th>

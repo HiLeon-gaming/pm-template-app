@@ -49,7 +49,7 @@ function SprintReviewContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 REVIEW AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 REVIEW AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -84,7 +84,7 @@ function SprintReviewContent() {
 
   const renderDemo = () => (
     <div ref={demoRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🖥️ DEMO SCRIPT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🖥️ DEMO SCRIPT</td></tr></tbody></table>
       <CopyButton targetRef={demoRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Demo working software, not slides. Show real user flows. Keep each demo under 5 minutes.</p>
       <table style={S.tbl}>
@@ -124,7 +124,7 @@ function SprintReviewContent() {
 
   const renderFeedback = () => (
     <div ref={feedbackRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💬 STAKEHOLDER FEEDBACK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💬 STAKEHOLDER FEEDBACK</td></tr></tbody></table>
       <CopyButton targetRef={feedbackRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -157,7 +157,7 @@ function SprintReviewContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 SPRINT OUTCOME</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 SPRINT OUTCOME</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

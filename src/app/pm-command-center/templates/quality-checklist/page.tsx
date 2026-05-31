@@ -59,7 +59,7 @@ function QualityChecklistContent() {
 
   const renderCheckSection = (title: string, color: string, ref: React.RefObject<HTMLDivElement | null>, items: CheckItem[]) => (
     <div ref={ref} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(color)}>{title}</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(color)}>{title}</td></tr></tbody></table>
       <CopyButton targetRef={ref} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -32,7 +32,7 @@ function VendorsTrackerContent() {
 
   const renderVendors = () => (
     <div ref={vendorsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ACTIVE VENDORS &amp; PARTNERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ACTIVE VENDORS &amp; PARTNERS</td></tr></tbody></table>
       <CopyButton targetRef={vendorsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -72,7 +72,7 @@ function VendorsTrackerContent() {
 
   const renderRenewals = () => (
     <div ref={renewalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>UPCOMING RENEWALS (NEXT 90 DAYS)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>UPCOMING RENEWALS (NEXT 90 DAYS)</td></tr></tbody></table>
       <CopyButton targetRef={renewalsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -36,7 +36,7 @@ function KPILibraryContent() {
 
   const renderCat = () => (
     <div ref={catRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>KPI CATALOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>KPI CATALOG</td></tr></tbody></table>
       <CopyButton targetRef={catRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every metric your organization tracks — with clear definitions, owners, and cadence. If it&apos;s not in this library, it doesn&apos;t get measured.</p>
       <table style={S.tbl}>

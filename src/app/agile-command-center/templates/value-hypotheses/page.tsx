@@ -46,7 +46,7 @@ function ValueHypothesesContent() {
 
   const renderHypotheses = () => (
     <div ref={hypoRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 VALUE HYPOTHESES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 VALUE HYPOTHESES</td></tr></tbody></table>
       <CopyButton targetRef={hypoRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What we believe will deliver value. Format: &ldquo;We believe [action] will result in [outcome] for [users].&rdquo;</p>
       <table style={S.tbl}>
@@ -84,7 +84,7 @@ function ValueHypothesesContent() {
 
   const renderAssumptions = () => (
     <div ref={assumeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚠️ ASSUMPTIONS LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚠️ ASSUMPTIONS LOG</td></tr></tbody></table>
       <CopyButton targetRef={assumeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Things we believe to be true but have NOT validated. Track, test, and update as you learn.</p>
       <table style={S.tbl}>
@@ -122,7 +122,7 @@ function ValueHypothesesContent() {
 
   const renderTestPlan = () => (
     <div ref={testRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🧪 VALIDATION PLAN (NEXT SPRINT)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🧪 VALIDATION PLAN (NEXT SPRINT)</td></tr></tbody></table>
       <CopyButton targetRef={testRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>

@@ -33,7 +33,7 @@ function WeeklyChangeLogContent() {
 
   const renderChange = () => (
     <div ref={changeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>CHANGES THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>CHANGES THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={changeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Document any scope shifts, priority changes, new information, or resource changes that affect OKRs or initiatives. Reduces confusion and creates a paper trail.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function WeeklyChangeLogContent() {
 
   const renderHist = () => (
     <div ref={histRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>CHANGE HISTORY (Rolling Quarter)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>CHANGE HISTORY (Rolling Quarter)</td></tr></tbody></table>
       <CopyButton targetRef={histRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Keep a running log of all changes made during the quarter. This creates transparency and prevents &ldquo;when did we decide that?&rdquo; confusion.</p>
       <table style={S.tbl}>
@@ -108,7 +108,7 @@ function WeeklyChangeLogContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>CHANGE MANAGEMENT TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>CHANGE MANAGEMENT TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>

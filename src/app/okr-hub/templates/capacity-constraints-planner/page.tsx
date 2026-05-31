@@ -37,7 +37,7 @@ function CapacityContent() {
 
   const renderCap = () => (
     <div ref={capRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>TEAM CAPACITY ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>TEAM CAPACITY ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={capRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Before committing to initiatives, check: do we have the people, time, and budget to actually do this? Overpromising + underdelivering destroys trust.</p>
       <table style={S.tbl}>
@@ -79,7 +79,7 @@ function CapacityContent() {
 
   const renderConst = () => (
     <div ref={constRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>CONSTRAINTS &amp; BLOCKERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>CONSTRAINTS &amp; BLOCKERS</td></tr></tbody></table>
       <CopyButton targetRef={constRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

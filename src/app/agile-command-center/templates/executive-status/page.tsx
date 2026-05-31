@@ -48,7 +48,7 @@ function ExecutiveStatusContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 EXECUTIVE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 EXECUTIVE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -76,7 +76,7 @@ function ExecutiveStatusContent() {
 
   const renderProgress = () => (
     <div ref={progressRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 RELEASE PROGRESS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 RELEASE PROGRESS</td></tr></tbody></table>
       <CopyButton targetRef={progressRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -117,7 +117,7 @@ function ExecutiveStatusContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚠️ RISKS &amp; ISSUES FOR LEADERSHIP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚠️ RISKS &amp; ISSUES FOR LEADERSHIP</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -151,7 +151,7 @@ function ExecutiveStatusContent() {
 
   const renderNext = () => (
     <div ref={nextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔮 NEXT SPRINT PREVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔮 NEXT SPRINT PREVIEW</td></tr></tbody></table>
       <CopyButton targetRef={nextRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Sprint 9 Goal</td><td style={{ ...S.td0, fontWeight: 700 }}>[Complete Checkout v2 payment methods; start analytics integration]</td></tr>

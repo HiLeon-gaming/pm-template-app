@@ -111,7 +111,7 @@ function ImpactAnalysisContent() {
 
   const renderDetail = () => (
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔍 DETAILED IMPACT BY DIMENSION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔍 DETAILED IMPACT BY DIMENSION</td></tr></tbody></table>
       <CopyButton targetRef={detailRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -178,7 +178,7 @@ function ImpactAnalysisContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📊 IMPACT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📊 IMPACT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

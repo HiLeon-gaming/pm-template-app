@@ -37,7 +37,7 @@ function AlignmentMapContent() {
 
   const renderMap = () => (
     <div ref={mapRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>COMPANY → TEAM ALIGNMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>COMPANY → TEAM ALIGNMENT</td></tr></tbody></table>
       <CopyButton targetRef={mapRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every team OKR should clearly support a company OKR. If a team goal doesn&apos;t connect upward, ask: &ldquo;Why are we doing this?&rdquo; This table shows how they link.</p>
       <table style={S.tbl}>
@@ -76,7 +76,7 @@ function AlignmentMapContent() {
 
   const renderPersonal = () => (
     <div ref={personalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>TEAM → PERSONAL ALIGNMENT (Individual OKRs)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>TEAM → PERSONAL ALIGNMENT (Individual OKRs)</td></tr></tbody></table>
       <CopyButton targetRef={personalRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Personal OKRs connect what YOU do every week to team and company goals. This is how individuals see their impact. Not every company uses personal OKRs, but they&apos;re powerful for high performers.</p>
       <table style={S.tbl}>

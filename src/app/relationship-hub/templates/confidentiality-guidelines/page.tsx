@@ -35,7 +35,7 @@ function ConfidentialityContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>GOLDEN RULES FOR STAKEHOLDER NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>GOLDEN RULES FOR STAKEHOLDER NOTES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Follow these guidelines to keep your notes professional, useful, and safe. If a stakeholder ever saw your notes, you should feel confident &mdash; not embarrassed.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function ConfidentialityContent() {
 
   const renderClassification = () => (
     <div ref={classRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>CLASSIFICATION GUIDE &mdash; WHAT GOES WHERE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>CLASSIFICATION GUIDE &mdash; WHAT GOES WHERE</td></tr></tbody></table>
       <CopyButton targetRef={classRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Not all notes belong in the same place. Use this guide to decide where each type of information should live for maximum safety and usefulness.</p>
       <table style={S.tbl}>

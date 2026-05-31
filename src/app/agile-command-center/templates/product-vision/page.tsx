@@ -48,7 +48,7 @@ function ProductVisionContent() {
 
   const renderVision = () => (
     <div ref={visionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔭 PRODUCT VISION STATEMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔭 PRODUCT VISION STATEMENT</td></tr></tbody></table>
       <CopyButton targetRef={visionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>For</td><td style={{ ...S.td0, height: "36px" }}>[Target users/customers — who are they?]</td></tr>
@@ -69,7 +69,7 @@ function ProductVisionContent() {
 
   const renderOKR = () => (
     <div ref={okrRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎯 OUTCOMES &amp; KEY RESULTS (OKRs)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 OUTCOMES &amp; KEY RESULTS (OKRs)</td></tr></tbody></table>
       <CopyButton targetRef={okrRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Define 2–3 outcomes that define success. Each outcome has 2–3 measurable key results.</p>
       {/* OKR cards in 3 columns */}
@@ -99,7 +99,7 @@ function ProductVisionContent() {
 
   const renderAudience = () => (
     <div ref={audienceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>👥 TARGET AUDIENCE &amp; VALUE DELIVERED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>👥 TARGET AUDIENCE &amp; VALUE DELIVERED</td></tr></tbody></table>
       <CopyButton targetRef={audienceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -132,7 +132,7 @@ function ProductVisionContent() {
 
   const renderNotInScope = () => (
     <div ref={notRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚫 EXPLICITLY NOT IN SCOPE (THIS RELEASE)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚫 EXPLICITLY NOT IN SCOPE (THIS RELEASE)</td></tr></tbody></table>
       <CopyButton targetRef={notRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -163,7 +163,7 @@ function ProductVisionContent() {
 
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔍 VISION HEALTH CHECK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔍 VISION HEALTH CHECK</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

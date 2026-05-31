@@ -123,7 +123,7 @@ function RTMContent() {
 
   const renderCoverage = () => (
     <div ref={coverageRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📊 COVERAGE ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📊 COVERAGE ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={coverageRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

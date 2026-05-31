@@ -109,7 +109,7 @@ function BudgetTrackerContent() {
 
   const renderEVM = () => (
     <div ref={evmRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>≥ EARNED VALUE METRICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>≥ EARNED VALUE METRICS</td></tr></tbody></table>
       <CopyButton targetRef={evmRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -180,7 +180,7 @@ function BudgetTrackerContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🎯 BUDGET HEALTH SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🎯 BUDGET HEALTH SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

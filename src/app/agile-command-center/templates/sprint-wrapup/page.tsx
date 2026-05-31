@@ -46,7 +46,7 @@ function SprintWrapupContent() {
 
   const renderOutcome = () => (
     <div ref={outcomeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 SPRINT OUTCOME</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 SPRINT OUTCOME</td></tr></tbody></table>
       <CopyButton targetRef={outcomeRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -98,7 +98,7 @@ function SprintWrapupContent() {
 
   const renderCarryover = () => (
     <div ref={carryoverRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>↪️ CARRYOVER DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>↪️ CARRYOVER DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={carryoverRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -131,7 +131,7 @@ function SprintWrapupContent() {
 
   const renderHandoff = () => (
     <div ref={handoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🤝 SPRINT-TO-SPRINT HANDOFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🤝 SPRINT-TO-SPRINT HANDOFF</td></tr></tbody></table>
       <CopyButton targetRef={handoffRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>Key Learnings</td><td style={S.td0}>[e.g., Vendor dependencies need earlier follow-up; Apple Pay integration was smoother than expected]</td></tr>

@@ -144,7 +144,7 @@ function SWOTContent() {
 
   const renderStrategies = () => (
     <div ref={stratRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🧠 TOWS STRATEGY MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🧠 TOWS STRATEGY MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={stratRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Combine SWOT factors to generate strategies. Each quadrant pairs internal factors with external factors.</p>
       <table style={LT}><tbody>

@@ -152,7 +152,7 @@ function BAStatusContent() {
 
   const renderRisks = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>⚠️ RISKS, ISSUES &amp; DECISIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>⚠️ RISKS, ISSUES &amp; DECISIONS</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

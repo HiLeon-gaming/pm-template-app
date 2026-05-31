@@ -35,7 +35,7 @@ function EscalationsContent() {
 
   const renderActive = () => (
     <div ref={activeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ACTIVE ESCALATIONS &amp; STUCK ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ACTIVE ESCALATIONS &amp; STUCK ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={activeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Items that are blocked, stuck, or need escalation. For each item: what&apos;s stuck, why, who can unblock it, and your recommended path forward. Don&apos;t let items sit here for more than a week without action.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function EscalationsContent() {
 
   const renderResolved = () => (
     <div ref={resolvedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>RECENTLY RESOLVED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RECENTLY RESOLVED</td></tr></tbody></table>
       <CopyButton targetRef={resolvedRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Items that were stuck but are now resolved. Keep these for reference &mdash; they show patterns and help you anticipate future blocks.</p>
       <table style={S.tbl}>

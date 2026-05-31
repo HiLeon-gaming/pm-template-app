@@ -32,7 +32,7 @@ function TravelRequestContent() {
 
   const renderDetails = () => (
     <div ref={detailsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>TRIP DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>TRIP DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={detailsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Traveler</td><td style={{ ...S.td0, fontWeight: 700 }}>[Exec Name]</td></tr>
@@ -49,7 +49,7 @@ function TravelRequestContent() {
 
   const renderPrefs = () => (
     <div ref={prefsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>PREFERENCES &amp; CONSTRAINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>PREFERENCES &amp; CONSTRAINTS</td></tr></tbody></table>
       <CopyButton targetRef={prefsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Flight Preferences</td><td style={S.td0}>[Direct flights preferred / Window seat / Business class / Airline: [preferred]]</td></tr>

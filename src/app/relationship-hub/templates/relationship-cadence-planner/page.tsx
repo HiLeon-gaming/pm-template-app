@@ -35,7 +35,7 @@ function CadenceContent() {
 
   const renderCadence = () => (
     <div ref={cadRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER TOUCHPOINT CADENCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER TOUCHPOINT CADENCE</td></tr></tbody></table>
       <CopyButton targetRef={cadRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Set the right check-in frequency for each stakeholder. The #1 relationship mistake is only talking to people when you need something. This planner ensures you stay proactive. Review and update every Monday.</p>
       <table style={S.tbl}>
@@ -87,7 +87,7 @@ function CadenceContent() {
 
   const renderGuidelines = () => (
     <div ref={guideRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>CADENCE GUIDELINES BY STAKEHOLDER TYPE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>CADENCE GUIDELINES BY STAKEHOLDER TYPE</td></tr></tbody></table>
       <CopyButton targetRef={guideRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Use these as starting points. Adjust based on relationship health, project phase, and how much is at stake with each person.</p>
       <table style={S.tbl}>

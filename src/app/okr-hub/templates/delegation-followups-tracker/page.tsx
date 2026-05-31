@@ -36,7 +36,7 @@ function DelegationContent() {
 
   const renderDel = () => (
     <div ref={delRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>DELEGATED ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>DELEGATED ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={delRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track everything you&apos;ve delegated. If you don&apos;t track it, you&apos;ll either forget or micromanage. Neither is good.</p>
       <table style={S.tbl}>

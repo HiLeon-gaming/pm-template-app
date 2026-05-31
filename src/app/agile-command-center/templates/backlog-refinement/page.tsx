@@ -45,7 +45,7 @@ function BacklogRefinementContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 REFINEMENT AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 REFINEMENT AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -79,7 +79,7 @@ function BacklogRefinementContent() {
 
   const renderStories = () => (
     <div ref={storiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📝 STORIES DISCUSSED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📝 STORIES DISCUSSED</td></tr></tbody></table>
       <CopyButton targetRef={storiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -116,7 +116,7 @@ function BacklogRefinementContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ ACTION ITEMS FROM REFINEMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ ACTION ITEMS FROM REFINEMENT</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

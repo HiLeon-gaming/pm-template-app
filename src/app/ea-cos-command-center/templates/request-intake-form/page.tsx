@@ -32,7 +32,7 @@ function RequestIntakeContent() {
 
   const renderForm = () => (
     <div ref={formRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 REQUEST DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 REQUEST DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={formRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "25%" }}>Date Received</td><td style={{ ...S.td0, width: "25%" }}>[MM/DD/YYYY]</td><td style={{ ...S.tdLabel, width: "25%" }}>Time</td><td style={{ ...S.td0, width: "25%" }}>[HH:MM AM/PM]</td></tr>
@@ -47,7 +47,7 @@ function RequestIntakeContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔍 TRIAGE &amp; FOLLOW-UP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔍 TRIAGE &amp; FOLLOW-UP</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "25%" }}>Triage Decision</td><td style={S.td0}>[Do Now / Schedule / Delegate / Defer]</td></tr>

@@ -74,7 +74,7 @@ function ProcurementPlanContent() {
 
   const renderItems = () => (
     <div ref={itemsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> PROCUREMENT ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> PROCUREMENT ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={itemsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -146,7 +146,7 @@ function ProcurementPlanContent() {
 
   const renderTimeline = () => (
     <div ref={timelineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> PROCUREMENT TIMELINE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> PROCUREMENT TIMELINE</td></tr></tbody></table>
       <CopyButton targetRef={timelineRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

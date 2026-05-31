@@ -34,7 +34,7 @@ function RiskRadarContent() {
 
   const renderRadar = () => (
     <div ref={radarRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>🔴 THIS WEEK&apos;S RISK SCAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>🔴 THIS WEEK&apos;S RISK SCAN</td></tr></tbody></table>
       <CopyButton targetRef={radarRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Quick weekly risk scan. What could surprise the exec? What needs a preemptive strike?</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function RiskRadarContent() {
     <div ref={historyRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>✅ RISKS THAT WERE AVOIDED</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>✅ RISKS THAT WERE AVOIDED</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; <strong style={{ color: "#059669" }}>[03/10]</strong> Marketing budget dispute — resolved before leadership meeting with pre-aligned data<br />
@@ -85,7 +85,7 @@ function RiskRadarContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>💥 RISKS THAT MATERIALIZED</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>💥 RISKS THAT MATERIALIZED</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; <strong style={{ color: "#DC2626" }}>[03/05]</strong> Legal didn&apos;t return contract on time — vendor escalated to CEO directly<br />

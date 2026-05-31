@@ -35,7 +35,7 @@ function FollowUpContent() {
 
   const renderQueue = () => (
     <div ref={queueRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>THIS WEEK&apos;S FOLLOW-UPS &mdash; PRIORITY ORDER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>THIS WEEK&apos;S FOLLOW-UPS &mdash; PRIORITY ORDER</td></tr></tbody></table>
       <CopyButton targetRef={queueRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your daily execution list. Review every morning. Check off as you go. Anything not done by Friday gets carried to next week with an explanation. Red items first, always.</p>
       <table style={S.tbl}>
@@ -82,7 +82,7 @@ function FollowUpContent() {
 
   const renderDone = () => (
     <div ref={doneRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>COMPLETED THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>COMPLETED THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={doneRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Move items here as you complete them. At week-end, review what you accomplished and what carried over.</p>
       <table style={S.tbl}>

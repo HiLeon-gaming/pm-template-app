@@ -35,7 +35,7 @@ function InfluenceContent() {
 
   const renderGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>INFLUENCE vs INTEREST GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>INFLUENCE vs INTEREST GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Place each stakeholder in the right quadrant. <strong>Influence</strong> = how much power they have over your work (budget, approvals, escalation). <strong>Interest</strong> = how much they care about your work (engagement, questions, requests). Update this quarterly or whenever roles change.</p>
       <table style={LT}><tbody><tr>
@@ -134,7 +134,7 @@ function InfluenceContent() {
 
   const renderList = () => (
     <div ref={listRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>STAKEHOLDER PRIORITY LIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>STAKEHOLDER PRIORITY LIST</td></tr></tbody></table>
       <CopyButton targetRef={listRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Ranked summary of every stakeholder with their quadrant placement and your engagement strategy. Sort by quadrant priority: Manage Closely first, Monitor last.</p>
       <table style={S.tbl}>

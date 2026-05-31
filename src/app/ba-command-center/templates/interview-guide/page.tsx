@@ -138,7 +138,7 @@ function InterviewGuideContent() {
 
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📝 RAW INTERVIEW NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📝 RAW INTERVIEW NOTES</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -202,7 +202,7 @@ function InterviewGuideContent() {
 
   const renderFollowUp = () => (
     <div ref={followRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔄 FOLLOW-UP ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔄 FOLLOW-UP ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={followRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

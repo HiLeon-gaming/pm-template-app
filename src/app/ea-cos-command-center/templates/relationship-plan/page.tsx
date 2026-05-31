@@ -34,7 +34,7 @@ function RelationshipPlanContent() {
 
   const renderProfile = () => (
     <div ref={profileRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={profileRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Stakeholder Name</td><td style={{ ...S.td0, fontWeight: 700, fontSize: "13px" }}>[Name]</td></tr>
@@ -53,7 +53,7 @@ function RelationshipPlanContent() {
     <div ref={strategyRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>RELATIONSHIP GOALS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RELATIONSHIP GOALS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               <strong style={{ color: "#059669" }}>Short-term (30 days):</strong><br />
@@ -69,7 +69,7 @@ function RelationshipPlanContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#0EA5E9")}>UPCOMING TOUCHPOINTS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>UPCOMING TOUCHPOINTS</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={{ ...S.thSecondary, width: "25%", textAlign: "center" as const }}>Date</th>

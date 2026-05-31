@@ -36,7 +36,7 @@ function ChampionContent() {
 
   const renderProfile = () => (
     <div ref={profileRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>CHAMPION IDENTIFICATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>CHAMPION IDENTIFICATION</td></tr></tbody></table>
       <CopyButton targetRef={profileRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Champions are stakeholders who actively advocate for your work when you&apos;re not in the room. Identify who has the potential to be a champion and understand what motivates them to support you.</p>
       <table style={S.tbl}>
@@ -71,7 +71,7 @@ function ChampionContent() {
 
   const renderActivation = () => (
     <div ref={activateRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>CHAMPION ACTIVATION STRATEGY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>CHAMPION ACTIVATION STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={activateRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Once you&apos;ve identified a potential champion, you need a deliberate strategy to activate them. Give them the tools, information, and motivation to advocate on your behalf.</p>
       <table style={S.tbl}>
@@ -103,7 +103,7 @@ function ChampionContent() {
 
   const renderNurture = () => (
     <div ref={nurtureRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>CHAMPION NURTURE PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>CHAMPION NURTURE PLAN</td></tr></tbody></table>
       <CopyButton targetRef={nurtureRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Champions burn out if you only take and never give. Maintain the relationship with consistent investment.</p>
       <table style={S.tbl}>

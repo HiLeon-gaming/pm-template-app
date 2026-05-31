@@ -104,7 +104,7 @@ function BrainDumpContent() {
 
   const renderSortBuckets = () => (
     <div ref={sortRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🗂️ SORT INTO BUCKETS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🗂️ SORT INTO BUCKETS</td></tr></tbody></table>
       <CopyButton targetRef={sortRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>
         Go through each item above and sort it into one of these categories. Then process each bucket into your system.

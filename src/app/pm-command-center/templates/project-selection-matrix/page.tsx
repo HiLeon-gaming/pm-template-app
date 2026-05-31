@@ -117,7 +117,7 @@ function ProjectSelectionMatrixContent() {
 
     return (
       <div ref={scoringRef} style={{ marginBottom: "12px" }}>
-        <div style={S.sectionBanner(C.secondary)}> WEIGHTED SCORING MATRIX</div>
+        <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> WEIGHTED SCORING MATRIX</td></tr></tbody></table>
         <CopyButton targetRef={scoringRef} label="Copy Section" />
         <table style={S.tbl}>
           <thead><tr>
@@ -189,7 +189,7 @@ function ProjectSelectionMatrixContent() {
 
   const renderRecommendation = () => (
     <div ref={recommendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> RECOMMENDATION & DECISION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> RECOMMENDATION & DECISION</td></tr></tbody></table>
       <CopyButton targetRef={recommendRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

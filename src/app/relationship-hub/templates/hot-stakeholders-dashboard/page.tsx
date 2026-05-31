@@ -35,7 +35,7 @@ function HotContent() {
 
   const renderHotList = () => (
     <div ref={hotRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>TOP 10 STAKEHOLDERS NEEDING ATTENTION THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>TOP 10 STAKEHOLDERS NEEDING ATTENTION THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={hotRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your weekly priority list. These are the stakeholders who need your attention RIGHT NOW &mdash; because of a risk, an opportunity, a commitment, or relationship drift. Review every Monday morning. Update throughout the week.</p>
       <table style={S.tbl}>
@@ -79,7 +79,7 @@ function HotContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>WEEKLY CONTEXT &amp; NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>WEEKLY CONTEXT &amp; NOTES</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

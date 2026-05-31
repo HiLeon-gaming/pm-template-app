@@ -46,7 +46,7 @@ function CumulativeFlowContent() {
 
   const renderFlow = () => (
     <div ref={flowRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📈 CUMULATIVE FLOW (TEXT-BASED)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📈 CUMULATIVE FLOW (TEXT-BASED)</td></tr></tbody></table>
       <CopyButton targetRef={flowRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track how many stories are in each state each day. Widening bands = bottleneck. Parallel bands = healthy flow.</p>
       <table style={S.tbl}>
@@ -94,7 +94,7 @@ function CumulativeFlowContent() {
 
   const renderWip = () => (
     <div ref={wipRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚦 WIP ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚦 WIP ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={wipRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -117,7 +117,7 @@ function CumulativeFlowContent() {
 
   const renderAnalysis = () => (
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 FLOW ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 FLOW ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={analysisRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>Bottleneck Detected</td><td style={S.td0}>[QA had 2 items on Day 10 while Dev was empty — QA capacity was the constraint at sprint end]</td></tr>

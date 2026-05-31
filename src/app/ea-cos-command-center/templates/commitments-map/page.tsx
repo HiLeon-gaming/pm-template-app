@@ -32,7 +32,7 @@ function CommitmentsMapContent() {
 
   const renderActive = () => (
     <div ref={activeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ACTIVE CROSS-TEAM COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ACTIVE CROSS-TEAM COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={activeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Cross-team commitments and dependencies. Prevents dropped handoffs.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function CommitmentsMapContent() {
 
   const renderAtRisk = () => (
     <div ref={atRiskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>AT-RISK / OVERDUE COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>AT-RISK / OVERDUE COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={atRiskRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Total Active Commitments</td><td style={{ ...S.td0, fontWeight: 800, color: accent }}>[6]</td></tr>

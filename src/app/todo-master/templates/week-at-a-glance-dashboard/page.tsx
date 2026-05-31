@@ -144,7 +144,7 @@ function WeekDashboardContent() {
   /* ── Daily Priorities Matrix (5-day compact grid) ── */
   const renderPriorities = () => (
     <div ref={prioritiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🎯 DAILY PRIORITIES AT A GLANCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🎯 DAILY PRIORITIES AT A GLANCE</td></tr></tbody></table>
       <CopyButton targetRef={prioritiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -184,7 +184,7 @@ function WeekDashboardContent() {
   /* ── Meeting & Calendar Overview ── */
   const renderCalendar = () => (
     <div ref={calendarRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📅 MEETING &amp; CALENDAR OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📅 MEETING &amp; CALENDAR OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={calendarRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -286,7 +286,7 @@ function WeekDashboardContent() {
   /* ── Delegated / Waiting On ── */
   const renderDelegated = () => (
     <div ref={delegatedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>👋 DELEGATED &amp; WAITING ON</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>👋 DELEGATED &amp; WAITING ON</td></tr></tbody></table>
       <CopyButton targetRef={delegatedRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

@@ -215,7 +215,7 @@ function EisenhowerContent() {
   /* ── Overflow Inbox ── */
   const renderOverflow = () => (
     <div ref={overflowRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📥 UNSORTED INBOX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📥 UNSORTED INBOX</td></tr></tbody></table>
       <CopyButton targetRef={overflowRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>
         Brain-dump all tasks here first, then drag them into the correct quadrant above.

@@ -48,7 +48,7 @@ function OutcomeBenefitsContent() {
 
   const renderOutcomes = () => (
     <div ref={outcomesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 INTENDED OUTCOMES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 INTENDED OUTCOMES</td></tr></tbody></table>
       <CopyButton targetRef={outcomesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -75,7 +75,7 @@ function OutcomeBenefitsContent() {
 
   const renderBenefits = () => (
     <div ref={benefitsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💰 BENEFITS REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💰 BENEFITS REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={benefitsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -104,7 +104,7 @@ function OutcomeBenefitsContent() {
 
   const renderTracking = () => (
     <div ref={trackingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📅 REALIZATION TRACKING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📅 REALIZATION TRACKING</td></tr></tbody></table>
       <CopyButton targetRef={trackingRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Measurement Start</td><td style={S.td0}>[Post Phase 1 go-live — target: Sprint 8 completion]</td></tr>
@@ -117,7 +117,7 @@ function OutcomeBenefitsContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

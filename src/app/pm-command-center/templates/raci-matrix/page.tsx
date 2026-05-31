@@ -114,7 +114,7 @@ function RACIMatrixContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📋 RACI ASSIGNMENT MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📋 RACI ASSIGNMENT MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -184,7 +184,7 @@ function RACIMatrixContent() {
 
   const renderGuidelines = () => (
     <div ref={guidelinesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✅ RACI GUIDELINES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✅ RACI GUIDELINES</td></tr></tbody></table>
       <CopyButton targetRef={guidelinesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

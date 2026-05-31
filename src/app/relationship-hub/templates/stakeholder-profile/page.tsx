@@ -39,7 +39,7 @@ function ProfileContent() {
 
   const renderIdentity = () => (
     <div ref={idRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER IDENTITY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER IDENTITY</td></tr></tbody></table>
       <CopyButton targetRef={idRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>The foundation of your profile. Fill this out first, then work through the remaining sections over time as you learn more about this person.</p>
       <table style={S.tbl}>
@@ -78,7 +78,7 @@ function ProfileContent() {
 
   const renderGoals = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>WHAT THEY CARE ABOUT &mdash; GOALS, PRIORITIES &amp; PAIN POINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>WHAT THEY CARE ABOUT &mdash; GOALS, PRIORITIES &amp; PAIN POINTS</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Understanding what matters to them is the foundation of every successful interaction. If you can only fill out one section beyond Identity, make it this one.</p>
       <table style={S.tbl}>
@@ -114,7 +114,7 @@ function ProfileContent() {
 
   const renderPreferences = () => (
     <div ref={prefRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>COMMUNICATION &amp; WORKING PREFERENCES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>COMMUNICATION &amp; WORKING PREFERENCES</td></tr></tbody></table>
       <CopyButton targetRef={prefRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>How they prefer to communicate and what builds or breaks trust. Getting this right makes every interaction smoother.</p>
       <table style={LT}><tbody><tr>
@@ -168,7 +168,7 @@ function ProfileContent() {
 
   const renderHistory = () => (
     <div ref={histRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>RELATIONSHIP HISTORY &amp; KEY INTERACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RELATIONSHIP HISTORY &amp; KEY INTERACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={histRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track key interactions so you never lose context. Add a row after every meaningful conversation. Link to detailed meeting notes where applicable.</p>
       <table style={S.tbl}>
@@ -204,7 +204,7 @@ function ProfileContent() {
 
   const renderRisks = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>RISKS, LANDMINES &amp; SENSITIVE NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>RISKS, LANDMINES &amp; SENSITIVE NOTES</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Keep these notes factual and professional. Mark as [CONFIDENTIAL] if needed. Review monthly and delete anything no longer relevant.</p>
       <table style={S.tbl}>
@@ -238,7 +238,7 @@ function ProfileContent() {
 
   const renderNextSteps = () => (
     <div ref={nextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#EA580C")}>NEXT STEPS &amp; OPEN COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>NEXT STEPS &amp; OPEN COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={nextRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every commitment you make to this stakeholder goes here. Broken promises are the #1 trust killer. Review before every interaction.</p>
       <table style={S.tbl}>

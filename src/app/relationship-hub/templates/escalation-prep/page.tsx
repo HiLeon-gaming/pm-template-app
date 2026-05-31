@@ -35,7 +35,7 @@ function EscalationContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ESCALATION CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ESCALATION CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Escalation is not failure &mdash; it&apos;s a professional tool for getting blocked work moving. Fill this out BEFORE the escalation conversation so you present a clear, structured case. Never escalate emotionally. Always escalate with data, options, and a recommendation.</p>
       <table style={S.tbl}>
@@ -64,7 +64,7 @@ function EscalationContent() {
 
   const renderOptions = () => (
     <div ref={optionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>OPTIONS &amp; RECOMMENDATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>OPTIONS &amp; RECOMMENDATION</td></tr></tbody></table>
       <CopyButton targetRef={optionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Never escalate with just a problem. Come with options and a clear recommendation. This shows you&apos;ve thought it through and makes the decision easier for the person you&apos;re escalating to.</p>
       <table style={S.tbl}>

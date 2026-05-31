@@ -39,7 +39,7 @@ function DashboardContent() {
 
   const renderGoals = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>THIS QUARTER&apos;S OBJECTIVES &amp; KEY RESULTS (OKRs)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>THIS QUARTER&apos;S OBJECTIVES &amp; KEY RESULTS (OKRs)</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What are we trying to achieve this quarter? Each objective has measurable key results so we know if we&apos;re winning.</p>
       <table style={S.tbl}>
@@ -81,7 +81,7 @@ function DashboardContent() {
 
   const renderPriorities = () => (
     <div ref={prioritiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>THIS WEEK&apos;S TOP 3 PRIORITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>THIS WEEK&apos;S TOP 3 PRIORITIES</td></tr></tbody></table>
       <CopyButton targetRef={prioritiesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>If nothing else gets done this week, these 3 things MUST happen. Keep it simple. Keep it focused.</p>
       <table style={S.tbl}>
@@ -118,7 +118,7 @@ function DashboardContent() {
 
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>KEY METRICS THIS WEEK (KPIs)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>KEY METRICS THIS WEEK (KPIs)</td></tr></tbody></table>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A KPI (Key Performance Indicator) is a number that tells you if things are going well or not. Green = good, Red = needs attention.</p>
       <table style={S.tbl}>
@@ -209,7 +209,7 @@ function DashboardContent() {
 
   const renderCadence = () => (
     <div ref={cadenceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0D9488")}>UPCOMING REVIEWS &amp; RHYTHM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0D9488")}>UPCOMING REVIEWS &amp; RHYTHM</td></tr></tbody></table>
       <CopyButton targetRef={cadenceRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your operating rhythm keeps everyone aligned. These are your scheduled check-ins — never miss them.</p>
       <table style={S.tbl}>

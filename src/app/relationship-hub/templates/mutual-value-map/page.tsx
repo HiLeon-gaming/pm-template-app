@@ -35,7 +35,7 @@ function MutualValueContent() {
 
   const renderMap = () => (
     <div ref={mapRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; VALUE EXCHANGE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; VALUE EXCHANGE</td></tr></tbody></table>
       <CopyButton targetRef={mapRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Map how your work helps their goals and what they need from you. The strongest relationships are built on clear, mutual value. When both sides can articulate what the other brings, the relationship becomes resilient.</p>
       <table style={LT}><tbody><tr>
@@ -89,7 +89,7 @@ function MutualValueContent() {
 
   const renderGaps = () => (
     <div ref={gapRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#EA580C")}>VALUE GAPS &amp; OPPORTUNITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>VALUE GAPS &amp; OPPORTUNITIES</td></tr></tbody></table>
       <CopyButton targetRef={gapRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Where are you under-delivering? What unmet needs could you fill to become indispensable? Each gap closed is a relationship deposit.</p>
       <table style={S.tbl}>

@@ -37,7 +37,7 @@ function PersonalOKRContent() {
 
   const renderScore = () => (
     <div ref={scoreRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MY OKR SCORES THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MY OKR SCORES THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={scoreRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Update your personal Key Results every week. Track your own progress — don&apos;t wait for someone else to tell you how you&apos;re doing.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function PersonalOKRContent() {
 
   const renderWeek = () => (
     <div ref={weekRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>MY PLAN FOR THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>MY PLAN FOR THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={weekRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

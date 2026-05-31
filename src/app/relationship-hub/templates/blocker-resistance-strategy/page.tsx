@@ -36,7 +36,7 @@ function BlockerContent() {
 
   const renderAssessment = () => (
     <div ref={assessRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; RESISTANCE ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; RESISTANCE ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={assessRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Before you can address resistance, you need to understand it. Most blockers aren&apos;t malicious &mdash; they have legitimate concerns, competing priorities, or past experiences that drive their behavior. Start by understanding, not judging.</p>
       <table style={S.tbl}>
@@ -70,7 +70,7 @@ function BlockerContent() {
 
   const renderApproach = () => (
     <div ref={approachRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>ENGAGEMENT APPROACH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>ENGAGEMENT APPROACH</td></tr></tbody></table>
       <CopyButton targetRef={approachRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Choose your approach based on the type and severity of resistance. Always start with the lightest touch &mdash; escalate only if necessary.</p>
       <table style={S.tbl}>
@@ -104,7 +104,7 @@ function BlockerContent() {
 
   const renderEscalation = () => (
     <div ref={escalateRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>ESCALATION FRAMEWORK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>ESCALATION FRAMEWORK</td></tr></tbody></table>
       <CopyButton targetRef={escalateRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Escalation is a last resort, not a first move. But when direct engagement fails, you need a clear plan. Escalation done well preserves relationships; done poorly, it creates enemies.</p>
       <table style={S.tbl}>

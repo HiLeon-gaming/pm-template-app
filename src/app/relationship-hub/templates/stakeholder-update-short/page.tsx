@@ -35,7 +35,7 @@ function UpdateContent() {
 
   const renderTemplate = () => (
     <div ref={templateRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STATUS UPDATE TEMPLATE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STATUS UPDATE TEMPLATE</td></tr></tbody></table>
       <CopyButton targetRef={templateRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A quick, structured status update for email, Slack, or Teams. Takes 5 minutes to write. Keeps stakeholders informed without scheduling another meeting. Use the PRANK format: Progress, Risks, Asks, Next Steps, Key Dates.</p>
       <table style={S.tbl}>
@@ -69,7 +69,7 @@ function UpdateContent() {
 
   const renderExample = () => (
     <div ref={exampleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>EXAMPLE: COMPLETED UPDATE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>EXAMPLE: COMPLETED UPDATE</td></tr></tbody></table>
       <CopyButton targetRef={exampleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thPrimary, textAlign: "left" as const }}>Example Status Update</th></tr></thead>

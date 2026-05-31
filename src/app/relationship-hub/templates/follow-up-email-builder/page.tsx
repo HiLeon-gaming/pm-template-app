@@ -35,7 +35,7 @@ function EmailContent() {
 
   const renderTemplate = () => (
     <div ref={templateRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>EMAIL BUILDER &mdash; FILL IN &amp; SEND</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>EMAIL BUILDER &mdash; FILL IN &amp; SEND</td></tr></tbody></table>
       <CopyButton targetRef={templateRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Fill in each section below, then copy the entire email body into your email client. Send within 24 hours of the meeting. The faster you send, the more professional you look.</p>
       <table style={S.tbl}>
@@ -86,7 +86,7 @@ function EmailContent() {
 
   const renderExample = () => (
     <div ref={exampleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>EXAMPLE: COMPLETED EMAIL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>EXAMPLE: COMPLETED EMAIL</td></tr></tbody></table>
       <CopyButton targetRef={exampleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thPrimary, textAlign: "left" as const }}>Example Follow-Up</th></tr></thead>

@@ -38,7 +38,7 @@ function OKRBuilderContent() {
 
   const renderOKR = () => (
     <div ref={okrRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>OBJECTIVES &amp; KEY RESULTS — Q[X] [YEAR]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>OBJECTIVES &amp; KEY RESULTS — Q[X] [YEAR]</td></tr></tbody></table>
       <CopyButton targetRef={okrRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>An <strong>Objective</strong> is WHAT you want to achieve (clear and motivating). <strong>Key Results</strong> are HOW you&apos;ll measure success (specific numbers). Aim for 2&ndash;3 objectives with 2&ndash;3 key results each.</p>
 
@@ -147,7 +147,7 @@ function OKRBuilderContent() {
 
   const renderInit = () => (
     <div ref={initRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>LINKED INITIATIVES (The Work That Moves Key Results)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>LINKED INITIATIVES (The Work That Moves Key Results)</td></tr></tbody></table>
       <CopyButton targetRef={initRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Initiatives are the PROJECTS and WORK that will move your Key Results. A Key Result without an initiative is just a wish. Make sure every KR has at least one initiative.</p>
       <table style={S.tbl}>
@@ -186,7 +186,7 @@ function OKRBuilderContent() {
 
   const renderConf = () => (
     <div ref={confRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>CONFIDENCE CHECK (How Likely Are We to Hit Each KR?)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>CONFIDENCE CHECK (How Likely Are We to Hit Each KR?)</td></tr></tbody></table>
       <CopyButton targetRef={confRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Rate your confidence 1&ndash;10 for each Key Result. Update this every week. If confidence drops below 5, it&apos;s time to act &mdash; either change the approach or adjust the target.</p>
       <table style={S.tbl}>

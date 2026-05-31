@@ -46,7 +46,7 @@ function AssumptionStressTestContent() {
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 ASSUMPTION REGISTER &amp; STRESS TEST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 ASSUMPTION REGISTER &amp; STRESS TEST</td></tr></tbody></table>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -78,7 +78,7 @@ function AssumptionStressTestContent() {
 
   const renderAnalysis = () => (
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔍 STRESS TEST ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔍 STRESS TEST ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={analysisRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>At-Risk Assumptions</td><td style={S.td0}>[#1: Vendor API — 3 weeks behind; #2: Sales UAT capacity — Q2 targets may compete for attention]</td></tr>
@@ -92,7 +92,7 @@ function AssumptionStressTestContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

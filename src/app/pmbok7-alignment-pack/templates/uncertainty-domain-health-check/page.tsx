@@ -47,7 +47,7 @@ function UncertaintyDomainHealthCheckContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -77,7 +77,7 @@ function UncertaintyDomainHealthCheckContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚨 TOP RISKS THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚨 TOP RISKS THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -105,7 +105,7 @@ function UncertaintyDomainHealthCheckContent() {
 
   const renderAmbiguity = () => (
     <div ref={ambiguityRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>❓ AMBIGUITY &amp; UNKNOWNS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>❓ AMBIGUITY &amp; UNKNOWNS</td></tr></tbody></table>
       <CopyButton targetRef={ambiguityRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Requirements Ambiguity</td><td style={S.td0}>[20% of Phase 2 requirements still ambiguous] — <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Needs Discovery</span></td></tr>
@@ -119,7 +119,7 @@ function UncertaintyDomainHealthCheckContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ UNCERTAINTY ACTIONS THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ UNCERTAINTY ACTIONS THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "8%" }}>Due</th><th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Done?</th></tr></thead>

@@ -37,7 +37,7 @@ function StopDoingListContent() {
 
   const renderList = () => (
     <div ref={listRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ITEMS WE ARE STOPPING OR PAUSING THIS QUARTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ITEMS WE ARE STOPPING OR PAUSING THIS QUARTER</td></tr></tbody></table>
       <CopyButton targetRef={listRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every new initiative needs room. These are the things we&apos;re stopping, pausing, or reducing to free up capacity for our quarterly OKRs. No new work without something removed.</p>
       <table style={S.tbl}>
@@ -121,7 +121,7 @@ function StopDoingListContent() {
 
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MONTHLY REVIEW: HAS ANYTHING CREPT BACK IN?</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MONTHLY REVIEW: HAS ANYTHING CREPT BACK IN?</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Things you stopped have a habit of creeping back. Check monthly: is the stopped item still stopped?</p>
       <table style={S.tbl}>

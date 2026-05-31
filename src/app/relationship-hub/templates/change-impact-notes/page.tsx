@@ -35,7 +35,7 @@ function ChangeContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER IMPACT ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER IMPACT ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>For every change (scope, timeline, approach, personnel), assess how it affects each stakeholder group. Different groups feel the same change differently. Anticipate their reactions and prepare accordingly.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function ChangeContent() {
 
   const renderComms = () => (
     <div ref={commsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>CHANGE COMMUNICATION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>CHANGE COMMUNICATION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={commsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Who do you tell first? How? In what order? The sequence matters. Generally: sponsor first, then directly impacted stakeholders, then broader audience.</p>
       <table style={S.tbl}>

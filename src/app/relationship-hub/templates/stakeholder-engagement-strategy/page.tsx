@@ -35,7 +35,7 @@ function EngagementContent() {
 
   const renderEngagement = () => (
     <div ref={engRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ENGAGEMENT PLAN BY STAKEHOLDER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ENGAGEMENT PLAN BY STAKEHOLDER</td></tr></tbody></table>
       <CopyButton targetRef={engRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Define how you will keep each key stakeholder informed and involved. The goal: the right information, to the right person, at the right time, in the right format. Under-communication is the #1 cause of stakeholder frustration.</p>
       <table style={S.tbl}>
@@ -80,7 +80,7 @@ function EngagementContent() {
 
   const renderEscalation = () => (
     <div ref={escRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ENGAGEMENT ESCALATION TRIGGERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ENGAGEMENT ESCALATION TRIGGERS</td></tr></tbody></table>
       <CopyButton targetRef={escRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>When should you increase engagement frequency or escalate? Define triggers upfront so you don&apos;t miss the moment.</p>
       <table style={S.tbl}>

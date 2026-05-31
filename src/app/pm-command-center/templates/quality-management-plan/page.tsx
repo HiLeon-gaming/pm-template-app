@@ -75,7 +75,7 @@ function QualityManagementPlanContent() {
 
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> QUALITY METRICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> QUALITY METRICS</td></tr></tbody></table>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -146,7 +146,7 @@ function QualityManagementPlanContent() {
 
   const renderQC = () => (
     <div ref={qcRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> QUALITY CONTROL (QC) ACTIVITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> QUALITY CONTROL (QC) ACTIVITIES</td></tr></tbody></table>
       <CopyButton targetRef={qcRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -104,7 +104,7 @@ function CostEstimateContent() {
 
   const renderNonLabor = () => (
     <div ref={nonLaborRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📦 NON-LABOR COSTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📦 NON-LABOR COSTS</td></tr></tbody></table>
       <CopyButton targetRef={nonLaborRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -164,7 +164,7 @@ function CostEstimateContent() {
 
   const renderBasis = () => (
     <div ref={basisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📖 BASIS OF ESTIMATE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📖 BASIS OF ESTIMATE</td></tr></tbody></table>
       <CopyButton targetRef={basisRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

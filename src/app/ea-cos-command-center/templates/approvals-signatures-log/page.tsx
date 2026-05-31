@@ -32,7 +32,7 @@ function ApprovalsLogContent() {
 
   const renderPending = () => (
     <div ref={pendingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>AWAITING EXEC APPROVAL / SIGNATURE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>AWAITING EXEC APPROVAL / SIGNATURE</td></tr></tbody></table>
       <CopyButton targetRef={pendingRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What&apos;s awaiting signature, due dates, risks. Avoids missed approvals and contract delays.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function ApprovalsLogContent() {
 
   const renderCompleted = () => (
     <div ref={completedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>RECENTLY COMPLETED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RECENTLY COMPLETED</td></tr></tbody></table>
       <CopyButton targetRef={completedRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

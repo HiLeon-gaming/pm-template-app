@@ -33,7 +33,7 @@ function WeeklyMetricsContent() {
 
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>KEY METRICS THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>KEY METRICS THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Top metrics at a glance. Update every Monday. Trend shows direction compared to last week.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function WeeklyMetricsContent() {
 
   const renderComment = () => (
     <div ref={commentRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>COMMENTARY — WHAT CHANGED &amp; WHY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>COMMENTARY — WHAT CHANGED &amp; WHY</td></tr></tbody></table>
       <CopyButton targetRef={commentRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[
@@ -100,7 +100,7 @@ function WeeklyMetricsContent() {
 
   const renderWatch = () => (
     <div ref={watchRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>WATCH LIST (Metrics Trending Wrong Direction)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>WATCH LIST (Metrics Trending Wrong Direction)</td></tr></tbody></table>
       <CopyButton targetRef={watchRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

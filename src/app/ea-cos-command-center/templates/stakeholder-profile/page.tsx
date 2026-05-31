@@ -35,7 +35,7 @@ function StakeholderProfileContent() {
 
   const renderProfile = () => (
     <div ref={profileRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER CARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER CARD</td></tr></tbody></table>
       <CopyButton targetRef={profileRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Full Name</td><td style={{ ...S.td0, fontWeight: 700, fontSize: "13px" }}>[Stakeholder Name]</td></tr>
@@ -56,7 +56,7 @@ function StakeholderProfileContent() {
 
   const renderHistory = () => (
     <div ref={historyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>INTERACTION HISTORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>INTERACTION HISTORY</td></tr></tbody></table>
       <CopyButton targetRef={historyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -90,7 +90,7 @@ function StakeholderProfileContent() {
     <div ref={strategyRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>DO&apos;S</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>DO&apos;S</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; [Be direct and data-driven]<br />
@@ -102,7 +102,7 @@ function StakeholderProfileContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>DON&apos;TS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>DON&apos;TS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; [Don&apos;t spring surprises in meetings]<br />

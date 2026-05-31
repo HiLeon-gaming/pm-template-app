@@ -32,7 +32,7 @@ function InitiativePortfolioContent() {
 
   const renderPortfolio = () => (
     <div ref={portfolioRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ACTIVE INITIATIVES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ACTIVE INITIATIVES</td></tr></tbody></table>
       <CopyButton targetRef={portfolioRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What&apos;s in flight, health, owner, next milestone, risks. Exec-level view across the portfolio.</p>
       <table style={S.tbl}>
@@ -76,7 +76,7 @@ function InitiativePortfolioContent() {
 
   const renderMilestones = () => (
     <div ref={milestonesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>UPCOMING MILESTONES (NEXT 30 DAYS)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>UPCOMING MILESTONES (NEXT 30 DAYS)</td></tr></tbody></table>
       <CopyButton targetRef={milestonesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

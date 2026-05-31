@@ -33,7 +33,7 @@ function TerminologyContent() {
 
   const renderTerms = () => (
     <div ref={termsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>KEY TERMS IN PLAIN ENGLISH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>KEY TERMS IN PLAIN ENGLISH</td></tr></tbody></table>
       <CopyButton targetRef={termsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>No jargon. Every term explained like you&apos;re explaining it to a smart friend who&apos;s never heard of it before.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function TerminologyContent() {
 
   const renderConfusion = () => (
     <div ref={confusionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>COMMON CONFUSION (What People Mix Up)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>COMMON CONFUSION (What People Mix Up)</td></tr></tbody></table>
       <CopyButton targetRef={confusionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -103,7 +103,7 @@ function TerminologyContent() {
 
   const renderCheat = () => (
     <div ref={cheatRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>QUICK CHEAT SHEET</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>QUICK CHEAT SHEET</td></tr></tbody></table>
       <CopyButton targetRef={cheatRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>

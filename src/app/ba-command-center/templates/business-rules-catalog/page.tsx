@@ -122,7 +122,7 @@ function BRCContent() {
 
   const renderValidation = () => (
     <div ref={validRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🧪 RULE VALIDATION MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🧪 RULE VALIDATION MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={validRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Track how each business rule is validated — through system testing, manual review, or both.</p>
       <table style={S.tbl}>

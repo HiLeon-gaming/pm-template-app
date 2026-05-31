@@ -46,7 +46,7 @@ function ProductGlossaryContent() {
 
   const renderTerms = () => (
     <div ref={termsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 KEY TERMS &amp; DEFINITIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 KEY TERMS &amp; DEFINITIONS</td></tr></tbody></table>
       <CopyButton targetRef={termsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Shared vocabulary for the team. Add new terms as they come up during refinement and planning.</p>
       <table style={S.tbl}>
@@ -86,7 +86,7 @@ function ProductGlossaryContent() {
 
   const renderAcronyms = () => (
     <div ref={acronymRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔤 ACRONYMS &amp; ABBREVIATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔤 ACRONYMS &amp; ABBREVIATIONS</td></tr></tbody></table>
       <CopyButton targetRef={acronymRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -143,7 +143,7 @@ function ProductGlossaryContent() {
 
   const renderDomain = () => (
     <div ref={domainRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🏢 DOMAIN-SPECIFIC TERMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🏢 DOMAIN-SPECIFIC TERMS</td></tr></tbody></table>
       <CopyButton targetRef={domainRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Add industry or product-specific terms that team members (especially new ones) need to understand.</p>
       <table style={S.tbl}>

@@ -136,7 +136,7 @@ function DecisionMatrixContent() {
 
   const renderSimpleComparison = () => (
     <div ref={compRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📋 SIDE-BY-SIDE COMPARISON</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📋 SIDE-BY-SIDE COMPARISON</td></tr></tbody></table>
       <CopyButton targetRef={compRef} label="Copy Section" />
       <table style={LT}>
         <tbody>

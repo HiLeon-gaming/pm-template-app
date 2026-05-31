@@ -46,7 +46,7 @@ function CapacityPlannerContent() {
 
   const renderCapacity = () => (
     <div ref={capacityRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 INDIVIDUAL CAPACITY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 INDIVIDUAL CAPACITY</td></tr></tbody></table>
       <CopyButton targetRef={capacityRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Focus Factor = % of time actually spent on sprint work (excl. meetings, support, interruptions). Typical: 70–80%.</p>
       <table style={S.tbl}>
@@ -98,7 +98,7 @@ function CapacityPlannerContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎯 CAPACITY RECOMMENDATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 CAPACITY RECOMMENDATION</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -124,7 +124,7 @@ function CapacityPlannerContent() {
 
   const renderHistory = () => (
     <div ref={historyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📈 CAPACITY HISTORY (TREND)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📈 CAPACITY HISTORY (TREND)</td></tr></tbody></table>
       <CopyButton targetRef={historyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

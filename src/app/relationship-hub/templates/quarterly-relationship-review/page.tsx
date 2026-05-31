@@ -36,7 +36,7 @@ function ReviewContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>QUARTER OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>QUARTER OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Step back from the daily grind and assess how your stakeholder relationships evolved over the past quarter. What changed? What improved? What&apos;s at risk? This review forces strategic thinking about relationships, not just tactical management.</p>
       <table style={S.tbl}>
@@ -63,7 +63,7 @@ function ReviewContent() {
 
   const renderChanges = () => (
     <div ref={changesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>RELATIONSHIP CHANGES THIS QUARTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>RELATIONSHIP CHANGES THIS QUARTER</td></tr></tbody></table>
       <CopyButton targetRef={changesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -103,7 +103,7 @@ function ReviewContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>NEXT QUARTER PRIORITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>NEXT QUARTER PRIORITIES</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

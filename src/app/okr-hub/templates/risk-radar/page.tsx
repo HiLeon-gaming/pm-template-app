@@ -36,7 +36,7 @@ function RiskRadarContent() {
 
   const renderRisk = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ACTIVE RISK REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ACTIVE RISK REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Top risks that could derail OKR achievement this quarter. Updated weekly. Each risk has an owner, mitigation, and trigger point.</p>
       <table style={S.tbl}>

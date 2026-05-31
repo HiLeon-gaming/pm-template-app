@@ -36,7 +36,7 @@ function WinsContent() {
 
   const renderWins = () => (
     <div ref={winsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>WINS THIS PERIOD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>WINS THIS PERIOD</td></tr></tbody></table>
       <CopyButton targetRef={winsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Document what&apos;s going well. PMs spend 90% of their energy on problems. This page forces you to capture wins, recognize contributors, and build momentum. Wins feed confidence, credibility, and stakeholder trust. Don&apos;t skip this.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function WinsContent() {
 
   const renderRecognition = () => (
     <div ref={recognitionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>RECOGNITION ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>RECOGNITION ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={recognitionRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Recognition is the cheapest, most powerful relationship tool you have. These actions take 5 minutes each and pay dividends for months.</p>
       <table style={S.tbl}>
@@ -110,7 +110,7 @@ function WinsContent() {
 
   const renderMomentum = () => (
     <div ref={momentumRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>MOMENTUM &mdash; WHAT TO REINFORCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>MOMENTUM &mdash; WHAT TO REINFORCE</td></tr></tbody></table>
       <CopyButton targetRef={momentumRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

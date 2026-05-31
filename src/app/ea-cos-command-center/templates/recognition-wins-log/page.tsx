@@ -32,7 +32,7 @@ function RecognitionWinsContent() {
 
   const renderWins = () => (
     <div ref={winsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>RECENT WINS &amp; GREAT WORK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RECENT WINS &amp; GREAT WORK</td></tr></tbody></table>
       <CopyButton targetRef={winsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Who did great work? What should be acknowledged? Helps leaders be great leaders.</p>
       <table style={S.tbl}>
@@ -69,7 +69,7 @@ function RecognitionWinsContent() {
 
   const renderQueue = () => (
     <div ref={queueRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>RECOGNITION QUEUE &mdash; Exec Action Needed</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>RECOGNITION QUEUE &mdash; Exec Action Needed</td></tr></tbody></table>
       <CopyButton targetRef={queueRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

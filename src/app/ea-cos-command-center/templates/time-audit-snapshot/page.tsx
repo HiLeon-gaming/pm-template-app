@@ -34,7 +34,7 @@ function TimeAuditContent() {
 
   const renderBreakdown = () => (
     <div ref={breakdownRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>WHERE DID THE EXEC&apos;S TIME GO?</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>WHERE DID THE EXEC&apos;S TIME GO?</td></tr></tbody></table>
       <CopyButton targetRef={breakdownRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "20%" }}>Week Of</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[MM/DD/YYYY]</td></tr>
@@ -80,7 +80,7 @@ function TimeAuditContent() {
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>PROBLEMS SPOTTED</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>PROBLEMS SPOTTED</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               <strong style={{ color: "#DC2626" }}>1.</strong> Internal meetings consuming 35% (target: 25%) — audit recurring meetings<br />
@@ -91,7 +91,7 @@ function TimeAuditContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>RECOMMENDED ACTIONS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RECOMMENDED ACTIONS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               <strong style={{ color: "#059669" }}>1.</strong> Cancel or shorten 3 recurring internal meetings (-3 hrs)<br />

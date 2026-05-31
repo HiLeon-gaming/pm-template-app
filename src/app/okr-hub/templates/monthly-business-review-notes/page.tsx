@@ -37,7 +37,7 @@ function MBRNotesContent() {
 
   const renderSumm = () => (
     <div ref={summRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MEETING SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MEETING SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={S.tdLabel}>Date</td><td style={S.td0}>[Date] &nbsp;|&nbsp; [Time]</td></tr>
@@ -52,7 +52,7 @@ function MBRNotesContent() {
 
   const renderDec = () => (
     <div ref={decRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={decRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

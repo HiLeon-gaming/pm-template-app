@@ -46,7 +46,7 @@ function DevApproachLifecycleHealthCheckContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -75,7 +75,7 @@ function DevApproachLifecycleHealthCheckContent() {
 
   const renderAssess = () => (
     <div ref={assessRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔍 APPROACH FIT ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔍 APPROACH FIT ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={assessRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Should the approach change?</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>No — Current approach remains appropriate</span></td></tr>
@@ -89,7 +89,7 @@ function DevApproachLifecycleHealthCheckContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ ACTIONS THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ ACTIONS THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "8%" }}>Due</th><th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Done?</th></tr></thead>

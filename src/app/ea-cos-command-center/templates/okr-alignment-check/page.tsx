@@ -32,7 +32,7 @@ function OKRAlignmentContent() {
 
   const renderOKR = () => (
     <div ref={okrRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>COMPANY OKRs &mdash; ALIGNMENT STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>COMPANY OKRs &mdash; ALIGNMENT STATUS</td></tr></tbody></table>
       <CopyButton targetRef={okrRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Is the exec&apos;s time and energy aligned to what matters most? Quick quarterly check.</p>
       <table style={S.tbl}>
@@ -71,7 +71,7 @@ function OKRAlignmentContent() {
 
   const renderGaps = () => (
     <div ref={gapsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ALIGNMENT GAPS &amp; RECOMMENDATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ALIGNMENT GAPS &amp; RECOMMENDATIONS</td></tr></tbody></table>
       <CopyButton targetRef={gapsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[

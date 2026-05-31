@@ -74,7 +74,7 @@ function ScopeStatementContent() {
 
   const renderDeliverables = () => (
     <div ref={deliverablesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>2 — PROJECT DELIVERABLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>2 — PROJECT DELIVERABLES</td></tr></tbody></table>
       <CopyButton targetRef={deliverablesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -143,7 +143,7 @@ function ScopeStatementContent() {
 
   const renderAcceptance = () => (
     <div ref={acceptanceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>4 — ACCEPTANCE CRITERIA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>4 — ACCEPTANCE CRITERIA</td></tr></tbody></table>
       <CopyButton targetRef={acceptanceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -192,7 +192,7 @@ function ScopeStatementContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>6 — SCOPE APPROVAL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>6 — SCOPE APPROVAL</td></tr></tbody></table>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

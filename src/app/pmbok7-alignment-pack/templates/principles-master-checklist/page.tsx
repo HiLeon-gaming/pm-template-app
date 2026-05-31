@@ -61,7 +61,7 @@ function PrinciplesMasterChecklistContent() {
 
   const renderChecklist = () => (
     <div ref={checklistRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ PRINCIPLES ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ PRINCIPLES ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={checklistRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -93,7 +93,7 @@ function PrinciplesMasterChecklistContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 SCORE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 SCORE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Total Score</td><td style={S.td0}>[47] / 60 — <span style={S.badge("#DDD6FE", "#5B21B6")}>78% — Strong</span></td></tr>
@@ -107,7 +107,7 @@ function PrinciplesMasterChecklistContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "10%" }}>Principle</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "8%" }}>Due</th></tr></thead>

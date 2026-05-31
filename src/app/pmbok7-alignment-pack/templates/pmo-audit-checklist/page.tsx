@@ -48,7 +48,7 @@ function PmoAuditChecklistContent() {
 
   const renderChecklist = () => (
     <div ref={checklistRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ PMBOK 7 COMPLIANCE CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ PMBOK 7 COMPLIANCE CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={checklistRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -91,7 +91,7 @@ function PmoAuditChecklistContent() {
 
   const renderEvidence = () => (
     <div ref={evidenceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📂 EVIDENCE PACKAGE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📂 EVIDENCE PACKAGE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={evidenceRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Total Artifacts</td><td style={S.td0}>[41 PMBOK 7 alignment artifacts + 1 Read This First instruction page = 42 total pages]</td></tr>
@@ -104,7 +104,7 @@ function PmoAuditChecklistContent() {
 
   const renderFindings = () => (
     <div ref={findingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔎 AUDIT FINDINGS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔎 AUDIT FINDINGS</td></tr></tbody></table>
       <CopyButton targetRef={findingsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "8%" }}>Severity</th><th style={S.thSecondary}>Finding</th><th style={{ ...S.thSecondary, width: "25%" }}>Recommendation</th></tr></thead>
@@ -124,7 +124,7 @@ function PmoAuditChecklistContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ CORRECTIVE ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ CORRECTIVE ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th><th style={{ ...S.thSecondary, width: "10%" }}>Follow-up</th></tr></thead>

@@ -132,7 +132,7 @@ function FocusSessionContent() {
   /* ── Session Log ── */
   const renderSessions = () => (
     <div ref={sessionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>⏱️ SESSION LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>⏱️ SESSION LOG</td></tr></tbody></table>
       <CopyButton targetRef={sessionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>
         Log each focus session. Rate quality 1–10 after each one. Take a break between sessions!
@@ -181,7 +181,7 @@ function FocusSessionContent() {
   /* ── Distraction Log ── */
   const renderDistractions = () => (
     <div ref={distractionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🚫 DISTRACTION LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🚫 DISTRACTION LOG</td></tr></tbody></table>
       <CopyButton targetRef={distractionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>
         Every time you get distracted, log it. Patterns reveal what to fix.

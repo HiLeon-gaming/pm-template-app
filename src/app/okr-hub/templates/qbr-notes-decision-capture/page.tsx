@@ -37,7 +37,7 @@ function QBRNotesContent() {
 
   const renderSumm = () => (
     <div ref={summRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>QBR SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>QBR SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={S.tdLabel}>Date / Time</td><td style={S.td0}>[Date] &nbsp;|&nbsp; [Time] &nbsp;|&nbsp; [Duration: 90 min]</td></tr>
@@ -53,7 +53,7 @@ function QBRNotesContent() {
 
   const renderDec = () => (
     <div ref={decRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>DECISIONS MADE AT QBR</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>DECISIONS MADE AT QBR</td></tr></tbody></table>
       <CopyButton targetRef={decRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every decision made during the QBR — with context, rationale, and owner. Share within 24 hours so there&apos;s no ambiguity.</p>
       <table style={S.tbl}>

@@ -110,7 +110,7 @@ function InterfaceSpecContent() {
 
   const renderEndpoints = () => (
     <div ref={endpointsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔗 API ENDPOINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔗 API ENDPOINTS</td></tr></tbody></table>
       <CopyButton targetRef={endpointsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -178,7 +178,7 @@ function InterfaceSpecContent() {
           </table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "5px" }}>
-          <div style={S.sectionBanner(C.secondary)}>📥 RESPONSE PAYLOAD</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📥 RESPONSE PAYLOAD</td></tr></tbody></table>
           <p style={{ ...S.subNote, marginBottom: "3px" }}>200 OK — Success Response</p>
           <table style={S.tbl}>
             <thead><tr>
@@ -252,7 +252,7 @@ function InterfaceSpecContent() {
 
   const renderCatalog = () => (
     <div ref={catalogRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📚 INTERFACE CATALOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📚 INTERFACE CATALOG</td></tr></tbody></table>
       <CopyButton targetRef={catalogRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

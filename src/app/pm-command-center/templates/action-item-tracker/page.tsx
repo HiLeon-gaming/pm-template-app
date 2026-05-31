@@ -101,7 +101,7 @@ function ActionItemTrackerContent() {
 
   const renderAging = () => (
     <div ref={agingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> OVERDUE / AGING ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> OVERDUE / AGING ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={agingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

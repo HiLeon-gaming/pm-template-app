@@ -36,7 +36,7 @@ function CommPrefContent() {
 
   const renderPreferences = () => (
     <div ref={prefRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; COMMUNICATION PROFILE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; COMMUNICATION PROFILE</td></tr></tbody></table>
       <CopyButton targetRef={prefRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Document how this person prefers to communicate. Matching their style makes every interaction smoother and more productive. Update this as you learn more about them.</p>
       <table style={S.tbl}>
@@ -129,7 +129,7 @@ function CommPrefContent() {
 
   const renderMeetingPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>PRE-MEETING CHECKLIST FOR THIS STAKEHOLDER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>PRE-MEETING CHECKLIST FOR THIS STAKEHOLDER</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Review this checklist 10 minutes before every meeting with this stakeholder. Preparation is the highest-ROI activity in stakeholder management.</p>
       <table style={S.tbl}>

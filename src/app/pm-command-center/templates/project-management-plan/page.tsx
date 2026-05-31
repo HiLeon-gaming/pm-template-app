@@ -79,7 +79,7 @@ function ProjectManagementPlanContent() {
 
   const renderBaselines = () => (
     <div ref={baselinesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>2 — PROJECT BASELINES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>2 — PROJECT BASELINES</td></tr></tbody></table>
       <CopyButton targetRef={baselinesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -151,7 +151,7 @@ function ProjectManagementPlanContent() {
 
   const renderProcess = () => (
     <div ref={processRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>4 — PROJECT GOVERNANCE & PROCESSES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>4 — PROJECT GOVERNANCE & PROCESSES</td></tr></tbody></table>
       <CopyButton targetRef={processRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

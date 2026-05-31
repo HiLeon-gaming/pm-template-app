@@ -63,7 +63,7 @@ function WorkingAgreementsContent() {
 
   const renderComm = () => (
     <div ref={commRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💬 COMMUNICATION NORMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💬 COMMUNICATION NORMS</td></tr></tbody></table>
       <CopyButton targetRef={commRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -88,7 +88,7 @@ function WorkingAgreementsContent() {
 
   const renderMeetings = () => (
     <div ref={meetingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📅 MEETING EXPECTATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📅 MEETING EXPECTATIONS</td></tr></tbody></table>
       <CopyButton targetRef={meetingsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -123,7 +123,7 @@ function WorkingAgreementsContent() {
 
   const renderWork = () => (
     <div ref={workRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚙️ WORK PRACTICES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚙️ WORK PRACTICES</td></tr></tbody></table>
       <CopyButton targetRef={workRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -148,7 +148,7 @@ function WorkingAgreementsContent() {
 
   const renderConflict = () => (
     <div ref={conflictRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚖️ CONFLICT RESOLUTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚖️ CONFLICT RESOLUTION</td></tr></tbody></table>
       <CopyButton targetRef={conflictRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Step 1 — Direct</td><td style={S.td0}>[Discuss the issue directly with the person involved — assume positive intent]</td></tr>
@@ -161,7 +161,7 @@ function WorkingAgreementsContent() {
 
   const renderSignoff = () => (
     <div ref={sigRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✍️ TEAM SIGN-OFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✍️ TEAM SIGN-OFF</td></tr></tbody></table>
       <CopyButton targetRef={sigRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>By adding your name below, you agree to uphold these working agreements and hold each other accountable.</p>
       <table style={S.tbl}>

@@ -45,7 +45,7 @@ function BlockerEscalationContent() {
 
   const renderBlocker = () => (
     <div ref={blockerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>🚧 THE BLOCKER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>🚧 THE BLOCKER</td></tr></tbody></table>
       <CopyButton targetRef={blockerRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>What Is Blocked?</td><td style={{ ...S.td0, height: "40px" }}>[e.g., Apple Pay integration cannot proceed — vendor sandbox environment is not accessible]</td></tr>
@@ -58,7 +58,7 @@ function BlockerEscalationContent() {
 
   const renderImpact = () => (
     <div ref={impactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💥 IMPACT ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💥 IMPACT ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={impactRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Sprint Goal at Risk?</td><td style={S.td0}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>Yes</span> — [Sprint goal includes Apple Pay; cannot demo without it]</td></tr>
@@ -72,7 +72,7 @@ function BlockerEscalationContent() {
 
   const renderAsk = () => (
     <div ref={askRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 THE ASK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 THE ASK</td></tr></tbody></table>
       <CopyButton targetRef={askRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>What We Need</td><td style={{ ...S.td0, height: "40px", fontWeight: 600 }}>[e.g., Contact PayCorp account manager directly to expedite sandbox provisioning — need access by EOD Wednesday]</td></tr>

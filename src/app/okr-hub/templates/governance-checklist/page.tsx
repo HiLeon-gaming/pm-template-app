@@ -59,7 +59,7 @@ function GovernanceChecklistContent() {
 
   const renderWeek = () => (
     <div ref={weekRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>WEEKLY GOVERNANCE CHECKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>WEEKLY GOVERNANCE CHECKS</td></tr></tbody></table>
       <CopyButton targetRef={weekRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Complete every week before the Monday check-in. Takes 15 minutes if everyone does their part.</p>
       {makeChecklist([
@@ -76,7 +76,7 @@ function GovernanceChecklistContent() {
 
   const renderMonth = () => (
     <div ref={monthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>MONTHLY GOVERNANCE CHECKS (Before MBR)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>MONTHLY GOVERNANCE CHECKS (Before MBR)</td></tr></tbody></table>
       <CopyButton targetRef={monthRef} label="Copy Section" />
       {makeChecklist([
         { task: "All KR scores updated with end-of-month actuals.", owner: "[Ops Lead]", done: false },

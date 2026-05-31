@@ -36,7 +36,7 @@ function MBRAgendaContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MBR AGENDA (60 Minutes)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MBR AGENDA (60 Minutes)</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>The MBR is a deeper look than the weekly check-in. Focus on trends, capacity, risks, and decisions that need leadership attention.</p>
       <table style={S.tbl}>

@@ -34,7 +34,7 @@ function QuickStartContent() {
 
   const renderSetup = () => (
     <div ref={setupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>SETUP CHECKLIST (Do These First)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>SETUP CHECKLIST (Do These First)</td></tr></tbody></table>
       <CopyButton targetRef={setupRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Follow these steps in order. You can set up your entire system in about 30 minutes. Don&apos;t overthink it — you can always adjust later!</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function QuickStartContent() {
 
   const renderRoutine = () => (
     <div ref={routineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>YOUR WEEKLY ROUTINE (15 Minutes Every Monday)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>YOUR WEEKLY ROUTINE (15 Minutes Every Monday)</td></tr></tbody></table>
       <CopyButton targetRef={routineRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>This is the habit that makes everything work. Every Monday (or whatever day you choose), spend 15 minutes on these 5 steps. That&apos;s it.</p>
       <table style={S.tbl}>
@@ -108,7 +108,7 @@ function QuickStartContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>TIPS FOR SUCCESS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>TIPS FOR SUCCESS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.2", padding: "14px 18px" }}>
@@ -124,7 +124,7 @@ function QuickStartContent() {
 
   const renderCommon = () => (
     <div ref={commonRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>COMMON MISTAKES TO AVOID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>COMMON MISTAKES TO AVOID</td></tr></tbody></table>
       <CopyButton targetRef={commonRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

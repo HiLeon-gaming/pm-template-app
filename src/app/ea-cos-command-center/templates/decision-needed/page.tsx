@@ -35,7 +35,7 @@ function DecisionNeededContent() {
 
   const renderProblem = () => (
     <div ref={problemRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>DECISION CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>DECISION CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={problemRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Decision Title</td><td style={{ ...S.td0, fontWeight: 700 }}>[Clear, specific decision statement]</td></tr>
@@ -50,7 +50,7 @@ function DecisionNeededContent() {
 
   const renderOptions = () => (
     <div ref={optionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>OPTIONS ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>OPTIONS ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={optionsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -78,7 +78,7 @@ function DecisionNeededContent() {
 
   const renderOutcome = () => (
     <div ref={outcomeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>DECISION OUTCOME</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>DECISION OUTCOME</td></tr></tbody></table>
       <CopyButton targetRef={outcomeRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Decision Made</td><td style={{ ...S.td0, fontWeight: 800, color: "#059669" }}>[Record the actual decision here]</td></tr>

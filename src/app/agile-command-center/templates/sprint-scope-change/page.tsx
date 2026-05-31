@@ -46,7 +46,7 @@ function SprintScopeChangeContent() {
 
   const renderChanges = () => (
     <div ref={changesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 SCOPE CHANGES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 SCOPE CHANGES</td></tr></tbody></table>
       <CopyButton targetRef={changesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>If something is added mid-sprint, something else should leave — or explain why capacity changed.</p>
       <table style={S.tbl}>
@@ -87,7 +87,7 @@ function SprintScopeChangeContent() {
 
   const renderImpact = () => (
     <div ref={impactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 SCOPE IMPACT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 SCOPE IMPACT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={impactRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -114,7 +114,7 @@ function SprintScopeChangeContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📏 SCOPE CHANGE RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📏 SCOPE CHANGE RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>

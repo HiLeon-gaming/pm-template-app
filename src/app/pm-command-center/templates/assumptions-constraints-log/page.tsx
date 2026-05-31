@@ -98,7 +98,7 @@ function AssumptionsConstraintsContent() {
 
   const renderConstraints = () => (
     <div ref={constraintsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🚫 CONSTRAINTS LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🚫 CONSTRAINTS LOG</td></tr></tbody></table>
       <CopyButton targetRef={constraintsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -168,7 +168,7 @@ function AssumptionsConstraintsContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📋 LOG SUMMARY DASHBOARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📋 LOG SUMMARY DASHBOARD</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

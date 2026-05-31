@@ -254,7 +254,7 @@ function WeeklyGoalsContent() {
   /* ── Habits & Streaks ── */
   const renderHabits = () => (
     <div ref={habitsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔥 SUPPORTING HABITS &amp; STREAKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔥 SUPPORTING HABITS &amp; STREAKS</td></tr></tbody></table>
       <CopyButton targetRef={habitsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -333,7 +333,7 @@ function WeeklyGoalsContent() {
   /* ── Next Week Goals Preview ── */
   const renderNextWeek = () => (
     <div ref={nextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🚀 NEXT WEEK&apos;S GOALS PREVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🚀 NEXT WEEK&apos;S GOALS PREVIEW</td></tr></tbody></table>
       <CopyButton targetRef={nextRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

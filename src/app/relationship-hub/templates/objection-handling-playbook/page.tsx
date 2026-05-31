@@ -35,7 +35,7 @@ function ObjectionContent() {
 
   const renderPlaybook = () => (
     <div ref={playbookRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>OBJECTION &amp; RESPONSE MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>OBJECTION &amp; RESPONSE MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={playbookRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Document every objection you&apos;ve heard (or expect to hear) and prepare your response in advance. Being caught off-guard by a predictable objection is a failure of preparation, not a failure of persuasion.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function ObjectionContent() {
 
   const renderPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>OBJECTION ANTICIPATION CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>OBJECTION ANTICIPATION CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Before any important meeting or presentation, run through this checklist to anticipate objections.</p>
       <table style={S.tbl}>

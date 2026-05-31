@@ -31,7 +31,7 @@ function StakeholderDirectoryContent() {
 
   const renderDir = () => (
     <div ref={dirRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>KEY STAKEHOLDERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>KEY STAKEHOLDERS</td></tr></tbody></table>
       <CopyButton targetRef={dirRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Quick-reference directory of everyone the exec regularly engages with.</p>
       <table style={S.tbl}>

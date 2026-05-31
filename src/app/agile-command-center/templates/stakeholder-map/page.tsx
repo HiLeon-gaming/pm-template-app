@@ -46,7 +46,7 @@ function StakeholderMapContent() {
 
   const renderGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 POWER / INTEREST GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 POWER / INTEREST GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Place each stakeholder in the appropriate quadrant based on their power and interest level.</p>
       <table style={LT}><tbody><tr>
@@ -97,7 +97,7 @@ function StakeholderMapContent() {
 
   const renderComm = () => (
     <div ref={commRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📬 COMMUNICATION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📬 COMMUNICATION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={commRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -135,7 +135,7 @@ function StakeholderMapContent() {
 
   const renderEngagement = () => (
     <div ref={engRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 ENGAGEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 ENGAGEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={engRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

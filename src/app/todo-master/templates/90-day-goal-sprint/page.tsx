@@ -142,7 +142,7 @@ function NinetyDayContent() {
 
   const renderWeeklyGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📅 12-WEEK PROGRESS GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📅 12-WEEK PROGRESS GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

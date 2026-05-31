@@ -37,7 +37,7 @@ function ExecOSDashboardContent() {
 
   const renderPriorities = () => (
     <div ref={prioritiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 TODAY&apos;S TOP 3 PRIORITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 TODAY&apos;S TOP 3 PRIORITIES</td></tr></tbody></table>
       <CopyButton targetRef={prioritiesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What must happen today? If these 3 things get done, today is a success.</p>
       <table style={S.tbl}>
@@ -72,7 +72,7 @@ function ExecOSDashboardContent() {
 
   const renderMeetings = () => (
     <div ref={meetingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📅 KEY MEETINGS TODAY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📅 KEY MEETINGS TODAY</td></tr></tbody></table>
       <CopyButton targetRef={meetingsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -110,7 +110,7 @@ function ExecOSDashboardContent() {
     <div ref={requestsRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#EC4899")}>📥 OPEN REQUESTS (Top 5)</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EC4899")}>📥 OPEN REQUESTS (Top 5)</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={S.thPrimary}>Request</th>
@@ -138,7 +138,7 @@ function ExecOSDashboardContent() {
           </table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#0EA5E9")}>⏳ WAITING ON (Top 5)</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>⏳ WAITING ON (Top 5)</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={S.thPrimary}>Item</th>
@@ -175,7 +175,7 @@ function ExecOSDashboardContent() {
     <div ref={radarRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "55%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>🚨 RISK RADAR &mdash; What Could Blow Up?</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>🚨 RISK RADAR &mdash; What Could Blow Up?</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={S.thPrimary}>Risk / Concern</th>
@@ -201,7 +201,7 @@ function ExecOSDashboardContent() {
           </table>
         </td>
         <td style={{ ...LC, width: "45%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>🏆 WINS &amp; ACKNOWLEDGMENTS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>🏆 WINS &amp; ACKNOWLEDGMENTS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; <strong style={{ color: "#059669" }}>[Win]</strong> [Successfully coordinated board pre-reads — all submitted on time]<br />

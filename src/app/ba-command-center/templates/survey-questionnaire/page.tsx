@@ -105,7 +105,7 @@ function SurveyContent() {
 
   const renderQuestions = () => (
     <div ref={questionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>❓ SURVEY QUESTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>❓ SURVEY QUESTIONS</td></tr></tbody></table>
       <CopyButton targetRef={questionsRef} label="Copy Section" />
 
       {/* Section 1: Likert Scale */}
@@ -236,7 +236,7 @@ function SurveyContent() {
 
   const renderDistribution = () => (
     <div ref={distRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📬 DISTRIBUTION TRACKER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📬 DISTRIBUTION TRACKER</td></tr></tbody></table>
       <CopyButton targetRef={distRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

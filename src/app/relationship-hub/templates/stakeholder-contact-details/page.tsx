@@ -35,7 +35,7 @@ function ContactContent() {
 
   const renderContact = () => (
     <div ref={contactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; CONTACT INFORMATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; CONTACT INFORMATION</td></tr></tbody></table>
       <CopyButton targetRef={contactRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Keep this page updated. In urgent moments, you need to reach people fast without searching through emails. Review quarterly or whenever they change roles.</p>
       <table style={S.tbl}>
@@ -79,7 +79,7 @@ function ContactContent() {
 
   const renderEmergency = () => (
     <div ref={emergRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>URGENT CONTACT PROTOCOL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>URGENT CONTACT PROTOCOL</td></tr></tbody></table>
       <CopyButton targetRef={emergRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>When something critical happens and you need to reach this person immediately, follow this sequence. Don&apos;t waste time figuring it out in the moment.</p>
       <table style={S.tbl}>

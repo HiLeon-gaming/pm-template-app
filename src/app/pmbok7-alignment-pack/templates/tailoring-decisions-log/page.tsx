@@ -86,7 +86,7 @@ function TailoringDecisionsLogContent() {
 
   const renderOutcomes = () => (
     <div ref={outcomesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>📊 TAILORING OUTCOMES REVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>📊 TAILORING OUTCOMES REVIEW</td></tr></tbody></table>
       <CopyButton targetRef={outcomesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -73,7 +73,7 @@ function ReadThisFirstContent() {
   /* ── What This Pack Is ── */
   const renderIntro = () => (
     <div ref={introRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ WHAT THIS PACK IS (PLAIN ENGLISH)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ WHAT THIS PACK IS (PLAIN ENGLISH)</td></tr></tbody></table>
       <CopyButton targetRef={introRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -171,7 +171,7 @@ function ReadThisFirstContent() {
   /* ── Agile Loop ── */
   const renderLoop = () => (
     <div ref={loopRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔄 AGILE / SCRUM IN 60 SECONDS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔄 AGILE / SCRUM IN 60 SECONDS</td></tr></tbody></table>
       <CopyButton targetRef={loopRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A healthy Agile project is just this loop — repeated until the release goal is met:</p>
       <table style={S.tbl}>
@@ -235,7 +235,7 @@ function ReadThisFirstContent() {
 
     return (
       <div ref={rhythmRef} style={{ marginBottom: "12px" }}>
-        <div style={S.sectionBanner(accent)}>📅 HOW TO USE THIS NOTEBOOK (SIMPLE RHYTHMS)</div>
+        <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📅 HOW TO USE THIS NOTEBOOK (SIMPLE RHYTHMS)</td></tr></tbody></table>
         <CopyButton targetRef={rhythmRef} label="Copy Section" />
         {/* Row 1: Setup + Sprint Start */}
         <table style={LT}>
@@ -329,7 +329,7 @@ function ReadThisFirstContent() {
   /* ── One-Time Setup ── */
   const renderSetup = () => (
     <div ref={setupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🛠️ ONE-TIME SETUP CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🛠️ ONE-TIME SETUP CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={setupRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -367,7 +367,7 @@ function ReadThisFirstContent() {
   /* ── All-Star Pages ── */
   const renderAllStar = () => (
     <div ref={allStarRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⭐ ALL-STAR PAGES (THE ONES YOU&apos;LL USE CONSTANTLY)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⭐ ALL-STAR PAGES (THE ONES YOU&apos;LL USE CONSTANTLY)</td></tr></tbody></table>
       <CopyButton targetRef={allStarRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -408,7 +408,7 @@ function ReadThisFirstContent() {
   /* ── Jira / Tool Integration ── */
   const renderJira = () => (
     <div ref={jiraRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔗 IF YOU USE JIRA / ASANA / TRELLO</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔗 IF YOU USE JIRA / ASANA / TRELLO</td></tr></tbody></table>
       <CopyButton targetRef={jiraRef} label="Copy Section" />
       <table style={LT}>
         <tbody>
@@ -469,7 +469,7 @@ function ReadThisFirstContent() {
   /* ── Section Index ── */
   const renderIndex = () => (
     <div ref={indexRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📑 COMPLETE SECTION INDEX (48 Templates)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📑 COMPLETE SECTION INDEX (48 Templates)</td></tr></tbody></table>
       <CopyButton targetRef={indexRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

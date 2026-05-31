@@ -32,7 +32,7 @@ function StakeholderSensitivitiesContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ACTIVE SENSITIVITIES &amp; LANDMINES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ACTIVE SENSITIVITIES &amp; LANDMINES</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Landmines, history, context, and how to navigate. Protects the exec from avoidable missteps.</p>
       <table style={S.tbl}>
@@ -69,7 +69,7 @@ function StakeholderSensitivitiesContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6B7280")}>NAVIGATION PRINCIPLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6B7280")}>NAVIGATION PRINCIPLES</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[

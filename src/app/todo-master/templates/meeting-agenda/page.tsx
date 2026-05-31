@@ -74,7 +74,7 @@ function MeetingAgendaContent() {
 
   const renderPreRead = () => (
     <div ref={prereadRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📖 PRE-READ MATERIALS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📖 PRE-READ MATERIALS</td></tr></tbody></table>
       <CopyButton targetRef={prereadRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -152,7 +152,7 @@ function MeetingAgendaContent() {
 
   const renderOutcomes = () => (
     <div ref={outcomesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✅ DESIRED OUTCOMES CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✅ DESIRED OUTCOMES CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={outcomesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

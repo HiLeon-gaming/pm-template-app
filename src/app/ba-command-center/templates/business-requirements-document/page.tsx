@@ -106,7 +106,7 @@ function BRDContent() {
 
   const renderScope = () => (
     <div ref={scopeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📐 SCOPE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📐 SCOPE</td></tr></tbody></table>
       <CopyButton targetRef={scopeRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -172,7 +172,7 @@ function BRDContent() {
 
   const renderFunctional = () => (
     <div ref={funcRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>⚙️ FUNCTIONAL REQUIREMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>⚙️ FUNCTIONAL REQUIREMENTS</td></tr></tbody></table>
       <CopyButton targetRef={funcRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -248,7 +248,7 @@ function BRDContent() {
 
   const renderAssumptions = () => (
     <div ref={assumeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📌 ASSUMPTIONS, CONSTRAINTS &amp; DEPENDENCIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📌 ASSUMPTIONS, CONSTRAINTS &amp; DEPENDENCIES</td></tr></tbody></table>
       <CopyButton targetRef={assumeRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "33%", paddingRight: "4px" }}>
