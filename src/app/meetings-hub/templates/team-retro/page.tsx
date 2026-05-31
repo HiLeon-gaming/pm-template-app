@@ -52,7 +52,7 @@ function TeamRetroContent() {
         {[
           { title: "🟢 START", subtitle: "What should we begin doing?", color: "#059669", items: ["[More pair programming on complex tasks]", "[Sharing weekly wins in Slack channel]", "[Timebox agenda items with hard stops]", "[Pre-read materials sent 24h before meetings]", "[ ]"] },
           { title: "🔴 STOP", subtitle: "What should we stop doing?", color: "#DC2626", items: ["[Long status meetings — use async updates]", "[Multitasking during standups]", "[Scope creep without change requests]", "[Skipping code reviews under time pressure]", "[ ]"] },
-          { title: "🔵 CONTINUE", subtitle: "What\u2019s working well?", color: "#3B82F6", items: ["[Daily standups — keep them at 15 min]", "[Knowledge sharing sessions on Fridays]", "[Collaborative sprint planning]", "[Using decision log for all key decisions]", "[ ]"] },
+          { title: "🔵 CONTINUE", subtitle: "What’s working well?", color: "#3B82F6", items: ["[Daily standups — keep them at 15 min]", "[Knowledge sharing sessions on Fridays]", "[Collaborative sprint planning]", "[Using decision log for all key decisions]", "[ ]"] },
         ].map((s, i) => (
           <td key={i} style={{ ...LC, width: "33.3%", padding: i < 2 ? "0 4px 0 0" : "0" }}>
             <table style={S.tbl}><tbody>
@@ -101,7 +101,7 @@ function TeamRetroContent() {
         </tbody>
       </table>
       <table style={{ ...S.tbl, marginTop: "6px" }}><tbody>
-        <tr><td style={{ ...S.tdLabel, width: "22%" }}>Previous Actions</td><td style={S.td0}>[Review: Did we complete last retro\u2019s actions? What happened?]</td></tr>
+        <tr><td style={{ ...S.tdLabel, width: "22%" }}>Previous Actions</td><td style={S.td0}>[Review: Did we complete last retro’s actions? What happened?]</td></tr>
       </tbody></table>
     </div>
   );

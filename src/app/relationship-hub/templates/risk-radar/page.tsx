@@ -55,7 +55,7 @@ function RadarContent() {
             { n: "2", sev: "High", desc: "Engineering team deprioritizes API dependency. Sprint planning blocked indefinitely.", src: "James Wu", like: "Medium", impact: "High", mit: "Escalate through Eng. Director. Offer to reduce scope.", owner: "You" },
             { n: "3", sev: "High", desc: "Finance pulls budget mid-quarter due to company-wide cuts.", src: "David Park", like: "Medium", impact: "High", mit: "Proactive monthly budget comms. Show ROI early.", owner: "You" },
             { n: "4", sev: "Medium", desc: "Marketing team disengages, resulting in weak go-to-market for Phase 2.", src: "Sarah Chen", like: "Medium", impact: "Medium", mit: "Re-engage Sarah. Include in planning early.", owner: "You" },
-            { n: "5", sev: "[Sev]", desc: "[What could go wrong because of stakeholder dynamics?]", src: "[Who]", like: "[H/M/L]", impact: "[H/M/L]", mit: "[What you\u2019ll do to prevent or reduce it]", owner: "[Who]" },
+            { n: "5", sev: "[Sev]", desc: "[What could go wrong because of stakeholder dynamics?]", src: "[Who]", like: "[H/M/L]", impact: "[H/M/L]", mit: "[What you’ll do to prevent or reduce it]", owner: "[Who]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const sc = r.sev === "Critical" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : r.sev === "High" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : r.sev === "Medium" ? { bg: "#DBEAFE", fg: "#1D4ED8" } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -92,8 +92,8 @@ function RadarContent() {
           {[
             { risk: "Sponsor departure", signals: "Sponsor mentions career changes. Starts delegating more. Less engaged in details. Organizational restructuring rumors.", trigger: "Immediately brief deputy. Document all commitments in writing. Secure budget approval in writing." },
             { risk: "Eng. deprioritization", signals: "James stops attending meetings. API work not in sprint backlog. His manager mentions competing priorities.", trigger: "Escalate to Eng. Director same day. Present impact data." },
-            { risk: "Budget cut", signals: "Company-wide hiring freeze. David asks for \u201Cjustification\u201D docs. CFO email about cost reduction.", trigger: "Accelerate ROI demonstration. Prepare Phase 2 \u201Clean\u201D version." },
-            { risk: "[Risk name]", signals: "[What would you see/hear first if this risk was materializing?]", trigger: "[What you\u2019d do the moment you see these signals]" },
+            { risk: "Budget cut", signals: "Company-wide hiring freeze. David asks for “justification” docs. CFO email about cost reduction.", trigger: "Accelerate ROI demonstration. Prepare Phase 2 “lean” version." },
+            { risk: "[Risk name]", signals: "[What would you see/hear first if this risk was materializing?]", trigger: "[What you’d do the moment you see these signals]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -118,10 +118,10 @@ function RadarContent() {
             <thead><tr><td style={{ backgroundColor: "#EDE9FE", color: "#6366F1", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #6366F1" }}>STAKEHOLDER RISK PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#6366F1", tip: "Political risks are harder to see than technical risks.", detail: "They don\u2019t show up in Jira. You have to read the room and ask the right questions." },
+                { color: "#6366F1", tip: "Political risks are harder to see than technical risks.", detail: "They don’t show up in Jira. You have to read the room and ask the right questions." },
                 { color: "#059669", tip: "Every key stakeholder is a risk.", detail: "What if they leave? What if they change priorities? What if they lose budget?" },
-                { color: "#0EA5E9", tip: "Mitigate before the risk materializes.", detail: "Once a stakeholder risk fires, it\u2019s often too late. Proactive mitigation is essential." },
-                { color: "#D97706", tip: "Don\u2019t put all your eggs in one basket.", detail: "If everything depends on one sponsor, you\u2019re one departure away from disaster." },
+                { color: "#0EA5E9", tip: "Mitigate before the risk materializes.", detail: "Once a stakeholder risk fires, it’s often too late. Proactive mitigation is essential." },
+                { color: "#D97706", tip: "Don’t put all your eggs in one basket.", detail: "If everything depends on one sponsor, you’re one departure away from disaster." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

@@ -51,12 +51,12 @@ function FollowUpContent() {
         <tbody>
           {[
             { n: "1", pri: "Urgent", who: "David Park", action: "Send overdue budget breakdown. Include apology and extra Q2 detail.", ctx: "3 days late", when: "Mon", done: "\u2610" },
-            { n: "2", pri: "Urgent", who: "James Wu", action: "Follow up on API timeline. He\u2019s 2 days overdue. Be direct but professional.", ctx: "Dependency", when: "Mon", done: "\u2610" },
+            { n: "2", pri: "Urgent", who: "James Wu", action: "Follow up on API timeline. He’s 2 days overdue. Be direct but professional.", ctx: "Dependency", when: "Mon", done: "\u2610" },
             { n: "3", pri: "High", who: "Maria Lopez", action: "Brief her on Q2 risks before SteerCo. Send pre-read by Tue.", ctx: "Sponsor prep", when: "Tue", done: "\u2610" },
             { n: "4", pri: "High", who: "Sarah Chen", action: "Schedule 1:1. Understand disengagement. Re-align on shared goals.", ctx: "Relationship drift", when: "Wed", done: "\u2610" },
             { n: "5", pri: "Medium", who: "Maria Lopez", action: "Confirm she received vendor comparison. Ask for feedback.", ctx: "Delivered Fri", when: "Wed", done: "\u2610" },
             { n: "6", pri: "Medium", who: "Eng. Lead", action: "Send Phase 2 technical approach doc for review before sprint planning.", ctx: "Alignment", when: "Thu", done: "\u2610" },
-            { n: "7", pri: "Low", who: "David Park", action: "Monthly check-in \u2014 proactive, not reactive. Share positive project news.", ctx: "Maintenance", when: "Fri", done: "\u2610" },
+            { n: "7", pri: "Low", who: "David Park", action: "Monthly check-in — proactive, not reactive. Share positive project news.", ctx: "Maintenance", when: "Fri", done: "\u2610" },
             { n: "8", pri: "[P]", who: "[Name]", action: "[What you need to follow up on]", ctx: "[Why]", when: "[Day]", done: "\u2610" },
             { n: "9", pri: "[P]", who: "[Name]", action: "[What you need to follow up on]", ctx: "[Why]", when: "[Day]", done: "\u2610" },
             { n: "10", pri: "[P]", who: "[Name]", action: "[What you need to follow up on]", ctx: "[Why]", when: "[Day]", done: "\u2610" },
@@ -123,8 +123,8 @@ function FollowUpContent() {
             <tbody>
               {[
                 { color: "#EA580C", tip: "Check this list every morning at 9 AM.", detail: "Make it a ritual. 2 minutes to scan the queue and plan your day." },
-                { color: "#DC2626", tip: "Urgent items before 11 AM.", detail: "Don\u2019t let urgent follow-ups wait until end-of-day. Do them first." },
-                { color: "#059669", tip: "If it takes <5 minutes, do it now.", detail: "Quick follow-ups shouldn\u2019t sit in a queue. Send the email, make the call." },
+                { color: "#DC2626", tip: "Urgent items before 11 AM.", detail: "Don’t let urgent follow-ups wait until end-of-day. Do them first." },
+                { color: "#059669", tip: "If it takes <5 minutes, do it now.", detail: "Quick follow-ups shouldn’t sit in a queue. Send the email, make the call." },
                 { color: "#0EA5E9", tip: "Batch similar follow-ups together.", detail: "If you have 3 emails to send, write them all at once. Context-switching is expensive." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -144,9 +144,9 @@ function FollowUpContent() {
             <tbody>
               {[
                 { color: "#D97706", tip: "How many follow-ups did I complete?", detail: "Track your completion rate. Aim for 90%+ weekly." },
-                { color: "#DC2626", tip: "What carried over and why?", detail: "If the same items keep carrying over, there\u2019s a systemic problem to address." },
+                { color: "#DC2626", tip: "What carried over and why?", detail: "If the same items keep carrying over, there’s a systemic problem to address." },
                 { color: "#EA580C", tip: "Did any follow-up create new commitments?", detail: "Add them to your Commitments Log immediately." },
-                { color: "#6366F1", tip: "What\u2019s next week\u2019s queue looking like?", detail: "Start next week\u2019s queue on Friday afternoon so Monday morning is ready." },
+                { color: "#6366F1", tip: "What’s next week’s queue looking like?", detail: "Start next week’s queue on Friday afternoon so Monday morning is ready." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

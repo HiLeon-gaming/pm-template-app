@@ -49,11 +49,11 @@ function ChampionContent() {
           {[
             { label: "Champion Name & Role", value: "[Full name, title, team]", why: "Know their exact position and sphere of influence." },
             { label: "Why They Could Champion You", value: "[Your work aligns with their goals; they benefit from your success]", why: "Champions need a reason. Make it about THEM, not you." },
-            { label: "Their Sphere of Influence", value: "[Who listens to them? What meetings are they in? What decisions do they shape?]", why: "A champion is only useful if they influence people you can\u2019t reach directly." },
-            { label: "Current Relationship Strength", value: "[Strong / Growing / New / Needs work]", why: "You can\u2019t ask someone to champion you if the relationship isn\u2019t solid first." },
+            { label: "Their Sphere of Influence", value: "[Who listens to them? What meetings are they in? What decisions do they shape?]", why: "A champion is only useful if they influence people you can’t reach directly." },
+            { label: "Current Relationship Strength", value: "[Strong / Growing / New / Needs work]", why: "You can’t ask someone to champion you if the relationship isn’t solid first." },
             { label: "What They Care About", value: "[Their KPIs, priorities, what keeps them up at night]", why: "Frame your work in terms of what THEY care about." },
-            { label: "What You\u2019ve Done for Them", value: "[How have you helped them? What value have you delivered?]", why: "Champions advocate because you\u2019ve earned it. Build the case." },
-            { label: "Champion Readiness", value: "[Ready to activate / Needs more investment / Long-term prospect]", why: "Don\u2019t push too early. Some champions need time to develop." },
+            { label: "What You’ve Done for Them", value: "[How have you helped them? What value have you delivered?]", why: "Champions advocate because you’ve earned it. Build the case." },
+            { label: "Champion Readiness", value: "[Ready to activate / Needs more investment / Long-term prospect]", why: "Don’t push too early. Some champions need time to develop." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -81,12 +81,12 @@ function ChampionContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Talking Points to Share", value: "[3\u20135 key messages they can use when advocating. Make it easy for them to repeat.]" },
-            { label: "Data / Evidence to Provide", value: "[ROI numbers, success metrics, customer feedback \u2014 ammunition for their advocacy.]" },
+            { label: "Talking Points to Share", value: "[3–5 key messages they can use when advocating. Make it easy for them to repeat.]" },
+            { label: "Data / Evidence to Provide", value: "[ROI numbers, success metrics, customer feedback — ammunition for their advocacy.]" },
             { label: "Key Meetings to Brief Them For", value: "[Upcoming forums where they can speak up. Brief them 48h before.]" },
             { label: "How to Make Them Look Good", value: "[Credit them publicly. Share wins that reflect well on them. Their success = your success.]" },
-            { label: "What to Ask Them to Do", value: "[Be specific: \u201CMention our Q1 results in the leadership meeting\u201D not \u201CSupport our project.\u201D]" },
-            { label: "Feedback Loop", value: "[How will you know if their advocacy is working? Ask them what pushback they\u2019re hearing.]" },
+            { label: "What to Ask Them to Do", value: "[Be specific: “Mention our Q1 results in the leadership meeting” not “Support our project.”]" },
+            { label: "Feedback Loop", value: "[How will you know if their advocacy is working? Ask them what pushback they’re hearing.]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -114,12 +114,12 @@ function ChampionContent() {
         </tr></thead>
         <tbody>
           {[
-            { action: "Share wins they enabled", detail: "Send a quick note: \u201CJust wanted you to know \u2014 the initiative you championed delivered $X.\u201D", freq: "Monthly" },
+            { action: "Share wins they enabled", detail: "Send a quick note: “Just wanted you to know — the initiative you championed delivered $X.”", freq: "Monthly" },
             { action: "Credit them publicly", detail: "Mention their support in reviews, reports, and leadership updates.", freq: "Quarterly" },
-            { action: "Keep them informed first", detail: "Give them early access to news so they\u2019re never caught off-guard.", freq: "As needed" },
+            { action: "Keep them informed first", detail: "Give them early access to news so they’re never caught off-guard.", freq: "As needed" },
             { action: "Ask for their input", detail: "Engage them as a thought partner, not just a megaphone. Value their perspective.", freq: "Monthly" },
             { action: "Introduce them to your network", detail: "Connect them with people who can help their goals. Reciprocity builds loyalty.", freq: "Quarterly" },
-            { action: "Check: is this still working for them?", detail: "Ask directly: \u201CIs this still valuable for you? Anything I should change?\u201D", freq: "Quarterly" },
+            { action: "Check: is this still working for them?", detail: "Ask directly: “Is this still valuable for you? Anything I should change?”", freq: "Quarterly" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -146,8 +146,8 @@ function ChampionContent() {
               {[
                 { color: "#0EA5E9", tip: "Champions advocate because they WANT to, not because you asked.", detail: "Earn their advocacy by delivering value to them first. Never pressure." },
                 { color: "#059669", tip: "Make it ridiculously easy for them.", detail: "Pre-write the talking points. Send the data. Draft the email. Remove all friction." },
-                { color: "#8B5CF6", tip: "Multiple champions > one champion.", detail: "Don\u2019t depend on a single advocate. Build a network of 3\u20135 champions across different functions." },
-                { color: "#D97706", tip: "Champions need maintenance.", detail: "They\u2019re not set-and-forget. Invest in the relationship continuously or they\u2019ll stop advocating." },
+                { color: "#8B5CF6", tip: "Multiple champions > one champion.", detail: "Don’t depend on a single advocate. Build a network of 3–5 champions across different functions." },
+                { color: "#D97706", tip: "Champions need maintenance.", detail: "They’re not set-and-forget. Invest in the relationship continuously or they’ll stop advocating." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -165,10 +165,10 @@ function ChampionContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>CHAMPION KILLERS</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Taking their advocacy for granted.", detail: "If you stop investing, they stop advocating. It\u2019s that simple." },
-                { color: "#EA580C", tip: "Surprising them with bad news.", detail: "If your champion gets blindsided, they lose credibility \u2014 and you lose a champion." },
+                { color: "#DC2626", tip: "Taking their advocacy for granted.", detail: "If you stop investing, they stop advocating. It’s that simple." },
+                { color: "#EA580C", tip: "Surprising them with bad news.", detail: "If your champion gets blindsided, they lose credibility — and you lose a champion." },
                 { color: "#D97706", tip: "Not delivering on your promises.", detail: "They put their reputation on the line for you. If you fail to deliver, they pay the price." },
-                { color: "#6366F1", tip: "Only reaching out when you need something.", detail: "Champions aren\u2019t tools. They\u2019re partners. Treat the relationship as mutual." },
+                { color: "#6366F1", tip: "Only reaching out when you need something.", detail: "Champions aren’t tools. They’re partners. Treat the relationship as mutual." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

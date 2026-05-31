@@ -49,7 +49,7 @@ function WinsContent() {
         <tbody>
           {[
             { date: "Mar 10", win: "Secured executive approval for Phase 2 funding", impact: "Unblocked the entire project timeline. Saved 3 weeks of waiting.", rec: "Yes", how: "Public thank-you in SteerCo. Email to their manager." },
-            { date: "Mar 3", win: "Introduced us to key vendor contact", impact: "Saved 2 weeks of procurement time. Got preferred pricing.", rec: "No", how: "[Still pending \u2014 send thank-you this week]" },
+            { date: "Mar 3", win: "Introduced us to key vendor contact", impact: "Saved 2 weeks of procurement time. Got preferred pricing.", rec: "No", how: "[Still pending — send thank-you this week]" },
             { date: "Feb 20", win: "Provided critical data for board presentation", impact: "Board approved strategic initiative. Data was the deciding factor.", rec: "Yes", how: "Private thank-you email. Mentioned in project review." },
             { date: "Feb 5", win: "Championed our project in leadership meeting", impact: "Secured additional headcount. Changed perception at exec level.", rec: "Yes", how: "Coffee + handwritten note." },
             { date: "[Date]", win: "[What they did]", impact: "[Why it mattered to your work]", rec: "[Y/N]", how: "[How you recognized them]" },
@@ -88,9 +88,9 @@ function WinsContent() {
           {[
             { label: "What Matters Most to Them", value: "[e.g., Public praise in meetings? Private thank-you email? Mention to their boss? Written note? Small gesture?]" },
             { label: "Best Way to Thank Them", value: "[e.g., In-person acknowledgment; CC their manager on a praise email; shout-out in Slack; LinkedIn recommendation]" },
-            { label: "What to Avoid", value: "[e.g., They hate public attention; don\u2019t make a big deal; they prefer actions over words]" },
+            { label: "What to Avoid", value: "[e.g., They hate public attention; don’t make a big deal; they prefer actions over words]" },
             { label: "Next Recognition Opportunity", value: "[Next meeting, review, or milestone where you can recognize them. Be specific: date + forum.]" },
-            { label: "Unrecognized Wins to Address", value: "[Look at your log above \u2014 any \u201CNo\u201D in the Recognized column? Plan to address those this week.]" },
+            { label: "Unrecognized Wins to Address", value: "[Look at your log above — any “No” in the Recognized column? Plan to address those this week.]" },
             { label: "Long-Term Recognition Ideas", value: "[LinkedIn recommendation; nominate for an award; introduce them to their next opportunity; write a reference]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -116,8 +116,8 @@ function WinsContent() {
             <tbody>
               {[
                 { color: "#059669", tip: "Recognize in their preferred way.", detail: "Some people love public praise. Others cringe at it. Know the difference." },
-                { color: "#0EA5E9", tip: "Be specific, not generic.", detail: "\u201CThanks for your help\u201D is forgettable. \u201CYour data analysis in the board deck was the deciding factor for Phase 2 approval\u201D is unforgettable." },
-                { color: "#8B5CF6", tip: "Recognize the effort, not just the outcome.", detail: "Sometimes people go above and beyond and the outcome doesn\u2019t work out. Acknowledge the effort." },
+                { color: "#0EA5E9", tip: "Be specific, not generic.", detail: "“Thanks for your help” is forgettable. “Your data analysis in the board deck was the deciding factor for Phase 2 approval” is unforgettable." },
+                { color: "#8B5CF6", tip: "Recognize the effort, not just the outcome.", detail: "Sometimes people go above and beyond and the outcome doesn’t work out. Acknowledge the effort." },
                 { color: "#D97706", tip: "Make it timely.", detail: "Recognition loses power with delay. Thank them within 48 hours, not 2 weeks later." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -136,9 +136,9 @@ function WinsContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>HIGH-IMPACT RECOGNITION MOVES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "CC their manager on a praise email.", detail: "This takes 30 seconds and can make someone\u2019s entire week. Do it." },
+                { color: "#DC2626", tip: "CC their manager on a praise email.", detail: "This takes 30 seconds and can make someone’s entire week. Do it." },
                 { color: "#EA580C", tip: "Thank them in front of their peers.", detail: "Public recognition from a cross-functional partner is incredibly powerful." },
-                { color: "#D97706", tip: "Remember and reference their contributions later.", detail: "\u201CRemember when you helped us with the vendor intro? That saved us 2 weeks.\u201D Shows lasting appreciation." },
+                { color: "#D97706", tip: "Remember and reference their contributions later.", detail: "“Remember when you helped us with the vendor intro? That saved us 2 weeks.” Shows lasting appreciation." },
                 { color: "#6366F1", tip: "Pay it forward by advocating for them.", detail: "The best recognition is helping their career. Recommend them. Introduce them. Champion their work." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

@@ -109,7 +109,7 @@ function PrioritizationContent() {
             <tbody>
               {[
                 { color: accent, tip: "Score 15+ = Commit.", detail: "Top-tier. Assign owners, start immediately." },
-                { color: "#059669", tip: "Score 12\u201314 = Consider.", detail: "Good if capacity allows. Shortlist." },
+                { color: "#059669", tip: "Score 12–14 = Consider.", detail: "Good if capacity allows. Shortlist." },
                 { color: "#DC2626", tip: "Under 12 = Defer or Drop.", detail: "Low priority. Backlog or kill." },
                 { color: "#7C3AED", tip: "When in doubt, prefer speed.", detail: "Fast 70% > slow 100%." },
               ].map((r, i) => {

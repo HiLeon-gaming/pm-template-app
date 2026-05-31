@@ -41,7 +41,7 @@ function StrategyMapContent() {
           {[
             { level: "MISSION / VISION", color: "#1E293B", desc: "Why we exist and where we're going (stays the same for years)", arrow: true },
             { level: "ANNUAL DIRECTION", color: "#7C3AED", desc: "This year's big themes and focus areas (set once per year)", arrow: true },
-            { level: "OBJECTIVES (OKRs)", color: "#0EA5E9", desc: "What we want to achieve THIS QUARTER (2\u20133 clear goals)", arrow: true },
+            { level: "OBJECTIVES (OKRs)", color: "#0EA5E9", desc: "What we want to achieve THIS QUARTER (2–3 clear goals)", arrow: true },
             { level: "KEY RESULTS", color: "#059669", desc: "How we measure if we hit the objective (specific numbers)", arrow: true },
             { level: "INITIATIVES", color: "#D97706", desc: "The projects and work that will MOVE the key results", arrow: true },
             { level: "WEEKLY PRIORITIES", color: "#DC2626", desc: "The Top 3 things that must happen THIS WEEK", arrow: true },

@@ -64,7 +64,7 @@ function SprintRetroContent() {
           <table style={S.tbl}>
             <thead><tr><td style={{ backgroundColor: "#DC2626", color: C.white, padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, textAlign: "center" as const }}>🔴 STOP DOING</td></tr></thead>
             <tbody>
-              {["[Accepting stories that don\u2019t meet DoR]", "[Mid-sprint scope additions without trade-offs]", "[Skipping code review when rushed]", "[Working on items not in the sprint backlog]", "[Add item]"].map((t, i) => (
+              {["[Accepting stories that don’t meet DoR]", "[Mid-sprint scope additions without trade-offs]", "[Skipping code review when rushed]", "[Working on items not in the sprint backlog]", "[Add item]"].map((t, i) => (
                 <tr key={i}><td style={{ ...S.td0, backgroundColor: i % 2 === 0 ? C.white : C.rowAlt, fontSize: "10px", padding: "5px 10px" }}>• {t}</td></tr>
               ))}
             </tbody>

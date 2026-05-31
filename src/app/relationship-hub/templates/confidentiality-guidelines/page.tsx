@@ -10,7 +10,7 @@ import { ThemeProvider, useTheme } from "@/lib/ThemeContext";
 
 type LayoutMode = "full" | "compact";
 const LAYOUTS: { id: LayoutMode; label: string; desc: string; icon: React.ElementType }[] = [
-  { id: "full", label: "Full Guide", desc: "Rules + classification + do/don\u2019t examples + tips", icon: LayoutDashboard },
+  { id: "full", label: "Full Guide", desc: "Rules + classification + do/don’t examples + tips", icon: LayoutDashboard },
   { id: "compact", label: "Quick Rules", desc: "Golden rules table only", icon: AlignJustify },
 ];
 
@@ -47,14 +47,14 @@ function ConfidentialityContent() {
         </tr></thead>
         <tbody>
           {[
-            { n: "1", rule: "Write as if the stakeholder could read your notes tomorrow.", why: "Keeps language professional and factual, not emotional or gossipy.", ex: "\u2705 \u201CDeclined proposal; cited budget timing.\u201D \u274C \u201CShot us down again, typical.\u201D" },
-            { n: "2", rule: "Stick to observable facts, not personal judgments.", why: "Facts are defensible. Judgments create risk and erode trust if discovered.", ex: "\u2705 \u201CRescheduled 3 times this month.\u201D \u274C \u201CDoesn\u2019t care about our project.\u201D" },
-            { n: "3", rule: "Mark sensitive notes clearly with [CONFIDENTIAL] at the top.", why: "Anyone scanning your notes instantly knows to handle that page carefully.", ex: "\u2705 \u201C[CONFIDENTIAL] Org restructure may affect Sarah\u2019s team.\u201D" },
+            { n: "1", rule: "Write as if the stakeholder could read your notes tomorrow.", why: "Keeps language professional and factual, not emotional or gossipy.", ex: "\u2705 “Declined proposal; cited budget timing.” \u274C “Shot us down again, typical.”" },
+            { n: "2", rule: "Stick to observable facts, not personal judgments.", why: "Facts are defensible. Judgments create risk and erode trust if discovered.", ex: "\u2705 “Rescheduled 3 times this month.” \u274C “Doesn’t care about our project.”" },
+            { n: "3", rule: "Mark sensitive notes clearly with [CONFIDENTIAL] at the top.", why: "Anyone scanning your notes instantly knows to handle that page carefully.", ex: "\u2705 “[CONFIDENTIAL] Org restructure may affect Sarah’s team.”" },
             { n: "4", rule: "Never store passwords, SSNs, or financial account numbers here.", why: "OneNote/Notion are not secure vaults. Use company-approved tools for PII.", ex: "\u2705 Contact details only. \u274C Credit card numbers, SSNs, salaries." },
-            { n: "5", rule: "Store notes in a private section or password-protected notebook.", why: "If your notebook is shared, sensitive notes could be seen by anyone on the team.", ex: "\u2705 Private \u201CStakeholder Notes\u201D section. \u274C Shared team wiki." },
+            { n: "5", rule: "Store notes in a private section or password-protected notebook.", why: "If your notebook is shared, sensitive notes could be seen by anyone on the team.", ex: "\u2705 Private “Stakeholder Notes” section. \u274C Shared team wiki." },
             { n: "6", rule: "Review monthly. Delete anything no longer needed.", why: "Stale sensitive notes are a liability, not an asset. Old context can mislead.", ex: "\u2705 Monthly cleanup in your Relationship Review. \u274C Notes from 2 years ago still sitting there." },
             { n: "7", rule: "Use Archive/Closeout Template when stakeholders transition out.", why: "Clean handoffs protect relationships and institutional knowledge.", ex: "\u2705 Formal closeout with transition notes. \u274C Just stop updating the profile." },
-            { n: "8", rule: "Separate observation from interpretation.", why: "Keep raw notes factual. Add your interpretation in a clearly labeled section.", ex: "\u2705 \u201CFact: Missed 3 meetings. My read: likely overloaded.\u201D" },
+            { n: "8", rule: "Separate observation from interpretation.", why: "Keep raw notes factual. Add your interpretation in a clearly labeled section.", ex: "\u2705 “Fact: Missed 3 meetings. My read: likely overloaded.”" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -85,12 +85,12 @@ function ConfidentialityContent() {
         </tr></thead>
         <tbody>
           {[
-            { type: "General context (goals, preferences, communication style)", where: "Stakeholder Profile (standard section)", sens: "Low", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, ex: "\u201CPrefers email over Slack; values data-driven arguments; avoids Monday meetings.\u201D" },
-            { type: "Meeting notes, decisions, and action items", where: "Meeting History Index + Meeting Notes page", sens: "Low", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, ex: "\u201CAgreed to fund Phase 2 if ROI exceeds 15%. Action: send analysis by Friday.\u201D" },
-            { type: "Relationship friction, political dynamics, or risk", where: "Stakeholder Risk Notes [mark CONFIDENTIAL]", sens: "High", sBg: C.badgeRedBg, sFg: C.badgeRedFg, ex: "\u201CTension between VP Product and VP Sales over roadmap priorities.\u201D" },
-            { type: "Personal context (time zone, travel, work hours)", where: "Stakeholder Personal Context [mark CONFIDENTIAL]", sens: "Med", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ex: "\u201CTravels Mon\u2013Wed; best meetings Thu\u2013Fri AM EST.\u201D" },
-            { type: "Trust observations and relationship strategy", where: "Trust Builders & Breakers + Relationship Plan", sens: "Med", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ex: "\u201CValues being consulted before decisions go to leadership.\u201D" },
-            { type: "Compensation, HR issues, or legal matters", where: "DO NOT store here. Use company HR/legal tools only.", sens: "Critical", sBg: C.badgeRedBg, sFg: C.badgeRedFg, ex: "N/A \u2014 Never put this in OneNote or personal notes." },
+            { type: "General context (goals, preferences, communication style)", where: "Stakeholder Profile (standard section)", sens: "Low", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, ex: "“Prefers email over Slack; values data-driven arguments; avoids Monday meetings.”" },
+            { type: "Meeting notes, decisions, and action items", where: "Meeting History Index + Meeting Notes page", sens: "Low", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg, ex: "“Agreed to fund Phase 2 if ROI exceeds 15%. Action: send analysis by Friday.”" },
+            { type: "Relationship friction, political dynamics, or risk", where: "Stakeholder Risk Notes [mark CONFIDENTIAL]", sens: "High", sBg: C.badgeRedBg, sFg: C.badgeRedFg, ex: "“Tension between VP Product and VP Sales over roadmap priorities.”" },
+            { type: "Personal context (time zone, travel, work hours)", where: "Stakeholder Personal Context [mark CONFIDENTIAL]", sens: "Med", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ex: "“Travels Mon–Wed; best meetings Thu–Fri AM EST.”" },
+            { type: "Trust observations and relationship strategy", where: "Trust Builders & Breakers + Relationship Plan", sens: "Med", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg, ex: "“Values being consulted before decisions go to leadership.”" },
+            { type: "Compensation, HR issues, or legal matters", where: "DO NOT store here. Use company HR/legal tools only.", sens: "Critical", sBg: C.badgeRedBg, sFg: C.badgeRedFg, ex: "N/A — Never put this in OneNote or personal notes." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -118,7 +118,7 @@ function ConfidentialityContent() {
               {[
                 { color: "#059669", tip: "Use factual, neutral language.", detail: "Describe what happened, not how you feel about it." },
                 { color: "#0EA5E9", tip: "Date-stamp sensitive observations.", detail: "Context changes. A note from 6 months ago may no longer be accurate." },
-                { color: "#8B5CF6", tip: "Label your interpretation.", detail: "\u201CMy read:\u201D or \u201CInterpretation:\u201D makes it clear what\u2019s fact vs. opinion." },
+                { color: "#8B5CF6", tip: "Label your interpretation.", detail: "“My read:” or “Interpretation:” makes it clear what’s fact vs. opinion." },
                 { color: "#D97706", tip: "Keep a clean handoff document.", detail: "If you leave the role, your successor should be able to build on your notes." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -137,10 +137,10 @@ function ConfidentialityContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>NEVER DO THIS</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Write emotional or judgmental notes.", detail: "\u201CHe\u2019s impossible\u201D is unprofessional and could damage YOU if discovered." },
+                { color: "#DC2626", tip: "Write emotional or judgmental notes.", detail: "“He’s impossible” is unprofessional and could damage YOU if discovered." },
                 { color: "#EA580C", tip: "Store notes in shared channels.", detail: "Slack channels, shared drives, or public wikis are NOT for sensitive stakeholder context." },
-                { color: "#D97706", tip: "Keep notes you no longer need.", detail: "Old sensitive notes are a liability. If it\u2019s no longer relevant, delete it." },
-                { color: "#6366F1", tip: "Gossip in written form.", detail: "If you wouldn\u2019t say it to their face, don\u2019t write it in your notes." },
+                { color: "#D97706", tip: "Keep notes you no longer need.", detail: "Old sensitive notes are a liability. If it’s no longer relevant, delete it." },
+                { color: "#6366F1", tip: "Gossip in written form.", detail: "If you wouldn’t say it to their face, don’t write it in your notes." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

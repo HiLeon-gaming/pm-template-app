@@ -51,14 +51,14 @@ function HotContent() {
           {[
             { n: "1", name: "James Wu", heat: "🔴", why: "API timeline overdue. Trust eroding. Needs direct intervention before sprint planning.", action: "Working session Wed. Address his concerns directly.", when: "Wed" },
             { n: "2", name: "David Park", heat: "🔴", why: "Budget deliverable 3 days overdue. Risk of losing credibility.", action: "Send today with apology + extra Q2 detail.", when: "Mon" },
-            { n: "3", name: "Sarah Chen", heat: "🟡", why: "Disengaged in last SteerCo. Haven\u2019t connected in 3 weeks. Drift risk.", action: "Schedule 1:1. Understand what\u2019s happening.", when: "Tue" },
-            { n: "4", name: "Maria Lopez", heat: "🟡", why: "SteerCo next week. Needs briefing on Q2 risks before she\u2019s blindsided.", action: "Send pre-read brief. 15-min prep call.", when: "Thu" },
+            { n: "3", name: "Sarah Chen", heat: "🟡", why: "Disengaged in last SteerCo. Haven’t connected in 3 weeks. Drift risk.", action: "Schedule 1:1. Understand what’s happening.", when: "Tue" },
+            { n: "4", name: "Maria Lopez", heat: "🟡", why: "SteerCo next week. Needs briefing on Q2 risks before she’s blindsided.", action: "Send pre-read brief. 15-min prep call.", when: "Thu" },
             { n: "5", name: "Legal Lead", heat: "🟡", why: "Contract review pending. 10 days and counting. Procurement blocked.", action: "Ask sponsor to flag as priority.", when: "Wed" },
             { n: "6", name: "HR VP", heat: "🔴", why: "Headcount approval 13 days overdue. Team under-resourced.", action: "Escalate through director with impact data.", when: "Mon" },
-            { n: "7", name: "[Stakeholder]", heat: "[🔴🟡🟢]", why: "[Why they need attention]", action: "[What you\u2019ll do]", when: "[Day]" },
-            { n: "8", name: "[Stakeholder]", heat: "[🔴🟡🟢]", why: "[Why they need attention]", action: "[What you\u2019ll do]", when: "[Day]" },
-            { n: "9", name: "[Stakeholder]", heat: "[🔴🟡🟢]", why: "[Why they need attention]", action: "[What you\u2019ll do]", when: "[Day]" },
-            { n: "10", name: "[Stakeholder]", heat: "[🔴🟡🟢]", why: "[Why they need attention]", action: "[What you\u2019ll do]", when: "[Day]" },
+            { n: "7", name: "[Stakeholder]", heat: "[🔴🟡🟢]", why: "[Why they need attention]", action: "[What you’ll do]", when: "[Day]" },
+            { n: "8", name: "[Stakeholder]", heat: "[🔴🟡🟢]", why: "[Why they need attention]", action: "[What you’ll do]", when: "[Day]" },
+            { n: "9", name: "[Stakeholder]", heat: "[🔴🟡🟢]", why: "[Why they need attention]", action: "[What you’ll do]", when: "[Day]" },
+            { n: "10", name: "[Stakeholder]", heat: "[🔴🟡🟢]", why: "[Why they need attention]", action: "[What you’ll do]", when: "[Day]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -88,10 +88,10 @@ function HotContent() {
         </tr></thead>
         <tbody>
           {[
-            { q: "What\u2019s the biggest relationship risk this week?", a: "[Which stakeholder situation could blow up if ignored?]" },
-            { q: "What\u2019s the biggest relationship opportunity?", a: "[Who can you impress, thank, or advance a relationship with?]" },
+            { q: "What’s the biggest relationship risk this week?", a: "[Which stakeholder situation could blow up if ignored?]" },
+            { q: "What’s the biggest relationship opportunity?", a: "[Who can you impress, thank, or advance a relationship with?]" },
             { q: "Any upcoming meetings with hot stakeholders?", a: "[List meetings + prep needed]" },
-            { q: "What commitments are due this week?", a: "[From your Commitments Log \u2014 anything due to a hot stakeholder?]" },
+            { q: "What commitments are due this week?", a: "[From your Commitments Log — anything due to a hot stakeholder?]" },
             { q: "What did you learn about these stakeholders last week?", a: "[New intel, concerns, priorities, or changes]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -116,10 +116,10 @@ function HotContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>HOW TO USE THIS DASHBOARD</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Update every Monday morning.", detail: "Start your week by asking: \u201CWho needs my attention most?\u201D" },
+                { color: "#DC2626", tip: "Update every Monday morning.", detail: "Start your week by asking: “Who needs my attention most?”" },
                 { color: "#EA580C", tip: "Limit to 10 stakeholders.", detail: "If everything is a priority, nothing is. Force yourself to rank." },
-                { color: "#059669", tip: "Red items get addressed first.", detail: "Don\u2019t do the easy amber items while red items sit untouched." },
-                { color: "#D97706", tip: "Carry forward unresolved items.", detail: "If a stakeholder was hot last week and you didn\u2019t address it, they\u2019re probably still hot." },
+                { color: "#059669", tip: "Red items get addressed first.", detail: "Don’t do the easy amber items while red items sit untouched." },
+                { color: "#D97706", tip: "Carry forward unresolved items.", detail: "If a stakeholder was hot last week and you didn’t address it, they’re probably still hot." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -138,8 +138,8 @@ function HotContent() {
             <tbody>
               {[
                 { color: "#DC2626", tip: "You owe them something overdue.", detail: "Broken commitments = hot. Fix it today." },
-                { color: "#EA580C", tip: "They\u2019re blocking something critical.", detail: "Dependencies, approvals, or decisions that are stuck." },
-                { color: "#D97706", tip: "The relationship is drifting or degrading.", detail: "You haven\u2019t connected recently and signals are concerning." },
+                { color: "#EA580C", tip: "They’re blocking something critical.", detail: "Dependencies, approvals, or decisions that are stuck." },
+                { color: "#D97706", tip: "The relationship is drifting or degrading.", detail: "You haven’t connected recently and signals are concerning." },
                 { color: "#6366F1", tip: "A big meeting or decision is coming.", detail: "You need them prepared, aligned, or supportive before a key moment." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

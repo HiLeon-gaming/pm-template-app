@@ -48,13 +48,13 @@ function RelPlanContent() {
         <tbody>
           {[
             { label: "Stakeholder", value: "[Name and role]" },
-            { label: "Current Health", value: "[Green / Amber / Red] \u2014 Justify your rating with specific evidence." },
+            { label: "Current Health", value: "[Green / Amber / Red] — Justify your rating with specific evidence." },
             { label: "Current State (Honest)", value: "[Where does this relationship actually stand today? Be specific about trust, communication, and alignment.]" },
             { label: "Desired State (Goal)", value: "[Where do you want this relationship to be in 90 days? Paint a clear picture.]" },
-            { label: "Gap Analysis", value: "[What\u2019s the difference between current and desired? What specific behaviors or actions need to change?]" },
-            { label: "Why This Matters", value: "[What happens if this relationship doesn\u2019t improve? Impact on project, career, team?]" },
+            { label: "Gap Analysis", value: "[What’s the difference between current and desired? What specific behaviors or actions need to change?]" },
+            { label: "Why This Matters", value: "[What happens if this relationship doesn’t improve? Impact on project, career, team?]" },
             { label: "Their Perspective", value: "[How do THEY likely see this relationship? What would they say about you if asked?]" },
-            { label: "Last Updated", value: "[Date \u2014 Commit to reviewing this monthly]" },
+            { label: "Last Updated", value: "[Date — Commit to reviewing this monthly]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -80,7 +80,7 @@ function RelPlanContent() {
             <thead><tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>WHAT YOU OFFER THEM</td></tr></thead>
             <tbody>
               {[
-                { text: "Timely project updates and transparency", guide: "They never have to ask for status \u2014 you proactively share." },
+                { text: "Timely project updates and transparency", guide: "They never have to ask for status — you proactively share." },
                 { text: "Data-driven recommendations that save them time", guide: "You do the analysis; they make the decision." },
                 { text: "Risk identification before problems escalate", guide: "Early warning = no surprises = trust." },
                 { text: "Credit and visibility for their contributions", guide: "Making them look good strengthens the partnership." },
@@ -104,7 +104,7 @@ function RelPlanContent() {
               {[
                 { text: "Executive sponsorship and political cover", guide: "They protect your project from org politics." },
                 { text: "Budget approval authority", guide: "They control the purse strings you need." },
-                { text: "Access to their network and decision makers", guide: "Their introductions open doors you can\u2019t." },
+                { text: "Access to their network and decision makers", guide: "Their introductions open doors you can’t." },
                 { text: "Strategic direction and priority clarity", guide: "They tell you what matters most." },
                 { text: "[Enter what they bring]", guide: "" },
               ].map((r, i) => {
@@ -127,7 +127,7 @@ function RelPlanContent() {
     <div ref={frictionRef} style={{ marginBottom: "12px" }}>
       <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>CURRENT FRICTION &amp; ROOT CAUSES</td></tr></tbody></table>
       <CopyButton targetRef={frictionRef} label="Copy Section" />
-      <p style={{ ...S.subNote, marginBottom: "6px" }}>Identify friction honestly. The \u201CYour Role\u201D column is the hardest and most important part \u2014 own your contribution to the problem.</p>
+      <p style={{ ...S.subNote, marginBottom: "6px" }}>Identify friction honestly. The “Your Role” column is the hardest and most important part — own your contribution to the problem.</p>
       <table style={S.tbl}>
         <thead><tr>
           <th style={S.thPrimary}>Friction Point</th>
@@ -137,8 +137,8 @@ function RelPlanContent() {
         </tr></thead>
         <tbody>
           {[
-            { friction: "They feel out of the loop on key decisions", root: "You\u2019ve been updating their team but not them directly", role: "Assumed their team was passing info along", path: "Start sending direct weekly summary" },
-            { friction: "Tension around budget requests", root: "They need ROI data you haven\u2019t provided", role: "Haven\u2019t made time to build the ROI case", path: "Prepare 1-page ROI summary this week" },
+            { friction: "They feel out of the loop on key decisions", root: "You’ve been updating their team but not them directly", role: "Assumed their team was passing info along", path: "Start sending direct weekly summary" },
+            { friction: "Tension around budget requests", root: "They need ROI data you haven’t provided", role: "Haven’t made time to build the ROI case", path: "Prepare 1-page ROI summary this week" },
             { friction: "Meetings feel unproductive to them", root: "No clear agenda or decisions requested", role: "Running status meetings instead of decision meetings", path: "Send agenda 24h before with specific asks" },
             { friction: "[Enter friction point]", root: "[Underlying cause]", role: "[Your contribution]", path: "[How to fix it]" },
           ].map((r, i) => {
@@ -161,7 +161,7 @@ function RelPlanContent() {
     <div ref={stratRef} style={{ marginBottom: "12px" }}>
       <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#8B5CF6")}>RELATIONSHIP IMPROVEMENT STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={stratRef} label="Copy Section" />
-      <p style={{ ...S.subNote, marginBottom: "6px" }}>Translate your gap analysis into specific, time-bound actions. Vague intentions don\u2019t improve relationships \u2014 specific commitments do.</p>
+      <p style={{ ...S.subNote, marginBottom: "6px" }}>Translate your gap analysis into specific, time-bound actions. Vague intentions don’t improve relationships — specific commitments do.</p>
       <table style={S.tbl}>
         <thead><tr>
           <th style={{ ...S.thPrimary, width: "25%" }}>Strategy Area</th>
@@ -169,12 +169,12 @@ function RelPlanContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Trust-Building Actions", value: "[Specific things you will do to build trust over the next 30 days. e.g., \u201CDeliver the Q2 report 2 days early.\u201D]" },
-            { label: "Communication Adjustments", value: "[Changes to how, when, or what you communicate. e.g., \u201CSwitch from email to 15-min weekly standup.\u201D]" },
+            { label: "Trust-Building Actions", value: "[Specific things you will do to build trust over the next 30 days. e.g., “Deliver the Q2 report 2 days early.”]" },
+            { label: "Communication Adjustments", value: "[Changes to how, when, or what you communicate. e.g., “Switch from email to 15-min weekly standup.”]" },
             { label: "Quick Win Delivery", value: "[Something you can deliver in the next 2 weeks that demonstrates value. Make it visible and impactful.]" },
-            { label: "Relationship Investment", value: "[Time you\u2019ll invest: extra meetings, informal check-ins, public recognition, coffee chats.]" },
-            { label: "Risk Mitigation", value: "[How you\u2019ll prevent the relationship from getting worse while you work on improving it.]" },
-            { label: "Success Indicators", value: "[How will you know it\u2019s working? e.g., \u201CThey start including me in ad-hoc meetings again.\u201D]" },
+            { label: "Relationship Investment", value: "[Time you’ll invest: extra meetings, informal check-ins, public recognition, coffee chats.]" },
+            { label: "Risk Mitigation", value: "[How you’ll prevent the relationship from getting worse while you work on improving it.]" },
+            { label: "Success Indicators", value: "[How will you know it’s working? e.g., “They start including me in ad-hoc meetings again.”]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -193,7 +193,7 @@ function RelPlanContent() {
     <div ref={actRef} style={{ marginBottom: "12px" }}>
       <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>90-DAY ACTION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={actRef} label="Copy Section" />
-      <p style={{ ...S.subNote, marginBottom: "6px" }}>Break your strategy into concrete milestones. Review weekly and adjust based on the stakeholder\u2019s response.</p>
+      <p style={{ ...S.subNote, marginBottom: "6px" }}>Break your strategy into concrete milestones. Review weekly and adjust based on the stakeholder’s response.</p>
       <table style={S.tbl}>
         <thead><tr>
           <th style={{ ...S.thPrimary, width: "12%" }}>Timeframe</th>
@@ -205,7 +205,7 @@ function RelPlanContent() {
             { time: "This Week", action: "Send direct update email; schedule 1:1 meeting. Show immediate change.", status: "Pending" },
             { time: "Week 2", action: "Deliver ROI summary; ask for their input on Q2 priorities. Show value.", status: "Pending" },
             { time: "Month 1", action: "Establish regular cadence; deliver on 2 commitments flawlessly.", status: "Pending" },
-            { time: "Month 2", action: "Seek feedback on relationship: \u201CHow are we doing?\u201D Adjust approach.", status: "Pending" },
+            { time: "Month 2", action: "Seek feedback on relationship: “How are we doing?” Adjust approach.", status: "Pending" },
             { time: "Month 3", action: "Review progress against desired state. Reset plan for next quarter.", status: "Pending" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -232,7 +232,7 @@ function RelPlanContent() {
             <tbody>
               {[
                 { color: "#0EA5E9", tip: "Be honest about current state.", detail: "Self-deception is the enemy of improvement. Rate the relationship as they would, not as you hope." },
-                { color: "#059669", tip: "Focus on behaviors, not feelings.", detail: "\u201CI\u2019ll send updates every Monday\u201D is actionable. \u201CI\u2019ll try to communicate better\u201D is not." },
+                { color: "#059669", tip: "Focus on behaviors, not feelings.", detail: "“I’ll send updates every Monday” is actionable. “I’ll try to communicate better” is not." },
                 { color: "#8B5CF6", tip: "Own your 50% of the relationship.", detail: "You can only control what YOU do. Focus your plan on your actions, not on changing them." },
                 { color: "#D97706", tip: "Review monthly, reset quarterly.", detail: "Relationships are dynamic. Your plan should be too." },
               ].map((r, i) => {
@@ -255,7 +255,7 @@ function RelPlanContent() {
                 { color: "#DC2626", tip: "Planning without acting.", detail: "A beautiful plan that lives in a doc is worthless. Execute this week." },
                 { color: "#EA580C", tip: "Trying to fix everything at once.", detail: "Pick the ONE friction point that matters most and fix that first." },
                 { color: "#D97706", tip: "Not asking for their perspective.", detail: "Your assessment of the relationship may be wrong. Ask them directly." },
-                { color: "#6366F1", tip: "Giving up after 2 weeks.", detail: "Relationship improvement takes 60\u201390 days minimum. Be patient and consistent." },
+                { color: "#6366F1", tip: "Giving up after 2 weeks.", detail: "Relationship improvement takes 60–90 days minimum. Be patient and consistent." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

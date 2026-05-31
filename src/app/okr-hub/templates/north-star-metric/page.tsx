@@ -141,7 +141,7 @@ function NorthStarContent() {
                   </tr>
                 );
               })}
-              <tr><td style={{ ...S.td0, padding: "8px 10px", fontSize: "9px", fontWeight: 600, color: "#059669" }}>All 7 = Great! &nbsp; 5\u20136 = Refine it. &nbsp; Under 5 = Rethink.</td></tr>
+              <tr><td style={{ ...S.td0, padding: "8px 10px", fontSize: "9px", fontWeight: 600, color: "#059669" }}>All 7 = Great! &nbsp; 5–6 = Refine it. &nbsp; Under 5 = Rethink.</td></tr>
             </tbody>
           </table>
         </td>

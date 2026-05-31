@@ -177,7 +177,7 @@ function ProductVisionContent() {
             "Are our OKRs measurable and time-bound?",
             "Does every sprint backlog item trace to an outcome above?",
             "Have stakeholders validated our target user segments?",
-            "Is the \u201Cnot in scope\u201D list clear and agreed?",
+            "Is the “not in scope” list clear and agreed?",
           ].map((q, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

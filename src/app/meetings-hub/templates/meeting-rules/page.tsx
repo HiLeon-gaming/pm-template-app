@@ -48,12 +48,12 @@ function MeetingRulesContent() {
         <tbody>
           {[
             { rule: "Agenda Required", what: "No agenda = no meeting. Every meeting must have a written purpose and desired outcomes shared before the meeting.", who: "Organizer" },
-            { rule: "Start & End On Time", what: "We respect each other\u2019s calendars. Start at :00, end at :00. No \u201Cjust 5 more minutes.\u201D", who: "Facilitator" },
-            { rule: "Action Owner Required", what: "Every action item gets an owner and a due date. No \u201Csomeone should\u201D or \u201Cwe need to.\u201D", who: "Scribe" },
-            { rule: "Decision Capture Required", what: "Every decision is documented with date, context, and owner. If it wasn\u2019t written down, it wasn\u2019t decided.", who: "Scribe" },
-            { rule: "Parking Lot Rule", what: "Off-topic items go to the parking lot \u2014 not into the current discussion. Revisit later.", who: "Facilitator" },
+            { rule: "Start & End On Time", what: "We respect each other’s calendars. Start at :00, end at :00. No “just 5 more minutes.”", who: "Facilitator" },
+            { rule: "Action Owner Required", what: "Every action item gets an owner and a due date. No “someone should” or “we need to.”", who: "Scribe" },
+            { rule: "Decision Capture Required", what: "Every decision is documented with date, context, and owner. If it wasn’t written down, it wasn’t decided.", who: "Scribe" },
+            { rule: "Parking Lot Rule", what: "Off-topic items go to the parking lot — not into the current discussion. Revisit later.", who: "Facilitator" },
             { rule: "Smallest Possible Invite List", what: "Only invite people who need to be there. Everyone else gets the recap.", who: "Organizer" },
-            { rule: "No Devices for Side-Work", what: "If you\u2019re in the meeting, be in the meeting. Multitasking wastes everyone\u2019s time.", who: "Everyone" },
+            { rule: "No Devices for Side-Work", what: "If you’re in the meeting, be in the meeting. Multitasking wastes everyone’s time.", who: "Everyone" },
             { rule: "24-Hour Follow-Up", what: "Meeting recap, decisions, and action items sent within 24 hours. Period.", who: "Organizer" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -100,7 +100,7 @@ function MeetingRulesContent() {
       <CopyButton targetRef={adoptionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>[ ] Share with team</td><td style={S.td0}>Send this page to your team via email or Teams. Ask for acknowledgment.</td></tr>
-        <tr><td style={S.tdLabelAlt}>[ ] Post in shared space</td><td style={S.tdAlt}>Pin this page in your team\u2019s OneNote section or Teams channel.</td></tr>
+        <tr><td style={S.tdLabelAlt}>[ ] Post in shared space</td><td style={S.tdAlt}>Pin this page in your team’s OneNote section or Teams channel.</td></tr>
         <tr><td style={S.tdLabel}>[ ] Start enforcing gently</td><td style={S.td0}>Begin with rules #1 (agenda required) and #3 (action owner required). Add others over 2-3 weeks.</td></tr>
         <tr><td style={S.tdLabelAlt}>[ ] Monthly retro</td><td style={S.tdAlt}>Use the Team Retro (Meeting Effectiveness) template to check how well rules are being followed.</td></tr>
         <tr><td style={S.tdLabel}>[ ] Celebrate wins</td><td style={S.td0}>When a meeting runs well, say so. Positive reinforcement drives culture change.</td></tr>

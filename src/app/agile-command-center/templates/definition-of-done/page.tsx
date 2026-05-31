@@ -108,8 +108,8 @@ function DefinitionOfDoneContent() {
           <table style={S.tbl}>
             <thead><tr><td style={{ backgroundColor: "#DC2626", color: C.white, padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}` }}>🚫 NOT DONE (Carry over or fix)</td></tr></thead>
             <tbody>
-              {["\u201CCode works on my machine\u201D but not merged or deployed", "Unit tests not written — \u201CI\u2019ll add them later\u201D",
-                "QA found 2 critical bugs — not yet fixed", "PO hasn\u2019t reviewed — \u201CWe\u2019ll show them in demo\u201D"].map((t, i) => (
+              {["“Code works on my machine” but not merged or deployed", "Unit tests not written — “I’ll add them later”",
+                "QA found 2 critical bugs — not yet fixed", "PO hasn’t reviewed — “We’ll show them in demo”"].map((t, i) => (
                 <tr key={i}><td style={{ ...S.td0, backgroundColor: i % 2 === 0 ? C.white : C.rowAlt, fontSize: "10px", padding: "5px 12px" }}>• {t}</td></tr>
               ))}
             </tbody>
@@ -131,7 +131,7 @@ function DefinitionOfDoneContent() {
         </tr></thead>
         <tbody>
           {[
-            "Did any stories get marked \u201Cdone\u201D that didn\u2019t fully meet the DoD?",
+            "Did any stories get marked “done” that didn’t fully meet the DoD?",
             "Did we find bugs in production that should have been caught by the DoD?",
             "Does the team feel the DoD criteria are achievable within a sprint?",
             "Should we add or relax any criteria based on recent experience?",

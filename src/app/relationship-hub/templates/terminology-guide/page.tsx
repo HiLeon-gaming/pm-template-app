@@ -48,22 +48,22 @@ function TerminologyContent() {
           {[
             { term: "Stakeholder", def: "Anyone who can influence, be impacted by, approve, block, or support your work.", ex: "Your VP, a vendor contact, a cross-functional partner, an end-user group" },
             { term: "Sponsor", def: "A senior leader who champions your initiative and provides political support, funding, and escalation authority.", ex: "The SVP who approved your project budget and defends it in leadership meetings" },
-            { term: "Champion", def: "Someone who actively advocates for your work to others \u2014 even when you\u2019re not in the room.", ex: "A director who tells peers \u201Cthis project is worth supporting\u201D in their team meetings" },
-            { term: "Decision Maker", def: "The person with authority to say \u201Cyes\u201D or \u201Cno\u201D on a specific topic. Not everyone with an opinion is a decision maker.", ex: "The CFO who approves budget requests over $50K" },
+            { term: "Champion", def: "Someone who actively advocates for your work to others — even when you’re not in the room.", ex: "A director who tells peers “this project is worth supporting” in their team meetings" },
+            { term: "Decision Maker", def: "The person with authority to say “yes” or “no” on a specific topic. Not everyone with an opinion is a decision maker.", ex: "The CFO who approves budget requests over $50K" },
             { term: "Influencer", def: "Someone who shapes opinions and decisions without formal authority. Often the most powerful stakeholders in practice.", ex: "A respected architect whose technical opinion sways the CTO" },
-            { term: "Gatekeeper", def: "A person who controls access to a decision maker, resource, or process.", ex: "An EA who manages the CEO\u2019s calendar and decides who gets meeting time" },
-            { term: "Blocker", def: "A stakeholder actively or passively preventing progress. Not an enemy \u2014 often someone whose concerns haven\u2019t been addressed.", ex: "Legal counsel who won\u2019t approve a contract because risk language is missing" },
+            { term: "Gatekeeper", def: "A person who controls access to a decision maker, resource, or process.", ex: "An EA who manages the CEO’s calendar and decides who gets meeting time" },
+            { term: "Blocker", def: "A stakeholder actively or passively preventing progress. Not an enemy — often someone whose concerns haven’t been addressed.", ex: "Legal counsel who won’t approve a contract because risk language is missing" },
             { term: "RAG Status", def: "Red / Amber / Green. A color-coded system for showing health or risk at a glance.", ex: "Red = broken trust or blocked. Amber = warning signs. Green = healthy and on track." },
             { term: "Touchpoint", def: "Any interaction with a stakeholder: meeting, email, call, Slack message, or hallway conversation.", ex: "A 5-min Slack check-in counts as a touchpoint. So does a 60-min steering committee." },
-            { term: "Cadence", def: "The rhythm or frequency of your interactions with a stakeholder.", ex: "\u201CWeekly 1:1 with Sarah\u201D or \u201CMonthly update email to the CFO\u201D" },
-            { term: "Engagement", def: "How involved and informed a stakeholder feels. High = heard and in the loop. Low = ignored or surprised.", ex: "A sponsor who hasn\u2019t heard from you in 3 weeks has low engagement \u2014 and that\u2019s risky." },
+            { term: "Cadence", def: "The rhythm or frequency of your interactions with a stakeholder.", ex: "“Weekly 1:1 with Sarah” or “Monthly update email to the CFO”" },
+            { term: "Engagement", def: "How involved and informed a stakeholder feels. High = heard and in the loop. Low = ignored or surprised.", ex: "A sponsor who hasn’t heard from you in 3 weeks has low engagement — and that’s risky." },
             { term: "Influence vs Interest", def: "A framework: Influence = how much power they have. Interest = how much they care. Combine them to prioritize.", ex: "High influence + high interest = Manage Closely. Low influence + low interest = Monitor." },
             { term: "Trust Builder", def: "An action that increases trust: delivering on promises, sharing credit, being transparent about problems early.", ex: "You promised a report by Friday and delivered it Thursday morning." },
-            { term: "Trust Breaker", def: "An action that damages trust: missing deadlines, surprising with bad news publicly, going over someone\u2019s head.", ex: "You presented a decision to the CEO without telling the VP first." },
-            { term: "Escalation", def: "Raising an issue to a higher authority when you cannot resolve it at your level. A professional tool, not a failure.", ex: "Telling your sponsor: \u201CI need your help unblocking this \u2014 I\u2019ve tried X and Y.\u201D" },
-            { term: "CRM (Lite)", def: "A lightweight relationship tracking system. Context, history, and follow-ups \u2014 without enterprise CRM complexity.", ex: "This hub IS your CRM-lite. Each stakeholder profile is a CRM record." },
+            { term: "Trust Breaker", def: "An action that damages trust: missing deadlines, surprising with bad news publicly, going over someone’s head.", ex: "You presented a decision to the CEO without telling the VP first." },
+            { term: "Escalation", def: "Raising an issue to a higher authority when you cannot resolve it at your level. A professional tool, not a failure.", ex: "Telling your sponsor: “I need your help unblocking this — I’ve tried X and Y.”" },
+            { term: "CRM (Lite)", def: "A lightweight relationship tracking system. Context, history, and follow-ups — without enterprise CRM complexity.", ex: "This hub IS your CRM-lite. Each stakeholder profile is a CRM record." },
             { term: "QBR", def: "Quarterly Business Review. A formal review of progress, risks, and plans held every quarter.", ex: "A 60-min meeting with your sponsor to review Q1 results and set Q2 priorities." },
-            { term: "KPI", def: "Key Performance Indicator. A measurable value that shows how effectively you\u2019re achieving a key objective.", ex: "\u201CStakeholder satisfaction score\u201D or \u201C% of follow-ups completed on time\u201D" },
+            { term: "KPI", def: "Key Performance Indicator. A measurable value that shows how effectively you’re achieving a key objective.", ex: "“Stakeholder satisfaction score” or “% of follow-ups completed on time”" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -123,8 +123,8 @@ function TerminologyContent() {
                 { color: accent, type: "Sponsor", desc: "Funds and protects your work. Keep them informed and aligned." },
                 { color: "#059669", type: "Champion", desc: "Advocates for you. Equip them with talking points and wins." },
                 { color: "#8B5CF6", type: "Decision Maker", desc: "Says yes or no. Understand their criteria before you ask." },
-                { color: "#D97706", type: "Influencer", desc: "Shapes opinions. Win them early \u2014 they sway the room." },
-                { color: "#DC2626", type: "Blocker", desc: "Prevents progress. Address their concerns, don\u2019t fight them." },
+                { color: "#D97706", type: "Influencer", desc: "Shapes opinions. Win them early — they sway the room." },
+                { color: "#DC2626", type: "Blocker", desc: "Prevents progress. Address their concerns, don’t fight them." },
                 { color: "#6366F1", type: "Gatekeeper", desc: "Controls access. Treat them as allies, not obstacles." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

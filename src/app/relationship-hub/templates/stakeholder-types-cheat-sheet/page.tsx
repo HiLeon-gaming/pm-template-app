@@ -49,13 +49,13 @@ function CheatSheetContent() {
         <tbody>
           {[
             { type: "Sponsor", what: "Provides political support, funding, and escalation authority for your initiative.", how: "Keep them informed and aligned. Never let them be surprised. Send brief weekly updates.", warn: "Stops responding to updates; delegates your meetings to juniors", cadence: "Weekly", color: accent },
-            { type: "Champion", what: "Advocates for your work to others \u2014 even when you\u2019re not in the room.", how: "Equip them with talking points, wins, and data. Publicly recognize their support.", warn: "Stops mentioning your project; becomes neutral instead of supportive", cadence: "Biweekly", color: "#059669" },
-            { type: "Decision Maker", what: "Has authority to say \u201Cyes\u201D or \u201Cno\u201D on a specific topic.", how: "Be concise. Present options with clear recommendations. Respect their time.", warn: "Defers decisions; asks for \u201Cmore analysis\u201D repeatedly; avoids committing", cadence: "As needed", color: "#8B5CF6" },
+            { type: "Champion", what: "Advocates for your work to others — even when you’re not in the room.", how: "Equip them with talking points, wins, and data. Publicly recognize their support.", warn: "Stops mentioning your project; becomes neutral instead of supportive", cadence: "Biweekly", color: "#059669" },
+            { type: "Decision Maker", what: "Has authority to say “yes” or “no” on a specific topic.", how: "Be concise. Present options with clear recommendations. Respect their time.", warn: "Defers decisions; asks for “more analysis” repeatedly; avoids committing", cadence: "As needed", color: "#8B5CF6" },
             { type: "Influencer", what: "Shapes opinions and decisions without formal authority.", how: "Build genuine relationship. Share information early. Seek their input before group meetings.", warn: "Voices concerns in public forums instead of privately; stops attending meetings", cadence: "Monthly", color: "#0EA5E9" },
             { type: "Gatekeeper", what: "Controls access to decision makers, resources, or processes.", how: "Treat with respect. Never try to bypass them. They can become powerful allies.", warn: "Starts routing you to voicemail; creates scheduling obstacles", cadence: "As needed", color: "#D97706" },
-            { type: "Blocker", what: "Actively or passively prevents progress on your work.", how: "Understand their concerns first. Address root cause. Escalate only if engagement fails.", warn: "N/A \u2014 they\u2019re already blocking. Focus on converting them.", cadence: "Weekly until resolved", color: "#DC2626" },
-            { type: "End User", what: "Will use the output of your work daily.", how: "Involve early. Validate assumptions. Get feedback before final delivery. They make or break adoption.", warn: "Provides only positive feedback (they\u2019ve given up); avoids demos", cadence: "Biweekly", color: "#EA580C" },
-            { type: "SME", what: "Subject Matter Expert with deep domain knowledge.", how: "Consult for accuracy. Credit their contributions. Don\u2019t waste their time with broad meetings.", warn: "Responses become terse; starts declining invitations", cadence: "As needed", color: "#6366F1" },
+            { type: "Blocker", what: "Actively or passively prevents progress on your work.", how: "Understand their concerns first. Address root cause. Escalate only if engagement fails.", warn: "N/A — they’re already blocking. Focus on converting them.", cadence: "Weekly until resolved", color: "#DC2626" },
+            { type: "End User", what: "Will use the output of your work daily.", how: "Involve early. Validate assumptions. Get feedback before final delivery. They make or break adoption.", warn: "Provides only positive feedback (they’ve given up); avoids demos", cadence: "Biweekly", color: "#EA580C" },
+            { type: "SME", what: "Subject Matter Expert with deep domain knowledge.", how: "Consult for accuracy. Credit their contributions. Don’t waste their time with broad meetings.", warn: "Responses become terse; starts declining invitations", cadence: "As needed", color: "#6366F1" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -88,7 +88,7 @@ function CheatSheetContent() {
                 { who: "Your Manager", note: "Your direct sponsor. Keep them aligned on priorities and never let them be surprised by their boss.", color: "#8B5CF6" },
                 { who: "Peer Teams", note: "Dependencies and handoffs. Need proactive coordination. Friction here kills timelines.", color: "#059669" },
                 { who: "Direct Reports", note: "Need clarity, support, and development. Their trust in you compounds over time.", color: "#D97706" },
-                { who: "PMO / Governance", note: "Need compliance and reporting. Make their job easy and they\u2019ll be your allies.", color: "#6366F1" },
+                { who: "PMO / Governance", note: "Need compliance and reporting. Make their job easy and they’ll be your allies.", color: "#6366F1" },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -137,9 +137,9 @@ function CheatSheetContent() {
             <tbody>
               {[
                 { color: accent, tip: "One person can play multiple roles.", detail: "Your sponsor might also be a decision maker. Manage for the highest-impact role." },
-                { color: "#059669", tip: "Roles can change over time.", detail: "Today\u2019s champion could become a blocker if their priorities shift. Re-assess quarterly." },
-                { color: "#0EA5E9", tip: "Blockers aren\u2019t enemies.", detail: "They usually have legitimate concerns. Address those concerns and they often become allies." },
-                { color: "#8B5CF6", tip: "Influencers are the hidden power.", detail: "The person with no title but everyone\u2019s ear is often your most important stakeholder." },
+                { color: "#059669", tip: "Roles can change over time.", detail: "Today’s champion could become a blocker if their priorities shift. Re-assess quarterly." },
+                { color: "#0EA5E9", tip: "Blockers aren’t enemies.", detail: "They usually have legitimate concerns. Address those concerns and they often become allies." },
+                { color: "#8B5CF6", tip: "Influencers are the hidden power.", detail: "The person with no title but everyone’s ear is often your most important stakeholder." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -160,7 +160,7 @@ function CheatSheetContent() {
                 { color: "#DC2626", tip: "Treating all stakeholders the same.", detail: "A sponsor needs different engagement than an end user. Tailor your approach." },
                 { color: "#EA580C", tip: "Ignoring gatekeepers.", detail: "Bypassing an EA or Chief of Staff creates enemies. Win them over first." },
                 { color: "#D97706", tip: "Over-communicating with decision makers.", detail: "They want options + a recommendation, not a 30-slide deck. Be concise." },
-                { color: "#6366F1", tip: "Forgetting about silent stakeholders.", detail: "People who don\u2019t speak up often have the most to lose. Check in proactively." },
+                { color: "#6366F1", tip: "Forgetting about silent stakeholders.", detail: "People who don’t speak up often have the most to lose. Check in proactively." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

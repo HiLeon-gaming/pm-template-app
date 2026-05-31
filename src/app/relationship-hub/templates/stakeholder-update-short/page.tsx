@@ -47,11 +47,11 @@ function UpdateContent() {
           {[
             { label: "To / Audience", value: "[Who is this update for? Name or group.]" },
             { label: "Date", value: "[Update date]" },
-            { label: "Subject Line", value: "[Project Name] Status Update \u2014 [Date] \u2014 [Overall RAG: \ud83d\udfe2/\ud83d\udfe1/\ud83d\udd34]" },
-            { label: "\ud83d\udfe2 PROGRESS", value: "[2\u20133 bullets: What was accomplished since last update? Key milestones hit?]" },
-            { label: "\ud83d\udd34 RISKS / BLOCKERS", value: "[1\u20132 bullets: What could go wrong? What\u2019s blocked? Be honest, not optimistic.]" },
+            { label: "Subject Line", value: "[Project Name] Status Update — [Date] — [Overall RAG: \ud83d\udfe2/\ud83d\udfe1/\ud83d\udd34]" },
+            { label: "\ud83d\udfe2 PROGRESS", value: "[2–3 bullets: What was accomplished since last update? Key milestones hit?]" },
+            { label: "\ud83d\udd34 RISKS / BLOCKERS", value: "[1–2 bullets: What could go wrong? What’s blocked? Be honest, not optimistic.]" },
             { label: "\u2753 ASKS / NEEDS", value: "[What do you need from the reader? Decisions? Resources? Approvals? Be specific.]" },
-            { label: "\u27a1\ufe0f NEXT STEPS", value: "[What\u2019s happening next? Who\u2019s doing what?]" },
+            { label: "\u27a1\ufe0f NEXT STEPS", value: "[What’s happening next? Who’s doing what?]" },
             { label: "\ud83d\udcc5 KEY DATES", value: "[Upcoming deadlines, milestones, or meetings that matter]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -75,9 +75,9 @@ function UpdateContent() {
         <thead><tr><th style={{ ...S.thPrimary, textAlign: "left" as const }}>Example Status Update</th></tr></thead>
         <tbody>
           <tr><td style={{ ...S.td0, fontSize: "10px", padding: "12px 16px", lineHeight: "1.7", backgroundColor: "#F8FAFC" }}>
-            <strong>Subject:</strong> Data Platform Migration Status \u2014 Mar 14 \u2014 \ud83d\udfe1 Amber<br /><br />
+            <strong>Subject:</strong> Data Platform Migration Status — Mar 14 — \ud83d\udfe1 Amber<br /><br />
             <strong style={{ color: accent }}>\ud83d\udfe2 PROGRESS:</strong><br />
-            &bull; Vendor selected (Vendor X) \u2014 approved by SteerCo Mar 13<br />
+            &bull; Vendor selected (Vendor X) — approved by SteerCo Mar 13<br />
             &bull; Contract sent to Legal for review<br />
             &bull; Technical architecture doc 80% complete<br /><br />
             <strong style={{ color: "#DC2626" }}>\ud83d\udd34 RISKS / BLOCKERS:</strong><br />
@@ -108,10 +108,10 @@ function UpdateContent() {
             <thead><tr><td style={{ backgroundColor: "#DCFCE7", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>UPDATE WRITING RULES</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Keep it under 150 words.", detail: "If they have to scroll, they won\u2019t read it. Be ruthlessly concise." },
+                { color: "#059669", tip: "Keep it under 150 words.", detail: "If they have to scroll, they won’t read it. Be ruthlessly concise." },
                 { color: "#0EA5E9", tip: "Lead with the overall RAG status.", detail: "Green/Amber/Red in the subject line lets people triage before opening." },
                 { color: "#8B5CF6", tip: "Be honest about risks.", detail: "Hiding risks in updates is career-ending. Surface them early with a plan." },
-                { color: "#D97706", tip: "Make asks specific and actionable.", detail: "\u201CNeed your help\u201D is vague. \u201CCan you flag Legal review as priority by Friday?\u201D is actionable." },
+                { color: "#D97706", tip: "Make asks specific and actionable.", detail: "“Need your help” is vague. “Can you flag Legal review as priority by Friday?” is actionable." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -130,8 +130,8 @@ function UpdateContent() {
             <tbody>
               {[
                 { color: "#D97706", tip: "Weekly for active projects.", detail: "Same day, same time, every week. Consistency builds confidence." },
-                { color: "#DC2626", tip: "Immediately when something changes.", detail: "New risk? Missed deadline? Don\u2019t wait for the weekly update. Send now." },
-                { color: "#EA580C", tip: "Before they have to ask.", detail: "If a stakeholder asks for an update, you\u2019re already late. Be proactive." },
+                { color: "#DC2626", tip: "Immediately when something changes.", detail: "New risk? Missed deadline? Don’t wait for the weekly update. Send now." },
+                { color: "#EA580C", tip: "Before they have to ask.", detail: "If a stakeholder asks for an update, you’re already late. Be proactive." },
                 { color: "#059669", tip: "After every significant meeting.", detail: "Combine with your follow-up email for maximum efficiency." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

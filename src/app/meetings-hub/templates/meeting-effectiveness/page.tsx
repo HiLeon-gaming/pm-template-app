@@ -106,7 +106,7 @@ function MeetingEffectivenessContent() {
             { date: "[02/26]", meeting: "[Weekly staff]", score: "3.6", trend: "↑", note: "[Better time management]" },
             { date: "[02/19]", meeting: "[Weekly staff]", score: "3.2", trend: "→", note: "[Ran over by 15 min]" },
             { date: "[02/12]", meeting: "[Weekly staff]", score: "3.0", trend: "↓", note: "[No agenda sent — disorganized]" },
-            { date: "[02/05]", meeting: "[Weekly staff]", score: "3.4", trend: "\u2014", note: "[Baseline score]" },
+            { date: "[02/05]", meeting: "[Weekly staff]", score: "3.4", trend: "—", note: "[Baseline score]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

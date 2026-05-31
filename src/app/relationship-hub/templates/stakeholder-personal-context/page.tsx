@@ -46,11 +46,11 @@ function PersonalContextContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Time Zone", value: "[e.g., EST, PST, CET]", why: "Critical for scheduling. Don\u2019t propose meetings during their off-hours." },
-            { label: "Typical Work Hours", value: "[e.g., 8 AM\u20136 PM; doesn\u2019t check email after 7 PM]", why: "Respect boundaries. Sending messages late signals poor awareness." },
-            { label: "Travel Schedule", value: "[e.g., Travels Mon\u2013Wed most weeks; best reached Thu\u2013Fri]", why: "Know their availability patterns to avoid scheduling friction." },
+            { label: "Time Zone", value: "[e.g., EST, PST, CET]", why: "Critical for scheduling. Don’t propose meetings during their off-hours." },
+            { label: "Typical Work Hours", value: "[e.g., 8 AM–6 PM; doesn’t check email after 7 PM]", why: "Respect boundaries. Sending messages late signals poor awareness." },
+            { label: "Travel Schedule", value: "[e.g., Travels Mon–Wed most weeks; best reached Thu–Fri]", why: "Know their availability patterns to avoid scheduling friction." },
             { label: "Office vs Remote", value: "[In-office Tu/Th; remote M/W/F]", why: "Affects whether to suggest in-person or video meetings." },
-            { label: "Preferred Meeting Days", value: "[e.g., Prefers Tue\u2013Thu; Mondays reserved for planning]", why: "Scheduling on their preferred days increases acceptance rates." },
+            { label: "Preferred Meeting Days", value: "[e.g., Prefers Tue–Thu; Mondays reserved for planning]", why: "Scheduling on their preferred days increases acceptance rates." },
             { label: "Avoid These Times", value: "[e.g., Fridays after 2 PM; month-end close week]", why: "Avoiding no-go windows shows you respect their calendar." },
             { label: "Communication Style", value: "[e.g., Very formal in writing; casual in person; prefers bullet points]", why: "Matching their style builds rapport and reduces friction." },
             { label: "Cultural Considerations", value: "[Greeting style, formality level, holidays observed]", why: "Small cultural awareness gestures build outsized trust." },
@@ -87,10 +87,10 @@ function PersonalContextContent() {
           {[
             { topic: "What excites them professionally", what: "[e.g., AI applications in their industry; building high-performing teams]", how: "Share relevant articles or insights. Shows you listen and think of them." },
             { topic: "Recent career milestone", what: "[e.g., Just got promoted to SVP; celebrating 10 years at company]", how: "Congratulate sincerely. Acknowledge their achievements." },
-            { topic: "Preferred conversation starters", what: "[e.g., Ask about their team\u2019s latest project; mention industry news]", how: "Use these to warm up meetings naturally." },
-            { topic: "Pet peeves (professional)", what: "[e.g., Hates being late; dislikes meetings without agendas; can\u2019t stand jargon]", how: "Avoid these at all costs. Knowing pet peeves prevents accidental friction." },
+            { topic: "Preferred conversation starters", what: "[e.g., Ask about their team’s latest project; mention industry news]", how: "Use these to warm up meetings naturally." },
+            { topic: "Pet peeves (professional)", what: "[e.g., Hates being late; dislikes meetings without agendas; can’t stand jargon]", how: "Avoid these at all costs. Knowing pet peeves prevents accidental friction." },
             { topic: "How they like to be recognized", what: "[e.g., Private thank-you email; public mention in reviews; prefers no fuss]", how: "Recognize them in the way THEY prefer, not the way you prefer." },
-            { topic: "[Other context]", what: "[What you\u2019ve learned]", how: "[How to apply it]" },
+            { topic: "[Other context]", what: "[What you’ve learned]", how: "[How to apply it]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -115,9 +115,9 @@ function PersonalContextContent() {
             <thead><tr><td style={{ backgroundColor: "#EDE9FE", color: "#8B5CF6", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #8B5CF6" }}>USING PERSONAL CONTEXT WELL</td></tr></thead>
             <tbody>
               {[
-                { color: "#8B5CF6", tip: "This page is for YOUR reference only.", detail: "Never share or discuss this page with anyone. It\u2019s your private relationship intelligence." },
-                { color: "#059669", tip: "Only note things they\u2019ve shared openly.", detail: "If it came up in natural conversation, it\u2019s fair to note. Never research personal details." },
-                { color: "#0EA5E9", tip: "Use context naturally, never awkwardly.", detail: "\u201CI saw that article about AI in healthcare and thought of you\u201D is natural. Reciting facts about them is creepy." },
+                { color: "#8B5CF6", tip: "This page is for YOUR reference only.", detail: "Never share or discuss this page with anyone. It’s your private relationship intelligence." },
+                { color: "#059669", tip: "Only note things they’ve shared openly.", detail: "If it came up in natural conversation, it’s fair to note. Never research personal details." },
+                { color: "#0EA5E9", tip: "Use context naturally, never awkwardly.", detail: "“I saw that article about AI in healthcare and thought of you” is natural. Reciting facts about them is creepy." },
                 { color: "#D97706", tip: "Update after every meaningful interaction.", detail: "Add new insights from conversations. Remove anything outdated." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -136,9 +136,9 @@ function PersonalContextContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>BOUNDARIES TO RESPECT</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Never note anything about their personal life unless they share it.", detail: "Family, health, finances \u2014 these are off-limits unless they bring them up." },
-                { color: "#EA580C", tip: "Don\u2019t over-personalize your approach.", detail: "Using too much personal intel feels calculated. Keep it light and natural." },
-                { color: "#D97706", tip: "Delete anything that feels inappropriate.", detail: "If you\u2019d be uncomfortable if they saw this page, remove the entry." },
+                { color: "#DC2626", tip: "Never note anything about their personal life unless they share it.", detail: "Family, health, finances — these are off-limits unless they bring them up." },
+                { color: "#EA580C", tip: "Don’t over-personalize your approach.", detail: "Using too much personal intel feels calculated. Keep it light and natural." },
+                { color: "#D97706", tip: "Delete anything that feels inappropriate.", detail: "If you’d be uncomfortable if they saw this page, remove the entry." },
                 { color: "#6366F1", tip: "Focus on professional effectiveness.", detail: "The goal is better communication and scheduling, not surveillance." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

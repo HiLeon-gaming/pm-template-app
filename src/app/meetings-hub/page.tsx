@@ -49,7 +49,7 @@ const categories: Category[] = [
       {
         title: "Meetings Command Dashboard",
         description:
-          "One-page mission control: today\u2019s meetings, top prep items, open actions, pending decisions, follow-ups due.",
+          "One-page mission control: today’s meetings, top prep items, open actions, pending decisions, follow-ups due.",
         href: `${BASE}/command-dashboard`,
         badge: "\u2705 Built",
         allStar: true,
@@ -90,7 +90,7 @@ const categories: Category[] = [
         href: `${BASE}/agenda-builder`,
         badge: "\u2705 Built",
         allStar: true,
-        whyAllStar: "Best \u201Cmeeting upgrade\u201D page.",
+        whyAllStar: "Best “meeting upgrade” page.",
       },
     ],
   },
@@ -128,7 +128,7 @@ const categories: Category[] = [
       {
         title: "Issues / Blockers Capture",
         description:
-          "What\u2019s stuck, impact, who owns removing it, next update date.",
+          "What’s stuck, impact, who owns removing it, next update date.",
         href: `${BASE}/issues-blockers`,
         badge: "\u2705 Built",
       },
@@ -158,7 +158,7 @@ const categories: Category[] = [
       {
         title: "Timebox Plan (for long meetings)",
         description:
-          "Agenda items with timeboxes + \u201Cif we run over\u201D rules.",
+          "Agenda items with timeboxes + “if we run over” rules.",
         href: `${BASE}/timebox-plan`,
         badge: "\u2705 Built",
       },
@@ -367,7 +367,7 @@ const categories: Category[] = [
       {
         title: "Lessons Learned / Post-Mortem",
         description:
-          "Timeline recap, what went well, what didn\u2019t, key lessons, future actions.",
+          "Timeline recap, what went well, what didn’t, key lessons, future actions.",
         href: `${BASE}/lessons-learned`,
         badge: "\u2705 Built",
         allStar: true,

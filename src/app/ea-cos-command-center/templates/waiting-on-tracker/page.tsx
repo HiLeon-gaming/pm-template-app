@@ -82,7 +82,7 @@ function WaitingOnTrackerContent() {
           <table style={{ width: "100%", borderCollapse: "collapse" as const, border: "none" }}><tbody><tr>
             {[
               { label: "🟢 0-3 days", desc: "On track. No action needed yet.", color: "#059669" },
-              { label: "🟡 4-7 days", desc: "Send a gentle nudge. \u201CJust checking in on [X].\u201D", color: "#D97706" },
+              { label: "🟡 4-7 days", desc: "Send a gentle nudge. “Just checking in on [X].”", color: "#D97706" },
               { label: "🔴 7+ days", desc: "Escalate. Flag to exec or send a direct follow-up.", color: "#DC2626" },
             ].map((item, i) => (
               <td key={i} style={{ padding: i < 2 ? "0 8px 0 0" : "0", verticalAlign: "top" as const, border: "none", width: "33.3%" }}>

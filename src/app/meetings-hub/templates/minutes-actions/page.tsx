@@ -155,7 +155,7 @@ function MinutesActionsContent() {
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
           <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>🅿️ PARKING LOT</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
-            {["[Discuss team restructure — needs Sarah\u2019s input]", "[Review Q3 budget forecast — defer to next month]", "[New tooling proposal — needs cost analysis first]"].map((item, i) => (
+            {["[Discuss team restructure — needs Sarah’s input]", "[Review Q3 budget forecast — defer to next month]", "[New tooling proposal — needs cost analysis first]"].map((item, i) => (
               <tr key={i}><td style={{ ...(i % 2 === 0 ? S.td0 : S.tdAlt), fontSize: "10px" }}>&bull; {item}</td></tr>
             ))}
           </tbody></table>

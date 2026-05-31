@@ -184,7 +184,7 @@ function ReadThisFirstContent() {
         </thead>
         <tbody>
           {[
-            { step: "1", what: "Define success", plain: "Decide what \u201Csuccess\u201D means — outcomes, not just tasks" },
+            { step: "1", what: "Define success", plain: "Decide what “success” means — outcomes, not just tasks" },
             { step: "2", what: "Prioritize the backlog", plain: "Keep a prioritized backlog — best work at the top" },
             { step: "3", what: "Plan a short sprint", plain: "Plan one short sprint (usually 1–2 weeks)" },
             { step: "4", what: "Work daily & unblock", plain: "Work daily, remove blockers fast" },
@@ -382,7 +382,7 @@ function ReadThisFirstContent() {
             { name: "Command Dashboard", why: "One page to see what matters right now", cadence: "Daily" },
             { name: "Product Vision + Outcomes", why: "Keeps the work tied to real success", cadence: "Setup" },
             { name: "Backlog Master", why: "Your single source of truth", cadence: "Weekly" },
-            { name: "Backlog Prioritization", why: "Removes \u201Copinion battles\u201D", cadence: "Refinement" },
+            { name: "Backlog Prioritization", why: "Removes “opinion battles”", cadence: "Refinement" },
             { name: "Sprint Planning Worksheet", why: "Prevents overcommitting", cadence: "Sprint start" },
             { name: "Daily Scrum Notes", why: "Keeps momentum + visibility", cadence: "Daily" },
             { name: "Retro Action Plan Tracker", why: "Turns retros into real improvement", cadence: "Sprint end" },

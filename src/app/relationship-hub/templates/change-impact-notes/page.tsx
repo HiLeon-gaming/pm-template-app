@@ -49,10 +49,10 @@ function ChangeContent() {
         <tbody>
           {[
             { who: "Exec Sponsor", imp: "Medium", how: "Timeline extension may require re-briefing the board. Reflects on her sponsorship.", react: "Concerned", need: "Early warning. Clear explanation of WHY. Talking points for board." },
-            { who: "Finance", imp: "High", how: "Budget increase needed. They\u2019ll need to reallocate or request additional funds.", react: "Resistant", need: "Detailed cost breakdown. ROI justification. Options (lean vs full)." },
+            { who: "Finance", imp: "High", how: "Budget increase needed. They’ll need to reallocate or request additional funds.", react: "Resistant", need: "Detailed cost breakdown. ROI justification. Options (lean vs full)." },
             { who: "Engineering", imp: "Low", how: "Minimal impact on their timeline. May actually reduce pressure on API deadline.", react: "Relieved", need: "Confirm their timeline is unaffected. Show the positive impact." },
             { who: "Marketing", imp: "High", how: "Go-to-market timeline shifts. Campaign planning needs to adjust.", react: "Frustrated", need: "New timeline ASAP. Include them in revised planning." },
-            { who: "End Users", imp: "Medium", how: "Feature delivery delayed. Expectations need resetting.", react: "Disappointed", need: "Clear communication about new timeline and what they\u2019ll get." },
+            { who: "End Users", imp: "Medium", how: "Feature delivery delayed. Expectations need resetting.", react: "Disappointed", need: "Clear communication about new timeline and what they’ll get." },
             { who: "[Stakeholder]", imp: "[H/M/L]", how: "[How does this change specifically affect them?]", react: "[Expected reaction]", need: "[What they need to hear/see from you]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -92,8 +92,8 @@ function ChangeContent() {
             { n: "1", who: "Sponsor", when: "Day 1 AM", channel: "1:1 call", msg: "Brief her first. Get alignment before anyone else hears. Include talking points for her.", owner: "You" },
             { n: "2", who: "Finance", when: "Day 1 PM", channel: "Meeting", msg: "Present options (lean vs full). Show ROI for each. Let them choose.", owner: "You" },
             { n: "3", who: "Marketing", when: "Day 2", channel: "Meeting", msg: "New timeline + revised planning session. Acknowledge the disruption.", owner: "You" },
-            { n: "4", who: "Team", when: "Day 2", channel: "Standup", msg: "What\u2019s changing, why, and what it means for them. Keep it factual.", owner: "You" },
-            { n: "5", who: "End Users", when: "Day 3", channel: "Email", msg: "New timeline. What they\u2019ll get and when. Positive framing.", owner: "Comms" },
+            { n: "4", who: "Team", when: "Day 2", channel: "Standup", msg: "What’s changing, why, and what it means for them. Keep it factual.", owner: "You" },
+            { n: "5", who: "End Users", when: "Day 3", channel: "Email", msg: "New timeline. What they’ll get and when. Positive framing.", owner: "Comms" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -122,7 +122,7 @@ function ChangeContent() {
             <tbody>
               {[
                 { color: "#6366F1", tip: "Tell your sponsor FIRST. Always.", detail: "They should never learn about a change from someone else. Brief them before anyone." },
-                { color: "#059669", tip: "Be transparent about what changed and WHY.", detail: "People can handle bad news. They can\u2019t handle feeling deceived or uninformed." },
+                { color: "#059669", tip: "Be transparent about what changed and WHY.", detail: "People can handle bad news. They can’t handle feeling deceived or uninformed." },
                 { color: "#0EA5E9", tip: "Present options, not just problems.", detail: "Come with at least 2 options and a recommendation. Never just dump a problem." },
                 { color: "#D97706", tip: "Acknowledge the impact on THEM.", detail: "Show you understand how this affects their work. Empathy > information." },
               ].map((r, i) => {
@@ -144,8 +144,8 @@ function ChangeContent() {
               {[
                 { color: "#DC2626", tip: "Surprising people.", detail: "If they hear about the change from someone other than you, trust is damaged." },
                 { color: "#EA580C", tip: "Treating all stakeholders the same.", detail: "High-impact stakeholders need a different conversation than low-impact ones." },
-                { color: "#D97706", tip: "Minimizing the impact.", detail: "Don\u2019t say \u201Cit\u2019s no big deal\u201D if it IS a big deal to them. Acknowledge reality." },
-                { color: "#6366F1", tip: "Not following up after the change.", detail: "Check in 1\u20132 weeks later. Is the change landing well? Any residual issues?" },
+                { color: "#D97706", tip: "Minimizing the impact.", detail: "Don’t say “it’s no big deal” if it IS a big deal to them. Acknowledge reality." },
+                { color: "#6366F1", tip: "Not following up after the change.", detail: "Check in 1–2 weeks later. Is the change landing well? Any residual issues?" },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

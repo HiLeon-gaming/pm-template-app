@@ -10,8 +10,8 @@ import { ThemeProvider, useTheme } from "@/lib/ThemeContext";
 
 type LayoutMode = "full" | "compact";
 const LAYOUTS: { id: LayoutMode; label: string; desc: string; icon: React.ElementType }[] = [
-  { id: "full", label: "Full Profile", desc: "Preferences + do/don\u2019t + meeting prep + tips", icon: LayoutDashboard },
-  { id: "compact", label: "Quick Reference", desc: "Preferences + do/don\u2019t only", icon: AlignJustify },
+  { id: "full", label: "Full Profile", desc: "Preferences + do/don’t + meeting prep + tips", icon: LayoutDashboard },
+  { id: "compact", label: "Quick Reference", desc: "Preferences + do/don’t only", icon: AlignJustify },
 ];
 
 function CommPrefContent() {
@@ -48,15 +48,15 @@ function CommPrefContent() {
         <tbody>
           {[
             { label: "Preferred Channel", value: "[Email / Slack / Teams / Phone / In-person / Text]", why: "Using the wrong channel = messages get ignored. Match THEIR preference, not yours." },
-            { label: "Backup Channel", value: "[If primary doesn\u2019t work, use this]", why: "For urgent situations when the primary channel isn\u2019t responsive." },
-            { label: "Best Days for Meetings", value: "[e.g., Tue\u2013Thu; avoids Mondays and Fridays]", why: "Scheduling on their preferred days increases attendance and engagement." },
-            { label: "Best Time of Day", value: "[Morning / Afternoon / Specific window]", why: "Energy levels vary. Catch them when they\u2019re most receptive." },
+            { label: "Backup Channel", value: "[If primary doesn’t work, use this]", why: "For urgent situations when the primary channel isn’t responsive." },
+            { label: "Best Days for Meetings", value: "[e.g., Tue–Thu; avoids Mondays and Fridays]", why: "Scheduling on their preferred days increases attendance and engagement." },
+            { label: "Best Time of Day", value: "[Morning / Afternoon / Specific window]", why: "Energy levels vary. Catch them when they’re most receptive." },
             { label: "Meeting Format", value: "[Formal agenda / Casual check-in / Written updates / Video vs phone]", why: "Some people hate meetings. Others hate written updates. Know which." },
             { label: "Ideal Meeting Length", value: "[15 min / 30 min / 45 min / 1 hour]", why: "Respecting their time preference shows you understand their constraints." },
             { label: "Communication Style", value: "[Data-driven / Big picture / Detail-oriented / Conversational / Direct]", why: "Mismatch here causes friction. A data person hates vague updates." },
             { label: "Update Frequency", value: "[Weekly / Biweekly / Monthly / Only when needed]", why: "Too frequent = annoyance. Too infrequent = they feel out of the loop." },
             { label: "Preferred Update Format", value: "[Email summary / Dashboard / Verbal brief / Slide deck]", why: "Give them information in the format they actually consume." },
-            { label: "Decision-Making Style", value: "[Quick / Needs time / Consensus-driven / Data-dependent]", why: "Push a slow decider and they\u2019ll resist. Give a fast decider options now." },
+            { label: "Decision-Making Style", value: "[Quick / Needs time / Consensus-driven / Data-dependent]", why: "Push a slow decider and they’ll resist. Give a fast decider options now." },
             { label: "Response Time Expectation", value: "[Same day / 24 hours / 48 hours / No rush]", why: "Match their expectation or set one explicitly to avoid misalignment." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -83,7 +83,7 @@ function CommPrefContent() {
             <tbody>
               {[
                 { text: "[Come prepared with data and options]", guide: "Shows respect for their time and decision-making process." },
-                { text: "[Be concise \u2014 get to the point fast]", guide: "Lead with the ask or the decision needed. Context after." },
+                { text: "[Be concise — get to the point fast]", guide: "Lead with the ask or the decision needed. Context after." },
                 { text: "[Share credit publicly]", guide: "People who feel recognized become your strongest advocates." },
                 { text: "[Give them a heads-up before big announcements]", guide: "Never let them be surprised. Especially in front of their boss." },
                 { text: "[Send agenda before meetings]", guide: "Lets them prepare. Prepared stakeholders make better decisions." },
@@ -105,7 +105,7 @@ function CommPrefContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>WHAT ANNOYS THEM (AVOID THIS)</td></tr></thead>
             <tbody>
               {[
-                { text: "[Long emails without a clear ask]", guide: "If they have to scroll to find the ask, you\u2019ve lost them." },
+                { text: "[Long emails without a clear ask]", guide: "If they have to scroll to find the ask, you’ve lost them." },
                 { text: "[Surprises in public meetings]", guide: "The fastest way to damage trust is to blindside someone publicly." },
                 { text: "[Going over their head without warning]", guide: "Even if justified, warn them first. Respect the chain." },
                 { text: "[Asking for decisions without context]", guide: "Always provide: the issue, the options, and your recommendation." },
@@ -145,7 +145,7 @@ function CommPrefContent() {
             { n: "2", item: "Check open commitments you made to them", guide: "Did you deliver what you promised? If not, address it upfront.", done: "\u2610" },
             { n: "3", item: "Prepare your ask or update in their preferred format", guide: "Data person? Bring numbers. Big-picture? Lead with outcomes.", done: "\u2610" },
             { n: "4", item: "Anticipate their questions or objections", guide: "What will they push back on? Have answers ready.", done: "\u2610" },
-            { n: "5", item: "Confirm you\u2019re using their preferred channel/format", guide: "Video vs phone? Agenda sent? Meeting length appropriate?", done: "\u2610" },
+            { n: "5", item: "Confirm you’re using their preferred channel/format", guide: "Video vs phone? Agenda sent? Meeting length appropriate?", done: "\u2610" },
             { n: "6", item: "Prepare one thing you can offer them (mutual value)", guide: "Information, introduction, recognition, or help with their goals.", done: "\u2610" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -173,8 +173,8 @@ function CommPrefContent() {
             <tbody>
               {[
                 { color: "#8B5CF6", tip: "Match their energy and pace.", detail: "Fast communicators want quick replies. Thoughtful ones want considered responses." },
-                { color: "#059669", tip: "Ask directly: \u201CHow do you prefer I keep you updated?\u201D", detail: "Most people will tell you exactly what they want. Just ask." },
-                { color: "#0EA5E9", tip: "Observe what gets a fast response.", detail: "If they always respond to Slack but ignore email, that\u2019s your answer." },
+                { color: "#059669", tip: "Ask directly: “How do you prefer I keep you updated?”", detail: "Most people will tell you exactly what they want. Just ask." },
+                { color: "#0EA5E9", tip: "Observe what gets a fast response.", detail: "If they always respond to Slack but ignore email, that’s your answer." },
                 { color: "#D97706", tip: "Adapt over time.", detail: "Preferences change with workload and role. Re-check every quarter." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -193,7 +193,7 @@ function CommPrefContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>COMMON COMMUNICATION MISTAKES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Using YOUR preferred channel instead of theirs.", detail: "Just because you love Slack doesn\u2019t mean they do. Adapt." },
+                { color: "#DC2626", tip: "Using YOUR preferred channel instead of theirs.", detail: "Just because you love Slack doesn’t mean they do. Adapt." },
                 { color: "#EA580C", tip: "Burying the lead in long updates.", detail: "Put the decision or ask in the first sentence. Context follows." },
                 { color: "#D97706", tip: "Not following up in writing.", detail: "Verbal agreements are forgotten. Always send a brief written summary." },
                 { color: "#6366F1", tip: "Assuming one size fits all.", detail: "Each stakeholder is different. What works for your sponsor may fail with your SME." },

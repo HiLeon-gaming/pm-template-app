@@ -101,10 +101,10 @@ function MutualValueContent() {
         </tr></thead>
         <tbody>
           {[
-            { gap: "They want visibility into vendor performance but don\u2019t have it", how: "Include vendor metrics in your monthly report. Takes 30 min to compile.", pri: "High", by: "Next report cycle" },
+            { gap: "They want visibility into vendor performance but don’t have it", how: "Include vendor metrics in your monthly report. Takes 30 min to compile.", pri: "High", by: "Next report cycle" },
             { gap: "They need help preparing for board meetings", how: "Offer to draft the project section of their board deck. Shows partnership.", pri: "High", by: "Before next board" },
             { gap: "They want a single-page project health summary", how: "Create a 1-page dashboard they can forward to their leadership.", pri: "Medium", by: "Within 2 weeks" },
-            { gap: "They\u2019re not getting enough recognition for their support", how: "Publicly credit them in your next all-hands or steering committee.", pri: "Medium", by: "This week" },
+            { gap: "They’re not getting enough recognition for their support", how: "Publicly credit them in your next all-hands or steering committee.", pri: "Medium", by: "This week" },
             { gap: "[Enter gap]", how: "[How to fill it]", pri: "[H/M/L]", by: "[Timeline]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -132,9 +132,9 @@ function MutualValueContent() {
             <thead><tr><td style={{ backgroundColor: "#DBEAFE", color: "#0EA5E9", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #0EA5E9" }}>VALUE MAPPING PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#0EA5E9", tip: "Always lead with THEIR value, not yours.", detail: "Frame everything in terms of what it does for them. \u201CThis saves you 3 hours/week\u201D beats \u201CWe built a new feature.\u201D" },
-                { color: "#059669", tip: "Make value tangible and measurable.", detail: "\u201CWe improved quality\u201D is vague. \u201CWe reduced defects by 40%, saving $50K in rework\u201D is compelling." },
-                { color: "#8B5CF6", tip: "Articulate value they didn\u2019t ask for.", detail: "Proactively solving a problem they haven\u2019t mentioned yet makes you invaluable." },
+                { color: "#0EA5E9", tip: "Always lead with THEIR value, not yours.", detail: "Frame everything in terms of what it does for them. “This saves you 3 hours/week” beats “We built a new feature.”" },
+                { color: "#059669", tip: "Make value tangible and measurable.", detail: "“We improved quality” is vague. “We reduced defects by 40%, saving $50K in rework” is compelling." },
+                { color: "#8B5CF6", tip: "Articulate value they didn’t ask for.", detail: "Proactively solving a problem they haven’t mentioned yet makes you invaluable." },
                 { color: "#D97706", tip: "Update this map quarterly.", detail: "Their goals shift. Your value proposition needs to shift with them." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -153,9 +153,9 @@ function MutualValueContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>VALUE EXCHANGE RED FLAGS</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "One-sided value.", detail: "If you\u2019re always asking and never giving, the relationship becomes transactional and fragile." },
-                { color: "#EA580C", tip: "Assumed value vs. perceived value.", detail: "What you THINK you\u2019re delivering may not be what THEY value. Ask them directly." },
-                { color: "#D97706", tip: "Value that\u2019s invisible.", detail: "If they can\u2019t see the value, it doesn\u2019t exist to them. Make your contributions visible." },
+                { color: "#DC2626", tip: "One-sided value.", detail: "If you’re always asking and never giving, the relationship becomes transactional and fragile." },
+                { color: "#EA580C", tip: "Assumed value vs. perceived value.", detail: "What you THINK you’re delivering may not be what THEY value. Ask them directly." },
+                { color: "#D97706", tip: "Value that’s invisible.", detail: "If they can’t see the value, it doesn’t exist to them. Make your contributions visible." },
                 { color: "#6366F1", tip: "Outdated value propositions.", detail: "What made you valuable 6 months ago may not matter now. Their priorities change; your value pitch should too." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

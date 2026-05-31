@@ -47,15 +47,15 @@ function ContactContent() {
         <tbody>
           {[
             { label: "Full Name", value: "[First Last]", note: "Confirm preferred name and pronunciation." },
-            { label: "Title / Role", value: "[Job title]", note: "Update when roles change \u2014 affects communication style." },
+            { label: "Title / Role", value: "[Job title]", note: "Update when roles change — affects communication style." },
             { label: "Organization / Team", value: "[Company, department]", note: "Know their org context for political awareness." },
             { label: "Primary Email", value: "[name@company.com]", note: "Use for formal requests and documentation." },
-            { label: "Secondary Email", value: "[Personal or alternate if shared]", note: "Use only if they\u2019ve explicitly given it to you." },
+            { label: "Secondary Email", value: "[Personal or alternate if shared]", note: "Use only if they’ve explicitly given it to you." },
             { label: "Office Phone", value: "[+1-xxx-xxx-xxxx]", note: "Try this before mobile for non-urgent calls." },
-            { label: "Mobile Phone", value: "[If shared \u2014 urgent only]", note: "Only for true emergencies. Respect boundaries." },
+            { label: "Mobile Phone", value: "[If shared — urgent only]", note: "Only for true emergencies. Respect boundaries." },
             { label: "Slack / Teams", value: "[@handle or display name]", note: "Best for quick questions and informal check-ins." },
             { label: "LinkedIn Profile", value: "[URL]", note: "Useful for understanding their background and network." },
-            { label: "Office Location", value: "[Building, floor \u2014 or Remote]", note: "For in-person meetings and drop-by conversations." },
+            { label: "Office Location", value: "[Building, floor — or Remote]", note: "For in-person meetings and drop-by conversations." },
             { label: "Assistant Name", value: "[EA who manages their calendar]", note: "Your ally for scheduling. Build this relationship." },
             { label: "Assistant Contact", value: "[Email and/or phone]", note: "Go through the EA for meeting requests with busy execs." },
             { label: "Best Way to Reach", value: "[e.g., Slack quick, email formal, call urgent]", note: "Respect their preferences. Wrong channel = annoyance." },
@@ -91,12 +91,12 @@ function ContactContent() {
         </tr></thead>
         <tbody>
           {[
-            { step: "1", action: "Try Slack / Teams", detail: "[Send a direct message marked urgent. Check if they\u2019re online first.]", wait: "15 minutes" },
-            { step: "2", action: "Send email", detail: "[Subject: URGENT \u2014 [Topic]. Keep to 3 sentences max with the ask clear.]", wait: "30 minutes" },
+            { step: "1", action: "Try Slack / Teams", detail: "[Send a direct message marked urgent. Check if they’re online first.]", wait: "15 minutes" },
+            { step: "2", action: "Send email", detail: "[Subject: URGENT — [Topic]. Keep to 3 sentences max with the ask clear.]", wait: "30 minutes" },
             { step: "3", action: "Call office phone", detail: "[Leave a voicemail if no answer. State urgency and callback number.]", wait: "15 minutes" },
-            { step: "4", action: "Call mobile", detail: "[Only if they\u2019ve shared it. Text first: \u201CUrgent \u2014 can I call?\u201D]", wait: "15 minutes" },
+            { step: "4", action: "Call mobile", detail: "[Only if they’ve shared it. Text first: “Urgent — can I call?”]", wait: "15 minutes" },
             { step: "5", action: "Contact their EA", detail: "[Ask the EA to relay the message and help schedule an emergency call.]", wait: "30 minutes" },
-            { step: "6", action: "Contact backup", detail: "[Reach out to the designated backup person with the same urgency.]", wait: "\u2014" },
+            { step: "6", action: "Contact backup", detail: "[Reach out to the designated backup person with the same urgency.]", wait: "—" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -125,7 +125,7 @@ function ContactContent() {
                 { color: "#8B5CF6", tip: "Update contacts whenever someone changes roles.", detail: "Role changes = new email, new EA, new org. Stale contact info fails when you need it most." },
                 { color: "#059669", tip: "Build a relationship with their EA.", detail: "Executive assistants are gatekeepers. Being on good terms with them is a superpower." },
                 { color: "#0EA5E9", tip: "Always respect channel preferences.", detail: "Using the wrong channel sends the wrong message. Slack for quick; email for formal; call for urgent." },
-                { color: "#D97706", tip: "Test your escalation path before you need it.", detail: "Confirm backup contacts and EA details proactively. Don\u2019t discover gaps during a crisis." },
+                { color: "#D97706", tip: "Test your escalation path before you need it.", detail: "Confirm backup contacts and EA details proactively. Don’t discover gaps during a crisis." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -143,9 +143,9 @@ function ContactContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>COMMUNICATION ETIQUETTE</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Never call mobile without warning.", detail: "Text first: \u201CHi, urgent question \u2014 can I call?\u201D Unexpected calls feel intrusive." },
-                { color: "#EA580C", tip: "Don\u2019t use personal contact info for work.", detail: "If they gave you a personal email, it was for emergencies only. Don\u2019t abuse it." },
-                { color: "#D97706", tip: "Match their formality level.", detail: "If they sign emails \u201CBest, Maria\u201D don\u2019t reply \u201CHey!\u201D Mirror their tone." },
+                { color: "#DC2626", tip: "Never call mobile without warning.", detail: "Text first: “Hi, urgent question — can I call?” Unexpected calls feel intrusive." },
+                { color: "#EA580C", tip: "Don’t use personal contact info for work.", detail: "If they gave you a personal email, it was for emergencies only. Don’t abuse it." },
+                { color: "#D97706", tip: "Match their formality level.", detail: "If they sign emails “Best, Maria” don’t reply “Hey!” Mirror their tone." },
                 { color: "#6366F1", tip: "Respect time zones.", detail: "Note their working hours. Sending Slack messages at 11pm signals poor boundaries." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

@@ -37,7 +37,7 @@ function SkipLevelContent() {
   const renderHeader = () => (
     <div ref={headerRef} style={{ marginBottom: "12px" }}>
       <table style={S.tbl}><tbody>
-        <tr><td style={{ ...S.tdLabel, width: "18%" }}>Skip-Level With</td><td style={{ ...S.td0, width: "32%" }}>[Name — their manager\u2019s direct report]</td><td style={{ ...S.tdLabel, width: "18%" }}>Date</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY]</td></tr>
+        <tr><td style={{ ...S.tdLabel, width: "18%" }}>Skip-Level With</td><td style={{ ...S.td0, width: "32%" }}>[Name — their manager’s direct report]</td><td style={{ ...S.tdLabel, width: "18%" }}>Date</td><td style={{ ...S.td0, width: "32%" }}>[MM/DD/YYYY]</td></tr>
         <tr><td style={S.tdLabelAlt}>Their Manager</td><td style={S.tdAlt}>[Name — your direct report]</td><td style={S.tdLabelAlt}>Cadence</td><td style={{ ...S.tdAlt, fontWeight: 700, color: accent }}>[Quarterly / Monthly]</td></tr>
         <tr><td style={S.tdLabel}>Role / Team</td><td style={S.td0}>[Title — Team Name]</td><td style={S.tdLabel}>Duration</td><td style={S.td0}>[30 minutes]</td></tr>
       </tbody></table>
@@ -52,9 +52,9 @@ function SkipLevelContent() {
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Choose 4-6 questions per session. Rotate them across sessions. The goal is to listen, not interrogate.</p>
       <table style={LT}><tbody><tr>
         {[
-          { title: "🏢 About the Team", questions: ["How\u2019s the team doing overall?", "What\u2019s working well on your team?", "What would you change if you could?", "Do you feel supported by your manager?", "Is the workload manageable?"], color: "#3B82F6" },
-          { title: "🎯 About the Work", questions: ["What are you most excited about right now?", "What\u2019s been the most frustrating recently?", "Do you have the tools and resources you need?", "Is anything blocking your best work?", "What\u2019s one thing we could improve?"], color: "#059669" },
-          { title: "🌱 About Growth", questions: ["Do you feel you\u2019re growing in your role?", "What skills would you like to develop?", "Do you see a clear career path here?", "Is there anything I can do to help your career?", "What would make this job even better?"], color: accentDark },
+          { title: "🏢 About the Team", questions: ["How’s the team doing overall?", "What’s working well on your team?", "What would you change if you could?", "Do you feel supported by your manager?", "Is the workload manageable?"], color: "#3B82F6" },
+          { title: "🎯 About the Work", questions: ["What are you most excited about right now?", "What’s been the most frustrating recently?", "Do you have the tools and resources you need?", "Is anything blocking your best work?", "What’s one thing we could improve?"], color: "#059669" },
+          { title: "🌱 About Growth", questions: ["Do you feel you’re growing in your role?", "What skills would you like to develop?", "Do you see a clear career path here?", "Is there anything I can do to help your career?", "What would make this job even better?"], color: accentDark },
         ].map((s, i) => (
           <td key={i} style={{ ...LC, width: "33.3%", padding: i < 2 ? "0 4px 0 0" : "0" }}>
             <table style={S.tbl}><tbody>
@@ -77,8 +77,8 @@ function SkipLevelContent() {
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Questions Asked</td><td style={S.td0}>[Which questions did you use?]</td></tr>
         <tr><td style={S.tdLabelAlt}>Key Themes</td><td style={S.tdAlt}>[What patterns or themes emerged?]</td></tr>
         <tr><td style={S.tdLabel}>Concerns Raised</td><td style={S.td0}>[Any red flags, frustrations, or risks?]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Positive Signals</td><td style={S.tdAlt}>[What\u2019s going well? Recognition-worthy moments?]</td></tr>
-        <tr><td style={S.tdLabel}>Their Manager\u2019s Impact</td><td style={S.td0}>[How do they feel about their direct manager? Any coaching needed?]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Positive Signals</td><td style={S.tdAlt}>[What’s going well? Recognition-worthy moments?]</td></tr>
+        <tr><td style={S.tdLabel}>Their Manager’s Impact</td><td style={S.td0}>[How do they feel about their direct manager? Any coaching needed?]</td></tr>
         <tr><td style={S.tdLabelAlt}>Overall Mood</td><td style={{ ...S.tdAlt, fontWeight: 700, color: accent }}>[😊 Positive / 😐 Neutral / 😟 Concerned / 🚩 Red Flag]</td></tr>
       </tbody></table>
     </div>

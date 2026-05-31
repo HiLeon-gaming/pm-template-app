@@ -50,7 +50,7 @@ function WinsContent() {
         <tbody>
           {[
             { n: "1", win: "Vendor selection completed 1 week ahead of schedule. SteerCo approved unanimously.", who: "You + Maria (Sponsor)", impact: "De-risked Phase 1 timeline. Built SteerCo confidence.", amplify: "Mention in next team update. Thank Maria publicly." },
-            { n: "2", win: "David Park\u2019s relationship moved from Red to Amber. Monthly budget updates restored trust.", who: "You", impact: "Removed budget escalation risk. Finance now supportive.", amplify: "Continue cadence. Share approach as best practice." },
+            { n: "2", win: "David Park’s relationship moved from Red to Amber. Monthly budget updates restored trust.", who: "You", impact: "Removed budget escalation risk. Finance now supportive.", amplify: "Continue cadence. Share approach as best practice." },
             { n: "3", win: "Team shipped 3 sprint deliverables with zero defects. QA praised the quality.", who: "Engineering team", impact: "Built credibility with stakeholders. Reduced rework cycle.", amplify: "Send team recognition email. CC their manager." },
             { n: "4", win: "Sponsor actively championed the project in leadership meeting without being asked.", who: "Maria Lopez", impact: "Secured Q2 budget. Raised project visibility.", amplify: "Thank her 1:1. Ask what she needs to keep championing." },
             { n: "5", win: "[What went well?]", who: "[Who deserves credit?]", impact: "[Why does this matter?]", amplify: "[How to build on it]" },
@@ -88,7 +88,7 @@ function WinsContent() {
           {[
             { who: "Maria Lopez", action: "Send thank-you message for championing in leadership meeting. Specific: mention the budget outcome.", channel: "Private email", when: "This week" },
             { who: "Engineering Team", action: "Team recognition for zero-defect sprint. CC their manager and skip-level.", channel: "Team email", when: "Today" },
-            { who: "David Park", action: "Acknowledge improved collaboration. \u201CAppreciate your patience and partnership.\u201D", channel: "Next 1:1", when: "This week" },
+            { who: "David Park", action: "Acknowledge improved collaboration. “Appreciate your patience and partnership.”", channel: "Next 1:1", when: "This week" },
             { who: "QA Team", action: "Thank them for thorough testing that contributed to zero defects.", channel: "Slack shoutout", when: "Today" },
             { who: "[Person]", action: "[What recognition are they due?]", channel: "[How]", when: "[When]" },
           ].map((r, i) => {
@@ -114,16 +114,16 @@ function WinsContent() {
       <CopyButton targetRef={momentumRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
-          <th style={{ ...S.thPrimary, width: "20%" }}>What\u2019s Working</th>
-          <th style={S.thPrimary}>Why It\u2019s Working</th>
+          <th style={{ ...S.thPrimary, width: "20%" }}>What’s Working</th>
+          <th style={S.thPrimary}>Why It’s Working</th>
           <th style={{ ...S.thPrimary, width: "25%" }}>How to Keep It Going</th>
         </tr></thead>
         <tbody>
           {[
-            { what: "Monthly budget updates to Finance", why: "David knows what to expect. No surprises. Trust rebuilt through consistency.", keep: "Don\u2019t skip a month. Same format, same day. Consistency IS the strategy." },
-            { what: "Sponsor pre-briefing before SteerCo", why: "Maria is never surprised. She can champion confidently because she\u2019s well-prepared.", keep: "Send pre-brief 48 hours before SteerCo. Include talking points." },
-            { what: "Zero-defect engineering sprints", why: "Clear requirements + thorough QA + team pride in quality.", keep: "Celebrate publicly. Don\u2019t let quality slip under deadline pressure." },
-            { what: "[What\u2019s going well?]", why: "[Why is it working?]", keep: "[How to sustain it]" },
+            { what: "Monthly budget updates to Finance", why: "David knows what to expect. No surprises. Trust rebuilt through consistency.", keep: "Don’t skip a month. Same format, same day. Consistency IS the strategy." },
+            { what: "Sponsor pre-briefing before SteerCo", why: "Maria is never surprised. She can champion confidently because she’s well-prepared.", keep: "Send pre-brief 48 hours before SteerCo. Include talking points." },
+            { what: "Zero-defect engineering sprints", why: "Clear requirements + thorough QA + team pride in quality.", keep: "Celebrate publicly. Don’t let quality slip under deadline pressure." },
+            { what: "[What’s going well?]", why: "[Why is it working?]", keep: "[How to sustain it]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -150,8 +150,8 @@ function WinsContent() {
               {[
                 { color: "#D97706", tip: "Wins build credibility.", detail: "Every win you document is evidence of competence. Use them in reviews, briefs, and updates." },
                 { color: "#059669", tip: "Recognition builds loyalty.", detail: "People remember who noticed their work. 5 minutes of recognition = months of goodwill." },
-                { color: "#0EA5E9", tip: "Momentum is fragile.", detail: "What\u2019s working now won\u2019t work forever. Actively reinforce the things that are going well." },
-                { color: "#DC2626", tip: "PMs who only report problems lose trust.", detail: "Balance your updates. For every risk, share a win. It shows you\u2019re managing, not just reacting." },
+                { color: "#0EA5E9", tip: "Momentum is fragile.", detail: "What’s working now won’t work forever. Actively reinforce the things that are going well." },
+                { color: "#DC2626", tip: "PMs who only report problems lose trust.", detail: "Balance your updates. For every risk, share a win. It shows you’re managing, not just reacting." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -169,7 +169,7 @@ function WinsContent() {
             <thead><tr><td style={{ backgroundColor: "#DCFCE7", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>RECOGNITION PLAYBOOK</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Be specific.", detail: "\u201CGreat job\u201D is nice. \u201CYour vendor analysis saved us $40K and 2 weeks\u201D is powerful." },
+                { color: "#059669", tip: "Be specific.", detail: "“Great job” is nice. “Your vendor analysis saved us $40K and 2 weeks” is powerful." },
                 { color: "#0EA5E9", tip: "CC their manager.", detail: "Public recognition that reaches leadership is 10x more valuable than private thanks." },
                 { color: "#6366F1", tip: "Recognize effort, not just results.", detail: "Someone who tried hard and failed deserves recognition too. It builds psychological safety." },
                 { color: "#D97706", tip: "Make it timely.", detail: "Recognition 6 weeks later is meaningless. Do it within 48 hours of the win." },

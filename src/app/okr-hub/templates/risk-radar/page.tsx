@@ -119,7 +119,7 @@ function RiskRadarContent() {
               {[
                 { color: "#DC2626", tip: "Every risk needs a trigger point.", detail: "\u201cIf X happens by Y date, we escalate / pivot.\u201d" },
                 { color: accent, tip: "Review risks weekly.", detail: "Spend 2 min at each check-in: any risk changed?" },
-                { color: "#D97706", tip: "Limit to 5\u20137 active risks.", detail: "If everything is a risk, nothing gets attention." },
+                { color: "#D97706", tip: "Limit to 5–7 active risks.", detail: "If everything is a risk, nothing gets attention." },
                 { color: "#059669", tip: "Closed risks are wins.", detail: "When mitigated, celebrate. The system is working." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

@@ -47,11 +47,11 @@ function NegotiationContent() {
         <tbody>
           {[
             { label: "What You Want (Ideal)", yours: "[Your best-case outcome. Be specific.]", theirs: "[What they ideally want. Think from their perspective.]" },
-            { label: "What You\u2019ll Accept (Minimum)", yours: "[Your walk-away line. What\u2019s the minimum you can live with?]", theirs: "[What\u2019s the minimum they\u2019d accept?]" },
-            { label: "Your BATNA", yours: "[Best Alternative To Negotiated Agreement. What\u2019s your plan B if this fails?]", theirs: "[Their alternative if they don\u2019t agree with you. How strong is it?]" },
+            { label: "What You’ll Accept (Minimum)", yours: "[Your walk-away line. What’s the minimum you can live with?]", theirs: "[What’s the minimum they’d accept?]" },
+            { label: "Your BATNA", yours: "[Best Alternative To Negotiated Agreement. What’s your plan B if this fails?]", theirs: "[Their alternative if they don’t agree with you. How strong is it?]" },
             { label: "What You Can Offer", yours: "[What do you have that they value? Flexibility, resources, timeline?]", theirs: "[What can they offer you? Budget, headcount, priority?]" },
-            { label: "Their Key Concern", yours: "[What are they most worried about?]", theirs: "[What do they think YOU\u2019RE most worried about?]" },
-            { label: "Your Opening Move", yours: "[How will you start the conversation? What\u2019s your framing?]", theirs: "[How do you expect them to open?]" },
+            { label: "Their Key Concern", yours: "[What are they most worried about?]", theirs: "[What do they think YOU’RE most worried about?]" },
+            { label: "Your Opening Move", yours: "[How will you start the conversation? What’s your framing?]", theirs: "[How do you expect them to open?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -86,7 +86,7 @@ function NegotiationContent() {
             { dim: "Scope", flex: "High", range: "Phase 2 features are deferrable. Core platform is non-negotiable.", give: "Defer Phase 2 features in exchange for keeping timeline." },
             { dim: "Resources", flex: "Medium", range: "Need minimum 3 FTEs. Could work with 2.5 if senior.", give: "If fewer resources, need longer timeline or reduced scope." },
             { dim: "Approach", flex: "High", range: "Can switch from custom build to vendor solution for module 3.", give: "Vendor approach saves time but costs more in licensing." },
-            { dim: "[Dimension]", flex: "[H/M/L]", range: "[Your acceptable range]", give: "[Reciprocal concession you\u2019d want]" },
+            { dim: "[Dimension]", flex: "[H/M/L]", range: "[Your acceptable range]", give: "[Reciprocal concession you’d want]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const fc = r.flex === "High" ? { bg: C.badgeGreenBg, fg: C.badgeGreenFg } : r.flex === "Medium" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : r.flex === "Low" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -115,8 +115,8 @@ function NegotiationContent() {
               {[
                 { color: "#6366F1", tip: "Preparation wins negotiations.", detail: "The person who prepares more wins. This sheet IS your preparation." },
                 { color: "#059669", tip: "Seek win-win, not zero-sum.", detail: "Internal negotiations are not battles. Both sides need to walk away feeling good." },
-                { color: "#0EA5E9", tip: "Never negotiate against yourself.", detail: "Make your ask, then wait. Don\u2019t lower your position before they\u2019ve even responded." },
-                { color: "#D97706", tip: "Know your BATNA before you start.", detail: "If you don\u2019t know your alternative, you\u2019ll accept a bad deal out of fear." },
+                { color: "#0EA5E9", tip: "Never negotiate against yourself.", detail: "Make your ask, then wait. Don’t lower your position before they’ve even responded." },
+                { color: "#D97706", tip: "Know your BATNA before you start.", detail: "If you don’t know your alternative, you’ll accept a bad deal out of fear." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -135,7 +135,7 @@ function NegotiationContent() {
             <tbody>
               {[
                 { color: "#D97706", tip: "Anchor first.", detail: "The first number on the table sets the frame. Make your ask early and let them negotiate down." },
-                { color: "#DC2626", tip: "Never give without getting.", detail: "Every concession should come with a reciprocal ask. \u201CI can flex on X if you can give me Y.\u201D" },
+                { color: "#DC2626", tip: "Never give without getting.", detail: "Every concession should come with a reciprocal ask. “I can flex on X if you can give me Y.”" },
                 { color: "#EA580C", tip: "Use silence.", detail: "After making your ask, stop talking. Silence makes people uncomfortable and they often concede." },
                 { color: "#059669", tip: "Summarize agreements in writing.", detail: "After the negotiation, send a follow-up email confirming what was agreed. Memories differ." },
               ].map((r, i) => {

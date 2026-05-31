@@ -48,11 +48,11 @@ function ObjectionContent() {
         </tr></thead>
         <tbody>
           {[
-            { n: "1", obj: "\"We don\u2019t have the budget for this.\"", from: "Finance / CFO", resp: "\"I understand budget is tight. Here\u2019s the cost of NOT doing this: [impact data]. I\u2019ve prepared a lean option at 60% of the cost that still delivers the core value.\"", evidence: "ROI analysis, cost-of-delay model" },
-            { n: "2", obj: "\"This isn\u2019t a priority right now.\"", from: "Sponsor / Leadership", resp: "\"I hear you. Can we align on WHEN it becomes a priority? If we wait until Q3, we risk [specific impact]. What would need to be true for this to move up?\"", evidence: "Timeline impact, competitor data" },
-            { n: "3", obj: "\"We tried this before and it failed.\"", from: "Any stakeholder", resp: "\"You\u2019re right, and I\u2019ve studied what happened. Here\u2019s what\u2019s different this time: [3 specific differences]. We\u2019ve addressed the root causes of the previous failure.\"", evidence: "Post-mortem from previous attempt" },
-            { n: "4", obj: "\"My team doesn\u2019t have capacity.\"", from: "Engineering / Ops", resp: "\"I understand. Could we look at what we could defer to create capacity? Alternatively, here\u2019s a phased approach that only needs [X hours/week] from your team initially.\"", evidence: "Phased plan, resource estimate" },
-            { n: "5", obj: "\"I need to think about it.\"", from: "Any decision-maker", resp: "\"Absolutely. What specific concerns can I address to help? I\u2019ll follow up with [supporting info] by [date]. Can we reconnect [specific date] to discuss?\"", evidence: "Follow-up materials ready" },
+            { n: "1", obj: "\"We don’t have the budget for this.\"", from: "Finance / CFO", resp: "\"I understand budget is tight. Here’s the cost of NOT doing this: [impact data]. I’ve prepared a lean option at 60% of the cost that still delivers the core value.\"", evidence: "ROI analysis, cost-of-delay model" },
+            { n: "2", obj: "\"This isn’t a priority right now.\"", from: "Sponsor / Leadership", resp: "\"I hear you. Can we align on WHEN it becomes a priority? If we wait until Q3, we risk [specific impact]. What would need to be true for this to move up?\"", evidence: "Timeline impact, competitor data" },
+            { n: "3", obj: "\"We tried this before and it failed.\"", from: "Any stakeholder", resp: "\"You’re right, and I’ve studied what happened. Here’s what’s different this time: [3 specific differences]. We’ve addressed the root causes of the previous failure.\"", evidence: "Post-mortem from previous attempt" },
+            { n: "4", obj: "\"My team doesn’t have capacity.\"", from: "Engineering / Ops", resp: "\"I understand. Could we look at what we could defer to create capacity? Alternatively, here’s a phased approach that only needs [X hours/week] from your team initially.\"", evidence: "Phased plan, resource estimate" },
+            { n: "5", obj: "\"I need to think about it.\"", from: "Any decision-maker", resp: "\"Absolutely. What specific concerns can I address to help? I’ll follow up with [supporting info] by [date]. Can we reconnect [specific date] to discuss?\"", evidence: "Follow-up materials ready" },
             { n: "6", obj: "[Common objection you hear]", from: "[Who says this]", resp: "[Your prepared, thoughtful response]", evidence: "[Data or evidence that supports your response]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -83,11 +83,11 @@ function ObjectionContent() {
         </tr></thead>
         <tbody>
           {[
-            "What\u2019s the hardest question someone could ask? Am I prepared for it?",
-            "Who in the room is most likely to push back? What\u2019s their concern?",
+            "What’s the hardest question someone could ask? Am I prepared for it?",
+            "Who in the room is most likely to push back? What’s their concern?",
             "Do I have data/evidence ready for my top 3 objections?",
-            "Have I prepared a \u201Clean\u201D or \u201Cphased\u201D alternative if they reject the full proposal?",
-            "Am I ready to say \u201CI don\u2019t know, I\u2019ll find out\u201D if I genuinely don\u2019t have the answer?",
+            "Have I prepared a “lean” or “phased” alternative if they reject the full proposal?",
+            "Am I ready to say “I don’t know, I’ll find out” if I genuinely don’t have the answer?",
             "Have I validated my responses with a trusted colleague or advisor?",
           ].map((item, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -112,9 +112,9 @@ function ObjectionContent() {
             <thead><tr><td style={{ backgroundColor: "#EDE9FE", color: "#6366F1", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #6366F1" }}>OBJECTION HANDLING PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#6366F1", tip: "Listen fully before responding.", detail: "Don\u2019t interrupt. Let them finish. Then acknowledge before you counter." },
-                { color: "#059669", tip: "Acknowledge, don\u2019t dismiss.", detail: "\u201CThat\u2019s a fair concern\u201D > \u201CActually, that\u2019s not right.\u201D Validate first, then redirect." },
-                { color: "#0EA5E9", tip: "Use \u201CAnd\u201D instead of \u201CBut.\u201D", detail: "\u201CI hear your concern AND here\u2019s what we\u2019ve done to address it\u201D is more collaborative." },
+                { color: "#6366F1", tip: "Listen fully before responding.", detail: "Don’t interrupt. Let them finish. Then acknowledge before you counter." },
+                { color: "#059669", tip: "Acknowledge, don’t dismiss.", detail: "“That’s a fair concern” > “Actually, that’s not right.” Validate first, then redirect." },
+                { color: "#0EA5E9", tip: "Use “And” instead of “But.”", detail: "“I hear your concern AND here’s what we’ve done to address it” is more collaborative." },
                 { color: "#D97706", tip: "Have data ready, but lead with empathy.", detail: "Data wins arguments. Empathy wins relationships. You need both." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -134,7 +134,7 @@ function ObjectionContent() {
             <tbody>
               {[
                 { color: "#DC2626", tip: "Never get defensive.", detail: "Defensiveness signals insecurity. Stay calm, stay curious, stay professional." },
-                { color: "#EA580C", tip: "Never make up an answer.", detail: "If you don\u2019t know, say so. \u201CGreat question. Let me get you the accurate data by tomorrow.\u201D" },
+                { color: "#EA580C", tip: "Never make up an answer.", detail: "If you don’t know, say so. “Great question. Let me get you the accurate data by tomorrow.”" },
                 { color: "#D97706", tip: "Never dismiss their concern publicly.", detail: "Even if the objection is wrong, dismissing it in front of others damages the relationship." },
                 { color: "#6366F1", tip: "Never argue past the close.", detail: "If they agree, stop talking. Over-explaining after agreement reopens objections." },
               ].map((r, i) => {

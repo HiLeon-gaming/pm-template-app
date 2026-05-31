@@ -96,13 +96,13 @@ function EstimationGuideContent() {
         </tr></thead>
         <tbody>
           {[
-            { pts: "1", story: "[Update checkout button text from \u201CBuy\u201D to \u201CPlace Order\u201D]", epic: "[Checkout v1]", why: "[Single text change, no logic, no testing needed beyond visual check]" },
+            { pts: "1", story: "[Update checkout button text from “Buy” to “Place Order”]", epic: "[Checkout v1]", why: "[Single text change, no logic, no testing needed beyond visual check]" },
             { pts: "2", story: "[Add email validation to signup form]", epic: "[Onboarding]", why: "[One component, clear regex rule, one test case]" },
             { pts: "3", story: "[Build order confirmation page with dynamic order details]", epic: "[Checkout v1]", why: "[New page, API call to fetch order, some conditional rendering]" },
             { pts: "5", story: "[Implement Apple Pay checkout flow]", epic: "[Payments]", why: "[New vendor SDK, payment processing logic, error handling, 3+ ACs]" },
             { pts: "8", story: "[Build real-time order tracking with status updates]", epic: "[Post-purchase]", why: "[WebSocket integration, shipping API, multiple states, complex UI]" },
-            { pts: "—", story: "[Add your team\u2019s reference story]", epic: "", why: "" },
-            { pts: "—", story: "[Add your team\u2019s reference story]", epic: "", why: "" },
+            { pts: "—", story: "[Add your team’s reference story]", epic: "", why: "" },
+            { pts: "—", story: "[Add your team’s reference story]", epic: "", why: "" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -138,7 +138,7 @@ function EstimationGuideContent() {
           <table style={S.tbl}>
             <thead><tr><td style={{ backgroundColor: "#DC2626", color: C.white, padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}` }}>🚫 DON&apos;T</td></tr></thead>
             <tbody>
-              {["Don\u2019t convert points to hours — they\u2019re relative, not absolute", "Don\u2019t let one person dominate estimation — everyone votes", "Don\u2019t estimate without understanding acceptance criteria", "Don\u2019t use velocity as a performance metric — it\u2019s for planning", "Don\u2019t compare velocity across teams — it\u2019s team-specific"].map((t, i) => (
+              {["Don’t convert points to hours — they’re relative, not absolute", "Don’t let one person dominate estimation — everyone votes", "Don’t estimate without understanding acceptance criteria", "Don’t use velocity as a performance metric — it’s for planning", "Don’t compare velocity across teams — it’s team-specific"].map((t, i) => (
                 <tr key={i}><td style={{ ...S.td0, backgroundColor: i % 2 === 0 ? C.white : C.rowAlt, fontSize: "10px", padding: "5px 12px" }}>• {t}</td></tr>
               ))}
             </tbody>

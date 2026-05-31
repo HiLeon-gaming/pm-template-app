@@ -152,7 +152,7 @@ function InitiativeBrainstormContent() {
                 { color: accent, tip: "Brainstorm first, evaluate second.", detail: "Capture everything, then filter. Don't shoot down ideas early." },
                 { color: "#059669", tip: "High-impact, low-effort first.", detail: "Quick wins build momentum and free capacity for bigger bets." },
                 { color: "#DC2626", tip: "Every KR needs \u2265 1 initiative.", detail: "A Key Result without an initiative is just a wish." },
-                { color: "#7C3AED", tip: "Limit to 5\u20138 initiatives total.", detail: "More = no focus. Use the Stop Doing list to create room." },
+                { color: "#7C3AED", tip: "Limit to 5–8 initiatives total.", detail: "More = no focus. Use the Stop Doing list to create room." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

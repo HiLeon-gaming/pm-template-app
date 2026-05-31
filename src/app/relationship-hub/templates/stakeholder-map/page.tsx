@@ -46,10 +46,10 @@ function MapContent() {
         </tr></thead>
         <tbody>
           {[
-            { quad: "HIGH Influence\nHIGH Interest", bg: "#FEE2E2", fg: "#DC2626", strat: "Manage Closely", names: "Maria Lopez (Sponsor) \u2014 Weekly 1:1s, proactive updates, early warning on risks.\nSteerCo Members \u2014 Monthly formal updates, quarterly deep dives." },
-            { quad: "HIGH Influence\nLOW Interest", bg: "#FEF3C7", fg: "#D97706", strat: "Keep Satisfied", names: "CFO / Finance VP \u2014 Monthly budget summaries. Don\u2019t overload, but never surprise.\nHR VP \u2014 Periodic updates on headcount needs. Keep informed on resource asks." },
-            { quad: "LOW Influence\nHIGH Interest", bg: "#DBEAFE", fg: "#1D4ED8", strat: "Keep Informed", names: "Sarah Chen (Marketing) \u2014 Regular updates on features and timelines.\nEnd Users / Champions \u2014 Per-milestone comms. They care but can\u2019t approve." },
-            { quad: "LOW Influence\nLOW Interest", bg: "#F3F4F6", fg: "#6B7280", strat: "Monitor", names: "Vendor contacts \u2014 As-needed only.\nPeripheral teams \u2014 Minimal comms unless something changes." },
+            { quad: "HIGH Influence\nHIGH Interest", bg: "#FEE2E2", fg: "#DC2626", strat: "Manage Closely", names: "Maria Lopez (Sponsor) — Weekly 1:1s, proactive updates, early warning on risks.\nSteerCo Members — Monthly formal updates, quarterly deep dives." },
+            { quad: "HIGH Influence\nLOW Interest", bg: "#FEF3C7", fg: "#D97706", strat: "Keep Satisfied", names: "CFO / Finance VP — Monthly budget summaries. Don’t overload, but never surprise.\nHR VP — Periodic updates on headcount needs. Keep informed on resource asks." },
+            { quad: "LOW Influence\nHIGH Interest", bg: "#DBEAFE", fg: "#1D4ED8", strat: "Keep Informed", names: "Sarah Chen (Marketing) — Regular updates on features and timelines.\nEnd Users / Champions — Per-milestone comms. They care but can’t approve." },
+            { quad: "LOW Influence\nLOW Interest", bg: "#F3F4F6", fg: "#6B7280", strat: "Monitor", names: "Vendor contacts — As-needed only.\nPeripheral teams — Minimal comms unless something changes." },
           ].map((r, i) => (
             <tr key={i}>
               <td style={{ ...S.td0, backgroundColor: r.bg, fontSize: "10px", fontWeight: 800, color: r.fg, textAlign: "center" as const, whiteSpace: "pre-line" as const, lineHeight: "1.5" }}>{r.quad}</td>
@@ -108,8 +108,8 @@ function MapContent() {
         <tbody>
           {[
             { name: "David Park", prev: "Monitor", curr: "Keep Satisfied", why: "Got promoted. Now has budget authority over our initiative.", adj: "Increased from quarterly to monthly touchpoints." },
-            { name: "[Stakeholder]", prev: "[Quadrant]", curr: "[Quadrant]", why: "[What changed]", adj: "[How you\u2019re adapting]" },
-            { name: "[New stakeholder]", prev: "N/A (new)", curr: "[Quadrant]", why: "[Why they\u2019re now relevant]", adj: "[Initial engagement plan]" },
+            { name: "[Stakeholder]", prev: "[Quadrant]", curr: "[Quadrant]", why: "[What changed]", adj: "[How you’re adapting]" },
+            { name: "[New stakeholder]", prev: "N/A (new)", curr: "[Quadrant]", why: "[Why they’re now relevant]", adj: "[Initial engagement plan]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -137,8 +137,8 @@ function MapContent() {
             <tbody>
               {[
                 { color: "#6366F1", tip: "Review quarterly, not just once.", detail: "People get promoted, leave, change priorities. Your map must evolve." },
-                { color: "#059669", tip: "Don\u2019t confuse seniority with influence.", detail: "A mid-level engineer who controls a critical dependency can have more influence than a VP." },
-                { color: "#0EA5E9", tip: "Watch for hidden stakeholders.", detail: "Executive assistants, informal advisors, and \u201Cculture carriers\u201D often have outsized influence." },
+                { color: "#059669", tip: "Don’t confuse seniority with influence.", detail: "A mid-level engineer who controls a critical dependency can have more influence than a VP." },
+                { color: "#0EA5E9", tip: "Watch for hidden stakeholders.", detail: "Executive assistants, informal advisors, and “culture carriers” often have outsized influence." },
                 { color: "#D97706", tip: "Interest can change overnight.", detail: "A re-org, a new project, or a crisis can suddenly make someone very interested in your work." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -158,9 +158,9 @@ function MapContent() {
             <tbody>
               {[
                 { color: "#DC2626", tip: "Manage Closely: Your inner circle.", detail: "High touch. Frequent updates. Pre-brief on risks. These people make or break your work." },
-                { color: "#D97706", tip: "Keep Satisfied: Powerful but distant.", detail: "Don\u2019t bother them with details. Give them what they need and stay out of trouble." },
+                { color: "#D97706", tip: "Keep Satisfied: Powerful but distant.", detail: "Don’t bother them with details. Give them what they need and stay out of trouble." },
                 { color: "#0EA5E9", tip: "Keep Informed: Engaged supporters.", detail: "They care about your work. Keep them updated so they advocate for you." },
-                { color: "#6B7280", tip: "Monitor: Low priority.", detail: "Minimal effort. Check quarterly for changes. Don\u2019t ignore \u2014 just don\u2019t over-invest." },
+                { color: "#6B7280", tip: "Monitor: Low priority.", detail: "Minimal effort. Check quarterly for changes. Don’t ignore — just don’t over-invest." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

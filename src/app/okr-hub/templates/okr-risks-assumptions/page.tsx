@@ -147,9 +147,9 @@ function RisksAssumptionsContent() {
               {[
                 { color: "#DC2626", tip: "Review risks weekly.", detail: "Check top 3 risks every Monday during weekly review." },
                 { color: accent, tip: "Validate assumptions early.", detail: "Biggest waste = plan built on false assumption. Test in first 2 weeks." },
-                { color: "#059669", tip: "Every risk needs a Plan B.", detail: "'Hope it doesn\u2019t happen' is not a plan." },
+                { color: "#059669", tip: "Every risk needs a Plan B.", detail: "'Hope it doesn’t happen' is not a plan." },
                 { color: "#D97706", tip: "Risks \u2260 Issues.", detail: "Risk = might happen. Issue = IS happening. Issues go to Blockers page." },
-                { color: "#0EA5E9", tip: "Be honest.", detail: "Listing risks isn\u2019t negative \u2014 it\u2019s smart leadership." },
+                { color: "#0EA5E9", tip: "Be honest.", detail: "Listing risks isn’t negative — it’s smart leadership." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

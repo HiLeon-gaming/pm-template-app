@@ -115,10 +115,10 @@ function MetricIntegrityContent() {
             <thead><tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>✅ INTEGRITY ACTION PLAN</td></tr></thead>
             <tbody>
               {[
-                { metric: "CSAT \u2014 low response", action: "Add in-app survey trigger. Target 50%+.", owner: "[Product]", due: "Wk 5" },
-                { metric: "NPS \u2014 data too old", action: "Switch to bi-weekly NPS survey.", owner: "[CX Lead]", due: "Wk 4" },
-                { metric: "MQLs \u2014 unclear def", action: "Sales + Mktg alignment. Lock definition.", owner: "[RevOps]", due: "Fri" },
-                { metric: "Engagement \u2014 infrequent", action: "Move to monthly pulse survey.", owner: "[PeopleOps]", due: "Wk 4" },
+                { metric: "CSAT — low response", action: "Add in-app survey trigger. Target 50%+.", owner: "[Product]", due: "Wk 5" },
+                { metric: "NPS — data too old", action: "Switch to bi-weekly NPS survey.", owner: "[CX Lead]", due: "Wk 4" },
+                { metric: "MQLs — unclear def", action: "Sales + Mktg alignment. Lock definition.", owner: "[RevOps]", due: "Fri" },
+                { metric: "Engagement — infrequent", action: "Move to monthly pulse survey.", owner: "[PeopleOps]", due: "Wk 4" },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

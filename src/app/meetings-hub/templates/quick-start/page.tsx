@@ -47,7 +47,7 @@ function QuickStartContent() {
         <tbody>
           {[
             { step: "1", action: "Review the \"Read This First\" page to understand the system", time: "5 min", done: "[ ]" },
-            { step: "2", action: "Set up your Meetings Command Dashboard with this week\u2019s meetings", time: "10 min", done: "[ ]" },
+            { step: "2", action: "Set up your Meetings Command Dashboard with this week’s meetings", time: "10 min", done: "[ ]" },
             { step: "3", action: "Copy a blank Agenda Builder and prep your next meeting", time: "5 min", done: "[ ]" },
             { step: "4", action: "After that meeting, use the Minutes + Actions template to capture outputs", time: "5 min", done: "[ ]" },
             { step: "5", action: "Add any action items to your Action Items Master Tracker", time: "3 min", done: "[ ]" },
@@ -76,7 +76,7 @@ function QuickStartContent() {
       <CopyButton targetRef={rhythmRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
-          { day: "Monday", tasks: "Review Dashboard\nPrep for week\u2019s key meetings\nCheck overdue actions", color: "#3B82F6" },
+          { day: "Monday", tasks: "Review Dashboard\nPrep for week’s key meetings\nCheck overdue actions", color: "#3B82F6" },
           { day: "Wednesday", tasks: "Mid-week action check\nFollow up on pending decisions\nUpdate Dashboard", color: "#059669" },
           { day: "Friday", tasks: "Close out actions\nLog decisions from the week\nPrep Monday meetings", color: "#D946EF" },
         ].map((d, i) => (
@@ -110,7 +110,7 @@ function QuickStartContent() {
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.thSecondary, textAlign: "center" as const }}>Avoid This</td></tr>
-            {["Meetings without a clear purpose or outcome", "Skipping action item capture (\"we\u2019ll remember\")", "Not assigning owners to decisions", "Letting the same topic come up 3 meetings in a row", "Running meetings longer than scheduled"].map((t, i) => (
+            {["Meetings without a clear purpose or outcome", "Skipping action item capture (\"we’ll remember\")", "Not assigning owners to decisions", "Letting the same topic come up 3 meetings in a row", "Running meetings longer than scheduled"].map((t, i) => (
               <tr key={i}><td style={{ ...S.td0, backgroundColor: i % 2 === 1 ? C.rowAlt : C.white, fontSize: "10px", padding: "6px 10px" }}>❌ {t}</td></tr>
             ))}
           </tbody></table>

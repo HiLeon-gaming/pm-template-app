@@ -106,8 +106,8 @@ function ReadThisFirstContent() {
         <tbody>
           {[
             { cadence: "Daily / As Needed", time: "5 min", what: "Capture meetings fast with Quick Capture pages. Record decisions and action items in one place." },
-            { cadence: "Weekly", time: "15 min", what: "Review your Action Tracker and Decision Log. Prep next week\u2019s key meetings using the agenda builders." },
-            { cadence: "Monthly", time: "30 min", what: "Review recurring meeting health and fix what\u2019s not working. Use the Meeting Effectiveness Scorecard and Retro format." },
+            { cadence: "Weekly", time: "15 min", what: "Review your Action Tracker and Decision Log. Prep next week’s key meetings using the agenda builders." },
+            { cadence: "Monthly", time: "30 min", what: "Review recurring meeting health and fix what’s not working. Use the Meeting Effectiveness Scorecard and Retro format." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -137,7 +137,7 @@ function ReadThisFirstContent() {
           {[
             { page: "Meetings Command Dashboard", why: "One place to see meetings, actions, and decisions" },
             { page: "Universal Agenda Builder", why: "Makes meetings shorter and clearer" },
-            { page: "Universal Minutes + Actions", why: "Prevents \u201Cwe talked about it\u201D syndrome" },
+            { page: "Universal Minutes + Actions", why: "Prevents “we talked about it” syndrome" },
             { page: "Action Items Master Tracker", why: "Creates accountability without nagging" },
             { page: "Decision Log Master", why: "Stops repeated debates" },
             { page: "Follow-Up Email Builder", why: "Makes follow-up effortless and professional" },
@@ -169,13 +169,13 @@ function ReadThisFirstContent() {
         </tr></thead>
         <tbody>
           {[
-            { section: "A \u2014 Start Here", pages: "6", focus: "Setup, orientation, meeting standards, universal agenda builder", color: "Amber", cHex: "#F59E0B" },
-            { section: "B \u2014 Meeting Prep & Execution", pages: "10", focus: "Core templates: minutes, quick capture, parking lot, decisions, closeout", color: "Blue", cHex: "#3B82F6" },
-            { section: "C \u2014 1:1 Meetings", pages: "8", focus: "Manager + direct report: agenda, notes, coaching, feedback, career growth", color: "Fuchsia", cHex: "#D946EF" },
-            { section: "D \u2014 Team Meetings", pages: "8", focus: "Staff meetings, metrics review, cross-team sync, retros, escalations", color: "Emerald", cHex: "#059669" },
-            { section: "E \u2014 Project & Delivery", pages: "7", focus: "Project sync, design review, scope tradeoffs, go/no-go, war room", color: "Orange", cHex: "#EA580C" },
-            { section: "F \u2014 Executive & Leadership", pages: "6", focus: "Exec review, steering committee, one-pager builder, action tracker", color: "Indigo", cHex: "#6366F1" },
-            { section: "G \u2014 Logs, Follow-Up & Emails", pages: "7", focus: "Decision log, cadence planner, stakeholder CRM, email builder", color: "Teal", cHex: "#0D9488" },
+            { section: "A — Start Here", pages: "6", focus: "Setup, orientation, meeting standards, universal agenda builder", color: "Amber", cHex: "#F59E0B" },
+            { section: "B — Meeting Prep & Execution", pages: "10", focus: "Core templates: minutes, quick capture, parking lot, decisions, closeout", color: "Blue", cHex: "#3B82F6" },
+            { section: "C — 1:1 Meetings", pages: "8", focus: "Manager + direct report: agenda, notes, coaching, feedback, career growth", color: "Fuchsia", cHex: "#D946EF" },
+            { section: "D — Team Meetings", pages: "8", focus: "Staff meetings, metrics review, cross-team sync, retros, escalations", color: "Emerald", cHex: "#059669" },
+            { section: "E — Project & Delivery", pages: "7", focus: "Project sync, design review, scope tradeoffs, go/no-go, war room", color: "Orange", cHex: "#EA580C" },
+            { section: "F — Executive & Leadership", pages: "6", focus: "Exec review, steering committee, one-pager builder, action tracker", color: "Indigo", cHex: "#6366F1" },
+            { section: "G — Logs, Follow-Up & Emails", pages: "7", focus: "Decision log, cadence planner, stakeholder CRM, email builder", color: "Teal", cHex: "#0D9488" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

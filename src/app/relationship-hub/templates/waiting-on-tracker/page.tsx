@@ -97,7 +97,7 @@ function WaitingContent() {
           {[
             { who: "HR", item: "Headcount approval for additional PM.", over: "13 days", plan: "Escalate through your manager. Ask them to ping HR VP directly. Include impact statement." },
             { who: "James Wu", item: "API dependency timeline.", over: "1 day", plan: "Direct Slack message today. If no response by Wed, loop in his manager." },
-            { who: "[Person]", item: "[What\u2019s overdue]", over: "[X days]", plan: "[Your recovery plan]" },
+            { who: "[Person]", item: "[What’s overdue]", over: "[X days]", plan: "[Your recovery plan]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -124,8 +124,8 @@ function WaitingContent() {
             <tbody>
               {[
                 { color: "#EA580C", tip: "Follow up BEFORE the deadline.", detail: "A friendly check-in 2 days before shows professionalism, not nagging." },
-                { color: "#059669", tip: "Make your request crystal clear.", detail: "\u201CI need the API timeline by Thursday for sprint planning\u201D beats \u201CCan you send me that thing?\u201D" },
-                { color: "#0EA5E9", tip: "Include the impact of delay.", detail: "\u201CIf I don\u2019t have this by Friday, we\u2019ll miss the sprint planning window.\u201D Context motivates action." },
+                { color: "#059669", tip: "Make your request crystal clear.", detail: "“I need the API timeline by Thursday for sprint planning” beats “Can you send me that thing?”" },
+                { color: "#0EA5E9", tip: "Include the impact of delay.", detail: "“If I don’t have this by Friday, we’ll miss the sprint planning window.” Context motivates action." },
                 { color: "#D97706", tip: "Keep a paper trail.", detail: "Follow up in writing (email/Slack). Verbal promises without documentation are risky." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -144,10 +144,10 @@ function WaitingContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>ESCALATION TRIGGERS</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: ">5 business days overdue = escalate.", detail: "If direct follow-up hasn\u2019t worked after a week, involve their manager or your manager." },
-                { color: "#EA580C", tip: "Two ignored follow-ups = change approach.", detail: "If they haven\u2019t responded twice, call them, walk to their desk, or find an intermediary." },
+                { color: "#DC2626", tip: ">5 business days overdue = escalate.", detail: "If direct follow-up hasn’t worked after a week, involve their manager or your manager." },
+                { color: "#EA580C", tip: "Two ignored follow-ups = change approach.", detail: "If they haven’t responded twice, call them, walk to their desk, or find an intermediary." },
                 { color: "#D97706", tip: "High-impact items get shorter fuses.", detail: "If delay blocks your whole team, escalate at 3 days, not 5." },
-                { color: "#6366F1", tip: "Document the escalation professionally.", detail: "\u201CI\u2019ve followed up twice. This is blocking X. I\u2019m raising this because I need help.\u201D" },
+                { color: "#6366F1", tip: "Document the escalation professionally.", detail: "“I’ve followed up twice. This is blocking X. I’m raising this because I need help.”" },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

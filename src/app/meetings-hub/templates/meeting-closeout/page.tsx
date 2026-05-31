@@ -48,12 +48,12 @@ function MeetingCloseoutContent() {
           {[
             { item: "Decisions captured?", details: "[Read back all decisions made. Confirm wording and owners.]", pri: "Critical", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
             { item: "Action items assigned?", details: "[Every action has: specific task + owner + due date. No orphan items.]", pri: "Critical", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
-            { item: "Action items read back?", details: "[Read each action aloud: \u201CJohn, you\u2019re sending the proposal by Friday. Correct?\u201D]", pri: "Critical", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
+            { item: "Action items read back?", details: "[Read each action aloud: “John, you’re sending the proposal by Friday. Correct?”]", pri: "Critical", pBg: C.badgeRedBg, pFg: C.badgeRedFg },
             { item: "Parking lot reviewed?", details: "[Any items deferred? Who owns following up? When?]", pri: "High", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
             { item: "Next meeting scheduled?", details: "[Date, time, preliminary agenda, same attendees?]", pri: "High", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
             { item: "Follow-up owner assigned?", details: "[Who sends the recap within 24 hours? Via email or Teams?]", pri: "High", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg },
             { item: "Notes shared location?", details: "[OneNote section, shared drive, Teams channel?]", pri: "Medium", pBg: C.badgeBlueBg, pFg: C.badgeBlueFg },
-            { item: "Attendees thanked?", details: "[Quick thank-you for everyone\u2019s time and input.]", pri: "Nice", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg },
+            { item: "Attendees thanked?", details: "[Quick thank-you for everyone’s time and input.]", pri: "Nice", pBg: C.badgeGreenBg, pFg: C.badgeGreenFg },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

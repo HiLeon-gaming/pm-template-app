@@ -98,7 +98,7 @@ function QBRNotesContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>✅ ACTION ITEMS FROM QBR</td></tr></thead>
             <tbody>
               {[
-                { action: "Extend SDR agency contract \u2014 sign by Q2 Day 1.", owner: "[VP Sales]", due: "Q2 D1" },
+                { action: "Extend SDR agency contract — sign by Q2 Day 1.", owner: "[VP Sales]", due: "Q2 D1" },
                 { action: "Update all OKR scoreboard targets for Q2.", owner: "[Ops]", due: "Q2 W1" },
                 { action: "Reallocate $20K events \u2192 digital in finance.", owner: "[Finance]", due: "Q2 W1" },
                 { action: "Source and book manager training vendor.", owner: "[HR Dir.]", due: "Q2 W1" },

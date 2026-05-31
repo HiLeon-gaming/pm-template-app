@@ -130,7 +130,7 @@ function DecisionLogContent() {
           <table style={S.tbl}>
             <thead><tr><td style={{ backgroundColor: "#059669", color: C.white, padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}` }}>✅ OUR RULES</td></tr></thead>
             <tbody>
-              {["Decide fast, iterate faster — reversible decisions don\u2019t need consensus", "PO has final say on scope and priority", "Tech Lead has final say on architecture and tooling", "SM has final say on process and ceremonies", "Document the WHY, not just the WHAT"].map((t, i) => (
+              {["Decide fast, iterate faster — reversible decisions don’t need consensus", "PO has final say on scope and priority", "Tech Lead has final say on architecture and tooling", "SM has final say on process and ceremonies", "Document the WHY, not just the WHAT"].map((t, i) => (
                 <tr key={i}><td style={{ ...S.td0, backgroundColor: i % 2 === 0 ? C.white : C.rowAlt, fontSize: "11px", padding: "5px 12px" }}>• {t}</td></tr>
               ))}
             </tbody>

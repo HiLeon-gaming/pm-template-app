@@ -129,8 +129,8 @@ function AnnualDirectionContent() {
             <tbody>
               {[
                 { constraint: "Budget: $X total", impact: "Prioritize high-ROI. No unplanned spending without trade-offs." },
-                { constraint: "Headcount: +X hires max", impact: "Can\u2019t staff everything. Be selective about new projects." },
-                { constraint: "Major product launch Q3", impact: "Q2 = intense prep. Other work lighter in Q2\u2013Q3." },
+                { constraint: "Headcount: +X hires max", impact: "Can’t staff everything. Be selective about new projects." },
+                { constraint: "Major product launch Q3", impact: "Q2 = intense prep. Other work lighter in Q2–Q3." },
                 { constraint: "Competitor launching similar product", impact: "Speed matters. CX differentiation is our moat." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

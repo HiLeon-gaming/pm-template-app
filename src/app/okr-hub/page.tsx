@@ -44,11 +44,11 @@ const categories: Category[] = [
       {
         title: "Operating Rhythm Dashboard (Home Base)",
         description:
-          "One page: current quarter goals, this week\u2019s priorities, key metrics, open decisions, risks, and next reviews.",
+          "One page: current quarter goals, this week’s priorities, key metrics, open decisions, risks, and next reviews.",
         href: `${BASE}/operating-rhythm-dashboard`,
         badge: "\u2705 Built",
         allStar: true,
-        whyAllStar: "Instant \u2018what matters now?\u2019",
+        whyAllStar: "Instant ‘what matters now?’",
       },
       {
         title: "Quick Start Guide (Setup in 30 Minutes)",
@@ -67,7 +67,7 @@ const categories: Category[] = [
       {
         title: "Terminology Guide",
         description:
-          "OKR, KPI, QBR, RAG \u2014 all spelled out in plain English with examples.",
+          "OKR, KPI, QBR, RAG — all spelled out in plain English with examples.",
         href: `${BASE}/terminology-guide`,
         badge: "\u2705 Built",
       },
@@ -81,7 +81,7 @@ const categories: Category[] = [
       {
         title: "Operating Rhythm Calendar",
         description:
-          "Your cadence map with checklists per meeting type \u2014 weekly, monthly, quarterly.",
+          "Your cadence map with checklists per meeting type — weekly, monthly, quarterly.",
         href: `${BASE}/operating-rhythm-calendar`,
         badge: "\u2705 Built",
       },
@@ -93,7 +93,7 @@ const categories: Category[] = [
         badge: "\u2705 Built",
       },
       {
-        title: "\u201CStop Doing\u201D Rules (Capacity Protection)",
+        title: "“Stop Doing” Rules (Capacity Protection)",
         description:
           "When we add something, what must be removed? Creates focus discipline.",
         href: `${BASE}/stop-doing-rules`,
@@ -124,7 +124,7 @@ const categories: Category[] = [
       {
         title: "North Star Metric Definition",
         description:
-          "Your single \u201Cmost important\u201D outcome metric + why it matters.",
+          "Your single “most important” outcome metric + why it matters.",
         href: `${BASE}/north-star-metric`,
         badge: "\u2705 Built",
       },
@@ -183,7 +183,7 @@ const categories: Category[] = [
       {
         title: "Key Result Scoreboard + Scoring Rules",
         description:
-          "How you score progress (0.0\u20131.0 or %), cadence, confidence. Removes vibes scoring.",
+          "How you score progress (0.0–1.0 or %), cadence, confidence. Removes vibes scoring.",
         href: `${BASE}/key-result-scoreboard`,
         badge: "\u2705 Built",
         allStar: true,
@@ -199,7 +199,7 @@ const categories: Category[] = [
       {
         title: "Baseline & Target Planner",
         description:
-          "Baseline, target, and what \u201Cgood progress\u201D looks like by week.",
+          "Baseline, target, and what “good progress” looks like by week.",
         href: `${BASE}/baseline-target-planner`,
         badge: "\u2705 Built",
       },
@@ -227,18 +227,18 @@ const categories: Category[] = [
       {
         title: "Quarterly Commitments Page",
         description:
-          "What we commit to deliver, plus what we explicitly won\u2019t do.",
+          "What we commit to deliver, plus what we explicitly won’t do.",
         href: `${BASE}/quarterly-commitments`,
         badge: "\u2705 Built",
       },
       {
-        title: "\u201CStop Doing\u201D List (Quarterly)",
+        title: "“Stop Doing” List (Quarterly)",
         description:
           "What will we pause/stop to protect focus? One of the most valuable pages.",
         href: `${BASE}/stop-doing-list-quarterly`,
         badge: "\u2705 Built",
         allStar: true,
-        whyAllStar: "Protects focus \u2014 huge value.",
+        whyAllStar: "Protects focus — huge value.",
       },
       {
         title: "Quarterly Kickoff One-Pager",
@@ -260,7 +260,7 @@ const categories: Category[] = [
       {
         title: "Weekly Priorities Cockpit (Top 3 Outcomes)",
         description:
-          "Top outcomes, key tasks, blockers, and \u201Cwhat must be true by Friday.\u201D",
+          "Top outcomes, key tasks, blockers, and “what must be true by Friday.”",
         href: `${BASE}/weekly-priorities-cockpit`,
         badge: "\u2705 Built",
         allStar: true,
@@ -290,7 +290,7 @@ const categories: Category[] = [
       {
         title: "Blockers & Help Requests Page",
         description:
-          "What\u2019s stuck, impact, who can unblock, next step.",
+          "What’s stuck, impact, who can unblock, next step.",
         href: `${BASE}/blockers-help-requests`,
         badge: "\u2705 Built",
       },
@@ -339,7 +339,7 @@ const categories: Category[] = [
         badge: "\u2705 Built",
       },
       {
-        title: "\u201CWhat Changed This Week?\u201D Change Log",
+        title: "“What Changed This Week?” Change Log",
         description:
           "Scope shifts, priority changes, and why. Reduces confusion.",
         href: `${BASE}/weekly-change-log`,
@@ -349,7 +349,7 @@ const categories: Category[] = [
   },
   {
     title: "Metrics & Performance Reviews",
-    subtitle: "Monthly and quarterly reviews that don\u2019t feel like bureaucracy",
+    subtitle: "Monthly and quarterly reviews that don’t feel like bureaucracy",
     icon: BarChart3,
     color: "#E11D48",
     templates: [
@@ -440,7 +440,7 @@ const categories: Category[] = [
       {
         title: "Assumptions Log + Validation Plan",
         description:
-          "What must be true + how you\u2019ll validate it.",
+          "What must be true + how you’ll validate it.",
         href: `${BASE}/assumptions-log`,
         badge: "\u2705 Built",
       },

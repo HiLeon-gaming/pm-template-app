@@ -52,7 +52,7 @@ function RepairContent() {
             { label: "Impact on Them", value: "[How did this affect them? Their project? Their reputation? Their trust in you?]" },
             { label: "How They Found Out", value: "[Did you tell them? Did they discover it? Were they blindsided? This matters.]" },
             { label: "Current State of Relationship", value: "[Are they angry? Disappointed? Silent? Have they told others?]" },
-            { label: "Your Responsibility", value: "[What percentage of this is genuinely your fault? Be honest. Own what\u2019s yours.]" },
+            { label: "Your Responsibility", value: "[What percentage of this is genuinely your fault? Be honest. Own what’s yours.]" },
             { label: "Urgency", value: "[How quickly do you need to address this? Today? This week?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -81,11 +81,11 @@ function RepairContent() {
         </tr></thead>
         <tbody>
           {[
-            { n: "1", el: "Acknowledge What Happened", plan: "[State specifically what you did/didn\u2019t do. \u201CI missed the budget deadline by 3 days.\u201D Not \u201CI was a bit late.\u201D]" },
-            { n: "2", el: "Take Responsibility", plan: "[Own it without qualifiers. \u201CThis was my fault\u201D not \u201CI\u2019m sorry if you felt...\u201D or \u201CThings got busy.\u201D]" },
-            { n: "3", el: "Brief Explanation (Not Excuse)", plan: "[One sentence explaining why. \u201CI over-committed and didn\u2019t manage my time well.\u201D Then stop. Don\u2019t justify.]" },
-            { n: "4", el: "Make It Right", plan: "[What concrete action will you take to fix or compensate? \u201CI\u2019ll have it to you by end of day with extra detail.\u201D]" },
-            { n: "5", el: "Prevent Recurrence", plan: "[What will you change so this doesn\u2019t happen again? \u201CI\u2019ve set up a tracking system for all commitments.\u201D]" },
+            { n: "1", el: "Acknowledge What Happened", plan: "[State specifically what you did/didn’t do. “I missed the budget deadline by 3 days.” Not “I was a bit late.”]" },
+            { n: "2", el: "Take Responsibility", plan: "[Own it without qualifiers. “This was my fault” not “I’m sorry if you felt...” or “Things got busy.”]" },
+            { n: "3", el: "Brief Explanation (Not Excuse)", plan: "[One sentence explaining why. “I over-committed and didn’t manage my time well.” Then stop. Don’t justify.]" },
+            { n: "4", el: "Make It Right", plan: "[What concrete action will you take to fix or compensate? “I’ll have it to you by end of day with extra detail.”]" },
+            { n: "5", el: "Prevent Recurrence", plan: "[What will you change so this doesn’t happen again? “I’ve set up a tracking system for all commitments.”]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -107,8 +107,8 @@ function RepairContent() {
           {[
             { label: "When Will You Apologize?", value: "[Today? Tomorrow? The sooner the better. Delays make it worse.]" },
             { label: "How? (Format)", value: "[In-person is best. Video if remote. NEVER by email for serious issues.]" },
-            { label: "Opening Line", value: "[Draft it: \u201CI want to address something directly. I owe you an apology for...\u201D]" },
-            { label: "What If They\u2019re Still Angry?", value: "[Let them vent. Don\u2019t get defensive. Say: \u201CI understand. That\u2019s fair.\u201D]" },
+            { label: "Opening Line", value: "[Draft it: “I want to address something directly. I owe you an apology for...”]" },
+            { label: "What If They’re Still Angry?", value: "[Let them vent. Don’t get defensive. Say: “I understand. That’s fair.”]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -137,10 +137,10 @@ function RepairContent() {
         </tr></thead>
         <tbody>
           {[
-            { item: "Deliver the \u201Cmake it right\u201D action", detail: "[Whatever you promised to fix \u2014 do it first and fast.]", when: "[Date]", done: "\u2610" },
+            { item: "Deliver the “make it right” action", detail: "[Whatever you promised to fix — do it first and fast.]", when: "[Date]", done: "\u2610" },
             { item: "Implement the prevention measure", detail: "[Set up the system, process, or habit that prevents recurrence.]", when: "[Date]", done: "\u2610" },
-            { item: "Check in 1 week later", detail: "[Ask: \u201CHow are we? Is there anything else I need to address?\u201D]", when: "[Date]", done: "\u2610" },
-            { item: "Check in 1 month later", detail: "[Confirm the issue hasn\u2019t recurred. Show changed behavior over time.]", when: "[Date]", done: "\u2610" },
+            { item: "Check in 1 week later", detail: "[Ask: “How are we? Is there anything else I need to address?”]", when: "[Date]", done: "\u2610" },
+            { item: "Check in 1 month later", detail: "[Confirm the issue hasn’t recurred. Show changed behavior over time.]", when: "[Date]", done: "\u2610" },
             { item: "Over-deliver on next interaction", detail: "[Go above and beyond on your next commitment to this person. Rebuild through action.]", when: "[Date]", done: "\u2610" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -167,9 +167,9 @@ function RepairContent() {
             <thead><tr><td style={{ backgroundColor: "#DCFCE7", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>WHAT MAKES A GOOD APOLOGY</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Be specific about what you\u2019re apologizing for.", detail: "\u201CI\u2019m sorry I missed the deadline\u201D > \u201CI\u2019m sorry things didn\u2019t go well.\u201D" },
-                { color: "#0EA5E9", tip: "Own it completely.", detail: "No \u201Cbut,\u201D no \u201Cif,\u201D no shifting blame. \u201CThis was my fault. Full stop.\u201D" },
-                { color: "#8B5CF6", tip: "Show you understand the impact.", detail: "\u201CI know this put you in a difficult position with your team.\u201D Empathy > sympathy." },
+                { color: "#059669", tip: "Be specific about what you’re apologizing for.", detail: "“I’m sorry I missed the deadline” > “I’m sorry things didn’t go well.”" },
+                { color: "#0EA5E9", tip: "Own it completely.", detail: "No “but,” no “if,” no shifting blame. “This was my fault. Full stop.”" },
+                { color: "#8B5CF6", tip: "Show you understand the impact.", detail: "“I know this put you in a difficult position with your team.” Empathy > sympathy." },
                 { color: "#D97706", tip: "Follow words with action.", detail: "An apology without changed behavior is manipulation. Prove it through what you DO next." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -188,8 +188,8 @@ function RepairContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>APOLOGY KILLERS</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "\u201CI\u2019m sorry IF you felt...\u201D", detail: "This isn\u2019t an apology. It\u2019s deflection. You\u2019re making THEM the problem." },
-                { color: "#EA580C", tip: "\u201CI\u2019m sorry, BUT...\u201D", detail: "Everything before \u201Cbut\u201D is erased. Just apologize. Save the context for later if needed." },
+                { color: "#DC2626", tip: "“I’m sorry IF you felt...”", detail: "This isn’t an apology. It’s deflection. You’re making THEM the problem." },
+                { color: "#EA580C", tip: "“I’m sorry, BUT...”", detail: "Everything before “but” is erased. Just apologize. Save the context for later if needed." },
                 { color: "#D97706", tip: "Apologizing and then doing the same thing again.", detail: "Repeated apologies without behavior change = zero credibility." },
                 { color: "#6366F1", tip: "Over-apologizing or being dramatic.", detail: "One sincere apology is powerful. Groveling is uncomfortable and shifts focus to YOUR feelings." },
               ].map((r, i) => {

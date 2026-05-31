@@ -65,10 +65,10 @@ function GovernanceChecklistContent() {
       {makeChecklist([
         { task: "All KR scores updated with current data.", owner: "[Each KR owner]", done: false },
         { task: "Commitments from last week marked Done / Partial / Missed.", owner: "[Each owner]", done: false },
-        { task: "This week\u2019s top 3 priorities written in Priorities Cockpit.", owner: "[Each owner]", done: false },
+        { task: "This week’s top 3 priorities written in Priorities Cockpit.", owner: "[Each owner]", done: false },
         { task: "Blockers page updated with any new blockers or help requests.", owner: "[Anyone stuck]", done: false },
         { task: "Decision log updated with any decisions made this week.", owner: "[Facilitator]", done: false },
-        { task: "Risk radar reviewed \u2014 any risks changed?", owner: "[Risk owner]", done: false },
+        { task: "Risk radar reviewed — any risks changed?", owner: "[Risk owner]", done: false },
         { task: "Weekly check-in agenda sent to all attendees.", owner: "[Facilitator]", done: false },
       ])}
     </div>
@@ -81,12 +81,12 @@ function GovernanceChecklistContent() {
       {makeChecklist([
         { task: "All KR scores updated with end-of-month actuals.", owner: "[Ops Lead]", done: false },
         { task: "Initiative Portfolio Roll-Up updated with current RAG statuses.", owner: "[Each owner]", done: false },
-        { task: "Metrics Snapshot reviewed \u2014 watch list items flagged.", owner: "[Data / Ops]", done: false },
-        { task: "Stop Doing list reviewed \u2014 anything crept back in?", owner: "[Facilitator]", done: false },
-        { task: "Assumptions log reviewed \u2014 any validated or invalidated?", owner: "[Ops Lead]", done: false },
-        { task: "Pending decisions list reviewed \u2014 any overdue?", owner: "[Facilitator]", done: false },
+        { task: "Metrics Snapshot reviewed — watch list items flagged.", owner: "[Data / Ops]", done: false },
+        { task: "Stop Doing list reviewed — anything crept back in?", owner: "[Facilitator]", done: false },
+        { task: "Assumptions log reviewed — any validated or invalidated?", owner: "[Ops Lead]", done: false },
+        { task: "Pending decisions list reviewed — any overdue?", owner: "[Facilitator]", done: false },
         { task: "MBR pre-read sent to attendees 24 hours before meeting.", owner: "[Facilitator]", done: false },
-        { task: "Budget vs actual reviewed \u2014 any overruns?", owner: "[Finance]", done: false },
+        { task: "Budget vs actual reviewed — any overruns?", owner: "[Finance]", done: false },
       ])}
     </div>
   );
@@ -103,9 +103,9 @@ function GovernanceChecklistContent() {
                 { task: "All KR scores finalized with end-of-quarter actuals.", owner: "[Ops Lead]" },
                 { task: "QBR One-Pager completed with scores, lessons, next quarter preview.", owner: "[COO / Ops]" },
                 { task: "Lessons learned collected from each team lead.", owner: "[Each lead]" },
-                { task: "KPI Library reviewed \u2014 remove unused, add new.", owner: "[Data / Ops]" },
+                { task: "KPI Library reviewed — remove unused, add new.", owner: "[Data / Ops]" },
                 { task: "Metric Integrity Checklist run on all KPIs.", owner: "[Data / Ops]" },
-                { task: "Decision log reviewed \u2014 close or carry forward.", owner: "[Facilitator]" },
+                { task: "Decision log reviewed — close or carry forward.", owner: "[Facilitator]" },
                 { task: "Risk radar archived. New radar for next Q.", owner: "[Risk owner]" },
                 { task: "QBR pre-read sent 3 days before meeting.", owner: "[Facilitator]" },
                 { task: "Next quarter OKR draft circulated for feedback.", owner: "[CEO / COO]" },
@@ -131,7 +131,7 @@ function GovernanceChecklistContent() {
                 { label: "MBR Compliance", value: "[e.g., 3/3 months = 100%]" },
                 { label: "Data Freshness", value: "[KR scores updated within 24h = Yes/No]" },
                 { label: "Decision Log Up-to-Date", value: "[0 pending overdue = Yes/No]" },
-                { label: "Overall Governance Grade", value: "[e.g., B+ \u2014 consistent rhythm, MBR data sometimes late]" },
+                { label: "Overall Governance Grade", value: "[e.g., B+ — consistent rhythm, MBR data sometimes late]" },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

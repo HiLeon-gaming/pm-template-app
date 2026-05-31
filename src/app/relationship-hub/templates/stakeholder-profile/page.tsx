@@ -51,9 +51,9 @@ function ProfileContent() {
         <tbody>
           {[
             { label: "Name", value: "[Full name]", guide: "Use their preferred name. Add pronunciation if helpful." },
-            { label: "Title / Role", value: "[Job title and functional role]", guide: "Be specific: \u201CSVP Operations\u201D not \u201CSenior leader.\u201D" },
+            { label: "Title / Role", value: "[Job title and functional role]", guide: "Be specific: “SVP Operations” not “Senior leader.”" },
             { label: "Organization / Team", value: "[Company, department, business unit]", guide: "Include division for large orgs." },
-            { label: "Stakeholder Type", value: "[Sponsor / Champion / Decision Maker / Influencer / Gatekeeper / Blocker / End User / SME]", guide: "Pick the dominant role. Can be multiple \u2014 choose primary." },
+            { label: "Stakeholder Type", value: "[Sponsor / Champion / Decision Maker / Influencer / Gatekeeper / Blocker / End User / SME]", guide: "Pick the dominant role. Can be multiple — choose primary." },
             { label: "Importance", value: "[Critical / High / Medium / Low]", guide: "Critical = can make or break your initiative." },
             { label: "Relationship Health", value: "[Green / Amber / Red]", guide: "Honest assessment. Update weekly." },
             { label: "Cadence", value: "[Weekly / Biweekly / Monthly / As needed]", guide: "Match to importance. Critical = weekly minimum." },
@@ -89,12 +89,12 @@ function ProfileContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Their Top Goals", value: "[What are they trying to achieve this quarter/year?]", why: "Align your work to their goals and they\u2019ll support you." },
+            { label: "Their Top Goals", value: "[What are they trying to achieve this quarter/year?]", why: "Align your work to their goals and they’ll support you." },
             { label: "Their KPIs", value: "[What metrics are they measured on?]", why: "If you can help move their KPIs, you become invaluable." },
             { label: "Their Pain Points", value: "[What frustrates them? What keeps them up at night?]", why: "Solving their pain points builds instant trust and credibility." },
-            { label: "How They Define Success", value: "[What does \u201Cwinning\u201D look like from their perspective?]", why: "Frame your updates in terms of THEIR success criteria." },
-            { label: "What They Need From You", value: "[Information, updates, deliverables, support, decisions?]", why: "Deliver this consistently and you\u2019ll be their most reliable partner." },
-            { label: "What You Need From Them", value: "[Approvals, resources, decisions, political support, access?]", why: "Be explicit about your needs. Don\u2019t assume they know." },
+            { label: "How They Define Success", value: "[What does “winning” look like from their perspective?]", why: "Frame your updates in terms of THEIR success criteria." },
+            { label: "What They Need From You", value: "[Information, updates, deliverables, support, decisions?]", why: "Deliver this consistently and you’ll be their most reliable partner." },
+            { label: "What You Need From Them", value: "[Approvals, resources, decisions, political support, access?]", why: "Be explicit about your needs. Don’t assume they know." },
             { label: "Political Realities", value: "[Internal dynamics, competing priorities, pressures]", why: "Understanding politics helps you frame requests they can say yes to." },
             { label: "Constraints", value: "[Budget, time, org restrictions]", why: "Work within their constraints, not against them." },
           ].map((r, i) => {
@@ -180,10 +180,10 @@ function ProfileContent() {
         </tr></thead>
         <tbody>
           {[
-            { date: "Mar 10", int: "1:1 meeting \u2014 Q2 budget review", key: "Agreed to fund Phase 2 if ROI exceeds 15%. Wants analysis before Apr 1.", follow: "Send ROI summary by Tue" },
-            { date: "Mar 5", int: "Email \u2014 project timeline update", key: "No concerns raised. Requested monthly updates going forward.", follow: "Schedule recurring update Apr 5" },
-            { date: "Feb 28", int: "Steering committee \u2014 risk review", key: "Asked for vendor dependency mitigation plan. Seemed concerned about single-vendor risk.", follow: "Delivered risk plan Mar 3 \u2705" },
-            { date: "Feb 15", int: "Coffee chat \u2014 informal catch-up", key: "Mentioned org restructure coming in Q2. Wants to be consulted before any headcount changes.", follow: "Flag if restructure affects our team" },
+            { date: "Mar 10", int: "1:1 meeting — Q2 budget review", key: "Agreed to fund Phase 2 if ROI exceeds 15%. Wants analysis before Apr 1.", follow: "Send ROI summary by Tue" },
+            { date: "Mar 5", int: "Email — project timeline update", key: "No concerns raised. Requested monthly updates going forward.", follow: "Schedule recurring update Apr 5" },
+            { date: "Feb 28", int: "Steering committee — risk review", key: "Asked for vendor dependency mitigation plan. Seemed concerned about single-vendor risk.", follow: "Delivered risk plan Mar 3 \u2705" },
+            { date: "Feb 15", int: "Coffee chat — informal catch-up", key: "Mentioned org restructure coming in Q2. Wants to be consulted before any headcount changes.", follow: "Flag if restructure affects our team" },
             { date: "[Date]", int: "[Type of interaction]", key: "[What was decided or learned]", follow: "[Next step]" },
             { date: "[Date]", int: "[Type of interaction]", key: "[What was decided or learned]", follow: "[Next step]" },
           ].map((r, i) => {
@@ -215,9 +215,9 @@ function ProfileContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Known Friction Points", value: "[Topics or situations that create tension]", action: "[How you\u2019re managing this]" },
+            { label: "Known Friction Points", value: "[Topics or situations that create tension]", action: "[How you’re managing this]" },
             { label: "Sensitive Topics", value: "[Things to avoid or handle carefully in conversation]", action: "[Alternative approaches]" },
-            { label: "Red Flags Observed", value: "[Warning signs \u2014 keep factual, not judgmental]", action: "[Monitoring plan]" },
+            { label: "Red Flags Observed", value: "[Warning signs — keep factual, not judgmental]", action: "[Monitoring plan]" },
             { label: "Political Dynamics", value: "[Alliances, rivalries, org politics affecting this relationship]", action: "[How to navigate]" },
             { label: "Risk to Your Work", value: "[How they could negatively impact your project or goals]", action: "[Contingency plan]" },
             { label: "Escalation Triggers", value: "[Conditions that would require escalating to your sponsor]", action: "[Who to escalate to and when]" },
@@ -283,7 +283,7 @@ function ProfileContent() {
                 { color: "#8B5CF6", tip: "Update after every meaningful interaction.", detail: "Even 30 seconds of notes after a meeting keeps this profile valuable." },
                 { color: "#059669", tip: "Review before every 1:1.", detail: "2 minutes reading this profile before a meeting makes you 10x more effective." },
                 { color: "#0EA5E9", tip: "Share selectively with your successor.", detail: "If you leave the role, this profile is institutional knowledge gold." },
-                { color: "#D97706", tip: "Don\u2019t let it go stale.", detail: "A 6-month-old profile with no updates is worse than no profile at all." },
+                { color: "#D97706", tip: "Don’t let it go stale.", detail: "A 6-month-old profile with no updates is worse than no profile at all." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -301,12 +301,12 @@ function ProfileContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>PROFILE COMPLETION CHECKLIST</td></tr></thead>
             <tbody>
               {[
-                { color: accent, item: "Identity section complete", detail: "Name, role, type, importance, health \u2014 all filled in." },
+                { color: accent, item: "Identity section complete", detail: "Name, role, type, importance, health — all filled in." },
                 { color: "#D97706", item: "Goals & priorities documented", detail: "You know what they care about and what success looks like to them." },
                 { color: "#0EA5E9", item: "Communication preferences captured", detail: "You know their preferred channel, style, and meeting format." },
                 { color: "#059669", item: "At least 3 interaction entries", detail: "You have a track record of key conversations and decisions." },
-                { color: "#DC2626", item: "Risks and landmines noted", detail: "You\u2019ve documented sensitive topics and political dynamics." },
-                { color: "#EA580C", item: "Open commitments tracked", detail: "Every promise you\u2019ve made is visible and has a due date." },
+                { color: "#DC2626", item: "Risks and landmines noted", detail: "You’ve documented sensitive topics and political dynamics." },
+                { color: "#EA580C", item: "Open commitments tracked", detail: "Every promise you’ve made is visible and has a due date." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

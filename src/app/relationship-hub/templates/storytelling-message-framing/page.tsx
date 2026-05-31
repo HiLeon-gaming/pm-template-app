@@ -45,11 +45,11 @@ function StoryContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Your Audience", value: "[Who are you speaking to? What\u2019s their role and what do they care about?]" },
+            { label: "Your Audience", value: "[Who are you speaking to? What’s their role and what do they care about?]" },
             { label: "Their #1 Priority", value: "[What is the single thing they care about most right now? Frame everything around this.]" },
             { label: "The Core Message", value: "[One sentence. If they remember nothing else, what should they remember?]" },
-            { label: "The Problem / Challenge", value: "[What\u2019s the situation? Frame it as THEIR problem, not yours.]" },
-            { label: "The Impact If Ignored", value: "[What happens if we don\u2019t act? Make the cost of inaction clear.]" },
+            { label: "The Problem / Challenge", value: "[What’s the situation? Frame it as THEIR problem, not yours.]" },
+            { label: "The Impact If Ignored", value: "[What happens if we don’t act? Make the cost of inaction clear.]" },
             { label: "Your Proposal / Solution", value: "[What do you recommend? Be specific and concrete.]" },
             { label: "Why This Is the Right Approach", value: "[Evidence, data, precedent. Why should they trust this recommendation?]" },
             { label: "What You Need From Them", value: "[Be explicit. Decision? Budget? Support? Time?]" },
@@ -115,10 +115,10 @@ function StoryContent() {
             <thead><tr><td style={{ backgroundColor: "#DCFCE7", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>FRAMING PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Start with THEIR world, not yours.", detail: "\u201CYour Q2 targets are at risk because...\u201D > \u201CMy project needs more budget because...\u201D" },
-                { color: "#0EA5E9", tip: "Make the cost of inaction vivid.", detail: "People are more motivated by loss avoidance than gain. Show what they\u2019ll LOSE if they don\u2019t act." },
-                { color: "#8B5CF6", tip: "Use the \u201CAnd therefore\u201D test.", detail: "State your core message, then add \u201Cand therefore...\u201D \u2014 the action should follow logically." },
-                { color: "#D97706", tip: "One message per conversation.", detail: "If you try to make 5 points, they\u2019ll remember zero. Pick the ONE thing that matters most." },
+                { color: "#059669", tip: "Start with THEIR world, not yours.", detail: "“Your Q2 targets are at risk because...” > “My project needs more budget because...”" },
+                { color: "#0EA5E9", tip: "Make the cost of inaction vivid.", detail: "People are more motivated by loss avoidance than gain. Show what they’ll LOSE if they don’t act." },
+                { color: "#8B5CF6", tip: "Use the “And therefore” test.", detail: "State your core message, then add “and therefore...” — the action should follow logically." },
+                { color: "#D97706", tip: "One message per conversation.", detail: "If you try to make 5 points, they’ll remember zero. Pick the ONE thing that matters most." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -136,7 +136,7 @@ function StoryContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>STORYTELLING STRUCTURES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Situation \u2192 Complication \u2192 Resolution (SCR)", detail: "Classic consulting structure. Here\u2019s where we are, here\u2019s what\u2019s threatening it, here\u2019s what to do." },
+                { color: "#DC2626", tip: "Situation \u2192 Complication \u2192 Resolution (SCR)", detail: "Classic consulting structure. Here’s where we are, here’s what’s threatening it, here’s what to do." },
                 { color: "#EA580C", tip: "Problem \u2192 Impact \u2192 Solution \u2192 Ask (PISA)", detail: "Lead with the problem, show the impact, propose a solution, make your ask." },
                 { color: "#D97706", tip: "Before \u2192 After \u2192 Bridge (BAB)", detail: "Show the current pain, paint the better future, then explain how to get there." },
                 { color: "#6366F1", tip: "What? So What? Now What?", detail: "Simple and powerful. State the fact, explain why it matters, then say what to do about it." },

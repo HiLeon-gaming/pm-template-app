@@ -44,10 +44,10 @@ function ArchiveContent() {
           {[
             { label: "Transition Type", value: "[Stakeholder role change / PM handoff / Project closeout / Re-org]" },
             { label: "Effective Date", value: "[When does the transition happen?]" },
-            { label: "Outgoing Owner", value: "[Your name \u2014 who currently manages these relationships]" },
+            { label: "Outgoing Owner", value: "[Your name — who currently manages these relationships]" },
             { label: "Incoming Owner", value: "[New PM / new stakeholder contact / TBD]" },
             { label: "Handoff Meeting Date", value: "[When will you brief the incoming owner?]" },
-            { label: "Critical Context", value: "[What\u2019s the ONE thing the incoming person MUST know to avoid a disaster?]" },
+            { label: "Critical Context", value: "[What’s the ONE thing the incoming person MUST know to avoid a disaster?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -80,7 +80,7 @@ function ArchiveContent() {
           {[
             { name: "Maria Lopez", health: "Green", summary: "Strong sponsor. Monthly 1:1s. Trusts your judgment. Champions project in leadership.", works: "BLUF updates. Pre-brief before SteerCo. Respect her time.", avoid: "Surprises. Long emails. Going around her.", commits: "Committed to Q2 budget. Expects monthly update." },
             { name: "David Park", health: "Amber", summary: "Improving. Was Red 3 months ago. Monthly budget updates rebuilt trust.", works: "Numbers first. ROI framing. Proactive updates.", avoid: "Surprises about money. Vague timelines.", commits: "Approved Q2 budget with condition of monthly reporting." },
-            { name: "James Wu", health: "Red", summary: "Disengaged. API dependency overdue. Feels deprioritized. Escalation planned.", works: "Technical specifics. Working sessions > status meetings.", avoid: "Vague asks. Ignoring his priorities. CC\u2019ing his manager without warning.", commits: "API delivery promised for sprint 7. Currently at risk." },
+            { name: "James Wu", health: "Red", summary: "Disengaged. API dependency overdue. Feels deprioritized. Escalation planned.", works: "Technical specifics. Working sessions > status meetings.", avoid: "Vague asks. Ignoring his priorities. CC’ing his manager without warning.", commits: "API delivery promised for sprint 7. Currently at risk." },
             { name: "Sarah Chen", health: "Amber", summary: "Feels sidelined. Needs re-engagement in Phase 2 planning.", works: "Inclusion in planning. Asking for input early.", avoid: "Making decisions without consulting her. Last-minute requests.", commits: "Expects involvement in go-to-market planning." },
             { name: "[Stakeholder]", health: "[RAG]", summary: "[Current state of relationship]", works: "[Communication style that works]", avoid: "[Landmines and sensitivities]", commits: "[Outstanding promises or commitments]" },
           ].map((r, i) => {
@@ -116,9 +116,9 @@ function ArchiveContent() {
           {[
             { n: "1", topic: "Sponsor Management", advice: "Maria is your most important relationship. Pre-brief her before every SteerCo. Never let her be surprised. She will champion you if you keep her informed." },
             { n: "2", topic: "Finance", advice: "David was burned by a previous PM who hid budget issues. Proactive monthly updates are non-negotiable. Show him the numbers before he asks." },
-            { n: "3", topic: "Engineering", advice: "James responds to technical specifics, not status meetings. Schedule working sessions, not check-ins. Respect his team\u2019s sprint process." },
-            { n: "4", topic: "Communication Cadence", advice: "Weekly team standup, bi-weekly sponsor 1:1, monthly SteerCo, monthly finance update. Don\u2019t let any of these slip." },
-            { n: "5", topic: "Political Dynamics", advice: "Maria and David have a complex relationship. Don\u2019t triangulate. Keep your updates consistent to both." },
+            { n: "3", topic: "Engineering", advice: "James responds to technical specifics, not status meetings. Schedule working sessions, not check-ins. Respect his team’s sprint process." },
+            { n: "4", topic: "Communication Cadence", advice: "Weekly team standup, bi-weekly sponsor 1:1, monthly SteerCo, monthly finance update. Don’t let any of these slip." },
+            { n: "5", topic: "Political Dynamics", advice: "Maria and David have a complex relationship. Don’t triangulate. Keep your updates consistent to both." },
             { n: "6", topic: "[Topic]", advice: "[What would you tell the next person?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -145,9 +145,9 @@ function ArchiveContent() {
             <tbody>
               {[
                 { color: "#D97706", tip: "Brief the incoming person live, not just in writing.", detail: "Written notes miss nuance. Schedule a 1-hour handoff meeting minimum." },
-                { color: "#059669", tip: "Introduce them to key stakeholders personally.", detail: "A warm introduction from you carries trust. A cold email doesn\u2019t." },
+                { color: "#059669", tip: "Introduce them to key stakeholders personally.", detail: "A warm introduction from you carries trust. A cold email doesn’t." },
                 { color: "#0EA5E9", tip: "Transfer all open commitments in writing.", detail: "Every promise you made must be documented and handed over. Nothing falls through." },
-                { color: "#DC2626", tip: "Flag the landmines.", detail: "What are the sensitive topics? Past conflicts? Broken promises? Don\u2019t let the next person step on them." },
+                { color: "#DC2626", tip: "Flag the landmines.", detail: "What are the sensitive topics? Past conflicts? Broken promises? Don’t let the next person step on them." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -165,7 +165,7 @@ function ArchiveContent() {
             <thead><tr><td style={{ backgroundColor: "#DCFCE7", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>TRANSITION TIMELINE</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Week 1: Write this document.", detail: "Capture everything while it\u2019s fresh. Don\u2019t wait until your last day." },
+                { color: "#059669", tip: "Week 1: Write this document.", detail: "Capture everything while it’s fresh. Don’t wait until your last day." },
                 { color: "#0EA5E9", tip: "Week 2: Handoff meeting with incoming owner.", detail: "Walk through every stakeholder. Answer questions. Share the unwritten rules." },
                 { color: "#6366F1", tip: "Week 3: Joint meetings with key stakeholders.", detail: "Introduce the new person in meetings. Let them observe your style." },
                 { color: "#D97706", tip: "Week 4: Shadow period. Then clean handoff.", detail: "Be available for questions but let them own the relationships." },

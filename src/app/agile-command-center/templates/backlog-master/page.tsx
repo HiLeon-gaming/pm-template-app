@@ -84,7 +84,7 @@ function BacklogMasterContent() {
       <div style={{ marginBottom: "8px" }}>
         {epicCard("E-001", "[Checkout Flow v2]", accentDark, "In Progress", C.badgeAmberBg, C.badgeAmberFg, [
           { id: "S-001", story: "[As a shopper, I want to checkout in 2 steps so I can buy faster]", pts: "5", pri: "Must", pBg: C.badgeRedBg, pFg: C.badgeRedFg, sprint: "Sprint 7", st: "Done", stBg: C.badgeGreenBg, stFg: C.badgeGreenFg },
-          { id: "S-002", story: "[As a shopper, I want to save my address so I don\u2019t retype it]", pts: "3", pri: "Should", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, sprint: "Sprint 8", st: "In Dev", stBg: C.badgeAmberBg, stFg: C.badgeAmberFg },
+          { id: "S-002", story: "[As a shopper, I want to save my address so I don’t retype it]", pts: "3", pri: "Should", pBg: C.badgeAmberBg, pFg: C.badgeAmberFg, sprint: "Sprint 8", st: "In Dev", stBg: C.badgeAmberBg, stFg: C.badgeAmberFg },
           { id: "S-003", story: "[As a shopper, I want order confirmation via email + in-app]", pts: "2", pri: "Must", pBg: C.badgeRedBg, pFg: C.badgeRedFg, sprint: "Sprint 8", st: "Ready", stBg: C.badgeBlueBg, stFg: C.badgeBlueFg },
           { id: "S-004", story: "[Add story]", pts: "", pri: "—", pBg: C.badgeGrayBg, pFg: C.badgeGrayFg, sprint: "", st: "—", stBg: C.badgeGrayBg, stFg: C.badgeGrayFg },
         ])}

@@ -47,7 +47,7 @@ function SponsorContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Sponsor Name", value: "[Full name and title]", why: "Know their exact title \u2014 it signals their authority level." },
+            { label: "Sponsor Name", value: "[Full name and title]", why: "Know their exact title — it signals their authority level." },
             { label: "Why They Sponsor You", value: "[What authority or support do they provide?]", why: "Understanding WHY clarifies what you can ask for." },
             { label: "Their Top Priority", value: "[What they care about most that your work supports]", why: "Frame every update in terms of THIS priority." },
             { label: "What They Expect", value: "[Updates, results, risk alerts, no surprises]", why: "Deliver exactly this. Consistently. Every time." },
@@ -55,7 +55,7 @@ function SponsorContent() {
             { label: "Alignment Level", value: "[Fully aligned / Mostly aligned / Drifting / Misaligned]", why: "If drifting, act NOW before it becomes misalignment." },
             { label: "Communication Cadence", value: "[Weekly 1:1 / Biweekly brief / Monthly review]", why: "Never go more than 2 weeks without touching base." },
             { label: "Preferred Format", value: "[In-person / Video / Email summary / Slide deck]", why: "Use THEIR preferred format, not yours." },
-            { label: "Last Meaningful Interaction", value: "[Date and what was discussed]", why: "If it\u2019s been >2 weeks, schedule something now." },
+            { label: "Last Meaningful Interaction", value: "[Date and what was discussed]", why: "If it’s been >2 weeks, schedule something now." },
             { label: "Relationship Health", value: "[Green / Amber / Red]", why: "Be honest. Amber means act this week." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -76,7 +76,7 @@ function SponsorContent() {
     <div ref={stratRef} style={{ marginBottom: "12px" }}>
       <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>SPONSOR MANAGEMENT STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={stratRef} label="Copy Section" />
-      <p style={{ ...S.subNote, marginBottom: "6px" }}>Your strategy for keeping your sponsor informed, aligned, and activated. The best PMs manage sponsors proactively \u2014 never reactively.</p>
+      <p style={{ ...S.subNote, marginBottom: "6px" }}>Your strategy for keeping your sponsor informed, aligned, and activated. The best PMs manage sponsors proactively — never reactively.</p>
       <table style={S.tbl}>
         <thead><tr>
           <th style={{ ...S.thPrimary, width: "25%" }}>Strategy Area</th>
@@ -85,11 +85,11 @@ function SponsorContent() {
         <tbody>
           {[
             { label: "Keep Them Informed", value: "[e.g., Weekly 3-bullet email every Monday AM; 1:1 every other Thursday. Never more than 5 minutes of their time unless they ask.]" },
-            { label: "Keep Them Aligned", value: "[e.g., Pre-brief before steering committee; share draft recommendations 48h before public meetings so they\u2019re never surprised.]" },
+            { label: "Keep Them Aligned", value: "[e.g., Pre-brief before steering committee; share draft recommendations 48h before public meetings so they’re never surprised.]" },
             { label: "Activate Their Support", value: "[e.g., When you need budget, send a 1-page business case with 3 options. Make it easy for them to say yes.]" },
             { label: "Early Warning Protocol", value: "[e.g., If risk escalates to Red, schedule same-day call. Rule: they never hear bad news from someone else first.]" },
             { label: "Recognition Plan", value: "[e.g., Credit them publicly in reviews; include their name on executive summaries; send thank-you after big milestones.]" },
-            { label: "Backup If Sponsor Changes", value: "[Who would you approach next? How would you transition? Have a Plan B ready \u2014 sponsors change more often than you expect.]" },
+            { label: "Backup If Sponsor Changes", value: "[Who would you approach next? How would you transition? Have a Plan B ready — sponsors change more often than you expect.]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -108,7 +108,7 @@ function SponsorContent() {
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
       <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>SPONSOR RELATIONSHIP HEALTH CHECK</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
-      <p style={{ ...S.subNote, marginBottom: "6px" }}>Run this checklist monthly. If you answer \u201CNo\u201D to 3+ questions, your sponsor relationship needs immediate attention.</p>
+      <p style={{ ...S.subNote, marginBottom: "6px" }}>Run this checklist monthly. If you answer “No” to 3+ questions, your sponsor relationship needs immediate attention.</p>
       <table style={S.tbl}>
         <thead><tr>
           <th style={S.thPrimary}>Health Check Question</th>
@@ -117,14 +117,14 @@ function SponsorContent() {
         </tr></thead>
         <tbody>
           {[
-            { q: "Have I spoken with my sponsor in the last 2 weeks?", fix: "Schedule a 15-min check-in this week. Don\u2019t let silence grow." },
+            { q: "Have I spoken with my sponsor in the last 2 weeks?", fix: "Schedule a 15-min check-in this week. Don’t let silence grow." },
             { q: "Does my sponsor know the current project health (G/A/R)?", fix: "Send a 3-line status update today. Lead with the health rating." },
-            { q: "Would my sponsor defend this project if challenged?", fix: "Arm them with talking points. Send a 1-page \u201Cwhy this matters\u201D brief." },
+            { q: "Would my sponsor defend this project if challenged?", fix: "Arm them with talking points. Send a 1-page “why this matters” brief." },
             { q: "Am I delivering what they specifically asked for?", fix: "Re-read their last requests. Are you actually doing what they asked?" },
             { q: "Have I pre-briefed them before every public meeting?", fix: "Never let them be surprised. Brief 24h before any cross-functional meeting." },
             { q: "Do they know about risks BEFORE they become crises?", fix: "Set up an early warning cadence. Share amber risks, not just red ones." },
             { q: "Have I publicly credited them in the last 30 days?", fix: "Find an opportunity this week to thank them in a visible forum." },
-            { q: "Do I know what\u2019s currently stressing them out?", fix: "Ask them: \u201CWhat\u2019s keeping you up at night?\u201D and listen." },
+            { q: "Do I know what’s currently stressing them out?", fix: "Ask them: “What’s keeping you up at night?” and listen." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -149,9 +149,9 @@ function SponsorContent() {
             <thead><tr><td style={{ backgroundColor: "#DBEAFE", color: "#0EA5E9", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #0EA5E9" }}>SPONSOR MANAGEMENT RULES</td></tr></thead>
             <tbody>
               {[
-                { color: "#0EA5E9", tip: "Never surprise your sponsor.", detail: "If they hear something about your project from someone else first, you\u2019ve failed." },
+                { color: "#0EA5E9", tip: "Never surprise your sponsor.", detail: "If they hear something about your project from someone else first, you’ve failed." },
                 { color: "#059669", tip: "Make them look good.", detail: "Your success is their success. Frame wins as outcomes THEY enabled." },
-                { color: "#8B5CF6", tip: "Be the low-maintenance, high-value PM.", detail: "Don\u2019t require babysitting. Bring solutions, not problems. Be the PM they wish all PMs were." },
+                { color: "#8B5CF6", tip: "Be the low-maintenance, high-value PM.", detail: "Don’t require babysitting. Bring solutions, not problems. Be the PM they wish all PMs were." },
                 { color: "#D97706", tip: "Earn the right to ask for big things.", detail: "Deliver small things flawlessly first. Then when you need something big, they trust you." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -170,9 +170,9 @@ function SponsorContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>SPONSOR RELATIONSHIP KILLERS</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Going dark between meetings.", detail: "If your only touchpoint is the bi-weekly 1:1, you\u2019re under-communicating." },
+                { color: "#DC2626", tip: "Going dark between meetings.", detail: "If your only touchpoint is the bi-weekly 1:1, you’re under-communicating." },
                 { color: "#EA580C", tip: "Asking for help without doing your homework.", detail: "Come with the analysis done, options clear, and a recommendation ready." },
-                { color: "#D97706", tip: "Making them chase you for updates.", detail: "If they have to ask \u201CWhat\u2019s the status?\u201D you\u2019ve already lost ground." },
+                { color: "#D97706", tip: "Making them chase you for updates.", detail: "If they have to ask “What’s the status?” you’ve already lost ground." },
                 { color: "#6366F1", tip: "Treating them like a rubber stamp.", detail: "They want to be a thought partner, not just an approver. Engage their expertise." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

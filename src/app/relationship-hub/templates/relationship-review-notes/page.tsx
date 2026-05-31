@@ -52,11 +52,11 @@ function ReviewContent() {
             { name: "Maria Lopez (Sponsor)", last: "Green", now: "Green", change: "Stable. Regular 1:1s keeping alignment strong. She championed our Q1 results.", action: "Continue cadence. Brief her on Q2 risks." },
             { name: "David Park (Finance)", last: "Amber", now: "Green", change: "Improved! Budget conversation went well. He feels heard now.", action: "Send thank-you. Keep him updated monthly." },
             { name: "James Wu (Engineering)", last: "Red", now: "Amber", change: "Slight improvement after direct conversation. Still wary but more responsive.", action: "Schedule working session. Show progress on his concern." },
-            { name: "Sarah Chen (Marketing)", last: "Green", now: "Amber", change: "Drifting. Haven\u2019t connected in 3 weeks. She seemed disengaged in last SteerCo.", action: "Urgent: schedule 1:1 this week." },
-            { name: "[Stakeholder]", last: "[RAG]", now: "[RAG]", change: "[What shifted and why]", action: "[What you\u2019ll do about it]" },
-            { name: "[Stakeholder]", last: "[RAG]", now: "[RAG]", change: "[What shifted and why]", action: "[What you\u2019ll do about it]" },
-            { name: "[Stakeholder]", last: "[RAG]", now: "[RAG]", change: "[What shifted and why]", action: "[What you\u2019ll do about it]" },
-            { name: "[Stakeholder]", last: "[RAG]", now: "[RAG]", change: "[What shifted and why]", action: "[What you\u2019ll do about it]" },
+            { name: "Sarah Chen (Marketing)", last: "Green", now: "Amber", change: "Drifting. Haven’t connected in 3 weeks. She seemed disengaged in last SteerCo.", action: "Urgent: schedule 1:1 this week." },
+            { name: "[Stakeholder]", last: "[RAG]", now: "[RAG]", change: "[What shifted and why]", action: "[What you’ll do about it]" },
+            { name: "[Stakeholder]", last: "[RAG]", now: "[RAG]", change: "[What shifted and why]", action: "[What you’ll do about it]" },
+            { name: "[Stakeholder]", last: "[RAG]", now: "[RAG]", change: "[What shifted and why]", action: "[What you’ll do about it]" },
+            { name: "[Stakeholder]", last: "[RAG]", now: "[RAG]", change: "[What shifted and why]", action: "[What you’ll do about it]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const ragColor = (v: string) => v === "Red" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : v === "Amber" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : v === "Green" ? { bg: C.badgeGreenBg, fg: C.badgeGreenFg } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -90,11 +90,11 @@ function ReviewContent() {
         </tr></thead>
         <tbody>
           {[
-            { n: "1", who: "Sarah Chen", action: "Schedule 1:1, understand what\u2019s causing disengagement, re-align on shared goals.", when: "This week", pri: "High" },
+            { n: "1", who: "Sarah Chen", action: "Schedule 1:1, understand what’s causing disengagement, re-align on shared goals.", when: "This week", pri: "High" },
             { n: "2", who: "James Wu", action: "Hold working session on API dependency. Show progress on his concern.", when: "Week 2", pri: "High" },
             { n: "3", who: "Maria Lopez", action: "Brief on Q2 risks before SteerCo. Keep her ahead of bad news.", when: "Week 1", pri: "Medium" },
             { n: "4", who: "David Park", action: "Monthly budget update. Send before he has to ask.", when: "Week 3", pri: "Medium" },
-            { n: "5", who: "[Stakeholder]", action: "[What you\u2019ll do]", when: "[When]", pri: "[H/M/L]" },
+            { n: "5", who: "[Stakeholder]", action: "[What you’ll do]", when: "[When]", pri: "[H/M/L]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const pColor = r.pri === "High" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : r.pri === "Medium" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -127,9 +127,9 @@ function ReviewContent() {
           {[
             { q: "Which relationships improved this month?", a: "[Names and why. What did you do that worked?]" },
             { q: "Which relationships degraded?", a: "[Names and why. What did you miss or neglect?]" },
-            { q: "Did you follow through on last month\u2019s actions?", a: "[How many of your 5 priority actions did you complete? What blocked the rest?]" },
+            { q: "Did you follow through on last month’s actions?", a: "[How many of your 5 priority actions did you complete? What blocked the rest?]" },
             { q: "Any surprises (positive or negative)?", a: "[Unexpected wins, sudden resistance, new stakeholders, political shifts]" },
-            { q: "What\u2019s your biggest relationship risk right now?", a: "[Which relationship, if it fails, would hurt your work most?]" },
+            { q: "What’s your biggest relationship risk right now?", a: "[Which relationship, if it fails, would hurt your work most?]" },
             { q: "What will you do differently next month?", a: "[One specific change to your approach]" },
             { q: "Overall confidence in your stakeholder landscape?", a: "[High / Medium / Low. Why?]" },
           ].map((r, i) => {
@@ -155,9 +155,9 @@ function ReviewContent() {
             <thead><tr><td style={{ backgroundColor: "#DBEAFE", color: "#0EA5E9", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #0EA5E9" }}>MONTHLY REVIEW BEST PRACTICES</td></tr></thead>
             <tbody>
               {[
-                { color: "#0EA5E9", tip: "Block 30 minutes on the last Friday of every month.", detail: "If it\u2019s not on your calendar, it won\u2019t happen. Make this a recurring ritual." },
-                { color: "#059669", tip: "Be brutally honest with yourself.", detail: "This is your private assessment. Don\u2019t sugarcoat. If a relationship is degrading, face it." },
-                { color: "#8B5CF6", tip: "Look for patterns across months.", detail: "Over 3\u20136 months, you\u2019ll see trends. Are you consistently neglecting the same people?" },
+                { color: "#0EA5E9", tip: "Block 30 minutes on the last Friday of every month.", detail: "If it’s not on your calendar, it won’t happen. Make this a recurring ritual." },
+                { color: "#059669", tip: "Be brutally honest with yourself.", detail: "This is your private assessment. Don’t sugarcoat. If a relationship is degrading, face it." },
+                { color: "#8B5CF6", tip: "Look for patterns across months.", detail: "Over 3–6 months, you’ll see trends. Are you consistently neglecting the same people?" },
                 { color: "#D97706", tip: "Share highlights (not the full review) with your manager.", detail: "Your manager should know about relationship risks. Share the signal, not the noise." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -176,10 +176,10 @@ function ReviewContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>COMMON REVIEW MISTAKES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Skipping the review when things are \u201Cfine.\u201D", detail: "Things feel fine until they suddenly aren\u2019t. The review catches drift before it becomes a crisis." },
-                { color: "#EA580C", tip: "Only tracking negative changes.", detail: "Celebrate improvements too. Positive reinforcement helps you repeat what\u2019s working." },
-                { color: "#D97706", tip: "Setting actions without follow-through.", detail: "5 actions you don\u2019t complete are worse than 2 you do. Be realistic." },
-                { color: "#6366F1", tip: "Reviewing alone without ever getting input.", detail: "Occasionally ask a trusted colleague: \u201CHow do you think my relationship with X is going?\u201D" },
+                { color: "#DC2626", tip: "Skipping the review when things are “fine.”", detail: "Things feel fine until they suddenly aren’t. The review catches drift before it becomes a crisis." },
+                { color: "#EA580C", tip: "Only tracking negative changes.", detail: "Celebrate improvements too. Positive reinforcement helps you repeat what’s working." },
+                { color: "#D97706", tip: "Setting actions without follow-through.", detail: "5 actions you don’t complete are worse than 2 you do. Be realistic." },
+                { color: "#6366F1", tip: "Reviewing alone without ever getting input.", detail: "Occasionally ask a trusted colleague: “How do you think my relationship with X is going?”" },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

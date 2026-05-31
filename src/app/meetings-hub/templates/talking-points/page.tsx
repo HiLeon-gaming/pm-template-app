@@ -61,8 +61,8 @@ function TalkingPointsContent() {
             { point: "[Project status update]", say: "[We are on track for the Q2 milestone. 3 of 5 deliverables complete. No blockers.]", data: "[Sprint dashboard]", time: "3 min" },
             { point: "[Budget ask]", say: "[We need $120K for a 6-month contractor to keep the timeline. ROI: prevents 4-week delay worth $200K.]", data: "[Cost analysis]", time: "5 min" },
             { point: "[Risk escalation]", say: "[API dependency is at risk. If no response by Friday, we will miss the integration window.]", data: "[RAID log]", time: "3 min" },
-            { point: "[Team recognition]", say: "[Sarah\u2019s team delivered the customer onboarding flow 2 days early. Recommend a shout-out.]", data: "[Sprint review]", time: "2 min" },
-            { point: "[Next steps / ask]", say: "[I need your approval on the contractor hire today and a decision on the API escalation path by Friday.]", data: "[\u2014]", time: "2 min" },
+            { point: "[Team recognition]", say: "[Sarah’s team delivered the customer onboarding flow 2 days early. Recommend a shout-out.]", data: "[Sprint review]", time: "2 min" },
+            { point: "[Next steps / ask]", say: "[I need your approval on the contractor hire today and a decision on the API escalation path by Friday.]", data: "[—]", time: "2 min" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -91,7 +91,7 @@ function TalkingPointsContent() {
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.8", padding: "8px 10px" }}>
               &bull; [What objections might come up?]<br />
               &bull; [What questions should you prepare for?]<br />
-              &bull; [What\u2019s the worst-case scenario they\u2019ll raise?]<br />
+              &bull; [What’s the worst-case scenario they’ll raise?]<br />
               &bull; [How will you respond?]
             </td></tr>
           </tbody></table>

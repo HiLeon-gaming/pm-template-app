@@ -50,11 +50,11 @@ function SentimentContent() {
         <tbody>
           {[
             { name: "Maria Lopez", sent: "Positive", trend: "\u2192", why: "Aligned on strategy. Pleased with Q1 results. Active champion in leadership meetings.", evidence: "SteerCo feedback", action: "Maintain cadence. Keep her well-briefed." },
-            { name: "David Park", sent: "Neutral", trend: "\u2191", why: "Was frustrated about budget opacity. Improved after monthly updates started.", evidence: "Email tone shift", action: "Continue monthly updates. Don\u2019t revert." },
+            { name: "David Park", sent: "Neutral", trend: "\u2191", why: "Was frustrated about budget opacity. Improved after monthly updates started.", evidence: "Email tone shift", action: "Continue monthly updates. Don’t revert." },
             { name: "James Wu", sent: "Negative", trend: "\u2193", why: "Feels ignored on API dependency. Two follow-ups unanswered by us (his perspective).", evidence: "Short replies, skipped meeting", action: "Urgent 1:1. Acknowledge the gap. Show progress." },
-            { name: "Sarah Chen", sent: "Neutral", trend: "\u2193", why: "Drifting. Hasn\u2019t been included in recent decisions. May feel sidelined.", evidence: "Disengaged in SteerCo", action: "Schedule 1:1. Re-include in relevant discussions." },
-            { name: "[Stakeholder]", sent: "[+/0/-]", trend: "[\u2191\u2192\u2193]", why: "[What gives you this impression?]", evidence: "[Observable signals]", action: "[What you\u2019ll do about it]" },
-            { name: "[Stakeholder]", sent: "[+/0/-]", trend: "[\u2191\u2192\u2193]", why: "[What gives you this impression?]", evidence: "[Observable signals]", action: "[What you\u2019ll do about it]" },
+            { name: "Sarah Chen", sent: "Neutral", trend: "\u2193", why: "Drifting. Hasn’t been included in recent decisions. May feel sidelined.", evidence: "Disengaged in SteerCo", action: "Schedule 1:1. Re-include in relevant discussions." },
+            { name: "[Stakeholder]", sent: "[+/0/-]", trend: "[\u2191\u2192\u2193]", why: "[What gives you this impression?]", evidence: "[Observable signals]", action: "[What you’ll do about it]" },
+            { name: "[Stakeholder]", sent: "[+/0/-]", trend: "[\u2191\u2192\u2193]", why: "[What gives you this impression?]", evidence: "[Observable signals]", action: "[What you’ll do about it]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const sc = r.sent === "Positive" ? { bg: C.badgeGreenBg, fg: C.badgeGreenFg } : r.sent === "Negative" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : r.sent === "Neutral" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -88,10 +88,10 @@ function SentimentContent() {
         </tr></thead>
         <tbody>
           {[
-            { type: "Email/Slack", pos: "Quick replies, friendly tone, forwards your updates", neg: "Delayed replies, short/curt tone, CC\u2019s their manager", action: "If negative: pick up the phone. Written comms can\u2019t fix tone issues." },
-            { type: "Meetings", pos: "Engaged, asks questions, volunteers help", neg: "Distracted, silent, skips meetings, sends delegate", action: "If negative: schedule 1:1 to understand what\u2019s behind it." },
-            { type: "Decisions", pos: "Approves quickly, trusts your judgment", neg: "Questions everything, delays decisions, escalates around you", action: "If negative: they don\u2019t trust you. Rebuild through transparency and delivery." },
-            { type: "Informal", pos: "Includes you in hallway chats, mentions you positively", neg: "Avoids you, talks to your peers instead, goes silent", action: "If negative: address directly. \u201CI sense something has shifted. Can we talk?\u201D" },
+            { type: "Email/Slack", pos: "Quick replies, friendly tone, forwards your updates", neg: "Delayed replies, short/curt tone, CC’s their manager", action: "If negative: pick up the phone. Written comms can’t fix tone issues." },
+            { type: "Meetings", pos: "Engaged, asks questions, volunteers help", neg: "Distracted, silent, skips meetings, sends delegate", action: "If negative: schedule 1:1 to understand what’s behind it." },
+            { type: "Decisions", pos: "Approves quickly, trusts your judgment", neg: "Questions everything, delays decisions, escalates around you", action: "If negative: they don’t trust you. Rebuild through transparency and delivery." },
+            { type: "Informal", pos: "Includes you in hallway chats, mentions you positively", neg: "Avoids you, talks to your peers instead, goes silent", action: "If negative: address directly. “I sense something has shifted. Can we talk?”" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -119,7 +119,7 @@ function SentimentContent() {
               {[
                 { color: "#6366F1", tip: "Sentiment is a LEADING indicator.", detail: "It changes before behavior does. Catch it early and you can prevent problems." },
                 { color: "#059669", tip: "Trust your gut, then verify.", detail: "If something feels off, it probably is. But confirm with observable evidence." },
-                { color: "#0EA5E9", tip: "Ask trusted colleagues for calibration.", detail: "\u201CHow do you think my relationship with X is going?\u201D Fresh perspective helps." },
+                { color: "#0EA5E9", tip: "Ask trusted colleagues for calibration.", detail: "“How do you think my relationship with X is going?” Fresh perspective helps." },
                 { color: "#D97706", tip: "Track over time, not just once.", detail: "A single data point is noise. A trend over 3 months is signal." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -138,10 +138,10 @@ function SentimentContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>RECOVERING FROM NEGATIVE SENTIMENT</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Address it directly.", detail: "Don\u2019t pretend everything is fine. Say: \u201CI want to check in on how we\u2019re working together.\u201D" },
+                { color: "#DC2626", tip: "Address it directly.", detail: "Don’t pretend everything is fine. Say: “I want to check in on how we’re working together.”" },
                 { color: "#EA580C", tip: "Listen more than you talk.", detail: "Understanding their frustration is more important than defending yourself." },
                 { color: "#D97706", tip: "Follow words with action.", detail: "After the conversation, DO something different. Changed behavior rebuilds trust." },
-                { color: "#059669", tip: "Give it time.", detail: "Sentiment doesn\u2019t flip overnight. Consistent positive actions over weeks will shift it." },
+                { color: "#059669", tip: "Give it time.", detail: "Sentiment doesn’t flip overnight. Consistent positive actions over weeks will shift it." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

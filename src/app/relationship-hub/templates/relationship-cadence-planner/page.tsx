@@ -153,7 +153,7 @@ function CadenceContent() {
             <tbody>
               {[
                 { score: "On Track", bg: C.badgeGreenBg, fg: C.badgeGreenFg, desc: "Next touchpoint is upcoming or completed recently. No action needed beyond maintaining rhythm." },
-                { score: "Due Soon", bg: C.badgeAmberBg, fg: C.badgeAmberFg, desc: "Touchpoint due within 2 days. Prepare now \u2014 review their profile, plan your goal for the interaction." },
+                { score: "Due Soon", bg: C.badgeAmberBg, fg: C.badgeAmberFg, desc: "Touchpoint due within 2 days. Prepare now — review their profile, plan your goal for the interaction." },
                 { score: "Overdue", bg: C.badgeRedBg, fg: C.badgeRedFg, desc: "Past due date. Reach out TODAY. Every day overdue = trust erosion. Critical stakeholders: same-day action." },
               ].map((r, i) => {
                 const rowBg = i % 2 === 1 ? C.rowAlt : C.white;

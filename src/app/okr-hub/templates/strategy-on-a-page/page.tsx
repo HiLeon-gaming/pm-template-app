@@ -43,11 +43,11 @@ function SOaPContent() {
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Who We Serve</td><td style={S.td0}>[Your target customers/users. Be specific. Who gets the MOST value from what you do?]</td></tr>
         <tr><td style={S.tdLabelAlt}>The Problem We Solve</td><td style={S.tdAlt}>[What pain, frustration, or gap exists that your product/service fixes? Keep it one sentence.]</td></tr>
         <tr><td style={S.tdLabel}>Our Solution</td><td style={S.td0}>[What we provide and how it solves the problem. What makes us different from alternatives?]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Why We Win (Moat)</td><td style={S.tdAlt}>[What is our unfair advantage? Why can\u2019t competitors easily copy us? Speed? Data? Brand? Network?]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Why We Win (Moat)</td><td style={S.tdAlt}>[What is our unfair advantage? Why can’t competitors easily copy us? Speed? Data? Brand? Network?]</td></tr>
         <tr><td style={S.tdLabel}>How We Make Money</td><td style={S.td0}>[Revenue model: subscription, one-time, usage-based? Average deal size? Key revenue drivers?]</td></tr>
-        <tr><td style={S.tdLabelAlt}>This Year&apos;s Big Bets</td><td style={S.tdAlt}>[2\u20134 strategic themes for the year. These drive all quarterly OKRs.]</td></tr>
+        <tr><td style={S.tdLabelAlt}>This Year&apos;s Big Bets</td><td style={S.tdAlt}>[2–4 strategic themes for the year. These drive all quarterly OKRs.]</td></tr>
         <tr><td style={S.tdLabel}>North Star Metric</td><td style={S.td0}>[The ONE number that best represents the value we deliver. Everything else supports it.]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Key Risks</td><td style={S.tdAlt}>[Top 2\u20133 things that could derail us. Be honest.]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Key Risks</td><td style={S.tdAlt}>[Top 2–3 things that could derail us. Be honest.]</td></tr>
       </tbody></table>
     </div>
   );

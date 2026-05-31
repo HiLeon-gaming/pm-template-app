@@ -58,8 +58,8 @@ function DefinitionOfReadyContent() {
         </tr></thead>
         <tbody>
           {[
-            { cat: "Story Format", crit: "User story follows \u201CAs a / I want / So that\u201D format", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
-            { cat: "Story Format", crit: "Story is small enough to complete in one sprint (ideally 1\u20135 points)", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
+            { cat: "Story Format", crit: "User story follows “As a / I want / So that” format", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
+            { cat: "Story Format", crit: "Story is small enough to complete in one sprint (ideally 1–5 points)", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
             { cat: "Acceptance Criteria", crit: "At least 2 acceptance criteria written in Given/When/Then format", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
             { cat: "Acceptance Criteria", crit: "Edge cases and error scenarios identified", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
             { cat: "Design / UX", crit: "Mockups or wireframes attached (if UI story)", req: "If UI", rBg: C.badgeAmberBg, rFg: C.badgeAmberFg },
@@ -69,7 +69,7 @@ function DefinitionOfReadyContent() {
             { cat: "Technical", crit: "No open technical questions — spike completed if needed", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
             { cat: "Estimation", crit: "Story estimated by the team (story points assigned)", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
             { cat: "Priority", crit: "Priority set by PO (MoSCoW or rank)", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
-            { cat: "Team Understanding", crit: "Discussed in refinement — team understands what \u201Cdone\u201D looks like", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
+            { cat: "Team Understanding", crit: "Discussed in refinement — team understands what “done” looks like", req: "Yes", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -96,7 +96,7 @@ function DefinitionOfReadyContent() {
           <table style={S.tbl}>
             <thead><tr><td style={{ backgroundColor: "#059669", color: C.white, padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}` }}>✅ READY (Can enter sprint)</td></tr></thead>
             <tbody>
-              {["\u201CAs a shopper, I want 2-step checkout so I can buy faster\u201D — 3 ACs, mockup attached, estimated at 5 pts, no blockers",
+              {["“As a shopper, I want 2-step checkout so I can buy faster” — 3 ACs, mockup attached, estimated at 5 pts, no blockers",
                 "API contract agreed with backend team, spike completed for payment flow",
                 "Discussed in refinement, team asks answered, PO priority = Must Have"].map((t, i) => (
                 <tr key={i}><td style={{ ...S.td0, backgroundColor: i % 2 === 0 ? C.white : C.rowAlt, fontSize: "10px", padding: "5px 12px" }}>• {t}</td></tr>
@@ -108,9 +108,9 @@ function DefinitionOfReadyContent() {
           <table style={S.tbl}>
             <thead><tr><td style={{ backgroundColor: "#DC2626", color: C.white, padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}` }}>🚫 NOT READY (Send back to refinement)</td></tr></thead>
             <tbody>
-              {["\u201CMake checkout better\u201D — no user story format, no ACs, no estimate",
-                "Depends on vendor API that hasn\u2019t been delivered yet — blocker unresolved",
-                "Team hasn\u2019t seen this story before — pulled in last minute without discussion"].map((t, i) => (
+              {["“Make checkout better” — no user story format, no ACs, no estimate",
+                "Depends on vendor API that hasn’t been delivered yet — blocker unresolved",
+                "Team hasn’t seen this story before — pulled in last minute without discussion"].map((t, i) => (
                 <tr key={i}><td style={{ ...S.td0, backgroundColor: i % 2 === 0 ? C.white : C.rowAlt, fontSize: "10px", padding: "5px 12px" }}>• {t}</td></tr>
               ))}
             </tbody>
@@ -132,7 +132,7 @@ function DefinitionOfReadyContent() {
         </tr></thead>
         <tbody>
           {[
-            "Did any stories enter this sprint that weren\u2019t fully ready?",
+            "Did any stories enter this sprint that weren’t fully ready?",
             "Did unready stories cause rework, blockers, or scope changes?",
             "Does the team feel the DoR criteria are realistic and useful?",
             "Should we add or remove any criteria based on recent experience?",

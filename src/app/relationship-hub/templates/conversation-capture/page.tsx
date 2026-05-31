@@ -49,13 +49,13 @@ function CaptureContent() {
             { label: "With Whom", value: "[Name, role, team]" },
             { label: "Format", value: "[In-person / Video / Phone / Slack / Email / Hallway chat]" },
             { label: "Purpose / Context", value: "[Why did this conversation happen? What prompted it?]" },
-            { label: "Key Points Discussed", value: "[Bullet the 3\u20135 most important things discussed. Don\u2019t write a transcript.]" },
+            { label: "Key Points Discussed", value: "[Bullet the 3–5 most important things discussed. Don’t write a transcript.]" },
             { label: "Decisions Made", value: "[What was decided? By whom? Any conditions or caveats?]" },
             { label: "Commitments Made (By You)", value: "[What did you promise to do? By when?]" },
             { label: "Commitments Made (By Them)", value: "[What did they promise to do? By when?]" },
             { label: "Mood / Sentiment", value: "[How did they seem? Positive? Frustrated? Neutral? Concerned? Enthusiastic?]" },
-            { label: "Surprises or New Intel", value: "[Anything you didn\u2019t expect? New information? Political dynamics? Priorities shifting?]" },
-            { label: "What I Should Have Asked", value: "[Anything you forgot to cover or wish you\u2019d asked?]" },
+            { label: "Surprises or New Intel", value: "[Anything you didn’t expect? New information? Political dynamics? Priorities shifting?]" },
+            { label: "What I Should Have Asked", value: "[Anything you forgot to cover or wish you’d asked?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -115,7 +115,7 @@ function CaptureContent() {
             <thead><tr><td style={{ backgroundColor: "#FFF7ED", color: "#EA580C", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #EA580C" }}>QUICK CAPTURE RULES</td></tr></thead>
             <tbody>
               {[
-                { color: "#EA580C", tip: "Capture within 5 minutes.", detail: "After 30 minutes, you\u2019ll forget 50% of what was said. After 24 hours, 80%." },
+                { color: "#EA580C", tip: "Capture within 5 minutes.", detail: "After 30 minutes, you’ll forget 50% of what was said. After 24 hours, 80%." },
                 { color: "#059669", tip: "Bullet points, not paragraphs.", detail: "Speed over polish. You can clean it up later if needed." },
                 { color: "#0EA5E9", tip: "Focus on decisions and commitments.", detail: "The discussion is context. Decisions and commitments are the output that matters." },
                 { color: "#D97706", tip: "Note the sentiment, not just the words.", detail: "HOW they said it matters as much as WHAT they said." },
@@ -137,7 +137,7 @@ function CaptureContent() {
             <tbody>
               {[
                 { color: "#059669", tip: "Transfer commitments to your Commitments Log.", detail: "This note is temporary. Your log is permanent. Move the commitments." },
-                { color: "#0EA5E9", tip: "Update the stakeholder\u2019s profile.", detail: "New intel about their priorities, concerns, or preferences? Update their profile page." },
+                { color: "#0EA5E9", tip: "Update the stakeholder’s profile.", detail: "New intel about their priorities, concerns, or preferences? Update their profile page." },
                 { color: "#D97706", tip: "Add follow-ups to your queue.", detail: "If you promised something, it needs to be in your Follow-Up Queue with a date." },
                 { color: "#DC2626", tip: "Link this note to their Meeting History.", detail: "Add a line to their Meeting History Index so you can find this note later." },
               ].map((r, i) => {

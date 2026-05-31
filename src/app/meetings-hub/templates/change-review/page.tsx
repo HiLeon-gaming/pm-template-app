@@ -48,7 +48,7 @@ function ChangeReviewContent() {
       <CopyButton targetRef={requestRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Change Description</td><td style={S.td0}>[What is being requested? Be specific.]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Business Justification</td><td style={S.tdAlt}>[Why is this change needed? What happens if we don\u2019t do it?]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Business Justification</td><td style={S.tdAlt}>[Why is this change needed? What happens if we don’t do it?]</td></tr>
         <tr><td style={S.tdLabel}>Change Type</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[Scope / Schedule / Budget / Resource / Requirements]</td></tr>
         <tr><td style={S.tdLabelAlt}>Affected Areas</td><td style={S.tdAlt}>[Which deliverables, teams, or milestones are affected?]</td></tr>
       </tbody></table>

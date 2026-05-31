@@ -124,7 +124,7 @@ function PortfolioContent() {
             <tbody>
               {[
                 { color: "#059669", tip: "\ud83d\udfe2 Green: Strong, aligned, no issues.", detail: "Regular contact. Trust is high. They support your work actively." },
-                { color: "#D97706", tip: "\ud83d\udfe1 Amber: Needs attention.", detail: "Some friction, declining engagement, or unresolved concern. Act within 1\u20132 weeks." },
+                { color: "#D97706", tip: "\ud83d\udfe1 Amber: Needs attention.", detail: "Some friction, declining engagement, or unresolved concern. Act within 1–2 weeks." },
                 { color: "#DC2626", tip: "\ud83d\udd34 Red: At risk.", detail: "Active conflict, disengagement, or blocking behavior. Act this week." },
                 { color: "#6366F1", tip: "Trend matters more than status.", detail: "A Green trending down is more urgent than an Amber trending up." },
               ].map((r, i) => {
@@ -145,9 +145,9 @@ function PortfolioContent() {
             <tbody>
               {[
                 { color: "#059669", tip: "Review monthly, no exceptions.", detail: "Block 30 minutes. Go through every name. Update status and actions." },
-                { color: "#0EA5E9", tip: "Zero Reds is the goal.", detail: "If you have a Red, it\u2019s your #1 priority until it\u2019s Amber or Green." },
+                { color: "#0EA5E9", tip: "Zero Reds is the goal.", detail: "If you have a Red, it’s your #1 priority until it’s Amber or Green." },
                 { color: "#D97706", tip: "Track trend over time.", detail: "3 months of data shows patterns. Is someone slowly deteriorating? Catch it." },
-                { color: "#DC2626", tip: "Share with your sponsor.", detail: "This page IS your stakeholder management story. Show them you\u2019re on top of it." },
+                { color: "#DC2626", tip: "Share with your sponsor.", detail: "This page IS your stakeholder management story. Show them you’re on top of it." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

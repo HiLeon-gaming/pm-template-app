@@ -51,11 +51,11 @@ function QuickStartContent() {
             { step: "1", action: "Open the Relationship Command Dashboard and bookmark it as your daily home base.", why: "This is your single source of truth every morning", time: "1 min", done: "[ ]" },
             { step: "2", action: "Read the Terminology Guide so you understand Stakeholder, Sponsor, Champion, CRM, RAG, and other key terms.", why: "Shared vocabulary prevents confusion", time: "3 min", done: "[ ]" },
             { step: "3", action: "Review the Stakeholder Types Cheat Sheet to understand the different types of people you manage.", why: "Different types need different strategies", time: "2 min", done: "[ ]" },
-            { step: "4", action: "Open the Stakeholder Directory Index and list your top 5\u201310 stakeholders by name, role, and importance.", why: "You can\u2019t manage what you haven\u2019t identified", time: "5 min", done: "[ ]" },
+            { step: "4", action: "Open the Stakeholder Directory Index and list your top 5–10 stakeholders by name, role, and importance.", why: "You can’t manage what you haven’t identified", time: "5 min", done: "[ ]" },
             { step: "5", action: "Duplicate the Stakeholder Profile Template for each person. Fill in what you know now; add more over time.", why: "Profiles compound in value over weeks and months", time: "5 min", done: "[ ]" },
             { step: "6", action: "Open the Relationship Cadence Planner and set a check-in frequency for each stakeholder.", why: "Prevents the #1 mistake: only talking to people when you need something", time: "3 min", done: "[ ]" },
             { step: "7", action: "Open the Follow-Up Queue and enter any follow-ups or commitments you already owe someone.", why: "Clearing existing debts builds immediate trust", time: "3 min", done: "[ ]" },
-            { step: "8", action: "Set a recurring 15-min weekly block on your calendar: \u201CRelationship Review.\u201D Use the Dashboard during this time.", why: "Without a habit, the system won\u2019t stick", time: "1 min", done: "[ ]" },
+            { step: "8", action: "Set a recurring 15-min weekly block on your calendar: “Relationship Review.” Use the Dashboard during this time.", why: "Without a habit, the system won’t stick", time: "1 min", done: "[ ]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -89,9 +89,9 @@ function QuickStartContent() {
           {[
             { cadence: "Daily", time: "5 min", what: "After every meeting or call: capture notes, follow-ups, and commitments. Update stakeholder profiles with new context.", pages: "Stakeholder Profile + Follow-Up Queue + Conversation Capture", color: "#059669" },
             { cadence: "Weekly", time: "15 min", what: "Monday morning ritual: Who needs attention? What promises are due? What risks are building? Update the Dashboard.", pages: "Command Dashboard + Commitments Log + Hot Stakeholders", color: "#0EA5E9" },
-            { cadence: "Before Meetings", time: "5\u201310 min", what: "Review their profile. Prep your goal, risks, talking points, and what decisions you need from this meeting.", pages: "Stakeholder Profile + Meeting Prep Brief", color: "#8B5CF6" },
+            { cadence: "Before Meetings", time: "5–10 min", what: "Review their profile. Prep your goal, risks, talking points, and what decisions you need from this meeting.", pages: "Stakeholder Profile + Meeting Prep Brief", color: "#8B5CF6" },
             { cadence: "After Meetings", time: "5 min", what: "Immediately record: decisions made, commitments given (by you AND them), and next steps with owners.", pages: "Meeting Notes + Follow-Up Email Builder", color: "#D97706" },
-            { cadence: "Monthly", time: "20 min", what: "Review relationship health across your portfolio. What improved? What degraded? Plan next month\u2019s proactive touchpoints.", pages: "Relationship Review Notes + Touchpoint Planner + Health Scorecard", color: "#EA580C" },
+            { cadence: "Monthly", time: "20 min", what: "Review relationship health across your portfolio. What improved? What degraded? Plan next month’s proactive touchpoints.", pages: "Relationship Review Notes + Touchpoint Planner + Health Scorecard", color: "#EA580C" },
             { cadence: "Quarterly", time: "30 min", what: "Full portfolio review. Update profiles. Refresh engagement strategies. Archive closed-out stakeholders.", pages: "Quarterly Review + Portfolio Snapshot + Engagement Strategy", color: "#DC2626" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -118,7 +118,7 @@ function QuickStartContent() {
             <thead><tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>TIPS FOR SUCCESS</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Start with just 5\u201310 people.", detail: "Don\u2019t try to profile everyone. Start with the stakeholders who can make or break your work." },
+                { color: "#059669", tip: "Start with just 5–10 people.", detail: "Don’t try to profile everyone. Start with the stakeholders who can make or break your work." },
                 { color: "#0EA5E9", tip: "Update after every interaction.", detail: "30 seconds of notes now saves 10 minutes of guessing later. Your future self will thank you." },
                 { color: "#8B5CF6", tip: "Use the Follow-Up Queue daily.", detail: "This single page prevents more dropped balls than any other page in the entire pack." },
                 { color: "#D97706", tip: "Never skip the weekly review.", detail: "15 minutes of reflection prevents hours of reactive firefighting later in the week." },
@@ -141,10 +141,10 @@ function QuickStartContent() {
             <tbody>
               {[
                 { color: "#DC2626", tip: "Setting up everything but using nothing.", detail: "Better to use 3 pages consistently than set up 30 and abandon them." },
-                { color: "#EA580C", tip: "Only updating when there\u2019s a crisis.", detail: "Reactive management = always behind. The rhythm IS the system." },
-                { color: "#D97706", tip: "Keeping it in your head.", detail: "If it\u2019s not written down, you WILL forget it. Especially commitments." },
+                { color: "#EA580C", tip: "Only updating when there’s a crisis.", detail: "Reactive management = always behind. The rhythm IS the system." },
+                { color: "#D97706", tip: "Keeping it in your head.", detail: "If it’s not written down, you WILL forget it. Especially commitments." },
                 { color: "#6366F1", tip: "Treating this like a CRM.", detail: "This is a relationship management system, not a contact database. Focus on context, not just data." },
-                { color: "#059669", tip: "Not sharing wins.", detail: "Track wins and recognize people. It\u2019s the highest-ROI relationship investment you can make." },
+                { color: "#059669", tip: "Not sharing wins.", detail: "Track wins and recognize people. It’s the highest-ROI relationship investment you can make." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

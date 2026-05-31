@@ -40,7 +40,7 @@ function AgendaContent() {
       <table style={S.tbl}>
         <tbody>
           {[
-            { label: "Meeting Title", value: "[Descriptive title \u2014 not just \u201CSync\u201D]" },
+            { label: "Meeting Title", value: "[Descriptive title — not just “Sync”]" },
             { label: "Date / Time", value: "[Date, start time, duration]" },
             { label: "Attendees", value: "[Names + roles. Only invite people who NEED to be there.]" },
             { label: "Format", value: "[In-person / Video / Phone]" },
@@ -77,8 +77,8 @@ function AgendaContent() {
         </tr></thead>
         <tbody>
           {[
-            { time: "0:00", dur: "2 min", topic: "Welcome & purpose. State the desired outcome upfront.", owner: "You", type: "Inform", output: "Alignment on why we\u2019re here." },
-            { time: "0:02", dur: "10 min", topic: "[Main topic #1 \u2014 the most important item goes first]", owner: "[Name]", type: "Decide", output: "[Specific decision needed]" },
+            { time: "0:00", dur: "2 min", topic: "Welcome & purpose. State the desired outcome upfront.", owner: "You", type: "Inform", output: "Alignment on why we’re here." },
+            { time: "0:02", dur: "10 min", topic: "[Main topic #1 — the most important item goes first]", owner: "[Name]", type: "Decide", output: "[Specific decision needed]" },
             { time: "0:12", dur: "10 min", topic: "[Main topic #2]", owner: "[Name]", type: "Discuss", output: "[What we need to align on]" },
             { time: "0:22", dur: "5 min", topic: "[Status update or information share]", owner: "[Name]", type: "Inform", output: "[Awareness of current state]" },
             { time: "0:27", dur: "3 min", topic: "Recap: decisions made, actions assigned, next steps.", owner: "You", type: "Confirm", output: "Clear actions + owners + dates." },
@@ -112,8 +112,8 @@ function AgendaContent() {
             <tbody>
               {[
                 { color: "#059669", tip: "Start on time. End on time.", detail: "Respect the timebox. If you run over, something was badly planned." },
-                { color: "#0EA5E9", tip: "State the desired outcome in the first 60 seconds.", detail: "\u201CBy the end of this meeting, we need to decide X.\u201D Focuses everyone immediately." },
-                { color: "#8B5CF6", tip: "Put the hardest topic first.", detail: "Energy and attention are highest at the start. Don\u2019t save decisions for the end." },
+                { color: "#0EA5E9", tip: "State the desired outcome in the first 60 seconds.", detail: "“By the end of this meeting, we need to decide X.” Focuses everyone immediately." },
+                { color: "#8B5CF6", tip: "Put the hardest topic first.", detail: "Energy and attention are highest at the start. Don’t save decisions for the end." },
                 { color: "#D97706", tip: "End with actions, not discussions.", detail: "Last 3 minutes = recap decisions + assign actions + confirm next touchpoint." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -132,9 +132,9 @@ function AgendaContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>TOPIC TYPE GUIDE</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "DECIDE: A decision must be made.", detail: "Come with options and a recommendation. Don\u2019t leave without a decision." },
+                { color: "#DC2626", tip: "DECIDE: A decision must be made.", detail: "Come with options and a recommendation. Don’t leave without a decision." },
                 { color: "#D97706", tip: "DISCUSS: Alignment needed.", detail: "Not a decision yet, but different perspectives need to be heard and reconciled." },
-                { color: "#0EA5E9", tip: "INFORM: One-way update.", detail: "Quick share of status or information. Keep it to 3\u20135 minutes max." },
+                { color: "#0EA5E9", tip: "INFORM: One-way update.", detail: "Quick share of status or information. Keep it to 3–5 minutes max." },
                 { color: "#059669", tip: "CONFIRM: Validate agreement.", detail: "Recap decisions and actions. Get explicit confirmation from all parties." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

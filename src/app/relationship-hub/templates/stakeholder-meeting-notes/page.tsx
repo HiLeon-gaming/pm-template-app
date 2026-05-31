@@ -46,7 +46,7 @@ function NotesContent() {
             { label: "Date / Time", value: "[When did it happen?]" },
             { label: "Attendees", value: "[Who was there? Note anyone who was invited but absent.]" },
             { label: "Purpose", value: "[Why did we meet?]" },
-            { label: "Key Discussion Points", value: "[3\u20135 bullet points summarizing the main topics discussed. Not a transcript.]" },
+            { label: "Key Discussion Points", value: "[3–5 bullet points summarizing the main topics discussed. Not a transcript.]" },
             { label: "Tone / Sentiment", value: "[How did the meeting feel? Productive? Tense? Aligned? Confused?]" },
             { label: "Surprises / New Information", value: "[Anything unexpected that emerged?]" },
           ].map((r, i) => {
@@ -143,9 +143,9 @@ function NotesContent() {
             <thead><tr><td style={{ backgroundColor: "#DCFCE7", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>NOTE-TAKING BEST PRACTICES</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Capture within 30 minutes.", detail: "Memory degrades fast. Get the key points down while they\u2019re fresh." },
+                { color: "#059669", tip: "Capture within 30 minutes.", detail: "Memory degrades fast. Get the key points down while they’re fresh." },
                 { color: "#0EA5E9", tip: "Focus on outputs, not process.", detail: "Nobody needs a transcript. Capture decisions, actions, and key insights." },
-                { color: "#8B5CF6", tip: "Be explicit about what was decided.", detail: "Ambiguous notes lead to \u201CI thought we agreed on X\u201D conversations later." },
+                { color: "#8B5CF6", tip: "Be explicit about what was decided.", detail: "Ambiguous notes lead to “I thought we agreed on X” conversations later." },
                 { color: "#D97706", tip: "Note who said what for decisions.", detail: "Attribution matters. If a decision is questioned later, you need to know who made the call." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -167,7 +167,7 @@ function NotesContent() {
                 { color: "#D97706", tip: "Send follow-up email within 24 hours.", detail: "Use the Follow-Up Email Builder. Recap decisions, actions, owners, deadlines." },
                 { color: "#DC2626", tip: "Transfer actions to your trackers.", detail: "Add to Commitments Log and Follow-Up Queue immediately." },
                 { color: "#EA580C", tip: "Update stakeholder profiles.", detail: "New intel about their priorities or concerns? Update their profile page." },
-                { color: "#059669", tip: "Link to Meeting History.", detail: "Add this note to the stakeholder\u2019s Meeting History Index for future reference." },
+                { color: "#059669", tip: "Link to Meeting History.", detail: "Add this note to the stakeholder’s Meeting History Index for future reference." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

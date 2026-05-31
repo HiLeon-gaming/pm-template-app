@@ -47,13 +47,13 @@ function QuickStartContent() {
         </tr></thead>
         <tbody>
           {[
-            { step: "1", task: "Write down 2\u20133 goals (Objectives) for this quarter", time: "5 min", page: "OKR Builder", done: false },
-            { step: "2", task: "For each goal, write 2\u20133 ways you\u2019ll measure success (Key Results)", time: "10 min", page: "OKR Builder", done: false },
-            { step: "3", task: "List the key numbers you\u2019ll track each week (KPIs)", time: "5 min", page: "Weekly Metrics Snapshot", done: false },
+            { step: "1", task: "Write down 2–3 goals (Objectives) for this quarter", time: "5 min", page: "OKR Builder", done: false },
+            { step: "2", task: "For each goal, write 2–3 ways you’ll measure success (Key Results)", time: "10 min", page: "OKR Builder", done: false },
+            { step: "3", task: "List the key numbers you’ll track each week (KPIs)", time: "5 min", page: "Weekly Metrics Snapshot", done: false },
             { step: "4", task: "Decide who owns each goal and metric", time: "3 min", page: "Roles & Responsibilities", done: false },
             { step: "5", task: "Set your weekly review day and time (every week, same slot)", time: "2 min", page: "Operating Rhythm Calendar", done: false },
             { step: "6", task: "Pick your Top 3 priorities for THIS week", time: "3 min", page: "Weekly Priorities Cockpit", done: false },
-            { step: "7", task: "Open the Dashboard page \u2014 this is now your \u201Chome base\u201D", time: "2 min", page: "Operating Rhythm Dashboard", done: false },
+            { step: "7", task: "Open the Dashboard page — this is now your “home base”", time: "2 min", page: "Operating Rhythm Dashboard", done: false },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -85,11 +85,11 @@ function QuickStartContent() {
         </tr></thead>
         <tbody>
           {[
-            { order: "1", action: "Open the Dashboard \u2014 scan goals + metrics", time: "2 min", look: "Are we on track? Any red flags?" },
-            { order: "2", action: "Review this week\u2019s metrics (KPI snapshot)", time: "3 min", look: "What went up? What went down? Why?" },
+            { order: "1", action: "Open the Dashboard — scan goals + metrics", time: "2 min", look: "Are we on track? Any red flags?" },
+            { order: "2", action: "Review this week’s metrics (KPI snapshot)", time: "3 min", look: "What went up? What went down? Why?" },
             { order: "3", action: "Use KPI Review \u2192 Actions to assign next steps", time: "4 min", look: "Turn every insight into an action with an owner" },
             { order: "4", action: "Update the Weekly Priorities Cockpit (Top 3)", time: "3 min", look: "What MUST happen this week to move goals forward?" },
-            { order: "5", action: "Capture any decisions needed in the Decision Log", time: "3 min", look: "What\u2019s blocking us that needs a decision?" },
+            { order: "5", action: "Capture any decisions needed in the Decision Log", time: "3 min", look: "What’s blocking us that needs a decision?" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -113,9 +113,9 @@ function QuickStartContent() {
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.2", padding: "14px 18px" }}>
           <strong style={{ color: "#059669" }}>Start small.</strong> Don&apos;t try to use every page on Day 1. Begin with the Dashboard + Weekly Priorities + OKR Builder. Add more pages as you get comfortable.<br />
-          <strong style={{ color: accent }}>Fewer goals = better results.</strong> Pick 2\u20133 objectives max per quarter. If you have 10 goals, you have zero goals.<br />
+          <strong style={{ color: accent }}>Fewer goals = better results.</strong> Pick 2–3 objectives max per quarter. If you have 10 goals, you have zero goals.<br />
           <strong style={{ color: "#7C3AED" }}>Make it a habit.</strong> The weekly review is the most important thing. Even if you skip everything else, do the 15-minute Monday routine.<br />
-          <strong style={{ color: "#DC2626" }}>Don&apos;t chase perfection.</strong> A \u201Cgood enough\u201D OKR that everyone understands is better than a perfect one nobody uses.<br />
+          <strong style={{ color: "#DC2626" }}>Don&apos;t chase perfection.</strong> A “good enough” OKR that everyone understands is better than a perfect one nobody uses.<br />
           <strong style={{ color: "#D97706" }}>Celebrate wins!</strong> When a key result hits green, acknowledge it. Progress fuels motivation.
         </td></tr>
       </tbody></table>
@@ -133,8 +133,8 @@ function QuickStartContent() {
         </tr></thead>
         <tbody>
           {[
-            { mistake: "Setting too many goals (5+ objectives)", fix: "Pick 2\u20133 objectives. Focus beats volume every time." },
-            { mistake: "Writing vague key results (\u201Cimprove customer experience\u201D)", fix: "Make it a number: \u201CReduce support wait time from 18 hrs to 6 hrs.\u201D" },
+            { mistake: "Setting too many goals (5+ objectives)", fix: "Pick 2–3 objectives. Focus beats volume every time." },
+            { mistake: "Writing vague key results (“improve customer experience”)", fix: "Make it a number: “Reduce support wait time from 18 hrs to 6 hrs.”" },
             { mistake: "Skipping the weekly review", fix: "Block 15 minutes every Monday. Treat it like a non-negotiable meeting." },
             { mistake: "Only tracking metrics without taking action", fix: "Use the KPI Review \u2192 Actions page. Every insight needs a next step." },
             { mistake: "Never updating the Dashboard", fix: "Update scores weekly. Stale data = stale decisions." },

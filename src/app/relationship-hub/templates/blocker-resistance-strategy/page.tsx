@@ -47,11 +47,11 @@ function BlockerContent() {
         <tbody>
           {[
             { label: "Who Is Resisting?", value: "[Name, role, team, level of influence]" },
-            { label: "What Are They Blocking?", value: "[Specific decision, resource, approval, or process they\u2019re impeding]" },
-            { label: "Why Are They Resisting?", value: "[Fear of change? Loss of control? Competing priority? Bad past experience? Legitimate concern? Don\u2019t know yet?]" },
-            { label: "Is Their Concern Valid?", value: "[Honestly assess: are they raising something real that you\u2019re ignoring? Sometimes the \u201Cblocker\u201D is right.]" },
+            { label: "What Are They Blocking?", value: "[Specific decision, resource, approval, or process they’re impeding]" },
+            { label: "Why Are They Resisting?", value: "[Fear of change? Loss of control? Competing priority? Bad past experience? Legitimate concern? Don’t know yet?]" },
+            { label: "Is Their Concern Valid?", value: "[Honestly assess: are they raising something real that you’re ignoring? Sometimes the “blocker” is right.]" },
             { label: "Resistance Type", value: "[Active opposition / Passive resistance / Indifference / Uninformed skepticism]" },
-            { label: "Impact If Unresolved", value: "[What happens if you don\u2019t address this? Timeline delay? Budget risk? Team morale? Political damage?]" },
+            { label: "Impact If Unresolved", value: "[What happens if you don’t address this? Timeline delay? Budget risk? Team morale? Political damage?]" },
             { label: "Urgency", value: "[Must resolve this week / This month / Can manage around it for now]" },
             { label: "Relationship History", value: "[Is this a new friction or a long-standing dynamic? Have you had conflict before?]" },
           ].map((r, i) => {
@@ -80,14 +80,14 @@ function BlockerContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Opening Conversation Plan", value: "[How will you open the dialogue? Lead with curiosity, not accusations. \u201CHelp me understand your concerns about...\u201D]" },
-            { label: "What You\u2019ll Listen For", value: "[Their real objection (not the surface one). What they need to feel heard. What would make this work for THEM.]" },
+            { label: "Opening Conversation Plan", value: "[How will you open the dialogue? Lead with curiosity, not accusations. “Help me understand your concerns about...”]" },
+            { label: "What You’ll Listen For", value: "[Their real objection (not the surface one). What they need to feel heard. What would make this work for THEM.]" },
             { label: "What You Can Offer", value: "[Compromise, involvement, recognition, addressing their concern, adjusting scope/timeline]" },
             { label: "What You Cannot Compromise On", value: "[Your non-negotiables. Know these BEFORE the conversation.]" },
             { label: "Who Can Help Bridge", value: "[A mutual connection? Their manager? Your sponsor? Someone they trust who supports your work?]" },
-            { label: "Desired Outcome", value: "[What does \u201Csuccess\u201D look like? Full support? Neutrality? Reduced opposition? Specific action?]" },
-            { label: "Timeline for Resolution", value: "[When do you need this resolved? What\u2019s your deadline before escalation becomes necessary?]" },
-            { label: "Fallback Plan", value: "[If the conversation fails, what\u2019s Plan B? Can you work around them? Do you escalate?]" },
+            { label: "Desired Outcome", value: "[What does “success” look like? Full support? Neutrality? Reduced opposition? Specific action?]" },
+            { label: "Timeline for Resolution", value: "[When do you need this resolved? What’s your deadline before escalation becomes necessary?]" },
+            { label: "Fallback Plan", value: "[If the conversation fails, what’s Plan B? Can you work around them? Do you escalate?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -146,9 +146,9 @@ function BlockerContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>RESISTANCE MANAGEMENT PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Assume positive intent first.", detail: "Most people aren\u2019t trying to sabotage you. They have concerns, constraints, or fears you don\u2019t see yet." },
+                { color: "#DC2626", tip: "Assume positive intent first.", detail: "Most people aren’t trying to sabotage you. They have concerns, constraints, or fears you don’t see yet." },
                 { color: "#059669", tip: "Listen before you persuade.", detail: "Understanding their position fully before responding shows respect and often reveals the real issue." },
-                { color: "#0EA5E9", tip: "Address the concern, not the person.", detail: "Never make it personal. \u201CThis decision is being blocked\u201D not \u201CYou are blocking this.\u201D" },
+                { color: "#0EA5E9", tip: "Address the concern, not the person.", detail: "Never make it personal. “This decision is being blocked” not “You are blocking this.”" },
                 { color: "#D97706", tip: "Document everything privately.", detail: "Keep notes of all conversations, commitments, and agreements. You may need them later." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -167,10 +167,10 @@ function BlockerContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>THINGS TO NEVER DO</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Never go around them without trying direct first.", detail: "Going over someone\u2019s head without talking to them first creates permanent enemies." },
+                { color: "#DC2626", tip: "Never go around them without trying direct first.", detail: "Going over someone’s head without talking to them first creates permanent enemies." },
                 { color: "#EA580C", tip: "Never badmouth them to others.", detail: "It always gets back to them. Always. And it destroys your credibility too." },
-                { color: "#D97706", tip: "Never escalate without documentation.", detail: "If you escalate, have facts, dates, and specifics. \u201CThey\u2019re being difficult\u201D isn\u2019t enough." },
-                { color: "#6366F1", tip: "Never burn the bridge entirely.", detail: "Today\u2019s blocker might be next quarter\u2019s ally. Keep the door open for future collaboration." },
+                { color: "#D97706", tip: "Never escalate without documentation.", detail: "If you escalate, have facts, dates, and specifics. “They’re being difficult” isn’t enough." },
+                { color: "#6366F1", tip: "Never burn the bridge entirely.", detail: "Today’s blocker might be next quarter’s ally. Keep the door open for future collaboration." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

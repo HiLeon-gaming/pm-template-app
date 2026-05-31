@@ -116,8 +116,8 @@ function FeedbackLogContent() {
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Recurring Strengths</td><td style={S.td0}>[What comes up consistently as a strength? Use for review season.]</td></tr>
         <tr><td style={S.tdLabelAlt}>Recurring Growth Areas</td><td style={S.tdAlt}>[What keeps coming up as a development area?]</td></tr>
-        <tr><td style={S.tdLabel}>Feedback I Need to Give</td><td style={S.td0}>[Any feedback I\u2019ve been putting off? Write it down and plan it.]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Their Feedback to Me</td><td style={S.tdAlt}>[Any patterns in what they\u2019re telling me? Am I improving?]</td></tr>
+        <tr><td style={S.tdLabel}>Feedback I Need to Give</td><td style={S.td0}>[Any feedback I’ve been putting off? Write it down and plan it.]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Their Feedback to Me</td><td style={S.tdAlt}>[Any patterns in what they’re telling me? Am I improving?]</td></tr>
       </tbody></table>
     </div>
   );

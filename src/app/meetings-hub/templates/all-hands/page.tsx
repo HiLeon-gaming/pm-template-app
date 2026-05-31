@@ -60,10 +60,10 @@ function AllHandsContent() {
             { time: "1:00", mins: "5", topic: "[Welcome + energy check + ground rules]", presenter: "[MC]", msg: "[Set the tone — positive, transparent, two-way]" },
             { time: "1:05", mins: "10", topic: "[Company / department update — big picture]", presenter: "[Leader]", msg: "[Revenue, headcount, strategic priorities, wins]" },
             { time: "1:15", mins: "10", topic: "[Team spotlight — achievements & demos]", presenter: "[Team Lead]", msg: "[Celebrate wins, show real work, recognize people]" },
-            { time: "1:25", mins: "10", topic: "[Strategic initiative deep-dive]", presenter: "[Project Lead]", msg: "[What\u2019s coming, why it matters, how it affects everyone]" },
+            { time: "1:25", mins: "10", topic: "[Strategic initiative deep-dive]", presenter: "[Project Lead]", msg: "[What’s coming, why it matters, how it affects everyone]" },
             { time: "1:35", mins: "5", topic: "[People & culture update]", presenter: "[HR / People]", msg: "[Hiring, engagement, upcoming events, policy changes]" },
             { time: "1:40", mins: "15", topic: "[Q&A — open floor]", presenter: "[MC]", msg: "[Pre-submitted + live questions. Be honest.]" },
-            { time: "1:55", mins: "5", topic: "[Closing — key takeaways + next steps]", presenter: "[Leader]", msg: "[3 things to remember. What\u2019s next. Thank you.]" },
+            { time: "1:55", mins: "5", topic: "[Closing — key takeaways + next steps]", presenter: "[Leader]", msg: "[3 things to remember. What’s next. Thank you.]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -99,7 +99,7 @@ function AllHandsContent() {
               <tr key={i}>
                 <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontWeight: 800, fontSize: "12px", color: accent }}>{i}</td>
                 <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Question asked]</td>
-                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Answer given or \u201CWill follow up\u201D]</td>
+                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Answer given or “Will follow up”]</td>
                 <td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontSize: "10px" }}>[Yes/No — Owner]</td>
               </tr>
             );

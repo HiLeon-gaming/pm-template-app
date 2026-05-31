@@ -96,7 +96,7 @@ function MeetingLogContent() {
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Total Meetings</td><td style={{ ...S.td0, width: "28%", fontWeight: 700 }}>[7 meetings]</td><td style={{ ...S.tdLabel, width: "22%" }}>Total Time</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[4.5 hours]</td></tr>
         <tr><td style={S.tdLabelAlt}>Avg Usefulness</td><td style={{ ...S.tdAlt, fontWeight: 700 }}>[4.3 / 5]</td><td style={S.tdLabelAlt}>Total Actions</td><td style={S.tdAlt}>[17 actions generated]</td></tr>
         <tr><td style={S.tdLabel}>Most Common Type</td><td style={S.td0}>[Team meetings — 3]</td><td style={S.tdLabel}>Could Be Async?</td><td style={{ ...S.td0, color: "#DC2626", fontWeight: 600 }}>[1 meeting — vendor call could be email]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Meetings to Cancel</td><td style={S.tdAlt}>[Any recurring meetings that no longer add value?]</td><td style={S.tdLabelAlt}>Meetings to Add</td><td style={S.tdAlt}>[Any gaps — do you need a meeting you don\u2019t have?]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Meetings to Cancel</td><td style={S.tdAlt}>[Any recurring meetings that no longer add value?]</td><td style={S.tdLabelAlt}>Meetings to Add</td><td style={S.tdAlt}>[Any gaps — do you need a meeting you don’t have?]</td></tr>
       </tbody></table>
     </div>
   );

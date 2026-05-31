@@ -152,8 +152,8 @@ function QPChecklistContent() {
               {[
                 { color: accent, tip: "Time-box everything.", detail: "Park overrun topics. Schedule follow-ups." },
                 { color: "#7C3AED", tip: "Pre-work is non-negotiable.", detail: "No scored OKRs or proposals? Session wasted." },
-                { color: "#059669", tip: "Cut ruthlessly.", detail: "2\u20133 objectives. Period. Say no to good ideas." },
-                { color: "#DC2626", tip: "Don\u2019t skip Stop Doing list.", detail: "New goals without removing old work = burnout." },
+                { color: "#059669", tip: "Cut ruthlessly.", detail: "2–3 objectives. Period. Say no to good ideas." },
+                { color: "#DC2626", tip: "Don’t skip Stop Doing list.", detail: "New goals without removing old work = burnout." },
                 { color: "#0EA5E9", tip: "Document decisions immediately.", detail: "Update OKR Builder + Dashboard within 24 hrs." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

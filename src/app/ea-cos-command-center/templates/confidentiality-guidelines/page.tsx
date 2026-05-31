@@ -74,8 +74,8 @@ function ConfidentialityContent() {
             { rule: "Never share via chat", how: "Sensitive topics should not be discussed in Slack/Teams channels. Use private messages or verbal." },
             { rule: "Redact before sharing", how: "When sharing meeting notes externally, remove confidential items first." },
             { rule: "Lock your screen", how: "Always lock your computer when stepping away. Exec notes should not be visible." },
-            { rule: "Destroy when done", how: "Delete notes that are no longer needed. Don\u2019t keep sensitive info \u201Cjust in case.\u201D" },
-            { rule: "Know your audience", how: "Before sharing any document, ask: \u201CWho should NOT see this?\u201D" },
+            { rule: "Destroy when done", how: "Delete notes that are no longer needed. Don’t keep sensitive info “just in case.”" },
+            { rule: "Know your audience", how: "Before sharing any document, ask: “Who should NOT see this?”" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

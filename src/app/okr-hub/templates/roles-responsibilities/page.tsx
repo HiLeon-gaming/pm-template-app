@@ -45,8 +45,8 @@ function RolesContent() {
         </tr></thead>
         <tbody>
           {[
-            { role: "Owner", color: "#DC2626", desc: "The person who is ACCOUNTABLE for delivering the result. They don\u2019t have to do all the work, but they\u2019re the one who answers \"did we hit it?\"", ex: "Sarah owns the \"Improve Customer Experience\" objective. She tracks progress, removes blockers, and reports on results." },
-            { role: "Contributor", color: "#059669", desc: "The people who DO the work that moves the Key Result. They execute the initiatives and tasks.", ex: "The support team are contributors. They\u2019re the ones reducing wait times by handling tickets faster." },
+            { role: "Owner", color: "#DC2626", desc: "The person who is ACCOUNTABLE for delivering the result. They don’t have to do all the work, but they’re the one who answers \"did we hit it?\"", ex: "Sarah owns the \"Improve Customer Experience\" objective. She tracks progress, removes blockers, and reports on results." },
+            { role: "Contributor", color: "#059669", desc: "The people who DO the work that moves the Key Result. They execute the initiatives and tasks.", ex: "The support team are contributors. They’re the ones reducing wait times by handling tickets faster." },
             { role: "Approver", color: "#7C3AED", desc: "The person who APPROVES goals, budgets, or major decisions. Usually a leader or executive. They say \"yes, go\" or \"no, adjust.\"", ex: "The CEO approves quarterly OKRs. The VP approves budget for new hires needed to hit the goal." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -147,7 +147,7 @@ function RolesContent() {
         <tbody>
           {[
             { prob: "\"Everyone owns it\" (which means nobody owns it)", fix: "Every OKR has exactly ONE accountable person. Not a team. One name." },
-            { prob: "The owner has no authority to make decisions", fix: "Owners must be empowered. If they can\u2019t make calls, escalation paths must be clear." },
+            { prob: "The owner has no authority to make decisions", fix: "Owners must be empowered. If they can’t make calls, escalation paths must be clear." },
             { prob: "Nobody updates the metrics", fix: "Assign a specific person to update each metric weekly. Put it in their calendar." },
             { prob: "Leaders approve but never review progress", fix: "Monthly Business Review is the mandatory check-in. Leaders must attend." },
           ].map((r, i) => {

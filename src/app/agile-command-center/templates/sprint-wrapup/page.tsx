@@ -110,7 +110,7 @@ function SprintWrapupContent() {
         </tr></thead>
         <tbody>
           {[
-            { id: "S-014", remain: "[Analytics event tracking — not started due to missing API key]", reest: "3", why: "[Blocked: DevOps didn\u2019t provide analytics API key until Day 8; not enough time to complete]", next: "[API key received — can start Day 1 of Sprint 9]" },
+            { id: "S-014", remain: "[Analytics event tracking — not started due to missing API key]", reest: "3", why: "[Blocked: DevOps didn’t provide analytics API key until Day 8; not enough time to complete]", next: "[API key received — can start Day 1 of Sprint 9]" },
             { id: "Bug", remain: "[1 remaining bug: duplicate flash on slow connection retry]", reest: "1", why: "[Low priority; dev focused on Apple Pay which was on critical path]", next: "[Quick fix — estimate 2-3 hours]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;

@@ -139,7 +139,7 @@ function WorkingAgreementsContent() {
             { norm: "WIP limit: 2 per person", detail: "No more than 2 active stories per individual" },
             { norm: "Finish before starting", detail: "Complete in-progress work before pulling new stories" },
             { norm: "Core hours: 10 AM–3 PM", detail: "Available for collaboration; protect deep work outside" },
-            { norm: "Focus blocks", detail: "Respect \u201CDo Not Disturb\u201D signals — no interruptions" },
+            { norm: "Focus blocks", detail: "Respect “Do Not Disturb” signals — no interruptions" },
           ])}
         </td>
       </tr></tbody></table>

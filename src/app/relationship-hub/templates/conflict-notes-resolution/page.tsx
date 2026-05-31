@@ -48,10 +48,10 @@ function ConflictContent() {
           {[
             { label: "Who Is Involved?", value: "[Names, roles, teams. Include anyone directly or indirectly involved.]" },
             { label: "What Happened?", value: "[Facts only. What specifically occurred? When? Where? Be precise, not emotional.]" },
-            { label: "What\u2019s the Disagreement About?", value: "[The core issue. Is it about priorities? Resources? Approach? Communication? Respect?]" },
+            { label: "What’s the Disagreement About?", value: "[The core issue. Is it about priorities? Resources? Approach? Communication? Respect?]" },
             { label: "Your Perspective", value: "[How you see the situation. What you believe is right and why.]" },
             { label: "Their Likely Perspective", value: "[Try to see it from their side. What might they believe is right and why?]" },
-            { label: "Impact If Unresolved", value: "[What happens if you don\u2019t resolve this? Project delay? Team morale? Reputation damage?]" },
+            { label: "Impact If Unresolved", value: "[What happens if you don’t resolve this? Project delay? Team morale? Reputation damage?]" },
             { label: "History / Context", value: "[Is this a new conflict or a recurring pattern? Any relevant backstory?]" },
             { label: "Your Emotional State", value: "[Be honest. Are you angry? Hurt? Frustrated? Anxious? This affects how you show up.]" },
           ].map((r, i) => {
@@ -80,14 +80,14 @@ function ConflictContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Desired Outcome", value: "[What does \u201Csuccess\u201D look like? Agreement? Compromise? Cleared air? Specific action?]" },
+            { label: "Desired Outcome", value: "[What does “success” look like? Agreement? Compromise? Cleared air? Specific action?]" },
             { label: "What You Want", value: "[Be specific. What concrete change or agreement are you seeking?]" },
             { label: "What You Can Offer", value: "[What are you willing to compromise on? What can you give to get what you need?]" },
             { label: "What You Cannot Compromise On", value: "[Your non-negotiables. Know these before the conversation starts.]" },
             { label: "Opening Statement", value: "[Draft your opening line. Lead with curiosity and collaboration, not accusation.]" },
-            { label: "Key Points to Make", value: "[3\u20134 points max. Focus on impact and solutions, not blame.]" },
+            { label: "Key Points to Make", value: "[3–4 points max. Focus on impact and solutions, not blame.]" },
             { label: "Questions to Ask Them", value: "[What do you need to understand from their side?]" },
-            { label: "Fallback Position", value: "[If you can\u2019t reach agreement, what\u2019s Plan B?]" },
+            { label: "Fallback Position", value: "[If you can’t reach agreement, what’s Plan B?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -144,8 +144,8 @@ function ConflictContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>CONFLICT RESOLUTION PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Address it, don\u2019t avoid it.", detail: "Unresolved conflict festers and gets worse. Have the conversation sooner, not later." },
-                { color: "#EA580C", tip: "Attack the problem, not the person.", detail: "\u201CThis decision is causing a delay\u201D not \u201CYou are causing a delay.\u201D" },
+                { color: "#DC2626", tip: "Address it, don’t avoid it.", detail: "Unresolved conflict festers and gets worse. Have the conversation sooner, not later." },
+                { color: "#EA580C", tip: "Attack the problem, not the person.", detail: "“This decision is causing a delay” not “You are causing a delay.”" },
                 { color: "#059669", tip: "Listen more than you talk.", detail: "Understanding their position fully often reveals the real issue, which may not be what you think." },
                 { color: "#D97706", tip: "Focus on interests, not positions.", detail: "Positions are rigid. Interests are flexible. Find the underlying need and solve for that." },
               ].map((r, i) => {
@@ -167,7 +167,7 @@ function ConflictContent() {
               {[
                 { color: "#DC2626", tip: "Never have the conversation via email.", detail: "Tone is lost in text. Hard conversations deserve face-to-face (or at minimum, video)." },
                 { color: "#EA580C", tip: "Never bring an audience.", detail: "Resolving conflict in public humiliates people. Have the conversation privately first." },
-                { color: "#D97706", tip: "Never use \u201Calways\u201D or \u201Cnever.\u201D", detail: "These absolutes feel like attacks. Use specifics: \u201CIn the March 5th meeting...\u201D" },
+                { color: "#D97706", tip: "Never use “always” or “never.”", detail: "These absolutes feel like attacks. Use specifics: “In the March 5th meeting...”" },
                 { color: "#6366F1", tip: "Never leave without clear next steps.", detail: "A conversation without agreed actions is just venting. End with specifics." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

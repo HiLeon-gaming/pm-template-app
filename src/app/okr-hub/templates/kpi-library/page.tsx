@@ -91,7 +91,7 @@ function KPILibraryContent() {
             <thead><tr><td style={{ backgroundColor: "#EDE9FE", color: "#7C3AED", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #7C3AED" }}>📋 KPI LIBRARY RULES</td></tr></thead>
             <tbody>
               {[
-                { label: "Max KPIs", value: "15\u201320 max for the whole org. More = no one remembers." },
+                { label: "Max KPIs", value: "15–20 max for the whole org. More = no one remembers." },
                 { label: "Every KPI Needs an Owner", value: "Unowned metrics die quietly. No owner = no accountability." },
                 { label: "Review Cadence", value: "Review full library quarterly. Remove unused KPIs (30+ days)." },
                 { label: "One Source of Truth", value: "Each KPI has ONE data source. Two calculations = an argument." },
@@ -114,7 +114,7 @@ function KPILibraryContent() {
             <thead><tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>💡 SELECTION TIPS</td></tr></thead>
             <tbody>
               {[
-                { color: accent, tip: "Can't act on it? Don't track it.", detail: "If the answer is always 'interesting but so what?' \u2014 remove it." },
+                { color: accent, tip: "Can't act on it? Don't track it.", detail: "If the answer is always 'interesting but so what?' — remove it." },
                 { color: "#059669", tip: "Leading > Lagging.", detail: "MQLs, pipeline tell what's coming. Revenue tells what happened. Act on leading." },
                 { color: "#7C3AED", tip: "The 3-Second Test.", detail: "Can someone understand this KPI in 3 seconds? If not, simplify." },
                 { color: "#D97706", tip: "Categories help.", detail: "Group by domain (CX, Growth, Sales, People, Finance)." },

@@ -65,7 +65,7 @@ function TeamHealthRadarContent() {
         </tr></thead>
         <tbody>
           {[
-            { dim: "Sprint Goal Clarity", what: "Do we understand WHAT we\u2019re building and WHY?", score: 4, prev: 3, trend: "↑" },
+            { dim: "Sprint Goal Clarity", what: "Do we understand WHAT we’re building and WHY?", score: 4, prev: 3, trend: "↑" },
             { dim: "Teamwork & Collaboration", what: "Do we help each other? Is pairing easy?", score: 5, prev: 5, trend: "→" },
             { dim: "Autonomy & Empowerment", what: "Can we make decisions without waiting for approvals?", score: 3, prev: 3, trend: "→" },
             { dim: "Process & Ceremonies", what: "Are our ceremonies useful and well-run?", score: 4, prev: 3, trend: "↑" },

@@ -44,13 +44,13 @@ function TrustContent() {
             <thead><tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>TRUST BUILDERS &mdash; DO MORE OF THIS</td></tr></thead>
             <tbody>
               {[
-                { text: "Deliver on promises \u2014 every time, no exceptions", guide: "Reliability is the foundation of trust. One broken promise undoes five kept ones." },
+                { text: "Deliver on promises — every time, no exceptions", guide: "Reliability is the foundation of trust. One broken promise undoes five kept ones." },
                 { text: "Share credit publicly; acknowledge their contributions", guide: "People who feel recognized become your strongest advocates." },
                 { text: "Give them advance notice before announcements or changes", guide: "Never let them be surprised. Especially in front of their boss or team." },
                 { text: "Come prepared with data and clear recommendations", guide: "Shows you respect their time and take the relationship seriously." },
-                { text: "Follow up when you say you will", guide: "Even a quick \u201CJust following up as promised\u201D builds enormous credibility." },
+                { text: "Follow up when you say you will", guide: "Even a quick “Just following up as promised” builds enormous credibility." },
                 { text: "Be transparent about problems early, not late", guide: "Sharing bad news early shows courage and respect. Hiding it destroys trust." },
-                { text: "Respect their time \u2014 be concise and purposeful", guide: "Short, focused meetings > long, wandering ones. Always." },
+                { text: "Respect their time — be concise and purposeful", guide: "Short, focused meetings > long, wandering ones. Always." },
                 { text: "Ask for their input on decisions that affect them", guide: "Even if you already know the answer, being consulted makes people feel valued." },
                 { text: "[Enter what builds trust with this person]", guide: "" },
                 { text: "[Enter what builds trust with this person]", guide: "" },
@@ -72,11 +72,11 @@ function TrustContent() {
             <tbody>
               {[
                 { text: "Surprise them with bad news in a public meeting", guide: "The fastest way to permanently damage a relationship. Always brief privately first." },
-                { text: "Miss a deadline without proactive communication", guide: "If you\u2019re going to miss, tell them BEFORE the deadline, not after." },
+                { text: "Miss a deadline without proactive communication", guide: "If you’re going to miss, tell them BEFORE the deadline, not after." },
                 { text: "Go over their head without telling them first", guide: "Even if escalation is justified, warn them first. Respect the chain." },
-                { text: "Send long, unfocused emails with no clear ask", guide: "If they have to scroll to find the ask, you\u2019ve already lost them." },
+                { text: "Send long, unfocused emails with no clear ask", guide: "If they have to scroll to find the ask, you’ve already lost them." },
                 { text: "Make decisions that affect them without consulting them", guide: "Even small decisions. Being excluded makes people feel disrespected." },
-                { text: "Fail to follow up on commitments", guide: "Broken follow-ups signal you don\u2019t value the relationship." },
+                { text: "Fail to follow up on commitments", guide: "Broken follow-ups signal you don’t value the relationship." },
                 { text: "Take credit for their ideas or contributions", guide: "This is a career-damaging move. Always attribute openly." },
                 { text: "Bring problems without any proposed solutions", guide: "Problem + solution = partnership. Problem alone = burden." },
                 { text: "[Enter what damages trust with this person]", guide: "" },
@@ -111,12 +111,12 @@ function TrustContent() {
         </tr></thead>
         <tbody>
           {[
-            { step: "1", action: "Acknowledge it", detail: "Name what happened directly. Don\u2019t minimize or make excuses. \u201CI dropped the ball on X and I understand the impact.\u201D", timing: "Within 24 hours" },
+            { step: "1", action: "Acknowledge it", detail: "Name what happened directly. Don’t minimize or make excuses. “I dropped the ball on X and I understand the impact.”", timing: "Within 24 hours" },
             { step: "2", action: "Take responsibility", detail: "Own your part fully. Even if others contributed, focus on what YOU could have done differently.", timing: "Same conversation" },
-            { step: "3", action: "Ask what they need", detail: "\u201CWhat would help rebuild your confidence in this?\u201D Let them define the path forward.", timing: "Same conversation" },
+            { step: "3", action: "Ask what they need", detail: "“What would help rebuild your confidence in this?” Let them define the path forward.", timing: "Same conversation" },
             { step: "4", action: "Deliver a quick win", detail: "Find something small you can deliver flawlessly within 48 hours. Rebuild through action, not words.", timing: "Within 48 hours" },
-            { step: "5", action: "Over-communicate temporarily", detail: "Increase your update frequency for 2\u20134 weeks. Show them you\u2019re back on track through consistent follow-through.", timing: "2\u20134 weeks" },
-            { step: "6", action: "Check in on the relationship", detail: "\u201CHow are we doing? Is there anything else I can do to make this right?\u201D Show you care about the long game.", timing: "2\u20134 weeks later" },
+            { step: "5", action: "Over-communicate temporarily", detail: "Increase your update frequency for 2–4 weeks. Show them you’re back on track through consistent follow-through.", timing: "2–4 weeks" },
+            { step: "6", action: "Check in on the relationship", detail: "“How are we doing? Is there anything else I can do to make this right?” Show you care about the long game.", timing: "2–4 weeks later" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -145,7 +145,7 @@ function TrustContent() {
                 { color: "#059669", tip: "Trust is built in drops and lost in buckets.", detail: "Every interaction is a small deposit or withdrawal. Be intentional about making deposits." },
                 { color: "#8B5CF6", tip: "Consistency matters more than grand gestures.", detail: "Showing up reliably week after week builds more trust than one heroic effort." },
                 { color: "#0EA5E9", tip: "Trust is specific, not general.", detail: "Someone may trust your expertise but not your follow-through. Identify which type of trust you need to build." },
-                { color: "#D97706", tip: "The fastest trust builder: do what you said you\u2019d do.", detail: "It sounds simple because it is. Most people fail at this basic level." },
+                { color: "#D97706", tip: "The fastest trust builder: do what you said you’d do.", detail: "It sounds simple because it is. Most people fail at this basic level." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -164,8 +164,8 @@ function TrustContent() {
             <tbody>
               {[
                 { color: "#DC2626", tip: "They stop responding quickly.", detail: "A change in response time often signals eroding trust. Address it proactively." },
-                { color: "#EA580C", tip: "They start looping in their manager.", detail: "When they cc their boss, they may be building a paper trail. That\u2019s a trust warning." },
-                { color: "#D97706", tip: "They become more formal in tone.", detail: "Shifting from casual to formal communication often means they\u2019re putting up walls." },
+                { color: "#EA580C", tip: "They start looping in their manager.", detail: "When they cc their boss, they may be building a paper trail. That’s a trust warning." },
+                { color: "#D97706", tip: "They become more formal in tone.", detail: "Shifting from casual to formal communication often means they’re putting up walls." },
                 { color: "#6366F1", tip: "They ask for more documentation.", detail: "Increased requests for written confirmation suggest they no longer trust verbal agreements." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

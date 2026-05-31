@@ -184,7 +184,7 @@ function CommandDashboardContent() {
           {[
             { fu: "[Send recap email from Monday exec review]", who: "[You]", due: "[03/05]", done: "No" },
             { fu: "[Share project timeline with stakeholders]", who: "[Mike]", due: "[03/06]", done: "No" },
-            { fu: "[Confirm Sarah\u2019s training enrollment]", who: "[You]", due: "[03/07]", done: "No" },
+            { fu: "[Confirm Sarah’s training enrollment]", who: "[You]", due: "[03/07]", done: "No" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

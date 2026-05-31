@@ -231,9 +231,9 @@ function OKRBuilderContent() {
             <thead><tr><td style={{ backgroundColor: "#DBEAFE", color: "#0EA5E9", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #0EA5E9" }}>🏆 HOW TO SCORE OKRs</td></tr></thead>
             <tbody>
               {[
-                { score: "0.7 \u2013 1.0", label: "Green", bg: C.badgeGreenBg, fg: C.badgeGreenFg, desc: "Delivered! Hit or exceeded target." },
-                { score: "0.4 \u2013 0.6", label: "Amber", bg: C.badgeAmberBg, fg: C.badgeAmberFg, desc: "Good progress but didn\u2019t fully hit it." },
-                { score: "0.0 \u2013 0.3", label: "Red", bg: C.badgeRedBg, fg: C.badgeRedFg, desc: "Missed significantly. Learn and adjust." },
+                { score: "0.7 – 1.0", label: "Green", bg: C.badgeGreenBg, fg: C.badgeGreenFg, desc: "Delivered! Hit or exceeded target." },
+                { score: "0.4 – 0.6", label: "Amber", bg: C.badgeAmberBg, fg: C.badgeAmberFg, desc: "Good progress but didn’t fully hit it." },
+                { score: "0.0 – 0.3", label: "Red", bg: C.badgeRedBg, fg: C.badgeRedFg, desc: "Missed significantly. Learn and adjust." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -259,8 +259,8 @@ function OKRBuilderContent() {
               {[
                 { color: accent, tip: "Objectives should be inspiring.", detail: "\u201cImprove CX\u201d = good. \u201cIncrease CSAT to 4.5\u201d = a KR, not an Objective." },
                 { color: "#059669", tip: "Key Results must have numbers.", detail: "\u201cImprove support\u201d = bad. \u201cReduce wait to 6 hrs\u201d = good." },
-                { color: "#D97706", tip: "2\u20133 objectives per quarter. Max.", detail: "5+ objectives = zero focus. Cut ruthlessly." },
-                { color: "#DC2626", tip: "Don\u2019t confuse tasks with KRs.", detail: "\u201cLaunch website\u201d = task. \u201cConversion 2%\u21925%\u201d = KR." },
+                { color: "#D97706", tip: "2–3 objectives per quarter. Max.", detail: "5+ objectives = zero focus. Cut ruthlessly." },
+                { color: "#DC2626", tip: "Don’t confuse tasks with KRs.", detail: "\u201cLaunch website\u201d = task. \u201cConversion 2%\u21925%\u201d = KR." },
                 { color: "#0EA5E9", tip: "0.7 is a great score.", detail: "OKRs should be ambitious. 100% every time = too easy." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

@@ -57,7 +57,7 @@ const categories: Category[] = [
       },
       {
         title: "Terminology Guide",
-        description: "Stakeholder, sponsor, champion, decision maker, influencer, CRM, and more \u2014 in plain English.",
+        description: "Stakeholder, sponsor, champion, decision maker, influencer, CRM, and more — in plain English.",
         href: `${BASE}/terminology-guide`,
         badge: "\u2705 Built",
       },
@@ -89,7 +89,7 @@ const categories: Category[] = [
   },
   {
     title: "Stakeholder Profiles (CRM-lite)",
-    subtitle: "The heart of the system \u2014 duplicate these per stakeholder",
+    subtitle: "The heart of the system — duplicate these per stakeholder",
     icon: UserCircle,
     color: "#8B5CF6",
     templates: [
@@ -115,7 +115,7 @@ const categories: Category[] = [
       },
       {
         title: "Influence & Interest Snapshot",
-        description: "Simple power vs interest grid \u2014 helps prioritize attention.",
+        description: "Simple power vs interest grid — helps prioritize attention.",
         href: `${BASE}/influence-interest-snapshot`,
         badge: "\u2705 Built",
       },
@@ -171,7 +171,7 @@ const categories: Category[] = [
   },
   {
     title: "Relationship Planning",
-    subtitle: "Intentional strategies \u2014 not reactive firefighting",
+    subtitle: "Intentional strategies — not reactive firefighting",
     icon: HeartHandshake,
     color: "#0EA5E9",
     templates: [
@@ -231,7 +231,7 @@ const categories: Category[] = [
   },
   {
     title: "Commitments, Follow-Ups & Accountability",
-    subtitle: "Trust comes from follow-through \u2014 never drop the ball",
+    subtitle: "Trust comes from follow-through — never drop the ball",
     icon: ClipboardCheck,
     color: "#EA580C",
     templates: [
@@ -443,13 +443,13 @@ const categories: Category[] = [
       },
       {
         title: "Quarterly Relationship Review",
-        description: "What changed, what improved, what\u2019s at risk.",
+        description: "What changed, what improved, what’s at risk.",
         href: `${BASE}/quarterly-relationship-review`,
         badge: "\u2705 Built",
       },
       {
         title: "Wins & Momentum Summary",
-        description: "What\u2019s going well; who to recognize; what to reinforce.",
+        description: "What’s going well; who to recognize; what to reinforce.",
         href: `${BASE}/wins-momentum-summary`,
         badge: "\u2705 Built",
       },

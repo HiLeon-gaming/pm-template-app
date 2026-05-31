@@ -65,7 +65,7 @@ function AttendanceRolesContent() {
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.thSecondary, textAlign: "center" as const, backgroundColor: "#059669", color: "#FFFFFF" }}>✅ Invite If&hellip;</td></tr>
-            {["They need to make a decision", "They own an action item being discussed", "Their input is required for a key topic", "They\u2019re directly affected by the outcome", "They\u2019re a required approver or sign-off"].map((t, i) => (
+            {["They need to make a decision", "They own an action item being discussed", "Their input is required for a key topic", "They’re directly affected by the outcome", "They’re a required approver or sign-off"].map((t, i) => (
               <tr key={i}><td style={{ ...(i % 2 === 0 ? S.td0 : S.tdAlt), fontSize: "10px", padding: "6px 10px" }}>{t}</td></tr>
             ))}
           </tbody></table>
@@ -73,7 +73,7 @@ function AttendanceRolesContent() {
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.thSecondary, textAlign: "center" as const, backgroundColor: "#DC2626", color: "#FFFFFF" }}>❌ Don&apos;t Invite If&hellip;</td></tr>
-            {["They only need the recap (send notes instead)", "They\u2019re \u201CFYI only\u201D (email the summary)", "They have no action items or decisions", "You\u2019re inviting out of courtesy or habit", "Their calendar is already overloaded"].map((t, i) => (
+            {["They only need the recap (send notes instead)", "They’re “FYI only” (email the summary)", "They have no action items or decisions", "You’re inviting out of courtesy or habit", "Their calendar is already overloaded"].map((t, i) => (
               <tr key={i}><td style={{ ...(i % 2 === 0 ? S.td0 : S.tdAlt), fontSize: "10px", padding: "6px 10px" }}>{t}</td></tr>
             ))}
           </tbody></table>

@@ -42,12 +42,12 @@ function EscalationContent() {
         <tbody>
           {[
             { label: "What Needs Escalating", value: "[One sentence: What is the specific issue that requires someone more senior to resolve?]" },
-            { label: "Why It\u2019s Blocked", value: "[What have you tried? Why can\u2019t you resolve this at your level?]" },
+            { label: "Why It’s Blocked", value: "[What have you tried? Why can’t you resolve this at your level?]" },
             { label: "Impact If Not Resolved", value: "[What happens if this stays blocked? Timeline impact? Cost? Risk? Be specific with numbers.]" },
             { label: "Deadline for Resolution", value: "[By when does this need to be resolved to avoid the impact above?]" },
-            { label: "Who You\u2019re Escalating To", value: "[Name, role. Why this person? What authority do they have to resolve it?]" },
+            { label: "Who You’re Escalating To", value: "[Name, role. Why this person? What authority do they have to resolve it?]" },
             { label: "Who Else Needs to Know", value: "[Who should be informed about the escalation? Sponsor? Affected stakeholders?]" },
-            { label: "What You\u2019ve Already Done", value: "[Show your work. What steps have you taken to resolve this before escalating?]" },
+            { label: "What You’ve Already Done", value: "[Show your work. What steps have you taken to resolve this before escalating?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -77,7 +77,7 @@ function EscalationContent() {
         </tr></thead>
         <tbody>
           {[
-            { opt: "A", desc: "Have Engineering Director mandate API priority for James\u2019s team this sprint.", pros: "Fast resolution. Unblocks us immediately.", cons: "May create friction with Eng. team. Overrides their planning.", pick: "\u2b50 YES" },
+            { opt: "A", desc: "Have Engineering Director mandate API priority for James’s team this sprint.", pros: "Fast resolution. Unblocks us immediately.", cons: "May create friction with Eng. team. Overrides their planning.", pick: "\u2b50 YES" },
             { opt: "B", desc: "Reduce scope to remove API dependency. Defer that feature to Phase 2.", pros: "No conflict. We control it.", cons: "Delivers less value. Users lose a key feature.", pick: "" },
             { opt: "C", desc: "Wait 2 more weeks for natural sprint rotation.", pros: "No escalation needed.", cons: "2-week delay. Cascading impact on Phase 2.", pick: "" },
             { opt: "[D]", desc: "[Alternative option]", pros: "[Benefits]", cons: "[Drawbacks]", pick: "" },
@@ -98,9 +98,9 @@ function EscalationContent() {
       <table style={{ ...S.tbl, marginTop: "6px" }}>
         <tbody>
           <tr><td style={{ ...S.td0, backgroundColor: "#EDE9FE", fontSize: "10px", fontWeight: 700, color: accent, width: "20%" }}>Your Recommendation</td>
-          <td style={{ ...S.td0, backgroundColor: "#EDE9FE", fontSize: "10px" }}>[Option A \u2014 because speed matters more than friction here. The 2-week delay cascades into Phase 2. I\u2019ve already spoken to James and he\u2019s open to it if his Director agrees.]</td></tr>
+          <td style={{ ...S.td0, backgroundColor: "#EDE9FE", fontSize: "10px" }}>[Option A — because speed matters more than friction here. The 2-week delay cascades into Phase 2. I’ve already spoken to James and he’s open to it if his Director agrees.]</td></tr>
           <tr><td style={{ ...S.td0, fontSize: "10px", fontWeight: 700, color: accent, width: "20%" }}>Decision Needed By</td>
-          <td style={{ ...S.td0, fontSize: "10px" }}>[Date \u2014 because sprint planning happens on [day] and we need the decision before then.]</td></tr>
+          <td style={{ ...S.td0, fontSize: "10px" }}>[Date — because sprint planning happens on [day] and we need the decision before then.]</td></tr>
         </tbody>
       </table>
     </div>
@@ -115,10 +115,10 @@ function EscalationContent() {
             <thead><tr><td style={{ backgroundColor: "#EDE9FE", color: "#6366F1", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #6366F1" }}>ESCALATION PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#6366F1", tip: "Escalation is a professional tool, not a last resort.", detail: "Senior leaders EXPECT you to escalate when you\u2019re blocked. Not escalating is the mistake." },
-                { color: "#059669", tip: "Warn the person being escalated about.", detail: "Say: \u201CI need to escalate this to [Director] to get it moving. Wanted you to know.\u201D No surprises." },
-                { color: "#0EA5E9", tip: "Always show what you\u2019ve already tried.", detail: "This proves you\u2019re not being lazy. You exhausted your options before going up." },
-                { color: "#D97706", tip: "Focus on the issue, not the person.", detail: "\u201CThe API work is blocked\u201D not \u201CJames is blocking us.\u201D Keep it professional." },
+                { color: "#6366F1", tip: "Escalation is a professional tool, not a last resort.", detail: "Senior leaders EXPECT you to escalate when you’re blocked. Not escalating is the mistake." },
+                { color: "#059669", tip: "Warn the person being escalated about.", detail: "Say: “I need to escalate this to [Director] to get it moving. Wanted you to know.” No surprises." },
+                { color: "#0EA5E9", tip: "Always show what you’ve already tried.", detail: "This proves you’re not being lazy. You exhausted your options before going up." },
+                { color: "#D97706", tip: "Focus on the issue, not the person.", detail: "“The API work is blocked” not “James is blocking us.” Keep it professional." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -136,10 +136,10 @@ function EscalationContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>ESCALATION MISTAKES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Escalating emotionally.", detail: "Wait until you\u2019re calm. Write this prep sheet. Then escalate with facts." },
+                { color: "#DC2626", tip: "Escalating emotionally.", detail: "Wait until you’re calm. Write this prep sheet. Then escalate with facts." },
                 { color: "#EA580C", tip: "Escalating without warning the other party.", detail: "Blindsiding someone with an escalation destroys the relationship. Always tell them first." },
-                { color: "#D97706", tip: "Escalating without options.", detail: "Don\u2019t just dump a problem. Come with options and a recommendation." },
-                { color: "#6366F1", tip: "Waiting too long to escalate.", detail: "If you\u2019ve been blocked for >1 week with no progress, it\u2019s time. Don\u2019t wait for it to get worse." },
+                { color: "#D97706", tip: "Escalating without options.", detail: "Don’t just dump a problem. Come with options and a recommendation." },
+                { color: "#6366F1", tip: "Waiting too long to escalate.", detail: "If you’ve been blocked for >1 week with no progress, it’s time. Don’t wait for it to get worse." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

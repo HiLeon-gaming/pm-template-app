@@ -59,13 +59,13 @@ function BoardLeadershipContent() {
         </tr></thead>
         <tbody>
           {[
-            { topic: "[Call to order + approval of previous minutes]", type: "Admin", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, presenter: "[Chair]", time: "5 min", preread: "[\u2014]" },
+            { topic: "[Call to order + approval of previous minutes]", type: "Admin", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, presenter: "[Chair]", time: "5 min", preread: "[—]" },
             { topic: "[CEO / GM report — business performance overview]", type: "Report", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, presenter: "[CEO]", time: "15 min", preread: "[CEO Report — pg 3-8]" },
             { topic: "[Financial report — P&L, budget vs. actual]", type: "Report", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, presenter: "[CFO]", time: "15 min", preread: "[Financial Pack — pg 9-15]" },
             { topic: "[Strategic initiative update — Project Alpha]", type: "Discussion", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, presenter: "[VP Strategy]", time: "20 min", preread: "[Strategy Brief — pg 16-20]" },
             { topic: "[Hiring plan approval — Q2 headcount]", type: "Decision", tBg: C.badgeRedBg, tFg: C.badgeRedFg, presenter: "[CHRO]", time: "10 min", preread: "[Headcount Proposal]" },
             { topic: "[Risk & compliance update]", type: "Report", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, presenter: "[CLO]", time: "10 min", preread: "[Risk Register]" },
-            { topic: "[Any other business + next meeting date]", type: "Admin", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, presenter: "[Chair]", time: "5 min", preread: "[\u2014]" },
+            { topic: "[Any other business + next meeting date]", type: "Admin", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, presenter: "[Chair]", time: "5 min", preread: "[—]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

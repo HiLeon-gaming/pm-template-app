@@ -54,8 +54,8 @@ function OneOnOneNotesContent() {
         <tbody>
           {[
             { topic: "Wins / Highlights", notes: "[What went well — capture their exact words when possible]" },
-            { topic: "Challenges / Blockers", notes: "[What\u2019s difficult — what support do they need?]" },
-            { topic: "Priorities This Week", notes: "[What they\u2019re focused on — any shifts from last week?]" },
+            { topic: "Challenges / Blockers", notes: "[What’s difficult — what support do they need?]" },
+            { topic: "Priorities This Week", notes: "[What they’re focused on — any shifts from last week?]" },
             { topic: "Feedback Given", notes: "[What feedback did you share? Positive or constructive.]" },
             { topic: "Feedback Received", notes: "[What feedback did they give you? How can you improve?]" },
             { topic: "Other Topics", notes: "[Anything else discussed — personal, team dynamics, etc.]" },

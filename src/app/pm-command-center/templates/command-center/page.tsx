@@ -46,7 +46,7 @@ const sections: Section[] = [
       { name: "RACI Matrix", href: `${BASE}/raci-matrix` },
       { name: "Resource Allocation Tracker", href: `${BASE}/resource-allocation-tracker` },
     ],
-    explanation: "This section focuses on when things happen and who does them. The Project Schedule lays out phases, milestones, and key dates so the team knows the timeline. The Resource Management Plan describes what skills the team needs, how many people are required, and when they are available. The RACI Matrix is a simple chart that clarifies who is Responsible (does the work), Accountable (makes the final decision), Consulted (gives input), and Informed (needs to know) for every major deliverable. The Resource Allocation Tracker shows how much of each person\u2019s time is committed so you can avoid overloading anyone.",
+    explanation: "This section focuses on when things happen and who does them. The Project Schedule lays out phases, milestones, and key dates so the team knows the timeline. The Resource Management Plan describes what skills the team needs, how many people are required, and when they are available. The RACI Matrix is a simple chart that clarifies who is Responsible (does the work), Accountable (makes the final decision), Consulted (gives input), and Informed (needs to know) for every major deliverable. The Resource Allocation Tracker shows how much of each person’s time is committed so you can avoid overloading anyone.",
   },
   {
     title: "Planning — Budget & Procurement",
@@ -78,7 +78,7 @@ const sections: Section[] = [
       { name: "Stakeholder Engagement Plan", href: `${BASE}/stakeholder-engagement-plan` },
       { name: "Meeting Agenda & Minutes", href: `${BASE}/meeting-agenda-minutes` },
     ],
-    explanation: "Communication is one of the biggest reasons projects succeed or fail. The Communications Plan maps out who receives what information, how often, and through what channel (email, meeting, report, etc.). The Stakeholder Engagement Plan goes deeper by defining strategies for each stakeholder group based on their level of power and interest \u2014 it tracks where each stakeholder currently stands (supportive, neutral, or resistant) and where you need them to be. The Meeting Agenda & Minutes template gives you a repeatable format for running productive meetings: a clear agenda, recorded discussion points, decisions made, and action items with owners and due dates.",
+    explanation: "Communication is one of the biggest reasons projects succeed or fail. The Communications Plan maps out who receives what information, how often, and through what channel (email, meeting, report, etc.). The Stakeholder Engagement Plan goes deeper by defining strategies for each stakeholder group based on their level of power and interest — it tracks where each stakeholder currently stands (supportive, neutral, or resistant) and where you need them to be. The Meeting Agenda & Minutes template gives you a repeatable format for running productive meetings: a clear agenda, recorded discussion points, decisions made, and action items with owners and due dates.",
   },
   {
     title: "Executing & Monitoring",
@@ -91,7 +91,7 @@ const sections: Section[] = [
       { name: "Decision Log", href: `${BASE}/decision-log` },
       { name: "Change Control Log", href: `${BASE}/change-control-log` },
     ],
-    explanation: "Once the project is underway, these templates help you track progress, report status, and manage changes. The Weekly Status Report uses a RAG format (Red, Amber, Green \u2014 where Red means at risk, Amber means watch closely, and Green means on track) to give stakeholders a quick snapshot each week. The Executive Dashboard is a one-page summary built for senior leaders who need the big picture fast. The Issue Log tracks problems that have already happened (unlike risks, which have not happened yet) with severity, impact, and resolution plans. The Action Item Tracker is a central list of every to-do that comes out of any meeting, with clear owners and due dates. The Decision Log records every important project decision so no one has to ask \"why did we do that?\" months later. The Change Control Log tracks all change requests through analysis, approval, and implementation.",
+    explanation: "Once the project is underway, these templates help you track progress, report status, and manage changes. The Weekly Status Report uses a RAG format (Red, Amber, Green — where Red means at risk, Amber means watch closely, and Green means on track) to give stakeholders a quick snapshot each week. The Executive Dashboard is a one-page summary built for senior leaders who need the big picture fast. The Issue Log tracks problems that have already happened (unlike risks, which have not happened yet) with severity, impact, and resolution plans. The Action Item Tracker is a central list of every to-do that comes out of any meeting, with clear owners and due dates. The Decision Log records every important project decision so no one has to ask \"why did we do that?\" months later. The Change Control Log tracks all change requests through analysis, approval, and implementation.",
   },
   {
     title: "Closing Process Group",
@@ -102,7 +102,7 @@ const sections: Section[] = [
       { name: "Project Handoff Checklist", href: `${BASE}/project-handoff-checklist` },
       { name: "Benefits Realization Tracker", href: `${BASE}/benefits-realization-tracker` },
     ],
-    explanation: "Closing a project well is just as important as starting it well. The Project Closure Report is the formal document that summarizes what was delivered, whether the project met its objectives, final budget numbers, and any items still open. The Lessons Learned Register captures what went well, what did not go well, and what the team would do differently next time \u2014 organized so future project teams can learn from your experience. The Project Handoff Checklist ensures a smooth transition from the project team to operations, covering system access, documentation, support contacts, and service-level agreements (SLAs). The Benefits Realization Tracker follows up after the project is done to measure whether the promised business benefits (from the original Business Case) are actually being achieved.",
+    explanation: "Closing a project well is just as important as starting it well. The Project Closure Report is the formal document that summarizes what was delivered, whether the project met its objectives, final budget numbers, and any items still open. The Lessons Learned Register captures what went well, what did not go well, and what the team would do differently next time — organized so future project teams can learn from your experience. The Project Handoff Checklist ensures a smooth transition from the project team to operations, covering system access, documentation, support contacts, and service-level agreements (SLAs). The Benefits Realization Tracker follows up after the project is done to measure whether the promised business benefits (from the original Business Case) are actually being achieved.",
   },
   {
     title: "Governance & Portfolio",
@@ -112,7 +112,7 @@ const sections: Section[] = [
       { name: "Phase Gate Review Checklist", href: `${BASE}/phase-gate-review-checklist` },
       { name: "Lessons Learned Library Index", href: `${BASE}/lessons-learned-library-index` },
     ],
-    explanation: "These templates serve the PMO (Project Management Office) and senior leadership by providing visibility across multiple projects. The Project Portfolio Summary is a multi-project view showing RAG (Red/Amber/Green) health status, resource allocation, budget roll-ups, and how each project aligns to the organization\u2019s strategic goals. The Phase Gate Review Checklist provides go/no-go criteria at the end of each project phase, making sure governance standards are met before the team moves forward. The Lessons Learned Library Index creates a searchable, cross-project knowledge base of lessons organized by topic area, enabling the entire organization to learn and improve over time.",
+    explanation: "These templates serve the PMO (Project Management Office) and senior leadership by providing visibility across multiple projects. The Project Portfolio Summary is a multi-project view showing RAG (Red/Amber/Green) health status, resource allocation, budget roll-ups, and how each project aligns to the organization’s strategic goals. The Phase Gate Review Checklist provides go/no-go criteria at the end of each project phase, making sure governance standards are met before the team moves forward. The Lessons Learned Library Index creates a searchable, cross-project knowledge base of lessons organized by topic area, enabling the entire organization to learn and improve over time.",
   },
 ];
 
@@ -202,7 +202,7 @@ function CommandCenterContent() {
               <ClipboardList size={20} className="text-indigo-600" />
             </div>
             <div>
-              <h2 className="text-2xl font-extrabold text-slate-900">PM Command Center \u2014 Command Center</h2>
+              <h2 className="text-2xl font-extrabold text-slate-900">PM Command Center — Command Center</h2>
               <p className="text-xs font-medium text-indigo-600">Your One-Page Guide to the Entire Package</p>
             </div>
           </div>

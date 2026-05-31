@@ -85,10 +85,10 @@ function ExecInboxTriageContent() {
       <CopyButton targetRef={triageRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
-          { action: "DO NOW", time: "< 5 min", rule: "If it takes under 5 minutes, do it immediately. Don\u2019t let it linger.", color: "#DC2626" },
+          { action: "DO NOW", time: "< 5 min", rule: "If it takes under 5 minutes, do it immediately. Don’t let it linger.", color: "#DC2626" },
           { action: "SCHEDULE", time: "5-30 min", rule: "Block time today or tomorrow. Assign to yourself with a due date.", color: "#F59E0B" },
           { action: "DELEGATE", time: "Someone else", rule: "Assign owner + due date. Add to Waiting On tracker for follow-up.", color: "#0EA5E9" },
-          { action: "DEFER / PARK", time: "Not now", rule: "Move to parking lot or next week\u2019s queue. Don\u2019t delete \u2014 track it.", color: "#6B7280" },
+          { action: "DEFER / PARK", time: "Not now", rule: "Move to parking lot or next week’s queue. Don’t delete — track it.", color: "#6B7280" },
         ].map((item, i) => (
           <td key={i} style={{ ...LC, width: "25%", padding: i < 3 ? "0 4px 0 0" : "0" }}>
             <table style={S.tbl}><tbody>

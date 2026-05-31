@@ -65,7 +65,7 @@ function WeeklyStaffContent() {
                 <td style={{ ...S.td0, backgroundColor: bg, fontWeight: 700, fontSize: "11px", color: accent }}>{name}</td>
                 <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Win]</td>
                 <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Priority]</td>
-                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Blocker or \u201CNone\u201D]</td>
+                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Blocker or “None”]</td>
               </tr>
             );
           })}

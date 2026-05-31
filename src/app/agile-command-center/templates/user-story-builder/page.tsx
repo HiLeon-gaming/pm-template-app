@@ -68,8 +68,8 @@ function UserStoryBuilderContent() {
         </tr></thead>
         <tbody>
           {[
-            { g: "[I am on the checkout page with items in my cart]", w: "[I click \u201CPlace Order\u201D]", t: "[I see order confirmation with order number and email is sent]", pass: "☐" },
-            { g: "[I enter an invalid credit card number]", w: "[I click \u201CPay\u201D]", t: "[I see a clear error message and can retry without losing my cart]", pass: "☐" },
+            { g: "[I am on the checkout page with items in my cart]", w: "[I click “Place Order”]", t: "[I see order confirmation with order number and email is sent]", pass: "☐" },
+            { g: "[I enter an invalid credit card number]", w: "[I click “Pay”]", t: "[I see a clear error message and can retry without losing my cart]", pass: "☐" },
             { g: "[I have a saved address from a previous order]", w: "[I start checkout]", t: "[My saved address is pre-filled and I can edit or confirm]", pass: "☐" },
             { g: "[Add context]", w: "[Add action]", t: "[Add expected result]", pass: "☐" },
             { g: "[Add context]", w: "[Add action]", t: "[Add expected result]", pass: "☐" },

@@ -47,15 +47,15 @@ function RiskNotesContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Sensitive Topics", value: "[Topics that trigger a strong reaction \u2014 avoid raising casually or in public]", nav: "Approach these 1:1 only. Never blindside in a group setting." },
+            { label: "Sensitive Topics", value: "[Topics that trigger a strong reaction — avoid raising casually or in public]", nav: "Approach these 1:1 only. Never blindside in a group setting." },
             { label: "Historical Friction", value: "[Past conflicts, disagreements, or incidents that still affect the relationship]", nav: "Acknowledge the past without re-litigating. Show growth." },
             { label: "Red Flags Observed", value: "[Warning signs: missed meetings, short responses, excluding you from conversations]", nav: "Address early with a direct, private conversation." },
             { label: "Political Dynamics", value: "[Alliances, rivalries, or org politics that influence their behavior]", nav: "Stay neutral. Never take sides in their internal politics." },
             { label: "Known Biases", value: "[Vendor bias, team favoritism, technology preferences]", nav: "Work within their biases, not against them. Pick your battles." },
             { label: "Trigger Points", value: "[Situations that make them defensive, angry, or disengaged]", nav: "Avoid these triggers. If unavoidable, frame carefully." },
-            { label: "Past Mistakes (Yours)", value: "[Things you\u2019ve done that damaged trust \u2014 learn from these]", nav: "Acknowledge and overcompensate in the opposite direction." },
-            { label: "People They Don\u2019t Trust", value: "[Other stakeholders or teams they have friction with]", nav: "Be careful discussing these people. Don\u2019t become a messenger." },
-            { label: "Information Sensitivity", value: "[What they share in confidence and expect you NOT to repeat]", nav: "Never betray a confidence. It\u2019s the fastest way to lose them permanently." },
+            { label: "Past Mistakes (Yours)", value: "[Things you’ve done that damaged trust — learn from these]", nav: "Acknowledge and overcompensate in the opposite direction." },
+            { label: "People They Don’t Trust", value: "[Other stakeholders or teams they have friction with]", nav: "Be careful discussing these people. Don’t become a messenger." },
+            { label: "Information Sensitivity", value: "[What they share in confidence and expect you NOT to repeat]", nav: "Never betray a confidence. It’s the fastest way to lose them permanently." },
             { label: "[Add risk area]", value: "[Your observation]", nav: "[Your approach]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -85,10 +85,10 @@ function RiskNotesContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Current Risk Level", plan: "[High / Medium / Low] \u2014 Justify your assessment.", date: "[Date]" },
+            { label: "Current Risk Level", plan: "[High / Medium / Low] — Justify your assessment.", date: "[Date]" },
             { label: "Worst-Case Scenario", plan: "[What happens if this relationship completely breaks down? Impact on your project/goals?]", date: "" },
             { label: "Prevention Strategy", plan: "[Specific actions to keep the risk from materializing. What are you doing proactively?]", date: "[Weekly]" },
-            { label: "Mitigation Strategy", plan: "[If the risk materializes, what is your immediate response? First 24\u201348 hours.]", date: "" },
+            { label: "Mitigation Strategy", plan: "[If the risk materializes, what is your immediate response? First 24–48 hours.]", date: "" },
             { label: "Escalation Plan", plan: "[Who do you involve if the situation worsens? Your manager? Their manager? Sponsor?]", date: "" },
             { label: "Exit Strategy", plan: "[If the relationship is unrecoverable, what is your plan to work around this stakeholder?]", date: "" },
             { label: "Next Risk Review", plan: "[Schedule a specific date to reassess all risk notes]", date: "[Date]" },
@@ -121,12 +121,12 @@ function RiskNotesContent() {
         <tbody>
           {[
             { signal: "Response time has increased significantly", meaning: "They may be deprioritizing you or avoiding a conversation.", seen: "\u2610" },
-            { signal: "They\u2019re cc\u2019ing their manager on routine emails", meaning: "Building a paper trail. They may be losing confidence in you.", seen: "\u2610" },
+            { signal: "They’re cc’ing their manager on routine emails", meaning: "Building a paper trail. They may be losing confidence in you.", seen: "\u2610" },
             { signal: "Communication tone has become more formal", meaning: "Walls are going up. The informal trust channel is closing.", seen: "\u2610" },
-            { signal: "They\u2019re asking for more written documentation", meaning: "Verbal agreements are no longer enough. Trust is eroding.", seen: "\u2610" },
-            { signal: "They\u2019ve stopped inviting you to informal conversations", meaning: "You\u2019re being excluded from the inner circle.", seen: "\u2610" },
-            { signal: "They\u2019re checking your work more frequently", meaning: "Confidence in your output has dropped. Over-deliver to rebuild.", seen: "\u2610" },
-            { signal: "They\u2019re engaging directly with your team, bypassing you", meaning: "They may not trust you as the single point of contact.", seen: "\u2610" },
+            { signal: "They’re asking for more written documentation", meaning: "Verbal agreements are no longer enough. Trust is eroding.", seen: "\u2610" },
+            { signal: "They’ve stopped inviting you to informal conversations", meaning: "You’re being excluded from the inner circle.", seen: "\u2610" },
+            { signal: "They’re checking your work more frequently", meaning: "Confidence in your output has dropped. Over-deliver to rebuild.", seen: "\u2610" },
+            { signal: "They’re engaging directly with your team, bypassing you", meaning: "They may not trust you as the single point of contact.", seen: "\u2610" },
             { signal: "[Add your own warning signal]", meaning: "[What it might mean]", seen: "\u2610" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -152,10 +152,10 @@ function RiskNotesContent() {
             <thead><tr><td style={{ backgroundColor: "#EDE9FE", color: "#8B5CF6", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #8B5CF6" }}>RISK DOCUMENTATION PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Be factual, never judgmental.", detail: "\u201CThey missed 3 consecutive meetings\u201D is a fact. \u201CThey don\u2019t care\u201D is a judgment. Stick to facts." },
-                { color: "#8B5CF6", tip: "Write as if this could be read aloud.", detail: "If you wouldn\u2019t be comfortable with the stakeholder reading this, rewrite it." },
+                { color: "#DC2626", tip: "Be factual, never judgmental.", detail: "“They missed 3 consecutive meetings” is a fact. “They don’t care” is a judgment. Stick to facts." },
+                { color: "#8B5CF6", tip: "Write as if this could be read aloud.", detail: "If you wouldn’t be comfortable with the stakeholder reading this, rewrite it." },
                 { color: "#059669", tip: "Review and prune monthly.", detail: "Delete risks that are no longer relevant. Stale risk notes create false confidence." },
-                { color: "#0EA5E9", tip: "Separate observations from interpretations.", detail: "\u201CThey seem disengaged (short replies, camera off)\u201D separates what you see from what you think." },
+                { color: "#0EA5E9", tip: "Separate observations from interpretations.", detail: "“They seem disengaged (short replies, camera off)” separates what you see from what you think." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -173,7 +173,7 @@ function RiskNotesContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>WHEN TO ACT ON RISK NOTES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Immediately: if trust has been broken.", detail: "Don\u2019t wait. Address within 24 hours. See the Trust Repair Playbook." },
+                { color: "#DC2626", tip: "Immediately: if trust has been broken.", detail: "Don’t wait. Address within 24 hours. See the Trust Repair Playbook." },
                 { color: "#EA580C", tip: "This week: if 2+ warning signals appear.", detail: "Request a private 1:1 to check in on the relationship." },
                 { color: "#D97706", tip: "This month: routine risk review.", detail: "Review all risk notes, update mitigation plans, delete stale entries." },
                 { color: "#6366F1", tip: "Quarterly: full relationship health audit.", detail: "Compare current risk level to 3 months ago. Is it improving or worsening?" },

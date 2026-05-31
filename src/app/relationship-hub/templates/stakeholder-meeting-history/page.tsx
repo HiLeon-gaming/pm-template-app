@@ -143,10 +143,10 @@ function MeetingHistoryContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>COMMITMENT TRACKING RULES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Never drop a commitment silently.", detail: "If you can\u2019t deliver, communicate BEFORE the deadline. Silence = broken trust." },
-                { color: "#EA580C", tip: "Track THEIR commitments too.", detail: "If they owe you something, follow up. Don\u2019t assume it\u2019s coming." },
+                { color: "#DC2626", tip: "Never drop a commitment silently.", detail: "If you can’t deliver, communicate BEFORE the deadline. Silence = broken trust." },
+                { color: "#EA580C", tip: "Track THEIR commitments too.", detail: "If they owe you something, follow up. Don’t assume it’s coming." },
                 { color: "#D97706", tip: "Close the loop publicly.", detail: "When a commitment is delivered, acknowledge it in your next interaction." },
-                { color: "#6366F1", tip: "Escalate overdue items.", detail: "If something is overdue by >1 week, address it directly. Don\u2019t let it fester." },
+                { color: "#6366F1", tip: "Escalate overdue items.", detail: "If something is overdue by >1 week, address it directly. Don’t let it fester." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

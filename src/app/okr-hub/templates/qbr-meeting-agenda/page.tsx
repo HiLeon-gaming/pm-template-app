@@ -88,7 +88,7 @@ function QBRAgendaContent() {
                 "Complete the QBR One-Pager with scores, lessons, next quarter preview.",
                 "Update Initiative Portfolio Roll-Up with final statuses.",
                 "Collect lessons learned from each team lead (ask in advance).",
-                "Prepare decisions needing leadership input \u2014 options, pros/cons, recs.",
+                "Prepare decisions needing leadership input — options, pros/cons, recs.",
                 "Send QBR One-Pager as pre-read 3 days before.",
                 "Book 90 min + 15 min buffer. No other meetings that day.",
                 "Assign a dedicated note-taker (not the facilitator).",
@@ -110,9 +110,9 @@ function QBRAgendaContent() {
             <thead><tr><td style={{ backgroundColor: "#EDE9FE", color: "#7C3AED", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #7C3AED" }}>\ud83d\udca1 FACILITATION TIPS</td></tr></thead>
             <tbody>
               {[
-                { color: accent, tip: "QBR is about learning, not grading.", detail: "A 0.68 score isn\u2019t failure \u2014 it\u2019s data." },
+                { color: accent, tip: "QBR is about learning, not grading.", detail: "A 0.68 score isn’t failure — it’s data." },
                 { color: "#059669", tip: "Celebrate wins before misses.", detail: "Teams that only hear criticism disengage." },
-                { color: "#D97706", tip: "Make decisions in the room.", detail: "Can\u2019t decide? Schedule 30-min session within 48 hrs." },
+                { color: "#D97706", tip: "Make decisions in the room.", detail: "Can’t decide? Schedule 30-min session within 48 hrs." },
                 { color: "#7C3AED", tip: "Send notes within 24 hours.", detail: "Momentum dies when notes arrive a week later." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

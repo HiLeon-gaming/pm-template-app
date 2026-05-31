@@ -54,7 +54,7 @@ function StrategicPlanningContent() {
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Mission</td><td style={S.td0}>[Why does this organization exist?]</td></tr>
         <tr><td style={S.tdLabelAlt}>Vision (3-5 year)</td><td style={{ ...S.tdAlt, fontWeight: 700, color: accent }}>[Where are we going? What does success look like?]</td></tr>
         <tr><td style={S.tdLabel}>Current Position</td><td style={S.td0}>[Where are we today? Market position, revenue, team size]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Gap Analysis</td><td style={S.tdAlt}>[What\u2019s the gap between where we are and where we want to be?]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Gap Analysis</td><td style={S.tdAlt}>[What’s the gap between where we are and where we want to be?]</td></tr>
       </tbody></table>
     </div>
   );

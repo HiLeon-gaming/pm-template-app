@@ -50,9 +50,9 @@ function EngagementContent() {
         </tr></thead>
         <tbody>
           {[
-            { name: "Maria Lopez \u2014 Sponsor", quad: "Manage", need: "Project status, risks, budget, decisions needed. Frame in terms of her KPIs.", fmt: "1:1 brief", freq: "Weekly", ch: "Meeting", owner: "You" },
-            { name: "David Park \u2014 CFO", quad: "Satisfy", need: "Financial impact, ROI updates, budget variances. Numbers only, no fluff.", fmt: "Email", freq: "Monthly", ch: "Email", owner: "You" },
-            { name: "Sarah Chen \u2014 Champion", quad: "Inform", need: "Progress highlights, wins to share with their network. Make them look good.", fmt: "Quick update", freq: "Biweekly", ch: "Slack", owner: "You" },
+            { name: "Maria Lopez — Sponsor", quad: "Manage", need: "Project status, risks, budget, decisions needed. Frame in terms of her KPIs.", fmt: "1:1 brief", freq: "Weekly", ch: "Meeting", owner: "You" },
+            { name: "David Park — CFO", quad: "Satisfy", need: "Financial impact, ROI updates, budget variances. Numbers only, no fluff.", fmt: "Email", freq: "Monthly", ch: "Email", owner: "You" },
+            { name: "Sarah Chen — Champion", quad: "Inform", need: "Progress highlights, wins to share with their network. Make them look good.", fmt: "Quick update", freq: "Biweekly", ch: "Slack", owner: "You" },
             { name: "Engineering Team", quad: "Inform", need: "Technical decisions, dependency updates, timeline changes.", fmt: "Standup", freq: "Weekly", ch: "Meeting", owner: "Tech Lead" },
             { name: "Legal / Compliance", quad: "Monitor", need: "Regulatory implications, data privacy updates. Only when relevant.", fmt: "Email", freq: "As needed", ch: "Email", owner: "You" },
             { name: "[Enter stakeholder]", quad: "[Type]", need: "[What they need]", fmt: "[Format]", freq: "[Freq]", ch: "[Channel]", owner: "[Who]" },
@@ -124,7 +124,7 @@ function EngagementContent() {
               {[
                 { color: "#0EA5E9", tip: "Tailor the message to the audience.", detail: "What matters to the CFO is different from what matters to Engineering. Customize every communication." },
                 { color: "#059669", tip: "Frequency should match influence.", detail: "High-influence stakeholders need more frequent, shorter updates. Low-influence need less frequent, broader ones." },
-                { color: "#8B5CF6", tip: "Proactive > reactive.", detail: "Sending updates before being asked builds trust. Being asked for updates signals you\u2019re behind." },
+                { color: "#8B5CF6", tip: "Proactive > reactive.", detail: "Sending updates before being asked builds trust. Being asked for updates signals you’re behind." },
                 { color: "#D97706", tip: "Review this plan monthly.", detail: "Stakeholders change, priorities shift, and your engagement strategy should adapt." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -144,9 +144,9 @@ function EngagementContent() {
             <tbody>
               {[
                 { color: "#DC2626", tip: "One-size-fits-all communication.", detail: "Sending the same update to everyone wastes their time and misses the point." },
-                { color: "#EA580C", tip: "Over-communicating to low-interest stakeholders.", detail: "If they don\u2019t care about details, don\u2019t send details. Respect their attention." },
+                { color: "#EA580C", tip: "Over-communicating to low-interest stakeholders.", detail: "If they don’t care about details, don’t send details. Respect their attention." },
                 { color: "#D97706", tip: "Under-communicating to high-influence stakeholders.", detail: "Your sponsor should never have to chase you for information. Ever." },
-                { color: "#6366F1", tip: "Forgetting the \u201CMonitor\u201D quadrant entirely.", detail: "Low-interest stakeholders can suddenly become high-interest. Don\u2019t ignore them completely." },
+                { color: "#6366F1", tip: "Forgetting the “Monitor” quadrant entirely.", detail: "Low-interest stakeholders can suddenly become high-interest. Don’t ignore them completely." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

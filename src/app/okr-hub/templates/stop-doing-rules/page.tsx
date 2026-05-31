@@ -61,8 +61,8 @@ function StopDoingRulesContent() {
             { rule: "When you add a new initiative, you MUST identify what gets paused or stopped.", why: "Prevents the slow drowning of your team under too many projects." },
             { rule: "Every quarterly planning session includes a \"Stop Doing\" list before new goals are set.", why: "Clears the deck so new priorities have room to succeed." },
             { rule: "\"Nice to have\" work cannot compete with Key Result work for team time.", why: "Key Results are the #1 priority. Everything else waits." },
-            { rule: "Meetings, reports, or processes that don\u2019t serve a current OKR get reviewed for elimination.", why: "Zombie meetings and reports drain time without anyone noticing." },
-            { rule: "Any request from outside your team must pass the \"Does this move a Key Result?\" test.", why: "Protects your team from random work that doesn\u2019t align with goals." },
+            { rule: "Meetings, reports, or processes that don’t serve a current OKR get reviewed for elimination.", why: "Zombie meetings and reports drain time without anyone noticing." },
+            { rule: "Any request from outside your team must pass the \"Does this move a Key Result?\" test.", why: "Protects your team from random work that doesn’t align with goals." },
             { rule: "The Stop Doing list is reviewed at every Monthly Business Review.", why: "Things creep back in. Monthly checks keep discipline alive." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -98,7 +98,7 @@ function StopDoingRulesContent() {
             { q: "What will we STOP or PAUSE to make room?", a: "[Specific item being removed or paused]" },
             { q: "Who approves this trade-off?", a: "[Decision owner name]" },
             { q: "When does the new work start?", a: "[Date]" },
-            { q: "When will we review if it\u2019s worth continuing?", a: "[Review date \u2014 30 days recommended]" },
+            { q: "When will we review if it’s worth continuing?", a: "[Review date — 30 days recommended]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

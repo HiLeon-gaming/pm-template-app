@@ -44,8 +44,8 @@ function ExecContent() {
           {[
             { label: "Project / Initiative", value: "[Name]" },
             { label: "Reporting Period", value: "[Date range]" },
-            { label: "Overall Status", value: "[🟢 On Track / 🟡 At Risk / 🔴 Off Track] \u2014 [One sentence explaining why]" },
-            { label: "The Headline", value: "[One sentence: What\u2019s the single most important thing leadership needs to know RIGHT NOW?]" },
+            { label: "Overall Status", value: "[🟢 On Track / 🟡 At Risk / 🔴 Off Track] — [One sentence explaining why]" },
+            { label: "The Headline", value: "[One sentence: What’s the single most important thing leadership needs to know RIGHT NOW?]" },
             { label: "Bottom Line", value: "[Are we going to hit our targets? Yes / Yes with help / At risk / No. Be direct.]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -112,9 +112,9 @@ function ExecContent() {
         </tr></thead>
         <tbody>
           {[
-            { n: "1", type: "Decision", ask: "Approve 2-week scope extension for vendor integration. Impact: delays Phase 2 start by 10 business days.", rec: "Approve \u2014 better to do it right", when: "Mar 20" },
+            { n: "1", type: "Decision", ask: "Approve 2-week scope extension for vendor integration. Impact: delays Phase 2 start by 10 business days.", rec: "Approve — better to do it right", when: "Mar 20" },
             { n: "2", type: "Escalation", ask: "HR headcount approval stalled 13 days. Need executive intervention to unblock.", rec: "Director to contact HR VP", when: "This week" },
-            { n: "3", type: "FYI", ask: "Legal contract review may take 3 weeks. Exploring expedited path through sponsor.", rec: "No action yet \u2014 monitoring", when: "Update Mar 22" },
+            { n: "3", type: "FYI", ask: "Legal contract review may take 3 weeks. Exploring expedited path through sponsor.", rec: "No action yet — monitoring", when: "Update Mar 22" },
             { n: "4", type: "[Type]", ask: "[What you need from leadership]", rec: "[Your recommendation]", when: "[Date]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -144,7 +144,7 @@ function ExecContent() {
             <tbody>
               {[
                 { color: "#059669", tip: "Bottom line up front (BLUF).", detail: "Executives decide in the first 10 seconds whether to keep reading. Lead with the answer." },
-                { color: "#0EA5E9", tip: "One page maximum.", detail: "If it doesn\u2019t fit on one page, you haven\u2019t thought about it hard enough." },
+                { color: "#0EA5E9", tip: "One page maximum.", detail: "If it doesn’t fit on one page, you haven’t thought about it hard enough." },
                 { color: "#8B5CF6", tip: "RAG status is not optional.", detail: "Green/Amber/Red gives instant context. Never skip it." },
                 { color: "#D97706", tip: "Never present a problem without a recommendation.", detail: "Executives want options and your recommendation, not just problems to solve." },
               ].map((r, i) => {
@@ -164,10 +164,10 @@ function ExecContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>WHAT EXECS ACTUALLY WANT</td></tr></thead>
             <tbody>
               {[
-                { color: "#D97706", tip: "Are we on track? Yes or no.", detail: "Don\u2019t bury the answer in details. Say it clearly, then provide supporting evidence." },
-                { color: "#DC2626", tip: "What do you need from me?", detail: "Every exec update should answer this. If nothing, say \u201CNo action needed \u2014 FYI only.\u201D" },
-                { color: "#EA580C", tip: "What\u2019s the risk I should know about?", detail: "They want early warning, not post-mortems. Surface risks before they become crises." },
-                { color: "#6366F1", tip: "Are you in control?", detail: "Confidence comes from structured reporting. This template signals that you\u2019re on top of it." },
+                { color: "#D97706", tip: "Are we on track? Yes or no.", detail: "Don’t bury the answer in details. Say it clearly, then provide supporting evidence." },
+                { color: "#DC2626", tip: "What do you need from me?", detail: "Every exec update should answer this. If nothing, say “No action needed — FYI only.”" },
+                { color: "#EA580C", tip: "What’s the risk I should know about?", detail: "They want early warning, not post-mortems. Surface risks before they become crises." },
+                { color: "#6366F1", tip: "Are you in control?", detail: "Confidence comes from structured reporting. This template signals that you’re on top of it." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

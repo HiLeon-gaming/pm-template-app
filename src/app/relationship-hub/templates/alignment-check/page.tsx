@@ -42,19 +42,19 @@ function AlignmentContent() {
         <thead><tr>
           <th style={{ ...S.thPrimary, width: "15%" }}>Topic / Area</th>
           <th style={S.thPrimary}>What They Think</th>
-          <th style={S.thPrimary}>What\u2019s Actually Happening</th>
+          <th style={S.thPrimary}>What’s Actually Happening</th>
           <th style={{ ...S.thPrimary, width: "8%", textAlign: "center" as const }}>Gap?</th>
           <th style={{ ...S.thPrimary, width: "18%" }}>How to Close It</th>
         </tr></thead>
         <tbody>
           {[
             { topic: "Timeline", think: "On track for June 15 launch as originally planned.", actual: "Tracking for June 28 due to API dependency delay. 13 business days behind.", gap: "Yes", close: "Brief sponsor this week. Present revised timeline with options." },
-            { topic: "Budget", think: "Under budget. Everything is fine.", actual: "On budget but Q2 forecast shows potential 8% overrun if scope holds.", gap: "Yes", close: "Proactive budget update. Show forecast before it\u2019s a surprise." },
-            { topic: "Scope", think: "All 12 features in Phase 1 as discussed.", actual: "10 features confirmed. 2 deferred to Phase 2 (decided in sprint planning).", gap: "Yes", close: "Communicate scope change formally. Show what\u2019s in Phase 2." },
+            { topic: "Budget", think: "Under budget. Everything is fine.", actual: "On budget but Q2 forecast shows potential 8% overrun if scope holds.", gap: "Yes", close: "Proactive budget update. Show forecast before it’s a surprise." },
+            { topic: "Scope", think: "All 12 features in Phase 1 as discussed.", actual: "10 features confirmed. 2 deferred to Phase 2 (decided in sprint planning).", gap: "Yes", close: "Communicate scope change formally. Show what’s in Phase 2." },
             { topic: "Team Health", think: "Team is fine. No issues.", actual: "Two senior engineers overloaded. Risk of burnout if pace continues.", gap: "Yes", close: "Raise with sponsor. Request temp support or scope reduction." },
             { topic: "Quality", think: "Everything looks good.", actual: "Technical debt accumulating. Test coverage dropped to 62%.", gap: "Maybe", close: "Add tech debt sprint. Show quality metrics in next update." },
             { topic: "Stakeholders", think: "Everyone is aligned and supportive.", actual: "James (Eng.) disengaged. Sarah (Marketing) feels sidelined.", gap: "Yes", close: "Schedule 1:1s with both. Re-engage before it escalates." },
-            { topic: "[Topic]", think: "[What they believe]", actual: "[What\u2019s really happening]", gap: "[Y/N]", close: "[Your plan to close the gap]" },
+            { topic: "[Topic]", think: "[What they believe]", actual: "[What’s really happening]", gap: "[Y/N]", close: "[Your plan to close the gap]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const gc = r.gap === "Yes" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : r.gap === "Maybe" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : r.gap === "No" ? { bg: C.badgeGreenBg, fg: C.badgeGreenFg } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -92,8 +92,8 @@ function AlignmentContent() {
             { n: "1", pri: "Critical", who: "Sponsor", action: "Brief on timeline delay. Present revised plan with 3 options. Get decision on path forward.", when: "This week", channel: "1:1 meeting" },
             { n: "2", pri: "High", who: "Finance", action: "Proactive budget forecast update. Show potential overrun and mitigation plan.", when: "This week", channel: "Email + meeting" },
             { n: "3", pri: "High", who: "James Wu", action: "Schedule 1:1. Acknowledge disengagement. Discuss API dependency and clear next steps.", when: "Tomorrow", channel: "1:1 meeting" },
-            { n: "4", pri: "Medium", who: "Sarah Chen", action: "Re-include in planning discussions. Send update on what\u2019s been decided.", when: "This week", channel: "Meeting + email" },
-            { n: "5", pri: "[Priority]", who: "[Stakeholder]", action: "[What you\u2019ll do to close the alignment gap]", when: "[Deadline]", channel: "[How]" },
+            { n: "4", pri: "Medium", who: "Sarah Chen", action: "Re-include in planning discussions. Send update on what’s been decided.", when: "This week", channel: "Meeting + email" },
+            { n: "5", pri: "[Priority]", who: "[Stakeholder]", action: "[What you’ll do to close the alignment gap]", when: "[Deadline]", channel: "[How]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const pc = r.pri === "Critical" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : r.pri === "High" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : r.pri === "Medium" ? { bg: "#DBEAFE", fg: "#1D4ED8" } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -122,10 +122,10 @@ function AlignmentContent() {
             <thead><tr><td style={{ backgroundColor: "#EDE9FE", color: "#6366F1", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #6366F1" }}>ALIGNMENT PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#6366F1", tip: "Misalignment grows silently.", detail: "It doesn\u2019t announce itself. You have to actively check for it. That\u2019s what this page is for." },
+                { color: "#6366F1", tip: "Misalignment grows silently.", detail: "It doesn’t announce itself. You have to actively check for it. That’s what this page is for." },
                 { color: "#059669", tip: "The gap between perception and reality IS the risk.", detail: "When stakeholders are surprised, trust erodes. Close gaps before they become surprises." },
                 { color: "#0EA5E9", tip: "Check alignment before every major update.", detail: "Before SteerCo, before sponsor 1:1, before any high-stakes meeting. 10 minutes of prep saves hours of damage control." },
-                { color: "#D97706", tip: "It\u2019s easier to maintain alignment than rebuild it.", detail: "Regular, honest communication prevents gaps. Recovery is 10x harder than prevention." },
+                { color: "#D97706", tip: "It’s easier to maintain alignment than rebuild it.", detail: "Regular, honest communication prevents gaps. Recovery is 10x harder than prevention." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -143,10 +143,10 @@ function AlignmentContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>HOW TO HAVE THE CONVERSATION</td></tr></thead>
             <tbody>
               {[
-                { color: "#D97706", tip: "\"I want to make sure we\u2019re aligned on...\"", detail: "Non-threatening opener. Signals collaboration, not confrontation." },
-                { color: "#DC2626", tip: "\"Here\u2019s what\u2019s changed since we last spoke.\"", detail: "Acknowledges evolution. Sets context for why they might be out of date." },
-                { color: "#EA580C", tip: "\"I want to get ahead of a potential surprise.\"", detail: "Proactive framing. Shows you\u2019re managing, not reacting." },
-                { color: "#059669", tip: "\"What\u2019s your understanding of where we are?\"", detail: "Ask THEM first. Listen. Then fill gaps. Don\u2019t assume you know what they think." },
+                { color: "#D97706", tip: "\"I want to make sure we’re aligned on...\"", detail: "Non-threatening opener. Signals collaboration, not confrontation." },
+                { color: "#DC2626", tip: "\"Here’s what’s changed since we last spoke.\"", detail: "Acknowledges evolution. Sets context for why they might be out of date." },
+                { color: "#EA580C", tip: "\"I want to get ahead of a potential surprise.\"", detail: "Proactive framing. Shows you’re managing, not reacting." },
+                { color: "#059669", tip: "\"What’s your understanding of where we are?\"", detail: "Ask THEM first. Listen. Then fill gaps. Don’t assume you know what they think." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

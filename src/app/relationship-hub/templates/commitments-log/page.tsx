@@ -51,7 +51,7 @@ function CommitmentsContent() {
         </tr></thead>
         <tbody>
           {[
-            { n: "1", date: "Mar 12", tf: "Maria Lopez", owner: "You", item: "Send vendor comparison document with 3 options and recommendation.", due: "Mar 14", status: "Done", fu: "\u2014" },
+            { n: "1", date: "Mar 12", tf: "Maria Lopez", owner: "You", item: "Send vendor comparison document with 3 options and recommendation.", due: "Mar 14", status: "Done", fu: "—" },
             { n: "2", date: "Mar 12", tf: "Maria Lopez", owner: "Them", item: "Confirm board meeting slot for vendor presentation.", due: "Mar 15", status: "Pending", fu: "Mar 14" },
             { n: "3", date: "Mar 5", tf: "David Park", owner: "You", item: "Send updated budget breakdown with Q2 projections.", due: "Mar 10", status: "Overdue", fu: "TODAY" },
             { n: "4", date: "Mar 5", tf: "James Wu", owner: "Them", item: "Provide API dependency timeline from engineering team.", due: "Mar 12", status: "Waiting", fu: "Mar 13" },
@@ -98,7 +98,7 @@ function CommitmentsContent() {
         <tbody>
           {[
             { who: "David Park", item: "Send updated budget breakdown with Q2 projections.", due: "Mar 10", late: "3 days", plan: "Send today with apology for delay. Include extra detail to compensate." },
-            { who: "[Stakeholder]", item: "[What was committed]", due: "[Date]", late: "[X days]", plan: "[How you\u2019ll recover and prevent future misses]" },
+            { who: "[Stakeholder]", item: "[What was committed]", due: "[Date]", late: "[X days]", plan: "[How you’ll recover and prevent future misses]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -125,10 +125,10 @@ function CommitmentsContent() {
             <thead><tr><td style={{ backgroundColor: "#FFF7ED", color: "#EA580C", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #EA580C" }}>COMMITMENT MANAGEMENT RULES</td></tr></thead>
             <tbody>
               {[
-                { color: "#EA580C", tip: "Log it within 5 minutes of making it.", detail: "If you don\u2019t log it immediately, you\u2019ll forget. Open this page right after the meeting." },
-                { color: "#059669", tip: "Review every Monday and Friday.", detail: "Monday: what\u2019s due this week? Friday: what did I miss? This takes 5 minutes." },
-                { color: "#0EA5E9", tip: "Communicate BEFORE you\u2019re late.", detail: "If you\u2019re going to miss a deadline, tell them 48h before. Silence = broken trust." },
-                { color: "#D97706", tip: "Track THEIR commitments too.", detail: "If someone owes you something, follow up. Don\u2019t assume it\u2019s coming." },
+                { color: "#EA580C", tip: "Log it within 5 minutes of making it.", detail: "If you don’t log it immediately, you’ll forget. Open this page right after the meeting." },
+                { color: "#059669", tip: "Review every Monday and Friday.", detail: "Monday: what’s due this week? Friday: what did I miss? This takes 5 minutes." },
+                { color: "#0EA5E9", tip: "Communicate BEFORE you’re late.", detail: "If you’re going to miss a deadline, tell them 48h before. Silence = broken trust." },
+                { color: "#D97706", tip: "Track THEIR commitments too.", detail: "If someone owes you something, follow up. Don’t assume it’s coming." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -146,8 +146,8 @@ function CommitmentsContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>TRUST-BUILDING THROUGH FOLLOW-THROUGH</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Under-promise, over-deliver.", detail: "Say \u201CI\u2019ll have it by Thursday\u201D and deliver Wednesday. Never the reverse." },
-                { color: "#EA580C", tip: "Close the loop explicitly.", detail: "\u201CAs promised, here\u2019s the report we discussed.\u201D This signals reliability." },
+                { color: "#DC2626", tip: "Under-promise, over-deliver.", detail: "Say “I’ll have it by Thursday” and deliver Wednesday. Never the reverse." },
+                { color: "#EA580C", tip: "Close the loop explicitly.", detail: "“As promised, here’s the report we discussed.” This signals reliability." },
                 { color: "#D97706", tip: "Make broken commitments rare and memorable.", detail: "If you rarely miss, people forgive the occasional miss. If you frequently miss, no apology helps." },
                 { color: "#6366F1", tip: "The commitment log IS your reputation.", detail: "Your track record of keeping promises is the foundation of every professional relationship." },
               ].map((r, i) => {

@@ -57,7 +57,7 @@ function DifficultConversationContent() {
       <table style={{ ...S.tbl, marginTop: "6px" }}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Their Likely Response</td><td style={S.td0}>[What pushback or emotions do you anticipate?]</td></tr>
         <tr><td style={S.tdLabelAlt}>Your Response to That</td><td style={S.tdAlt}>[How will you respond calmly and constructively?]</td></tr>
-        <tr><td style={S.tdLabel}>Worst-Case Scenario</td><td style={S.td0}>[What if they get angry, cry, or deny it? What\u2019s your plan?]</td></tr>
+        <tr><td style={S.tdLabel}>Worst-Case Scenario</td><td style={S.td0}>[What if they get angry, cry, or deny it? What’s your plan?]</td></tr>
         <tr><td style={S.tdLabelAlt}>HR Involvement?</td><td style={{ ...S.tdAlt, fontWeight: 600 }}>[Yes / No — If yes, who and why?]</td></tr>
       </tbody></table>
     </div>
@@ -69,8 +69,8 @@ function DifficultConversationContent() {
       <CopyButton targetRef={scriptRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px", fontSize: "11px", lineHeight: "1.9", fontStyle: "italic" }}>
-          &ldquo;Thanks for meeting with me. I want to have an honest conversation about [topic] because I value our working relationship and I want to make sure we\u2019re set up for success.&rdquo;<br /><br />
-          &ldquo;Here\u2019s what I observed: [Situation + Behavior]. The impact was [Impact].&rdquo;<br /><br />
+          &ldquo;Thanks for meeting with me. I want to have an honest conversation about [topic] because I value our working relationship and I want to make sure we’re set up for success.&rdquo;<br /><br />
+          &ldquo;Here’s what I observed: [Situation + Behavior]. The impact was [Impact].&rdquo;<br /><br />
           &ldquo;I want to hear your perspective. How do you see this?&rdquo;<br /><br />
           <span style={{ fontStyle: "normal", fontWeight: 700, color: accent }}>[Then: listen. Don&apos;t rush to solve. Let them speak first.]</span>
         </td></tr>

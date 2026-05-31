@@ -64,7 +64,7 @@ function BudgetReviewContent() {
             { cat: "Software / Tools", budget: "$8,000", actual: "$7,800", variance: "-$200", pct: "-2.5%", s: "🟢", notes: "[On target]" },
             { cat: "Infrastructure / Cloud", budget: "$15,000", actual: "$16,200", variance: "+$1,200", pct: "+8.0%", s: "🟡", notes: "[Slightly over — usage spike]" },
             { cat: "Travel / Training", budget: "$5,000", actual: "$3,200", variance: "-$1,800", pct: "-36.0%", s: "🟢", notes: "[Under — conference cancelled]" },
-            { cat: "Contingency", budget: "$10,000", actual: "$0", variance: "-$10,000", pct: "\u2014", s: "🟢", notes: "[Untouched — available]" },
+            { cat: "Contingency", budget: "$10,000", actual: "$0", variance: "-$10,000", pct: "—", s: "🟢", notes: "[Untouched — available]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const varColor = r.variance.startsWith("+") ? "#DC2626" : "#059669";

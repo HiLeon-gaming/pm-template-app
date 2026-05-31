@@ -97,7 +97,7 @@ function ImprovementTrackerContent() {
           {[
             { sp: "Sprint 7", action: "[Improved DoR checklist — added technical feasibility check]", outcome: "[Stories are better prepared; less mid-sprint rework]", res: "✅ Kept", rBg: C.badgeGreenBg, rFg: C.badgeGreenFg },
             { sp: "Sprint 7", action: "[Reduced standup to 10 min with parking lot]", outcome: "[Standups faster; side discussions handled separately]", res: "✅ Kept", rBg: C.badgeGreenBg, rFg: C.badgeGreenFg },
-            { sp: "Sprint 6", action: "[Added daily QA check-in at 9:05]", outcome: "[Tested but didn\u2019t help — QA prefers async updates]", res: "❌ Dropped", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
+            { sp: "Sprint 6", action: "[Added daily QA check-in at 9:05]", outcome: "[Tested but didn’t help — QA prefers async updates]", res: "❌ Dropped", rBg: C.badgeRedBg, rFg: C.badgeRedFg },
             { sp: "Sprint 5", action: "[Refinement moved from Thursday to Wednesday]", outcome: "[Better prep time; stories are clearer by planning]", res: "✅ Kept", rBg: C.badgeGreenBg, rFg: C.badgeGreenFg },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;

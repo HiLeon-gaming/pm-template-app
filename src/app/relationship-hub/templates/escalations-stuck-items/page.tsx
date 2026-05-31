@@ -50,11 +50,11 @@ function EscalationsContent() {
         </tr></thead>
         <tbody>
           {[
-            { n: "1", sev: "Critical", what: "API dependency timeline from Engineering \u2014 blocks entire sprint planning.", why: "James Wu hasn\u2019t responded to 2 follow-ups. May need manager involvement.", who: "Eng. Director", deadline: "Mar 15", action: "Ask your manager to ping Eng. Director. Include impact statement." },
-            { n: "2", sev: "High", what: "Headcount approval for additional PM \u2014 team is under-resourced.", why: "HR approval process stalled. No response in 13 days.", who: "HR VP / Your Dir.", deadline: "Mar 20", action: "Escalate through your director. Quantify the cost of delay." },
-            { n: "3", sev: "Medium", what: "Legal contract review for vendor agreement \u2014 procurement delayed.", why: "Legal team has competing priorities. Normal queue is 3 weeks.", who: "Legal Lead", deadline: "Mar 25", action: "Ask sponsor to flag as priority. Offer to pre-fill legal template." },
-            { n: "4", sev: "[Sev]", what: "[What\u2019s blocked or stuck]", why: "[Root cause of the block]", who: "[Person who can unblock]", deadline: "[When this must be resolved]", action: "[Your recommended next step]" },
-            { n: "5", sev: "[Sev]", what: "[What\u2019s blocked or stuck]", why: "[Root cause of the block]", who: "[Person who can unblock]", deadline: "[When this must be resolved]", action: "[Your recommended next step]" },
+            { n: "1", sev: "Critical", what: "API dependency timeline from Engineering — blocks entire sprint planning.", why: "James Wu hasn’t responded to 2 follow-ups. May need manager involvement.", who: "Eng. Director", deadline: "Mar 15", action: "Ask your manager to ping Eng. Director. Include impact statement." },
+            { n: "2", sev: "High", what: "Headcount approval for additional PM — team is under-resourced.", why: "HR approval process stalled. No response in 13 days.", who: "HR VP / Your Dir.", deadline: "Mar 20", action: "Escalate through your director. Quantify the cost of delay." },
+            { n: "3", sev: "Medium", what: "Legal contract review for vendor agreement — procurement delayed.", why: "Legal team has competing priorities. Normal queue is 3 weeks.", who: "Legal Lead", deadline: "Mar 25", action: "Ask sponsor to flag as priority. Offer to pre-fill legal template." },
+            { n: "4", sev: "[Sev]", what: "[What’s blocked or stuck]", why: "[Root cause of the block]", who: "[Person who can unblock]", deadline: "[When this must be resolved]", action: "[Your recommended next step]" },
+            { n: "5", sev: "[Sev]", what: "[What’s blocked or stuck]", why: "[Root cause of the block]", who: "[Person who can unblock]", deadline: "[When this must be resolved]", action: "[Your recommended next step]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const sc = r.sev === "Critical" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : r.sev === "High" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : r.sev === "Medium" ? { bg: "#DBEAFE", fg: "#1D4ED8" } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -90,7 +90,7 @@ function EscalationsContent() {
         <tbody>
           {[
             { item: "Budget approval delay", how: "Director escalated to CFO. Approved within 2 days of escalation.", days: "8", lesson: "Should have escalated at day 5, not day 8. Lost a week." },
-            { item: "[Resolved item]", how: "[What unblocked it]", days: "[X]", lesson: "[What you\u2019d do differently next time]" },
+            { item: "[Resolved item]", how: "[What unblocked it]", days: "[X]", lesson: "[What you’d do differently next time]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -116,9 +116,9 @@ function EscalationsContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>ESCALATION PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Escalation is a tool, not a threat.", detail: "Frame it as \u201CI need help unblocking this\u201D not \u201CI\u2019m going over your head.\u201D" },
+                { color: "#DC2626", tip: "Escalation is a tool, not a threat.", detail: "Frame it as “I need help unblocking this” not “I’m going over your head.”" },
                 { color: "#EA580C", tip: "Always try direct resolution first.", detail: "Escalate only after 2+ direct attempts have failed. Document your attempts." },
-                { color: "#D97706", tip: "Include context + impact + recommendation.", detail: "Don\u2019t just escalate the problem. Propose a solution. Leaders want options, not just issues." },
+                { color: "#D97706", tip: "Include context + impact + recommendation.", detail: "Don’t just escalate the problem. Propose a solution. Leaders want options, not just issues." },
                 { color: "#059669", tip: "Follow up after escalation.", detail: "Escalation without follow-through is worse than no escalation. Track it to closure." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -138,9 +138,9 @@ function EscalationsContent() {
             <tbody>
               {[
                 { color: "#D97706", tip: "Set clear deadlines upfront.", detail: "Vague requests get vague timelines. Always attach a date and reason." },
-                { color: "#6366F1", tip: "Identify blockers early in planning.", detail: "During sprint/project planning, ask: \u201CWhat could block this?\u201D Address dependencies proactively." },
-                { color: "#EA580C", tip: "Build relationships before you need them.", detail: "It\u2019s easier to escalate when you have a relationship with the person who can help." },
-                { color: "#DC2626", tip: "Don\u2019t let items age silently.", detail: "If something has been stuck for >5 days, it needs attention. Silence is not a strategy." },
+                { color: "#6366F1", tip: "Identify blockers early in planning.", detail: "During sprint/project planning, ask: “What could block this?” Address dependencies proactively." },
+                { color: "#EA580C", tip: "Build relationships before you need them.", detail: "It’s easier to escalate when you have a relationship with the person who can help." },
+                { color: "#DC2626", tip: "Don’t let items age silently.", detail: "If something has been stuck for >5 days, it needs attention. Silence is not a strategy." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

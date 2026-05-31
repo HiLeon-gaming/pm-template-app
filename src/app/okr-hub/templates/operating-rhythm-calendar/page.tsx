@@ -50,9 +50,9 @@ function CalendarContent() {
         </tr></thead>
         <tbody>
           {[
-            { cad: "Weekly", what: "Review priorities, metrics, blockers, and decisions", time: "15\u201330 min", who: "Team + Lead", output: "Updated priorities + actions", color: "#059669" },
+            { cad: "Weekly", what: "Review priorities, metrics, blockers, and decisions", time: "15–30 min", who: "Team + Lead", output: "Updated priorities + actions", color: "#059669" },
             { cad: "Monthly", what: "Deeper performance review + course correction", time: "60 min", who: "Dept Heads + Lead", output: "MBR notes + adjusted plans", color: "#D97706" },
-            { cad: "Quarterly", what: "Score OKRs, set new goals, decide start/stop/continue", time: "2\u20134 hours", who: "Leadership Team", output: "New OKRs + commitments", color: "#7C3AED" },
+            { cad: "Quarterly", what: "Score OKRs, set new goals, decide start/stop/continue", time: "2–4 hours", who: "Leadership Team", output: "New OKRs + commitments", color: "#7C3AED" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -84,8 +84,8 @@ function CalendarContent() {
         </tr></thead>
         <tbody>
           {[
-            { action: "Open the Dashboard \u2014 scan current OKR scores and health", page: "Dashboard" },
-            { action: "Review this week\u2019s key metrics (what went up, what went down?)", page: "Weekly Metrics Snapshot" },
+            { action: "Open the Dashboard — scan current OKR scores and health", page: "Dashboard" },
+            { action: "Review this week’s key metrics (what went up, what went down?)", page: "Weekly Metrics Snapshot" },
             { action: "Turn metric insights into specific actions with owners", page: "KPI Review \u2192 Actions" },
             { action: "Set or update your Top 3 priorities for THIS week", page: "Weekly Priorities Cockpit" },
             { action: "Capture any blockers or help requests", page: "Blockers & Help Requests" },
@@ -116,7 +116,7 @@ function CalendarContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>📅 MONTHLY CHECKLIST</td></tr></thead>
             <tbody>
               {[
-                { action: "Score each KR \u2014 where are we vs. target?", page: "KR Scoreboard" },
+                { action: "Score each KR — where are we vs. target?", page: "KR Scoreboard" },
                 { action: "Review initiative health (RAG status)", page: "Portfolio Roll-Up" },
                 { action: "Identify top risks, update mitigation", page: "Risk Radar" },
                 { action: "Hold MBR meeting", page: "MBR Agenda" },

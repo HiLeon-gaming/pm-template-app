@@ -60,9 +60,9 @@ function ProductGlossaryContent() {
           {[
             { term: "Sprint", def: "A fixed time-box (usually 1–2 weeks) during which the team delivers a potentially shippable increment", cat: "Scrum", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, src: "Scrum Guide" },
             { term: "Product Backlog", def: "An ordered list of everything that is known to be needed in the product, maintained by the Product Owner", cat: "Scrum", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, src: "Scrum Guide" },
-            { term: "User Story", def: "A short description of a feature told from the user\u2019s perspective: \u201CAs a [user], I want [goal] so that [benefit]\u201D", cat: "Agile", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, src: "Team norm" },
+            { term: "User Story", def: "A short description of a feature told from the user’s perspective: “As a [user], I want [goal] so that [benefit]”", cat: "Agile", cBg: C.badgeGreenBg, cFg: C.badgeGreenFg, src: "Team norm" },
             { term: "Acceptance Criteria", def: "Specific conditions that must be met for a story to be considered complete and accepted by the PO", cat: "Quality", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, src: "Team norm" },
-            { term: "Definition of Done (DoD)", def: "The team\u2019s shared checklist of quality requirements that every increment must meet before it\u2019s considered done", cat: "Quality", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, src: "Working Agreement" },
+            { term: "Definition of Done (DoD)", def: "The team’s shared checklist of quality requirements that every increment must meet before it’s considered done", cat: "Quality", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, src: "Working Agreement" },
             { term: "Definition of Ready (DoR)", def: "Checklist of what must be true before a story is allowed into a sprint — prevents sprint chaos", cat: "Quality", cBg: C.badgeAmberBg, cFg: C.badgeAmberFg, src: "Working Agreement" },
             { term: "Velocity", def: "The amount of work (story points) a team completes per sprint — used for capacity planning, not performance evaluation", cat: "Metrics", cBg: C.badgeRedBg, cFg: C.badgeRedFg, src: "Team metric" },
             { term: "Impediment", def: "Anything that prevents or slows the team from delivering. The SM is responsible for removing impediments.", cat: "Scrum", cBg: C.badgeBlueBg, cFg: C.badgeBlueFg, src: "Scrum Guide" },
@@ -122,7 +122,7 @@ function ProductGlossaryContent() {
             <tbody>
               {[
                 { a: "WSJF", f: "Weighted Shortest Job First" },
-                { a: "MoSCoW", f: "Must / Should / Could / Won\u2019t" },
+                { a: "MoSCoW", f: "Must / Should / Could / Won’t" },
                 { a: "RAID", f: "Risks, Assumptions, Issues, Decisions" },
                 { a: "RAG", f: "Red / Amber / Green (status)" },
                 { a: "UAT", f: "User Acceptance Testing" },

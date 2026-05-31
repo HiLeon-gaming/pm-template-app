@@ -61,8 +61,8 @@ function StakeholderReviewContent() {
             { time: "0:05", mins: "10", topic: "[Feature demo #1 — user authentication flow]", presenter: "[Dev 1]", notes: "[Show login → registration → password reset]" },
             { time: "0:15", mins: "10", topic: "[Feature demo #2 — dashboard analytics]", presenter: "[Dev 2]", notes: "[Show charts, filters, export functionality]" },
             { time: "0:25", mins: "5", topic: "[Feature demo #3 — API integration progress]", presenter: "[Dev 3]", notes: "[Show API calls working — test data]" },
-            { time: "0:30", mins: "10", topic: "[Q&A + stakeholder feedback]", presenter: "[All]", notes: "[Capture feedback verbatim — don\u2019t defend, listen]" },
-            { time: "0:40", mins: "5", topic: "[Next steps + what\u2019s coming next sprint]", presenter: "[PM]", notes: "[Preview next sprint priorities, any decisions needed]" },
+            { time: "0:30", mins: "10", topic: "[Q&A + stakeholder feedback]", presenter: "[All]", notes: "[Capture feedback verbatim — don’t defend, listen]" },
+            { time: "0:40", mins: "5", topic: "[Next steps + what’s coming next sprint]", presenter: "[PM]", notes: "[Preview next sprint priorities, any decisions needed]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

@@ -46,20 +46,20 @@ function IntakeContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Date Captured", value: "[Today\u2019s date]", guide: "Timestamp when you first documented this person." },
+            { label: "Date Captured", value: "[Today’s date]", guide: "Timestamp when you first documented this person." },
             { label: "Name", value: "[Full name]", guide: "Use their preferred name if known. Add pronunciation notes if helpful." },
-            { label: "Title / Role", value: "[Job title and functional role]", guide: "Be specific: \u201CSVP Operations\u201D not just \u201CSenior leader.\u201D" },
-            { label: "Organization / Team", value: "[Company, department, or team]", guide: "Include division if large org. E.g. \u201CFinance \u2014 FP&A team.\u201D" },
-            { label: "How We Met", value: "[Meeting, intro, event, referral]", guide: "Context helps you remember later. \u201CIntro\u2019d by Sarah at Q1 kickoff.\u201D" },
-            { label: "Their Stakeholder Type", value: "[Sponsor / Champion / Decision Maker / Influencer / Gatekeeper / Blocker / End User / SME]", guide: "Pick the primary role. One person can be multiple types \u2014 pick dominant one." },
+            { label: "Title / Role", value: "[Job title and functional role]", guide: "Be specific: “SVP Operations” not just “Senior leader.”" },
+            { label: "Organization / Team", value: "[Company, department, or team]", guide: "Include division if large org. E.g. “Finance — FP&A team.”" },
+            { label: "How We Met", value: "[Meeting, intro, event, referral]", guide: "Context helps you remember later. “Intro’d by Sarah at Q1 kickoff.”" },
+            { label: "Their Stakeholder Type", value: "[Sponsor / Champion / Decision Maker / Influencer / Gatekeeper / Blocker / End User / SME]", guide: "Pick the primary role. One person can be multiple types — pick dominant one." },
             { label: "Importance Level", value: "[Critical / High / Medium / Low]", guide: "Critical = can make or break your initiative. Low = nice to know." },
             { label: "What They Care About", value: "[Top priorities, goals, pressures]", guide: "Listen for what keeps them up at night. This drives your engagement strategy." },
-            { label: "First Impression", value: "[Communication style, energy, pace]", guide: "Keep it factual: \u201CDirect communicator, data-driven, moves fast.\u201D Not judgments." },
-            { label: "Key Quote or Insight", value: "[Memorable thing they said]", guide: "Verbatim quotes reveal priorities. \u201CI just need to know it won\u2019t blow the budget.\u201D" },
+            { label: "First Impression", value: "[Communication style, energy, pace]", guide: "Keep it factual: “Direct communicator, data-driven, moves fast.” Not judgments." },
+            { label: "Key Quote or Insight", value: "[Memorable thing they said]", guide: "Verbatim quotes reveal priorities. “I just need to know it won’t blow the budget.”" },
             { label: "Preferred Channel", value: "[Email / Slack / Teams / Phone]", guide: "Ask them directly or observe what they respond to fastest." },
             { label: "Contact Info", value: "[Email, phone, assistant name]", guide: "Include their EA or chief of staff if they have one." },
-            { label: "Connection to Your Work", value: "[How they relate to your goals]", guide: "Be specific: \u201CApproves platform budget\u201D or \u201COwns API we depend on.\u201D" },
-            { label: "Potential Risk or Concern", value: "[Warning signs, friction, politics]", guide: "Early flags save you later. \u201CReportedly skeptical of vendor solutions.\u201D" },
+            { label: "Connection to Your Work", value: "[How they relate to your goals]", guide: "Be specific: “Approves platform budget” or “Owns API we depend on.”" },
+            { label: "Potential Risk or Concern", value: "[Warning signs, friction, politics]", guide: "Early flags save you later. “Reportedly skeptical of vendor solutions.”" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -91,7 +91,7 @@ function IntakeContent() {
         <tbody>
           {[
             { n: "1", action: "Send follow-up email or connection message", due: "Within 24h", done: "\u2610", why: "First follow-up sets the tone. Reference something specific from your conversation." },
-            { n: "2", action: "Add to Stakeholder Directory Index", due: "Today", done: "\u2610", why: "If they\u2019re not in the directory, they\u2019ll fall off your radar." },
+            { n: "2", action: "Add to Stakeholder Directory Index", due: "Today", done: "\u2610", why: "If they’re not in the directory, they’ll fall off your radar." },
             { n: "3", action: "Create full Stakeholder Profile (if Critical/High)", due: "This week", done: "\u2610", why: "High-importance stakeholders deserve a full profile from day one." },
             { n: "4", action: "Set cadence in Relationship Cadence Planner", due: "This week", done: "\u2610", why: "Without a cadence, the relationship goes cold. Set it now while intent is high." },
             { n: "5", action: "Brief your manager if this is a senior stakeholder", due: "Within 48h", done: "\u2610", why: "Your manager may have context or history that changes your approach." },
@@ -124,7 +124,7 @@ function IntakeContent() {
               {[
                 { color: "#8B5CF6", tip: "Capture within 24 hours.", detail: "Memory fades fast. The details you forget are often the most valuable later." },
                 { color: "#059669", tip: "Ask about their priorities, not yours.", detail: "The first conversation should be 80% listening. What are THEIR goals and pressures?" },
-                { color: "#0EA5E9", tip: "Note communication style.", detail: "\u201CDirect and fast-paced\u201D or \u201CPrefers written over verbal\u201D saves you time later." },
+                { color: "#0EA5E9", tip: "Note communication style.", detail: "“Direct and fast-paced” or “Prefers written over verbal” saves you time later." },
                 { color: "#D97706", tip: "Look for mutual value early.", detail: "How can you help them? If you can offer value in the first interaction, the relationship starts strong." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -143,10 +143,10 @@ function IntakeContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>WHAT TO SKIP (FOR NOW)</td></tr></thead>
             <tbody>
               {[
-                { color: "#D97706", tip: "Don\u2019t overthink the type.", detail: "Your initial classification may change. Just pick your best guess. You\u2019ll refine it later." },
-                { color: "#DC2626", tip: "Don\u2019t write a novel.", detail: "This is a quick capture, not a profile. Bullet points and short phrases are ideal." },
-                { color: "#EA580C", tip: "Don\u2019t judge \u2014 observe.", detail: "\u201CAsked three detailed questions about timeline\u201D is better than \u201CSeems micromanaging.\u201D" },
-                { color: "#6366F1", tip: "Don\u2019t skip the follow-up.", detail: "The intake is worthless without action. Step 1 (send follow-up) is the most important step." },
+                { color: "#D97706", tip: "Don’t overthink the type.", detail: "Your initial classification may change. Just pick your best guess. You’ll refine it later." },
+                { color: "#DC2626", tip: "Don’t write a novel.", detail: "This is a quick capture, not a profile. Bullet points and short phrases are ideal." },
+                { color: "#EA580C", tip: "Don’t judge — observe.", detail: "“Asked three detailed questions about timeline” is better than “Seems micromanaging.”" },
+                { color: "#6366F1", tip: "Don’t skip the follow-up.", detail: "The intake is worthless without action. Step 1 (send follow-up) is the most important step." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

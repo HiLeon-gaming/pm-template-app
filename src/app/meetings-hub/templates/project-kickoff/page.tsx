@@ -54,8 +54,8 @@ function ProjectKickoffContent() {
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Business Problem</td><td style={S.td0}>[What problem are we solving? Why now?]</td></tr>
         <tr><td style={S.tdLabelAlt}>Project Goal</td><td style={{ ...S.tdAlt, fontWeight: 700, color: accent }}>[What does success look like? Be specific and measurable.]</td></tr>
-        <tr><td style={S.tdLabel}>Scope (In)</td><td style={S.td0}>[What\u2019s included in this project?]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Scope (Out)</td><td style={S.tdAlt}>[What\u2019s explicitly NOT included?]</td></tr>
+        <tr><td style={S.tdLabel}>Scope (In)</td><td style={S.td0}>[What’s included in this project?]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Scope (Out)</td><td style={S.tdAlt}>[What’s explicitly NOT included?]</td></tr>
         <tr><td style={S.tdLabel}>Key Deliverables</td><td style={S.td0}>[List the major outputs / deliverables]</td></tr>
         <tr><td style={S.tdLabelAlt}>Success Metrics</td><td style={S.tdAlt}>[How will we measure success? KPIs?]</td></tr>
       </tbody></table>
@@ -169,7 +169,7 @@ function ProjectKickoffContent() {
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Communication Plan</td><td style={S.td0}>[How will we communicate? Slack channel, email list, meetings?]</td></tr>
         <tr><td style={S.tdLabelAlt}>Meeting Cadence</td><td style={{ ...S.tdAlt, fontWeight: 700, color: accent }}>[Weekly status Tuesdays 10am, Daily standup 9:15am]</td></tr>
-        <tr><td style={S.tdLabel}>First Deliverable</td><td style={S.td0}>[What\u2019s due first? Requirements doc by 03/15]</td></tr>
+        <tr><td style={S.tdLabel}>First Deliverable</td><td style={S.td0}>[What’s due first? Requirements doc by 03/15]</td></tr>
         <tr><td style={S.tdLabelAlt}>Questions / Concerns</td><td style={S.tdAlt}>[Capture any open questions from the kickoff]</td></tr>
         <tr><td style={S.tdLabel}>Recap Sent By</td><td style={S.td0}>[PM — within 24 hours of kickoff]</td></tr>
       </tbody></table>

@@ -224,7 +224,7 @@ const products = [
     title: "Relationship & Stakeholder Management Hub",
     subtitle: "For Professionals Who Manage People, Trust & Follow-Through",
     description:
-      "Your complete OneNote system for managing stakeholder relationships like a pro. Profiles, commitments, follow-ups, meeting prep, risk tracking, and executive summaries \u2014 all in one notebook.",
+      "Your complete OneNote system for managing stakeholder relationships like a pro. Profiles, commitments, follow-ups, meeting prep, risk tracking, and executive summaries — all in one notebook.",
     icon: Handshake,
     href: "/relationship-hub",
     color: "rose",

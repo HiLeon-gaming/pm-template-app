@@ -47,7 +47,7 @@ function ParkingLotContent() {
         </tr></thead>
         <tbody>
           {[
-            { topic: "[Discuss team restructure — needs Sarah\u2019s input first]", by: "[Mike]", date: "[03/05]", owner: "[You]", fu: "[03/12]", s: "Open", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
+            { topic: "[Discuss team restructure — needs Sarah’s input first]", by: "[Mike]", date: "[03/05]", owner: "[You]", fu: "[03/12]", s: "Open", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
             { topic: "[Review Q3 budget forecast — defer to monthly review]", by: "[Finance]", date: "[03/05]", owner: "[CFO]", fu: "[03/15]", s: "Open", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
             { topic: "[New tooling proposal — needs cost analysis]", by: "[Tech Lead]", date: "[03/03]", owner: "[Tech Lead]", fu: "[03/10]", s: "In Progress", sBg: C.badgeBlueBg, sFg: C.badgeBlueFg },
             { topic: "[Customer feedback on onboarding flow]", by: "[Product]", date: "[03/01]", owner: "[UX]", fu: "[03/08]", s: "Overdue", sBg: C.badgeRedBg, sFg: C.badgeRedFg },

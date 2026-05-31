@@ -120,7 +120,7 @@ function AlignmentMapContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>⚠️ GAP ANALYSIS</td></tr></thead>
             <tbody>
               {[
-                { type: "Orphan", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "Blog redesign doesn\u2019t link to any OKR", action: "Pause or link it" },
+                { type: "Orphan", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, desc: "Blog redesign doesn’t link to any OKR", action: "Pause or link it" },
                 { type: "Unsupported", tBg: C.badgeRedBg, tFg: C.badgeRedFg, desc: "Engagement KR has only 1 struggling initiative", action: "Add initiatives or adjust target" },
                 { type: "Overlap", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, desc: "Product + CX both running customer surveys", action: "Consolidate to one owner" },
               ].map((r, i) => {
@@ -142,7 +142,7 @@ function AlignmentMapContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>💡 ALIGNMENT TIPS</td></tr></thead>
             <tbody>
               {[
-                { color: accent, tip: "Every team OKR must plug into a company OKR.", detail: "If it doesn\u2019t connect upward, question why you\u2019re doing it." },
+                { color: accent, tip: "Every team OKR must plug into a company OKR.", detail: "If it doesn’t connect upward, question why you’re doing it." },
                 { color: "#059669", tip: "Personal OKRs are optional but powerful.", detail: "Best for senior ICs and managers who want clarity on impact." },
                 { color: "#DC2626", tip: "Look for orphaned work every quarter.", detail: "Unlinked projects are candidates for the Stop Doing list." },
                 { color: "#D97706", tip: "Alignment \u2260 micromanagement.", detail: "Freedom in HOW. Alignment is about WHAT matters." },

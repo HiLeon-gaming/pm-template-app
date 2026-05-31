@@ -67,7 +67,7 @@ function TimeboxPlanContent() {
             { start: "2:00", planned: "10 min", item: "[Team restructure proposal — first pass]", lead: "[You]", type: "Discussion", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, actual: "", over: "" },
             { start: "2:10", planned: "10 min", item: "[Risk review + escalation needs]", lead: "[PM]", type: "Review", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, actual: "", over: "" },
             { start: "2:20", planned: "5 min", item: "[Closeout: decisions, actions, parking lot, next mtg]", lead: "[Facilitator]", type: "Closeout", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, actual: "", over: "" },
-            { start: "2:25", planned: "5 min", item: "[Buffer — overflow or early release]", lead: "[\u2014]", type: "Buffer", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, actual: "", over: "" },
+            { start: "2:25", planned: "5 min", item: "[Buffer — overflow or early release]", lead: "[—]", type: "Buffer", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, actual: "", over: "" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (

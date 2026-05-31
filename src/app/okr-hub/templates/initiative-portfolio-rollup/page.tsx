@@ -114,7 +114,7 @@ function InitiativePortfolioContent() {
                 { label: "Green (On Track)", value: "3 (43%)", color: "#059669" },
                 { label: "Amber (At Risk)", value: "3 (43%)", color: "#D97706" },
                 { label: "Red (Blocked)", value: "1 (14%)", color: "#DC2626" },
-                { label: "Overall Health", value: "Amber \u2014 Majority progressing, detractor stalled", color: "#D97706" },
+                { label: "Overall Health", value: "Amber — Majority progressing, detractor stalled", color: "#D97706" },
                 { label: "#1 Action", value: "Unblock NPS data access immediately", color: accent },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

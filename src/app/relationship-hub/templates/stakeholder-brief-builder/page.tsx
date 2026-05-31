@@ -42,11 +42,11 @@ function BriefContent() {
       <table style={S.tbl}>
         <tbody>
           {[
-            { label: "Brief Title", value: "[Project/Initiative Name] \u2014 Stakeholder Brief \u2014 [Date]" },
+            { label: "Brief Title", value: "[Project/Initiative Name] — Stakeholder Brief — [Date]" },
             { label: "Prepared By", value: "[Your Name, Role]" },
             { label: "Audience", value: "[Who is this brief for? Sponsor? SteerCo? New leader?]" },
             { label: "Purpose", value: "[Why does the reader need this? Onboarding? Decision support? Risk awareness?]" },
-            { label: "Overall Stakeholder Health", value: "[\ud83d\udfe2 Healthy / \ud83d\udfe1 Mixed / \ud83d\udd34 At Risk] \u2014 [One sentence explaining the overall state]" },
+            { label: "Overall Stakeholder Health", value: "[\ud83d\udfe2 Healthy / \ud83d\udfe1 Mixed / \ud83d\udd34 At Risk] — [One sentence explaining the overall state]" },
             { label: "The One Thing to Know", value: "[If the reader remembers one thing, what should it be?]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -143,7 +143,7 @@ function BriefContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>BRIEF WRITING RULES</td></tr></thead>
             <tbody>
               {[
-                { color: "#D97706", tip: "One page maximum.", detail: "If it doesn\u2019t fit on one page, you haven\u2019t distilled it enough." },
+                { color: "#D97706", tip: "One page maximum.", detail: "If it doesn’t fit on one page, you haven’t distilled it enough." },
                 { color: "#059669", tip: "Bottom line up front.", detail: "Overall health + the one thing they need to know. First 3 lines." },
                 { color: "#0EA5E9", tip: "RAG status for every stakeholder.", detail: "Instant visual. No ambiguity. Green/Amber/Red tells the story." },
                 { color: "#6366F1", tip: "Every risk needs a recommendation.", detail: "Never present a problem without a proposed solution or next step." },
@@ -164,10 +164,10 @@ function BriefContent() {
             <thead><tr><td style={{ backgroundColor: "#DCFCE7", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>WHEN TO USE THIS BRIEF</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "New sponsor or leader onboarding.", detail: "Hand them this page. They\u2019ll understand the landscape in 2 minutes." },
+                { color: "#059669", tip: "New sponsor or leader onboarding.", detail: "Hand them this page. They’ll understand the landscape in 2 minutes." },
                 { color: "#0EA5E9", tip: "Before SteerCo or board meetings.", detail: "Pre-read material. Gives context before you present." },
-                { color: "#D97706", tip: "Monthly stakeholder health check.", detail: "Force yourself to assess every key relationship. Don\u2019t skip it." },
-                { color: "#DC2626", tip: "When you sense things going sideways.", detail: "Writing it down forces clarity. You\u2019ll see patterns you missed." },
+                { color: "#D97706", tip: "Monthly stakeholder health check.", detail: "Force yourself to assess every key relationship. Don’t skip it." },
+                { color: "#DC2626", tip: "When you sense things going sideways.", detail: "Writing it down forces clarity. You’ll see patterns you missed." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

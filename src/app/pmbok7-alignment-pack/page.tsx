@@ -50,7 +50,7 @@ const categories: Category[] = [
     templates: [
       {
         number: 0,
-        title: "READ THIS FIRST \u2014 How This Pack Works",
+        title: "READ THIS FIRST — How This Pack Works",
         description:
           "Complete setup guide: what the pack is, how to use it standalone or with the PM Command Center, weekly/monthly routines, and a quick-reference index.",
         href: `${BASE}/read-this-first`,
@@ -60,7 +60,7 @@ const categories: Category[] = [
         number: 1,
         title: "PMBOK 7 Alignment Dashboard",
         description:
-          "Your \u201Chome base.\u201D At-a-glance domain health, principle focus, current delivery approach, top outcomes, and next actions.",
+          "Your “home base.” At-a-glance domain health, principle focus, current delivery approach, top outcomes, and next actions.",
         href: `${BASE}/alignment-dashboard`,
         badge: "✅ Built",
         allStar: true,
@@ -68,7 +68,7 @@ const categories: Category[] = [
       },
       {
         number: 2,
-        title: "PMBOK 7 \u201CHow This Pack Works\u201D Quick Start",
+        title: "PMBOK 7 “How This Pack Works” Quick Start",
         description:
           "Simple setup steps + recommended weekly/monthly cadence for using the pages.",
         href: `${BASE}/quick-start`,
@@ -83,7 +83,7 @@ const categories: Category[] = [
         badge: "✅ Built",
         allStar: true,
         whyAllStar:
-          "De-risks the \u201Care we really PMBOK 7 aligned?\u201D question instantly.",
+          "De-risks the “are we really PMBOK 7 aligned?” question instantly.",
       },
     ],
   },
@@ -97,7 +97,7 @@ const categories: Category[] = [
         number: 4,
         title: "Tailoring Strategy Worksheet",
         description:
-          "Defines what you will tailor (governance, planning depth, reporting, controls) and why\u2014based on context.",
+          "Defines what you will tailor (governance, planning depth, reporting, controls) and why—based on context.",
         href: `${BASE}/tailoring-strategy-worksheet`,
         badge: "✅ Built",
         allStar: true,
@@ -108,7 +108,7 @@ const categories: Category[] = [
         number: 5,
         title: "Delivery Approach Selector",
         description:
-          "Decision framework to choose Predictive vs Hybrid vs Agile with tradeoffs, risks, and \u201Cwhat changes if we pick X.\u201D",
+          "Decision framework to choose Predictive vs Hybrid vs Agile with tradeoffs, risks, and “what changes if we pick X.”",
         href: `${BASE}/delivery-approach-selector`,
         badge: "✅ Built",
         allStar: true,
@@ -127,7 +127,7 @@ const categories: Category[] = [
         number: 7,
         title: "Governance & Decision Rights Map",
         description:
-          "Who decides what, escalation paths, cadence, and \u201Cwhat requires formal approval.\u201D",
+          "Who decides what, escalation paths, cadence, and “what requires formal approval.”",
         href: `${BASE}/governance-decision-rights-map`,
         badge: "✅ Built",
       },
@@ -160,11 +160,11 @@ const categories: Category[] = [
         number: 10,
         title: "Stakeholder Domain Health Check",
         description:
-          "Power/interest snapshot, sentiment, alignment risks, engagement actions, and \u201Ctop friction points.\u201D",
+          "Power/interest snapshot, sentiment, alignment risks, engagement actions, and “top friction points.”",
         href: `${BASE}/stakeholder-domain-health-check`,
         badge: "✅ Built",
         allStar: true,
-        whyAllStar: "Prevents \u201Csurprise stakeholder blowups.\u201D",
+        whyAllStar: "Prevents “surprise stakeholder blowups.”",
       },
       {
         number: 11,
@@ -175,7 +175,7 @@ const categories: Category[] = [
         badge: "✅ Built",
         allStar: true,
         whyAllStar:
-          "High correlation to delivery success\u2014great weekly signal.",
+          "High correlation to delivery success—great weekly signal.",
       },
       {
         number: 12,
@@ -205,7 +205,7 @@ const categories: Category[] = [
         number: 15,
         title: "Delivery Domain Health Check",
         description:
-          "Increment delivery, acceptance health, quality trends, readiness signals, \u201Cwhat could fail at release.\u201D",
+          "Increment delivery, acceptance health, quality trends, readiness signals, “what could fail at release.”",
         href: `${BASE}/delivery-domain-health-check`,
         badge: "✅ Built",
         allStar: true,
@@ -231,12 +231,12 @@ const categories: Category[] = [
         badge: "✅ Built",
         allStar: true,
         whyAllStar:
-          "Where projects \u201Cflip red\u201D without warning\u2014this page catches it early.",
+          "Where projects “flip red” without warning—this page catches it early.",
       },
     ],
   },
   {
-    title: "12 Principles \u2014 Practice Pages",
+    title: "12 Principles — Practice Pages",
     subtitle:
       "Stewardship \u2022 Team \u2022 Stakeholders \u2022 Value \u2022 Systems Thinking \u2022 Leadership \u2022 Tailoring \u2022 Quality \u2022 Complexity \u2022 Risk \u2022 Adaptability \u2022 Change",
     icon: Scale,
@@ -246,7 +246,7 @@ const categories: Category[] = [
         number: 18,
         title: "Principles-to-Practice Master Checklist",
         description:
-          "One page that shows: principle, what \u201Cgood\u201D looks like, evidence/artifacts, and current status.",
+          "One page that shows: principle, what “good” looks like, evidence/artifacts, and current status.",
         href: `${BASE}/principles-master-checklist`,
         badge: "✅ Built",
         allStar: true,
@@ -256,7 +256,7 @@ const categories: Category[] = [
         number: 19,
         title: "Stewardship Practice Page",
         description:
-          "Ethics, transparency, accountability signals + \u201Cstewardship decisions\u201D log.",
+          "Ethics, transparency, accountability signals + “stewardship decisions” log.",
         href: `${BASE}/principle-stewardship`,
         badge: "✅ Built",
       },
@@ -272,7 +272,7 @@ const categories: Category[] = [
         number: 21,
         title: "Stakeholders Practice Page",
         description:
-          "Engagement strategies by stakeholder type + \u201Calignment risks\u201D tracker.",
+          "Engagement strategies by stakeholder type + “alignment risks” tracker.",
         href: `${BASE}/principle-stakeholders`,
         badge: "✅ Built",
       },
@@ -299,7 +299,7 @@ const categories: Category[] = [
         number: 24,
         title: "Leadership Practice Page",
         description:
-          "Decision clarity, empowerment, and \u201Cleadership behaviors to model\u201D tracker.",
+          "Decision clarity, empowerment, and “leadership behaviors to model” tracker.",
         href: `${BASE}/principle-leadership`,
         badge: "✅ Built",
       },
@@ -307,7 +307,7 @@ const categories: Category[] = [
         number: 25,
         title: "Tailoring Practice Page",
         description:
-          "Tailoring quality check + \u201Ctailoring experiments\u201D and results.",
+          "Tailoring quality check + “tailoring experiments” and results.",
         href: `${BASE}/principle-tailoring`,
         badge: "✅ Built",
         allStar: true,
@@ -373,7 +373,7 @@ const categories: Category[] = [
         badge: "✅ Built",
         allStar: true,
         whyAllStar:
-          "Turns \u201Cmeasurement domain\u201D into a real operating system.",
+          "Turns “measurement domain” into a real operating system.",
       },
       {
         number: 32,
@@ -387,7 +387,7 @@ const categories: Category[] = [
         number: 33,
         title: "Metrics Review Notes + Actions",
         description:
-          "Recurring notes page that turns metrics into decisions and assignments (prevents \u201Creporting theater\u201D).",
+          "Recurring notes page that turns metrics into decisions and assignments (prevents “reporting theater”).",
         href: `${BASE}/metrics-review`,
         badge: "✅ Built",
       },
@@ -408,7 +408,7 @@ const categories: Category[] = [
         badge: "✅ Built",
         allStar: true,
         whyAllStar:
-          "Gives you a structured way to manage the unknown\u2014not just \u201Cadd buffer.\u201D",
+          "Gives you a structured way to manage the unknown—not just “add buffer.”",
       },
       {
         number: 35,
@@ -430,7 +430,7 @@ const categories: Category[] = [
         number: 37,
         title: "Decision Latency Tracker",
         description:
-          "Track slow decisions, their cost, escalation, and resolution\u2014massive hidden project risk.",
+          "Track slow decisions, their cost, escalation, and resolution—massive hidden project risk.",
         href: `${BASE}/decision-latency`,
         badge: "✅ Built",
       },
@@ -454,7 +454,7 @@ const categories: Category[] = [
         number: 39,
         title: "Principle-Based Lessons Learned Capture",
         description:
-          "Lessons learned framed by principles so it\u2019s reusable across projects.",
+          "Lessons learned framed by principles so it’s reusable across projects.",
         href: `${BASE}/principle-lessons`,
         badge: "✅ Built",
       },

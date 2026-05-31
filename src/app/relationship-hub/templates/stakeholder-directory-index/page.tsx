@@ -116,11 +116,11 @@ function DirectoryContent() {
         </tr></thead>
         <tbody>
           {[
-            { metric: "Total Stakeholders Tracked", count: "[6]", target: "Most PMs track 8\u201315 stakeholders. More than 20 = consider delegating.", color: "#0EA5E9" },
+            { metric: "Total Stakeholders Tracked", count: "[6]", target: "Most PMs track 8–15 stakeholders. More than 20 = consider delegating.", color: "#0EA5E9" },
             { metric: "Critical Priority", count: "[2]", target: "These are your top relationships. Never miss a cadence with Critical stakeholders.", color: accent },
             { metric: "Health: Green", count: "[3]", target: "Target: 60%+ Green. Maintain with consistent cadence and follow-through.", color: "#059669" },
             { metric: "Health: Amber", count: "[2]", target: "Target: <30% Amber. Each Amber needs an action plan this week.", color: "#D97706" },
-            { metric: "Health: Red", count: "[1]", target: "Target: 0 Red. Every Red is an urgent fix \u2014 schedule a conversation TODAY.", color: "#DC2626" },
+            { metric: "Health: Red", count: "[1]", target: "Target: 0 Red. Every Red is an urgent fix — schedule a conversation TODAY.", color: "#DC2626" },
             { metric: "Overdue Touchpoints", count: "[1]", target: "Target: 0 overdue. Any overdue Critical = relationship emergency.", color: "#DC2626" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -146,7 +146,7 @@ function DirectoryContent() {
             <thead><tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>DIRECTORY BEST PRACTICES</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Sort by importance.", detail: "Critical stakeholders should always be at the top. You\u2019ll scan this page weekly \u2014 put the most important people first." },
+                { color: "#059669", tip: "Sort by importance.", detail: "Critical stakeholders should always be at the top. You’ll scan this page weekly — put the most important people first." },
                 { color: "#0EA5E9", tip: "Link to full profiles.", detail: "Each name should hyperlink to their Stakeholder Profile page in OneNote. One click from index to detail." },
                 { color: "#8B5CF6", tip: "Review weekly on Monday.", detail: "Scan the Health and Last Touch columns. Flag anyone overdue or trending from Green to Amber." },
                 { color: "#D97706", tip: "Add new stakeholders immediately.", detail: "When you meet someone new who matters, add them here within 24 hours while context is fresh." },

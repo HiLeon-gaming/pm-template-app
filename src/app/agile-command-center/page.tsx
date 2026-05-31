@@ -63,7 +63,7 @@ const categories: Category[] = [
         href: `${BASE}/command-dashboard`,
         badge: "✅ Built",
         allStar: true,
-        whyAllStar: "Stops the \u201Cwhere do we stand?\u201D chaos.",
+        whyAllStar: "Stops the “where do we stand?” chaos.",
       },
       {
         title: "Quick Start + Setup Checklist",
@@ -97,7 +97,7 @@ const categories: Category[] = [
       {
         title: "Product Vision + Outcome Statement",
         description:
-          "What we\u2019re building, for who, and how we\u2019ll measure success. OKR-friendly format.",
+          "What we’re building, for who, and how we’ll measure success. OKR-friendly format.",
         href: `${BASE}/product-vision`,
         badge: "✅ Built",
         allStar: true,
@@ -106,7 +106,7 @@ const categories: Category[] = [
       {
         title: "Problem Statement + Target Users/Personas",
         description:
-          "Who we\u2019re helping + what pain we\u2019re solving. Improves prioritization and story clarity.",
+          "Who we’re helping + what pain we’re solving. Improves prioritization and story clarity.",
         href: `${BASE}/problem-statement`,
         badge: "✅ Built",
       },
@@ -120,7 +120,7 @@ const categories: Category[] = [
       {
         title: "Success Metrics + North Star Tracker",
         description:
-          "Leading and lagging indicators + targets. Stops \u201Cbusy work\u201D and focuses the team.",
+          "Leading and lagging indicators + targets. Stops “busy work” and focuses the team.",
         href: `${BASE}/success-metrics`,
         badge: "✅ Built",
       },
@@ -149,7 +149,7 @@ const categories: Category[] = [
       {
         title: "Product Roadmap (Now / Next / Later)",
         description:
-          "Simple roadmap that doesn\u2019t pretend you know everything. Exec-friendly, flexible, and realistic.",
+          "Simple roadmap that doesn’t pretend you know everything. Exec-friendly, flexible, and realistic.",
         href: `${BASE}/product-roadmap`,
         badge: "✅ Built",
         allStar: true,
@@ -179,7 +179,7 @@ const categories: Category[] = [
       {
         title: "Decision Log",
         description:
-          "Record decisions, context, owner, and date. Saves you later when someone asks \u201Cwhy did we\u2026?\u201D",
+          "Record decisions, context, owner, and date. Saves you later when someone asks “why did we…?”",
         href: `${BASE}/decision-log`,
         badge: "✅ Built",
       },
@@ -194,7 +194,7 @@ const categories: Category[] = [
       {
         title: "Backlog Master (Epics / Features / Stories)",
         description:
-          "Your single source of truth for what exists and what\u2019s next. Eliminates scattered notes.",
+          "Your single source of truth for what exists and what’s next. Eliminates scattered notes.",
         href: `${BASE}/backlog-master`,
         badge: "✅ Built",
         allStar: true,
@@ -212,7 +212,7 @@ const categories: Category[] = [
       {
         title: "Story Mapping (User Journey Map)",
         description:
-          "Visual flow of the user experience + gaps. Prevents building \u201Crandom features.\u201D",
+          "Visual flow of the user experience + gaps. Prevents building “random features.”",
         href: `${BASE}/story-mapping`,
         badge: "✅ Built",
       },
@@ -268,7 +268,7 @@ const categories: Category[] = [
       {
         title: "Sprint Planning Worksheet",
         description:
-          "Capacity, goal, selected stories, risks, and constraints. Best \u201Canti-overcommit\u201D page.",
+          "Capacity, goal, selected stories, risks, and constraints. Best “anti-overcommit” page.",
         href: `${BASE}/sprint-planning`,
         badge: "✅ Built",
         allStar: true,
@@ -277,14 +277,14 @@ const categories: Category[] = [
       {
         title: "Sprint Goal + Sprint Backlog",
         description:
-          "Clear sprint goal + what\u2019s in/out + success definition. Keeps sprint focused.",
+          "Clear sprint goal + what’s in/out + success definition. Keeps sprint focused.",
         href: `${BASE}/sprint-goal`,
         badge: "✅ Built",
       },
       {
         title: "Capacity Planner (Availability + Focus Factor)",
         description:
-          "Who\u2019s available, how much time, and realistic capacity. Protects the team.",
+          "Who’s available, how much time, and realistic capacity. Protects the team.",
         href: `${BASE}/capacity-planner`,
         badge: "✅ Built",
         allStar: true,
@@ -345,7 +345,7 @@ const categories: Category[] = [
       {
         title: "Blocker Escalation / Help Request",
         description:
-          "A structured \u201Cask\u201D page for leadership/vendor help. Makes escalations fast and clear.",
+          "A structured “ask” page for leadership/vendor help. Makes escalations fast and clear.",
         href: `${BASE}/blocker-escalation`,
         badge: "✅ Built",
       },

@@ -86,7 +86,7 @@ function MBRAgendaContent() {
               {[
                 "Update all KR scores with end-of-month data.",
                 "Update Initiative Portfolio Roll-Up with current RAG statuses.",
-                "Review Stop Doing list \u2014 flag anything that crept back in.",
+                "Review Stop Doing list — flag anything that crept back in.",
                 "Prepare decisions needing leadership input (with options).",
                 "Send pre-read to attendees 24 hrs before.",
                 "Block 15 min after MBR for notes & actions.",

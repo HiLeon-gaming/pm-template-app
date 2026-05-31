@@ -41,9 +41,9 @@ function EmailContent() {
       <table style={S.tbl}>
         <tbody>
           {[
-            { label: "Subject Line", value: "[Action Required] Follow-Up: [Meeting Title] \u2014 [Date]" },
+            { label: "Subject Line", value: "[Action Required] Follow-Up: [Meeting Title] — [Date]" },
             { label: "To", value: "[All attendees]" },
-            { label: "CC", value: "[Anyone who needs visibility but wasn\u2019t in the meeting]" },
+            { label: "CC", value: "[Anyone who needs visibility but wasn’t in the meeting]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -92,7 +92,7 @@ function EmailContent() {
         <thead><tr><th style={{ ...S.thPrimary, textAlign: "left" as const }}>Example Follow-Up</th></tr></thead>
         <tbody>
           <tr><td style={{ ...S.td0, fontSize: "10px", padding: "12px 16px", lineHeight: "1.7", backgroundColor: "#F8FAFC" }}>
-            <strong>Subject:</strong> [Action Required] Follow-Up: Vendor Selection Review \u2014 March 13<br /><br />
+            <strong>Subject:</strong> [Action Required] Follow-Up: Vendor Selection Review — March 13<br /><br />
             Hi Maria, David, James,<br /><br />
             Thanks for the productive discussion today. Here&apos;s a quick recap:<br /><br />
             <strong style={{ color: accent }}>WHAT WE DISCUSSED:</strong><br />
@@ -100,12 +100,12 @@ function EmailContent() {
             &bull; Discussed budget implications of Option B vs Option C<br />
             &bull; Addressed security concerns raised by James<br /><br />
             <strong style={{ color: "#6366F1" }}>DECISIONS MADE:</strong><br />
-            &bull; Proceed with Option B (Vendor X) \u2014 decided by Maria<br />
-            &bull; Allocate additional $15K for security audit \u2014 approved by David<br /><br />
+            &bull; Proceed with Option B (Vendor X) — decided by Maria<br />
+            &bull; Allocate additional $15K for security audit — approved by David<br /><br />
             <strong style={{ color: "#DC2626" }}>ACTION ITEMS:</strong><br />
-            &bull; Send contract to Legal for review \u2014 Owner: [Your Name] \u2014 Due: Mar 15<br />
-            &bull; Schedule security audit kickoff \u2014 Owner: James \u2014 Due: Mar 18<br />
-            &bull; Confirm budget allocation in system \u2014 Owner: David \u2014 Due: Mar 16<br /><br />
+            &bull; Send contract to Legal for review — Owner: [Your Name] — Due: Mar 15<br />
+            &bull; Schedule security audit kickoff — Owner: James — Due: Mar 18<br />
+            &bull; Confirm budget allocation in system — Owner: David — Due: Mar 16<br /><br />
             <strong style={{ color: "#D97706" }}>NEXT STEPS:</strong><br />
             &bull; Next check-in: March 20, 2pm<br />
             &bull; Contract expected back from Legal by March 22<br /><br />

@@ -50,7 +50,7 @@ function DecisionMapContent() {
         <tbody>
           {[
             { area: "Budget / Funding", approve: "Yes", block: "Yes", influence: "Yes", notes: "Controls department budget. Needs ROI justification for anything over $50K. Prefers one-pager with financials.", esc: "CFO (David Park)" },
-            { area: "Scope Changes", approve: "No", block: "Yes", influence: "Yes", notes: "Won\u2019t approve scope changes but can veto changes that affect their team\u2019s workload.", esc: "Steering Committee" },
+            { area: "Scope Changes", approve: "No", block: "Yes", influence: "Yes", notes: "Won’t approve scope changes but can veto changes that affect their team’s workload.", esc: "Steering Committee" },
             { area: "Timeline / Schedule", approve: "No", block: "No", influence: "Yes", notes: "Will push back if timeline impacts their deliverables. Give 2 weeks notice for changes.", esc: "Project Sponsor" },
             { area: "Resource Allocation", approve: "Yes", block: "Yes", influence: "Yes", notes: "Owns headcount decisions for their function. Protective of team capacity.", esc: "VP Operations" },
             { area: "Vendor Selection", approve: "No", block: "No", influence: "Yes", notes: "Has strong opinions on vendors. Consult early to avoid late-stage surprises.", esc: "Procurement Lead" },
@@ -119,9 +119,9 @@ function DecisionMapContent() {
             <tbody>
               {[
                 { color: "#8B5CF6", tip: "Map authority, not title.", detail: "A director with budget authority is more powerful than a VP who can only influence. Map actual decision rights." },
-                { color: "#059669", tip: "Ask directly: \u201CWho has final say on this?\u201D", detail: "Don\u2019t assume. Many PMs waste weeks going to the wrong person." },
-                { color: "#0EA5E9", tip: "Document conditions and thresholds.", detail: "\u201CApproves up to $50K\u201D is more useful than \u201CApproves budgets.\u201D Specificity saves time." },
-                { color: "#D97706", tip: "Always have an escalation path.", detail: "For every decision that can be blocked, know who to go to next. Deadlocks are predictable \u2014 plan for them." },
+                { color: "#059669", tip: "Ask directly: “Who has final say on this?”", detail: "Don’t assume. Many PMs waste weeks going to the wrong person." },
+                { color: "#0EA5E9", tip: "Document conditions and thresholds.", detail: "“Approves up to $50K” is more useful than “Approves budgets.” Specificity saves time." },
+                { color: "#D97706", tip: "Always have an escalation path.", detail: "For every decision that can be blocked, know who to go to next. Deadlocks are predictable — plan for them." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -139,10 +139,10 @@ function DecisionMapContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>COMMON DECISION TRAPS</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Assuming silence means approval.", detail: "No response is NOT approval. Always get explicit confirmation. \u201CI\u2019ll assume yes if I don\u2019t hear back\u201D is risky." },
-                { color: "#EA580C", tip: "Bypassing a blocker without warning.", detail: "Even if you escalate, tell the blocker first. \u201CI need to escalate this\u201D is better than going behind their back." },
-                { color: "#D97706", tip: "Asking for decisions without options.", detail: "Never present a problem without solutions. Give 2\u20133 options with your recommendation." },
-                { color: "#6366F1", tip: "Not documenting verbal approvals.", detail: "Every decision should be confirmed in writing. \u201CPer our conversation, we agreed to...\u201D protects everyone." },
+                { color: "#DC2626", tip: "Assuming silence means approval.", detail: "No response is NOT approval. Always get explicit confirmation. “I’ll assume yes if I don’t hear back” is risky." },
+                { color: "#EA580C", tip: "Bypassing a blocker without warning.", detail: "Even if you escalate, tell the blocker first. “I need to escalate this” is better than going behind their back." },
+                { color: "#D97706", tip: "Asking for decisions without options.", detail: "Never present a problem without solutions. Give 2–3 options with your recommendation." },
+                { color: "#6366F1", tip: "Not documenting verbal approvals.", detail: "Every decision should be confirmed in writing. “Per our conversation, we agreed to...” protects everyone." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

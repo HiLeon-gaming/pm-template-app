@@ -82,10 +82,10 @@ function PrepContent() {
         </tr></thead>
         <tbody>
           {[
-            { n: "1", point: "[Your first key message \u2014 lead with the most important point]", connect: "[Why THEY should care about this]" },
+            { n: "1", point: "[Your first key message — lead with the most important point]", connect: "[Why THEY should care about this]" },
             { n: "2", point: "[Supporting point or data]", connect: "[How it affects their goals/KPIs]" },
             { n: "3", point: "[Risk or concern to raise]", connect: "[Why it matters to them specifically]" },
-            { n: "4", point: "[Ask or request]", connect: "[What\u2019s in it for them if they agree]" },
+            { n: "4", point: "[Ask or request]", connect: "[What’s in it for them if they agree]" },
             { n: "5", point: "[Next steps / proposed path forward]", connect: "[How this moves their priorities forward]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -114,11 +114,11 @@ function PrepContent() {
         </tr></thead>
         <tbody>
           {[
-            { q: "[What\u2019s the hardest question they could ask?]", a: "[Your prepared, honest answer. Don\u2019t be caught off-guard.]" },
-            { q: "[Any sensitive topics to avoid?]", a: "[How you\u2019ll redirect if it comes up]" },
+            { q: "[What’s the hardest question they could ask?]", a: "[Your prepared, honest answer. Don’t be caught off-guard.]" },
+            { q: "[Any sensitive topics to avoid?]", a: "[How you’ll redirect if it comes up]" },
             { q: "[What if they push back on your ask?]", a: "[Your fallback position or compromise]" },
-            { q: "[What if they bring up a past issue?]", a: "[How you\u2019ll acknowledge and move forward]" },
-            { q: "[What if they say no?]", a: "[Your next step if you don\u2019t get what you want]" },
+            { q: "[What if they bring up a past issue?]", a: "[How you’ll acknowledge and move forward]" },
+            { q: "[What if they say no?]", a: "[Your next step if you don’t get what you want]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -144,7 +144,7 @@ function PrepContent() {
               {[
                 { color: "#059669", tip: "Prep takes 15 minutes. Winging it wastes 60.", detail: "The ROI on meeting prep is enormous. Do it." },
                 { color: "#0EA5E9", tip: "Start with THEIR perspective.", detail: "What do THEY need from this meeting? Lead with that, not your agenda." },
-                { color: "#8B5CF6", tip: "Know your desired outcome before you walk in.", detail: "If you don\u2019t know what success looks like, you can\u2019t achieve it." },
+                { color: "#8B5CF6", tip: "Know your desired outcome before you walk in.", detail: "If you don’t know what success looks like, you can’t achieve it." },
                 { color: "#D97706", tip: "Send pre-reads 48 hours early.", detail: "Never surprise stakeholders with information in the meeting. Let them process first." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

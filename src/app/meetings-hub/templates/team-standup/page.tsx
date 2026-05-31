@@ -60,7 +60,7 @@ function TeamStandupContent() {
                 <td style={{ ...S.td0, backgroundColor: bg, fontWeight: 700, fontSize: "11px", color: accent }}>{name}</td>
                 <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Completed / worked on]</td>
                 <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Focus for today]</td>
-                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Blocker or \u201CNone\u201D]</td>
+                <td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>[Blocker or “None”]</td>
               </tr>
             );
           })}
@@ -74,9 +74,9 @@ function TeamStandupContent() {
       <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 TEAM FOCUS &amp; ESCALATIONS</td></tr></tbody></table>
       <CopyButton targetRef={focusRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
-        <tr><td style={{ ...S.tdLabel, width: "22%" }}>Team Priority Today</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[What\u2019s the #1 thing we need to get done today?]</td></tr>
+        <tr><td style={{ ...S.tdLabel, width: "22%" }}>Team Priority Today</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[What’s the #1 thing we need to get done today?]</td></tr>
         <tr><td style={S.tdLabelAlt}>Blockers to Resolve</td><td style={S.tdAlt}>[List blockers that need immediate action — who will own each?]</td></tr>
-        <tr><td style={S.tdLabel}>Offline Discussions</td><td style={S.td0}>[Topics that need separate meetings — don\u2019t discuss now, schedule later]</td></tr>
+        <tr><td style={S.tdLabel}>Offline Discussions</td><td style={S.td0}>[Topics that need separate meetings — don’t discuss now, schedule later]</td></tr>
         <tr><td style={S.tdLabelAlt}>Escalations</td><td style={{ ...S.tdAlt, color: "#DC2626", fontWeight: 600 }}>[Anything that needs to go up to leadership?]</td></tr>
         <tr><td style={S.tdLabel}>Wins / Shout-Outs</td><td style={S.td0}>[Quick recognition — keep it brief]</td></tr>
       </tbody></table>

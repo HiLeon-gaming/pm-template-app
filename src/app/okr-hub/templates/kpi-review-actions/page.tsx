@@ -112,7 +112,7 @@ function KPIReviewContent() {
             <tbody>
               {[
                 { color: accent, tip: "Every Red metric needs an action this week.", detail: "Red + no action = the review failed." },
-                { color: "#DC2626", tip: "Don't just report numbers \u2014 explain WHY.", detail: "'NPS is 42' is useless. 'NPS 42 because detractor program hasn't launched' is useful." },
+                { color: "#DC2626", tip: "Don't just report numbers — explain WHY.", detail: "'NPS is 42' is useless. 'NPS 42 because detractor program hasn't launched' is useful." },
                 { color: "#D97706", tip: "Time-box to 30 minutes.", detail: "Discuss Red and Amber only. Green gets a quick nod." },
                 { color: "#7C3AED", tip: "Actions carry forward.", detail: "Undone action from last week shows up again until resolved." },
               ].map((r, i) => {

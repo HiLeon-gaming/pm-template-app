@@ -51,7 +51,7 @@ function TouchpointContent() {
         <tbody>
           {[
             { n: "1", name: "Maria Lopez", health: "Green", why: "Quarterly review prep; need alignment on Q2 goals before SteerCo.", type: "1:1 meeting", week: "Week 1", done: "\u2610" },
-            { n: "2", name: "David Park", health: "Amber", why: "Haven\u2019t connected in 3 weeks; budget discussion pending. Drifting.", type: "Call", week: "Week 1", done: "\u2610" },
+            { n: "2", name: "David Park", health: "Amber", why: "Haven’t connected in 3 weeks; budget discussion pending. Drifting.", type: "Call", week: "Week 1", done: "\u2610" },
             { n: "3", name: "Sarah Chen", health: "Green", why: "Share wins from last sprint; equip her with talking points as champion.", type: "Quick update", week: "Week 2", done: "\u2610" },
             { n: "4", name: "James Wu", health: "Red", why: "Unresolved dependency; relationship needs repair. This is urgent.", type: "1:1 meeting", week: "Week 2", done: "\u2610" },
             { n: "5", name: "Engineering Lead", health: "Green", why: "Align on Phase 2 technical approach before sprint planning.", type: "Working session", week: "Week 3", done: "\u2610" },
@@ -93,11 +93,11 @@ function TouchpointContent() {
         <tbody>
           {[
             { q: "How many planned touchpoints did you complete?", a: "[X of Y completed. What blocked the others?]" },
-            { q: "Which stakeholders did you neglect this month?", a: "[Names. Why? What\u2019s the plan for next month?]" },
+            { q: "Which stakeholders did you neglect this month?", a: "[Names. Why? What’s the plan for next month?]" },
             { q: "Any relationship health changes (better or worse)?", a: "[Who moved from Green to Amber? Amber to Red? Or improved?]" },
             { q: "What worked well this month?", a: "[Which touchpoint type was most effective? What feedback did you get?]" },
             { q: "What will you do differently next month?", a: "[Adjustments to frequency, format, or approach.]" },
-            { q: "Who should be ADDED to next month\u2019s plan?", a: "[New stakeholders or previously low-priority ones who need attention.]" },
+            { q: "Who should be ADDED to next month’s plan?", a: "[New stakeholders or previously low-priority ones who need attention.]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -121,10 +121,10 @@ function TouchpointContent() {
             <thead><tr><td style={{ backgroundColor: "#DBEAFE", color: "#0EA5E9", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #0EA5E9" }}>TOUCHPOINT PLANNING PRINCIPLES</td></tr></thead>
             <tbody>
               {[
-                { color: "#0EA5E9", tip: "Red stakeholders get touchpoints first.", detail: "Damaged relationships need immediate attention. Don\u2019t let them fester another month." },
-                { color: "#059669", tip: "Don\u2019t neglect Green relationships.", detail: "Green relationships stay green because you maintain them. Neglect turns Green to Amber fast." },
+                { color: "#0EA5E9", tip: "Red stakeholders get touchpoints first.", detail: "Damaged relationships need immediate attention. Don’t let them fester another month." },
+                { color: "#059669", tip: "Don’t neglect Green relationships.", detail: "Green relationships stay green because you maintain them. Neglect turns Green to Amber fast." },
                 { color: "#8B5CF6", tip: "Vary the touchpoint type.", detail: "Not everything needs to be a formal meeting. Slack messages, quick calls, and coffee chats count." },
-                { color: "#D97706", tip: "Schedule at the start of the month.", detail: "If it\u2019s not on the calendar, it won\u2019t happen. Block time for relationship management." },
+                { color: "#D97706", tip: "Schedule at the start of the month.", detail: "If it’s not on the calendar, it won’t happen. Block time for relationship management." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -144,8 +144,8 @@ function TouchpointContent() {
               {[
                 { color: "#DC2626", tip: "Only reaching out when you need something.", detail: "Relationships are bank accounts. Make deposits before you need withdrawals." },
                 { color: "#EA580C", tip: "Treating touchpoints as status updates.", detail: "The goal is relationship building, not reporting. Ask questions. Listen. Show interest." },
-                { color: "#D97706", tip: "Planning but not executing.", detail: "A touchpoint planner that\u2019s never followed is worse than no plan at all." },
-                { color: "#6366F1", tip: "Ignoring the \u201CI should reach out but...\u201D feeling.", detail: "If you think you should reach out, you\u2019re already overdue. Trust that instinct." },
+                { color: "#D97706", tip: "Planning but not executing.", detail: "A touchpoint planner that’s never followed is worse than no plan at all." },
+                { color: "#6366F1", tip: "Ignoring the “I should reach out but...” feeling.", detail: "If you think you should reach out, you’re already overdue. Trust that instinct." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

@@ -52,14 +52,14 @@ function ScorecardContent() {
         </tr></thead>
         <tbody>
           {[
-            { name: "Maria Lopez", trust: "5", resp: "5", align: "4", fric: "5", risk: "5", total: "24", health: "Green", action: "Maintain cadence. She\u2019s your strongest ally." },
+            { name: "Maria Lopez", trust: "5", resp: "5", align: "4", fric: "5", risk: "5", total: "24", health: "Green", action: "Maintain cadence. She’s your strongest ally." },
             { name: "David Park", trust: "4", resp: "3", align: "4", fric: "3", risk: "3", total: "17", health: "Amber", action: "Improve responsiveness. Monthly budget updates." },
             { name: "James Wu", trust: "2", resp: "2", align: "3", fric: "2", risk: "2", total: "11", health: "Red", action: "Urgent: repair trust. Working session this week." },
-            { name: "Sarah Chen", trust: "4", resp: "4", align: "3", fric: "4", risk: "3", total: "18", health: "Amber", action: "Re-align on goals. She\u2019s drifting." },
-            { name: "[Stakeholder]", trust: "[1-5]", resp: "[1-5]", align: "[1-5]", fric: "[1-5]", risk: "[1-5]", total: "[/25]", health: "[RAG]", action: "[What you\u2019ll do]" },
-            { name: "[Stakeholder]", trust: "[1-5]", resp: "[1-5]", align: "[1-5]", fric: "[1-5]", risk: "[1-5]", total: "[/25]", health: "[RAG]", action: "[What you\u2019ll do]" },
-            { name: "[Stakeholder]", trust: "[1-5]", resp: "[1-5]", align: "[1-5]", fric: "[1-5]", risk: "[1-5]", total: "[/25]", health: "[RAG]", action: "[What you\u2019ll do]" },
-            { name: "[Stakeholder]", trust: "[1-5]", resp: "[1-5]", align: "[1-5]", fric: "[1-5]", risk: "[1-5]", total: "[/25]", health: "[RAG]", action: "[What you\u2019ll do]" },
+            { name: "Sarah Chen", trust: "4", resp: "4", align: "3", fric: "4", risk: "3", total: "18", health: "Amber", action: "Re-align on goals. She’s drifting." },
+            { name: "[Stakeholder]", trust: "[1-5]", resp: "[1-5]", align: "[1-5]", fric: "[1-5]", risk: "[1-5]", total: "[/25]", health: "[RAG]", action: "[What you’ll do]" },
+            { name: "[Stakeholder]", trust: "[1-5]", resp: "[1-5]", align: "[1-5]", fric: "[1-5]", risk: "[1-5]", total: "[/25]", health: "[RAG]", action: "[What you’ll do]" },
+            { name: "[Stakeholder]", trust: "[1-5]", resp: "[1-5]", align: "[1-5]", fric: "[1-5]", risk: "[1-5]", total: "[/25]", health: "[RAG]", action: "[What you’ll do]" },
+            { name: "[Stakeholder]", trust: "[1-5]", resp: "[1-5]", align: "[1-5]", fric: "[1-5]", risk: "[1-5]", total: "[/25]", health: "[RAG]", action: "[What you’ll do]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const hc = r.health === "Red" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : r.health === "Amber" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : r.health === "Green" ? { bg: C.badgeGreenBg, fg: C.badgeGreenFg } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -156,7 +156,7 @@ function ScorecardContent() {
               {[
                 { color: "#DC2626", tip: "Any single dimension drops below 2.", detail: "One bad score can poison the whole relationship. Address it immediately." },
                 { color: "#EA580C", tip: "Total score drops 3+ points in one month.", detail: "Something happened. Investigate and address the root cause, not just the symptom." },
-                { color: "#D97706", tip: "Downward trend for 2+ consecutive months.", detail: "This isn\u2019t a blip \u2014 it\u2019s a pattern. Change your approach before it\u2019s too late." },
+                { color: "#D97706", tip: "Downward trend for 2+ consecutive months.", detail: "This isn’t a blip — it’s a pattern. Change your approach before it’s too late." },
                 { color: "#6366F1", tip: "Multiple stakeholders trending down simultaneously.", detail: "If several relationships are degrading at once, the problem might be YOU, not them." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

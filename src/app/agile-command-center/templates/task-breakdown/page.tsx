@@ -103,9 +103,9 @@ function TaskBreakdownContent() {
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {["Keep tasks between 2–8 hours. Anything bigger should be split further.",
-          "Include testing tasks — they\u2019re real work and need to be visible.",
+          "Include testing tasks — they’re real work and need to be visible.",
           "Include code review time in your estimates.",
-          "If a task takes longer than estimated, update the estimate — don\u2019t hide it.",
+          "If a task takes longer than estimated, update the estimate — don’t hide it.",
           "Tasks are optional — some teams prefer to track at the story level only."].map((t, i) => (
           <tr key={i}><td style={{ ...S.td0, backgroundColor: i % 2 === 0 ? C.white : C.rowAlt, fontSize: "11px", padding: "6px 14px" }}>• {t}</td></tr>
         ))}

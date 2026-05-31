@@ -39,8 +39,8 @@ function QuickStartContent() {
       <CopyButton targetRef={setupRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
-          { num: "1", title: "Capture Everything", desc: "Don\u2019t trust memory. Every ask goes into Exec Inbox / Request Intake.", color: "#EC4899" },
-          { num: "2", title: "Triage & Assign", desc: "What matters, who owns it, when it\u2019s due. Prioritize ruthlessly.", color: "#0EA5E9" },
+          { num: "1", title: "Capture Everything", desc: "Don’t trust memory. Every ask goes into Exec Inbox / Request Intake.", color: "#EC4899" },
+          { num: "2", title: "Triage & Assign", desc: "What matters, who owns it, when it’s due. Prioritize ruthlessly.", color: "#0EA5E9" },
           { num: "3", title: "Prepare the Leader", desc: "Briefs, talking points, context. Use Meeting Brief Builder.", color: "#F59E0B" },
           { num: "4", title: "Follow Through", desc: "Actions, decisions, next steps. Use Follow-Up Master Tracker.", color: "#059669" },
         ].map((item, i) => (
@@ -71,7 +71,7 @@ function QuickStartContent() {
           {[
             { cadence: "Daily (Morning)", time: "10 min", what: "Capture new asks → triage → assign → follow up", pages: "Executive OS Dashboard, Exec Inbox, Today Plan" },
             { cadence: "Before Meetings", time: "5-15 min", what: "Prep brief, talking points, doc links, decisions needed", pages: "Meeting Brief Builder, Decision Needed Page, Pre-Reads Index" },
-            { cadence: "End of Day", time: "5 min", what: "Update follow-ups, prep tomorrow\u2019s focus", pages: "Follow-Up Queue, Tomorrow Prep" },
+            { cadence: "End of Day", time: "5 min", what: "Update follow-ups, prep tomorrow’s focus", pages: "Follow-Up Queue, Tomorrow Prep" },
             { cadence: "Weekly", time: "30 min", what: "Build Weekly Executive Brief, check priorities and risks", pages: "Weekly Executive Brief Builder, Risk Radar" },
             { cadence: "Monthly", time: "45 min", what: "Review stakeholder touchpoints, clean up old requests, update preferences", pages: "Touchpoint Planner, Closeout Checklist" },
           ].map((r, i) => {

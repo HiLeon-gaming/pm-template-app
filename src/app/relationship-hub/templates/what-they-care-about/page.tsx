@@ -46,17 +46,17 @@ function CareAboutContent() {
         </tr></thead>
         <tbody>
           {[
-            { label: "Their Top KPIs", value: "[Revenue growth? Customer satisfaction? Cost reduction? Team velocity?]", how: "Frame your updates in terms of THEIR metrics. If you help their KPIs, you\u2019re invaluable." },
-            { label: "Their Goals This Quarter", value: "[What are they trying to achieve in the next 90 days?]", how: "Align your requests to their quarterly goals. They\u2019ll say yes faster." },
+            { label: "Their Top KPIs", value: "[Revenue growth? Customer satisfaction? Cost reduction? Team velocity?]", how: "Frame your updates in terms of THEIR metrics. If you help their KPIs, you’re invaluable." },
+            { label: "Their Goals This Quarter", value: "[What are they trying to achieve in the next 90 days?]", how: "Align your requests to their quarterly goals. They’ll say yes faster." },
             { label: "Their Annual Goals", value: "[What does success look like for them this year?]", how: "Connect your work to their annual narrative. Show how you help them win." },
             { label: "Their Biggest Constraint", value: "[Budget? Headcount? Time? Technology? Political support?]", how: "Never ask for something that makes their constraint worse. Work within it." },
             { label: "What Keeps Them Up", value: "[Their top worry or stress point right now]", how: "If you can solve their biggest worry, you become their most trusted partner." },
-            { label: "What They Want From You", value: "[Updates? Deliverables? Decisions? Problem-solving? Support?]", how: "Deliver this consistently and you\u2019ll never have a trust problem." },
-            { label: "Their Definition of Success", value: "[What would make them say \u201Cthat went well\u201D?]", how: "Use their exact language when reporting progress. Mirror their success criteria." },
+            { label: "What They Want From You", value: "[Updates? Deliverables? Decisions? Problem-solving? Support?]", how: "Deliver this consistently and you’ll never have a trust problem." },
+            { label: "Their Definition of Success", value: "[What would make them say “that went well”?]", how: "Use their exact language when reporting progress. Mirror their success criteria." },
             { label: "Political Realities", value: "[Competing priorities, rival teams, restructuring, etc.]", how: "Understand the political landscape so you frame requests they can say yes to." },
             { label: "Hot-Button Topics", value: "[Topics that get an immediate emotional reaction]", how: "Know what excites them (leverage it) and what triggers them (avoid it)." },
-            { label: "Their Success Language", value: "[\u201CROI,\u201D \u201Ccustomer impact,\u201D \u201Cspeed,\u201D \u201Cquality\u201D \u2014 mirror their words]", how: "Use THEIR vocabulary in updates and presentations. It signals alignment." },
-            { label: "What They DON\u2019T Care About", value: "[Topics or details they don\u2019t want to hear about]", how: "Knowing what to exclude is as valuable as knowing what to include." },
+            { label: "Their Success Language", value: "[“ROI,” “customer impact,” “speed,” “quality” — mirror their words]", how: "Use THEIR vocabulary in updates and presentations. It signals alignment." },
+            { label: "What They DON’T Care About", value: "[Topics or details they don’t want to hear about]", how: "Knowing what to exclude is as valuable as knowing what to include." },
             { label: "What They Want From Leadership", value: "[More resources? Clearer direction? Recognition?]", how: "Understanding their upward pressures helps you empathize and frame requests better." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -85,12 +85,12 @@ function CareAboutContent() {
         </tr></thead>
         <tbody>
           {[
-            { situation: "Sharing good news", frame: "[Lead with the metric they care about. e.g., \u201CWe hit 120% of the target you asked about.\u201D]" },
-            { situation: "Sharing bad news", frame: "[Lead with the impact, then the plan. e.g., \u201CWe\u2019re going to miss by 10%, here\u2019s why and what we\u2019re doing about it.\u201D]" },
-            { situation: "Asking for a decision", frame: "[Give 2\u20133 options with your recommendation. Frame in their success language. Make it easy to say yes.]" },
-            { situation: "Asking for resources", frame: "[Show ROI in their terms. Connect to their goals. Show what happens if they DON\u2019T invest.]" },
-            { situation: "Giving a status update", frame: "[Use their preferred format and length. Lead with what they care about, not what you\u2019ve been busy doing.]" },
-            { situation: "Escalating a risk", frame: "[Be direct and factual. Show you\u2019ve already started mitigation. Ask for specific help.]" },
+            { situation: "Sharing good news", frame: "[Lead with the metric they care about. e.g., “We hit 120% of the target you asked about.”]" },
+            { situation: "Sharing bad news", frame: "[Lead with the impact, then the plan. e.g., “We’re going to miss by 10%, here’s why and what we’re doing about it.”]" },
+            { situation: "Asking for a decision", frame: "[Give 2–3 options with your recommendation. Frame in their success language. Make it easy to say yes.]" },
+            { situation: "Asking for resources", frame: "[Show ROI in their terms. Connect to their goals. Show what happens if they DON’T invest.]" },
+            { situation: "Giving a status update", frame: "[Use their preferred format and length. Lead with what they care about, not what you’ve been busy doing.]" },
+            { situation: "Escalating a risk", frame: "[Be direct and factual. Show you’ve already started mitigation. Ask for specific help.]" },
             { situation: "[Enter situation]", frame: "[How to frame for this stakeholder]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -116,9 +116,9 @@ function CareAboutContent() {
             <tbody>
               {[
                 { color: "#8B5CF6", tip: "Listen more than you talk.", detail: "In your first 3 meetings, aim for a 30/70 talk/listen ratio. Their words reveal their priorities." },
-                { color: "#059669", tip: "Ask: \u201CWhat does success look like for you?\u201D", detail: "This one question unlocks more insight than 10 status updates." },
-                { color: "#0EA5E9", tip: "Watch what they react to in meetings.", detail: "When their energy changes \u2014 up or down \u2014 that\u2019s a signal of what matters." },
-                { color: "#D97706", tip: "Read their OKRs or performance goals.", detail: "If you can find them, their formal goals tell you exactly how they\u2019re measured." },
+                { color: "#059669", tip: "Ask: “What does success look like for you?”", detail: "This one question unlocks more insight than 10 status updates." },
+                { color: "#0EA5E9", tip: "Watch what they react to in meetings.", detail: "When their energy changes — up or down — that’s a signal of what matters." },
+                { color: "#D97706", tip: "Read their OKRs or performance goals.", detail: "If you can find them, their formal goals tell you exactly how they’re measured." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -138,7 +138,7 @@ function CareAboutContent() {
               {[
                 { color: "#DC2626", tip: "Assuming they care about what YOU care about.", detail: "Your priorities \u2260 their priorities. Always lead with what matters to THEM." },
                 { color: "#EA580C", tip: "Not updating this page.", detail: "Priorities shift with org changes, market conditions, and new mandates. Review quarterly." },
-                { color: "#D97706", tip: "Talking about your work, not their outcomes.", detail: "\u201CWe built 3 features\u201D means nothing. \u201CWe reduced churn by 8%\u201D means everything." },
+                { color: "#D97706", tip: "Talking about your work, not their outcomes.", detail: "“We built 3 features” means nothing. “We reduced churn by 8%” means everything." },
                 { color: "#6366F1", tip: "Ignoring political realities.", detail: "What they SAY they care about and what they ACTUALLY care about may differ. Read between the lines." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

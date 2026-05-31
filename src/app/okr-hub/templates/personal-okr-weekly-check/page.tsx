@@ -126,7 +126,7 @@ function PersonalOKRContent() {
               <tr><td style={S.tdLabelAlt}><strong>Do I need help with anything?</strong></td></tr>
               <tr><td style={S.tdAlt}>[Blocker, resource, guidance needed?]</td></tr>
               <tr><td style={S.tdLabel}><strong>Am I on track for end-of-quarter?</strong></td></tr>
-              <tr><td style={S.td0}>[Yes / At Risk / No \u2014 and why]</td></tr>
+              <tr><td style={S.td0}>[Yes / At Risk / No — and why]</td></tr>
             </tbody>
           </table>
         </td>

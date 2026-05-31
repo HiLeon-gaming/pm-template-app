@@ -49,8 +49,8 @@ function CoachingNotesContent() {
       <CopyButton targetRef={growRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
-          { letter: "G", title: "Goal", q: "What do you want to achieve?", prompts: ["What does success look like?", "How will you know you\u2019ve achieved it?", "What\u2019s the timeframe?", "Why does this matter to you?"], color: "#059669", notes: "[Their stated goal in their own words]" },
-          { letter: "R", title: "Reality", q: "Where are you now?", prompts: ["What\u2019s the current situation?", "What have you tried so far?", "What\u2019s working? What isn\u2019t?", "What\u2019s getting in the way?"], color: "#3B82F6", notes: "[Current state — be honest and specific]" },
+          { letter: "G", title: "Goal", q: "What do you want to achieve?", prompts: ["What does success look like?", "How will you know you’ve achieved it?", "What’s the timeframe?", "Why does this matter to you?"], color: "#059669", notes: "[Their stated goal in their own words]" },
+          { letter: "R", title: "Reality", q: "Where are you now?", prompts: ["What’s the current situation?", "What have you tried so far?", "What’s working? What isn’t?", "What’s getting in the way?"], color: "#3B82F6", notes: "[Current state — be honest and specific]" },
         ].map((s, i) => (
           <td key={i} style={{ ...LC, width: "50%", padding: i === 0 ? "0 4px 0 0" : "0" }}>
             <table style={S.tbl}><tbody>
@@ -67,8 +67,8 @@ function CoachingNotesContent() {
 
       <table style={{ ...LT, marginTop: "6px" }}><tbody><tr>
         {[
-          { letter: "O", title: "Options", q: "What could you do?", prompts: ["What are all the possible approaches?", "What would you do if there were no constraints?", "Who could help you?", "What\u2019s the easiest first step?"], color: "#EA580C", notes: "[Brainstorm at least 3 options]" },
-          { letter: "W", title: "Way Forward", q: "What will you do?", prompts: ["Which option feels right?", "What\u2019s your specific next step?", "When will you do it?", "How will you stay accountable?"], color: accentDark, notes: "[Specific commitment with timeline]" },
+          { letter: "O", title: "Options", q: "What could you do?", prompts: ["What are all the possible approaches?", "What would you do if there were no constraints?", "Who could help you?", "What’s the easiest first step?"], color: "#EA580C", notes: "[Brainstorm at least 3 options]" },
+          { letter: "W", title: "Way Forward", q: "What will you do?", prompts: ["Which option feels right?", "What’s your specific next step?", "When will you do it?", "How will you stay accountable?"], color: accentDark, notes: "[Specific commitment with timeline]" },
         ].map((s, i) => (
           <td key={i} style={{ ...LC, width: "50%", padding: i === 0 ? "0 4px 0 0" : "0" }}>
             <table style={S.tbl}><tbody>
@@ -99,7 +99,7 @@ function CoachingNotesContent() {
         <tbody>
           {[
             { action: "[Practice opening remarks before next team meeting]", owner: "[Sarah]", by: "[03/10]", measure: "[Self-rating + your feedback]" },
-            { action: "[Observe a senior leader\u2019s meeting style — take notes]", owner: "[Sarah]", by: "[03/14]", measure: "[Share observations in next 1:1]" },
+            { action: "[Observe a senior leader’s meeting style — take notes]", owner: "[Sarah]", by: "[03/14]", measure: "[Share observations in next 1:1]" },
             { action: "[Provide real-time coaching during next staff meeting]", owner: "[You]", by: "[03/12]", measure: "[Post-meeting debrief]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;

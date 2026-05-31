@@ -42,8 +42,8 @@ function ReviewContent() {
       <table style={S.tbl}>
         <tbody>
           {[
-            { label: "Quarter / Period", value: "[Q1 2026 / Jan\u2013Mar 2026]" },
-            { label: "Overall Health Trend", value: "[\ud83d\udfe2 Improving / \ud83d\udfe1 Stable / \ud83d\udd34 Declining] \u2014 [One sentence summary]" },
+            { label: "Quarter / Period", value: "[Q1 2026 / Jan–Mar 2026]" },
+            { label: "Overall Health Trend", value: "[\ud83d\udfe2 Improving / \ud83d\udfe1 Stable / \ud83d\udd34 Declining] — [One sentence summary]" },
             { label: "Biggest Win This Quarter", value: "[Which relationship improved most? What did you do right?]" },
             { label: "Biggest Concern", value: "[Which relationship deteriorated or needs urgent attention?]" },
             { label: "Key Lesson Learned", value: "[What did you learn about stakeholder management this quarter?]" },
@@ -120,7 +120,7 @@ function ReviewContent() {
             { n: "2", pri: "High", action: "Re-engage Sarah Chen. Include in Phase 2 planning. Schedule regular touchpoints.", who: "Sarah Chen", measure: "Monthly 1:1s running. Health to Green.", when: "Mid Apr" },
             { n: "3", pri: "High", action: "Move David Park from Amber to Green. Continue monthly updates. Build stronger rapport.", who: "David Park", measure: "Green status by end of Q2.", when: "End of Q2" },
             { n: "4", pri: "Medium", action: "Prepare for potential sponsor transition (Maria mentioned possible role change).", who: "Maria Lopez", measure: "Deputy relationship built. Commitments documented.", when: "End of Q2" },
-            { n: "5", pri: "[Priority]", action: "[What you\u2019ll focus on next quarter]", who: "[Stakeholder]", measure: "[How you\u2019ll know it worked]", when: "[Target date]" },
+            { n: "5", pri: "[Priority]", action: "[What you’ll focus on next quarter]", who: "[Stakeholder]", measure: "[How you’ll know it worked]", when: "[Target date]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             const pc = r.pri === "Critical" ? { bg: C.badgeRedBg, fg: C.badgeRedFg } : r.pri === "High" ? { bg: C.badgeAmberBg, fg: C.badgeAmberFg } : r.pri === "Medium" ? { bg: "#DBEAFE", fg: "#1D4ED8" } : { bg: C.badgeGrayBg, fg: C.badgeGrayFg };
@@ -170,10 +170,10 @@ function ReviewContent() {
             <thead><tr><td style={{ backgroundColor: "#DCFCE7", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>REVIEW BEST PRACTICES</td></tr></thead>
             <tbody>
               {[
-                { color: "#059669", tip: "Block 1 hour quarterly. Non-negotiable.", detail: "This review is strategic. It\u2019s the most valuable hour you\u2019ll spend on stakeholder management." },
+                { color: "#059669", tip: "Block 1 hour quarterly. Non-negotiable.", detail: "This review is strategic. It’s the most valuable hour you’ll spend on stakeholder management." },
                 { color: "#0EA5E9", tip: "Share findings with your sponsor.", detail: "Shows strategic thinking. Gets you alignment and support for your next-quarter plan." },
-                { color: "#6366F1", tip: "Set measurable goals for next quarter.", detail: "\u201CMove James from Red to Amber\u201D is better than \u201CImprove James relationship.\u201D" },
-                { color: "#D97706", tip: "Compare to last quarter\u2019s review.", detail: "Did you follow through on last quarter\u2019s priorities? What fell through the cracks?" },
+                { color: "#6366F1", tip: "Set measurable goals for next quarter.", detail: "“Move James from Red to Amber” is better than “Improve James relationship.”" },
+                { color: "#D97706", tip: "Compare to last quarter’s review.", detail: "Did you follow through on last quarter’s priorities? What fell through the cracks?" },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (

@@ -49,7 +49,7 @@ function OneOnOneAgendaContent() {
       <table style={LT}><tbody><tr>
         {[
           { title: "🏆 Wins & Highlights", items: ["What went well this week?", "Any accomplishments to celebrate?", "What are you most proud of?"], color: "#059669", time: "5 min" },
-          { title: "🚧 Challenges & Blockers", items: ["What\u2019s been difficult?", "Any blockers I can help remove?", "Where do you feel stuck?"], color: "#DC2626", time: "5 min" },
+          { title: "🚧 Challenges & Blockers", items: ["What’s been difficult?", "Any blockers I can help remove?", "Where do you feel stuck?"], color: "#DC2626", time: "5 min" },
           { title: "🎯 Priorities & Focus", items: ["What are your top priorities this week?", "Any changes from last week?", "Is your workload manageable?"], color: "#3B82F6", time: "5 min" },
         ].map((s, i) => (
           <td key={i} style={{ ...LC, width: "33.3%", padding: i < 2 ? "0 4px 0 0" : "0" }}>

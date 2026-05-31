@@ -124,10 +124,10 @@ function CommitmentsContent() {
             <thead><tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #059669" }}>\u270f\ufe0f TEAM SIGN-OFF</td></tr></thead>
             <tbody>
               {[
-                { lead: "[Tom R. \u2014 Support]", summary: "3 agents hired, wait time <10 hrs, Intercom live" },
-                { lead: "[Lisa P. \u2014 Product]", summary: "Onboarding redesign shipped to 100%" },
-                { lead: "[Amy K. \u2014 Marketing]", summary: "300+ MQLs, 4 case studies, LinkedIn ads running" },
-                { lead: "[Mike D. \u2014 Sales]", summary: "3 enterprise deals closed (>$100K each)" },
+                { lead: "[Tom R. — Support]", summary: "3 agents hired, wait time <10 hrs, Intercom live" },
+                { lead: "[Lisa P. — Product]", summary: "Onboarding redesign shipped to 100%" },
+                { lead: "[Amy K. — Marketing]", summary: "300+ MQLs, 4 case studies, LinkedIn ads running" },
+                { lead: "[Mike D. — Sales]", summary: "3 enterprise deals closed (>$100K each)" },
                 { lead: "[HR Director]", summary: "5 critical roles filled (incl. VP Eng)" },
                 { lead: "[PeopleOps Lead]", summary: "Pulse survey live, top 3 issues addressed monthly" },
               ].map((r, i) => {
@@ -150,7 +150,7 @@ function CommitmentsContent() {
             <tbody>
               {[
                 { color: accent, tip: "A commitment is a promise, not a wish.", detail: "Only commit at 80%+ confidence." },
-                { color: "#DC2626", tip: "At risk? Escalate within 48 hours.", detail: "Don\u2019t wait for the monthly review." },
+                { color: "#DC2626", tip: "At risk? Escalate within 48 hours.", detail: "Don’t wait for the monthly review." },
                 { color: "#059669", tip: "Review commitments weekly.", detail: "Every Monday: on track? Need help?" },
                 { color: "#7C3AED", tip: "Changing requires a conversation.", detail: "Update commitment and notify stakeholders." },
               ].map((r, i) => {

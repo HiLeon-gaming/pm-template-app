@@ -50,7 +50,7 @@ const categories: Category[] = [
       {
         title: "Executive OS Dashboard (Home Base)",
         description:
-          "Today\u2019s priorities, upcoming key meetings, open requests, waiting on, and risks \u2014 instant clarity every morning.",
+          "Today’s priorities, upcoming key meetings, open requests, waiting on, and risks — instant clarity every morning.",
         href: `${BASE}/exec-os-dashboard`,
         badge: "\u2705 Built",
         allStar: true,
@@ -118,7 +118,7 @@ const categories: Category[] = [
       {
         title: "Approvals Queue (Sign-offs / Reviews / Decisions)",
         description:
-          "Items waiting for exec approval + deadline + what\u2019s needed. Prevents last-minute fire drills.",
+          "Items waiting for exec approval + deadline + what’s needed. Prevents last-minute fire drills.",
         href: `${BASE}/approvals-queue`,
         badge: "\u2705 Built",
       },
@@ -139,7 +139,7 @@ const categories: Category[] = [
       {
         title: "Waiting On / Follow-Up Master Tracker",
         description:
-          "Single source of truth for everything you\u2019re chasing. Your second-most used page.",
+          "Single source of truth for everything you’re chasing. Your second-most used page.",
         href: `${BASE}/follow-up-master-tracker`,
         badge: "\u2705 Built",
         allStar: true,
@@ -148,7 +148,7 @@ const categories: Category[] = [
       {
         title: "Escalations & Stuck Items Log",
         description:
-          "What\u2019s stuck, impact, options, recommended escalation. Helps the exec unblock fast.",
+          "What’s stuck, impact, options, recommended escalation. Helps the exec unblock fast.",
         href: `${BASE}/escalations-stuck-items`,
         badge: "\u2705 Built",
       },
@@ -177,7 +177,7 @@ const categories: Category[] = [
   },
   {
     title: "Calendar, Time & Priorities",
-    subtitle: "The exec\u2019s calendar is the battlefield",
+    subtitle: "The exec’s calendar is the battlefield",
     icon: Calendar,
     color: "#0EA5E9",
     templates: [
@@ -191,7 +191,7 @@ const categories: Category[] = [
       {
         title: "Today Plan (Top 3 + Must-Do Meetings)",
         description:
-          "Today\u2019s focus + what success looks like today. Clarity for busy days.",
+          "Today’s focus + what success looks like today. Clarity for busy days.",
         href: `${BASE}/today-plan`,
         badge: "\u2705 Built",
       },
@@ -214,14 +214,14 @@ const categories: Category[] = [
       {
         title: "Pre-Reads & Links Index (Meeting Pack)",
         description:
-          "All docs/links in one clean table. No more \u201Cwhere\u2019s the deck?\u201D",
+          "All docs/links in one clean table. No more “where’s the deck?”",
         href: `${BASE}/pre-reads-links-index`,
         badge: "\u2705 Built",
       },
       {
         title: "Calendar Tradeoff Page",
         description:
-          "Decision rules for protecting focus time and priorities. \u201CIf we say yes, what moves?\u201D",
+          "Decision rules for protecting focus time and priorities. “If we say yes, what moves?”",
         href: `${BASE}/calendar-tradeoff`,
         badge: "\u2705 Built",
       },
@@ -242,14 +242,14 @@ const categories: Category[] = [
       {
         title: "Travel / Meeting Buffer Rules",
         description:
-          "Set rules for realistic transition time. Reduces \u201Cimpossible calendar\u201D syndrome.",
+          "Set rules for realistic transition time. Reduces “impossible calendar” syndrome.",
         href: `${BASE}/buffer-rules`,
         badge: "\u2705 Built",
       },
       {
         title: "Recurring Meeting Cadence Map",
         description:
-          "List recurring meetings, purpose, and if they\u2019re still needed. Reduces meeting overload.",
+          "List recurring meetings, purpose, and if they’re still needed. Reduces meeting overload.",
         href: `${BASE}/recurring-cadence-map`,
         badge: "\u2705 Built",
       },
@@ -257,7 +257,7 @@ const categories: Category[] = [
   },
   {
     title: "Meetings Engine (Executive Support Edition)",
-    subtitle: "Decisions happen in meetings \u2014 make them clean",
+    subtitle: "Decisions happen in meetings — make them clean",
     icon: Users,
     color: "#F59E0B",
     templates: [
@@ -328,7 +328,7 @@ const categories: Category[] = [
       {
         title: "Meeting History Index",
         description:
-          "Links to prior meeting notes by stakeholder/topic. \u201CWhat did we decide last time?\u201D solved.",
+          "Links to prior meeting notes by stakeholder/topic. “What did we decide last time?” solved.",
         href: `${BASE}/meeting-history-index`,
         badge: "\u2705 Built",
       },
@@ -400,14 +400,14 @@ const categories: Category[] = [
   },
   {
     title: "Initiatives, Projects & Alignment",
-    subtitle: "Chief of Staff core \u2014 visibility across the org",
+    subtitle: "Chief of Staff core — visibility across the org",
     icon: Briefcase,
     color: "#059669",
     templates: [
       {
         title: "Initiative Portfolio Snapshot",
         description:
-          "What\u2019s in flight, health, owner, next milestone, risks. Exec-level view.",
+          "What’s in flight, health, owner, next milestone, risks. Exec-level view.",
         href: `${BASE}/initiative-portfolio`,
         badge: "\u2705 Built",
       },
@@ -453,7 +453,7 @@ const categories: Category[] = [
       {
         title: "\"Stop Doing\" List (Capacity Reclaim)",
         description:
-          "What we\u2019re dropping and why. Creates focus.",
+          "What we’re dropping and why. Creates focus.",
         href: `${BASE}/stop-doing-list`,
         badge: "\u2705 Built",
       },
@@ -489,7 +489,7 @@ const categories: Category[] = [
       {
         title: "Packing & Readiness Checklist",
         description:
-          "Customizable packing and \u201Cdon\u2019t forget\u201D list. Reduces travel friction.",
+          "Customizable packing and “don’t forget” list. Reduces travel friction.",
         href: `${BASE}/packing-readiness-checklist`,
         badge: "\u2705 Built",
       },
@@ -519,7 +519,7 @@ const categories: Category[] = [
       {
         title: "Post-Event Debrief Notes",
         description:
-          "What worked, what didn\u2019t, follow-ups. Continuous improvement.",
+          "What worked, what didn’t, follow-ups. Continuous improvement.",
         href: `${BASE}/post-event-debrief`,
         badge: "\u2705 Built",
       },
@@ -534,14 +534,14 @@ const categories: Category[] = [
       {
         title: "Expense & Reimbursement Tracker",
         description:
-          "What\u2019s submitted, what\u2019s pending, receipts. Avoids lost reimbursements.",
+          "What’s submitted, what’s pending, receipts. Avoids lost reimbursements.",
         href: `${BASE}/expense-tracker`,
         badge: "\u2705 Built",
       },
       {
         title: "Approvals & Signatures Log",
         description:
-          "What\u2019s awaiting signature, due dates, risks. Avoids missed approvals.",
+          "What’s awaiting signature, due dates, risks. Avoids missed approvals.",
         href: `${BASE}/approvals-signatures-log`,
         badge: "\u2705 Built",
       },

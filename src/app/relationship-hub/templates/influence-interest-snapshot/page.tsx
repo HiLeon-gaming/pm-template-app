@@ -45,8 +45,8 @@ function InfluenceContent() {
             <tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "4px 12px", fontSize: "10px", fontWeight: 700, fontFamily: S.font, textAlign: "center" as const, border: `1px solid ${C.border}` }}>Manage Closely &mdash; Your Top Priority</td></tr></thead>
             <tbody>
               {[
-                { name: "Maria Lopez \u2014 Sponsor, SVP Operations", note: "Weekly 1:1. No surprises. Share bad news early." },
-                { name: "David Park \u2014 CFO, budget authority", note: "Data-driven updates. Always lead with ROI." },
+                { name: "Maria Lopez — Sponsor, SVP Operations", note: "Weekly 1:1. No surprises. Share bad news early." },
+                { name: "David Park — CFO, budget authority", note: "Data-driven updates. Always lead with ROI." },
                 { name: "[Enter name + role]", note: "" },
                 { name: "[Enter name + role]", note: "" },
               ].map((r, i) => {
@@ -67,8 +67,8 @@ function InfluenceContent() {
             <tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "4px 12px", fontSize: "10px", fontWeight: 700, fontFamily: S.font, textAlign: "center" as const, border: `1px solid ${C.border}` }}>Keep Satisfied &mdash; Don&apos;t Surprise Them</td></tr></thead>
             <tbody>
               {[
-                { name: "CEO \u2014 rarely involved but can override anything", note: "Quarterly executive summary. Escalate only critical issues." },
-                { name: "Legal \u2014 only cares if compliance is at risk", note: "Proactive updates on regulatory items. Keep docs clean." },
+                { name: "CEO — rarely involved but can override anything", note: "Quarterly executive summary. Escalate only critical issues." },
+                { name: "Legal — only cares if compliance is at risk", note: "Proactive updates on regulatory items. Keep docs clean." },
                 { name: "[Enter name + role]", note: "" },
                 { name: "[Enter name + role]", note: "" },
               ].map((r, i) => {
@@ -90,8 +90,8 @@ function InfluenceContent() {
             <tr><td style={{ backgroundColor: "#D1FAE5", color: "#059669", padding: "4px 12px", fontSize: "10px", fontWeight: 700, fontFamily: S.font, textAlign: "center" as const, border: `1px solid ${C.border}` }}>Keep Informed &mdash; Great Champions &amp; Advocates</td></tr></thead>
             <tbody>
               {[
-                { name: "Sarah Chen \u2014 VP Product, strong advocate", note: "Equip with talking points. She sells your work for you." },
-                { name: "QA Team Lead \u2014 cares deeply about quality", note: "Include in testing updates. Valuable early feedback source." },
+                { name: "Sarah Chen — VP Product, strong advocate", note: "Equip with talking points. She sells your work for you." },
+                { name: "QA Team Lead — cares deeply about quality", note: "Include in testing updates. Valuable early feedback source." },
                 { name: "[Enter name + role]", note: "" },
                 { name: "[Enter name + role]", note: "" },
               ].map((r, i) => {
@@ -112,8 +112,8 @@ function InfluenceContent() {
             <tr><td style={{ backgroundColor: "#EDE9FE", color: "#6366F1", padding: "4px 12px", fontSize: "10px", fontWeight: 700, fontFamily: S.font, textAlign: "center" as const, border: `1px solid ${C.border}` }}>Monitor &mdash; Light Touch Only</td></tr></thead>
             <tbody>
               {[
-                { name: "IT Support \u2014 only involved for access requests", note: "Engage only when needed. Don\u2019t over-communicate." },
-                { name: "Facilities \u2014 occasional coordination", note: "Monthly batch requests. Low maintenance." },
+                { name: "IT Support — only involved for access requests", note: "Engage only when needed. Don’t over-communicate." },
+                { name: "Facilities — occasional coordination", note: "Monthly batch requests. Low maintenance." },
                 { name: "[Enter name + role]", note: "" },
                 { name: "[Enter name + role]", note: "" },
               ].map((r, i) => {
@@ -186,9 +186,9 @@ function InfluenceContent() {
             <tbody>
               {[
                 { color: "#DC2626", tip: "Manage Closely (HI/HI):", detail: "These are your most important people. Never miss a cadence. Share bad news before they hear it elsewhere. Invest 60% of your relationship time here." },
-                { color: "#D97706", tip: "Keep Satisfied (HI/LO):", detail: "They have power but don\u2019t use it often. The risk is they wake up surprised and use their power against you. Proactive, brief updates prevent this." },
+                { color: "#D97706", tip: "Keep Satisfied (HI/LO):", detail: "They have power but don’t use it often. The risk is they wake up surprised and use their power against you. Proactive, brief updates prevent this." },
                 { color: "#059669", tip: "Keep Informed (LO/HI):", detail: "They care but lack formal power. These are your champions and advocates. Equip them with information and talking points to sell your work for you." },
-                { color: "#6366F1", tip: "Monitor (LO/LO):", detail: "Light touch. Don\u2019t waste time here. Check in only when their role or interest changes." },
+                { color: "#6366F1", tip: "Monitor (LO/LO):", detail: "Light touch. Don’t waste time here. Check in only when their role or interest changes." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -207,8 +207,8 @@ function InfluenceContent() {
             <tbody>
               {[
                 { color: "#DC2626", tip: "Confusing title with influence.", detail: "A VP with no budget authority has less influence than a director who controls spend. Map actual power, not org chart." },
-                { color: "#EA580C", tip: "Ignoring \u201CKeep Satisfied\u201D stakeholders.", detail: "They seem safe because they\u2019re quiet. But one surprise and they become blockers overnight." },
-                { color: "#D97706", tip: "Over-investing in \u201CMonitor\u201D people.", detail: "If someone has low influence and low interest, spending weekly time on them is wasted effort." },
+                { color: "#EA580C", tip: "Ignoring “Keep Satisfied” stakeholders.", detail: "They seem safe because they’re quiet. But one surprise and they become blockers overnight." },
+                { color: "#D97706", tip: "Over-investing in “Monitor” people.", detail: "If someone has low influence and low interest, spending weekly time on them is wasted effort." },
                 { color: "#6366F1", tip: "Never re-mapping.", detail: "Influence and interest shift with org changes, project phases, and political events. Re-map quarterly." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

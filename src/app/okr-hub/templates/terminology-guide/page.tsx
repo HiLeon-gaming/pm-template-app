@@ -48,14 +48,14 @@ function TerminologyContent() {
             { term: "Objective", full: "", def: "The goal you want to achieve. It should be clear, motivating, and something your team can rally behind.", ex: "\"Become the #1 rated app in our category.\"" },
             { term: "Key Result", full: "", def: "A specific, measurable outcome that proves you're achieving the objective. Always has a number.", ex: "\"Increase App Store rating from 4.1 to 4.7 by end of Q2.\"" },
             { term: "KPI", full: "Key Performance Indicator", def: "An important number you track regularly to see if your business is healthy. Think of it like a vital sign.", ex: "\"Monthly recurring revenue\" or \"customer satisfaction score\"" },
-            { term: "QBR", full: "Quarterly Business Review", def: "A meeting (usually 60\u201390 min) held every 3 months to review results, score goals, and plan the next quarter.", ex: "\"In our Q1 QBR, we scored our OKRs and decided to pivot our marketing strategy.\"" },
-            { term: "RAG", full: "Red / Amber / Green", def: "A simple color system to show health. Green = on track. Amber = at risk. Red = off track or blocked.", ex: "\"The CRM migration is Amber \u2014 it\u2019s behind schedule by 1 week but recoverable.\"" },
-            { term: "Initiative", full: "", def: "A project or piece of work that is designed to move a Key Result forward. It\u2019s the \"how\" behind the goal.", ex: "\"Launch new onboarding email sequence\" (to improve customer retention KR)." },
+            { term: "QBR", full: "Quarterly Business Review", def: "A meeting (usually 60–90 min) held every 3 months to review results, score goals, and plan the next quarter.", ex: "\"In our Q1 QBR, we scored our OKRs and decided to pivot our marketing strategy.\"" },
+            { term: "RAG", full: "Red / Amber / Green", def: "A simple color system to show health. Green = on track. Amber = at risk. Red = off track or blocked.", ex: "\"The CRM migration is Amber — it’s behind schedule by 1 week but recoverable.\"" },
+            { term: "Initiative", full: "", def: "A project or piece of work that is designed to move a Key Result forward. It’s the \"how\" behind the goal.", ex: "\"Launch new onboarding email sequence\" (to improve customer retention KR)." },
             { term: "Operating Rhythm", full: "", def: "Your repeatable schedule for staying aligned: weekly reviews, monthly deep-dives, quarterly resets.", ex: "\"We review metrics every Monday, do a monthly business review on the 1st, and reset OKRs every quarter.\"" },
-            { term: "North Star Metric", full: "", def: "The ONE metric that best represents the value your company delivers. Everything else supports it.", ex: "\"For Spotify, it might be 'monthly active listeners.' For us, it\u2019s '[your metric].'\"" },
-            { term: "Baseline", full: "", def: "Where you are today BEFORE you start working toward a target. The starting point.", ex: "\"Our current support wait time is 18 hours. That\u2019s our baseline.\"" },
-            { term: "Target", full: "", def: "Where you want to be by the end of the quarter. The finish line.", ex: "\"We want to get support wait time down to 6 hours. That\u2019s our target.\"" },
-            { term: "Confidence Level", full: "", def: "How likely you think it is that you\u2019ll hit the Key Result. Usually rated on a scale of 1\u201310.", ex: "\"I\u2019m at a 6/10 confidence. We need to hire 2 more people to hit it.\"" },
+            { term: "North Star Metric", full: "", def: "The ONE metric that best represents the value your company delivers. Everything else supports it.", ex: "\"For Spotify, it might be 'monthly active listeners.' For us, it’s '[your metric].'\"" },
+            { term: "Baseline", full: "", def: "Where you are today BEFORE you start working toward a target. The starting point.", ex: "\"Our current support wait time is 18 hours. That’s our baseline.\"" },
+            { term: "Target", full: "", def: "Where you want to be by the end of the quarter. The finish line.", ex: "\"We want to get support wait time down to 6 hours. That’s our target.\"" },
+            { term: "Confidence Level", full: "", def: "How likely you think it is that you’ll hit the Key Result. Usually rated on a scale of 1–10.", ex: "\"I’m at a 6/10 confidence. We need to hire 2 more people to hit it.\"" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -82,10 +82,10 @@ function TerminologyContent() {
         </tr></thead>
         <tbody>
           {[
-            { q: "OKR vs. KPI", a: "OKRs are GOALS you set for a quarter (stretch targets). KPIs are HEALTH METRICS you track all the time. OKRs change; KPIs usually don\u2019t." },
+            { q: "OKR vs. KPI", a: "OKRs are GOALS you set for a quarter (stretch targets). KPIs are HEALTH METRICS you track all the time. OKRs change; KPIs usually don’t." },
             { q: "Objective vs. Key Result", a: "Objective = qualitative (\"what we want\"). Key Result = quantitative (\"how we measure it\"). The objective inspires; the key result proves." },
-            { q: "Key Result vs. Initiative", a: "Key Result = the OUTCOME (\"reduce wait time to 6 hrs\"). Initiative = the WORK (\"hire 3 agents and launch ticketing system\"). Don\u2019t confuse doing work with achieving results." },
-            { q: "RAG status vs. OKR score", a: "RAG (Red/Amber/Green) is a quick health check. OKR score (0.0\u20131.0) is a precise measurement of how far you got. RAG is fast; OKR scoring is detailed." },
+            { q: "Key Result vs. Initiative", a: "Key Result = the OUTCOME (\"reduce wait time to 6 hrs\"). Initiative = the WORK (\"hire 3 agents and launch ticketing system\"). Don’t confuse doing work with achieving results." },
+            { q: "RAG status vs. OKR score", a: "RAG (Red/Amber/Green) is a quick health check. OKR score (0.0–1.0) is a precise measurement of how far you got. RAG is fast; OKR scoring is detailed." },
             { q: "Monthly vs. Quarterly review", a: "Monthly = check progress and course-correct. Quarterly = score, learn, and set NEW goals for the next 90 days." },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;

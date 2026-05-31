@@ -67,7 +67,7 @@ function DecisionRulesContent() {
         <tbody>
           {[
             { trigger: "Spending under [$5,000]", who: "[Team Lead]", time: "Same day", esc: "No escalation needed" },
-            { trigger: "Spending [$5,000 \u2013 $25,000]", who: "[Dept Head]", time: "48 hours", esc: "Notify CFO" },
+            { trigger: "Spending [$5,000 – $25,000]", who: "[Dept Head]", time: "48 hours", esc: "Notify CFO" },
             { trigger: "Spending over [$25,000]", who: "[CEO + CFO]", time: "1 week", esc: "Board if >$100K" },
             { trigger: "Hiring a new role", who: "[Dept Head + HR]", time: "1 week", esc: "CEO for director+" },
             { trigger: "Changing an OKR mid-quarter", who: "[OKR Owner + Leader]", time: "48 hours", esc: "Leadership team meeting" },
@@ -100,7 +100,7 @@ function DecisionRulesContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>🚨 ESCALATION RULES</td></tr></thead>
             <tbody>
               {[
-                { level: "1", when: "Team can\u2019t agree. Two good options, no clear winner.", who: "[Team Lead]", time: "24 hrs", color: "#059669" },
+                { level: "1", when: "Team can’t agree. Two good options, no clear winner.", who: "[Team Lead]", time: "24 hrs", color: "#059669" },
                 { level: "2", when: "Cross-team dependency blocking progress.", who: "[Dept Head(s)]", time: "48 hrs", color: "#D97706" },
                 { level: "3", when: "Budget, headcount, or strategic direction change.", who: "[CEO / COO]", time: "1 week", color: "#DC2626" },
               ].map((r, i) => {

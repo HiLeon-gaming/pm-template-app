@@ -52,10 +52,10 @@ function CommPlanContent() {
           {[
             { who: "Executive Sponsor", what: "Overall status, risks, decisions needed", freq: "Bi-weekly", channel: "1:1 meeting", format: "Exec Update", owner: "You", msg: "Bottom line up front. RAG status. What do you need from me?" },
             { who: "SteerCo", what: "Milestone progress, budget, risks, asks", freq: "Monthly", channel: "SteerCo deck", format: "Formal presentation", owner: "You", msg: "On track / At risk with clear actions. Data-driven." },
-            { who: "Project Team", what: "Sprint updates, blockers, priorities", freq: "Weekly", channel: "Team standup", format: "Verbal + Slack", owner: "You", msg: "What\u2019s next, what\u2019s blocked, who needs help." },
+            { who: "Project Team", what: "Sprint updates, blockers, priorities", freq: "Weekly", channel: "Team standup", format: "Verbal + Slack", owner: "You", msg: "What’s next, what’s blocked, who needs help." },
             { who: "Engineering", what: "Technical dependencies, timeline impacts", freq: "As needed", channel: "Slack / Working session", format: "Technical brief", owner: "Tech Lead", msg: "Specific, technical, solution-oriented." },
             { who: "Finance", what: "Budget updates, variance, forecasts", freq: "Monthly", channel: "Email + dashboard", format: "Short Update", owner: "You", msg: "Numbers first. Explain variances. No surprises." },
-            { who: "End Users", what: "What\u2019s changing, when, impact on them", freq: "Per milestone", channel: "Email / Town hall", format: "Announcement", owner: "Comms lead", msg: "What\u2019s changing, why it matters, what to do." },
+            { who: "End Users", what: "What’s changing, when, impact on them", freq: "Per milestone", channel: "Email / Town hall", format: "Announcement", owner: "Comms lead", msg: "What’s changing, why it matters, what to do." },
             { who: "[Group]", what: "[What they need]", freq: "[How often]", channel: "[How]", format: "[Template]", owner: "[Who]", msg: "[How to frame it for this audience]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -97,7 +97,7 @@ function CommPlanContent() {
             { week: "Week 2", who: "Engineering", comm: "API dependency working session.", channel: "Working session", owner: "Tech Lead", prep: "1 hour" },
             { week: "Week 3", who: "Finance", comm: "Monthly budget update. Q2 projections.", channel: "Email", owner: "You", prep: "30 min" },
             { week: "Week 4", who: "SteerCo", comm: "Monthly SteerCo presentation.", channel: "Formal meeting", owner: "You", prep: "2 hours" },
-            { week: "[Week]", who: "[Audience]", comm: "[What you\u2019re communicating]", channel: "[How]", owner: "[Who]", prep: "[Time needed]" },
+            { week: "[Week]", who: "[Audience]", comm: "[What you’re communicating]", channel: "[How]", owner: "[Who]", prep: "[Time needed]" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (
@@ -126,7 +126,7 @@ function CommPlanContent() {
             <tbody>
               {[
                 { color: "#059669", tip: "Different audiences need different messages.", detail: "What your sponsor needs is not what your team needs. Tailor the content and depth." },
-                { color: "#0EA5E9", tip: "Proactive > Reactive.", detail: "If stakeholders have to ask for updates, you\u2019ve already failed. Stay ahead." },
+                { color: "#0EA5E9", tip: "Proactive > Reactive.", detail: "If stakeholders have to ask for updates, you’ve already failed. Stay ahead." },
                 { color: "#8B5CF6", tip: "Consistency builds trust.", detail: "Same cadence, same format, same quality. Predictability = confidence." },
                 { color: "#D97706", tip: "Bad news early, good news often.", detail: "Surprise people with good news, never with bad news." },
               ].map((r, i) => {
@@ -146,9 +146,9 @@ function CommPlanContent() {
             <thead><tr><td style={{ backgroundColor: "#FEF3C7", color: "#D97706", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #D97706" }}>ESCALATION COMMUNICATION</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Critical issues: communicate within 1 hour.", detail: "Major risks, failures, or blockers need immediate escalation. Don\u2019t wait for the weekly update." },
+                { color: "#DC2626", tip: "Critical issues: communicate within 1 hour.", detail: "Major risks, failures, or blockers need immediate escalation. Don’t wait for the weekly update." },
                 { color: "#EA580C", tip: "Use the right channel for the urgency.", detail: "Low urgency = email. Medium = Slack. High = phone call or walk to their desk." },
-                { color: "#D97706", tip: "Always include: what happened, impact, what you\u2019re doing about it.", detail: "Context + impact + action = professional escalation." },
+                { color: "#D97706", tip: "Always include: what happened, impact, what you’re doing about it.", detail: "Context + impact + action = professional escalation." },
                 { color: "#6366F1", tip: "Follow up after escalation.", detail: "Close the loop. Update them when the issue is resolved or the situation changes." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

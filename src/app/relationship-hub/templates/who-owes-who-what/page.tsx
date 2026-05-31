@@ -121,10 +121,10 @@ function OwesContent() {
             <thead><tr><td style={{ backgroundColor: "#FEE2E2", color: "#DC2626", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #DC2626" }}>MANAGING WHAT YOU OWE</td></tr></thead>
             <tbody>
               {[
-                { color: "#DC2626", tip: "Deliver early whenever possible.", detail: "Early delivery builds a reputation for reliability. It\u2019s the fastest way to build trust." },
-                { color: "#EA580C", tip: "If you\u2019ll be late, communicate 48h before.", detail: "Bad news early is management. Bad news late is failure." },
-                { color: "#D97706", tip: "Close the loop explicitly.", detail: "\u201CAs promised, here\u2019s X.\u201D Don\u2019t just silently deliver. Make sure they know you kept your word." },
-                { color: "#059669", tip: "Don\u2019t over-commit.", detail: "It\u2019s better to say \u201CI can\u2019t commit to that timeline\u201D than to commit and fail." },
+                { color: "#DC2626", tip: "Deliver early whenever possible.", detail: "Early delivery builds a reputation for reliability. It’s the fastest way to build trust." },
+                { color: "#EA580C", tip: "If you’ll be late, communicate 48h before.", detail: "Bad news early is management. Bad news late is failure." },
+                { color: "#D97706", tip: "Close the loop explicitly.", detail: "“As promised, here’s X.” Don’t just silently deliver. Make sure they know you kept your word." },
+                { color: "#059669", tip: "Don’t over-commit.", detail: "It’s better to say “I can’t commit to that timeline” than to commit and fail." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;
                 return (
@@ -142,9 +142,9 @@ function OwesContent() {
             <thead><tr><td style={{ backgroundColor: "#DBEAFE", color: "#0EA5E9", padding: "8px 12px", fontFamily: S.font, fontSize: "12px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #0EA5E9" }}>FOLLOWING UP ON WHAT THEY OWE</td></tr></thead>
             <tbody>
               {[
-                { color: "#0EA5E9", tip: "Follow up before the deadline.", detail: "A friendly \u201CJust checking in \u2014 still on track for Thursday?\u201D prevents missed deliverables." },
-                { color: "#6366F1", tip: "Make follow-ups easy and specific.", detail: "\u201CHi James \u2014 do you have the API timeline? I need it by Thursday for the SteerCo deck.\u201D" },
-                { color: "#D97706", tip: "Don\u2019t let overdue items slide.", detail: "If something is overdue by >3 days, address it directly. Silence enables more delays." },
+                { color: "#0EA5E9", tip: "Follow up before the deadline.", detail: "A friendly “Just checking in — still on track for Thursday?” prevents missed deliverables." },
+                { color: "#6366F1", tip: "Make follow-ups easy and specific.", detail: "“Hi James — do you have the API timeline? I need it by Thursday for the SteerCo deck.”" },
+                { color: "#D97706", tip: "Don’t let overdue items slide.", detail: "If something is overdue by >3 days, address it directly. Silence enables more delays." },
                 { color: "#DC2626", tip: "Document everything.", detail: "If a deliverable consistently slips, you may need to escalate. Having dates and context helps." },
               ].map((r, i) => {
                 const bg = i % 2 === 1 ? C.rowAlt : C.white;

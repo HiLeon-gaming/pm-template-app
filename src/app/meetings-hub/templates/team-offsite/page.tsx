@@ -59,14 +59,14 @@ function TeamOffsiteContent() {
         </tr></thead>
         <tbody>
           {[
-            { time: "9:00", mins: "15", session: "[Arrival, coffee, informal catch-up]", type: "Social", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lead: "[\u2014]", notes: "[Set up room, materials ready]" },
+            { time: "9:00", mins: "15", session: "[Arrival, coffee, informal catch-up]", type: "Social", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lead: "[—]", notes: "[Set up room, materials ready]" },
             { time: "9:15", mins: "15", session: "[Welcome + objectives + ground rules for the day]", type: "Opening", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, lead: "[You]", notes: "[Set expectations, energy]" },
             { time: "9:30", mins: "30", session: "[State of the team — wins, challenges, metrics review]", type: "Review", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, lead: "[You]", notes: "[Prepare dashboard/slides]" },
             { time: "10:00", mins: "45", session: "[Q2 priorities workshop — what matters most?]", type: "Workshop", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lead: "[PM]", notes: "[Breakout groups → report back]" },
-            { time: "10:45", mins: "15", session: "[Break ☕]", type: "Break", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, lead: "[\u2014]", notes: "" },
+            { time: "10:45", mins: "15", session: "[Break ☕]", type: "Break", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, lead: "[—]", notes: "" },
             { time: "11:00", mins: "45", session: "[Team retrospective — Start/Stop/Continue]", type: "Retro", tBg: C.badgeAmberBg, tFg: C.badgeAmberFg, lead: "[Facilitator]", notes: "[Use team retro template]" },
             { time: "11:45", mins: "30", session: "[Team health check + discussion]", type: "Health", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lead: "[You]", notes: "[Anonymous survey results]" },
-            { time: "12:15", mins: "60", session: "[Lunch + team bonding activity]", type: "Social", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lead: "[\u2014]", notes: "[Catering ordered?]" },
+            { time: "12:15", mins: "60", session: "[Lunch + team bonding activity]", type: "Social", tBg: C.badgeGreenBg, tFg: C.badgeGreenFg, lead: "[—]", notes: "[Catering ordered?]" },
             { time: "1:15", mins: "45", session: "[Action planning — commitments for Q2]", type: "Planning", tBg: C.badgeBlueBg, tFg: C.badgeBlueFg, lead: "[PM]", notes: "[Each person: top 3 commitments]" },
             { time: "2:00", mins: "30", session: "[Closeout — decisions, actions, next steps, feedback]", type: "Closing", tBg: C.badgeGrayBg, tFg: C.badgeGrayFg, lead: "[You]", notes: "[Capture everything]" },
           ].map((r, i) => {
