@@ -48,7 +48,7 @@ function AgendaBuilderContent() {
 
   const renderPurpose = () => (
     <div ref={purposeRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 PURPOSE &amp; DESIRED OUTCOMES</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }} width="100%"><tbody><tr><td style={{ backgroundColor: accent, color: C.white, padding: "10px 16px", fontFamily: S.font, fontSize: "15px", fontWeight: 800, letterSpacing: "0.02em" }}>🎯 PURPOSE &amp; DESIRED OUTCOMES</td></tr></tbody></table>
       <CopyButton targetRef={purposeRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
@@ -73,7 +73,7 @@ function AgendaBuilderContent() {
 
   const renderItems = () => (
     <div ref={itemsRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📝 AGENDA ITEMS (Timeboxed)</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }} width="100%"><tbody><tr><td style={{ backgroundColor: accentDark, color: C.white, padding: "10px 16px", fontFamily: S.font, fontSize: "15px", fontWeight: 800, letterSpacing: "0.02em" }}>📝 AGENDA ITEMS (Timeboxed)</td></tr></tbody></table>
       <CopyButton targetRef={itemsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -115,7 +115,7 @@ function AgendaBuilderContent() {
 
   const renderPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📚 PRE-MEETING PREP</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }} width="100%"><tbody><tr><td style={{ backgroundColor: accent, color: C.white, padding: "10px 16px", fontFamily: S.font, fontSize: "15px", fontWeight: 800, letterSpacing: "0.02em" }}>📚 PRE-MEETING PREP</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
@@ -146,7 +146,7 @@ function AgendaBuilderContent() {
 
   const renderClose = () => (
     <div ref={closeRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>✅ MEETING CLOSEOUT CHECKLIST</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }} width="100%"><tbody><tr><td style={{ backgroundColor: accentDark, color: C.white, padding: "10px 16px", fontFamily: S.font, fontSize: "15px", fontWeight: 800, letterSpacing: "0.02em" }}>✅ MEETING CLOSEOUT CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={closeRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "30%" }}>[ ] Decisions captured?</td><td style={S.td0}>All decisions documented with context and owner</td></tr>
