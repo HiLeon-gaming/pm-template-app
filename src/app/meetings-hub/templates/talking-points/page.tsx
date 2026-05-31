@@ -46,7 +46,7 @@ function TalkingPointsContent() {
 
   const renderPoints = () => (
     <div ref={pointsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 KEY TALKING POINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 KEY TALKING POINTS</td></tr></tbody></table>
       <CopyButton targetRef={pointsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -82,7 +82,7 @@ function TalkingPointsContent() {
 
   const renderStrategy = () => (
     <div ref={strategyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🧭 PREPARATION STRATEGY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🧭 PREPARATION STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={strategyRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>

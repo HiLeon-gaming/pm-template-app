@@ -43,7 +43,7 @@ function DecisionLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -84,7 +84,7 @@ function DecisionLogContent() {
 
   const renderPending = () => (
     <div ref={pendingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⏳ PENDING DECISIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⏳ PENDING DECISIONS</td></tr></tbody></table>
       <CopyButton targetRef={pendingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

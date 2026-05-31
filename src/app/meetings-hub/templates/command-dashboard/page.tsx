@@ -48,7 +48,7 @@ function CommandDashboardContent() {
 
   const renderToday = () => (
     <div ref={todayRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📅 TODAY&apos;S MEETINGS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📅 TODAY&apos;S MEETINGS</td></tr></tbody></table>
       <CopyButton targetRef={todayRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -84,7 +84,7 @@ function CommandDashboardContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>✅ OPEN ACTION ITEMS (Top 8)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>✅ OPEN ACTION ITEMS (Top 8)</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -123,7 +123,7 @@ function CommandDashboardContent() {
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#3B82F6")}>📌 PENDING DECISIONS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#3B82F6")}>📌 PENDING DECISIONS</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={S.thSecondary}>Decision Needed</th>
@@ -144,7 +144,7 @@ function CommandDashboardContent() {
           </table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>✅ RECENT DECISIONS (Last 7 days)</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>✅ RECENT DECISIONS (Last 7 days)</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={S.thSecondary}>Decision Made</th>
@@ -171,7 +171,7 @@ function CommandDashboardContent() {
 
   const renderFollowups = () => (
     <div ref={followupsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📬 FOLLOW-UPS DUE THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📬 FOLLOW-UPS DUE THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={followupsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -203,7 +203,7 @@ function CommandDashboardContent() {
 
   const renderPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 UPCOMING PREP NEEDED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 UPCOMING PREP NEEDED</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Tomorrow</td><td style={S.td0}>[Board presentation dry-run — finalize slides + talking points]</td></tr>

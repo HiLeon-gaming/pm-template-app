@@ -44,7 +44,7 @@ function FollowUpEmailContent() {
 
   const renderBody = () => (
     <div ref={bodyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 EMAIL BODY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 EMAIL BODY</td></tr></tbody></table>
       <CopyButton targetRef={bodyRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "11px", lineHeight: "2.0", padding: "16px 20px" }}>
@@ -99,7 +99,7 @@ function FollowUpEmailContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💡 PRO TIPS FOR FOLLOW-UP EMAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 PRO TIPS FOR FOLLOW-UP EMAILS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "12px 16px" }}>

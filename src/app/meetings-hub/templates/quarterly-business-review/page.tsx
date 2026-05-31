@@ -47,7 +47,7 @@ function QBRContent() {
 
   const renderScorecard = () => (
     <div ref={scorecardRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 QUARTERLY SCORECARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 QUARTERLY SCORECARD</td></tr></tbody></table>
       <CopyButton targetRef={scorecardRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -89,7 +89,7 @@ function QBRContent() {
 
   const renderInitiatives = () => (
     <div ref={initiativesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🏆 KEY INITIATIVES STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🏆 KEY INITIATIVES STATUS</td></tr></tbody></table>
       <CopyButton targetRef={initiativesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -124,7 +124,7 @@ function QBRContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>⚠️ RISKS &amp; CHALLENGES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>⚠️ RISKS &amp; CHALLENGES</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Top Risk #1</td><td style={S.td0}>[Description — impact — mitigation plan]</td></tr>
@@ -137,7 +137,7 @@ function QBRContent() {
 
   const renderNextQ = () => (
     <div ref={nextQRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔮 NEXT QUARTER PLAN (Q2)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔮 NEXT QUARTER PLAN (Q2)</td></tr></tbody></table>
       <CopyButton targetRef={nextQRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

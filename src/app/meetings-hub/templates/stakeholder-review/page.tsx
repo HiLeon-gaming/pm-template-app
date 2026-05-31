@@ -45,7 +45,7 @@ function StakeholderReviewContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 DEMO AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 DEMO AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -82,7 +82,7 @@ function StakeholderReviewContent() {
 
   const renderFeedback = () => (
     <div ref={feedbackRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💬 STAKEHOLDER FEEDBACK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💬 STAKEHOLDER FEEDBACK</td></tr></tbody></table>
       <CopyButton targetRef={feedbackRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -115,7 +115,7 @@ function StakeholderReviewContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DECISIONS &amp; NEXT STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DECISIONS &amp; NEXT STEPS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Decisions Made</td><td style={S.td0}>[List all decisions from this review]</td></tr>

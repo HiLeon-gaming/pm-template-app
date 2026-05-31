@@ -45,7 +45,7 @@ function BudgetReviewContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 BUDGET SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 BUDGET SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -96,7 +96,7 @@ function BudgetReviewContent() {
 
   const renderDetail = () => (
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📈 FORECAST &amp; BURN RATE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📈 FORECAST &amp; BURN RATE</td></tr></tbody></table>
       <CopyButton targetRef={detailRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Total Budget</td><td style={{ ...S.td0, width: "28%", fontWeight: 700 }}>[$ Total approved budget]</td><td style={{ ...S.tdLabel, width: "22%" }}>Spent to Date</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[$ Amount spent / % of total]</td></tr>
@@ -109,7 +109,7 @@ function BudgetReviewContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DECISIONS &amp; ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DECISIONS &amp; ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Variances to Address</td><td style={{ ...S.td0, color: "#DC2626" }}>[Contractor costs +16% — need to renegotiate or reduce scope]</td></tr>

@@ -49,7 +49,7 @@ function MinutesActionsContent() {
 
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 DISCUSSION NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 DISCUSSION NOTES</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -82,7 +82,7 @@ function MinutesActionsContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📌 DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📌 DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -116,7 +116,7 @@ function MinutesActionsContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -153,7 +153,7 @@ function MinutesActionsContent() {
     <div ref={parkingRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#EA580C")}>🅿️ PARKING LOT</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>🅿️ PARKING LOT</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             {["[Discuss team restructure — needs Sarah\u2019s input]", "[Review Q3 budget forecast — defer to next month]", "[New tooling proposal — needs cost analysis first]"].map((item, i) => (
               <tr key={i}><td style={{ ...(i % 2 === 0 ? S.td0 : S.tdAlt), fontSize: "10px" }}>&bull; {item}</td></tr>
@@ -161,7 +161,7 @@ function MinutesActionsContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>📬 FOLLOW-UP NOTES</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>📬 FOLLOW-UP NOTES</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.tdLabel, width: "35%" }}>Recap sent by</td><td style={S.td0}>[Name — within 24 hours]</td></tr>
             <tr><td style={S.tdLabelAlt}>Next meeting</td><td style={S.tdAlt}>[Date / Time / Same agenda or new?]</td></tr>

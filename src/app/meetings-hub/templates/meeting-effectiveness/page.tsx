@@ -45,7 +45,7 @@ function MeetingEffectivenessContent() {
 
   const renderRatings = () => (
     <div ref={ratingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⭐ EFFECTIVENESS RATINGS (1-5)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⭐ EFFECTIVENESS RATINGS (1-5)</td></tr></tbody></table>
       <CopyButton targetRef={ratingsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -90,7 +90,7 @@ function MeetingEffectivenessContent() {
 
   const renderTrends = () => (
     <div ref={trendsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📈 TREND OVER TIME</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📈 TREND OVER TIME</td></tr></tbody></table>
       <CopyButton targetRef={trendsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -126,7 +126,7 @@ function MeetingEffectivenessContent() {
 
   const renderImprovement = () => (
     <div ref={improvementRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={improvementRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Biggest Win</td><td style={{ ...S.td0, color: "#059669", fontWeight: 600 }}>[What worked best? Do more of this.]</td></tr>

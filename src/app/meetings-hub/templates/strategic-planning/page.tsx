@@ -48,7 +48,7 @@ function StrategicPlanningContent() {
 
   const renderVision = () => (
     <div ref={visionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 VISION &amp; CURRENT STATE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 VISION &amp; CURRENT STATE</td></tr></tbody></table>
       <CopyButton targetRef={visionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Mission</td><td style={S.td0}>[Why does this organization exist?]</td></tr>
@@ -100,7 +100,7 @@ function StrategicPlanningContent() {
 
   const renderPriorities = () => (
     <div ref={prioritiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🏆 STRATEGIC PRIORITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🏆 STRATEGIC PRIORITIES</td></tr></tbody></table>
       <CopyButton targetRef={prioritiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -136,7 +136,7 @@ function StrategicPlanningContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ NEXT STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ NEXT STEPS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Immediate Actions</td><td style={S.td0}>[What happens this week as a result of this session?]</td></tr>

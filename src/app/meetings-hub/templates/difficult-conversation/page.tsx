@@ -45,7 +45,7 @@ function DifficultConversationContent() {
 
   const renderFramework = () => (
     <div ref={frameworkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🧭 PREPARATION FRAMEWORK (SBI + Intent)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🧭 PREPARATION FRAMEWORK (SBI + Intent)</td></tr></tbody></table>
       <CopyButton targetRef={frameworkRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", fontWeight: 800, color: "#3B82F6" }}>S — Situation</td><td style={S.td0}>[When and where did this happen? Be specific about the context.]<br /><span style={{ fontSize: "9px", color: C.textMuted, fontStyle: "italic" }}>Example: &ldquo;In last Tuesday&apos;s team standup&hellip;&rdquo;</span></td></tr>
@@ -65,7 +65,7 @@ function DifficultConversationContent() {
 
   const renderScript = () => (
     <div ref={scriptRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📜 OPENING SCRIPT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📜 OPENING SCRIPT</td></tr></tbody></table>
       <CopyButton targetRef={scriptRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px", fontSize: "11px", lineHeight: "1.9", fontStyle: "italic" }}>
@@ -84,7 +84,7 @@ function DifficultConversationContent() {
 
   const renderDebrief = () => (
     <div ref={debriefRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 POST-CONVERSATION DEBRIEF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 POST-CONVERSATION DEBRIEF</td></tr></tbody></table>
       <CopyButton targetRef={debriefRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>What happened?</td><td style={S.td0}>[Summarize the actual conversation — what was said?]</td></tr>

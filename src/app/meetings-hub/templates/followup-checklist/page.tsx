@@ -43,7 +43,7 @@ function FollowupChecklistContent() {
 
   const renderCheck = () => (
     <div ref={checkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 POST-MEETING FOLLOW-UP CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 POST-MEETING FOLLOW-UP CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={checkRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Complete all items within 24 hours of the meeting ending. This builds accountability without stress.</p>
       <table style={S.tbl}>
@@ -84,7 +84,7 @@ function FollowupChecklistContent() {
 
   const renderTracker = () => (
     <div ref={trackerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 FOLLOW-UP COMPLETION TRACKER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 FOLLOW-UP COMPLETION TRACKER</td></tr></tbody></table>
       <CopyButton targetRef={trackerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

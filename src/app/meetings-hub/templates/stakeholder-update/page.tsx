@@ -45,7 +45,7 @@ function StakeholderUpdateContent() {
 
   const renderBody = () => (
     <div ref={bodyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 UPDATE BODY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 UPDATE BODY</td></tr></tbody></table>
       <CopyButton targetRef={bodyRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "11px", lineHeight: "2.0", padding: "16px 20px" }}>
@@ -71,7 +71,7 @@ function StakeholderUpdateContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>⚠️ RISKS &amp; CONCERNS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>⚠️ RISKS &amp; CONCERNS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "11px", lineHeight: "2.0", padding: "16px 20px" }}>
@@ -87,7 +87,7 @@ function StakeholderUpdateContent() {
 
   const renderAsks = () => (
     <div ref={asksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🙋 ASKS &amp; NEXT STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🙋 ASKS &amp; NEXT STEPS</td></tr></tbody></table>
       <CopyButton targetRef={asksRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "11px", lineHeight: "2.0", padding: "16px 20px" }}>

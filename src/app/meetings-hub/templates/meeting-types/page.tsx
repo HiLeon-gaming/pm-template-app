@@ -32,7 +32,7 @@ function MeetingTypesContent() {
 
   const renderMap = () => (
     <div ref={mapRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 WHICH TEMPLATE TO USE?</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 WHICH TEMPLATE TO USE?</td></tr></tbody></table>
       <CopyButton targetRef={mapRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Find your meeting type below, then use the recommended templates from the hub.</p>
       <table style={S.tbl}>
@@ -76,7 +76,7 @@ function MeetingTypesContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💡 WHEN IN DOUBT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 WHEN IN DOUBT</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Any meeting, any time</td><td style={S.td0}>Use the <strong>Universal Agenda Builder</strong> + <strong>Universal Minutes + Actions</strong> from Section B</td></tr>

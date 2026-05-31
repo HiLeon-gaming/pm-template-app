@@ -43,7 +43,7 @@ function MeetingLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 RUNNING MEETING LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 RUNNING MEETING LOG</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -90,7 +90,7 @@ function MeetingLogContent() {
 
   const renderStats = () => (
     <div ref={statsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 WEEKLY MEETING STATS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 WEEKLY MEETING STATS</td></tr></tbody></table>
       <CopyButton targetRef={statsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Total Meetings</td><td style={{ ...S.td0, width: "28%", fontWeight: 700 }}>[7 meetings]</td><td style={{ ...S.tdLabel, width: "22%" }}>Total Time</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[4.5 hours]</td></tr>

@@ -87,7 +87,7 @@ function CoachingNotesContent() {
 
   const renderAction = () => (
     <div ref={actionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ COACHING ACTION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ COACHING ACTION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={actionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -119,7 +119,7 @@ function CoachingNotesContent() {
 
   const renderHistory = () => (
     <div ref={historyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📅 COACHING HISTORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📅 COACHING HISTORY</td></tr></tbody></table>
       <CopyButton targetRef={historyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

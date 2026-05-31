@@ -48,7 +48,7 @@ function OneOnOneDashboardContent() {
 
   const renderTopics = () => (
     <div ref={topicsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 RUNNING TOPICS &amp; NEXT AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 RUNNING TOPICS &amp; NEXT AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={topicsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
@@ -81,7 +81,7 @@ function OneOnOneDashboardContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>✅ OPEN COMMITMENTS &amp; ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>✅ OPEN COMMITMENTS &amp; ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -114,7 +114,7 @@ function OneOnOneDashboardContent() {
 
   const renderGoals = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 GOALS &amp; DEVELOPMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 GOALS &amp; DEVELOPMENT</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Current Goals</td><td style={S.td0}>[1) Lead a feature team by Q3. 2) Complete AWS certification. 3) Improve presentation skills.]</td></tr>
@@ -127,7 +127,7 @@ function OneOnOneDashboardContent() {
 
   const renderHistory = () => (
     <div ref={historyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📅 1:1 HISTORY (Recent)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📅 1:1 HISTORY (Recent)</td></tr></tbody></table>
       <CopyButton targetRef={historyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

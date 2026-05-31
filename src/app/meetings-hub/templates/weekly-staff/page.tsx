@@ -47,7 +47,7 @@ function WeeklyStaffContent() {
 
   const renderRound = () => (
     <div ref={roundRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔄 ROUNDTABLE UPDATES (2 min each)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔄 ROUNDTABLE UPDATES (2 min each)</td></tr></tbody></table>
       <CopyButton targetRef={roundRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Each person shares: 1) Top win, 2) Top priority, 3) Any blocker. Keep it to 2 minutes max.</p>
       <table style={S.tbl}>
@@ -76,7 +76,7 @@ function WeeklyStaffContent() {
 
   const renderTopics = () => (
     <div ref={topicsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 DISCUSSION TOPICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 DISCUSSION TOPICS</td></tr></tbody></table>
       <CopyButton targetRef={topicsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -115,7 +115,7 @@ function WeeklyStaffContent() {
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner(accent)}>✅ DECISIONS &amp; ACTIONS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DECISIONS &amp; ACTIONS</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={S.thPrimary}>Item</th>
@@ -134,7 +134,7 @@ function WeeklyStaffContent() {
           </table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#EA580C")}>🅿️ PARKING LOT &amp; NEXT WEEK</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>🅿️ PARKING LOT &amp; NEXT WEEK</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.tdLabel, width: "35%" }}>Parking Lot</td><td style={S.td0}>[Items deferred — add to next week]</td></tr>
             <tr><td style={S.tdLabelAlt}>Announcements</td><td style={S.tdAlt}>[Team-wide announcements or FYIs]</td></tr>

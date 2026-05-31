@@ -35,7 +35,7 @@ function AttendanceRolesContent() {
 
   const renderRoles = () => (
     <div ref={rolesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎭 MEETING ROLES DEFINED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎭 MEETING ROLES DEFINED</td></tr></tbody></table>
       <CopyButton targetRef={rolesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every meeting should have these 3 roles filled. They can rotate weekly or stay fixed — your choice.</p>
       <table style={LT}><tbody><tr>
@@ -59,7 +59,7 @@ function AttendanceRolesContent() {
 
   const renderInvite = () => (
     <div ref={inviteRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 ATTENDANCE DECISION GUIDE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 ATTENDANCE DECISION GUIDE</td></tr></tbody></table>
       <CopyButton targetRef={inviteRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
@@ -84,7 +84,7 @@ function AttendanceRolesContent() {
 
   const renderRotation = () => (
     <div ref={rotationRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔄 ROLE ROTATION TRACKER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔄 ROLE ROTATION TRACKER</td></tr></tbody></table>
       <CopyButton targetRef={rotationRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Optional: rotate roles weekly so everyone builds facilitation skills.</p>
       <table style={S.tbl}>

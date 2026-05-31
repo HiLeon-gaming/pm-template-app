@@ -35,7 +35,7 @@ function QuickStartContent() {
 
   const renderSetup = () => (
     <div ref={setupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 SETUP CHECKLIST (Do These First)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 SETUP CHECKLIST (Do These First)</td></tr></tbody></table>
       <CopyButton targetRef={setupRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -72,7 +72,7 @@ function QuickStartContent() {
 
   const renderRhythm = () => (
     <div ref={rhythmRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔄 YOUR WEEKLY MEETING RHYTHM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔄 YOUR WEEKLY MEETING RHYTHM</td></tr></tbody></table>
       <CopyButton targetRef={rhythmRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -96,7 +96,7 @@ function QuickStartContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 PRO TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 PRO TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>

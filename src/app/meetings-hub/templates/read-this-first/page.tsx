@@ -37,7 +37,7 @@ function ReadThisFirstContent() {
 
   const renderWhat = () => (
     <div ref={whatRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 WHAT THIS PACK IS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 WHAT THIS PACK IS</td></tr></tbody></table>
       <CopyButton targetRef={whatRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "10px 14px", fontSize: "11px", lineHeight: "1.7" }}>
@@ -71,7 +71,7 @@ function ReadThisFirstContent() {
 
   const renderHow = () => (
     <div ref={howRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎯 THE SIMPLEST MEETING SYSTEM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 THE SIMPLEST MEETING SYSTEM</td></tr></tbody></table>
       <CopyButton targetRef={howRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every good meeting needs only 4 things. If you do these 4 things, your meetings become &ldquo;worth it.&rdquo;</p>
       <table style={LT}><tbody><tr>
@@ -95,7 +95,7 @@ function ReadThisFirstContent() {
 
   const renderRhythm = () => (
     <div ref={rhythmRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔄 RECOMMENDED RHYTHMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔄 RECOMMENDED RHYTHMS</td></tr></tbody></table>
       <CopyButton targetRef={rhythmRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -125,7 +125,7 @@ function ReadThisFirstContent() {
 
   const renderTopSix = () => (
     <div ref={topSixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⭐ IF YOU ONLY USE 6 PAGES, USE THESE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⭐ IF YOU ONLY USE 6 PAGES, USE THESE</td></tr></tbody></table>
       <CopyButton targetRef={topSixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -158,7 +158,7 @@ function ReadThisFirstContent() {
 
   const renderIndex = () => (
     <div ref={indexRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 SECTION INDEX (52 Pages)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 SECTION INDEX (52 Pages)</td></tr></tbody></table>
       <CopyButton targetRef={indexRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

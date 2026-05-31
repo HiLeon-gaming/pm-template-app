@@ -46,7 +46,7 @@ function RiskReviewContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>⚠️ RISKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>⚠️ RISKS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -87,7 +87,7 @@ function RiskReviewContent() {
     <div ref={aiRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#3B82F6")}>📌 ASSUMPTIONS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#3B82F6")}>📌 ASSUMPTIONS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             {[
               "[Full team available for project duration]",
@@ -100,7 +100,7 @@ function RiskReviewContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner(accentDark)}>🔥 ISSUES (Active)</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔥 ISSUES (Active)</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={S.thPrimary}>Issue</th>
@@ -132,7 +132,7 @@ function RiskReviewContent() {
 
   const renderDeps = () => (
     <div ref={depsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔗 DEPENDENCIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔗 DEPENDENCIES</td></tr></tbody></table>
       <CopyButton targetRef={depsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

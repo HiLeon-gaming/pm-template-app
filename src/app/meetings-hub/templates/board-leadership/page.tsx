@@ -46,7 +46,7 @@ function BoardLeadershipContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -86,7 +86,7 @@ function BoardLeadershipContent() {
 
   const renderDiscussion = () => (
     <div ref={discussionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💬 DISCUSSION NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💬 DISCUSSION NOTES</td></tr></tbody></table>
       <CopyButton targetRef={discussionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -112,7 +112,7 @@ function BoardLeadershipContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DECISIONS &amp; ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DECISIONS &amp; ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

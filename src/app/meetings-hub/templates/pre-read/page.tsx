@@ -32,7 +32,7 @@ function PreReadContent() {
 
   const renderDocs = () => (
     <div ref={docsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📎 DOCUMENTS &amp; LINKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📎 DOCUMENTS &amp; LINKS</td></tr></tbody></table>
       <CopyButton targetRef={docsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -70,7 +70,7 @@ function PreReadContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💡 CONTEXT NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 CONTEXT NOTES</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Background</td><td style={S.td0}>[Any context attendees need to understand the documents above]</td></tr>

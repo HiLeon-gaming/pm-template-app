@@ -32,7 +32,7 @@ function IssuesBlockersContent() {
 
   const renderIssues = () => (
     <div ref={issuesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🚧 ACTIVE ISSUES &amp; BLOCKERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🚧 ACTIVE ISSUES &amp; BLOCKERS</td></tr></tbody></table>
       <CopyButton targetRef={issuesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -72,7 +72,7 @@ function IssuesBlockersContent() {
 
   const renderEscalation = () => (
     <div ref={escRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📢 ESCALATION NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📢 ESCALATION NOTES</td></tr></tbody></table>
       <CopyButton targetRef={escRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Escalated To</td><td style={S.td0}>[VP Engineering / CFO / Sponsor — name + date]</td></tr>

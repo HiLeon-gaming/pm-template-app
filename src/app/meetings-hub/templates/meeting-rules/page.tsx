@@ -35,7 +35,7 @@ function MeetingRulesContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 OUR MEETING STANDARDS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 OUR MEETING STANDARDS</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Share this page with your team. These are the non-negotiable rules that make meetings worth everyone&apos;s time.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function MeetingRulesContent() {
 
   const renderAccount = () => (
     <div ref={accountRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🤝 ACCOUNTABILITY MODEL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🤝 ACCOUNTABILITY MODEL</td></tr></tbody></table>
       <CopyButton targetRef={accountRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -96,7 +96,7 @@ function MeetingRulesContent() {
 
   const renderAdoption = () => (
     <div ref={adoptionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📈 ADOPTION CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📈 ADOPTION CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={adoptionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>[ ] Share with team</td><td style={S.td0}>Send this page to your team via email or Teams. Ask for acknowledgment.</td></tr>

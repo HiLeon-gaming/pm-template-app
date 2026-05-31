@@ -45,7 +45,7 @@ function SprintStatusContent() {
 
   const renderProgress = () => (
     <div ref={progressRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📈 DELIVERY PROGRESS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📈 DELIVERY PROGRESS</td></tr></tbody></table>
       <CopyButton targetRef={progressRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -84,7 +84,7 @@ function SprintStatusContent() {
 
   const renderBlockers = () => (
     <div ref={blockersRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚧 BLOCKERS &amp; RISKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚧 BLOCKERS &amp; RISKS</td></tr></tbody></table>
       <CopyButton targetRef={blockersRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -118,7 +118,7 @@ function SprintStatusContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ ACTIONS &amp; DECISIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ ACTIONS &amp; DECISIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Decisions Made</td><td style={S.td0}>[List any decisions from this status meeting]</td></tr>

@@ -44,7 +44,7 @@ function ChangeReviewContent() {
 
   const renderRequest = () => (
     <div ref={requestRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 CHANGE REQUEST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 CHANGE REQUEST</td></tr></tbody></table>
       <CopyButton targetRef={requestRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Change Description</td><td style={S.td0}>[What is being requested? Be specific.]</td></tr>
@@ -57,7 +57,7 @@ function ChangeReviewContent() {
 
   const renderImpact = () => (
     <div ref={impactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ IMPACT ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ IMPACT ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={impactRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -96,7 +96,7 @@ function ChangeReviewContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 CHANGE LOG (Running Record)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 CHANGE LOG (Running Record)</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -44,7 +44,7 @@ function TimeboxPlanContent() {
 
   const renderTimebox = () => (
     <div ref={timeboxRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 TIMEBOX GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 TIMEBOX GRID</td></tr></tbody></table>
       <CopyButton targetRef={timeboxRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -90,7 +90,7 @@ function TimeboxPlanContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚨 IF WE RUN OVER RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚨 IF WE RUN OVER RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>2-minute warning</td><td style={S.td0}>Timekeeper signals facilitator at 2 minutes remaining for each item</td></tr>

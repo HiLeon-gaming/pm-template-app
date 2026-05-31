@@ -47,7 +47,7 @@ function PerformanceCheckinContent() {
 
   const renderGoals = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 GOAL PROGRESS REVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 GOAL PROGRESS REVIEW</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -84,7 +84,7 @@ function PerformanceCheckinContent() {
 
   const renderStrengths = () => (
     <div ref={strengthsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💡 STRENGTHS &amp; GROWTH AREAS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 STRENGTHS &amp; GROWTH AREAS</td></tr></tbody></table>
       <CopyButton targetRef={strengthsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
@@ -115,7 +115,7 @@ function PerformanceCheckinContent() {
 
   const renderPlan = () => (
     <div ref={planRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 DEVELOPMENT PLAN &amp; NEXT STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 DEVELOPMENT PLAN &amp; NEXT STEPS</td></tr></tbody></table>
       <CopyButton targetRef={planRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Next Quarter Goals</td><td style={S.td0}>[1) Complete AWS cert. 2) Lead 3 sprint reviews. 3) Present at all-hands.]</td></tr>
