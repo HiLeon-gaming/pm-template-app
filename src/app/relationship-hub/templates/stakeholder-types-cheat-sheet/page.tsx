@@ -35,7 +35,7 @@ function CheatSheetContent() {
 
   const renderTypes = () => (
     <div ref={typesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER ROLES &amp; HOW TO MANAGE THEM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER ROLES &amp; HOW TO MANAGE THEM</td></tr></tbody></table>
       <CopyButton targetRef={typesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Each stakeholder plays a role. Understanding that role tells you how to engage them. A single person can play multiple roles &mdash; your sponsor might also be a decision maker. Manage for the highest-impact role.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function CheatSheetContent() {
 
   const renderIntExt = () => (
     <div ref={intExtRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#8B5CF6")}>INTERNAL vs EXTERNAL STAKEHOLDERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#8B5CF6")}>INTERNAL vs EXTERNAL STAKEHOLDERS</td></tr></tbody></table>
       <CopyButton targetRef={intExtRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Internal stakeholders share your organization. External ones don&apos;t. The engagement approach differs significantly &mdash; especially around communication formality, information sharing boundaries, and escalation paths.</p>
       <table style={LT}><tbody><tr>

@@ -129,7 +129,7 @@ function BPMContent() {
 
   const renderSwimLanes = () => (
     <div ref={swimRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🏊 SWIM LANE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🏊 SWIM LANE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={swimRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -190,7 +190,7 @@ function BPMContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📏 BUSINESS RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📏 BUSINESS RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

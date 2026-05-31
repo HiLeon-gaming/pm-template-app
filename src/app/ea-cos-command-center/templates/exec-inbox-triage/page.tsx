@@ -35,7 +35,7 @@ function ExecInboxTriageContent() {
 
   const renderInbox = () => (
     <div ref={inboxRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 REQUEST INBOX &mdash; Capture Everything Here</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 REQUEST INBOX &mdash; Capture Everything Here</td></tr></tbody></table>
       <CopyButton targetRef={inboxRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every ask goes here first. Triage daily. Nothing lives in your head.</p>
       <table style={S.tbl}>
@@ -81,7 +81,7 @@ function ExecInboxTriageContent() {
 
   const renderTriage = () => (
     <div ref={triageRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ TRIAGE DECISION RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ TRIAGE DECISION RULES</td></tr></tbody></table>
       <CopyButton targetRef={triageRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -104,7 +104,7 @@ function ExecInboxTriageContent() {
 
   const renderStats = () => (
     <div ref={statsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 QUICK INBOX STATS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 QUICK INBOX STATS</td></tr></tbody></table>
       <CopyButton targetRef={statsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

@@ -46,7 +46,7 @@ function PrincipleSystemsThinkingContent() {
 
   const renderCheck = () => (
     <div ref={checkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ SYSTEMS THINKING BEHAVIOR CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ SYSTEMS THINKING BEHAVIOR CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={checkRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thPrimary, backgroundColor: accent, width: "5%", textAlign: "center" as const }}>✔</th><th style={{ ...S.thPrimary, backgroundColor: accent }}>Behavior / Practice</th><th style={{ ...S.thPrimary, backgroundColor: accent, width: "8%", textAlign: "center" as const }}>Status</th></tr></thead>
@@ -70,7 +70,7 @@ function PrincipleSystemsThinkingContent() {
 
   const renderEvidence = () => (
     <div ref={evidenceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 EVIDENCE &amp; EXAMPLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 EVIDENCE &amp; EXAMPLES</td></tr></tbody></table>
       <CopyButton targetRef={evidenceRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Dependencies Managed</td><td style={S.td0}>[5 external dependencies tracked; 3 confirmed, 2 unconfirmed (vendor API, SSO config)]</td></tr>
@@ -84,7 +84,7 @@ function PrincipleSystemsThinkingContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

@@ -36,7 +36,7 @@ function BaselineTargetContent() {
 
   const renderTable = () => (
     <div ref={tableRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>BASELINE &amp; TARGET TABLE — Q[X] [YEAR]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>BASELINE &amp; TARGET TABLE — Q[X] [YEAR]</td></tr></tbody></table>
       <CopyButton targetRef={tableRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A baseline is where you are TODAY. A target is where you want to be by end of quarter. Without a clear baseline, you can&apos;t measure progress. Without a clear target, you can&apos;t know if you succeeded.</p>
       <table style={S.tbl}>

@@ -35,7 +35,7 @@ function MapContent() {
 
   const renderMap = () => (
     <div ref={mapRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>INFLUENCE vs INTEREST QUADRANT MAP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>INFLUENCE vs INTEREST QUADRANT MAP</td></tr></tbody></table>
       <CopyButton targetRef={mapRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Place every key stakeholder in one of four quadrants based on their influence over your work and their interest in it. This determines your engagement strategy for each person. Update quarterly or when the landscape shifts.</p>
       <table style={S.tbl}>
@@ -94,7 +94,7 @@ function MapContent() {
 
   const renderStrategy = () => (
     <div ref={stratRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>MOVEMENT &amp; CHANGES SINCE LAST REVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>MOVEMENT &amp; CHANGES SINCE LAST REVIEW</td></tr></tbody></table>
       <CopyButton targetRef={stratRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Has anyone moved quadrants since your last review? New stakeholders emerged? Someone&apos;s influence or interest changed? Document shifts here.</p>
       <table style={S.tbl}>

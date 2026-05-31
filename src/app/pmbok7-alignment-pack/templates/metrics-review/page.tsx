@@ -48,7 +48,7 @@ function MetricsReviewContent() {
 
   const renderScorecard = () => (
     <div ref={scorecardRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 METRICS SCORECARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 METRICS SCORECARD</td></tr></tbody></table>
       <CopyButton targetRef={scorecardRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -81,7 +81,7 @@ function MetricsReviewContent() {
 
   const renderTrends = () => (
     <div ref={trendsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📈 TREND ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📈 TREND ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={trendsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Positive Trends</td><td style={S.td0}>[Velocity steadily increasing; defect rate declining; stakeholder satisfaction rising; team morale stable]</td></tr>
@@ -94,7 +94,7 @@ function MetricsReviewContent() {
 
   const renderInsights = () => (
     <div ref={insightsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 KEY INSIGHTS &amp; DECISIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 KEY INSIGHTS &amp; DECISIONS</td></tr></tbody></table>
       <CopyButton targetRef={insightsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={{ ...S.thSecondary, width: "15%" }}>Insight Type</th><th style={S.thSecondary}>Insight / Decision</th></tr></thead>
@@ -115,7 +115,7 @@ function MetricsReviewContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ ACTIONS FROM REVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ ACTIONS FROM REVIEW</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

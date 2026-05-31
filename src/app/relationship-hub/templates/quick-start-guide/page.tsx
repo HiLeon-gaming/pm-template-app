@@ -35,7 +35,7 @@ function QuickStartContent() {
 
   const renderSetup = () => (
     <div ref={setupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>SETUP CHECKLIST &mdash; DO THESE FIRST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>SETUP CHECKLIST &mdash; DO THESE FIRST</td></tr></tbody></table>
       <CopyButton targetRef={setupRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Complete these steps in order. You&apos;ll be up and running in about 20 minutes. Don&apos;t skip any steps &mdash; each one builds on the previous.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function QuickStartContent() {
 
   const renderRhythm = () => (
     <div ref={rhythmRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>YOUR RELATIONSHIP MANAGEMENT RHYTHM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>YOUR RELATIONSHIP MANAGEMENT RHYTHM</td></tr></tbody></table>
       <CopyButton targetRef={rhythmRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Relationship management is a rhythm, not a one-time setup. Follow this cadence and your stakeholder relationships will steadily improve week over week.</p>
       <table style={S.tbl}>

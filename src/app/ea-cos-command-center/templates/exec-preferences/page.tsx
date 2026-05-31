@@ -36,7 +36,7 @@ function ExecPreferencesContent() {
 
   const renderProfile = () => (
     <div ref={profileRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>👤 EXECUTIVE PROFILE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>👤 EXECUTIVE PROFILE</td></tr></tbody></table>
       <CopyButton targetRef={profileRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "30%" }}>Executive Name</td><td style={S.td0}>[Full Name]</td></tr>
@@ -50,7 +50,7 @@ function ExecPreferencesContent() {
 
   const renderComm = () => (
     <div ref={commRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#EC4899")}>💬 COMMUNICATION PREFERENCES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EC4899")}>💬 COMMUNICATION PREFERENCES</td></tr></tbody></table>
       <CopyButton targetRef={commRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
@@ -86,7 +86,7 @@ function ExecPreferencesContent() {
 
   const renderMeeting = () => (
     <div ref={meetingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>📅 MEETING &amp; CALENDAR PREFERENCES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>📅 MEETING &amp; CALENDAR PREFERENCES</td></tr></tbody></table>
       <CopyButton targetRef={meetingRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "30%" }}>Preferred Meeting Length</td><td style={S.td0}>[25 min / 50 min — always end 5 min early]</td></tr>
@@ -102,7 +102,7 @@ function ExecPreferencesContent() {
 
   const renderDecision = () => (
     <div ref={decisionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎯 DECISION-MAKING STYLE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 DECISION-MAKING STYLE</td></tr></tbody></table>
       <CopyButton targetRef={decisionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "30%" }}>Decision Speed</td><td style={S.td0}>[Fast — give me options and a recommendation / Deliberate — needs time to think]</td></tr>

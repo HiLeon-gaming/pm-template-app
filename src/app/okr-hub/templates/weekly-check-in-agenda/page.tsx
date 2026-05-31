@@ -33,7 +33,7 @@ function WeeklyCheckInAgendaContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MEETING AGENDA (30 Minutes)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MEETING AGENDA (30 Minutes)</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Same agenda every week. No surprises. Everyone knows what to prepare and what to expect.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function WeeklyCheckInAgendaContent() {
 
   const renderPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>PRE-MEETING CHECKLIST (Before Monday&apos;s Meeting)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>PRE-MEETING CHECKLIST (Before Monday&apos;s Meeting)</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[
@@ -97,7 +97,7 @@ function WeeklyCheckInAgendaContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>FACILITATION TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>FACILITATION TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>

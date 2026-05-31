@@ -107,7 +107,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🚦 PORTFOLIO HEALTH OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🚦 PORTFOLIO HEALTH OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -153,7 +153,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderResource = () => (
     <div ref={resourceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>👥 RESOURCE ALLOCATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>👥 RESOURCE ALLOCATION</td></tr></tbody></table>
       <CopyButton targetRef={resourceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

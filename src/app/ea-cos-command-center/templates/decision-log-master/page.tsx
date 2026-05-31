@@ -32,7 +32,7 @@ function DecisionLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every major exec decision in one place. Prevents revisiting settled issues.</p>
       <table style={S.tbl}>
@@ -71,7 +71,7 @@ function DecisionLogContent() {
 
   const renderPending = () => (
     <div ref={pendingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>DECISIONS PENDING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>DECISIONS PENDING</td></tr></tbody></table>
       <CopyButton targetRef={pendingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

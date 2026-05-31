@@ -36,7 +36,7 @@ function ReadThisFirstContent() {
 
   const renderIntro = () => (
     <div ref={introRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>WHAT THIS PACK IS (PLAIN ENGLISH)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>WHAT THIS PACK IS (PLAIN ENGLISH)</td></tr></tbody></table>
       <CopyButton targetRef={introRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>
@@ -51,7 +51,7 @@ function ReadThisFirstContent() {
 
   const renderRhythm = () => (
     <div ref={rhythmRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>THE OPERATING RHYTHM (How It All Connects)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>THE OPERATING RHYTHM (How It All Connects)</td></tr></tbody></table>
       <CopyButton targetRef={rhythmRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>This is the heartbeat of your organization. Every cadence has a purpose.</p>
       <table style={S.tbl}>
@@ -87,7 +87,7 @@ function ReadThisFirstContent() {
 
   const renderSections = () => (
     <div ref={sectionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>WHAT&apos;S IN EACH SECTION (54 Templates)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>WHAT&apos;S IN EACH SECTION (54 Templates)</td></tr></tbody></table>
       <CopyButton targetRef={sectionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -123,7 +123,7 @@ function ReadThisFirstContent() {
 
   const renderSetup = () => (
     <div ref={setupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>5-MINUTE SETUP (Do This First)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>5-MINUTE SETUP (Do This First)</td></tr></tbody></table>
       <CopyButton targetRef={setupRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[
@@ -149,7 +149,7 @@ function ReadThisFirstContent() {
 
   const renderAllStar = () => (
     <div ref={allStarRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#F59E0B")}>&#11088; ALL-STAR TEMPLATES (Start Here If Short on Time)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#F59E0B")}>&#11088; ALL-STAR TEMPLATES (Start Here If Short on Time)</td></tr></tbody></table>
       <CopyButton targetRef={allStarRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>If you only use 10 templates, use these. They&apos;re the highest-value pages in the pack.</p>
       <table style={S.tbl}>
@@ -185,7 +185,7 @@ function ReadThisFirstContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>HOW TO GET THE MOST OUT OF THIS PACK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>HOW TO GET THE MOST OUT OF THIS PACK</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>

@@ -74,7 +74,7 @@ function ReadThisFirstContent() {
 
   const renderTwoWays = () => (
     <div ref={twoWaysRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>🔄 TWO WAYS TO USE THIS PACK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>🔄 TWO WAYS TO USE THIS PACK</td></tr></tbody></table>
       <CopyButton targetRef={twoWaysRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -167,7 +167,7 @@ function ReadThisFirstContent() {
 
   const renderStandalone = () => (
     <div ref={standaloneRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>📦 IF YOU ONLY BOUGHT THIS PACK (Standalone Use)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>📦 IF YOU ONLY BOUGHT THIS PACK (Standalone Use)</td></tr></tbody></table>
       <CopyButton targetRef={standaloneRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -242,7 +242,7 @@ function ReadThisFirstContent() {
 
   const renderIndex = () => (
     <div ref={indexRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>🔍 QUICK “WHAT’S THIS PAGE FOR?” INDEX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>🔍 QUICK “WHAT’S THIS PAGE FOR?” INDEX</td></tr></tbody></table>
       <CopyButton targetRef={indexRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

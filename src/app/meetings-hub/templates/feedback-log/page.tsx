@@ -44,7 +44,7 @@ function FeedbackLogContent() {
 
   const renderGiven = () => (
     <div ref={givenRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📤 FEEDBACK GIVEN (Manager → Team Member)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📤 FEEDBACK GIVEN (Manager → Team Member)</td></tr></tbody></table>
       <CopyButton targetRef={givenRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -79,7 +79,7 @@ function FeedbackLogContent() {
 
   const renderReceived = () => (
     <div ref={receivedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📥 FEEDBACK RECEIVED (Team Member → Manager)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📥 FEEDBACK RECEIVED (Team Member → Manager)</td></tr></tbody></table>
       <CopyButton targetRef={receivedRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -111,7 +111,7 @@ function FeedbackLogContent() {
 
   const renderPatterns = () => (
     <div ref={patternsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 PATTERNS &amp; THEMES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 PATTERNS &amp; THEMES</td></tr></tbody></table>
       <CopyButton targetRef={patternsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Recurring Strengths</td><td style={S.td0}>[What comes up consistently as a strength? Use for review season.]</td></tr>

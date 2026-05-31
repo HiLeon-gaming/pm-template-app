@@ -113,7 +113,7 @@ function PersonalDevContent() {
 
   const renderGoals = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🎯 DEVELOPMENT GOALS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🎯 DEVELOPMENT GOALS</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       {DEV_GOALS.map((g) => (
         <table key={g.num} style={{ ...S.tbl, marginBottom: "8px" }}>
@@ -190,7 +190,7 @@ function PersonalDevContent() {
 
   const renderTimeline = () => (
     <div ref={timelineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📅 MILESTONE TIMELINE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📅 MILESTONE TIMELINE</td></tr></tbody></table>
       <CopyButton targetRef={timelineRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

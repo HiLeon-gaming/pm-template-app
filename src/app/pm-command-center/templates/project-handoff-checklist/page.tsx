@@ -61,7 +61,7 @@ function ProjectHandoffChecklistContent() {
 
   const checkSection = (ref: React.RefObject<HTMLDivElement | null>, title: string, color: string | undefined, items: { item: string; owner: string; status: string; sBg: string; sFg: string; notes: string }[]) => (
     <div ref={ref} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(color)}>{title}</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(color)}>{title}</td></tr></tbody></table>
       <CopyButton targetRef={ref} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -125,7 +125,7 @@ function ProjectHandoffChecklistContent() {
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> HANDOFF ACCEPTANCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> HANDOFF ACCEPTANCE</td></tr></tbody></table>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

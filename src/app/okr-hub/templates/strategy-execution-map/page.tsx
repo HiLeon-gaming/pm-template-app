@@ -33,7 +33,7 @@ function StrategyMapContent() {
 
   const renderFlow = () => (
     <div ref={flowRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>HOW STRATEGY BECOMES WEEKLY ACTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>HOW STRATEGY BECOMES WEEKLY ACTION</td></tr></tbody></table>
       <CopyButton targetRef={flowRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>This is the big picture. Strategy doesn&apos;t work if it stays in a slide deck. Here&apos;s how goals become real results through a simple chain.</p>
       <table style={S.tbl}>
@@ -68,7 +68,7 @@ function StrategyMapContent() {
 
   const renderExample = () => (
     <div ref={exampleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>REAL-WORLD EXAMPLE (Follow the Chain)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>REAL-WORLD EXAMPLE (Follow the Chain)</td></tr></tbody></table>
       <CopyButton targetRef={exampleRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Here&apos;s what it looks like when strategy flows all the way down to this week&apos;s work. Notice how every level connects upward.</p>
       <table style={S.tbl}>
@@ -101,7 +101,7 @@ function StrategyMapContent() {
 
   const renderConnect = () => (
     <div ref={connectRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>WHICH PAGES TO USE AT EACH LEVEL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>WHICH PAGES TO USE AT EACH LEVEL</td></tr></tbody></table>
       <CopyButton targetRef={connectRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

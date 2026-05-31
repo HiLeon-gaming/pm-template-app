@@ -36,7 +36,7 @@ function RiskNotesContent() {
 
   const renderRisks = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>STAKEHOLDER: [NAME] &mdash; RISKS &amp; LANDMINES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>STAKEHOLDER: [NAME] &mdash; RISKS &amp; LANDMINES</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Keep these notes factual and professional. Never write anything you wouldn&apos;t want read out loud. Review before any meeting with this stakeholder. Delete entries that are no longer relevant.</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function RiskNotesContent() {
 
   const renderMitigation = () => (
     <div ref={mitRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#EA580C")}>MITIGATION &amp; CONTINGENCY PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>MITIGATION &amp; CONTINGENCY PLAN</td></tr></tbody></table>
       <CopyButton targetRef={mitRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Plan your response before the risk materializes. Proactive mitigation is 10x cheaper than reactive damage control.</p>
       <table style={S.tbl}>
@@ -109,7 +109,7 @@ function RiskNotesContent() {
 
   const renderWarnings = () => (
     <div ref={warnRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>EARLY WARNING SIGNALS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>EARLY WARNING SIGNALS</td></tr></tbody></table>
       <CopyButton targetRef={warnRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track specific behavioral changes that signal the relationship is deteriorating. If you see 2+ of these, take immediate action.</p>
       <table style={S.tbl}>

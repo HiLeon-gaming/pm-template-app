@@ -35,7 +35,7 @@ function MeetingHistoryContent() {
 
   const renderHistory = () => (
     <div ref={histRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; MEETING LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; MEETING LOG</td></tr></tbody></table>
       <CopyButton targetRef={histRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Log every key interaction. Link to detailed meeting notes where applicable. This is your institutional memory &mdash; it solves &quot;what did we decide last time?&quot; and prevents re-litigating old decisions.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function MeetingHistoryContent() {
 
   const renderCommitments = () => (
     <div ref={commitRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>OPEN COMMITMENTS TRACKER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>OPEN COMMITMENTS TRACKER</td></tr></tbody></table>
       <CopyButton targetRef={commitRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track all open commitments from meetings. Nothing damages credibility faster than forgetting a commitment you made.</p>
       <table style={S.tbl}>

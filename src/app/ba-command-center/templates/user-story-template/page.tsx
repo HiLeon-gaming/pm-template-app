@@ -113,7 +113,7 @@ function UserStoryContent() {
 
   const renderAC = () => (
     <div ref={acRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✅ ACCEPTANCE CRITERIA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✅ ACCEPTANCE CRITERIA</td></tr></tbody></table>
       <CopyButton targetRef={acRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Use Given/When/Then format for testable acceptance criteria.</p>
       <table style={S.tbl}>
@@ -177,7 +177,7 @@ function UserStoryContent() {
           </table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "5px" }}>
-          <div style={S.sectionBanner(C.secondary)}>✔️ DEFINITION OF DONE</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✔️ DEFINITION OF DONE</td></tr></tbody></table>
           <table style={S.tbl}>
             <tbody>
               {[

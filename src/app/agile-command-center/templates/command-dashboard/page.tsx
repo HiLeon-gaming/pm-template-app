@@ -100,7 +100,7 @@ function CommandDashboardContent() {
   /* ── Sprint Goal & Commitment ── */
   const renderSprint = () => (
     <div ref={sprintRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🏁 SPRINT GOAL &amp; COMMITMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🏁 SPRINT GOAL &amp; COMMITMENT</td></tr></tbody></table>
       <CopyButton targetRef={sprintRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -128,7 +128,7 @@ function CommandDashboardContent() {
   /* ── Top Priorities ── */
   const renderPriorities = () => (
     <div ref={prioritiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ TOP PRIORITIES RIGHT NOW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ TOP PRIORITIES RIGHT NOW</td></tr></tbody></table>
       <CopyButton targetRef={prioritiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -167,7 +167,7 @@ function CommandDashboardContent() {
   /* ── Active Blockers ── */
   const renderBlockers = () => (
     <div ref={blockersRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>🚨 ACTIVE BLOCKERS &amp; IMPEDIMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>🚨 ACTIVE BLOCKERS &amp; IMPEDIMENTS</td></tr></tbody></table>
       <CopyButton targetRef={blockersRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -204,7 +204,7 @@ function CommandDashboardContent() {
   /* ── Sprint Metrics Snapshot ── */
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 SPRINT METRICS SNAPSHOT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 SPRINT METRICS SNAPSHOT</td></tr></tbody></table>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <table style={LT}>
         <tbody>
@@ -251,7 +251,7 @@ function CommandDashboardContent() {
   /* ── Key Events This Sprint ── */
   const renderEvents = () => (
     <div ref={eventsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📅 KEY EVENTS THIS SPRINT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📅 KEY EVENTS THIS SPRINT</td></tr></tbody></table>
       <CopyButton targetRef={eventsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -289,7 +289,7 @@ function CommandDashboardContent() {
   /* ── Sprint Health RAG ── */
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🩺 SPRINT HEALTH (RAG)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🩺 SPRINT HEALTH (RAG)</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -325,7 +325,7 @@ function CommandDashboardContent() {
   /* ── Quick Notes ── */
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📝 QUICK NOTES &amp; DECISIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📝 QUICK NOTES &amp; DECISIONS</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

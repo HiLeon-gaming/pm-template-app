@@ -34,7 +34,7 @@ function StopDoingRulesContent() {
 
   const renderWhy = () => (
     <div ref={whyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>WHY THIS PAGE EXISTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>WHY THIS PAGE EXISTS</td></tr></tbody></table>
       <CopyButton targetRef={whyRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.0" }}>
@@ -48,7 +48,7 @@ function StopDoingRulesContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>THE STOP DOING RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>THE STOP DOING RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -81,7 +81,7 @@ function StopDoingRulesContent() {
 
   const renderTemplate = () => (
     <div ref={templateRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>STOP DOING ASSESSMENT (Use This Template)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>STOP DOING ASSESSMENT (Use This Template)</td></tr></tbody></table>
       <CopyButton targetRef={templateRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Before adding ANY new work, fill out this quick assessment. If you can&apos;t answer &ldquo;What will we stop?&rdquo; then you can&apos;t add the new work. It&apos;s that simple.</p>
       <table style={S.tbl}>
@@ -115,7 +115,7 @@ function StopDoingRulesContent() {
 
   const renderExamples = () => (
     <div ref={examplesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>REAL-WORLD EXAMPLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>REAL-WORLD EXAMPLES</td></tr></tbody></table>
       <CopyButton targetRef={examplesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

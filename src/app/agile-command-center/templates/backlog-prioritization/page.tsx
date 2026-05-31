@@ -57,7 +57,7 @@ function BacklogPrioritizationContent() {
 
   const renderMoscow = () => (
     <div ref={moscowRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🏷️ MoSCoW PRIORITIZATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🏷️ MoSCoW PRIORITIZATION</td></tr></tbody></table>
       <CopyButton targetRef={moscowRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Must = non-negotiable for release &nbsp;|&nbsp; Should = important but not critical &nbsp;|&nbsp; Could = nice to have &nbsp;|&nbsp; Won&apos;t = explicitly out</p>
       <table style={LT}><tbody><tr>
@@ -103,7 +103,7 @@ function BacklogPrioritizationContent() {
 
   const renderWSJF = () => (
     <div ref={wsjfRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 WSJF-LITE SCORING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 WSJF-LITE SCORING</td></tr></tbody></table>
       <CopyButton targetRef={wsjfRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>WSJF = (Business Value + Time Criticality + Risk Reduction) / Job Size. Score 1–5 each. Higher WSJF = do first.</p>
       <table style={S.tbl}>
@@ -149,7 +149,7 @@ function BacklogPrioritizationContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 PRIORITY SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 PRIORITY SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

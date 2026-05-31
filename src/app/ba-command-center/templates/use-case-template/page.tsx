@@ -102,7 +102,7 @@ function UseCaseContent() {
 
   const renderMainFlow = () => (
     <div ref={mainRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>▶️ MAIN FLOW (Happy Path)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>▶️ MAIN FLOW (Happy Path)</td></tr></tbody></table>
       <CopyButton targetRef={mainRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -172,7 +172,7 @@ function UseCaseContent() {
           </table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "5px" }}>
-          <div style={S.sectionBanner(C.secondary)}>⚠️ EXCEPTION FLOWS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>⚠️ EXCEPTION FLOWS</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead>
               <tr>
@@ -241,7 +241,7 @@ function UseCaseContent() {
 
   const renderCatalog = () => (
     <div ref={catalogRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📚 USE CASE CATALOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📚 USE CASE CATALOG</td></tr></tbody></table>
       <CopyButton targetRef={catalogRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

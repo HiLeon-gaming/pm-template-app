@@ -32,7 +32,7 @@ function ParkingLotContent() {
 
   const renderActive = () => (
     <div ref={activeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>PARKED ITEMS &mdash; To Be Addressed Later</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>PARKED ITEMS &mdash; To Be Addressed Later</td></tr></tbody></table>
       <CopyButton targetRef={activeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Capture off-topic items without losing them. Keeps meetings on track while honoring every contribution.</p>
       <table style={S.tbl}>
@@ -72,7 +72,7 @@ function ParkingLotContent() {
 
   const renderResolved = () => (
     <div ref={resolvedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>RESOLVED / CLOSED ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RESOLVED / CLOSED ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={resolvedRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

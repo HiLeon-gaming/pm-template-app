@@ -68,7 +68,7 @@ function ReleaseReadinessContent() {
 
   const renderChecklist = () => (
     <div ref={checklistRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ RELEASE READINESS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ RELEASE READINESS</td></tr></tbody></table>
       <CopyButton targetRef={checklistRef} label="Copy Section" />
 
       {checkCategory("CODE & BUILD", "🔧", accentDark, [
@@ -107,7 +107,7 @@ function ReleaseReadinessContent() {
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>✍️ RELEASE SIGN-OFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>✍️ RELEASE SIGN-OFF</td></tr></tbody></table>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

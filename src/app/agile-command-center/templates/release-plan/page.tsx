@@ -47,7 +47,7 @@ function ReleasePlanContent() {
 
   const renderReleases = () => (
     <div ref={releasesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 RELEASE OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 RELEASE OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={releasesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>Release Goal</td><td style={{ ...S.td0, height: "40px" }}>[e.g., Launch checkout v2 with 3 new payment methods and under 2s mobile load time]</td></tr>
@@ -90,7 +90,7 @@ function ReleasePlanContent() {
 
   const renderScope = () => (
     <div ref={scopeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 SCOPE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 SCOPE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={scopeRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -119,7 +119,7 @@ function ReleasePlanContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚠️ RELEASE RISKS &amp; MITIGATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚠️ RELEASE RISKS &amp; MITIGATIONS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

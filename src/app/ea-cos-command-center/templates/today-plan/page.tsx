@@ -33,7 +33,7 @@ function TodayPlanContent() {
 
   const renderTop = () => (
     <div ref={topRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 TODAY&apos;S TOP 3 &mdash; If These Get Done, Today Is a Win</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 TODAY&apos;S TOP 3 &mdash; If These Get Done, Today Is a Win</td></tr></tbody></table>
       <CopyButton targetRef={topRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "15%" }}>Date</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[Day, MM/DD/YYYY]</td></tr>
@@ -73,7 +73,7 @@ function TodayPlanContent() {
 
   const renderMeetings = () => (
     <div ref={meetingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📅 MUST-DO MEETINGS TODAY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📅 MUST-DO MEETINGS TODAY</td></tr></tbody></table>
       <CopyButton targetRef={meetingsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -105,7 +105,7 @@ function TodayPlanContent() {
 
   const renderEod = () => (
     <div ref={eodRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>🌙 END-OF-DAY CHECK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>🌙 END-OF-DAY CHECK</td></tr></tbody></table>
       <CopyButton targetRef={eodRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[

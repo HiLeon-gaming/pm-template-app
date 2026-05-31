@@ -32,7 +32,7 @@ function TravelItineraryContent() {
 
   const renderBookings = () => (
     <div ref={bookingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>BOOKINGS &amp; CONFIRMATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>BOOKINGS &amp; CONFIRMATIONS</td></tr></tbody></table>
       <CopyButton targetRef={bookingsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -67,7 +67,7 @@ function TravelItineraryContent() {
 
   const renderSchedule = () => (
     <div ref={scheduleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>DAY-BY-DAY SCHEDULE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>DAY-BY-DAY SCHEDULE</td></tr></tbody></table>
       <CopyButton targetRef={scheduleRef} label="Copy Section" />
       {["Day 1 — 03/20 (Travel + Evening)", "Day 2 — 03/21 (Full Day)", "Day 3 — 03/22 (Morning + Departure)"].map((day, di) => (
         <React.Fragment key={di}>

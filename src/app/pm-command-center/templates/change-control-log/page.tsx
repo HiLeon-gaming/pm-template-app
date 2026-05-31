@@ -103,7 +103,7 @@ function ChangeControlLogContent() {
 
   const renderImpact = () => (
     <div ref={impactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> CUMULATIVE CHANGE IMPACT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> CUMULATIVE CHANGE IMPACT</td></tr></tbody></table>
       <CopyButton targetRef={impactRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

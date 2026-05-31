@@ -36,7 +36,7 @@ function ConflictContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>CONFLICT CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>CONFLICT CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Document the situation clearly and factually. Separate facts from feelings. This helps you prepare for a productive resolution conversation.</p>
       <table style={S.tbl}>
@@ -70,7 +70,7 @@ function ConflictContent() {
 
   const renderPlan = () => (
     <div ref={planRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>RESOLUTION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>RESOLUTION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={planRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Plan your approach before having the conversation. Going in prepared dramatically increases the chances of a productive outcome.</p>
       <table style={S.tbl}>
@@ -104,7 +104,7 @@ function ConflictContent() {
 
   const renderPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>POST-CONVERSATION NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>POST-CONVERSATION NOTES</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Fill this out immediately after the resolution conversation. What was agreed? What changed? What are the next steps?</p>
       <table style={S.tbl}>

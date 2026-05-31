@@ -46,7 +46,7 @@ function VelocityTrackerContent() {
 
   const renderVelocity = () => (
     <div ref={velocityRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 SPRINT VELOCITY LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 SPRINT VELOCITY LOG</td></tr></tbody></table>
       <CopyButton targetRef={velocityRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track committed vs. completed points each sprint. Use the 3-sprint average for capacity planning.</p>
       <table style={S.tbl}>
@@ -86,7 +86,7 @@ function VelocityTrackerContent() {
 
   const renderAnalysis = () => (
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔍 VELOCITY ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔍 VELOCITY ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={analysisRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -114,7 +114,7 @@ function VelocityTrackerContent() {
 
   const renderForecast = () => (
     <div ref={forecastRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔮 CAPACITY FORECAST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔮 CAPACITY FORECAST</td></tr></tbody></table>
       <CopyButton targetRef={forecastRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Use the 3-sprint average to forecast how much work you can realistically complete.</p>
       <table style={S.tbl}>

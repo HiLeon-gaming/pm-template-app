@@ -36,7 +36,7 @@ function RepairContent() {
 
   const renderAssess = () => (
     <div ref={assessRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>SITUATION ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>SITUATION ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={assessRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Before you apologize, understand exactly what went wrong, why, and how it affected the other person. A vague apology is worse than no apology. Be specific and honest with yourself.</p>
       <table style={S.tbl}>
@@ -70,7 +70,7 @@ function RepairContent() {
 
   const renderPlan = () => (
     <div ref={planRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>APOLOGY &amp; REPAIR PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>APOLOGY &amp; REPAIR PLAN</td></tr></tbody></table>
       <CopyButton targetRef={planRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A good professional apology has 5 parts: acknowledge, take responsibility, explain (briefly), make it right, and prevent recurrence. Plan each element before you have the conversation.</p>
       <table style={S.tbl}>
@@ -125,7 +125,7 @@ function RepairContent() {
 
   const renderFollow = () => (
     <div ref={followRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>POST-APOLOGY FOLLOW-THROUGH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>POST-APOLOGY FOLLOW-THROUGH</td></tr></tbody></table>
       <CopyButton targetRef={followRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>The apology is step one. Follow-through is what actually rebuilds trust. Words mean nothing without changed behavior.</p>
       <table style={S.tbl}>

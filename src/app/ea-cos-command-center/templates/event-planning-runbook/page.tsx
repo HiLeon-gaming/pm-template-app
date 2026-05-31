@@ -33,7 +33,7 @@ function EventPlanningContent() {
 
   const renderDetails = () => (
     <div ref={detailsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>EVENT OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>EVENT OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={detailsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Event Name</td><td style={{ ...S.td0, fontWeight: 700, fontSize: "13px" }}>[Event Title]</td></tr>
@@ -49,7 +49,7 @@ function EventPlanningContent() {
 
   const renderTimeline = () => (
     <div ref={timelineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>PLANNING TIMELINE &amp; VENDORS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>PLANNING TIMELINE &amp; VENDORS</td></tr></tbody></table>
       <CopyButton targetRef={timelineRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -88,7 +88,7 @@ function EventPlanningContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>EVENT DAY AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>EVENT DAY AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

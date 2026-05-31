@@ -127,7 +127,7 @@ function UATSignoffContent() {
 
   const renderExit = () => (
     <div ref={exitRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🏁 EXIT CRITERIA VALIDATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🏁 EXIT CRITERIA VALIDATION</td></tr></tbody></table>
       <CopyButton targetRef={exitRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -205,7 +205,7 @@ function UATSignoffContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✍️ FORMAL SIGN-OFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✍️ FORMAL SIGN-OFF</td></tr></tbody></table>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>By signing below, I confirm that User Acceptance Testing has been completed to my satisfaction and I approve the solution for production deployment.</p>
       <table style={S.tbl}>

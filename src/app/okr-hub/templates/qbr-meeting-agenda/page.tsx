@@ -36,7 +36,7 @@ function QBRAgendaContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>QBR AGENDA (90 Minutes)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>QBR AGENDA (90 Minutes)</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>The QBR is the most important governance meeting of the quarter. Look back, score, learn, and set direction for the next quarter.</p>
       <table style={S.tbl}>

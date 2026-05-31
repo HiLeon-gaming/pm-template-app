@@ -46,7 +46,7 @@ function TeamOffsiteContent() {
 
   const renderSchedule = () => (
     <div ref={scheduleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 DAY SCHEDULE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 DAY SCHEDULE</td></tr></tbody></table>
       <CopyButton targetRef={scheduleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -89,7 +89,7 @@ function TeamOffsiteContent() {
 
   const renderOutcomes = () => (
     <div ref={outcomesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>✅ OUTCOMES &amp; COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>✅ OUTCOMES &amp; COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={outcomesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Decisions Made</td><td style={S.td0}>[List all decisions from the day]</td></tr>
@@ -103,7 +103,7 @@ function TeamOffsiteContent() {
 
   const renderLogistics = () => (
     <div ref={logisticsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📦 LOGISTICS CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📦 LOGISTICS CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={logisticsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Venue booked?</td><td style={S.td0}>[ ] Yes &mdash; [Venue details, address, room name]</td></tr>

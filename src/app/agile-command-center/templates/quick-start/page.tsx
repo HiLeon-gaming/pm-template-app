@@ -64,7 +64,7 @@ function QuickStartContent() {
 
   const renderSetup = () => (
     <div ref={setupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🛠️ PHASE 1 — INITIAL SETUP (45 min)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🛠️ PHASE 1 — INITIAL SETUP (45 min)</td></tr></tbody></table>
       <CopyButton targetRef={setupRef} label="Copy Section" />
       {checklistSection("One-Time Setup", "📋", accentDark, [
         { task: "Define your product vision and success outcomes", time: "10 min", template: "Product Vision + Outcome Statement" },
@@ -79,7 +79,7 @@ function QuickStartContent() {
 
   const renderSprint = () => (
     <div ref={sprintRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🏃 PHASE 2 — EVERY SPRINT START (60–90 min)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🏃 PHASE 2 — EVERY SPRINT START (60–90 min)</td></tr></tbody></table>
       <CopyButton targetRef={sprintRef} label="Copy Section" />
       {checklistSection("Sprint Start Rhythm", "⚡", "#059669", [
         { task: "Check team capacity and availability", time: "10 min", template: "Capacity Planner" },
@@ -92,7 +92,7 @@ function QuickStartContent() {
 
   const renderDaily = () => (
     <div ref={dailyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>☀️ PHASE 3 — DAILY RHYTHM (5–10 min)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>☀️ PHASE 3 — DAILY RHYTHM (5–10 min)</td></tr></tbody></table>
       <CopyButton targetRef={dailyRef} label="Copy Section" />
       {checklistSection("Daily Flow", "🔄", "#F59E0B", [
         { task: "Run daily scrum — capture yesterday/today/blockers", time: "5 min", template: "Daily Scrum Notes" },
@@ -104,7 +104,7 @@ function QuickStartContent() {
 
   const renderEnd = () => (
     <div ref={endRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🏁 PHASE 4 — END OF SPRINT (60 min)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🏁 PHASE 4 — END OF SPRINT (60 min)</td></tr></tbody></table>
       <CopyButton targetRef={endRef} label="Copy Section" />
       {checklistSection("Sprint Close Rhythm", "🎯", "#DC2626", [
         { task: "Run sprint review / demo — capture what was shown & feedback", time: "30 min", template: "Sprint Review / Demo Notes" },
@@ -117,7 +117,7 @@ function QuickStartContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 PRO TIPS FOR SUCCESS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 PRO TIPS FOR SUCCESS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>

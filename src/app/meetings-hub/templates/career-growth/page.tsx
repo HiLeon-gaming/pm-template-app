@@ -47,7 +47,7 @@ function CareerGrowthContent() {
 
   const renderVision = () => (
     <div ref={visionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 CAREER VISION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 CAREER VISION</td></tr></tbody></table>
       <CopyButton targetRef={visionRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "33.3%", paddingRight: "4px" }}>
@@ -74,7 +74,7 @@ function CareerGrowthContent() {
 
   const renderSkills = () => (
     <div ref={skillsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 SKILLS GAP ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 SKILLS GAP ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={skillsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -110,7 +110,7 @@ function CareerGrowthContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DEVELOPMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DEVELOPMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

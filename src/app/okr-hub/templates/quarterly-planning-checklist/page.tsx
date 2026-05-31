@@ -37,7 +37,7 @@ function QPChecklistContent() {
 
   const renderPre = () => (
     <div ref={preRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>PRE-WORK (Before the Planning Session)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>PRE-WORK (Before the Planning Session)</td></tr></tbody></table>
       <CopyButton targetRef={preRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Do this 1&ndash;2 weeks before your quarterly planning session. Show up prepared, not scrambling.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function QPChecklistContent() {
 
   const renderMeet = () => (
     <div ref={meetRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>PLANNING SESSION AGENDA (2&ndash;4 Hours)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>PLANNING SESSION AGENDA (2&ndash;4 Hours)</td></tr></tbody></table>
       <CopyButton targetRef={meetRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>This is your quarterly planning meeting flow. Follow this agenda to stay focused and leave with clear commitments.</p>
       <table style={S.tbl}>

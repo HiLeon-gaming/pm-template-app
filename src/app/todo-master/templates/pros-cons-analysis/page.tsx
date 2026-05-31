@@ -204,7 +204,7 @@ function ProsConsContent() {
 
   const renderGutCheck = () => (
     <div ref={gutRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🧠 GUT-CHECK &amp; INTUITION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🧠 GUT-CHECK &amp; INTUITION</td></tr></tbody></table>
       <CopyButton targetRef={gutRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

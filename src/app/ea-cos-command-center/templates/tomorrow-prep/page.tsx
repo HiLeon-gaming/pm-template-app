@@ -32,7 +32,7 @@ function TomorrowPrepContent() {
 
   const renderPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 TOMORROW&apos;S SETUP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 TOMORROW&apos;S SETUP</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "20%" }}>Tomorrow&apos;s Date</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[Day, MM/DD/YYYY]</td></tr>
@@ -71,7 +71,7 @@ function TomorrowPrepContent() {
 
   const renderRemind = () => (
     <div ref={remindRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ REMINDERS &amp; TEE-UPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ REMINDERS &amp; TEE-UPS</td></tr></tbody></table>
       <CopyButton targetRef={remindRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "25%" }}>Docs to Print / Send</td><td style={S.td0}>[Board deck printout, forecast 1-pager for CFO meeting]</td></tr>

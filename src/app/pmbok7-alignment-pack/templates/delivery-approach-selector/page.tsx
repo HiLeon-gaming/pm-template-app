@@ -90,7 +90,7 @@ function DeliveryApproachSelectorContent() {
 
   const renderComp = () => (
     <div ref={compRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>🔄 APPROACH COMPARISON</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>🔄 APPROACH COMPARISON</td></tr></tbody></table>
       <CopyButton targetRef={compRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -149,7 +149,7 @@ function DeliveryApproachSelectorContent() {
 
   const renderDecision = () => (
     <div ref={decisionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>✅ DELIVERY APPROACH DECISION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>✅ DELIVERY APPROACH DECISION</td></tr></tbody></table>
       <CopyButton targetRef={decisionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Selected Approach</td><td style={S.td0}><span style={{ ...S.badge("#CCFBF1", "#0D9488"), fontSize: "12px", fontWeight: 800 }}>HYBRID (Agile-Leaning)</span></td></tr>

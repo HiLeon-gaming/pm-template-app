@@ -46,7 +46,7 @@ function DependencyMapContent() {
 
   const renderDeps = () => (
     <div ref={depsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 ACTIVE DEPENDENCIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 ACTIVE DEPENDENCIES</td></tr></tbody></table>
       <CopyButton targetRef={depsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track every external dependency that could delay your team. Most project delays come from unmanaged dependencies.</p>
       <table style={S.tbl}>
@@ -90,7 +90,7 @@ function DependencyMapContent() {
 
   const renderRisk = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚨 DEPENDENCY RISK ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚨 DEPENDENCY RISK ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -112,7 +112,7 @@ function DependencyMapContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DEPENDENCY ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DEPENDENCY ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -43,7 +43,7 @@ function QuickCaptureContent() {
   const renderCapture = () => (
     <div ref={captureRef} style={{ marginBottom: "12px" }}>
       <CopyButton targetRef={captureRef} label="Copy Section" />
-      <div style={S.sectionBanner(accent)}>📝 WHAT WAS DISCUSSED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 WHAT WAS DISCUSSED</td></tr></tbody></table>
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, minHeight: "80px", padding: "12px 14px", fontSize: "11px", lineHeight: "1.8" }}>
           [Free-form notes. Just capture the key points.]<br /><br />

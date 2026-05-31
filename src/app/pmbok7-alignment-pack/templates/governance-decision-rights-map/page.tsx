@@ -87,7 +87,7 @@ function GovernanceDecisionRightsMapContent() {
 
   const renderEscalation = () => (
     <div ref={escalationRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>🚨 ESCALATION PATH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>🚨 ESCALATION PATH</td></tr></tbody></table>
       <CopyButton targetRef={escalationRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -151,7 +151,7 @@ function GovernanceDecisionRightsMapContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>🔒 FORMAL APPROVAL REQUIREMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>🔒 FORMAL APPROVAL REQUIREMENTS</td></tr></tbody></table>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={S.thSecondary}>Requires Formal Approval</th><th style={{ ...S.thSecondary, width: "15%" }}>Approver</th><th style={{ ...S.thSecondary, width: "12%" }}>Method</th></tr></thead>

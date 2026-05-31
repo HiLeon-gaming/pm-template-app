@@ -46,7 +46,7 @@ function VelocityMetricsContent() {
 
   const renderVelocity = () => (
     <div ref={velocityRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📈 VELOCITY HISTORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📈 VELOCITY HISTORY</td></tr></tbody></table>
       <CopyButton targetRef={velocityRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -91,7 +91,7 @@ function VelocityMetricsContent() {
 
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎯 KEY METRICS DASHBOARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 KEY METRICS DASHBOARD</td></tr></tbody></table>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -143,7 +143,7 @@ function VelocityMetricsContent() {
 
   const renderInsights = () => (
     <div ref={insightsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 INSIGHTS &amp; RECOMMENDATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 INSIGHTS &amp; RECOMMENDATIONS</td></tr></tbody></table>
       <CopyButton targetRef={insightsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>Velocity Trend</td><td style={S.td0}>[Stabilizing around 22-26 pts after early over-commit. Team is right-sizing commitments.]</td></tr>

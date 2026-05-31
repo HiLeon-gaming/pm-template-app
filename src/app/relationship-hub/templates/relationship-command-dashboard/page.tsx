@@ -39,7 +39,7 @@ function DashboardContent() {
 
   const renderHotStakeholders = () => (
     <div ref={hotRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>HOT STAKEHOLDERS &mdash; NEED ATTENTION THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>HOT STAKEHOLDERS &mdash; NEED ATTENTION THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={hotRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>These are the people who can make or break your week. Review every Monday morning. If a stakeholder is &quot;Red,&quot; they should be your first conversation today.</p>
       <table style={S.tbl}>
@@ -79,7 +79,7 @@ function DashboardContent() {
 
   const renderFollowUps = () => (
     <div ref={followRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>FOLLOW-UPS DUE THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>FOLLOW-UPS DUE THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={followRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every missed follow-up erodes trust. Check this list daily. Mark items &quot;Done&quot; immediately after completing them so you always know where you stand.</p>
       <table style={S.tbl}>
@@ -119,7 +119,7 @@ function DashboardContent() {
 
   const renderCommitments = () => (
     <div ref={commitRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#EA580C")}>COMMITMENTS DUE &mdash; PROMISES TO KEEP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>COMMITMENTS DUE &mdash; PROMISES TO KEEP</td></tr></tbody></table>
       <CopyButton targetRef={commitRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Promises you made to stakeholders. Broken promises = broken trust. If you cannot deliver on time, proactively communicate BEFORE the deadline &mdash; never after.</p>
       <table style={S.tbl}>
@@ -156,7 +156,7 @@ function DashboardContent() {
 
   const renderRisks = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>STAKEHOLDER RISKS &amp; LANDMINES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>STAKEHOLDER RISKS &amp; LANDMINES</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Risks that come from people, not projects. A disengaged sponsor or a blocker in legal can derail everything. Track them here and mitigate proactively.</p>
       <table style={S.tbl}>
@@ -193,7 +193,7 @@ function DashboardContent() {
 
   const renderTouchpoints = () => (
     <div ref={touchRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>UPCOMING TOUCHPOINTS &amp; KEY MEETINGS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>UPCOMING TOUCHPOINTS &amp; KEY MEETINGS</td></tr></tbody></table>
       <CopyButton targetRef={touchRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Prep before every meeting. Walking in unprepared to a stakeholder meeting is worse than canceling it. Your goal should be clear BEFORE you sit down.</p>
       <table style={S.tbl}>

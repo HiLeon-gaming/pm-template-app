@@ -102,7 +102,7 @@ function LessonsLearnedRegisterContent() {
 
   const renderAnalysis = () => (
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📊 LESSON ANALYSIS BY CATEGORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📊 LESSON ANALYSIS BY CATEGORY</td></tr></tbody></table>
       <CopyButton targetRef={analysisRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

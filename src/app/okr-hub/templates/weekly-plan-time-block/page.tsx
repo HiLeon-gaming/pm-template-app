@@ -33,7 +33,7 @@ function WeeklyPlanContent() {
 
   const renderBlock = () => (
     <div ref={blockRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>TIME BLOCK SCHEDULE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>TIME BLOCK SCHEDULE</td></tr></tbody></table>
       <CopyButton targetRef={blockRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Block your calendar for OKR work FIRST. If it&apos;s not on the calendar, it won&apos;t happen. Protect focus time like a meeting you can&apos;t cancel.</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function WeeklyPlanContent() {
 
   const renderFocus = () => (
     <div ref={focusRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>FOCUS ZONES — WHAT GETS TIME THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>FOCUS ZONES — WHAT GETS TIME THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={focusRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -109,7 +109,7 @@ function WeeklyPlanContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>TIME PROTECTION RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>TIME PROTECTION RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>

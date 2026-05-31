@@ -35,7 +35,7 @@ function PortfolioContent() {
 
   const renderRAG = () => (
     <div ref={ragRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER HEALTH PORTFOLIO</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER HEALTH PORTFOLIO</td></tr></tbody></table>
       <CopyButton targetRef={ragRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your at-a-glance view of every key stakeholder relationship. Red/Amber/Green status with trend direction. This is the page you pull up when someone asks &ldquo;How are your stakeholder relationships?&rdquo; Review monthly. Update when things change.</p>
       <table style={S.tbl}>
@@ -80,7 +80,7 @@ function PortfolioContent() {
 
   const renderTrend = () => (
     <div ref={trendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>PORTFOLIO SUMMARY &amp; TREND</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>PORTFOLIO SUMMARY &amp; TREND</td></tr></tbody></table>
       <CopyButton targetRef={trendRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

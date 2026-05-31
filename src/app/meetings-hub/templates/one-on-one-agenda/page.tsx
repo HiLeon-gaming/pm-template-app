@@ -66,14 +66,14 @@ function OneOnOneAgendaContent() {
 
       <table style={{ ...LT, marginTop: "6px" }}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner(accent)}>💬 FEEDBACK</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💬 FEEDBACK</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.tdLabel, width: "35%" }}>From you to them</td><td style={S.td0}>[Positive or constructive feedback]</td></tr>
             <tr><td style={S.tdLabelAlt}>From them to you</td><td style={S.tdAlt}>[Ask: &ldquo;What can I do better as your manager?&rdquo;]</td></tr>
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner(accentDark)}>🤝 SUPPORT NEEDED</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🤝 SUPPORT NEEDED</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.tdLabel, width: "35%" }}>What do they need?</td><td style={S.td0}>[Resources, decisions, air cover, connections]</td></tr>
             <tr><td style={S.tdLabelAlt}>Your commitment</td><td style={S.tdAlt}>[What you will do by when]</td></tr>
@@ -85,7 +85,7 @@ function OneOnOneAgendaContent() {
 
   const renderGrowth = () => (
     <div ref={growthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🌱 GROWTH &amp; DEVELOPMENT (Monthly)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🌱 GROWTH &amp; DEVELOPMENT (Monthly)</td></tr></tbody></table>
       <CopyButton targetRef={growthRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Career Goal Progress</td><td style={S.td0}>[Check in on their stated career goals — any progress?]</td></tr>

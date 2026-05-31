@@ -35,7 +35,7 @@ function OwesContent() {
 
   const renderYouOwe = () => (
     <div ref={youOweRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>WHAT YOU OWE OTHERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>WHAT YOU OWE OTHERS</td></tr></tbody></table>
       <CopyButton targetRef={youOweRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Everything you&apos;ve promised to deliver. These are YOUR reputation on the line. Deliver early when possible, communicate proactively when you can&apos;t.</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function OwesContent() {
 
   const renderTheyOwe = () => (
     <div ref={theyOweRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>WHAT OTHERS OWE YOU</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>WHAT OTHERS OWE YOU</td></tr></tbody></table>
       <CopyButton targetRef={theyOweRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Everything others have promised to deliver to you. Don&apos;t assume it&apos;s coming &mdash; follow up proactively. Your project depends on these deliverables.</p>
       <table style={S.tbl}>

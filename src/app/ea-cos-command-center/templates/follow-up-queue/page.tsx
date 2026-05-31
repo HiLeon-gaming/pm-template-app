@@ -32,7 +32,7 @@ function FollowUpQueueContent() {
 
   const renderQueue = () => (
     <div ref={queueRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 PRIORITIZED FOLLOW-UP LIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 PRIORITIZED FOLLOW-UP LIST</td></tr></tbody></table>
       <CopyButton targetRef={queueRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Sorted by next touchpoint date. Review each morning. If something goes silent for 3+ days, escalate.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function FollowUpQueueContent() {
 
   const renderDone = () => (
     <div ref={doneRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>✅ COMPLETED THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>✅ COMPLETED THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={doneRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

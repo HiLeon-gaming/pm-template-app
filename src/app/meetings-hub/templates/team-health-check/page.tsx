@@ -45,7 +45,7 @@ function TeamHealthCheckContent() {
 
   const renderRatings = () => (
     <div ref={ratingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 HEALTH DIMENSIONS (Rate 1-5)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 HEALTH DIMENSIONS (Rate 1-5)</td></tr></tbody></table>
       <CopyButton targetRef={ratingsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>1 = Critical &bull; 2 = Struggling &bull; 3 = Neutral &bull; 4 = Good &bull; 5 = Excellent</p>
       <table style={S.tbl}>
@@ -90,7 +90,7 @@ function TeamHealthCheckContent() {
 
   const renderTrends = () => (
     <div ref={trendsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📈 TREND HISTORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📈 TREND HISTORY</td></tr></tbody></table>
       <CopyButton targetRef={trendsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -124,7 +124,7 @@ function TeamHealthCheckContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ IMPROVEMENT PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ IMPROVEMENT PLAN</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Top Priority</td><td style={{ ...S.td0, fontWeight: 700, color: "#DC2626" }}>[Lowest-scoring dimension — what will you do about it?]</td></tr>

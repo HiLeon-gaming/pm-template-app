@@ -43,7 +43,7 @@ function TeamStandupContent() {
 
   const renderGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔄 STANDUP GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔄 STANDUP GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -71,7 +71,7 @@ function TeamStandupContent() {
 
   const renderFocus = () => (
     <div ref={focusRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎯 TEAM FOCUS &amp; ESCALATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 TEAM FOCUS &amp; ESCALATIONS</td></tr></tbody></table>
       <CopyButton targetRef={focusRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Team Priority Today</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[What\u2019s the #1 thing we need to get done today?]</td></tr>

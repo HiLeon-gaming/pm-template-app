@@ -36,7 +36,7 @@ function NotesContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MEETING SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MEETING SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Capture the essentials within 30 minutes of the meeting ending. Focus on outputs (decisions, actions), not a transcript of the discussion.</p>
       <table style={S.tbl}>
@@ -65,7 +65,7 @@ function NotesContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every decision should be explicit. If it wasn&apos;t stated clearly, it wasn&apos;t decided. Ambiguity here causes problems later.</p>
       <table style={S.tbl}>
@@ -99,7 +99,7 @@ function NotesContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every action needs an owner and a deadline. Actions without owners don&apos;t get done. Actions without deadlines get done &quot;eventually&quot; (i.e., never).</p>
       <table style={S.tbl}>

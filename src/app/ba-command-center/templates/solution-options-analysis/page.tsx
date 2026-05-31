@@ -130,7 +130,7 @@ function SolutionOptionsContent() {
 
   const renderScoring = () => (
     <div ref={scoringRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📊 WEIGHTED SCORING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📊 WEIGHTED SCORING</td></tr></tbody></table>
       <CopyButton targetRef={scoringRef} label="Copy Section" />
       <table style={{ ...S.tbl, marginBottom: "6px" }}>
         <thead><tr><td colSpan={3} style={{ backgroundColor: "#EDE9FE", color: "#7C3AED", padding: "8px 12px", fontFamily: S.font, fontSize: "11px", fontWeight: 800, border: `1.5px solid ${C.border}`, borderBottom: "3px solid #7C3AED" }}>EVALUATION CRITERIA &amp; WEIGHTS</td></tr></thead>
@@ -219,7 +219,7 @@ function SolutionOptionsContent() {
 
   const renderRecommendation = () => (
     <div ref={recRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🏆 RECOMMENDATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🏆 RECOMMENDATION</td></tr></tbody></table>
       <CopyButton targetRef={recRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

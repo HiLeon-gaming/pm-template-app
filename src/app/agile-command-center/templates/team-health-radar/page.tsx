@@ -51,7 +51,7 @@ function TeamHealthRadarContent() {
 
   const renderRadar = () => (
     <div ref={radarRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 HEALTH DIMENSIONS (1-5 Scale)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 HEALTH DIMENSIONS (1-5 Scale)</td></tr></tbody></table>
       <CopyButton targetRef={radarRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Each team member votes anonymously. Average is recorded. Trend compares to previous sprint.</p>
       <table style={S.tbl}>
@@ -101,7 +101,7 @@ function TeamHealthRadarContent() {
 
   const renderTrends = () => (
     <div ref={trendsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📈 MULTI-SPRINT TREND</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📈 MULTI-SPRINT TREND</td></tr></tbody></table>
       <CopyButton targetRef={trendsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -135,7 +135,7 @@ function TeamHealthRadarContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 HEALTH IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 HEALTH IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>Lowest Dimension</td><td style={S.td0}><span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>Autonomy (3.0)</span> &amp; <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Technical Practices (3.0)</span></td></tr>

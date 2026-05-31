@@ -48,7 +48,7 @@ function MeasurementStrategyContent() {
 
   const renderApproach = () => (
     <div ref={approachRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 MEASUREMENT APPROACH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 MEASUREMENT APPROACH</td></tr></tbody></table>
       <CopyButton targetRef={approachRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Leading Indicators</td><td style={S.td0}>[Sprint velocity trend, burn-up trajectory, risk exposure index, stakeholder satisfaction pulse]</td></tr>
@@ -62,7 +62,7 @@ function MeasurementStrategyContent() {
 
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📏 KEY METRICS REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📏 KEY METRICS REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -94,7 +94,7 @@ function MeasurementStrategyContent() {
 
   const renderCadence = () => (
     <div ref={cadenceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📅 REVIEW CADENCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📅 REVIEW CADENCE</td></tr></tbody></table>
       <CopyButton targetRef={cadenceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "15%" }}>Cadence</th><th style={S.thSecondary}>What Gets Reviewed</th><th style={{ ...S.thSecondary, width: "15%" }}>Audience</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th></tr></thead>
@@ -116,7 +116,7 @@ function MeasurementStrategyContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ MEASUREMENT IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ MEASUREMENT IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

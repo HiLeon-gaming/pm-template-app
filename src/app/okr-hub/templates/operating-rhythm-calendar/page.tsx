@@ -37,7 +37,7 @@ function CalendarContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>YOUR RHYTHM AT A GLANCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>YOUR RHYTHM AT A GLANCE</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>An operating rhythm is simply your repeating schedule for reviewing goals, metrics, and progress. Think of it like brushing your teeth &mdash; same time, same routine, every time.</p>
       <table style={S.tbl}>
@@ -72,7 +72,7 @@ function CalendarContent() {
 
   const renderWeekly = () => (
     <div ref={weeklyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>WEEKLY RHYTHM CHECKLIST (Every Monday)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>WEEKLY RHYTHM CHECKLIST (Every Monday)</td></tr></tbody></table>
       <CopyButton targetRef={weeklyRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>This is the heartbeat of your system. 15 minutes every Monday keeps everything on track. Block it on your calendar right now.</p>
       <table style={S.tbl}>

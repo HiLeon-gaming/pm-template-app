@@ -179,7 +179,7 @@ function OneOnOneContent() {
 
   const renderFeedback = () => (
     <div ref={feedbackRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>💬 FEEDBACK EXCHANGE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>💬 FEEDBACK EXCHANGE</td></tr></tbody></table>
       <CopyButton targetRef={feedbackRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -248,7 +248,7 @@ function OneOnOneContent() {
 
   const renderPulse = () => (
     <div ref={pulseRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📊 ENGAGEMENT PULSE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📊 ENGAGEMENT PULSE</td></tr></tbody></table>
       <CopyButton targetRef={pulseRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

@@ -35,7 +35,7 @@ function WinsContent() {
 
   const renderWins = () => (
     <div ref={winsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>STAKEHOLDER: [NAME] &mdash; WINS &amp; CONTRIBUTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>STAKEHOLDER: [NAME] &mdash; WINS &amp; CONTRIBUTIONS</td></tr></tbody></table>
       <CopyButton targetRef={winsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track wins, contributions, and moments worth celebrating. People remember who noticed their successes. This log also helps you when you need to advocate for this stakeholder or write recommendations.</p>
       <table style={S.tbl}>
@@ -76,7 +76,7 @@ function WinsContent() {
 
   const renderRecognition = () => (
     <div ref={recRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>RECOGNITION PLAYBOOK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>RECOGNITION PLAYBOOK</td></tr></tbody></table>
       <CopyButton targetRef={recRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Understand how THIS person likes to be recognized. Generic thanks feels hollow. Personalized recognition builds lasting loyalty.</p>
       <table style={S.tbl}>

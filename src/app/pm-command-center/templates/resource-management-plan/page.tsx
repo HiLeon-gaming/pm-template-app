@@ -95,7 +95,7 @@ function ResourceManagementPlanContent() {
 
   const renderRoster = () => (
     <div ref={rosterRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📇 TEAM ROSTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📇 TEAM ROSTER</td></tr></tbody></table>
       <CopyButton targetRef={rosterRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -150,7 +150,7 @@ function ResourceManagementPlanContent() {
 
   const renderDevelopment = () => (
     <div ref={developmentRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📚 TEAM DEVELOPMENT & PERFORMANCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📚 TEAM DEVELOPMENT & PERFORMANCE</td></tr></tbody></table>
       <CopyButton targetRef={developmentRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

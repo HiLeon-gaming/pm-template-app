@@ -46,7 +46,7 @@ function ImpedimentLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 IMPEDIMENT TRACKER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 IMPEDIMENT TRACKER</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -90,7 +90,7 @@ function ImpedimentLogContent() {
 
   const renderEscalation = () => (
     <div ref={escalationRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⬆️ ESCALATION PATH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⬆️ ESCALATION PATH</td></tr></tbody></table>
       <CopyButton targetRef={escalationRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Level 1 (Team)</td><td style={S.td0}>[SM tries to resolve within 24 hours using team resources]</td></tr>
@@ -103,7 +103,7 @@ function ImpedimentLogContent() {
 
   const renderTrends = () => (
     <div ref={trendsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 IMPEDIMENT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 IMPEDIMENT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={trendsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

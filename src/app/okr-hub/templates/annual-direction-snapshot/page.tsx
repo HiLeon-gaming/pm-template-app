@@ -38,7 +38,7 @@ function AnnualDirectionContent() {
 
   const renderMission = () => (
     <div ref={missionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MISSION &amp; VISION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MISSION &amp; VISION</td></tr></tbody></table>
       <CopyButton targetRef={missionRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your mission is WHY your company exists. Your vision is WHERE you&apos;re going. These don&apos;t change often — they set the context for everything else.</p>
       <table style={S.tbl}><tbody>
@@ -51,7 +51,7 @@ function AnnualDirectionContent() {
 
   const renderThemes = () => (
     <div ref={themesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>ANNUAL THEMES FOR [YEAR]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>ANNUAL THEMES FOR [YEAR]</td></tr></tbody></table>
       <CopyButton targetRef={themesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Themes are your big bets for the year. You should have 2&ndash;4 max. They guide every quarterly OKR you set. If work doesn&apos;t support a theme, question why you&apos;re doing it.</p>
       <table style={S.tbl}>
@@ -85,7 +85,7 @@ function AnnualDirectionContent() {
 
   const renderFocus = () => (
     <div ref={focusRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>KEY FOCUS AREAS &amp; SUCCESS MEASURES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>KEY FOCUS AREAS &amp; SUCCESS MEASURES</td></tr></tbody></table>
       <CopyButton targetRef={focusRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>For each theme, what does success look like by end of year? These aren&apos;t OKRs yet — they&apos;re directional targets that OKRs will be built from each quarter.</p>
       <table style={S.tbl}>

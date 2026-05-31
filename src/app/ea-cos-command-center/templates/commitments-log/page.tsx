@@ -32,7 +32,7 @@ function CommitmentsLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 PROMISES MADE TO OTHERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 PROMISES MADE TO OTHERS</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track every commitment the exec has made externally. Protects trust and reputation.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function CommitmentsLogContent() {
 
   const renderRisk = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>⚠️ AT-RISK COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>⚠️ AT-RISK COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "12px 16px" }}>

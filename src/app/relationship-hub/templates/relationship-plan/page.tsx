@@ -37,7 +37,7 @@ function RelPlanContent() {
 
   const renderState = () => (
     <div ref={stateRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>CURRENT vs DESIRED RELATIONSHIP STATE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>CURRENT vs DESIRED RELATIONSHIP STATE</td></tr></tbody></table>
       <CopyButton targetRef={stateRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Be brutally honest about where the relationship is today. The gap between current and desired state defines your improvement plan.</p>
       <table style={S.tbl}>
@@ -71,7 +71,7 @@ function RelPlanContent() {
 
   const renderValue = () => (
     <div ref={valueRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>MUTUAL VALUE EXCHANGE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>MUTUAL VALUE EXCHANGE</td></tr></tbody></table>
       <CopyButton targetRef={valueRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Strong relationships are built on mutual value. What do each of you bring to the table? If either column is empty, the relationship is at risk.</p>
       <table style={LT}><tbody><tr>
@@ -125,7 +125,7 @@ function RelPlanContent() {
 
   const renderFriction = () => (
     <div ref={frictionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>CURRENT FRICTION &amp; ROOT CAUSES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>CURRENT FRICTION &amp; ROOT CAUSES</td></tr></tbody></table>
       <CopyButton targetRef={frictionRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Identify friction honestly. The \u201CYour Role\u201D column is the hardest and most important part \u2014 own your contribution to the problem.</p>
       <table style={S.tbl}>
@@ -159,7 +159,7 @@ function RelPlanContent() {
 
   const renderStrategy = () => (
     <div ref={stratRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#8B5CF6")}>RELATIONSHIP IMPROVEMENT STRATEGY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#8B5CF6")}>RELATIONSHIP IMPROVEMENT STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={stratRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Translate your gap analysis into specific, time-bound actions. Vague intentions don\u2019t improve relationships \u2014 specific commitments do.</p>
       <table style={S.tbl}>
@@ -191,7 +191,7 @@ function RelPlanContent() {
 
   const renderActions = () => (
     <div ref={actRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#EA580C")}>90-DAY ACTION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EA580C")}>90-DAY ACTION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={actRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Break your strategy into concrete milestones. Review weekly and adjust based on the stakeholder\u2019s response.</p>
       <table style={S.tbl}>

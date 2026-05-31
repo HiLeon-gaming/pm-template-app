@@ -107,7 +107,7 @@ function RiskRegisterContent() {
 
   const renderResponse = () => (
     <div ref={responseRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> RISK RESPONSE PLANS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> RISK RESPONSE PLANS</td></tr></tbody></table>
       <CopyButton targetRef={responseRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

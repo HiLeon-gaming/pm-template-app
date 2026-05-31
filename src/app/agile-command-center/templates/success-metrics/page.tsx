@@ -47,7 +47,7 @@ function SuccessMetricsContent() {
 
   const renderNorthStar = () => (
     <div ref={northRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⭐ NORTH STAR METRIC</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⭐ NORTH STAR METRIC</td></tr></tbody></table>
       <CopyButton targetRef={northRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>North Star Metric</td><td style={{ ...S.td0, fontWeight: 700, fontSize: "14px" }}>[e.g., Weekly Active Transactions]</td></tr>
@@ -63,7 +63,7 @@ function SuccessMetricsContent() {
 
   const renderLeading = () => (
     <div ref={leadingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🟢 LEADING INDICATORS (Predict Future Success)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🟢 LEADING INDICATORS (Predict Future Success)</td></tr></tbody></table>
       <CopyButton targetRef={leadingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -99,7 +99,7 @@ function SuccessMetricsContent() {
 
   const renderLagging = () => (
     <div ref={laggingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔵 LAGGING INDICATORS (Confirm Past Success)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔵 LAGGING INDICATORS (Confirm Past Success)</td></tr></tbody></table>
       <CopyButton targetRef={laggingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -135,7 +135,7 @@ function SuccessMetricsContent() {
 
   const renderDashboard = () => (
     <div ref={dashRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 METRIC HEALTH DASHBOARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 METRIC HEALTH DASHBOARD</td></tr></tbody></table>
       <CopyButton targetRef={dashRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

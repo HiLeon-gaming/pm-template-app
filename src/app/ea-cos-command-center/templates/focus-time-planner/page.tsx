@@ -32,7 +32,7 @@ function FocusTimePlannerContent() {
 
   const renderBlocks = () => (
     <div ref={blocksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>&#128338; THIS WEEK&apos;S PROTECTED FOCUS BLOCKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>&#128338; THIS WEEK&apos;S PROTECTED FOCUS BLOCKS</td></tr></tbody></table>
       <CopyButton targetRef={blocksRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Deep work blocks for the exec. These are sacred &mdash; defend them like meetings with the board.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function FocusTimePlannerContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>&#128721; FOCUS BLOCK DEFENSE RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>&#128721; FOCUS BLOCK DEFENSE RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[

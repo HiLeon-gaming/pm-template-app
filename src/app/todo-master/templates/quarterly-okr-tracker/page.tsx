@@ -175,7 +175,7 @@ function QuarterlyOKRContent() {
 
   const renderWeeklyCheckins = () => (
     <div ref={weeklyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📅 WEEKLY CONFIDENCE CHECK-INS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📅 WEEKLY CONFIDENCE CHECK-INS</td></tr></tbody></table>
       <CopyButton targetRef={weeklyRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>
         Update confidence scores weekly. Score 0.0–1.0 where 0.7+ = on track, 0.4–0.6 = at risk, below 0.4 = off track.

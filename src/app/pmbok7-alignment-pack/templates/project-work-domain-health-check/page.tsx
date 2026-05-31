@@ -47,7 +47,7 @@ function ProjectWorkDomainHealthCheckContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -77,7 +77,7 @@ function ProjectWorkDomainHealthCheckContent() {
 
   const renderBlockers = () => (
     <div ref={blockersRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚧 ACTIVE BLOCKERS &amp; IMPEDIMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚧 ACTIVE BLOCKERS &amp; IMPEDIMENTS</td></tr></tbody></table>
       <CopyButton targetRef={blockersRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -103,7 +103,7 @@ function ProjectWorkDomainHealthCheckContent() {
 
   const renderProcess = () => (
     <div ref={processRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 PROCESS METRICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 PROCESS METRICS</td></tr></tbody></table>
       <CopyButton targetRef={processRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Sprint Velocity (Current)</td><td style={S.td0}>[34 pts] — 3-sprint avg: [33 pts] — <span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>Stable</span></td></tr>
@@ -118,7 +118,7 @@ function ProjectWorkDomainHealthCheckContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ PROJECT WORK ACTIONS THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ PROJECT WORK ACTIONS THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "8%" }}>Due</th><th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Done?</th></tr></thead>

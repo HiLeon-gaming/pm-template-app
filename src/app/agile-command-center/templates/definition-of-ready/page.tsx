@@ -46,7 +46,7 @@ function DefinitionOfReadyContent() {
 
   const renderChecklist = () => (
     <div ref={checklistRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DoR CHECKLIST — Story Must Pass ALL Before Entering Sprint</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DoR CHECKLIST — Story Must Pass ALL Before Entering Sprint</td></tr></tbody></table>
       <CopyButton targetRef={checklistRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -89,7 +89,7 @@ function DefinitionOfReadyContent() {
 
   const renderExamples = () => (
     <div ref={examplesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📖 READY vs. NOT READY — EXAMPLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📖 READY vs. NOT READY — EXAMPLES</td></tr></tbody></table>
       <CopyButton targetRef={examplesRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -122,7 +122,7 @@ function DefinitionOfReadyContent() {
 
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔍 DoR HEALTH CHECK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔍 DoR HEALTH CHECK</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

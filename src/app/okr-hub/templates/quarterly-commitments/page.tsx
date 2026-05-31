@@ -37,7 +37,7 @@ function CommitmentsContent() {
 
   const renderCommit = () => (
     <div ref={commitRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>TEAM COMMITMENTS — Q[X] [YEAR]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>TEAM COMMITMENTS — Q[X] [YEAR]</td></tr></tbody></table>
       <CopyButton targetRef={commitRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A commitment is a promise. Each team states what they will deliver this quarter. This creates accountability and makes it crystal clear who&apos;s doing what.</p>
       <table style={S.tbl}>
@@ -80,7 +80,7 @@ function CommitmentsContent() {
 
   const renderDep = () => (
     <div ref={depRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>CROSS-TEAM DEPENDENCIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>CROSS-TEAM DEPENDENCIES</td></tr></tbody></table>
       <CopyButton targetRef={depRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A dependency is when one team&apos;s commitment depends on another team delivering first. Untracked dependencies are the #1 cause of missed deadlines.</p>
       <table style={S.tbl}>

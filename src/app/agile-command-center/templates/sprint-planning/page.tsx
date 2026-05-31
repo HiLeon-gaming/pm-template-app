@@ -48,7 +48,7 @@ function SprintPlanningContent() {
 
   const renderCapacity = () => (
     <div ref={capacityRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>👥 TEAM CAPACITY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>👥 TEAM CAPACITY</td></tr></tbody></table>
       <CopyButton targetRef={capacityRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -90,7 +90,7 @@ function SprintPlanningContent() {
 
   const renderGoal = () => (
     <div ref={goalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎯 SPRINT GOAL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎯 SPRINT GOAL</td></tr></tbody></table>
       <CopyButton targetRef={goalRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ backgroundColor: accent + "15", padding: "14px 16px", fontFamily: S.font, fontSize: "13px", fontWeight: 700, border: `1.5px solid ${accent}40`, color: C.primary, textAlign: "center" as const }}>
@@ -106,7 +106,7 @@ function SprintPlanningContent() {
 
   const renderStories = () => (
     <div ref={storiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 SELECTED STORIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 SELECTED STORIES</td></tr></tbody></table>
       <CopyButton targetRef={storiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -149,7 +149,7 @@ function SprintPlanningContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚠️ SPRINT RISKS &amp; CONSTRAINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚠️ SPRINT RISKS &amp; CONSTRAINTS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

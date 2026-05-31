@@ -68,7 +68,7 @@ function ProjectContextSnapshotContent() {
 
   const renderConstraints = () => (
     <div ref={constraintsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>🔒 CONSTRAINTS &amp; BOUNDARIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>🔒 CONSTRAINTS &amp; BOUNDARIES</td></tr></tbody></table>
       <CopyButton targetRef={constraintsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "20%" }}>Budget Constraint</td><td style={S.td0}>[$690,750 total including 10% contingency — no additional funding available]</td></tr>
@@ -105,7 +105,7 @@ function ProjectContextSnapshotContent() {
 
   const renderStakeholder = () => (
     <div ref={stakeholderRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>👥 CRITICAL STAKEHOLDERS (Top 5)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>👥 CRITICAL STAKEHOLDERS (Top 5)</td></tr></tbody></table>
       <CopyButton targetRef={stakeholderRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={S.thSecondary}>Stakeholder</th><th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Power</th><th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Interest</th><th style={S.thSecondary}>Key Concern</th></tr></thead>

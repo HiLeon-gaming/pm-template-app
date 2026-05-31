@@ -37,7 +37,7 @@ function WeeklyPrioritiesContent() {
 
   const renderTop = () => (
     <div ref={topRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>TOP 3 OUTCOMES THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>TOP 3 OUTCOMES THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={topRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>If you could only accomplish 3 things this week, what would they be? These should directly move a Key Result forward.</p>
       <table style={S.tbl}>
@@ -72,7 +72,7 @@ function WeeklyPrioritiesContent() {
 
   const renderTasks = () => (
     <div ref={tasksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>KEY TASKS TO COMPLETE THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>KEY TASKS TO COMPLETE THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={tasksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

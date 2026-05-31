@@ -35,7 +35,7 @@ function AlignmentContent() {
 
   const renderGap = () => (
     <div ref={gapRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ALIGNMENT GAP ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ALIGNMENT GAP ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={gapRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Misalignment is the silent killer of projects. What your stakeholder THINKS is happening vs what IS happening &mdash; that gap is where surprises, frustration, and trust erosion live. Use this page before any important meeting to check alignment and address gaps proactively.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function AlignmentContent() {
 
   const renderAction = () => (
     <div ref={actionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>REALIGNMENT ACTION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>REALIGNMENT ACTION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={actionRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>For each gap identified above, plan how you&apos;ll close it. Priority order: biggest gaps first, highest-impact stakeholders first.</p>
       <table style={S.tbl}>

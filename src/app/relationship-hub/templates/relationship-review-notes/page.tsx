@@ -36,7 +36,7 @@ function ReviewContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>RELATIONSHIP HEALTH SNAPSHOT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>RELATIONSHIP HEALTH SNAPSHOT</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Review every key stakeholder relationship once a month. How are things going? What changed? Where do you need to invest more? This 15-minute exercise prevents small problems from becoming big ones.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function ReviewContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>NEXT MONTH&apos;S PRIORITY ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>NEXT MONTH&apos;S PRIORITY ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Based on your health snapshot, what are the top 5 relationship actions for next month? Be specific &mdash; who, what, and by when.</p>
       <table style={S.tbl}>
@@ -115,7 +115,7 @@ function ReviewContent() {
 
   const renderRetro = () => (
     <div ref={retroRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>MONTHLY RETROSPECTIVE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>MONTHLY RETROSPECTIVE</td></tr></tbody></table>
       <CopyButton targetRef={retroRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Reflect on your relationship management this month. What patterns do you see? What&apos;s working? What needs to change?</p>
       <table style={S.tbl}>

@@ -57,7 +57,7 @@ function StoryMappingContent() {
 
   const renderJourney = () => (
     <div ref={journeyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🚶 USER JOURNEY — ACTIVITIES &amp; TASKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🚶 USER JOURNEY — ACTIVITIES &amp; TASKS</td></tr></tbody></table>
       <CopyButton targetRef={journeyRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Top row = user activities (big steps). Below each = user tasks (smaller actions within that step). Read left to right.</p>
       <table style={LT}><tbody><tr>
@@ -78,7 +78,7 @@ function StoryMappingContent() {
 
   const renderRelease = () => (
     <div ref={releaseRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📦 RELEASE SLICING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📦 RELEASE SLICING</td></tr></tbody></table>
       <CopyButton targetRef={releaseRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Draw a horizontal line across the story map. Everything above the line = MVP. Below = later releases.</p>
       <table style={S.tbl}>
@@ -112,7 +112,7 @@ function StoryMappingContent() {
 
   const renderGaps = () => (
     <div ref={gapsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔍 GAPS &amp; MISSING STORIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔍 GAPS &amp; MISSING STORIES</td></tr></tbody></table>
       <CopyButton targetRef={gapsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

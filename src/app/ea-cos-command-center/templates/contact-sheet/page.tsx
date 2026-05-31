@@ -33,7 +33,7 @@ function ContactSheetContent() {
 
   const renderKey = () => (
     <div ref={keyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>KEY CONTACTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>KEY CONTACTS</td></tr></tbody></table>
       <CopyButton targetRef={keyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -68,7 +68,7 @@ function ContactSheetContent() {
 
   const renderVenue = () => (
     <div ref={venueRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>VENUE &amp; TRAVEL CONTACTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>VENUE &amp; TRAVEL CONTACTS</td></tr></tbody></table>
       <CopyButton targetRef={venueRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Hotel</td><td style={S.td0}>[Hotel Name] &mdash; [(555) 000-0010] &mdash; Conf#: [FS-789012]</td></tr>
@@ -83,7 +83,7 @@ function ContactSheetContent() {
 
   const renderEmergency = () => (
     <div ref={emergencyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>EMERGENCY INFORMATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>EMERGENCY INFORMATION</td></tr></tbody></table>
       <CopyButton targetRef={emergencyRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Local Emergency</td><td style={{ ...S.td0, fontWeight: 800, color: "#DC2626", fontSize: "13px" }}>911</td></tr>

@@ -47,7 +47,7 @@ function MeetingRecapContent() {
 
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 DISCUSSION NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 DISCUSSION NOTES</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -81,7 +81,7 @@ function MeetingRecapContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚖️ DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚖️ DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -113,7 +113,7 @@ function MeetingRecapContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -147,7 +147,7 @@ function MeetingRecapContent() {
 
   const renderParking = () => (
     <div ref={parkingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🅿️ PARKING LOT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🅿️ PARKING LOT</td></tr></tbody></table>
       <CopyButton targetRef={parkingRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>

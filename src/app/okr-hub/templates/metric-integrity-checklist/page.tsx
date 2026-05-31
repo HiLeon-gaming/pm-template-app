@@ -36,7 +36,7 @@ function MetricIntegrityContent() {
 
   const renderCheck = () => (
     <div ref={checkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>METRIC INTEGRITY ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>METRIC INTEGRITY ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={checkRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Run this checklist for every KPI at least once per quarter. A metric you can&apos;t trust is worse than no metric at all.</p>
       <table style={S.tbl}>

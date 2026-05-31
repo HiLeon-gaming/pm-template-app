@@ -35,7 +35,7 @@ function AgendaContent() {
 
   const renderHeader = () => (
     <div ref={headerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MEETING DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MEETING DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={headerRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -63,7 +63,7 @@ function AgendaContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>TIMEBOXED AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>TIMEBOXED AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every item has a time limit, an owner, and a purpose. If it doesn&apos;t need to be in this meeting, take it offline. Respect everyone&apos;s time.</p>
       <table style={S.tbl}>

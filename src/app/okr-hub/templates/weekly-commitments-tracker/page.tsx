@@ -33,7 +33,7 @@ function WeeklyCommitmentsContent() {
 
   const renderCommit = () => (
     <div ref={commitRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>THIS WEEK&apos;S COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>THIS WEEK&apos;S COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={commitRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>At the start of each week, each person or team states what they will deliver by Friday. At the end of the week, mark it Done or Missed. No excuses — just honest tracking.</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function WeeklyCommitmentsContent() {
 
   const renderHit = () => (
     <div ref={hitRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>WEEKLY HIT RATE (Rolling 4 Weeks)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>WEEKLY HIT RATE (Rolling 4 Weeks)</td></tr></tbody></table>
       <CopyButton targetRef={hitRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track how often commitments are met. A healthy team hits 80%+. Below 60% means you&apos;re over-committing or under-executing.</p>
       <table style={S.tbl}>
@@ -114,7 +114,7 @@ function WeeklyCommitmentsContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>ACCOUNTABILITY TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>ACCOUNTABILITY TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, padding: "14px 18px", fontSize: "10px", lineHeight: "2.2" }}>

@@ -47,7 +47,7 @@ function RaidLiteContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>🔴 RISKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>🔴 RISKS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Things that MIGHT happen and would hurt delivery if they do.</p>
       <table style={S.tbl}>
@@ -85,7 +85,7 @@ function RaidLiteContent() {
 
   const renderAssumptions = () => (
     <div ref={assumeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🟡 ASSUMPTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🟡 ASSUMPTIONS</td></tr></tbody></table>
       <CopyButton targetRef={assumeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Things we believe to be true but haven&apos;t fully validated.</p>
       <table style={S.tbl}>
@@ -121,7 +121,7 @@ function RaidLiteContent() {
 
   const renderIssues = () => (
     <div ref={issuesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#EF4444")}>🔴 ISSUES (ACTIVE NOW)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#EF4444")}>🔴 ISSUES (ACTIVE NOW)</td></tr></tbody></table>
       <CopyButton targetRef={issuesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Things that ARE happening right now and need resolution.</p>
       <table style={S.tbl}>
@@ -158,7 +158,7 @@ function RaidLiteContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>🟢 DECISIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>🟢 DECISIONS</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Key decisions made — so nobody asks &ldquo;why did we do that?&rdquo; later.</p>
       <table style={S.tbl}>

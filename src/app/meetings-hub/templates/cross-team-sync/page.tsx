@@ -45,7 +45,7 @@ function CrossTeamSyncContent() {
 
   const renderUpdates = () => (
     <div ref={updatesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 TEAM UPDATES (3 min each)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 TEAM UPDATES (3 min each)</td></tr></tbody></table>
       <CopyButton targetRef={updatesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -77,7 +77,7 @@ function CrossTeamSyncContent() {
 
   const renderDeps = () => (
     <div ref={depsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔗 DEPENDENCIES &amp; RISKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔗 DEPENDENCIES &amp; RISKS</td></tr></tbody></table>
       <CopyButton targetRef={depsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -114,7 +114,7 @@ function CrossTeamSyncContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ ACTIONS &amp; ESCALATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ ACTIONS &amp; ESCALATIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Actions</td><td style={S.td0}>[1) DevOps to restore staging by 03/07. 2) Eng to review mockups by 03/08. 3) QA to share test plan by 03/10.]</td></tr>

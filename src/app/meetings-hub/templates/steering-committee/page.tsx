@@ -45,7 +45,7 @@ function SteeringCommitteeContent() {
 
   const renderStatus = () => (
     <div ref={statusRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 PROJECT / PROGRAM STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 PROJECT / PROGRAM STATUS</td></tr></tbody></table>
       <CopyButton targetRef={statusRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -84,7 +84,7 @@ function SteeringCommitteeContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚖️ DECISIONS REQUIRED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚖️ DECISIONS REQUIRED</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -118,7 +118,7 @@ function SteeringCommitteeContent() {
 
   const renderEscalations = () => (
     <div ref={escalationsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🚨 ESCALATIONS &amp; ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🚨 ESCALATIONS &amp; ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={escalationsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Escalations</td><td style={{ ...S.td0, color: "#DC2626", fontWeight: 600 }}>[Project Gamma 3 weeks behind — needs executive intervention on resource allocation]</td></tr>

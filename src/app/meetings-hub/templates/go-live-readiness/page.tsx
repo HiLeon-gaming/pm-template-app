@@ -45,7 +45,7 @@ function GoLiveReadinessContent() {
 
   const renderChecklist = () => (
     <div ref={checklistRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 GO/NO-GO CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 GO/NO-GO CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={checklistRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -84,7 +84,7 @@ function GoLiveReadinessContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚠️ OPEN RISKS &amp; ROLLBACK PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚠️ OPEN RISKS &amp; ROLLBACK PLAN</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Open Risks</td><td style={S.td0}>[Any remaining risks going into go-live? List them.]</td></tr>
@@ -99,7 +99,7 @@ function GoLiveReadinessContent() {
 
   const renderComms = () => (
     <div ref={commsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📢 LAUNCH COMMUNICATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📢 LAUNCH COMMUNICATION</td></tr></tbody></table>
       <CopyButton targetRef={commsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

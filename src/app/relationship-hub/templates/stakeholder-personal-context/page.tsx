@@ -35,7 +35,7 @@ function PersonalContextContent() {
 
   const renderContext = () => (
     <div ref={ctxRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; PERSONAL &amp; SCHEDULING CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; PERSONAL &amp; SCHEDULING CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={ctxRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Professional context that helps you schedule and communicate more effectively. Keep it respectful and factual. This page is confidential &mdash; it&apos;s your private reference, not something you share.</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function PersonalContextContent() {
 
   const renderRapport = () => (
     <div ref={rapportRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>RAPPORT-BUILDING INTEL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RAPPORT-BUILDING INTEL</td></tr></tbody></table>
       <CopyButton targetRef={rapportRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Notes that help you build authentic rapport. These come from natural conversation &mdash; never pry. The best PMs remember what matters to people.</p>
       <table style={S.tbl}>

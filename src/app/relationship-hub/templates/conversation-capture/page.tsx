@@ -35,7 +35,7 @@ function CaptureContent() {
 
   const renderCapture = () => (
     <div ref={captureRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>CONVERSATION DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>CONVERSATION DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={captureRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Fill this out within 5 minutes of ending the conversation. Memory fades fast. Capture the essentials now; you can polish later. The goal is speed, not perfection.</p>
       <table style={S.tbl}>
@@ -72,7 +72,7 @@ function CaptureContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>IMMEDIATE ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>IMMEDIATE ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What do you need to do RIGHT NOW as a result of this conversation? Log commitments, send follow-ups, update trackers.</p>
       <table style={S.tbl}>

@@ -115,7 +115,7 @@ function DecisionLogContent() {
 
   const renderDetail = () => (
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔍 DECISION DETAIL (Template)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔍 DECISION DETAIL (Template)</td></tr></tbody></table>
       <CopyButton targetRef={detailRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Use this format to document decisions that need additional context. Copy and fill for each significant decision.</p>
       <table style={S.tbl}>

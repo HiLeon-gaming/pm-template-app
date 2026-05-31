@@ -34,7 +34,7 @@ function MeetingCloseoutContent() {
 
   const renderCheck = () => (
     <div ref={checkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 END-OF-MEETING CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 END-OF-MEETING CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={checkRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Run through this checklist in the last 3-5 minutes of every meeting. Read items aloud.</p>
       <table style={S.tbl}>
@@ -72,7 +72,7 @@ function MeetingCloseoutContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📝 QUICK CLOSEOUT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📝 QUICK CLOSEOUT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>

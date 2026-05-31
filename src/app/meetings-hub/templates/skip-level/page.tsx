@@ -47,7 +47,7 @@ function SkipLevelContent() {
 
   const renderQuestions = () => (
     <div ref={questionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💬 CONVERSATION GUIDE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💬 CONVERSATION GUIDE</td></tr></tbody></table>
       <CopyButton targetRef={questionsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Choose 4-6 questions per session. Rotate them across sessions. The goal is to listen, not interrogate.</p>
       <table style={LT}><tbody><tr>
@@ -71,7 +71,7 @@ function SkipLevelContent() {
 
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📝 SESSION NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📝 SESSION NOTES</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Questions Asked</td><td style={S.td0}>[Which questions did you use?]</td></tr>
@@ -86,7 +86,7 @@ function SkipLevelContent() {
 
   const renderFollowup = () => (
     <div ref={followupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ FOLLOW-UP ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ FOLLOW-UP ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={followupRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Share with manager?</td><td style={S.td0}>[What to share with their direct manager — be thoughtful about confidentiality]</td></tr>

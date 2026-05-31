@@ -54,7 +54,7 @@ function DecisionNeededContent() {
 
   const renderOptions = () => (
     <div ref={optionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 OPTIONS ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 OPTIONS ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={optionsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -82,7 +82,7 @@ function DecisionNeededContent() {
 
   const renderOutcome = () => (
     <div ref={outcomeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ DECISION OUTCOME</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ DECISION OUTCOME</td></tr></tbody></table>
       <CopyButton targetRef={outcomeRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Decision Made</td><td style={{ ...S.td0, fontWeight: 700 }}>[What was decided — be specific]</td></tr>

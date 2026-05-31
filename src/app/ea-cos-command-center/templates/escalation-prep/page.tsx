@@ -32,7 +32,7 @@ function EscalationPrepContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ESCALATION DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ESCALATION DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Issue / Escalation</td><td style={{ ...S.td0, fontWeight: 700 }}>[Clear, specific description of what needs exec attention]</td></tr>
@@ -76,7 +76,7 @@ function EscalationPrepContent() {
 
   const renderBrief = () => (
     <div ref={briefRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>EXEC BRIEF (30-SECOND VERSION)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>EXEC BRIEF (30-SECOND VERSION)</td></tr></tbody></table>
       <CopyButton targetRef={briefRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "11px", lineHeight: "2.0", padding: "14px 18px" }}>

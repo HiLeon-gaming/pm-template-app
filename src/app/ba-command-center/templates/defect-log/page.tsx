@@ -116,7 +116,7 @@ function DefectLogContent() {
 
   const renderDetail = () => (
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔍 DEFECT DETAIL (Template)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔍 DEFECT DETAIL (Template)</td></tr></tbody></table>
       <CopyButton targetRef={detailRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Use this format to document each defect in detail. Copy and fill for each new defect.</p>
       <table style={S.tbl}>

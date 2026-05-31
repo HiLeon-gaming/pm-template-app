@@ -69,7 +69,7 @@ function QuickStartContent() {
 
   const renderWeekly = () => (
     <div ref={weeklyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>📆 WEEKLY CADENCE (30 Minutes)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>📆 WEEKLY CADENCE (30 Minutes)</td></tr></tbody></table>
       <CopyButton targetRef={weeklyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -132,7 +132,7 @@ function QuickStartContent() {
 
   const renderPages = () => (
     <div ref={pagesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>📑 ALL 42 PAGES AT A GLANCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>📑 ALL 42 PAGES AT A GLANCE</td></tr></tbody></table>
       <CopyButton targetRef={pagesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

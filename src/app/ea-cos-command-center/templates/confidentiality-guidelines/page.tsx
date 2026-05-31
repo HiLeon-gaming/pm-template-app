@@ -35,7 +35,7 @@ function ConfidentialityContent() {
 
   const renderClassification = () => (
     <div ref={classRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🏷️ INFORMATION CLASSIFICATION LEVELS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🏷️ INFORMATION CLASSIFICATION LEVELS</td></tr></tbody></table>
       <CopyButton targetRef={classRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Use these tags consistently when storing notes. Add the tag in brackets at the top of any sensitive page.</p>
       <table style={LT}><tbody><tr>
@@ -59,7 +59,7 @@ function ConfidentialityContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📜 HANDLING RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📜 HANDLING RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -92,7 +92,7 @@ function ConfidentialityContent() {
 
   const renderChecklist = () => (
     <div ref={checkRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>✅ QUICK SELF-CHECK BEFORE SHARING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>✅ QUICK SELF-CHECK BEFORE SHARING</td></tr></tbody></table>
       <CopyButton targetRef={checkRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[

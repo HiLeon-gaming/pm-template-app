@@ -32,7 +32,7 @@ function ExpenseTrackerContent() {
 
   const renderExpenses = () => (
     <div ref={expensesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>EXPENSE LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>EXPENSE LOG</td></tr></tbody></table>
       <CopyButton targetRef={expensesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What&apos;s submitted, what&apos;s pending, receipts. Avoids lost reimbursements.</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function ExpenseTrackerContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>REIMBURSEMENT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>REIMBURSEMENT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Total Expenses This Month</td><td style={{ ...S.td0, fontWeight: 800, color: accent, fontSize: "14px" }}>$3,809.00</td></tr>

@@ -71,7 +71,7 @@ function TailoringStrategyWorksheetContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>⚙️ TAILORING DECISIONS BY DIMENSION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>⚙️ TAILORING DECISIONS BY DIMENSION</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -120,7 +120,7 @@ function TailoringStrategyWorksheetContent() {
 
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#115E59")}>✍️ TAILORING APPROVAL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>✍️ TAILORING APPROVAL</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={S.thSecondary}>Role</th><th style={S.thSecondary}>Name</th><th style={{ ...S.thSecondary, width: "20%" }}>Signature</th><th style={{ ...S.thSecondary, width: "10%" }}>Date</th></tr></thead>

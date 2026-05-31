@@ -46,7 +46,7 @@ function QATestSummaryContent() {
 
   const renderResults = () => (
     <div ref={resultsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 TEST RESULTS BY STORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 TEST RESULTS BY STORY</td></tr></tbody></table>
       <CopyButton targetRef={resultsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -87,7 +87,7 @@ function QATestSummaryContent() {
 
   const renderCoverage = () => (
     <div ref={coverageRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📈 QUALITY METRICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📈 QUALITY METRICS</td></tr></tbody></table>
       <CopyButton targetRef={coverageRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -110,7 +110,7 @@ function QATestSummaryContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚠️ QA RISKS &amp; NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚠️ QA RISKS &amp; NOTES</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>Ship Readiness</td><td style={S.td0}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Not Yet</span> — [2 stories still in QA; 1 critical bug open]</td></tr>

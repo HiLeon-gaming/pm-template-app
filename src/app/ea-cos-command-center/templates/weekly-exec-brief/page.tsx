@@ -34,7 +34,7 @@ function WeeklyExecBriefContent() {
 
   const renderPriorities = () => (
     <div ref={prioritiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>WEEK OF [MM/DD] &mdash; TOP PRIORITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>WEEK OF [MM/DD] &mdash; TOP PRIORITIES</td></tr></tbody></table>
       <CopyButton targetRef={prioritiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -70,7 +70,7 @@ function WeeklyExecBriefContent() {
 
   const renderMeetings = () => (
     <div ref={meetingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>KEY MEETINGS THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>KEY MEETINGS THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={meetingsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -104,7 +104,7 @@ function WeeklyExecBriefContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>DECISIONS NEEDED THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>DECISIONS NEEDED THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[
@@ -121,7 +121,7 @@ function WeeklyExecBriefContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>RISKS &amp; WINS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>RISKS &amp; WINS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", color: "#DC2626" }}>Top Risks</td><td style={{ ...S.td0, fontSize: "10px" }}>[1. 3 senior leaders at risk of leaving — retention convos needed ASAP]<br />[2. Q3 pipeline soft — Sales needs exec support on 2 key deals]</td></tr>

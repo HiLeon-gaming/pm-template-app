@@ -32,7 +32,7 @@ function EscalationsContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>🔴 ACTIVE STUCK ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>🔴 ACTIVE STUCK ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What&apos;s stuck, the impact, your options, and recommended escalation. Helps the exec unblock fast.</p>
       <table style={S.tbl}>
@@ -70,7 +70,7 @@ function EscalationsContent() {
 
   const renderResolved = () => (
     <div ref={resolvedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>✅ RECENTLY RESOLVED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>✅ RECENTLY RESOLVED</td></tr></tbody></table>
       <CopyButton targetRef={resolvedRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

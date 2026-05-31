@@ -62,7 +62,7 @@ function PhaseGateReviewChecklistContent() {
 
   const gateSection = (ref: React.RefObject<HTMLDivElement | null>, title: string, color: string | undefined, items: { criteria: string; type: string; tBg: string; tFg: string; status: string; sBg: string; sFg: string; evidence: string }[]) => (
     <div ref={ref} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(color)}>{title}</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(color)}>{title}</td></tr></tbody></table>
       <CopyButton targetRef={ref} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -166,7 +166,7 @@ function PhaseGateReviewChecklistContent() {
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✍️ GATE REVIEW SIGNOFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✍️ GATE REVIEW SIGNOFF</td></tr></tbody></table>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -32,7 +32,7 @@ function RecurringCadenceContent() {
 
   const renderCadence = () => (
     <div ref={cadenceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ALL RECURRING MEETINGS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ALL RECURRING MEETINGS</td></tr></tbody></table>
       <CopyButton targetRef={cadenceRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Master list of all recurring meetings. Review quarterly &mdash; cancel what no longer serves the exec.</p>
       <table style={S.tbl}>
@@ -80,7 +80,7 @@ function RecurringCadenceContent() {
 
   const renderAudit = () => (
     <div ref={auditRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>QUARTERLY AUDIT QUESTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>QUARTERLY AUDIT QUESTIONS</td></tr></tbody></table>
       <CopyButton targetRef={auditRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[

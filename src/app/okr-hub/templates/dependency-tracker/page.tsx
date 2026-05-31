@@ -36,7 +36,7 @@ function DependencyTrackerContent() {
 
   const renderDep = () => (
     <div ref={depRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ACTIVE DEPENDENCIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ACTIVE DEPENDENCIES</td></tr></tbody></table>
       <CopyButton targetRef={depRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Dependencies are things you need from OTHER teams, vendors, or systems to complete your work. If they slip, you slip. Track them proactively.</p>
       <table style={S.tbl}>

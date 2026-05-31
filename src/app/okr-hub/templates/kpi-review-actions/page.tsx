@@ -36,7 +36,7 @@ function KPIReviewContent() {
 
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>METRIC → INSIGHT → DECISION → ACTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>METRIC → INSIGHT → DECISION → ACTION</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>The point of reviewing metrics is to DECIDE and ACT. A metric without an action is just a number. Fill in each column to turn data into decisions.</p>
       <table style={S.tbl}>

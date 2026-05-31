@@ -266,7 +266,7 @@ function WeeklyReviewContent() {
   /* ── Goal Progress Check-in ── */
   const renderGoalProgress = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📊 GOAL PROGRESS CHECK-IN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📊 GOAL PROGRESS CHECK-IN</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -308,7 +308,7 @@ function WeeklyReviewContent() {
   /* ── Energy & Wellbeing Audit ── */
   const renderEnergy = () => (
     <div ref={energyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>⚡ ENERGY &amp; WELLBEING AUDIT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>⚡ ENERGY &amp; WELLBEING AUDIT</td></tr></tbody></table>
       <CopyButton targetRef={energyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

@@ -48,7 +48,7 @@ function ExecutiveStatusContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 EXECUTIVE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 EXECUTIVE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Headline</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[One sentence: What do execs need to know right now?]</td></tr>
@@ -61,7 +61,7 @@ function ExecutiveStatusContent() {
 
   const renderKPIs = () => (
     <div ref={kpisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 KEY METRICS / KPIs</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 KEY METRICS / KPIs</td></tr></tbody></table>
       <CopyButton targetRef={kpisRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -99,7 +99,7 @@ function ExecutiveStatusContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚠️ RISKS &amp; ESCALATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚠️ RISKS &amp; ESCALATIONS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -131,7 +131,7 @@ function ExecutiveStatusContent() {
 
   const renderAsks = () => (
     <div ref={asksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🙋 DECISIONS &amp; ASKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🙋 DECISIONS &amp; ASKS</td></tr></tbody></table>
       <CopyButton targetRef={asksRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Decision Needed</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[What specific decision do you need from leadership?]</td></tr>

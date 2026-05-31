@@ -46,7 +46,7 @@ function DomainRetroContent() {
 
   const renderScorecard = () => (
     <div ref={scorecardRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 DOMAIN HEALTH SCORECARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 DOMAIN HEALTH SCORECARD</td></tr></tbody></table>
       <CopyButton targetRef={scorecardRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -78,7 +78,7 @@ function DomainRetroContent() {
 
   const renderReflection = () => (
     <div ref={reflectionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💡 REFLECTION &amp; INSIGHTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 REFLECTION &amp; INSIGHTS</td></tr></tbody></table>
       <CopyButton targetRef={reflectionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Biggest Win</td><td style={S.td0}>[Team domain at 5/5 — working agreements and psychological safety are driving velocity and quality improvements]</td></tr>
@@ -91,7 +91,7 @@ function DomainRetroContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Domain</th><th style={{ ...S.thSecondary, width: "10%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

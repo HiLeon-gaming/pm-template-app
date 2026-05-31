@@ -37,7 +37,7 @@ function PackingReadinessContent() {
     <div ref={essentialsRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner(accent)}>DOCUMENTS &amp; TRAVEL</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>DOCUMENTS &amp; TRAVEL</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             {["Passport / ID (check expiry)", "Boarding passes (printed + digital)", "Hotel confirmation", "Car service confirmation", "Meeting agenda + materials (printed)", "Business cards", "Expense receipts folder", "Travel insurance info"].map((item, i) => {
               const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -46,7 +46,7 @@ function PackingReadinessContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#7C3AED")}>CLOTHING &amp; PERSONAL</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>CLOTHING &amp; PERSONAL</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             {["Business attire (suits / blazers)", "Casual / dinner outfit", "Shoes (dress + comfortable)", "Workout clothes + shoes", "Toiletries bag (TSA-compliant)", "Medications / vitamins", "Umbrella / weather gear", "Glasses / contacts / spares"].map((item, i) => {
               const bg = i % 2 === 1 ? C.rowAlt : C.white;
@@ -61,7 +61,7 @@ function PackingReadinessContent() {
 
   const renderTech = () => (
     <div ref={techRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>TECH &amp; ELECTRONICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>TECH &amp; ELECTRONICS</td></tr></tbody></table>
       <CopyButton targetRef={techRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {["Laptop + charger", "Phone + charger + portable battery", "Presentation adapter (HDMI / USB-C)", "Headphones / AirPods", "International power adapter (if needed)", "Hotspot device (if no reliable WiFi)", "Backup of presentation on USB drive"].map((item, i) => {
@@ -74,7 +74,7 @@ function PackingReadinessContent() {
 
   const renderLastMin = () => (
     <div ref={lastMinRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>LAST-MINUTE CHECKS (Day Before)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>LAST-MINUTE CHECKS (Day Before)</td></tr></tbody></table>
       <CopyButton targetRef={lastMinRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {["Calendar confirmed for travel days", "Out-of-office set on email", "Team notified of absence", "Backup / delegate briefed", "Itinerary sent to exec + spouse (if applicable)", "Car service confirmed for airport", "Weather checked at destination", "Downloaded offline maps / entertainment"].map((item, i) => {

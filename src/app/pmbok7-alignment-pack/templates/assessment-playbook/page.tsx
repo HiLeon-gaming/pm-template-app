@@ -47,7 +47,7 @@ function AssessmentPlaybookContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 UNCERTAINTY &amp; COMPLEXITY MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 UNCERTAINTY &amp; COMPLEXITY MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -78,7 +78,7 @@ function AssessmentPlaybookContent() {
 
   const renderDrivers = () => (
     <div ref={driversRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔍 TOP UNCERTAINTY DRIVERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔍 TOP UNCERTAINTY DRIVERS</td></tr></tbody></table>
       <CopyButton targetRef={driversRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={{ ...S.thSecondary, width: "22%" }}>Driver</th><th style={S.thSecondary}>Impact</th><th style={{ ...S.thSecondary, width: "25%" }}>Mitigation Strategy</th></tr></thead>
@@ -98,7 +98,7 @@ function AssessmentPlaybookContent() {
 
   const renderResponses = () => (
     <div ref={responsesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 RECOMMENDED RESPONSES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 RECOMMENDED RESPONSES</td></tr></tbody></table>
       <CopyButton targetRef={responsesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Delivery Approach</td><td style={S.td0}>[Hybrid iterative: 2-week sprints for core delivery; waterfall-style milestones for vendor-dependent integration]</td></tr>
@@ -111,7 +111,7 @@ function AssessmentPlaybookContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

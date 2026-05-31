@@ -36,7 +36,7 @@ function OwnershipContent() {
 
   const renderOwner = () => (
     <div ref={ownerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>OKR OWNERSHIP TABLE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>OKR OWNERSHIP TABLE</td></tr></tbody></table>
       <CopyButton targetRef={ownerRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every objective and key result needs exactly ONE accountable owner. This person doesn&apos;t do all the work — they make sure it gets done and report on progress.</p>
       <table style={S.tbl}>

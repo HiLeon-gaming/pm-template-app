@@ -78,7 +78,7 @@ function ProjectClosureReportContent() {
 
   const renderPerformance = () => (
     <div ref={performanceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>FINAL PERFORMANCE METRICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>FINAL PERFORMANCE METRICS</td></tr></tbody></table>
       <CopyButton targetRef={performanceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -151,7 +151,7 @@ function ProjectClosureReportContent() {
 
   const renderOpen = () => (
     <div ref={openRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>OPEN ITEMS & TRANSITION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>OPEN ITEMS & TRANSITION</td></tr></tbody></table>
       <CopyButton targetRef={openRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -217,7 +217,7 @@ function ProjectClosureReportContent() {
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✍️ FORMAL CLOSURE SIGNOFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✍️ FORMAL CLOSURE SIGNOFF</td></tr></tbody></table>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

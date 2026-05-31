@@ -37,7 +37,7 @@ function QualityCheckContent() {
 
   const renderObj = () => (
     <div ref={objRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>OBJECTIVE QUALITY TEST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>OBJECTIVE QUALITY TEST</td></tr></tbody></table>
       <CopyButton targetRef={objRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Run each of your Objectives through these tests. A great Objective passes ALL of them. If it fails any, rewrite it before proceeding.</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function QualityCheckContent() {
 
   const renderKR = () => (
     <div ref={krRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>KEY RESULT QUALITY TEST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>KEY RESULT QUALITY TEST</td></tr></tbody></table>
       <CopyButton targetRef={krRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Run each Key Result through these tests. Great Key Results pass ALL of them. Bad Key Results cause confusion and wasted effort.</p>
       <table style={S.tbl}>

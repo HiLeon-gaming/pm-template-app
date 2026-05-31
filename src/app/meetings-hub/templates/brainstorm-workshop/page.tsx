@@ -48,7 +48,7 @@ function BrainstormWorkshopContent() {
 
   const renderIdeas = () => (
     <div ref={ideasRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🧠 IDEAS CAPTURE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🧠 IDEAS CAPTURE</td></tr></tbody></table>
       <CopyButton targetRef={ideasRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Rules: No criticism during brainstorm. Quantity over quality. Build on others&apos; ideas. Wild ideas welcome.</p>
       <table style={S.tbl}>
@@ -79,7 +79,7 @@ function BrainstormWorkshopContent() {
 
   const renderVoting = () => (
     <div ref={votingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🏆 TOP IDEAS (After Voting)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🏆 TOP IDEAS (After Voting)</td></tr></tbody></table>
       <CopyButton targetRef={votingRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -103,7 +103,7 @@ function BrainstormWorkshopContent() {
 
   const renderAction = () => (
     <div ref={actionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ ACTION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ ACTION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={actionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Immediate Actions</td><td style={S.td0}>[What happens this week as a result of this session?]</td></tr>

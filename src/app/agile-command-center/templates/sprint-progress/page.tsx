@@ -47,7 +47,7 @@ function SprintProgressContent() {
 
   const renderStories = () => (
     <div ref={storiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 STORY STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 STORY STATUS</td></tr></tbody></table>
       <CopyButton targetRef={storiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -90,7 +90,7 @@ function SprintProgressContent() {
 
   const renderBurndown = () => (
     <div ref={burndownRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📉 BURNDOWN (TEXT-BASED)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📉 BURNDOWN (TEXT-BASED)</td></tr></tbody></table>
       <CopyButton targetRef={burndownRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track remaining points each day. Use this as a lightweight alternative to chart-based burndowns.</p>
       <table style={S.tbl}>
@@ -129,7 +129,7 @@ function SprintProgressContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🏥 SPRINT HEALTH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🏥 SPRINT HEALTH</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

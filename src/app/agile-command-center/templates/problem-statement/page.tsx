@@ -46,7 +46,7 @@ function ProblemStatementContent() {
 
   const renderProblem = () => (
     <div ref={problemRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 PROBLEM STATEMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 PROBLEM STATEMENT</td></tr></tbody></table>
       <CopyButton targetRef={problemRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>The Problem</td><td style={{ ...S.td0, height: "44px" }}>[Describe the core problem — what is painful, slow, broken, or missing?]</td></tr>
@@ -80,7 +80,7 @@ function ProblemStatementContent() {
 
   const renderPersonas = () => (
     <div ref={personaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>👤 TARGET USER PERSONAS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>👤 TARGET USER PERSONAS</td></tr></tbody></table>
       <CopyButton targetRef={personaRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Define 2–4 personas. Focus on their goals, frustrations, and what &ldquo;success&rdquo; means for them.</p>
       <table style={LT}><tbody><tr>
@@ -128,7 +128,7 @@ function ProblemStatementContent() {
 
   const renderJourney = () => (
     <div ref={journeyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🗺️ HIGH-LEVEL USER JOURNEY (PRIMARY PERSONA)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🗺️ HIGH-LEVEL USER JOURNEY (PRIMARY PERSONA)</td></tr></tbody></table>
       <CopyButton targetRef={journeyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -35,7 +35,7 @@ function ScorecardContent() {
 
   const renderScorecard = () => (
     <div ref={scoreRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER HEALTH SCORES &mdash; [MONTH / YEAR]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER HEALTH SCORES &mdash; [MONTH / YEAR]</td></tr></tbody></table>
       <CopyButton targetRef={scoreRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Score each stakeholder on 5 dimensions (1=Poor, 5=Excellent). Total score gives you an overall health indicator. Track monthly to spot trends before they become crises. Any dimension scoring 1-2 needs immediate attention.</p>
       <table style={S.tbl}>
@@ -85,7 +85,7 @@ function ScorecardContent() {
 
   const renderTrend = () => (
     <div ref={trendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>TREND ANALYSIS &mdash; MONTH-OVER-MONTH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>TREND ANALYSIS &mdash; MONTH-OVER-MONTH</td></tr></tbody></table>
       <CopyButton targetRef={trendRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Compare scores over time. Which relationships are improving? Which are degrading? Patterns over 3+ months reveal systemic issues.</p>
       <table style={S.tbl}>

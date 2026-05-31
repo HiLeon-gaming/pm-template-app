@@ -32,7 +32,7 @@ function MeetingHistoryContent() {
 
   const renderIndex = () => (
     <div ref={indexRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MEETING LOG &mdash; &ldquo;What Did We Decide Last Time?&rdquo;</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MEETING LOG &mdash; &ldquo;What Did We Decide Last Time?&rdquo;</td></tr></tbody></table>
       <CopyButton targetRef={indexRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Links to prior meeting notes by stakeholder/topic. Never lose a decision or commitment again.</p>
       <table style={S.tbl}>
@@ -72,7 +72,7 @@ function MeetingHistoryContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6B7280")}>ORGANIZATION TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6B7280")}>ORGANIZATION TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "12px 16px" }}>

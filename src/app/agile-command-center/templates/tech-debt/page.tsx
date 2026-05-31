@@ -45,7 +45,7 @@ function TechDebtContent() {
 
   const renderDebt = () => (
     <div ref={debtRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 TECH DEBT ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 TECH DEBT ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={debtRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Score: Impact (1-5) x Urgency (1-5) = Priority Score. Higher = fix sooner.</p>
       <table style={S.tbl}>
@@ -89,7 +89,7 @@ function TechDebtContent() {
 
   const renderStrategy = () => (
     <div ref={strategyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📐 DEBT MANAGEMENT STRATEGY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📐 DEBT MANAGEMENT STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={strategyRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

@@ -61,7 +61,7 @@ function RolesContent() {
 
   const renderCore = () => (
     <div ref={coreRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🏅 CORE SCRUM ROLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🏅 CORE SCRUM ROLES</td></tr></tbody></table>
       <CopyButton targetRef={coreRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "33.3%", paddingRight: "4px" }}>
@@ -97,7 +97,7 @@ function RolesContent() {
 
   const renderRaci = () => (
     <div ref={raciRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 DECISION RACI MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 DECISION RACI MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={raciRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>R = Responsible &nbsp;|&nbsp; A = Accountable &nbsp;|&nbsp; C = Consulted &nbsp;|&nbsp; I = Informed</p>
       <table style={S.tbl}>
@@ -143,7 +143,7 @@ function RolesContent() {
 
   const renderStakeholders = () => (
     <div ref={stakeholderRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🤝 KEY STAKEHOLDERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🤝 KEY STAKEHOLDERS</td></tr></tbody></table>
       <CopyButton targetRef={stakeholderRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -178,7 +178,7 @@ function RolesContent() {
 
   const renderEscalation = () => (
     <div ref={escRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚨 ESCALATION PATH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚨 ESCALATION PATH</td></tr></tbody></table>
       <CopyButton targetRef={escRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Level 1 — Team</td><td style={S.td0}>[Try to resolve within the team during Daily Scrum — SM facilitates]</td></tr>

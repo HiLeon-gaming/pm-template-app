@@ -106,7 +106,7 @@ function TestCaseContent() {
 
   const renderSteps = () => (
     <div ref={stepsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔢 TEST STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔢 TEST STEPS</td></tr></tbody></table>
       <CopyButton targetRef={stepsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

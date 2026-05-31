@@ -60,7 +60,7 @@ function SprintCalendarContent() {
 
   const renderCalendar = () => (
     <div ref={calendarRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📅 WEEK 1</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📅 WEEK 1</td></tr></tbody></table>
       <CopyButton targetRef={calendarRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[
@@ -125,7 +125,7 @@ function SprintCalendarContent() {
 
   const renderCeremonies = () => (
     <div ref={ceremoniesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔄 CEREMONY SCHEDULE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔄 CEREMONY SCHEDULE</td></tr></tbody></table>
       <CopyButton targetRef={ceremoniesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -161,7 +161,7 @@ function SprintCalendarContent() {
 
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📝 KEY DATES &amp; NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📝 KEY DATES &amp; NOTES</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Feature Freeze</td><td style={S.td0}>[Wed Week 2 — no new code after this; QA only]</td></tr>

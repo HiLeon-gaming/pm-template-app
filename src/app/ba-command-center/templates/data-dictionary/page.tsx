@@ -121,7 +121,7 @@ function DataDictionaryContent() {
 
   const renderRelationships = () => (
     <div ref={relRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔗 ENTITY RELATIONSHIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔗 ENTITY RELATIONSHIPS</td></tr></tbody></table>
       <CopyButton targetRef={relRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -195,7 +195,7 @@ function DataDictionaryContent() {
 
   const renderGovernance = () => (
     <div ref={govRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🏛️ DATA GOVERNANCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🏛️ DATA GOVERNANCE</td></tr></tbody></table>
       <CopyButton targetRef={govRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

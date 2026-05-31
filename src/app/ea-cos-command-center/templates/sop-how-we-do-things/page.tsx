@@ -33,7 +33,7 @@ function SOPContent() {
 
   const renderIndex = () => (
     <div ref={indexRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STANDARD OPERATING PROCEDURES INDEX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STANDARD OPERATING PROCEDURES INDEX</td></tr></tbody></table>
       <CopyButton targetRef={indexRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Repeatable processes documented so the role scales. New EA/CoS can onboard in days, not months.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function SOPContent() {
 
   const renderSample = () => (
     <div ref={sampleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>SAMPLE SOP: TRAVEL BOOKING PROCESS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>SAMPLE SOP: TRAVEL BOOKING PROCESS</td></tr></tbody></table>
       <CopyButton targetRef={sampleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -116,7 +116,7 @@ function SOPContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>SOP WRITING TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>SOP WRITING TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "2.0", padding: "12px 16px" }}>

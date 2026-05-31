@@ -46,7 +46,7 @@ function DirectoryContent() {
 
   const renderDirectory = () => (
     <div ref={dirRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER MASTER LIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER MASTER LIST</td></tr></tbody></table>
       <CopyButton targetRef={dirRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>List every key stakeholder here. This is your master navigation page &mdash; link each name to their full profile. Update importance, health, and cadence as relationships evolve. Sort by importance so the most critical people are always at the top.</p>
       <table style={S.tbl}>
@@ -105,7 +105,7 @@ function DirectoryContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#8B5CF6")}>PORTFOLIO HEALTH SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#8B5CF6")}>PORTFOLIO HEALTH SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A quick snapshot of your stakeholder portfolio. Update these numbers weekly to track trends. The goal is to move Amber and Red relationships toward Green over time.</p>
       <table style={S.tbl}>

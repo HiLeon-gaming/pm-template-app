@@ -44,7 +44,7 @@ function ImprovementTrackerContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 ACTIVE IMPROVEMENT ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 ACTIVE IMPROVEMENT ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -84,7 +84,7 @@ function ImprovementTrackerContent() {
 
   const renderHistory = () => (
     <div ref={historyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📜 COMPLETED IMPROVEMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📜 COMPLETED IMPROVEMENTS</td></tr></tbody></table>
       <CopyButton targetRef={historyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -117,7 +117,7 @@ function ImprovementTrackerContent() {
 
   const renderPatterns = () => (
     <div ref={patternsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🔍 RECURRING PATTERNS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🔍 RECURRING PATTERNS</td></tr></tbody></table>
       <CopyButton targetRef={patternsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%", verticalAlign: "top" as const }}>Repeat Issues</td><td style={S.td0}>[e.g., Scope creep appears in 3 of last 5 retros — indicates systemic issue with stakeholder expectations]</td></tr>

@@ -69,7 +69,7 @@ function SprintKickoffContent() {
 
   const renderChecklist = () => (
     <div ref={checklistRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ KICKOFF READINESS CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ KICKOFF READINESS CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={checklistRef} label="Copy Section" />
 
       <div style={{ marginBottom: "6px" }}>
@@ -112,7 +112,7 @@ function SprintKickoffContent() {
 
   const renderTeam = () => (
     <div ref={teamRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🎬 KICKOFF CONFIRMATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🎬 KICKOFF CONFIRMATION</td></tr></tbody></table>
       <CopyButton targetRef={teamRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Ready to Start?</td><td style={S.td0}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>☐ YES — Let&apos;s go!</span> &nbsp; <span style={S.badge(C.badgeRedBg, C.badgeRedFg)}>☐ NO — Blockers exist</span></td></tr>
@@ -125,7 +125,7 @@ function SprintKickoffContent() {
 
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 KICKOFF NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 KICKOFF NOTES</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, height: "60px", verticalAlign: "top" as const }}>[Any additional notes, reminders, or context for the sprint]</td></tr>

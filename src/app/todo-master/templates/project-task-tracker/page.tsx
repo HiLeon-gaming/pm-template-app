@@ -83,7 +83,7 @@ function ProjectTaskContent() {
 
   const renderPhasedTasks = () => (
     <div ref={tasksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📂 TASKS BY PHASE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📂 TASKS BY PHASE</td></tr></tbody></table>
       <CopyButton targetRef={tasksRef} label="Copy Section" />
       {PHASES.map((phase, pi) => (
         <table key={pi} style={{ ...S.tbl, marginBottom: "8px" }}>
@@ -127,7 +127,7 @@ function ProjectTaskContent() {
 
   const renderFlatTasks = () => (
     <div ref={tasksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📋 ALL TASKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📋 ALL TASKS</td></tr></tbody></table>
       <CopyButton targetRef={tasksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

@@ -78,7 +78,7 @@ function BusinessCaseContent() {
 
   const renderAlternatives = () => (
     <div ref={alternativesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🔄 ALTERNATIVES ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🔄 ALTERNATIVES ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={alternativesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -147,7 +147,7 @@ function BusinessCaseContent() {
 
   const renderBenefits = () => (
     <div ref={benefitsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>✅ BENEFITS SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>✅ BENEFITS SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={benefitsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -197,7 +197,7 @@ function BusinessCaseContent() {
 
   const renderRecommendation = () => (
     <div ref={recommendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🏆 RECOMMENDATION & DECISION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🏆 RECOMMENDATION & DECISION</td></tr></tbody></table>
       <CopyButton targetRef={recommendRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

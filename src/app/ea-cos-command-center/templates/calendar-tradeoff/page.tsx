@@ -35,7 +35,7 @@ function CalendarTradeoffContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>&#128737;&#65039; DECISION RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>&#128737;&#65039; DECISION RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every &ldquo;yes&rdquo; is a &ldquo;no&rdquo; to something else. Use these rules before adding to the exec&apos;s calendar.</p>
       <table style={LT}><tbody><tr>
@@ -65,7 +65,7 @@ function CalendarTradeoffContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>TRADEOFF LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>TRADEOFF LOG</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

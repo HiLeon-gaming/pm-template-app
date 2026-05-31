@@ -33,7 +33,7 @@ function TalkingPointsContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>CONTEXT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>CONTEXT</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Occasion / Event</td><td style={{ ...S.td0, fontWeight: 700 }}>[Meeting name, presentation, call, email]</td></tr>
@@ -46,7 +46,7 @@ function TalkingPointsContent() {
 
   const renderPoints = () => (
     <div ref={pointsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>KEY MESSAGES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>KEY MESSAGES</td></tr></tbody></table>
       <CopyButton targetRef={pointsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -80,7 +80,7 @@ function TalkingPointsContent() {
 
   const renderObjections = () => (
     <div ref={objectionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ANTICIPATED OBJECTIONS &amp; RESPONSES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ANTICIPATED OBJECTIONS &amp; RESPONSES</td></tr></tbody></table>
       <CopyButton targetRef={objectionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -82,7 +82,7 @@ function KanbanContent() {
 
   const renderBoardView = () => (
     <div ref={boardRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🗂️ KANBAN BOARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🗂️ KANBAN BOARD</td></tr></tbody></table>
       <CopyButton targetRef={boardRef} label="Copy Section" />
       <table style={LT}>
         <tbody>
@@ -127,7 +127,7 @@ function KanbanContent() {
 
   const renderListView = () => (
     <div ref={boardRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>📋 TASK LIST BY STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>📋 TASK LIST BY STATUS</td></tr></tbody></table>
       <CopyButton targetRef={boardRef} label="Copy Section" />
       {COLUMNS.map((col, ci) => (
         <table key={ci} style={{ ...S.tbl, marginBottom: "8px" }}>

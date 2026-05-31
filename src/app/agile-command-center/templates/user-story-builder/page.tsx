@@ -36,7 +36,7 @@ function UserStoryBuilderContent() {
 
   const renderStory = () => (
     <div ref={storyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📝 USER STORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📝 USER STORY</td></tr></tbody></table>
       <CopyButton targetRef={storyRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "18%" }}>Story ID</td><td style={{ ...S.td0, width: "32%" }}>[S-###]</td><td style={{ ...S.tdLabel, width: "18%" }}>Epic</td><td style={{ ...S.td0, width: "32%" }}>[Epic Name / ID]</td></tr>
@@ -55,7 +55,7 @@ function UserStoryBuilderContent() {
 
   const renderAC = () => (
     <div ref={acRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>✅ ACCEPTANCE CRITERIA (Given/When/Then)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>✅ ACCEPTANCE CRITERIA (Given/When/Then)</td></tr></tbody></table>
       <CopyButton targetRef={acRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Each AC = one testable scenario. If all pass, the story is done.</p>
       <table style={S.tbl}>
@@ -94,7 +94,7 @@ function UserStoryBuilderContent() {
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
-          <div style={S.sectionBanner(accent)}>📋 STORY DETAILS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 STORY DETAILS</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.tdLabel, width: "30%" }}>Business Context</td><td style={S.td0}>[Why does this story matter? What problem does it solve?]</td></tr>
             <tr><td style={S.tdLabelAlt}>Dependencies</td><td style={S.tdAlt}>[Other stories, APIs, teams, or vendors this depends on]</td></tr>
@@ -104,7 +104,7 @@ function UserStoryBuilderContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "5px" }}>
-          <div style={S.sectionBanner(accentDark)}>⚠️ EDGE CASES &amp; RISKS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚠️ EDGE CASES &amp; RISKS</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead><tr>
               <th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th>

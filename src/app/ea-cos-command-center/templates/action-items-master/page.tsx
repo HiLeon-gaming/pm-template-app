@@ -32,7 +32,7 @@ function ActionItemsMasterContent() {
 
   const renderActive = () => (
     <div ref={activeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>OPEN ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>OPEN ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={activeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every action item from every meeting in one master list. Nothing falls through the cracks.</p>
       <table style={S.tbl}>
@@ -79,7 +79,7 @@ function ActionItemsMasterContent() {
 
   const renderCompleted = () => (
     <div ref={completedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6B7280")}>RECENTLY COMPLETED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6B7280")}>RECENTLY COMPLETED</td></tr></tbody></table>
       <CopyButton targetRef={completedRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

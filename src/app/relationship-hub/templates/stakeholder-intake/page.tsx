@@ -35,7 +35,7 @@ function IntakeContent() {
 
   const renderCapture = () => (
     <div ref={captureRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>QUICK CAPTURE &mdash; NEW STAKEHOLDER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>QUICK CAPTURE &mdash; NEW STAKEHOLDER</td></tr></tbody></table>
       <CopyButton targetRef={captureRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Fill this out within 24 hours of meeting someone new. First impressions fade fast &mdash; capture the context while it&apos;s fresh. You can transfer key details to a full Stakeholder Profile later.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function IntakeContent() {
 
   const renderNextSteps = () => (
     <div ref={nextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>IMMEDIATE NEXT STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>IMMEDIATE NEXT STEPS</td></tr></tbody></table>
       <CopyButton targetRef={nextRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Complete these within 48 hours of your intake. The faster you follow up, the stronger the first impression you make.</p>
       <table style={S.tbl}>

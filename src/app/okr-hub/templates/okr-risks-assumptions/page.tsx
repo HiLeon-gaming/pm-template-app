@@ -37,7 +37,7 @@ function RisksAssumptionsContent() {
 
   const renderAssume = () => (
     <div ref={assumeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ASSUMPTIONS (What Must Be True for OKRs to Succeed)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ASSUMPTIONS (What Must Be True for OKRs to Succeed)</td></tr></tbody></table>
       <CopyButton targetRef={assumeRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>An assumption is something you BELIEVE to be true but haven&apos;t fully proven yet. If an assumption turns out to be wrong, it can derail your entire OKR. List them so you can validate them early.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function RisksAssumptionsContent() {
 
   const renderRisk = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>TOP RISKS (What Could Derail Us)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>TOP RISKS (What Could Derail Us)</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A risk is something that MIGHT happen and would hurt your ability to hit OKRs. Naming risks early lets you prepare for them instead of being surprised.</p>
       <table style={S.tbl}>

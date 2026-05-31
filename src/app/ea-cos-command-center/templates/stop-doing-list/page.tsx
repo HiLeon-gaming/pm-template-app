@@ -34,7 +34,7 @@ function StopDoingListContent() {
 
   const renderStop = () => (
     <div ref={stopRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>STOP DOING &mdash; Exec Time Freed</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>STOP DOING &mdash; Exec Time Freed</td></tr></tbody></table>
       <CopyButton targetRef={stopRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What should the exec stop attending, reviewing, or owning? Protect the most valuable resource: their time.</p>
       <table style={S.tbl}>
@@ -76,7 +76,7 @@ function StopDoingListContent() {
     <div ref={startRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>START DOING</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>START DOING</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; [Weekly 30-min strategic thinking block]<br />
@@ -88,7 +88,7 @@ function StopDoingListContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#0EA5E9")}>CONTINUE DOING</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>CONTINUE DOING</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; [Weekly leadership team sync]<br />

@@ -35,7 +35,7 @@ function RadarContent() {
 
   const renderRisks = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>STAKEHOLDER RISK REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>STAKEHOLDER RISK REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Risks that originate from or are amplified by stakeholder dynamics. These are often the risks that blindside PMs because they&apos;re political, not technical. Review monthly. Update when the landscape shifts.</p>
       <table style={S.tbl}>
@@ -79,7 +79,7 @@ function RadarContent() {
 
   const renderMitig = () => (
     <div ref={mitigRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>EARLY WARNING SIGNALS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>EARLY WARNING SIGNALS</td></tr></tbody></table>
       <CopyButton targetRef={mitigRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>For each risk, define the early warning signals that would tell you the risk is materializing. If you see these signals, activate your mitigation plan immediately.</p>
       <table style={S.tbl}>

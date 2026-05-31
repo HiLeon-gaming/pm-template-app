@@ -37,7 +37,7 @@ function NorthStarContent() {
 
   const renderDef = () => (
     <div ref={defRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>YOUR NORTH STAR METRIC</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>YOUR NORTH STAR METRIC</td></tr></tbody></table>
       <CopyButton targetRef={defRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A North Star Metric is the ONE number that best represents the value your company delivers to customers. When this number goes up, it means customers are getting more value, and your business is growing. Everything else supports it.</p>
       <table style={S.tbl}><tbody>
@@ -56,7 +56,7 @@ function NorthStarContent() {
 
   const renderSupport = () => (
     <div ref={supportRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>SUPPORTING METRICS (Input Metrics)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>SUPPORTING METRICS (Input Metrics)</td></tr></tbody></table>
       <CopyButton targetRef={supportRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your North Star doesn&apos;t move by magic. These &ldquo;input metrics&rdquo; are the levers you pull to make it go up. Think of them as the ingredients that create the result.</p>
       <table style={S.tbl}>

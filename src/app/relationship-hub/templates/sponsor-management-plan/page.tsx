@@ -36,7 +36,7 @@ function SponsorContent() {
 
   const renderProfile = () => (
     <div ref={profileRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>SPONSOR PROFILE &amp; ALIGNMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>SPONSOR PROFILE &amp; ALIGNMENT</td></tr></tbody></table>
       <CopyButton targetRef={profileRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your sponsor is the single most important stakeholder relationship. Understand exactly what they need, how they think, and what keeps them up at night. This section is your cheat sheet for every interaction.</p>
       <table style={S.tbl}>
@@ -74,7 +74,7 @@ function SponsorContent() {
 
   const renderStrategy = () => (
     <div ref={stratRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>SPONSOR MANAGEMENT STRATEGY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>SPONSOR MANAGEMENT STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={stratRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your strategy for keeping your sponsor informed, aligned, and activated. The best PMs manage sponsors proactively \u2014 never reactively.</p>
       <table style={S.tbl}>
@@ -106,7 +106,7 @@ function SponsorContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>SPONSOR RELATIONSHIP HEALTH CHECK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>SPONSOR RELATIONSHIP HEALTH CHECK</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Run this checklist monthly. If you answer \u201CNo\u201D to 3+ questions, your sponsor relationship needs immediate attention.</p>
       <table style={S.tbl}>

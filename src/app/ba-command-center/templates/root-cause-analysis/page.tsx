@@ -117,7 +117,7 @@ function RCAContent() {
 
   const renderFishbone = () => (
     <div ref={fishRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🐟 ISHIKAWA (FISHBONE) DIAGRAM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🐟 ISHIKAWA (FISHBONE) DIAGRAM</td></tr></tbody></table>
       <CopyButton targetRef={fishRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Contributing factors organized by category. Each factor may have contributed to the root cause.</p>
       <table style={LT}><tbody>
@@ -196,7 +196,7 @@ function RCAContent() {
 
   const renderPrevention = () => (
     <div ref={preventRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}>🛡️ PREVENTION &amp; MONITORING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}>🛡️ PREVENTION &amp; MONITORING</td></tr></tbody></table>
       <CopyButton targetRef={preventRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

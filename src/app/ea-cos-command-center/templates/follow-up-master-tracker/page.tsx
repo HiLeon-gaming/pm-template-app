@@ -34,7 +34,7 @@ function FollowUpMasterContent() {
 
   const renderMaster = () => (
     <div ref={masterRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 SINGLE SOURCE OF TRUTH &mdash; Everything You&apos;re Chasing</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 SINGLE SOURCE OF TRUTH &mdash; Everything You&apos;re Chasing</td></tr></tbody></table>
       <CopyButton targetRef={masterRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Your second-most used page. If it&apos;s not here, it doesn&apos;t exist. Review daily.</p>
       <table style={S.tbl}>
@@ -82,7 +82,7 @@ function FollowUpMasterContent() {
 
   const renderStats = () => (
     <div ref={statsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 DASHBOARD STATS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 DASHBOARD STATS</td></tr></tbody></table>
       <CopyButton targetRef={statsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

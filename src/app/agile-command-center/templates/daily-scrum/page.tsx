@@ -44,7 +44,7 @@ function DailyScrumContent() {
 
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>👥 TEAM UPDATES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>👥 TEAM UPDATES</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -78,7 +78,7 @@ function DailyScrumContent() {
 
   const renderImpediments = () => (
     <div ref={impedimentsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🚧 IMPEDIMENT LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🚧 IMPEDIMENT LOG</td></tr></tbody></table>
       <CopyButton targetRef={impedimentsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -115,7 +115,7 @@ function DailyScrumContent() {
 
   const renderDecisions = () => (
     <div ref={decisionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ DECISIONS &amp; PARKING LOT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ DECISIONS &amp; PARKING LOT</td></tr></tbody></table>
       <CopyButton targetRef={decisionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

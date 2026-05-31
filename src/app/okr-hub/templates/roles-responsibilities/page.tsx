@@ -34,7 +34,7 @@ function RolesContent() {
 
   const renderRoles = () => (
     <div ref={rolesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>THE THREE KEY ROLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>THE THREE KEY ROLES</td></tr></tbody></table>
       <CopyButton targetRef={rolesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every goal, metric, and review needs someone responsible. Here are the three roles that make this system work. One person can play multiple roles.</p>
       <table style={S.tbl}>
@@ -65,7 +65,7 @@ function RolesContent() {
 
   const renderRaci = () => (
     <div ref={raciRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>RACI QUICK GUIDE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>RACI QUICK GUIDE</td></tr></tbody></table>
       <CopyButton targetRef={raciRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>RACI stands for Responsible, Accountable, Consulted, Informed. It&apos;s a simple way to make sure everyone knows their role for each task or goal.</p>
       <table style={S.tbl}>
@@ -99,7 +99,7 @@ function RolesContent() {
 
   const renderAssign = () => (
     <div ref={assignRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#059669")}>ROLE ASSIGNMENT TABLE (Fill This In)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>ROLE ASSIGNMENT TABLE (Fill This In)</td></tr></tbody></table>
       <CopyButton targetRef={assignRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Fill in who plays each role for your team. This prevents the #1 problem: &ldquo;I thought someone else was handling it.&rdquo;</p>
       <table style={S.tbl}>
@@ -137,7 +137,7 @@ function RolesContent() {
 
   const renderAnti = () => (
     <div ref={antiRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ANTI-PATTERNS TO AVOID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ANTI-PATTERNS TO AVOID</td></tr></tbody></table>
       <CopyButton targetRef={antiRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

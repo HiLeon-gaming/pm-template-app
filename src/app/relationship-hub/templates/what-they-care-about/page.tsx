@@ -35,7 +35,7 @@ function CareAboutContent() {
 
   const renderCare = () => (
     <div ref={careRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; WHAT MATTERS TO THEM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>STAKEHOLDER: [NAME] &mdash; WHAT MATTERS TO THEM</td></tr></tbody></table>
       <CopyButton targetRef={careRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Understanding what someone cares about is the single most powerful relationship tool. Fill this out gradually as you learn more. Update after every meaningful interaction.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function CareAboutContent() {
 
   const renderFraming = () => (
     <div ref={frameRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>FRAMING GUIDE &mdash; HOW TO PRESENT YOUR WORK TO THEM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>FRAMING GUIDE &mdash; HOW TO PRESENT YOUR WORK TO THEM</td></tr></tbody></table>
       <CopyButton targetRef={frameRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Use this section to pre-plan how you frame updates, requests, and presentations for this specific stakeholder. The same information presented differently gets very different reactions.</p>
       <table style={S.tbl}>

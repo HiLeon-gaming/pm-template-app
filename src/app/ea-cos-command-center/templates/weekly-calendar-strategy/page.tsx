@@ -34,7 +34,7 @@ function WeeklyCalendarStrategyContent() {
 
   const renderThemes = () => (
     <div ref={themesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 THIS WEEK&apos;S FOCUS THEMES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 THIS WEEK&apos;S FOCUS THEMES</td></tr></tbody></table>
       <CopyButton targetRef={themesRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "20%" }}>Week Of</td><td style={{ ...S.td0, fontWeight: 700, color: accent }}>[MM/DD/YYYY]</td></tr>
@@ -72,7 +72,7 @@ function WeeklyCalendarStrategyContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🛡️ CALENDAR PROTECTION RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🛡️ CALENDAR PROTECTION RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>

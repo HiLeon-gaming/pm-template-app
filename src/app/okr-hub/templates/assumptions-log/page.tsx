@@ -36,7 +36,7 @@ function AssumptionsLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>ASSUMPTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>ASSUMPTIONS</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every OKR and initiative is built on assumptions — things we believe to be true but haven&apos;t proven yet. List them here, validate them early, and adjust before it&apos;s too late.</p>
       <table style={S.tbl}>

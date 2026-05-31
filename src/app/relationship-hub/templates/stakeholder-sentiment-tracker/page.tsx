@@ -35,7 +35,7 @@ function SentimentContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>SENTIMENT LOG &mdash; [MONTH / YEAR]</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>SENTIMENT LOG &mdash; [MONTH / YEAR]</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track how each stakeholder FEELS about your project and their relationship with you. Sentiment is a leading indicator &mdash; it changes before behavior does. If you catch a sentiment shift early, you can address it before it becomes a real problem.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function SentimentContent() {
 
   const renderTrend = () => (
     <div ref={trendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>SENTIMENT SIGNALS &mdash; WHAT TO WATCH FOR</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>SENTIMENT SIGNALS &mdash; WHAT TO WATCH FOR</td></tr></tbody></table>
       <CopyButton targetRef={trendRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

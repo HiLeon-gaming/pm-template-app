@@ -47,7 +47,7 @@ function ReleaseNotesContent() {
 
   const renderHighlights = () => (
     <div ref={highlightsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✨ RELEASE HIGHLIGHTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✨ RELEASE HIGHLIGHTS</td></tr></tbody></table>
       <CopyButton targetRef={highlightsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -76,7 +76,7 @@ function ReleaseNotesContent() {
 
   const renderDetails = () => (
     <div ref={detailsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📋 DETAILED CHANGES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 DETAILED CHANGES</td></tr></tbody></table>
       <CopyButton targetRef={detailsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -114,7 +114,7 @@ function ReleaseNotesContent() {
 
   const renderDeploy = () => (
     <div ref={deployRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🚀 DEPLOYMENT DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🚀 DEPLOYMENT DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={deployRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Deploy Time</td><td style={S.td0}>[MM/DD/YYYY HH:MM — Maintenance window]</td></tr>

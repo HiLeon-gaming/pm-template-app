@@ -37,7 +37,7 @@ function DecisionRulesContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>CORE DECISION PRINCIPLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>CORE DECISION PRINCIPLES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>These rules prevent two problems: (1) decisions that take too long, and (2) decisions made by the wrong person. Simple rules = fast teams.</p>
       <table style={S.tbl}><tbody>
@@ -54,7 +54,7 @@ function DecisionRulesContent() {
 
   const renderThresh = () => (
     <div ref={threshRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>DECISION THRESHOLDS (Fill In Your Numbers)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>DECISION THRESHOLDS (Fill In Your Numbers)</td></tr></tbody></table>
       <CopyButton targetRef={threshRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Set clear thresholds so people know when they can decide on their own and when they need to escalate. Fill in the brackets with your team&apos;s actual numbers.</p>
       <table style={S.tbl}>

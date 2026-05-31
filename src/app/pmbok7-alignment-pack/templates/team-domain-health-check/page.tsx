@@ -47,7 +47,7 @@ function TeamDomainHealthCheckContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 HEALTH INDICATORS</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -83,7 +83,7 @@ function TeamDomainHealthCheckContent() {
 
   const renderCapacity = () => (
     <div ref={capacityRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📊 CAPACITY &amp; UTILIZATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 CAPACITY &amp; UTILIZATION</td></tr></tbody></table>
       <CopyButton targetRef={capacityRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -120,7 +120,7 @@ function TeamDomainHealthCheckContent() {
 
   const renderGaps = () => (
     <div ref={gapsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚠️ SKILL GAPS &amp; RISKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚠️ SKILL GAPS &amp; RISKS</td></tr></tbody></table>
       <CopyButton targetRef={gapsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -148,7 +148,7 @@ function TeamDomainHealthCheckContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚡ TEAM ACTIONS THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚡ TEAM ACTIONS THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

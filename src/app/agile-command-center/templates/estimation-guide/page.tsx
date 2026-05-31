@@ -46,7 +46,7 @@ function EstimationGuideContent() {
 
   const renderScale = () => (
     <div ref={scaleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 POINT SCALE DEFINITION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 POINT SCALE DEFINITION</td></tr></tbody></table>
       <CopyButton targetRef={scaleRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Story points measure complexity + effort + uncertainty, NOT hours. Use Fibonacci: 1, 2, 3, 5, 8, 13.</p>
       <table style={S.tbl}>
@@ -84,7 +84,7 @@ function EstimationGuideContent() {
 
   const renderRef = () => (
     <div ref={refRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📖 REFERENCE STORIES (CALIBRATION)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📖 REFERENCE STORIES (CALIBRATION)</td></tr></tbody></table>
       <CopyButton targetRef={refRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Anchor stories the team has already completed. Use these as comparison points when estimating new work.</p>
       <table style={S.tbl}>
@@ -121,7 +121,7 @@ function EstimationGuideContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>💡 ESTIMATION TIPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>💡 ESTIMATION TIPS</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>

@@ -45,7 +45,7 @@ function AllHandsContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 AGENDA &amp; KEY MESSAGES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 AGENDA &amp; KEY MESSAGES</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -83,7 +83,7 @@ function AllHandsContent() {
 
   const renderQA = () => (
     <div ref={qaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>❓ Q&amp;A CAPTURE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>❓ Q&amp;A CAPTURE</td></tr></tbody></table>
       <CopyButton targetRef={qaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -111,7 +111,7 @@ function AllHandsContent() {
 
   const renderFollowup = () => (
     <div ref={followupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📬 POST-EVENT FOLLOW-UP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📬 POST-EVENT FOLLOW-UP</td></tr></tbody></table>
       <CopyButton targetRef={followupRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Recording Shared?</td><td style={S.td0}>[Yes — link to recording / No]</td></tr>

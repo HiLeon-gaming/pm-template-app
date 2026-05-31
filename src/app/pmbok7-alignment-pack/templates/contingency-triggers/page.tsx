@@ -47,7 +47,7 @@ function ContingencyTriggersContent() {
 
   const renderTriggers = () => (
     <div ref={triggersRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>🎯 CONTINGENCY TRIGGER REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>🎯 CONTINGENCY TRIGGER REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={triggersRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -77,7 +77,7 @@ function ContingencyTriggersContent() {
 
   const renderEscalation = () => (
     <div ref={escalationRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>📢 ESCALATION PROTOCOL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📢 ESCALATION PROTOCOL</td></tr></tbody></table>
       <CopyButton targetRef={escalationRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Level 1: PM Action</td><td style={S.td0}>[PM activates pre-defined response within 4 hours of trigger; notifies team; documents in risk log]</td></tr>
@@ -90,7 +90,7 @@ function ContingencyTriggersContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>⚡ ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚡ ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "5%", textAlign: "center" as const }}>#</th><th style={S.thSecondary}>Action</th><th style={{ ...S.thSecondary, width: "12%" }}>Owner</th><th style={{ ...S.thSecondary, width: "10%" }}>Target</th></tr></thead>

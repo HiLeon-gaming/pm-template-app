@@ -36,7 +36,7 @@ function SOaPContent() {
 
   const renderBuilder = () => (
     <div ref={builderRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>YOUR STRATEGY ON A PAGE (Fill This In)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>YOUR STRATEGY ON A PAGE (Fill This In)</td></tr></tbody></table>
       <CopyButton targetRef={builderRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A SOaP (Strategy on a Page) forces you to explain your entire strategy in one page. If you can&apos;t explain it simply, it&apos;s too complicated. Fill in each box below.</p>
       <table style={S.tbl}><tbody>

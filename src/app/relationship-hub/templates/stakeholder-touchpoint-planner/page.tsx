@@ -35,7 +35,7 @@ function TouchpointContent() {
 
   const renderPlan = () => (
     <div ref={planRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MONTH: [MONTH / YEAR] &mdash; WHO NEEDS A CHECK-IN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MONTH: [MONTH / YEAR] &mdash; WHO NEEDS A CHECK-IN</td></tr></tbody></table>
       <CopyButton targetRef={planRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>At the start of each month, review this list. Who needs attention? Who are you neglecting? Schedule touchpoints proactively. Red and Amber stakeholders get priority &mdash; but don&apos;t forget your Green relationships either.</p>
       <table style={S.tbl}>
@@ -82,7 +82,7 @@ function TouchpointContent() {
 
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>END-OF-MONTH REVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>END-OF-MONTH REVIEW</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>At month-end, review your touchpoint completion. Did you reach everyone who needed attention? What patterns do you see?</p>
       <table style={S.tbl}>

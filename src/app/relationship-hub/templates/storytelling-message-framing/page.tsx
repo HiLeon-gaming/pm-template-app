@@ -35,7 +35,7 @@ function StoryContent() {
 
   const renderBuilder = () => (
     <div ref={builderRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>MESSAGE BUILDER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>MESSAGE BUILDER</td></tr></tbody></table>
       <CopyButton targetRef={builderRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>The same information framed differently produces completely different reactions. Use this builder to craft your message BEFORE the meeting, email, or presentation. Start with your audience, then build your narrative.</p>
       <table style={S.tbl}>
@@ -70,7 +70,7 @@ function StoryContent() {
 
   const renderFraming = () => (
     <div ref={framingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#6366F1")}>AUDIENCE-SPECIFIC FRAMING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#6366F1")}>AUDIENCE-SPECIFIC FRAMING</td></tr></tbody></table>
       <CopyButton targetRef={framingRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>The same message needs different framing for different audiences. What resonates with your sponsor won&apos;t resonate with engineering. Adapt your language, emphasis, and evidence for each audience.</p>
       <table style={S.tbl}>

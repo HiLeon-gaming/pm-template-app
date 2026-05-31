@@ -34,7 +34,7 @@ function ApprovalsQueueContent() {
 
   const renderQueue = () => (
     <div ref={queueRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 ITEMS AWAITING EXEC APPROVAL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 ITEMS AWAITING EXEC APPROVAL</td></tr></tbody></table>
       <CopyButton targetRef={queueRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Sign-offs, reviews, and decisions waiting for the executive. Track deadline and what&apos;s needed to approve.</p>
       <table style={S.tbl}>
@@ -75,7 +75,7 @@ function ApprovalsQueueContent() {
     <div ref={urgentRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>🚨 OVERDUE / AT RISK</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>🚨 OVERDUE / AT RISK</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; <strong style={{ color: "#DC2626" }}>[Offer letter]</strong> — due tomorrow, exec hasn&apos;t reviewed yet. Flag in 1:1 today.<br />
@@ -85,7 +85,7 @@ function ApprovalsQueueContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>✅ RECENTLY APPROVED</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>✅ RECENTLY APPROVED</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "10px 14px" }}>
               &bull; <strong style={{ color: "#059669" }}>[Team offsite budget]</strong> — approved 03/12. Notified Operations.<br />

@@ -36,7 +36,7 @@ function DecisionLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Every major decision — with context, options considered, and impact. If it&apos;s not written down, it didn&apos;t happen. This log prevents &ldquo;I didn&apos;t know we decided that&rdquo; and stops the same debates from repeating.</p>
       <table style={S.tbl}>

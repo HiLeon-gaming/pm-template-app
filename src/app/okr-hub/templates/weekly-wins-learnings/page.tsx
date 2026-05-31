@@ -37,7 +37,7 @@ function WinsLearningsContent() {
 
   const renderWins = () => (
     <div ref={winsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>THIS WEEK&apos;S WINS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>THIS WEEK&apos;S WINS</td></tr></tbody></table>
       <CopyButton targetRef={winsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What went well this week? Celebrate progress — even small wins build momentum and morale.</p>
       <table style={S.tbl}>
@@ -72,7 +72,7 @@ function WinsLearningsContent() {
 
   const renderLearn = () => (
     <div ref={learnRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>LEARNINGS &amp; OBSERVATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>LEARNINGS &amp; OBSERVATIONS</td></tr></tbody></table>
       <CopyButton targetRef={learnRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>What did we learn this week? What surprised us? What would we do differently next time?</p>
       <table style={S.tbl}>

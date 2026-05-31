@@ -48,7 +48,7 @@ function LessonsLearnedContent() {
 
   const renderTimeline = () => (
     <div ref={timelineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📅 PROJECT TIMELINE RECAP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📅 PROJECT TIMELINE RECAP</td></tr></tbody></table>
       <CopyButton targetRef={timelineRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -88,7 +88,7 @@ function LessonsLearnedContent() {
       <CopyButton targetRef={lessonsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
-          <div style={S.sectionBanner("#059669")}>✅ WHAT WENT WELL</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#059669")}>✅ WHAT WENT WELL</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             {[
               "[Team collaboration was excellent — daily standups kept everyone aligned]",
@@ -102,7 +102,7 @@ function LessonsLearnedContent() {
           </tbody></table>
         </td>
         <td style={{ ...LC, width: "50%", paddingLeft: "4px" }}>
-          <div style={S.sectionBanner("#DC2626")}>❌ WHAT DIDN&apos;T GO WELL</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>❌ WHAT DIDN&apos;T GO WELL</td></tr></tbody></table>
           <table style={S.tbl}><tbody>
             {[
               "[Scope creep — 3 requirements added mid-sprint without change control]",
@@ -121,7 +121,7 @@ function LessonsLearnedContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>🔑 KEY LESSONS &amp; FUTURE ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔑 KEY LESSONS &amp; FUTURE ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

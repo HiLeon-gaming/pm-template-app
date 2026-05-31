@@ -49,7 +49,7 @@ function ProjectKickoffContent() {
 
   const renderOverview = () => (
     <div ref={overviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 PROJECT OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 PROJECT OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={overviewRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Business Problem</td><td style={S.td0}>[What problem are we solving? Why now?]</td></tr>
@@ -64,7 +64,7 @@ function ProjectKickoffContent() {
 
   const renderRoles = () => (
     <div ref={rolesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>👥 TEAM &amp; ROLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>👥 TEAM &amp; ROLES</td></tr></tbody></table>
       <CopyButton targetRef={rolesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -97,7 +97,7 @@ function ProjectKickoffContent() {
 
   const renderTimeline = () => (
     <div ref={timelineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📅 KEY MILESTONES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📅 KEY MILESTONES</td></tr></tbody></table>
       <CopyButton targetRef={timelineRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -133,7 +133,7 @@ function ProjectKickoffContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>⚠️ KNOWN RISKS &amp; ASSUMPTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>⚠️ KNOWN RISKS &amp; ASSUMPTIONS</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "4px" }}>
@@ -164,7 +164,7 @@ function ProjectKickoffContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>✅ IMMEDIATE NEXT STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>✅ IMMEDIATE NEXT STEPS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Communication Plan</td><td style={S.td0}>[How will we communicate? Slack channel, email list, meetings?]</td></tr>

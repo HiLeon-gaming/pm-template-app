@@ -44,7 +44,7 @@ function OneOnOneNotesContent() {
 
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 DISCUSSION NOTES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 DISCUSSION NOTES</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -75,7 +75,7 @@ function OneOnOneNotesContent() {
 
   const renderCommitments = () => (
     <div ref={commitmentsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>✅ DECISIONS &amp; COMMITMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>✅ DECISIONS &amp; COMMITMENTS</td></tr></tbody></table>
       <CopyButton targetRef={commitmentsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -108,7 +108,7 @@ function OneOnOneNotesContent() {
 
   const renderFollowup = () => (
     <div ref={followupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📬 CARRY FORWARD TO NEXT 1:1</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📬 CARRY FORWARD TO NEXT 1:1</td></tr></tbody></table>
       <CopyButton targetRef={followupRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "22%" }}>Topics to Revisit</td><td style={S.td0}>[List any topics that need follow-up next week]</td></tr>

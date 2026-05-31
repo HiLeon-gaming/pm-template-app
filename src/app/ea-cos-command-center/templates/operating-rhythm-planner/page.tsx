@@ -33,7 +33,7 @@ function OperatingRhythmContent() {
 
   const renderDaily = () => (
     <div ref={dailyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#0EA5E9")}>DAILY RHYTHM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#0EA5E9")}>DAILY RHYTHM</td></tr></tbody></table>
       <CopyButton targetRef={dailyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -66,7 +66,7 @@ function OperatingRhythmContent() {
 
   const renderWeekly = () => (
     <div ref={weeklyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>WEEKLY RHYTHM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>WEEKLY RHYTHM</td></tr></tbody></table>
       <CopyButton targetRef={weeklyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -100,7 +100,7 @@ function OperatingRhythmContent() {
 
   const renderMonthly = () => (
     <div ref={monthlyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#7C3AED")}>MONTHLY &amp; QUARTERLY RHYTHM</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#7C3AED")}>MONTHLY &amp; QUARTERLY RHYTHM</td></tr></tbody></table>
       <CopyButton targetRef={monthlyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

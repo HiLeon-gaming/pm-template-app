@@ -32,7 +32,7 @@ function DelegationTrackerContent() {
 
   const renderTable = () => (
     <div ref={tableRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accent)}>📋 WHAT THE EXEC DELEGATED</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📋 WHAT THE EXEC DELEGATED</td></tr></tbody></table>
       <CopyButton targetRef={tableRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>Track what was handed off, to whom, and when to follow up. Makes delegation real — not just words.</p>
       <table style={S.tbl}>
@@ -73,7 +73,7 @@ function DelegationTrackerContent() {
 
   const renderTips = () => (
     <div ref={tipsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(accentDark)}>💡 DELEGATION BEST PRACTICES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 DELEGATION BEST PRACTICES</td></tr></tbody></table>
       <CopyButton targetRef={tipsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9", padding: "12px 16px" }}>

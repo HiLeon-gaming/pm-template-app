@@ -37,7 +37,7 @@ function BlockersContent() {
 
   const renderBlock = () => (
     <div ref={blockRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#DC2626")}>ACTIVE BLOCKERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#DC2626")}>ACTIVE BLOCKERS</td></tr></tbody></table>
       <CopyButton targetRef={blockRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>A blocker is anything that prevents progress on a Key Result or initiative. If something is stuck for more than 48 hours, it belongs here.</p>
       <table style={S.tbl}>
@@ -77,7 +77,7 @@ function BlockersContent() {
 
   const renderEsc = () => (
     <div ref={escRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner("#D97706")}>HELP REQUESTS (Need Support, Not Blocked Yet)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#D97706")}>HELP REQUESTS (Need Support, Not Blocked Yet)</td></tr></tbody></table>
       <CopyButton targetRef={escRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

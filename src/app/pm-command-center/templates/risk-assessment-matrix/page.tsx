@@ -109,7 +109,7 @@ function RiskAssessmentMatrixContent() {
 
   const renderScale = () => (
     <div ref={scaleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> PROBABILITY & IMPACT SCALES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> PROBABILITY & IMPACT SCALES</td></tr></tbody></table>
       <CopyButton targetRef={scaleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -201,7 +201,7 @@ function RiskAssessmentMatrixContent() {
 
   const renderPlot = () => (
     <div ref={plotRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner(C.secondary)}> RISK PLOT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(C.secondary)}> RISK PLOT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={plotRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
