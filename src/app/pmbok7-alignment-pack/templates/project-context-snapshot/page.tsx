@@ -47,7 +47,7 @@ function ProjectContextSnapshotContent() {
 
   const renderObjectives = () => (
     <div ref={objectivesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 PROJECT OBJECTIVES &amp; SUCCESS CRITERIA</div>
+      <div style={S.sectionBanner()}>🎯 PROJECT OBJECTIVES & SUCCESS CRITERIA</div>
       <CopyButton targetRef={objectivesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thPrimary, backgroundColor: "#0D9488", width: "5%", textAlign: "center" as const }}>#</th><th style={{ ...S.thPrimary, backgroundColor: "#0D9488" }}>Objective</th><th style={{ ...S.thPrimary, backgroundColor: "#0D9488", width: "30%" }}>Success Measure</th><th style={{ ...S.thPrimary, backgroundColor: "#0D9488", width: "10%", textAlign: "center" as const }}>Priority</th></tr></thead>
@@ -68,7 +68,7 @@ function ProjectContextSnapshotContent() {
 
   const renderConstraints = () => (
     <div ref={constraintsRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>🔒 CONSTRAINTS &amp; BOUNDARIES</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner("#115E59")}>🔒 CONSTRAINTS & BOUNDARIES</td></tr></tbody></table>
       <CopyButton targetRef={constraintsRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "20%" }}>Budget Constraint</td><td style={S.td0}>[$690,750 total including 10% contingency — no additional funding available]</td></tr>
@@ -150,7 +150,7 @@ function ProjectContextSnapshotContent() {
       <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50"><div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"><div className="flex items-center gap-3"><div className="w-9 h-9 rounded-lg bg-teal-600 flex items-center justify-center"><Layout size={18} className="text-white" /></div><div><h1 className="text-lg font-bold text-slate-900 leading-tight">ExecNoteShop</h1><p className="text-xs text-slate-500 -mt-0.5">Professional Template Studio</p></div></div><span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-semibold"><Compass size={11} /> Context</span></div></header>
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex items-center justify-between mb-6"><Link href="/pmbok7-alignment-pack" className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-teal-600 transition-colors"><ArrowLeft size={14} /> Back to PMBOK 7 Alignment Pack</Link><CopyAllButton targetRef={fullPageRef} /></div>
-        <div className="mb-6"><div className="flex items-center gap-3 mb-2"><div className="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center"><Compass size={20} className="text-teal-600" /></div><div><h2 className="text-2xl font-extrabold text-slate-900">Project Context Snapshot</h2><p className="text-xs font-medium text-teal-600">Project Context &amp; Boundaries</p></div></div><p className="text-sm text-slate-600 mt-2 max-w-3xl">One-page capture of objectives, constraints, complexity, stakeholders, and risk posture that shapes your project approach.</p></div>
+        <div className="mb-6"><div className="flex items-center gap-3 mb-2"><div className="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center"><Compass size={20} className="text-teal-600" /></div><div><h2 className="text-2xl font-extrabold text-slate-900">Project Context Snapshot</h2><p className="text-xs font-medium text-teal-600">Project Context & Boundaries</p></div></div><p className="text-sm text-slate-600 mt-2 max-w-3xl">One-page capture of objectives, constraints, complexity, stakeholders, and risk posture that shapes your project approach.</p></div>
         <ThemeSwitcher />
         <div data-copy-exclude="true" className="mb-6"><p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Layout</p><div className="flex flex-wrap gap-2">{LAYOUTS.map((l) => { const Icon = l.icon; const isActive = layout === l.id; return (<button key={l.id} onClick={() => setLayout(l.id)} className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold transition-all ${isActive ? "bg-teal-600 text-white border-teal-600 shadow-md shadow-teal-200" : "bg-white text-slate-600 border-slate-200 hover:border-teal-300 hover:text-teal-700"}`}><Icon size={15} /> <span>{l.label}</span> <span className={`text-[10px] font-medium ${isActive ? "text-teal-200" : "text-slate-400"}`}>{l.desc}</span></button>); })}</div></div>
         <div ref={fullPageRef} style={{ fontFamily: S.font }}>{layout === "full" && renderFullLayout()}{layout === "compact" && renderCompactLayout()}</div>

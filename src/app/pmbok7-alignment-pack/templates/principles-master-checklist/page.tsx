@@ -37,7 +37,7 @@ function PrinciplesMasterChecklistContent() {
     { num: "8", name: "Quality", question: "Is quality built into processes and deliverables, not just inspected at the end?", score: "4", evidence: "[DoD enforced; code reviews 100%; UAT per sprint; 0 defects escaped to production]" },
     { num: "9", name: "Complexity", question: "Are we navigating complexity effectively with appropriate responses?", score: "3", evidence: "[Complexity drivers identified; some responses reactive rather than proactive]" },
     { num: "10", name: "Risk", question: "Are we optimizing risk responses and managing uncertainty proactively?", score: "4", evidence: "[14 active risks managed; weekly risk reviews; contingency reserves adequate]" },
-    { num: "11", name: "Adaptability &amp; Resilience", question: "Can the project adapt to change and recover from setbacks?", score: "4", evidence: "[Hybrid approach allows flexibility; team adapted to vendor delay with mock API strategy]" },
+    { num: "11", name: "Adaptability & Resilience", question: "Can the project adapt to change and recover from setbacks?", score: "4", evidence: "[Hybrid approach allows flexibility; team adapted to vendor delay with mock API strategy]" },
     { num: "12", name: "Change", question: "Are we enabling change to achieve the envisioned future state?", score: "3", evidence: "[Change management plan exists but champion network activation just starting]" },
   ];
 

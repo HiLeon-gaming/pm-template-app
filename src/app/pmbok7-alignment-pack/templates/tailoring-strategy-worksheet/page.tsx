@@ -84,7 +84,7 @@ function TailoringStrategyWorksheetContent() {
           {[
             { dim: "Governance Cadence", std: "Monthly", tailored: "Bi-weekly", rat: "[Sponsor preference + higher risk profile justifies more frequent oversight]" },
             { dim: "Planning Depth", std: "Full WBS (5 levels)", tailored: "WBS (3 levels) + sprint backlogs", rat: "[Hybrid approach; detailed planning done at sprint level, not upfront]" },
-            { dim: "Change Control", std: "All changes through CCB", tailored: "CCB for &gt;$5K impact; PM authority for minor changes", rat: "[Reduces bottleneck while maintaining control for significant changes]" },
+            { dim: "Change Control", std: "All changes through CCB", tailored: "CCB for >$5K impact; PM authority for minor changes", rat: "[Reduces bottleneck while maintaining control for significant changes]" },
             { dim: "Status Reporting", std: "Weekly + monthly", tailored: "Bi-weekly to steering; weekly to team only", rat: "[Aligned with governance cadence; reduces reporting overhead]" },
             { dim: "Risk Management", std: "Monthly risk review", tailored: "Weekly risk check (15 min)", rat: "[Higher risk profile requires more frequent monitoring]" },
             { dim: "Quality Assurance", std: "Phase-end QA gates", tailored: "Sprint demo + UAT per increment", rat: "[Continuous quality validation aligns with hybrid delivery]" },
@@ -113,7 +113,7 @@ function TailoringStrategyWorksheetContent() {
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Overall Tailoring Philosophy</td><td style={S.td0}>[Right-sized governance: enough process to manage risk and satisfy compliance, without unnecessary overhead that slows a capable team.]</td></tr>
         <tr><td style={S.tdLabelAlt}>Key Trade-offs Accepted</td><td style={S.tdAlt}>[Less upfront planning detail in exchange for sprint-level flexibility. PM authority for minor changes in exchange for faster decision-making.]</td></tr>
         <tr><td style={S.tdLabel}>What We Will NOT Tailor</td><td style={S.td0}>[Risk management rigor (non-negotiable). SOX-related change controls (regulatory). Formal deliverable acceptance (contractual).]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Review Trigger</td><td style={S.tdAlt}>[Re-evaluate tailoring if: (1) project moves to Red status, (2) regulatory scope changes, (3) team composition changes &gt;30%.]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Review Trigger</td><td style={S.tdAlt}>[Re-evaluate tailoring if: (1) project moves to Red status, (2) regulatory scope changes, (3) team composition changes >30%.]</td></tr>
       </tbody></table>
     </div>
   );

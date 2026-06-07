@@ -58,7 +58,7 @@ function TailoringDecisionsLogContent() {
         </tr></thead>
         <tbody>
           {[
-            { date: "[01/15]", dim: "Change Control", what: "[PM authority for changes &lt;$5K instead of full CCB]", rat: "[Reduce decision bottleneck; 80% of CRs are minor]", status: "Active", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
+            { date: "[01/15]", dim: "Change Control", what: "[PM authority for changes <$5K instead of full CCB]", rat: "[Reduce decision bottleneck; 80% of CRs are minor]", status: "Active", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { date: "[01/15]", dim: "Planning Depth", what: "[WBS to 3 levels + sprint backlogs instead of 5-level WBS]", rat: "[Hybrid approach; detailed planning at sprint level]", status: "Active", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { date: "[01/22]", dim: "Reporting", what: "[Bi-weekly status to steering instead of weekly]", rat: "[Sponsor preference; reduces overhead without losing visibility]", status: "Active", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { date: "[02/05]", dim: "Risk Mgmt", what: "[Weekly 15-min risk check instead of monthly deep review]", rat: "[Higher risk profile; more frequent = earlier detection]", status: "Active", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },

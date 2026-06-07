@@ -76,7 +76,7 @@ function PlanningDomainHealthCheckContent() {
 
   const renderDeps = () => (
     <div ref={depsRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔗 DEPENDENCY &amp; ASSUMPTION STATUS</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>🔗 DEPENDENCY & ASSUMPTION STATUS</td></tr></tbody></table>
       <CopyButton targetRef={depsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

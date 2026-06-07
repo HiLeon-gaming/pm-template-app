@@ -63,7 +63,7 @@ function DeliveryApproachSelectorContent() {
             { factor: "Team Experience with Approach", pred: "Experienced with waterfall/sequential", agile: "Experienced with agile/iterative", score: "[7]" },
             { factor: "Organizational Culture", pred: "Hierarchical; formal approval culture", agile: "Collaborative; empowered teams", score: "[5]" },
             { factor: "Regulatory / Compliance", pred: "Heavy compliance; audit trail required", agile: "Minimal compliance; flexibility OK", score: "[3]" },
-            { factor: "Project Size / Duration", pred: "Large, long-duration (&gt;12 months)", agile: "Small-medium, shorter cycles", score: "[6]" },
+            { factor: "Project Size / Duration", pred: "Large, long-duration (>12 months)", agile: "Small-medium, shorter cycles", score: "[6]" },
             { factor: "Uncertainty / Complexity", pred: "Low uncertainty; known solution", agile: "High uncertainty; emergent solution", score: "[7]" },
             { factor: "Need for Early Delivery", pred: "Single delivery at end is acceptable", agile: "Incremental value delivery critical", score: "[8]" },
             { factor: "Technology Maturity", pred: "Mature, stable technology", agile: "New or rapidly evolving technology", score: "[6]" },
@@ -124,7 +124,7 @@ function DeliveryApproachSelectorContent() {
 
   const renderTradeoff = () => (
     <div ref={tradeoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ TRADEOFFS &amp; RISKS OF CHOSEN APPROACH</div>
+      <div style={S.sectionBanner()}>⚠️ TRADEOFFS & RISKS OF CHOSEN APPROACH</div>
       <CopyButton targetRef={tradeoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={S.thSecondary}>Tradeoff / Risk</th><th style={{ ...S.thSecondary, width: "8%", textAlign: "center" as const }}>Impact</th><th style={S.thSecondary}>Mitigation</th></tr></thead>
@@ -154,7 +154,7 @@ function DeliveryApproachSelectorContent() {
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Selected Approach</td><td style={S.td0}><span style={{ ...S.badge("#CCFBF1", "#0D9488"), fontSize: "12px", fontWeight: 800 }}>HYBRID (Agile-Leaning)</span></td></tr>
         <tr><td style={S.tdLabelAlt}>Decision Rationale</td><td style={S.tdAlt}>[Score of 59/100 indicates hybrid approach. Requirements are moderately stable but need for early value delivery and evolving technology favor agile practices. Regulatory constraints require predictive controls for financial modules.]</td></tr>
-        <tr><td style={S.tdLabel}>What This Means in Practice</td><td style={S.td0}>[Predictive phase gates for milestones + 2-week agile sprints for development. Formal change control for &gt;$5K impacts. Sprint demos for stakeholder feedback. EVM at phase level, velocity at sprint level.]</td></tr>
+        <tr><td style={S.tdLabel}>What This Means in Practice</td><td style={S.td0}>[Predictive phase gates for milestones + 2-week agile sprints for development. Formal change control for >$5K impacts. Sprint demos for stakeholder feedback. EVM at phase level, velocity at sprint level.]</td></tr>
         <tr><td style={S.tdLabelAlt}>When to Reassess</td><td style={S.tdAlt}>[If requirements volatility exceeds 30% per phase, or if team velocity drops below 60% of baseline for 3 consecutive sprints.]</td></tr>
       </tbody></table>
       <table style={{ ...S.tbl, marginTop: "8px" }}>

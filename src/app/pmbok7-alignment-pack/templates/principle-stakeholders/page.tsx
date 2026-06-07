@@ -71,7 +71,7 @@ function PrincipleStakeholdersContent() {
 
   const renderEvidence = () => (
     <div ref={evidenceRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 EVIDENCE &amp; EXAMPLES</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📋 EVIDENCE & EXAMPLES</td></tr></tbody></table>
       <CopyButton targetRef={evidenceRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Engagement Evidence</td><td style={S.td0}>[Bi-weekly sponsor 1:1s; sprint demos with stakeholders; pulse surveys active]</td></tr>

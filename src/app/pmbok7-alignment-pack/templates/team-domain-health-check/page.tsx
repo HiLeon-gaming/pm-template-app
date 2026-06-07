@@ -83,7 +83,7 @@ function TeamDomainHealthCheckContent() {
 
   const renderCapacity = () => (
     <div ref={capacityRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 CAPACITY &amp; UTILIZATION</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>📊 CAPACITY & UTILIZATION</td></tr></tbody></table>
       <CopyButton targetRef={capacityRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -120,7 +120,7 @@ function TeamDomainHealthCheckContent() {
 
   const renderGaps = () => (
     <div ref={gapsRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚠️ SKILL GAPS &amp; RISKS</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>⚠️ SKILL GAPS & RISKS</td></tr></tbody></table>
       <CopyButton targetRef={gapsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

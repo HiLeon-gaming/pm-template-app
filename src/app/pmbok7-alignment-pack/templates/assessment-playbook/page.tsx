@@ -29,8 +29,8 @@ function AssessmentPlaybookContent() {
 
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody>
-      <tr><td style={{ backgroundColor: accent, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: "4px solid #DC2626", textAlign: "center" as const }}>📖 UNCERTAINTY &amp; COMPLEXITY ASSESSMENT PLAYBOOK</td></tr>
-      <tr><td style={{ backgroundColor: accentDark, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PMBOK® 7 Alignment Pack &nbsp;|&nbsp; Uncertainty &amp; Complexity</td></tr>
+      <tr><td style={{ backgroundColor: accent, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: "4px solid #DC2626", textAlign: "center" as const }}>📖 UNCERTAINTY & COMPLEXITY ASSESSMENT PLAYBOOK</td></tr>
+      <tr><td style={{ backgroundColor: accentDark, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PMBOK® 7 Alignment Pack &nbsp;|&nbsp; Uncertainty & Complexity</td></tr>
       <tr><td style={descStyle}>Assess the level of uncertainty and complexity in your project across multiple dimensions. Use the results to inform your delivery approach, tailoring decisions, and risk management strategy. This is an “All-Star” page.</td></tr>
     </tbody></table>
   );
@@ -47,7 +47,7 @@ function AssessmentPlaybookContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 UNCERTAINTY &amp; COMPLEXITY MATRIX</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>📊 UNCERTAINTY & COMPLEXITY MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -65,7 +65,7 @@ function AssessmentPlaybookContent() {
             { d: "Team Experience", sc: "2", lv: "Low", e: "[Experienced team; prior CRM projects; strong domain knowledge]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { d: "Stakeholder Alignment", sc: "3", lv: "Medium", e: "[Sponsor aligned; some regional resistance emerging; VP Ops engagement improving]", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
             { d: "Regulatory / Compliance", sc: "2", lv: "Low", e: "[Standard data privacy requirements; no novel regulatory challenges]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-            { d: "Scale &amp; Integration", sc: "3", lv: "Medium", e: "[Multi-system integration (CRM, ERP, BI); 3 regions; moderate data migration complexity]", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
+            { d: "Scale & Integration", sc: "3", lv: "Medium", e: "[Multi-system integration (CRM, ERP, BI); 3 regions; moderate data migration complexity]", sBg: C.badgeAmberBg, sFg: C.badgeAmberFg },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}><td style={{ ...S.td0, backgroundColor: bg, fontSize: "11px", fontWeight: 600 }}>{r.d}</td><td style={{ ...S.td0, backgroundColor: bg, textAlign: "center" as const, fontWeight: 700 }}><span style={S.badge(r.sBg, r.sFg)}>{r.sc}/5</span></td><td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}><span style={S.badge(r.sBg, r.sFg)}>{r.lv}</span></td><td style={{ ...S.td0, backgroundColor: bg, fontSize: "10px" }}>{r.e}</td></tr>);
@@ -130,7 +130,7 @@ function AssessmentPlaybookContent() {
   );
 
   const renderFooter = () => (
-    <table style={{ ...S.tbl, marginTop: "8px" }}><tbody><tr><td style={{ backgroundColor: accent, color: "#FFFBEB", padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PMBOK® 7 Alignment Pack • Section F: Uncertainty &amp; Complexity • © 2026</td></tr></tbody></table>
+    <table style={{ ...S.tbl, marginTop: "8px" }}><tbody><tr><td style={{ backgroundColor: accent, color: "#FFFBEB", padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PMBOK® 7 Alignment Pack • Section F: Uncertainty & Complexity • © 2026</td></tr></tbody></table>
   );
 
   const renderFullLayout = () => (<>{renderTitleBanner()}{renderHeader()}{renderMatrix()}{renderDrivers()}{renderResponses()}{renderActions()}{renderFooter()}</>);
@@ -141,7 +141,7 @@ function AssessmentPlaybookContent() {
       <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50"><div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"><div className="flex items-center gap-3"><div className="w-9 h-9 rounded-lg bg-amber-600 flex items-center justify-center"><Layout size={18} className="text-white" /></div><div><h1 className="text-lg font-bold text-slate-900 leading-tight">ExecNoteShop</h1><p className="text-xs text-slate-500 -mt-0.5">Professional Template Studio</p></div></div><span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-50 border border-amber-100 text-amber-700 text-xs font-semibold"><AlertTriangle size={11} /> Uncertainty</span></div></header>
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex items-center justify-between mb-6"><Link href="/pmbok7-alignment-pack" className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-teal-600 transition-colors"><ArrowLeft size={14} /> Back to PMBOK 7 Alignment Pack</Link><CopyAllButton targetRef={fullPageRef} /></div>
-        <div className="mb-6"><div className="flex items-center gap-3 mb-2"><div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center"><AlertTriangle size={20} className="text-amber-600" /></div><div><h2 className="text-2xl font-extrabold text-slate-900">Assessment Playbook</h2><p className="text-xs font-medium text-amber-600">Section F: Uncertainty &amp; Complexity • ⭐ All-Star</p></div></div><p className="text-sm text-slate-600 mt-2 max-w-3xl">Assess uncertainty and complexity across dimensions to inform delivery, tailoring, and risk strategy.</p></div>
+        <div className="mb-6"><div className="flex items-center gap-3 mb-2"><div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center"><AlertTriangle size={20} className="text-amber-600" /></div><div><h2 className="text-2xl font-extrabold text-slate-900">Assessment Playbook</h2><p className="text-xs font-medium text-amber-600">Section F: Uncertainty & Complexity • ⭐ All-Star</p></div></div><p className="text-sm text-slate-600 mt-2 max-w-3xl">Assess uncertainty and complexity across dimensions to inform delivery, tailoring, and risk strategy.</p></div>
         <ThemeSwitcher />
         <div data-copy-exclude="true" className="mb-6"><p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Layout</p><div className="flex flex-wrap gap-2">{LAYOUTS.map((l) => { const Icon = l.icon; const isActive = layout === l.id; return (<button key={l.id} onClick={() => setLayout(l.id)} className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold transition-all ${isActive ? "bg-amber-600 text-white border-amber-600 shadow-md shadow-amber-200" : "bg-white text-slate-600 border-slate-200 hover:border-amber-300 hover:text-amber-700"}`}><Icon size={15} /> <span>{l.label}</span> <span className={`text-[10px] font-medium ${isActive ? "text-amber-200" : "text-slate-400"}`}>{l.desc}</span></button>); })}</div></div>
         <div ref={fullPageRef} style={{ fontFamily: S.font }}>{layout === "full" && renderFullLayout()}{layout === "compact" && renderCompactLayout()}</div>

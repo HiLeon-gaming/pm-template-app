@@ -105,7 +105,7 @@ function UncertaintyDomainHealthCheckContent() {
 
   const renderAmbiguity = () => (
     <div ref={ambiguityRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>❓ AMBIGUITY &amp; UNKNOWNS</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accent)}>❓ AMBIGUITY & UNKNOWNS</td></tr></tbody></table>
       <CopyButton targetRef={ambiguityRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Requirements Ambiguity</td><td style={S.td0}>[20% of Phase 2 requirements still ambiguous] — <span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Needs Discovery</span></td></tr>

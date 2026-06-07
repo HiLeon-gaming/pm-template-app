@@ -685,7 +685,7 @@ export default function PMBOK7AlignmentPackPage() {
         <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-slate-400">
           <p>&copy; 2026 ExecNoteShop. All rights reserved.</p>
           <p>
-            Built for PMP-certified leaders &amp; modern project managers.
+            Built for PMP-certified leaders & modern project managers.
           </p>
         </div>
       </footer>

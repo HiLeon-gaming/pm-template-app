@@ -145,7 +145,7 @@ function ReadThisFirstContent() {
           <thead><tr><th style={S.thSecondary}>Step</th><th style={S.thSecondary}>Pages to Use</th></tr></thead>
           <tbody>
             <tr><td style={{ ...S.tdLabel, lineHeight: "1.7" }}>🎯 Pick how you’ll run the project</td><td style={{ ...S.td0, lineHeight: "1.7" }}>(5) Delivery Approach Selector • (4) Tailoring Strategy Worksheet • (7) Governance Map</td></tr>
-            <tr><td style={{ ...S.tdLabelAlt, lineHeight: "1.7" }}>📏 Make sure you’re measuring the right success</td><td style={{ ...S.tdAlt, lineHeight: "1.7" }}>(31) Measurement Strategy Blueprint • (32) Outcome &amp; Benefits Evidence Planner</td></tr>
+            <tr><td style={{ ...S.tdLabelAlt, lineHeight: "1.7" }}>📏 Make sure you’re measuring the right success</td><td style={{ ...S.tdAlt, lineHeight: "1.7" }}>(31) Measurement Strategy Blueprint • (32) Outcome & Benefits Evidence Planner</td></tr>
             <tr><td style={{ ...S.tdLabel, lineHeight: "1.7" }}>📋 Run weekly health checks</td><td style={{ ...S.td0, lineHeight: "1.7" }}>(10–17) The 8 Domain Health Checks • (1) Alignment Dashboard (update weekly)</td></tr>
             <tr><td style={{ ...S.tdLabelAlt, lineHeight: "1.7" }}>🔄 Handle changes + uncertainty</td><td style={{ ...S.tdAlt, lineHeight: "1.7" }}>(34) Uncertainty Playbook • (35) Assumption Stress Test • (36) Contingency Triggers • (37) Decision Latency Tracker</td></tr>
             <tr><td style={{ ...S.tdLabel, lineHeight: "1.7" }}>✅ Prove alignment + improve over time</td><td style={{ ...S.td0, lineHeight: "1.7" }}>(18–30) Principles-to-Practice pages • (38–39) Monthly Retro + Lessons • (40–41) Alignment Summary + PMO/Audit</td></tr>
@@ -254,7 +254,7 @@ function ReadThisFirstContent() {
             { q: "“What approach should we use?”", a: "(5) Delivery Approach Selector" },
             { q: "“How much process do we actually need?”", a: "(4) Tailoring Strategy Worksheet • (25) Tailoring Practice Page" },
             { q: "“Are we healthy right now?”", a: "(10–17) Domain Health Checks • (1) Alignment Dashboard" },
-            { q: "“Are we delivering real value?”", a: "(22) Value Practice Page • (32) Outcome &amp; Benefits Planner • (15) Delivery Domain Health Check" },
+            { q: "“Are we delivering real value?”", a: "(22) Value Practice Page • (32) Outcome & Benefits Planner • (15) Delivery Domain Health Check" },
             { q: "“Are we measuring the right things?”", a: "(31) Measurement Strategy Blueprint • (16) Measurement Domain Health Check • (33) Metrics Review" },
             { q: "“Things changed / we’re uncertain / risk is rising”", a: "(34) Uncertainty Playbook • (35) Assumption Stress Test • (36) Contingency Triggers" },
             { q: "“Leadership / PMO wants proof we’re aligned”", a: "(3) Artifact-to-Domain Mapping • (40) Alignment Summary • (41) PMO/Audit Checklist • (18) Principles Master Checklist" },
@@ -336,7 +336,7 @@ function ReadThisFirstContent() {
             <div className="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center"><Compass size={20} className="text-teal-600" /></div>
             <div>
               <h2 className="text-2xl font-extrabold text-slate-900">Read This First — Simple Guide</h2>
-              <p className="text-xs font-medium text-teal-600">PMBOK® 7 Alignment Pack • Setup &amp; Reference</p>
+              <p className="text-xs font-medium text-teal-600">PMBOK® 7 Alignment Pack • Setup & Reference</p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-2 max-w-3xl">Complete setup guide explaining what this pack is, how to use it standalone or with the PM Command Center, weekly/monthly routines, and a quick-reference index.</p>

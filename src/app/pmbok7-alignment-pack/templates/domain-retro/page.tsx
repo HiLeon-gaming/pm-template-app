@@ -29,7 +29,7 @@ function DomainRetroContent() {
   const renderTitleBanner = () => (
     <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody>
       <tr><td style={{ backgroundColor: accent, color: C.white, padding: "16px 20px", fontSize: "22px", fontWeight: 800, fontFamily: S.font, letterSpacing: "0.04em", borderBottom: "4px solid #F59E0B", textAlign: "center" as const }}>🔄 DOMAIN RETROSPECTIVE</td></tr>
-      <tr><td style={{ backgroundColor: accentDark, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PMBOK® 7 Alignment Pack &nbsp;|&nbsp; Improvement &amp; Proof</td></tr>
+      <tr><td style={{ backgroundColor: accentDark, color: C.white, padding: "6px 20px", fontSize: "11px", fontWeight: 600, fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>ExecNoteShop &nbsp;|&nbsp; PMBOK® 7 Alignment Pack &nbsp;|&nbsp; Improvement & Proof</td></tr>
       <tr><td style={descStyle}>Review performance across all 8 PMBOK 7 Performance Domains. Identify what’s working, what needs improvement, and create targeted actions. Use at phase gates, quarterly reviews, or project closure.</td></tr>
     </tbody></table>
   );
@@ -60,7 +60,7 @@ function DomainRetroContent() {
           {[
             { d: "Stakeholder", sc: "4/5", tr: "↑", w: "[Bi-weekly sponsor 1:1s; pulse surveys active]", n: "[Earlier resistance detection needed]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { d: "Team", sc: "5/5", tr: "↑", w: "[Working agreements; psychological safety strong; retro actions implemented]", n: "[Cross-training for remote members]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
-            { d: "Dev Approach &amp; Life Cycle", sc: "4/5", tr: "→", w: "[Hybrid approach well-suited; sprint cadence stable]", n: "[Better integration planning needed]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
+            { d: "Dev Approach & Life Cycle", sc: "4/5", tr: "→", w: "[Hybrid approach well-suited; sprint cadence stable]", n: "[Better integration planning needed]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { d: "Planning", sc: "4/5", tr: "↑", w: "[Rolling wave planning effective; backlog well-groomed]", n: "[Long-term roadmap needs refinement]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { d: "Project Work", sc: "4/5", tr: "→", w: "[Processes running smoothly; blockers resolved quickly]", n: "[Knowledge management could improve]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
             { d: "Delivery", sc: "4/5", tr: "↑", w: "[On-time delivery; quality gates enforced]", n: "[Deployment automation incomplete]", sBg: C.badgeGreenBg, sFg: C.badgeGreenFg },
@@ -78,7 +78,7 @@ function DomainRetroContent() {
 
   const renderReflection = () => (
     <div ref={reflectionRef} style={{ marginBottom: "12px" }}>
-      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 REFLECTION &amp; INSIGHTS</td></tr></tbody></table>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner(accentDark)}>💡 REFLECTION & INSIGHTS</td></tr></tbody></table>
       <CopyButton targetRef={reflectionRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Biggest Win</td><td style={S.td0}>[Team domain at 5/5 — working agreements and psychological safety are driving velocity and quality improvements]</td></tr>
@@ -111,7 +111,7 @@ function DomainRetroContent() {
   );
 
   const renderFooter = () => (
-    <table style={{ ...S.tbl, marginTop: "8px" }}><tbody><tr><td style={{ backgroundColor: accent, color: "#ECFDF5", padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PMBOK® 7 Alignment Pack • Section G: Improvement &amp; Proof • © 2026</td></tr></tbody></table>
+    <table style={{ ...S.tbl, marginTop: "8px" }}><tbody><tr><td style={{ backgroundColor: accent, color: "#ECFDF5", padding: "8px 20px", fontSize: "10px", fontFamily: S.font, textAlign: "center" as const, letterSpacing: "0.06em" }}>ExecNoteShop • PMBOK® 7 Alignment Pack • Section G: Improvement & Proof • © 2026</td></tr></tbody></table>
   );
 
   const renderFullLayout = () => (<>{renderTitleBanner()}{renderHeader()}{renderScorecard()}{renderReflection()}{renderActions()}{renderFooter()}</>);
@@ -122,7 +122,7 @@ function DomainRetroContent() {
       <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50"><div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"><div className="flex items-center gap-3"><div className="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center"><Layout size={18} className="text-white" /></div><div><h1 className="text-lg font-bold text-slate-900 leading-tight">ExecNoteShop</h1><p className="text-xs text-slate-500 -mt-0.5">Professional Template Studio</p></div></div><span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-semibold"><RefreshCw size={11} /> Domain Retro</span></div></header>
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex items-center justify-between mb-6"><Link href="/pmbok7-alignment-pack" className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-teal-600 transition-colors"><ArrowLeft size={14} /> Back to PMBOK 7 Alignment Pack</Link><CopyAllButton targetRef={fullPageRef} /></div>
-        <div className="mb-6"><div className="flex items-center gap-3 mb-2"><div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center"><RefreshCw size={20} className="text-emerald-600" /></div><div><h2 className="text-2xl font-extrabold text-slate-900">Domain Retrospective</h2><p className="text-xs font-medium text-emerald-600">Section G: Improvement &amp; Proof</p></div></div><p className="text-sm text-slate-600 mt-2 max-w-3xl">Review performance across all 8 PMBOK 7 Performance Domains and drive targeted improvements.</p></div>
+        <div className="mb-6"><div className="flex items-center gap-3 mb-2"><div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center"><RefreshCw size={20} className="text-emerald-600" /></div><div><h2 className="text-2xl font-extrabold text-slate-900">Domain Retrospective</h2><p className="text-xs font-medium text-emerald-600">Section G: Improvement & Proof</p></div></div><p className="text-sm text-slate-600 mt-2 max-w-3xl">Review performance across all 8 PMBOK 7 Performance Domains and drive targeted improvements.</p></div>
         <ThemeSwitcher />
         <div data-copy-exclude="true" className="mb-6"><p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Layout</p><div className="flex flex-wrap gap-2">{LAYOUTS.map((l) => { const Icon = l.icon; const isActive = layout === l.id; return (<button key={l.id} onClick={() => setLayout(l.id)} className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-semibold transition-all ${isActive ? "bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-200" : "bg-white text-slate-600 border-slate-200 hover:border-emerald-300 hover:text-emerald-700"}`}><Icon size={15} /> <span>{l.label}</span> <span className={`text-[10px] font-medium ${isActive ? "text-emerald-200" : "text-slate-400"}`}>{l.desc}</span></button>); })}</div></div>
         <div ref={fullPageRef} style={{ fontFamily: S.font }}>{layout === "full" && renderFullLayout()}{layout === "compact" && renderCompactLayout()}</div>

@@ -144,12 +144,12 @@ function QuickStartContent() {
         <tbody>
           {[
             { s: "A", title: "Start Here", pages: "4", covers: "Dashboard, Quick Start, Artifact Mapping, Read This First" },
-            { s: "B", title: "Tailoring &amp; Delivery Approach", pages: "6", covers: "Approach selection, tailoring, governance, context, working agreements" },
+            { s: "B", title: "Tailoring & Delivery Approach", pages: "6", covers: "Approach selection, tailoring, governance, context, working agreements" },
             { s: "C", title: "8 Domain Health Checks", pages: "8", covers: "Weekly health assessment for each PMBOK 7 performance domain" },
             { s: "D", title: "12 Principles Practice Pages", pages: "13", covers: "Practical pages for each of the 12 PMBOK 7 principles" },
-            { s: "E", title: "Measurement &amp; Outcomes", pages: "3", covers: "KPI strategy, outcome evidence, metrics-to-action workflow" },
-            { s: "F", title: "Uncertainty &amp; Complexity Toolkit", pages: "4", covers: "Uncertainty playbook, assumption testing, contingency, decision latency" },
-            { s: "G", title: "Continuous Improvement &amp; Proof", pages: "4", covers: "Retrospectives, lessons learned, alignment summary, audit readiness" },
+            { s: "E", title: "Measurement & Outcomes", pages: "3", covers: "KPI strategy, outcome evidence, metrics-to-action workflow" },
+            { s: "F", title: "Uncertainty & Complexity Toolkit", pages: "4", covers: "Uncertainty playbook, assumption testing, contingency, decision latency" },
+            { s: "G", title: "Continuous Improvement & Proof", pages: "4", covers: "Retrospectives, lessons learned, alignment summary, audit readiness" },
           ].map((r, i) => {
             const bg = i % 2 === 1 ? C.rowAlt : C.white;
             return (<tr key={i}>

@@ -135,7 +135,7 @@ function AlignmentDashboardContent() {
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Current Approach</td><td style={S.td0}><span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>Hybrid</span> — [Predictive planning + 2-week agile sprints for development]</td></tr>
           <tr><td style={S.tdLabelAlt}>Approach Still Right?</td><td style={S.tdAlt}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>✅ Yes</span> — [Sprint velocity stable; stakeholder feedback positive on iterative delivery]</td></tr>
-          <tr><td style={S.tdLabel}>Tailoring Decisions This Period</td><td style={S.td0}>[Simplified change control for low-impact CRs (&lt;$5K); added weekly demo to improve feedback loop]</td></tr>
+          <tr><td style={S.tdLabel}>Tailoring Decisions This Period</td><td style={S.td0}>[Simplified change control for low-impact CRs (<$5K); added weekly demo to improve feedback loop]</td></tr>
           <tr><td style={S.tdLabelAlt}>Governance Cadence</td><td style={S.tdAlt}>[Weekly status • Bi-weekly steering • Monthly portfolio review]</td></tr>
         </tbody>
       </table>
