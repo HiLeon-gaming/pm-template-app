@@ -46,7 +46,7 @@ function ReadThisFirstContent() {
 
   const renderWhat = () => (
     <div ref={whatRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📦 WHAT THIS PACK IS (IN PLAIN ENGLISH)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📦 WHAT THIS PACK IS (IN PLAIN ENGLISH)</td></tr></tbody></table>
       <CopyButton targetRef={whatRef} label="Copy Section" />
       <div style={prose}>
         <p style={{ marginBottom: "10px" }}><strong style={teal}>This is an add-on pack.</strong></p>
@@ -116,7 +116,7 @@ function ReadThisFirstContent() {
 
   const renderBoth = () => (
     <div ref={bothRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🤝 IF YOU OWN BOTH PACKS (Command Center + PMBOK 7 Alignment Pack)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🤝 IF YOU OWN BOTH PACKS (Command Center + PMBOK 7 Alignment Pack)</td></tr></tbody></table>
       <CopyButton targetRef={bothRef} label="Copy Section" />
       <div style={prose}>
         <p style={{ marginBottom: "10px" }}><strong style={teal}>The easiest setup — two clean options:</strong></p>
@@ -210,7 +210,7 @@ function ReadThisFirstContent() {
 
   const renderRoutine = () => (
     <div ref={routineRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📅 THE SIMPLE WEEKLY ROUTINE (Works With Either Setup)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📅 THE SIMPLE WEEKLY ROUTINE (Works With Either Setup)</td></tr></tbody></table>
       <CopyButton targetRef={routineRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -272,7 +272,7 @@ function ReadThisFirstContent() {
 
   const renderAllStar = () => (
     <div ref={allStarRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⭐ THE “ALL-STAR” PAGES (The Ones You’ll Use the Most)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⭐ THE “ALL-STAR” PAGES (The Ones You’ll Use the Most)</td></tr></tbody></table>
       <CopyButton targetRef={allStarRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

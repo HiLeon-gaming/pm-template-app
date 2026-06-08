@@ -78,7 +78,7 @@ function RCAContent() {
 
   const renderWhys = () => (
     <div ref={whysRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>❓ 5 WHYS ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>❓ 5 WHYS ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={whysRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Start with the problem and ask &ldquo;Why?&rdquo; repeatedly until you reach the root cause. You may need fewer or more than 5 levels.</p>
       <table style={S.tbl}>
@@ -155,7 +155,7 @@ function RCAContent() {
 
   const renderActions = () => (
     <div ref={actionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔨 CORRECTIVE ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔨 CORRECTIVE ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

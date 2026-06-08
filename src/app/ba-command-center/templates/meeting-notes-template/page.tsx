@@ -105,7 +105,7 @@ function MeetingNotesContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -178,7 +178,7 @@ function MeetingNotesContent() {
 
   const renderDecisions = () => (
     <div ref={decisionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚖️ DECISIONS MADE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚖️ DECISIONS MADE</td></tr></tbody></table>
       <CopyButton targetRef={decisionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

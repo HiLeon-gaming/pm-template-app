@@ -59,7 +59,7 @@ function BrainDumpContent() {
 
   const renderRapidCapture = () => (
     <div ref={dumpRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📥 RAPID CAPTURE — DUMP EVERYTHING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📥 RAPID CAPTURE — DUMP EVERYTHING</td></tr></tbody></table>
       <CopyButton targetRef={dumpRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>
         Write everything floating in your head — tasks, ideas, worries, commitments, random thoughts. Don&apos;t filter, don&apos;t organize. Just dump. Process later.
@@ -172,7 +172,7 @@ function BrainDumpContent() {
 
   const renderProcessChecklist = () => (
     <div ref={processRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>✅ PROCESSING CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>✅ PROCESSING CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={processRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

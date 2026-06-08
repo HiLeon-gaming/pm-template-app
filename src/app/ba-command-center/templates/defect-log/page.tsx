@@ -76,7 +76,7 @@ function DefectLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 DEFECT LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 DEFECT LOG</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -151,7 +151,7 @@ function DefectLogContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 DEFECT SUMMARY DASHBOARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 DEFECT SUMMARY DASHBOARD</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={{ width: "100%", borderCollapse: "collapse" as const, border: "none", fontFamily: S.font }}>
         <tbody><tr>

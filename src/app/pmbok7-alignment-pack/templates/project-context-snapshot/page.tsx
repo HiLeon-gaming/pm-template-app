@@ -47,7 +47,7 @@ function ProjectContextSnapshotContent() {
 
   const renderObjectives = () => (
     <div ref={objectivesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 PROJECT OBJECTIVES & SUCCESS CRITERIA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 PROJECT OBJECTIVES & SUCCESS CRITERIA</td></tr></tbody></table>
       <CopyButton targetRef={objectivesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thPrimary, backgroundColor: "#0D9488", width: "5%", textAlign: "center" as const }}>#</th><th style={{ ...S.thPrimary, backgroundColor: "#0D9488" }}>Objective</th><th style={{ ...S.thPrimary, backgroundColor: "#0D9488", width: "30%" }}>Success Measure</th><th style={{ ...S.thPrimary, backgroundColor: "#0D9488", width: "10%", textAlign: "center" as const }}>Priority</th></tr></thead>
@@ -83,7 +83,7 @@ function ProjectContextSnapshotContent() {
 
   const renderComplexity = () => (
     <div ref={complexityRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🧩 COMPLEXITY DRIVERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🧩 COMPLEXITY DRIVERS</td></tr></tbody></table>
       <CopyButton targetRef={complexityRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={S.thSecondary}>Driver</th><th style={{ ...S.thSecondary, width: "10%", textAlign: "center" as const }}>Level</th><th style={S.thSecondary}>Details</th></tr></thead>
@@ -127,7 +127,7 @@ function ProjectContextSnapshotContent() {
 
   const renderRisk = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ INITIAL RISK POSTURE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚠️ INITIAL RISK POSTURE</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Overall Risk Posture</td><td style={S.td0}><span style={S.badge(C.badgeAmberBg, C.badgeAmberFg)}>Medium-High</span> — [Manageable with proactive risk management and weekly monitoring]</td></tr>

@@ -74,7 +74,7 @@ function SMARTGoalContent() {
 
   const renderSMARTFramework = () => (
     <div ref={smartRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📝 S.M.A.R.T. FRAMEWORK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📝 S.M.A.R.T. FRAMEWORK</td></tr></tbody></table>
       <CopyButton targetRef={smartRef} label="Copy Section" />
       {SMART.map((s, i) => (
         <table key={i} style={{ ...S.tbl, marginBottom: "8px" }}>
@@ -161,7 +161,7 @@ function SMARTGoalContent() {
 
   const renderObstacles = () => (
     <div ref={obstaclesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🚧 OBSTACLES &amp; MITIGATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🚧 OBSTACLES &amp; MITIGATION</td></tr></tbody></table>
       <CopyButton targetRef={obstaclesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -197,7 +197,7 @@ function SMARTGoalContent() {
 
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 GOAL REVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 GOAL REVIEW</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

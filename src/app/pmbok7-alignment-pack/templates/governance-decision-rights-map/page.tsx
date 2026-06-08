@@ -46,7 +46,7 @@ function GovernanceDecisionRightsMapContent() {
 
   const renderRights = () => (
     <div ref={rightsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚖️ DECISION RIGHTS MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚖️ DECISION RIGHTS MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={rightsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -118,7 +118,7 @@ function GovernanceDecisionRightsMapContent() {
 
   const renderCadence = () => (
     <div ref={cadenceRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📅 GOVERNANCE CADENCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📅 GOVERNANCE CADENCE</td></tr></tbody></table>
       <CopyButton targetRef={cadenceRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

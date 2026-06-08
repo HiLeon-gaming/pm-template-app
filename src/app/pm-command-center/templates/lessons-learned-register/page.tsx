@@ -70,7 +70,7 @@ function LessonsLearnedRegisterContent() {
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 LESSON LOG</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 LESSON LOG</td></tr></tbody></table>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -136,7 +136,7 @@ function LessonsLearnedRegisterContent() {
 
   const renderRec = () => (
     <div ref={recRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 TOP ORGANIZATIONAL RECOMMENDATIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 TOP ORGANIZATIONAL RECOMMENDATIONS</td></tr></tbody></table>
       <CopyButton targetRef={recRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

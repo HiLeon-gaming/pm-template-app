@@ -71,7 +71,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 PORTFOLIO REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 PORTFOLIO REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -122,7 +122,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderFin = () => (
     <div ref={finRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💰 PORTFOLIO FINANCIALS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💰 PORTFOLIO FINANCIALS</td></tr></tbody></table>
       <CopyButton targetRef={finRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -187,7 +187,7 @@ function ProjectPortfolioSummaryContent() {
 
   const renderRisk = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ PORTFOLIO-LEVEL RISKS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚠️ PORTFOLIO-LEVEL RISKS</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

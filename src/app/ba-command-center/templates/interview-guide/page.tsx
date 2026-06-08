@@ -109,7 +109,7 @@ function InterviewGuideContent() {
 
   const renderQuestions = () => (
     <div ref={questionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>❓ INTERVIEW QUESTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>❓ INTERVIEW QUESTIONS</td></tr></tbody></table>
       <CopyButton targetRef={questionsRef} label="Copy Section" />
       {QUESTIONS.map((cat, ci) => (
         <table key={ci} style={{ ...S.tbl, marginBottom: "6px" }}>
@@ -166,7 +166,7 @@ function InterviewGuideContent() {
 
   const renderFindings = () => (
     <div ref={findingsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔍 KEY FINDINGS &amp; TAKEAWAYS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔍 KEY FINDINGS &amp; TAKEAWAYS</td></tr></tbody></table>
       <CopyButton targetRef={findingsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

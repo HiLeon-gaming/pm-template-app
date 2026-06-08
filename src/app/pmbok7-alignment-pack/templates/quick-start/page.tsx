@@ -35,7 +35,7 @@ function QuickStartContent() {
 
   const renderSetup = () => (
     <div ref={setupRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔧 INITIAL SETUP (Do Once — 30 Minutes)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔧 INITIAL SETUP (Do Once — 30 Minutes)</td></tr></tbody></table>
       <CopyButton targetRef={setupRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -100,7 +100,7 @@ function QuickStartContent() {
 
   const renderMonthly = () => (
     <div ref={monthlyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📅 MONTHLY CADENCE (60 Minutes)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📅 MONTHLY CADENCE (60 Minutes)</td></tr></tbody></table>
       <CopyButton targetRef={monthlyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -59,7 +59,7 @@ function ProjectScheduleContent() {
 
   const renderMilestones = () => (
     <div ref={milestonesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📅 KEY MILESTONES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📅 KEY MILESTONES</td></tr></tbody></table>
       <CopyButton targetRef={milestonesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -148,7 +148,7 @@ function ProjectScheduleContent() {
 
   const renderDeps = () => (
     <div ref={depsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔗 KEY DEPENDENCIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔗 KEY DEPENDENCIES</td></tr></tbody></table>
       <CopyButton targetRef={depsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

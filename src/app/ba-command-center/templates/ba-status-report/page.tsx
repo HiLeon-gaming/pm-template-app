@@ -74,7 +74,7 @@ function BAStatusContent() {
 
   const renderDashboard = () => (
     <div ref={dashRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🏥 HEALTH DASHBOARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🏥 HEALTH DASHBOARD</td></tr></tbody></table>
       <CopyButton targetRef={dashRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -191,7 +191,7 @@ function BAStatusContent() {
 
   const renderNext = () => (
     <div ref={nextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 STAKEHOLDER ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 STAKEHOLDER ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={nextRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

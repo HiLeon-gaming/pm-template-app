@@ -98,7 +98,7 @@ function PrioritizationContent() {
 
   const renderMoSCoW = () => (
     <div ref={moscowRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🏷️ MoSCoW PRIORITIZATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🏷️ MoSCoW PRIORITIZATION</td></tr></tbody></table>
       <CopyButton targetRef={moscowRef} label="Copy Section" />
       {MOSCOW_CATS.map((cat, ci) => (
         <table key={ci} style={{ ...S.tbl, marginBottom: "8px" }}>
@@ -149,7 +149,7 @@ function PrioritizationContent() {
 
   const renderWeighted = () => (
     <div ref={weightedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚖️ WEIGHTED SCORING MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚖️ WEIGHTED SCORING MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={weightedRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Score each requirement 1-10 against each criterion. Weighted total = Σ(score × weight). Higher score = higher priority.</p>
       <table style={{ ...S.tbl, marginBottom: "8px" }}>
@@ -227,7 +227,7 @@ function PrioritizationContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 PRIORITIZATION SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 PRIORITIZATION SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {[

@@ -147,7 +147,7 @@ function OneOnOneContent() {
 
   const renderCareer = () => (
     <div ref={careerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🚀 CAREER DEVELOPMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🚀 CAREER DEVELOPMENT</td></tr></tbody></table>
       <CopyButton targetRef={careerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -212,7 +212,7 @@ function OneOnOneContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 ACTION ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 ACTION ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

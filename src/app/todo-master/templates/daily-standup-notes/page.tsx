@@ -287,7 +287,7 @@ function DailyStandupContent() {
   /* ── Parking Lot (offline discussion topics) ── */
   const renderParking = () => (
     <div ref={parkingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🅿️ PARKING LOT — Discuss After Standup</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🅿️ PARKING LOT — Discuss After Standup</td></tr></tbody></table>
       <CopyButton targetRef={parkingRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -319,7 +319,7 @@ function DailyStandupContent() {
   /* ── Team View: compact grid per team member ── */
   const renderTeamGrid = () => (
     <div ref={teamRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>👥 TEAM STANDUP TRACKER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>👥 TEAM STANDUP TRACKER</td></tr></tbody></table>
       <CopyButton targetRef={teamRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

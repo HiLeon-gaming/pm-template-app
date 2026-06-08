@@ -153,7 +153,7 @@ function TimeBlockedContent() {
   /* ── Main schedule grid ── */
   const renderSchedule = () => (
     <div ref={scheduleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📅 SCHEDULE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📅 SCHEDULE</td></tr></tbody></table>
       <CopyButton targetRef={scheduleRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -193,7 +193,7 @@ function TimeBlockedContent() {
   /* ── Energy & Time Audit ── */
   const renderEnergy = () => (
     <div ref={energyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚡ ENERGY &amp; TIME AUDIT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚡ ENERGY &amp; TIME AUDIT</td></tr></tbody></table>
       <CopyButton targetRef={energyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

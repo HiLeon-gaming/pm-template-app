@@ -72,7 +72,7 @@ function LessonsLearnedLibraryIndexContent() {
 
   const renderIndex = () => (
     <div ref={indexRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> LIBRARY INDEX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> LIBRARY INDEX</td></tr></tbody></table>
       <CopyButton targetRef={indexRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -125,7 +125,7 @@ function LessonsLearnedLibraryIndexContent() {
 
   const renderAnalytics = () => (
     <div ref={analyticsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 LIBRARY ANALYTICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 LIBRARY ANALYTICS</td></tr></tbody></table>
       <CopyButton targetRef={analyticsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

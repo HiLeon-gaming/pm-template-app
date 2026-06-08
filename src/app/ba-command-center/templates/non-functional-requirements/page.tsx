@@ -138,7 +138,7 @@ function NFRContent() {
 
   const renderOtherCategories = () => (
     <div ref={otherRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 AVAILABILITY, SCALABILITY, COMPLIANCE &amp; DR</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 AVAILABILITY, SCALABILITY, COMPLIANCE &amp; DR</td></tr></tbody></table>
       <CopyButton targetRef={otherRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -179,7 +179,7 @@ function NFRContent() {
     ];
     return (
       <div ref={flatRef} style={{ marginBottom: "12px" }}>
-        <div style={S.sectionBanner()}>📋 ALL NON-FUNCTIONAL REQUIREMENTS</div>
+        <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 ALL NON-FUNCTIONAL REQUIREMENTS</td></tr></tbody></table>
         <CopyButton targetRef={flatRef} label="Copy Section" />
         <table style={S.tbl}>
           <thead>

@@ -60,7 +60,7 @@ function ExecutiveDashboardContent() {
 
   const renderKPI = () => (
     <div ref={kpiRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 KEY PERFORMANCE INDICATORS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 KEY PERFORMANCE INDICATORS</td></tr></tbody></table>
       <CopyButton targetRef={kpiRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -111,7 +111,7 @@ function ExecutiveDashboardContent() {
 
   const renderEVM = () => (
     <div ref={evmRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> EARNED VALUE METRICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> EARNED VALUE METRICS</td></tr></tbody></table>
       <CopyButton targetRef={evmRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -180,7 +180,7 @@ function ExecutiveDashboardContent() {
 
   const renderRisk = () => (
     <div ref={riskRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ TOP RISKS REQUIRING EXECUTIVE ATTENTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚠️ TOP RISKS REQUIRING EXECUTIVE ATTENTION</td></tr></tbody></table>
       <CopyButton targetRef={riskRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

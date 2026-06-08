@@ -61,7 +61,7 @@ function ProjectClosureReportContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>EXECUTIVE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>EXECUTIVE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -116,7 +116,7 @@ function ProjectClosureReportContent() {
 
   const renderDeliverable = () => (
     <div ref={deliverableRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>DELIVERABLE ACCEPTANCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>DELIVERABLE ACCEPTANCE</td></tr></tbody></table>
       <CopyButton targetRef={deliverableRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -184,7 +184,7 @@ function ProjectClosureReportContent() {
 
   const renderLessons = () => (
     <div ref={lessonsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💡 KEY LESSONS LEARNED (TOP 5)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💡 KEY LESSONS LEARNED (TOP 5)</td></tr></tbody></table>
       <CopyButton targetRef={lessonsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

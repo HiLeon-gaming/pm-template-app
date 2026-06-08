@@ -66,7 +66,7 @@ function RACIMatrixContent() {
 
   const renderLegend = () => (
     <div ref={legendRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📖 RACI LEGEND</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📖 RACI LEGEND</td></tr></tbody></table>
       <CopyButton targetRef={legendRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -143,7 +143,7 @@ function RACIMatrixContent() {
 
   const renderAnalysis = () => (
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔍 RACI ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔍 RACI ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={analysisRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

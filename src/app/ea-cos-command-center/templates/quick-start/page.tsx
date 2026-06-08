@@ -113,7 +113,7 @@ function QuickStartContent() {
             <tr><td style={{ backgroundColor: "#DC2626", color: "#FFFFFF", padding: "9px 12px", fontWeight: 700, fontSize: "12px", letterSpacing: "0.03em", textTransform: "uppercase" as const, textAlign: "center" as const, border: `1.5px solid ${C.borderDark}` }}>❌ Avoid This</td></tr>
             <tr><td style={{ ...S.td0, fontSize: "10px", lineHeight: "1.9" }}>
               &bull; Trusting memory for action items<br />
-              &bull; Letting follow-ups go silent for >3 days<br />
+              &bull; Letting follow-ups go silent for &gt;3 days<br />
               &bull; Skipping meeting prep for &ldquo;quick&rdquo; meetings<br />
               &bull; Storing sensitive notes in shared channels<br />
               &bull; Saying yes without checking the calendar<br />

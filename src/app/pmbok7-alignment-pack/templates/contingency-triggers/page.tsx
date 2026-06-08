@@ -82,7 +82,7 @@ function ContingencyTriggersContent() {
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Level 1: PM Action</td><td style={S.td0}>[PM activates pre-defined response within 4 hours of trigger; notifies team; documents in risk log]</td></tr>
         <tr><td style={S.tdLabelAlt}>Level 2: Sponsor Alert</td><td style={S.tdAlt}>[If response insufficient within 48 hours, escalate to sponsor with impact assessment and options]</td></tr>
-        <tr><td style={S.tdLabel}>Level 3: Steering Committee</td><td style={S.td0}>[If budget/schedule impact > 15% or scope reduction required, escalate to steering for decision]</td></tr>
+        <tr><td style={S.tdLabel}>Level 3: Steering Committee</td><td style={S.td0}>[If budget/schedule impact &gt; 15% or scope reduction required, escalate to steering for decision]</td></tr>
         <tr><td style={S.tdLabelAlt}>Communication Protocol</td><td style={S.tdAlt}>[Trigger activation → email to sponsor + team lead within 4h | Status updates every 24h until resolved]</td></tr>
       </tbody></table>
     </div>

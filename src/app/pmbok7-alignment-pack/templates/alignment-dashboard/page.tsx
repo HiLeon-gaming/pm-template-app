@@ -71,7 +71,7 @@ function AlignmentDashboardContent() {
 
   const renderDomain = () => (
     <div ref={domainRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 8 PERFORMANCE DOMAIN HEALTH STATUS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 8 PERFORMANCE DOMAIN HEALTH STATUS</td></tr></tbody></table>
       <CopyButton targetRef={domainRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -129,13 +129,13 @@ function AlignmentDashboardContent() {
 
   const renderApproach = () => (
     <div ref={approachRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 DELIVERY APPROACH & TAILORING SNAPSHOT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 DELIVERY APPROACH & TAILORING SNAPSHOT</td></tr></tbody></table>
       <CopyButton targetRef={approachRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
           <tr><td style={{ ...S.tdLabel, width: "28%" }}>Current Approach</td><td style={S.td0}><span style={S.badge(C.badgeBlueBg, C.badgeBlueFg)}>Hybrid</span> — [Predictive planning + 2-week agile sprints for development]</td></tr>
           <tr><td style={S.tdLabelAlt}>Approach Still Right?</td><td style={S.tdAlt}><span style={S.badge(C.badgeGreenBg, C.badgeGreenFg)}>✅ Yes</span> — [Sprint velocity stable; stakeholder feedback positive on iterative delivery]</td></tr>
-          <tr><td style={S.tdLabel}>Tailoring Decisions This Period</td><td style={S.td0}>[Simplified change control for low-impact CRs (<$5K); added weekly demo to improve feedback loop]</td></tr>
+          <tr><td style={S.tdLabel}>Tailoring Decisions This Period</td><td style={S.td0}>[Simplified change control for low-impact CRs (&lt;$5K); added weekly demo to improve feedback loop]</td></tr>
           <tr><td style={S.tdLabelAlt}>Governance Cadence</td><td style={S.tdAlt}>[Weekly status • Bi-weekly steering • Monthly portfolio review]</td></tr>
         </tbody>
       </table>
@@ -178,7 +178,7 @@ function AlignmentDashboardContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚡ NEXT ACTIONS (This Week)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚡ NEXT ACTIONS (This Week)</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

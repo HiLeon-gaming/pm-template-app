@@ -45,7 +45,7 @@ function TailoringDecisionsLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 TAILORING DECISION REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 TAILORING DECISION REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -117,7 +117,7 @@ function TailoringDecisionsLogContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📝 TAILORING LOG SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📝 TAILORING LOG SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Total Decisions Logged</td><td style={S.td0}>[8]</td></tr>

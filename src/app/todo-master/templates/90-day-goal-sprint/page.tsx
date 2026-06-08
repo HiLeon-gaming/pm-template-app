@@ -92,7 +92,7 @@ function NinetyDayContent() {
 
   const renderGoals = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 SPRINT GOALS (MAX 3)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 SPRINT GOALS (MAX 3)</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>
         The 12-Week Year principle: fewer goals = more focus = better results. Pick 3 that matter most.
@@ -190,7 +190,7 @@ function NinetyDayContent() {
 
   const renderAccountability = () => (
     <div ref={accountRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🤝 ACCOUNTABILITY &amp; SCORING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🤝 ACCOUNTABILITY &amp; SCORING</td></tr></tbody></table>
       <CopyButton targetRef={accountRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -223,7 +223,7 @@ function NinetyDayContent() {
 
   const renderRetro = () => (
     <div ref={retroRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🏁 90-DAY SPRINT RETROSPECTIVE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🏁 90-DAY SPRINT RETROSPECTIVE</td></tr></tbody></table>
       <CopyButton targetRef={retroRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

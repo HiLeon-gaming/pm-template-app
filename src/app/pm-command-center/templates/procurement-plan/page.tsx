@@ -59,7 +59,7 @@ function ProcurementPlanContent() {
 
   const renderStrategy = () => (
     <div ref={strategyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> PROCUREMENT STRATEGY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> PROCUREMENT STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={strategyRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -113,7 +113,7 @@ function ProcurementPlanContent() {
 
   const renderSelection = () => (
     <div ref={selectionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> VENDOR SELECTION CRITERIA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> VENDOR SELECTION CRITERIA</td></tr></tbody></table>
       <CopyButton targetRef={selectionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -184,7 +184,7 @@ function ProcurementPlanContent() {
 
   const renderContract = () => (
     <div ref={contractRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 CONTRACT MANAGEMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 CONTRACT MANAGEMENT</td></tr></tbody></table>
       <CopyButton targetRef={contractRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

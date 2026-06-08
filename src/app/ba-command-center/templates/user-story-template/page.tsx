@@ -76,7 +76,7 @@ function UserStoryContent() {
 
   const renderStory = () => (
     <div ref={storyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📝 USER STORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📝 USER STORY</td></tr></tbody></table>
       <CopyButton targetRef={storyRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -154,7 +154,7 @@ function UserStoryContent() {
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
-          <div style={S.sectionBanner()}>🔗 DEPENDENCIES &amp; NOTES</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔗 DEPENDENCIES &amp; NOTES</td></tr></tbody></table>
           <table style={S.tbl}>
             <tbody>
               {[
@@ -209,7 +209,7 @@ function UserStoryContent() {
 
   const renderBacklog = () => (
     <div ref={backlogRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 STORY BACKLOG (Multi-Story View)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 STORY BACKLOG (Multi-Story View)</td></tr></tbody></table>
       <CopyButton targetRef={backlogRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

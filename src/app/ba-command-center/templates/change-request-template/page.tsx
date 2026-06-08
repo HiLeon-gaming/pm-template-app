@@ -76,7 +76,7 @@ function ChangeRequestContent() {
 
   const renderDescription = () => (
     <div ref={descRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 CHANGE DESCRIPTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 CHANGE DESCRIPTION</td></tr></tbody></table>
       <CopyButton targetRef={descRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -198,7 +198,7 @@ function ChangeRequestContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>✍️ APPROVAL WORKFLOW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>✍️ APPROVAL WORKFLOW</td></tr></tbody></table>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

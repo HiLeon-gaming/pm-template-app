@@ -89,7 +89,7 @@ function MonthlyPlannerContent() {
 
   const renderGoals = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 MONTHLY GOALS &amp; MILESTONES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 MONTHLY GOALS &amp; MILESTONES</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -172,7 +172,7 @@ function MonthlyPlannerContent() {
 
   const renderHabits = () => (
     <div ref={habitsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔥 MONTHLY HABIT SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔥 MONTHLY HABIT SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={habitsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -254,7 +254,7 @@ function MonthlyPlannerContent() {
 
   const renderRetro = () => (
     <div ref={retroRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🌅 MONTH-END RETROSPECTIVE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🌅 MONTH-END RETROSPECTIVE</td></tr></tbody></table>
       <CopyButton targetRef={retroRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

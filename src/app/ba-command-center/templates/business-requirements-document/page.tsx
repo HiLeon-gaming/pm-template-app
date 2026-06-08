@@ -79,7 +79,7 @@ function BRDContent() {
 
   const renderBizNeed = () => (
     <div ref={bizNeedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 BUSINESS NEED &amp; BACKGROUND</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 BUSINESS NEED &amp; BACKGROUND</td></tr></tbody></table>
       <CopyButton targetRef={bizNeedRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -135,7 +135,7 @@ function BRDContent() {
 
   const renderStakeholders = () => (
     <div ref={stakeholderRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>👥 KEY STAKEHOLDERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>👥 KEY STAKEHOLDERS</td></tr></tbody></table>
       <CopyButton targetRef={stakeholderRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -211,7 +211,7 @@ function BRDContent() {
 
   const renderNonFunctional = () => (
     <div ref={nfRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔒 NON-FUNCTIONAL REQUIREMENTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔒 NON-FUNCTIONAL REQUIREMENTS</td></tr></tbody></table>
       <CopyButton targetRef={nfRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -287,7 +287,7 @@ function BRDContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>✍️ APPROVAL &amp; SIGN-OFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>✍️ APPROVAL &amp; SIGN-OFF</td></tr></tbody></table>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

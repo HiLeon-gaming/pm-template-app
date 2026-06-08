@@ -69,7 +69,7 @@ function BenefitsRealizationTrackerContent() {
 
   const renderRegister = () => (
     <div ref={registerRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 BENEFITS REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 BENEFITS REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={registerRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -140,7 +140,7 @@ function BenefitsRealizationTrackerContent() {
 
   const renderROI = () => (
     <div ref={roiRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💰 ROI SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💰 ROI SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={roiRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

@@ -68,7 +68,7 @@ function StakeholderRegisterContent() {
 
   const renderGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 POWER / INTEREST GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 POWER / INTEREST GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Map each stakeholder into the appropriate quadrant based on their power to influence outcomes and interest in the project.</p>
       <table style={LT}>
@@ -145,7 +145,7 @@ function StakeholderRegisterContent() {
 
   const renderEngagement = () => (
     <div ref={engagementRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 ENGAGEMENT ASSESSMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 ENGAGEMENT ASSESSMENT</td></tr></tbody></table>
       <CopyButton targetRef={engagementRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

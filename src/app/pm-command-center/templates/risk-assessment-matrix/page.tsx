@@ -77,7 +77,7 @@ function RiskAssessmentMatrixContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> PROBABILITY × IMPACT MATRIX (5×5)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> PROBABILITY × IMPACT MATRIX (5×5)</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -168,7 +168,7 @@ function RiskAssessmentMatrixContent() {
 
   const renderThreshold = () => (
     <div ref={thresholdRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> RISK THRESHOLDS & RESPONSE TRIGGERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> RISK THRESHOLDS & RESPONSE TRIGGERS</td></tr></tbody></table>
       <CopyButton targetRef={thresholdRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

@@ -69,7 +69,7 @@ function MilestoneContent() {
 
   const renderTimelineView = () => (
     <div ref={milestonesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🗺️ MILESTONE TIMELINE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🗺️ MILESTONE TIMELINE</td></tr></tbody></table>
       <CopyButton targetRef={milestonesRef} label="Copy Section" />
       {MILESTONES.map((m, i) => (
         <table key={i} style={{ ...S.tbl, marginBottom: "6px" }}>
@@ -108,7 +108,7 @@ function MilestoneContent() {
 
   const renderTableView = () => (
     <div ref={milestonesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 MILESTONE TABLE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 MILESTONE TABLE</td></tr></tbody></table>
       <CopyButton targetRef={milestonesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

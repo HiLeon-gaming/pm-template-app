@@ -69,7 +69,7 @@ function HabitTrackerContent() {
 
   const renderFullGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📅 30-DAY TRACKING GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📅 30-DAY TRACKING GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Mark each day: ✓ = done, ✗ = missed, — = rest day. Aim for streaks!</p>
       <table style={S.tbl}>
@@ -104,7 +104,7 @@ function HabitTrackerContent() {
 
   const renderWeeklyBreakdown = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📅 WEEKLY HABIT TRACKING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📅 WEEKLY HABIT TRACKING</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       {["Week 1 (Days 1–7)", "Week 2 (Days 8–14)", "Week 3 (Days 15–21)", "Week 4 (Days 22–28)", "Week 5 (Days 29–30)"].map((week, wi) => {
         const daysInWeek = wi === 4 ? 2 : 7;
@@ -188,7 +188,7 @@ function HabitTrackerContent() {
 
   const renderReflection = () => (
     <div ref={reflectionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🌅 MONTH-END REFLECTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🌅 MONTH-END REFLECTION</td></tr></tbody></table>
       <CopyButton targetRef={reflectionRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

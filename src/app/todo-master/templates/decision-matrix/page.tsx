@@ -80,7 +80,7 @@ function DecisionMatrixContent() {
 
   const renderWeightedMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 WEIGHTED SCORING MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 WEIGHTED SCORING MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Score each option 1-10 per criterion. Weighted Score = Score × Weight%. Highest total wins.</p>
       <table style={S.tbl}>
@@ -189,7 +189,7 @@ function DecisionMatrixContent() {
 
   const renderRecommendation = () => (
     <div ref={recRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 RECOMMENDATION &amp; DECISION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 RECOMMENDATION &amp; DECISION</td></tr></tbody></table>
       <CopyButton targetRef={recRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

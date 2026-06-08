@@ -111,7 +111,7 @@ function MeetingAgendaContent() {
 
   const renderAgenda = () => (
     <div ref={agendaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⏱️ TIMED AGENDA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⏱️ TIMED AGENDA</td></tr></tbody></table>
       <CopyButton targetRef={agendaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -180,7 +180,7 @@ function MeetingAgendaContent() {
 
   const renderParking = () => (
     <div ref={parkingRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🅿️ PARKING LOT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🅿️ PARKING LOT</td></tr></tbody></table>
       <CopyButton targetRef={parkingRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Items raised but deferred. Schedule follow-ups separately.</p>
       <table style={S.tbl}>

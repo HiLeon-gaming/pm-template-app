@@ -61,7 +61,7 @@ function ProjectManagementPlanContent() {
 
   const renderOverview = () => (
     <div ref={overviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>1 — PROJECT OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>1 — PROJECT OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={overviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -112,7 +112,7 @@ function ProjectManagementPlanContent() {
 
   const renderKnowledge = () => (
     <div ref={knowledgeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>3 — SUBSIDIARY MANAGEMENT PLANS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>3 — SUBSIDIARY MANAGEMENT PLANS</td></tr></tbody></table>
       <CopyButton targetRef={knowledgeRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -173,7 +173,7 @@ function ProjectManagementPlanContent() {
 
   const renderApproval = () => (
     <div ref={approvalRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>5 — PMP APPROVAL</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>5 — PMP APPROVAL</td></tr></tbody></table>
       <CopyButton targetRef={approvalRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

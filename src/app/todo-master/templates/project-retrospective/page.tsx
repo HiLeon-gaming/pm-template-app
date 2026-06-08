@@ -157,7 +157,7 @@ function RetroContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 ACTION ITEMS FOR IMPROVEMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 ACTION ITEMS FOR IMPROVEMENT</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -225,7 +225,7 @@ function RetroContent() {
 
   const renderTeamFeedback = () => (
     <div ref={teamRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💬 TEAM FEEDBACK &amp; KUDOS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💬 TEAM FEEDBACK &amp; KUDOS</td></tr></tbody></table>
       <CopyButton targetRef={teamRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

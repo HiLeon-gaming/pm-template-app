@@ -74,7 +74,7 @@ function PersonalDevContent() {
 
   const renderAssessment = () => (
     <div ref={assessRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 SKILLS ASSESSMENT (1-5 Scale)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 SKILLS ASSESSMENT (1-5 Scale)</td></tr></tbody></table>
       <CopyButton targetRef={assessRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Rate yourself 1 (novice) to 5 (expert). Gap = Target − Current. Focus on the biggest gaps first.</p>
       <table style={S.tbl}>
@@ -148,7 +148,7 @@ function PersonalDevContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🚀 LEARNING ACTIVITIES &amp; ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🚀 LEARNING ACTIVITIES &amp; ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -224,7 +224,7 @@ function PersonalDevContent() {
 
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 PROGRESS REVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 PROGRESS REVIEW</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

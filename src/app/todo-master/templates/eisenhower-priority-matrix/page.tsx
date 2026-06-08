@@ -157,7 +157,7 @@ function EisenhowerContent() {
   /* ── Matrix grid (2×2 quadrant) ── */
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 PRIORITY MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 PRIORITY MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "6px" }}>
         Sort every task into one of four quadrants. Be honest — most &quot;urgent&quot; items belong in Q3.
@@ -252,7 +252,7 @@ function EisenhowerContent() {
   /* ── Daily Review ── */
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔍 PRIORITIZATION REVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔍 PRIORITIZATION REVIEW</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

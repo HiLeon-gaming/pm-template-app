@@ -85,7 +85,7 @@ function DataDictionaryContent() {
 
   const renderFields = () => (
     <div ref={fieldsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 FIELD DEFINITIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 FIELD DEFINITIONS</td></tr></tbody></table>
       <CopyButton targetRef={fieldsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -160,7 +160,7 @@ function DataDictionaryContent() {
 
   const renderGlossary = () => (
     <div ref={glossRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📖 BUSINESS GLOSSARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📖 BUSINESS GLOSSARY</td></tr></tbody></table>
       <CopyButton targetRef={glossRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

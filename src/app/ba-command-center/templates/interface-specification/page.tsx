@@ -71,7 +71,7 @@ function InterfaceSpecContent() {
 
   const renderOverview = () => (
     <div ref={overviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 INTERFACE OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 INTERFACE OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={overviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -146,7 +146,7 @@ function InterfaceSpecContent() {
     <div ref={payloadRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
-          <div style={S.sectionBanner()}>📤 REQUEST PAYLOAD</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📤 REQUEST PAYLOAD</td></tr></tbody></table>
           <p style={{ ...S.subNote, marginBottom: "3px" }}>POST /v1/payments/authorize</p>
           <table style={S.tbl}>
             <thead><tr>
@@ -214,7 +214,7 @@ function InterfaceSpecContent() {
 
   const renderErrors = () => (
     <div ref={errorsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ ERROR CODES &amp; HANDLING</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚠️ ERROR CODES &amp; HANDLING</td></tr></tbody></table>
       <CopyButton targetRef={errorsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

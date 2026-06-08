@@ -84,7 +84,7 @@ function AssumptionStressTestContent() {
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>At-Risk Assumptions</td><td style={S.td0}>[#1: Vendor API — 3 weeks behind; #2: Sales UAT capacity — Q2 targets may compete for attention]</td></tr>
         <tr><td style={S.tdLabelAlt}>What If #1 Fails?</td><td style={S.tdAlt}>[Phase 2 delayed 2-3 sprints; workaround: phased rollout with mock integrations; cost impact: ~$15K additional]</td></tr>
         <tr><td style={S.tdLabel}>What If #2 Fails?</td><td style={S.td0}>[UAT delayed 1 sprint; workaround: proxy testers from BA team; risk: lower test coverage quality]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Trigger Points</td><td style={S.tdAlt}>[#1: If no vendor confirmation by Sprint 5 Day 5 → activate contingency | #2: If sales capacity < 50% by Sprint 5 → activate proxy testers]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Trigger Points</td><td style={S.tdAlt}>[#1: If no vendor confirmation by Sprint 5 Day 5 → activate contingency | #2: If sales capacity &lt; 50% by Sprint 5 → activate proxy testers]</td></tr>
         <tr><td style={S.tdLabel}>Next Review</td><td style={S.td0}>[Weekly check on at-risk assumptions; full stress test monthly or at phase gates]</td></tr>
       </tbody></table>
     </div>

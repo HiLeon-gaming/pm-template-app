@@ -58,7 +58,7 @@ function BudgetTrackerContent() {
 
   const renderBudget = () => (
     <div ref={budgetRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>≤ BUDGET BY CATEGORY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>≤ BUDGET BY CATEGORY</td></tr></tbody></table>
       <CopyButton targetRef={budgetRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -146,7 +146,7 @@ function BudgetTrackerContent() {
 
   const renderForecast = () => (
     <div ref={forecastRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>≥ FORECAST & ESTIMATE AT COMPLETION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>≥ FORECAST & ESTIMATE AT COMPLETION</td></tr></tbody></table>
       <CopyButton targetRef={forecastRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

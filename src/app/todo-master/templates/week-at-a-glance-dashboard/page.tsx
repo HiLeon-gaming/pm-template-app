@@ -91,7 +91,7 @@ function WeekDashboardContent() {
   /* ── Capacity Meter ── */
   const renderCapacity = () => (
     <div ref={capacityRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚡ CAPACITY METER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚡ CAPACITY METER</td></tr></tbody></table>
       <CopyButton targetRef={capacityRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -243,7 +243,7 @@ function WeekDashboardContent() {
   /* ── Key Deadlines & Deliverables ── */
   const renderDeadlines = () => (
     <div ref={deadlinesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⏰ KEY DEADLINES &amp; DELIVERABLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⏰ KEY DEADLINES &amp; DELIVERABLES</td></tr></tbody></table>
       <CopyButton targetRef={deadlinesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -326,7 +326,7 @@ function WeekDashboardContent() {
   /* ── Weekly KPIs / Metrics ── */
   const renderKPIs = () => (
     <div ref={kpiRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📈 WEEKLY KPIs &amp; METRICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📈 WEEKLY KPIs &amp; METRICS</td></tr></tbody></table>
       <CopyButton targetRef={kpiRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

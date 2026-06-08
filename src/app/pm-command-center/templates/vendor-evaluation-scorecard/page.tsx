@@ -75,7 +75,7 @@ function VendorEvaluationContent() {
 
   const renderCriteria = () => (
     <div ref={criteriaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> EVALUATION CRITERIA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> EVALUATION CRITERIA</td></tr></tbody></table>
       <CopyButton targetRef={criteriaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -166,7 +166,7 @@ function VendorEvaluationContent() {
 
   const renderProsCons = () => (
     <div ref={prosConsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> VENDOR STRENGTHS & CONCERNS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> VENDOR STRENGTHS & CONCERNS</td></tr></tbody></table>
       <CopyButton targetRef={prosConsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

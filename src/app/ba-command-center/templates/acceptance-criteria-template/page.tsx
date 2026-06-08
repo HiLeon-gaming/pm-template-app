@@ -85,7 +85,7 @@ function AcceptanceCriteriaContent() {
 
   const renderGWT = () => (
     <div ref={gwtRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 ACCEPTANCE CRITERIA (Given / When / Then)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 ACCEPTANCE CRITERIA (Given / When / Then)</td></tr></tbody></table>
       <CopyButton targetRef={gwtRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -162,7 +162,7 @@ function AcceptanceCriteriaContent() {
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
-          <div style={S.sectionBanner()}>📊 TEST SUMMARY</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 TEST SUMMARY</td></tr></tbody></table>
           <table style={S.tbl}>
             <tbody>
               {[
@@ -220,7 +220,7 @@ function AcceptanceCriteriaContent() {
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>✍️ SIGN-OFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>✍️ SIGN-OFF</td></tr></tbody></table>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

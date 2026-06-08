@@ -84,7 +84,7 @@ function BRCContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 BUSINESS RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 BUSINESS RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -161,7 +161,7 @@ function BRCContent() {
 
   const renderGovernance = () => (
     <div ref={govRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🏛️ RULE GOVERNANCE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🏛️ RULE GOVERNANCE</td></tr></tbody></table>
       <CopyButton targetRef={govRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

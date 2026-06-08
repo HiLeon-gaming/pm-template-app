@@ -77,7 +77,7 @@ function SurveyContent() {
 
   const renderDesign = () => (
     <div ref={designRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔧 SURVEY DESIGN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔧 SURVEY DESIGN</td></tr></tbody></table>
       <CopyButton targetRef={designRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -207,7 +207,7 @@ function SurveyContent() {
 
   const renderAnalysis = () => (
     <div ref={analysisRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📈 RESPONSE ANALYSIS FRAMEWORK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📈 RESPONSE ANALYSIS FRAMEWORK</td></tr></tbody></table>
       <CopyButton targetRef={analysisRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

@@ -49,7 +49,7 @@ function ProjectCharterContent() {
 
   const renderOverview = () => (
     <div ref={overviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>1 — PROJECT OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>1 — PROJECT OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={overviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -69,7 +69,7 @@ function ProjectCharterContent() {
 
   const renderBusinessCase = () => (
     <div ref={businessCaseRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>2 — BUSINESS CASE & OBJECTIVES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>2 — BUSINESS CASE & OBJECTIVES</td></tr></tbody></table>
       <CopyButton targetRef={businessCaseRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={{ ...S.thSecondary, width: "28%" }}>Element</th><th style={S.thSecondary}>Description</th></tr></thead>
@@ -104,7 +104,7 @@ function ProjectCharterContent() {
 
   const renderStakeholders = () => (
     <div ref={stakeholderRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>4 — KEY STAKEHOLDERS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>4 — KEY STAKEHOLDERS</td></tr></tbody></table>
       <CopyButton targetRef={stakeholderRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -175,7 +175,7 @@ function ProjectCharterContent() {
 
   const renderBudget = () => (
     <div ref={budgetRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>6 — BUDGET SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>6 — BUDGET SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={budgetRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -246,7 +246,7 @@ function ProjectCharterContent() {
 
   const renderAssumptions = () => (
     <div ref={assumptionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>8 — ASSUMPTIONS & CONSTRAINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>8 — ASSUMPTIONS & CONSTRAINTS</td></tr></tbody></table>
       <CopyButton targetRef={assumptionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

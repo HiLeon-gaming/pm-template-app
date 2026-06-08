@@ -76,7 +76,7 @@ function GapAnalysisContent() {
 
   const renderGaps = () => (
     <div ref={gapsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 GAP IDENTIFICATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 GAP IDENTIFICATION</td></tr></tbody></table>
       <CopyButton targetRef={gapsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -154,7 +154,7 @@ function GapAnalysisContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 GAP SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 GAP SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

@@ -79,7 +79,7 @@ function WorkshopContent() {
 
   const renderLogistics = () => (
     <div ref={logisticsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>👥 PARTICIPANTS &amp; ROLES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>👥 PARTICIPANTS &amp; ROLES</td></tr></tbody></table>
       <CopyButton targetRef={logisticsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -161,7 +161,7 @@ function WorkshopContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📏 GROUND RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📏 GROUND RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -235,7 +235,7 @@ function WorkshopContent() {
 
   const renderDebrief = () => (
     <div ref={debriefRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔍 POST-WORKSHOP DEBRIEF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔍 POST-WORKSHOP DEBRIEF</td></tr></tbody></table>
       <CopyButton targetRef={debriefRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

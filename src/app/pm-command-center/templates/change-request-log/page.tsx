@@ -67,7 +67,7 @@ function ChangeRequestLogContent() {
 
   const renderLog = () => (
     <div ref={logRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> CHANGE REQUEST REGISTER</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> CHANGE REQUEST REGISTER</td></tr></tbody></table>
       <CopyButton targetRef={logRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -118,7 +118,7 @@ function ChangeRequestLogContent() {
 
   const renderImpact = () => (
     <div ref={impactRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> IMPACT ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> IMPACT ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={impactRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

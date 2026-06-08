@@ -95,7 +95,7 @@ function WeeklyPlannerContent() {
   /* ── Weekly Goals (top 5) ── */
   const renderGoals = () => (
     <div ref={goalsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 WEEKLY GOALS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 WEEKLY GOALS</td></tr></tbody></table>
       <CopyButton targetRef={goalsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -350,7 +350,7 @@ function WeeklyPlannerContent() {
   /* ── Key Deadlines ── */
   const renderDeadlines = () => (
     <div ref={deadlinesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⏰ KEY DEADLINES THIS WEEK</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⏰ KEY DEADLINES THIS WEEK</td></tr></tbody></table>
       <CopyButton targetRef={deadlinesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -392,7 +392,7 @@ function WeeklyPlannerContent() {
   /* ── Next Week Prep ── */
   const renderPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔮 NEXT WEEK PREP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔮 NEXT WEEK PREP</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

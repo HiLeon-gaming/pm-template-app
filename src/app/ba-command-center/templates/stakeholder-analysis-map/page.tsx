@@ -77,7 +77,7 @@ function StakeholderContent() {
 
   const renderPowerInterestGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 POWER / INTEREST GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 POWER / INTEREST GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Map each stakeholder into the appropriate quadrant based on their power to influence outcomes and their interest in the project.</p>
       <table style={LT}>
@@ -171,7 +171,7 @@ function StakeholderContent() {
 
   const renderCommPlan = () => (
     <div ref={commRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📬 COMMUNICATION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📬 COMMUNICATION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={commRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

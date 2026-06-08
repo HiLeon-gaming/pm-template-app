@@ -62,7 +62,7 @@ function WeeklyStatusReportContent() {
 
   const renderHealth = () => (
     <div ref={healthRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>Project Health Dashboard</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>Project Health Dashboard</td></tr></tbody></table>
       <CopyButton targetRef={healthRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -129,7 +129,7 @@ function WeeklyStatusReportContent() {
 
   const renderPlanned = () => (
     <div ref={plannedRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>Planned Activities Next Week</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>Planned Activities Next Week</td></tr></tbody></table>
       <CopyButton targetRef={plannedRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -197,7 +197,7 @@ function WeeklyStatusReportContent() {
 
   const renderActions = () => (
     <div ref={actionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>Open Action Items</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>Open Action Items</td></tr></tbody></table>
       <CopyButton targetRef={actionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -268,7 +268,7 @@ function WeeklyStatusReportContent() {
 
   const renderBudget = () => (
     <div ref={budgetRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💵 BUDGET SNAPSHOT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💵 BUDGET SNAPSHOT</td></tr></tbody></table>
       <CopyButton targetRef={budgetRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

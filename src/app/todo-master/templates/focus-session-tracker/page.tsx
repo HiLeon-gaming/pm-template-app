@@ -92,7 +92,7 @@ function FocusSessionContent() {
   /* ── Daily Metrics Dashboard ── */
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 DAILY FOCUS DASHBOARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 DAILY FOCUS DASHBOARD</td></tr></tbody></table>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -230,7 +230,7 @@ function FocusSessionContent() {
   /* ── Streak & Weekly Trend ── */
   const renderStreak = () => (
     <div ref={streakRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔥 FOCUS STREAK &amp; WEEKLY TREND</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔥 FOCUS STREAK &amp; WEEKLY TREND</td></tr></tbody></table>
       <CopyButton targetRef={streakRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -281,7 +281,7 @@ function FocusSessionContent() {
   /* ── End-of-Day Review ── */
   const renderReview = () => (
     <div ref={reviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🌅 FOCUS REVIEW &amp; OPTIMIZATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🌅 FOCUS REVIEW &amp; OPTIMIZATION</td></tr></tbody></table>
       <CopyButton targetRef={reviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

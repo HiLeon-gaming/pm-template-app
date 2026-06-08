@@ -57,7 +57,7 @@ function CommunicationsPlanContent() {
 
   const renderMatrix = () => (
     <div ref={matrixRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>COMMUNICATIONS MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>COMMUNICATIONS MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={matrixRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -131,7 +131,7 @@ function CommunicationsPlanContent() {
 
   const renderTools = () => (
     <div ref={toolsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> COMMUNICATION TOOLS & CHANNELS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> COMMUNICATION TOOLS & CHANNELS</td></tr></tbody></table>
       <CopyButton targetRef={toolsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

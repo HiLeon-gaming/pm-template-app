@@ -80,7 +80,7 @@ function SolutionOptionsContent() {
 
   const renderOptions = () => (
     <div ref={optionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 SOLUTION OPTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 SOLUTION OPTIONS</td></tr></tbody></table>
       <CopyButton targetRef={optionsRef} label="Copy Section" />
       {OPTIONS.map((opt, oi) => (
         <table key={oi} style={{ ...S.tbl, marginBottom: "8px" }}>
@@ -193,7 +193,7 @@ function SolutionOptionsContent() {
 
   const renderProsCons = () => (
     <div ref={prosConsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>👍👎 PROS &amp; CONS SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>👍👎 PROS &amp; CONS SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={prosConsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         {OPTIONS.map((opt, oi) => (

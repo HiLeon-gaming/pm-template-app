@@ -59,7 +59,7 @@ function ScopeStatementContent() {
 
   const renderScopeDesc = () => (
     <div ref={scopeDescRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>1 — SCOPE DESCRIPTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>1 — SCOPE DESCRIPTION</td></tr></tbody></table>
       <CopyButton targetRef={scopeDescRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -110,7 +110,7 @@ function ScopeStatementContent() {
 
   const renderExclusions = () => (
     <div ref={exclusionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>3 — EXCLUSIONS (OUT OF SCOPE)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>3 — EXCLUSIONS (OUT OF SCOPE)</td></tr></tbody></table>
       <CopyButton targetRef={exclusionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -173,7 +173,7 @@ function ScopeStatementContent() {
 
   const renderConstraints = () => (
     <div ref={constraintsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>5 — ASSUMPTIONS & CONSTRAINTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>5 — ASSUMPTIONS & CONSTRAINTS</td></tr></tbody></table>
       <CopyButton targetRef={constraintsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

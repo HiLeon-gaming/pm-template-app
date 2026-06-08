@@ -172,7 +172,7 @@ function KanbanContent() {
 
   const renderBlockers = () => (
     <div ref={blockersRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🚧 BLOCKERS &amp; DEPENDENCIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🚧 BLOCKERS &amp; DEPENDENCIES</td></tr></tbody></table>
       <CopyButton targetRef={blockersRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

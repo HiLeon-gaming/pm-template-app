@@ -77,7 +77,7 @@ function SignoffContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 REQUIREMENTS SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 REQUIREMENTS SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -154,7 +154,7 @@ function SignoffContent() {
 
   const renderConditions = () => (
     <div ref={conditionsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ CONDITIONS &amp; OUTSTANDING ITEMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚠️ CONDITIONS &amp; OUTSTANDING ITEMS</td></tr></tbody></table>
       <CopyButton targetRef={conditionsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

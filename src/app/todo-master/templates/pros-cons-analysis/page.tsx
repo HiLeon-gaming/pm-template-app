@@ -230,7 +230,7 @@ function ProsConsContent() {
 
   const renderRecommendation = () => (
     <div ref={recRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🎯 FINAL RECOMMENDATION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🎯 FINAL RECOMMENDATION</td></tr></tbody></table>
       <CopyButton targetRef={recRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

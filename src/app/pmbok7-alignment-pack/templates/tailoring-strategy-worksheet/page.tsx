@@ -47,7 +47,7 @@ function TailoringStrategyWorksheetContent() {
 
   const renderContext = () => (
     <div ref={contextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔍 TAILORING CONTEXT (Why We’re Tailoring)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔍 TAILORING CONTEXT (Why We’re Tailoring)</td></tr></tbody></table>
       <CopyButton targetRef={contextRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         {[
@@ -107,13 +107,13 @@ function TailoringStrategyWorksheetContent() {
 
   const renderRationale = () => (
     <div ref={rationaleRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📝 TAILORING RATIONALE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📝 TAILORING RATIONALE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={rationaleRef} label="Copy Section" />
       <table style={S.tbl}><tbody>
         <tr><td style={{ ...S.tdLabel, width: "28%" }}>Overall Tailoring Philosophy</td><td style={S.td0}>[Right-sized governance: enough process to manage risk and satisfy compliance, without unnecessary overhead that slows a capable team.]</td></tr>
         <tr><td style={S.tdLabelAlt}>Key Trade-offs Accepted</td><td style={S.tdAlt}>[Less upfront planning detail in exchange for sprint-level flexibility. PM authority for minor changes in exchange for faster decision-making.]</td></tr>
         <tr><td style={S.tdLabel}>What We Will NOT Tailor</td><td style={S.td0}>[Risk management rigor (non-negotiable). SOX-related change controls (regulatory). Formal deliverable acceptance (contractual).]</td></tr>
-        <tr><td style={S.tdLabelAlt}>Review Trigger</td><td style={S.tdAlt}>[Re-evaluate tailoring if: (1) project moves to Red status, (2) regulatory scope changes, (3) team composition changes >30%.]</td></tr>
+        <tr><td style={S.tdLabelAlt}>Review Trigger</td><td style={S.tdAlt}>[Re-evaluate tailoring if: (1) project moves to Red status, (2) regulatory scope changes, (3) team composition changes &gt;30%.]</td></tr>
       </tbody></table>
     </div>
   );

@@ -76,7 +76,7 @@ function UATSignoffContent() {
 
   const renderResults = () => (
     <div ref={resultsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 UAT EXECUTION SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 UAT EXECUTION SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={resultsRef} label="Copy Section" />
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
@@ -167,7 +167,7 @@ function UATSignoffContent() {
 
   const renderConditions = () => (
     <div ref={condRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ OUTSTANDING CONDITIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚠️ OUTSTANDING CONDITIONS</td></tr></tbody></table>
       <CopyButton targetRef={condRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Items that must be resolved before or immediately after go-live. Deployment is conditional on these being addressed.</p>
       <table style={S.tbl}>

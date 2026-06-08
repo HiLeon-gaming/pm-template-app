@@ -58,7 +58,7 @@ function ResourceManagementPlanContent() {
 
   const renderRoles = () => (
     <div ref={rolesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>ROLES & RESPONSIBILITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>ROLES & RESPONSIBILITIES</td></tr></tbody></table>
       <CopyButton targetRef={rolesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -134,7 +134,7 @@ function ResourceManagementPlanContent() {
 
   const renderAcquisition = () => (
     <div ref={acquisitionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔍 RESOURCE ACQUISITION STRATEGY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔍 RESOURCE ACQUISITION STRATEGY</td></tr></tbody></table>
       <CopyButton targetRef={acquisitionRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

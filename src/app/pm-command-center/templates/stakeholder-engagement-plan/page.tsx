@@ -77,7 +77,7 @@ function StakeholderEngagementPlanContent() {
 
   const renderAssessment = () => (
     <div ref={assessmentRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 ENGAGEMENT ASSESSMENT MATRIX</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 ENGAGEMENT ASSESSMENT MATRIX</td></tr></tbody></table>
       <CopyButton targetRef={assessmentRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -154,7 +154,7 @@ function StakeholderEngagementPlanContent() {
 
   const renderAction = () => (
     <div ref={actionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📝 ENGAGEMENT ACTION PLAN</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📝 ENGAGEMENT ACTION PLAN</td></tr></tbody></table>
       <CopyButton targetRef={actionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

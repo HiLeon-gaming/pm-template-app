@@ -114,7 +114,7 @@ function ReadingLogContent() {
 
   const renderQuickList = () => (
     <div ref={booksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 QUICK READING LIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 QUICK READING LIST</td></tr></tbody></table>
       <CopyButton targetRef={booksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

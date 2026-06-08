@@ -83,7 +83,7 @@ function ElicitationPlanContent() {
 
   const renderTechniques = () => (
     <div ref={techRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔧 ELICITATION TECHNIQUES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔧 ELICITATION TECHNIQUES</td></tr></tbody></table>
       <CopyButton targetRef={techRef} label="Copy Section" />
       <p style={{ ...S.subNote, marginBottom: "4px" }}>Check which techniques you plan to use. Add details for each selected technique.</p>
       <table style={S.tbl}>
@@ -160,7 +160,7 @@ function ElicitationPlanContent() {
 
   const renderPrep = () => (
     <div ref={prepRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📝 PREPARATION CHECKLIST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📝 PREPARATION CHECKLIST</td></tr></tbody></table>
       <CopyButton targetRef={prepRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

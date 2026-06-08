@@ -66,7 +66,7 @@ function TestCaseContent() {
 
   const renderDetail = () => (
     <div ref={detailRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 TEST CASE DETAILS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 TEST CASE DETAILS</td></tr></tbody></table>
       <CopyButton targetRef={detailRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -158,7 +158,7 @@ function TestCaseContent() {
 
   const renderSuite = () => (
     <div ref={suiteRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📚 TEST SUITE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📚 TEST SUITE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={suiteRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

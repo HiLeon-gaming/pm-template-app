@@ -47,7 +47,7 @@ function WorkingAgreementsContent() {
 
   const renderCollab = () => (
     <div ref={collabRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💪 COLLABORATION NORMS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💪 COLLABORATION NORMS</td></tr></tbody></table>
       <CopyButton targetRef={collabRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -111,7 +111,7 @@ function WorkingAgreementsContent() {
 
   const renderConflict = () => (
     <div ref={conflictRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🚨 CONFLICT RESOLUTION APPROACH</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🚨 CONFLICT RESOLUTION APPROACH</td></tr></tbody></table>
       <CopyButton targetRef={conflictRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -171,7 +171,7 @@ function WorkingAgreementsContent() {
 
   const renderSignoff = () => (
     <div ref={signoffRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>✍️ TEAM AGREEMENT SIGN-OFF</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>✍️ TEAM AGREEMENT SIGN-OFF</td></tr></tbody></table>
       <CopyButton targetRef={signoffRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr><th style={S.thSecondary}>Team Member</th><th style={S.thSecondary}>Role</th><th style={{ ...S.thSecondary, width: "20%" }}>Signature</th><th style={{ ...S.thSecondary, width: "10%" }}>Date</th></tr></thead>

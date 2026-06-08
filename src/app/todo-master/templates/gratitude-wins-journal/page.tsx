@@ -63,7 +63,7 @@ function GratitudeContent() {
 
   const renderDailyJournal = () => (
     <div ref={dailyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🌅 DAILY GRATITUDE &amp; WINS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🌅 DAILY GRATITUDE &amp; WINS</td></tr></tbody></table>
       <CopyButton targetRef={dailyRef} label="Copy Section" />
       {DAYS.map((day, di) => (
         <table key={di} style={{ ...S.tbl, marginBottom: "6px" }}>
@@ -138,7 +138,7 @@ function GratitudeContent() {
 
   const renderReflection = () => (
     <div ref={reflectRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🌟 WEEKLY REFLECTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🌟 WEEKLY REFLECTION</td></tr></tbody></table>
       <CopyButton targetRef={reflectRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

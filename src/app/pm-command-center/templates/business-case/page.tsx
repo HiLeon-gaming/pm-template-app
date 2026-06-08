@@ -63,7 +63,7 @@ function BusinessCaseContent() {
 
   const renderProblem = () => (
     <div ref={problemRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 PROBLEM / OPPORTUNITY STATEMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 PROBLEM / OPPORTUNITY STATEMENT</td></tr></tbody></table>
       <CopyButton targetRef={problemRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -113,7 +113,7 @@ function BusinessCaseContent() {
 
   const renderFinancial = () => (
     <div ref={financialRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💵 FINANCIAL ANALYSIS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💵 FINANCIAL ANALYSIS</td></tr></tbody></table>
       <CopyButton targetRef={financialRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -166,7 +166,7 @@ function BusinessCaseContent() {
 
   const renderRisks = () => (
     <div ref={risksRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ RISKS & DEPENDENCIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚠️ RISKS & DEPENDENCIES</td></tr></tbody></table>
       <CopyButton targetRef={risksRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

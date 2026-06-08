@@ -77,7 +77,7 @@ function UATPlanContent() {
 
   const renderScope = () => (
     <div ref={scopeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 UAT SCOPE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 UAT SCOPE</td></tr></tbody></table>
       <CopyButton targetRef={scopeRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -203,7 +203,7 @@ function UATPlanContent() {
 
   const renderEnvironment = () => (
     <div ref={envRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🖥️ TEST ENVIRONMENT &amp; DATA</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🖥️ TEST ENVIRONMENT &amp; DATA</td></tr></tbody></table>
       <CopyButton targetRef={envRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

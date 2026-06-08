@@ -91,7 +91,7 @@ function BPMContent() {
 
   const renderSteps = () => (
     <div ref={stepsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 PROCESS STEPS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 PROCESS STEPS</td></tr></tbody></table>
       <CopyButton targetRef={stepsRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -162,7 +162,7 @@ function BPMContent() {
 
   const renderMetrics = () => (
     <div ref={metricsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 PROCESS METRICS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 PROCESS METRICS</td></tr></tbody></table>
       <CopyButton targetRef={metricsRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -224,7 +224,7 @@ function BPMContent() {
 
   const renderImprovement = () => (
     <div ref={improvRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💡 IMPROVEMENT OPPORTUNITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💡 IMPROVEMENT OPPORTUNITIES</td></tr></tbody></table>
       <CopyButton targetRef={improvRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

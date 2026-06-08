@@ -101,7 +101,7 @@ function FeasibilityContent() {
 
   const renderScorecard = () => (
     <div ref={scoreRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 FEASIBILITY SCORECARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 FEASIBILITY SCORECARD</td></tr></tbody></table>
       <CopyButton targetRef={scoreRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

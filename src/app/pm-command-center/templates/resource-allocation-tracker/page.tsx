@@ -77,7 +77,7 @@ function ResourceAllocationContent() {
 
   const renderAlloc = () => (
     <div ref={allocRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 WEEKLY ALLOCATION (% OF TIME)</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 WEEKLY ALLOCATION (% OF TIME)</td></tr></tbody></table>
       <CopyButton targetRef={allocRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -157,7 +157,7 @@ function ResourceAllocationContent() {
 
   const renderForecast = () => (
     <div ref={forecastRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔮 RESOURCE FORECAST</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔮 RESOURCE FORECAST</td></tr></tbody></table>
       <CopyButton targetRef={forecastRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

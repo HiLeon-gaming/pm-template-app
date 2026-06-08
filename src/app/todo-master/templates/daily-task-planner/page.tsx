@@ -117,7 +117,7 @@ function DailyTaskPlannerContent() {
   /* ── Top 3 Priorities ── */
   const renderPriorities = () => (
     <div ref={prioritiesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>★ TODAY&apos;S TOP 3 PRIORITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>★ TODAY&apos;S TOP 3 PRIORITIES</td></tr></tbody></table>
       <CopyButton targetRef={prioritiesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -275,7 +275,7 @@ function DailyTaskPlannerContent() {
   /* ── Quick Notes / Brain Dump ── */
   const renderNotes = () => (
     <div ref={notesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🧠 QUICK NOTES / BRAIN DUMP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🧠 QUICK NOTES / BRAIN DUMP</td></tr></tbody></table>
       <CopyButton targetRef={notesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -301,7 +301,7 @@ function DailyTaskPlannerContent() {
   /* ── End-of-Day Reflection ── */
   const renderReflection = () => (
     <div ref={reflectionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🌅 END-OF-DAY REFLECTION</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🌅 END-OF-DAY REFLECTION</td></tr></tbody></table>
       <CopyButton targetRef={reflectionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

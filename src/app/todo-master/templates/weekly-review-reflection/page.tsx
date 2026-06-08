@@ -186,7 +186,7 @@ function WeeklyReviewContent() {
   /* ── Start / Stop / Continue ── */
   const renderSSC = () => (
     <div ref={sscRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🔀 START / STOP / CONTINUE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🔀 START / STOP / CONTINUE</td></tr></tbody></table>
       <CopyButton targetRef={sscRef} label="Copy Section" />
       <table style={LT}>
         <tbody>
@@ -350,7 +350,7 @@ function WeeklyReviewContent() {
   /* ── Gratitude & Acknowledgment ── */
   const renderGratitude = () => (
     <div ref={gratitudeRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🙏 GRATITUDE &amp; ACKNOWLEDGMENT</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🙏 GRATITUDE &amp; ACKNOWLEDGMENT</td></tr></tbody></table>
       <CopyButton targetRef={gratitudeRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
@@ -378,7 +378,7 @@ function WeeklyReviewContent() {
   /* ── Next Week Setup ── */
   const renderNextWeek = () => (
     <div ref={nextRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🚀 NEXT WEEK SETUP</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🚀 NEXT WEEK SETUP</td></tr></tbody></table>
       <CopyButton targetRef={nextRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

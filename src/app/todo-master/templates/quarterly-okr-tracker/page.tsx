@@ -167,7 +167,7 @@ function QuarterlyOKRContent() {
 
   const renderScorecard = () => (
     <div ref={okrRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 OKR SCORECARD</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 OKR SCORECARD</td></tr></tbody></table>
       <CopyButton targetRef={okrRef} label="Copy Section" />
       {OKRS.map((okr) => renderOKRCard(okr))}
     </div>
@@ -217,7 +217,7 @@ function QuarterlyOKRContent() {
 
   const renderRetro = () => (
     <div ref={retroRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>🌅 QUARTER-END RETROSPECTIVE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>🌅 QUARTER-END RETROSPECTIVE</td></tr></tbody></table>
       <CopyButton targetRef={retroRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

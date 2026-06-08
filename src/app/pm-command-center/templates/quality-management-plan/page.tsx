@@ -59,7 +59,7 @@ function QualityManagementPlanContent() {
 
   const renderStandards = () => (
     <div ref={standardsRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> QUALITY STANDARDS & POLICIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> QUALITY STANDARDS & POLICIES</td></tr></tbody></table>
       <CopyButton targetRef={standardsRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -112,7 +112,7 @@ function QualityManagementPlanContent() {
 
   const renderQA = () => (
     <div ref={qaRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> QUALITY ASSURANCE (QA) ACTIVITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> QUALITY ASSURANCE (QA) ACTIVITIES</td></tr></tbody></table>
       <CopyButton targetRef={qaRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -181,7 +181,7 @@ function QualityManagementPlanContent() {
 
   const renderRoles = () => (
     <div ref={rolesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> QUALITY ROLES & RESPONSIBILITIES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> QUALITY ROLES & RESPONSIBILITIES</td></tr></tbody></table>
       <CopyButton targetRef={rolesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

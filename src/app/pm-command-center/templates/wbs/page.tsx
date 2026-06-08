@@ -85,7 +85,7 @@ function WBSContent() {
 
   const renderHierarchy = () => (
     <div ref={hierarchyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}> WBS HIERARCHY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}> WBS HIERARCHY</td></tr></tbody></table>
       <CopyButton targetRef={hierarchyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -156,7 +156,7 @@ function WBSContent() {
 
   const renderEffort = () => (
     <div ref={effortRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📈 EFFORT SUMMARY BY PHASE</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📈 EFFORT SUMMARY BY PHASE</td></tr></tbody></table>
       <CopyButton targetRef={effortRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>

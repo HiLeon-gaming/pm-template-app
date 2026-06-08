@@ -71,7 +71,7 @@ function UseCaseContent() {
 
   const renderOverview = () => (
     <div ref={overviewRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 USE CASE OVERVIEW</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 USE CASE OVERVIEW</td></tr></tbody></table>
       <CopyButton targetRef={overviewRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>
@@ -143,7 +143,7 @@ function UseCaseContent() {
     <div ref={altRef} style={{ marginBottom: "12px" }}>
       <table style={LT}><tbody><tr>
         <td style={{ ...LC, width: "50%", paddingRight: "5px" }}>
-          <div style={S.sectionBanner()}>↩️ ALTERNATE FLOWS</div>
+          <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>↩️ ALTERNATE FLOWS</td></tr></tbody></table>
           <table style={S.tbl}>
             <thead>
               <tr>
@@ -207,7 +207,7 @@ function UseCaseContent() {
 
   const renderRules = () => (
     <div ref={rulesRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📏 BUSINESS RULES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📏 BUSINESS RULES</td></tr></tbody></table>
       <CopyButton targetRef={rulesRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>

@@ -60,7 +60,7 @@ function CostEstimateContent() {
 
   const renderLabor = () => (
     <div ref={laborRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>LABOR COSTS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>LABOR COSTS</td></tr></tbody></table>
       <CopyButton targetRef={laborRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -144,7 +144,7 @@ function CostEstimateContent() {
 
   const renderContingency = () => (
     <div ref={contingencyRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>⚠️ CONTINGENCY & MANAGEMENT RESERVES</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>⚠️ CONTINGENCY & MANAGEMENT RESERVES</td></tr></tbody></table>
       <CopyButton targetRef={contingencyRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead><tr>
@@ -180,7 +180,7 @@ function CostEstimateContent() {
 
   const renderSummary = () => (
     <div ref={summaryRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>💵 COST ESTIMATE SUMMARY</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>💵 COST ESTIMATE SUMMARY</td></tr></tbody></table>
       <CopyButton targetRef={summaryRef} label="Copy Section" />
       <table style={S.tbl}>
         <tbody>

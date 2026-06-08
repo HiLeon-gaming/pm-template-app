@@ -100,7 +100,7 @@ function SWOTContent() {
 
   const renderGrid = () => (
     <div ref={gridRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📊 SWOT GRID</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📊 SWOT GRID</td></tr></tbody></table>
       <CopyButton targetRef={gridRef} label="Copy Section" />
       <table style={LT}><tbody>
         <tr>
@@ -198,7 +198,7 @@ function SWOTContent() {
 
   const renderActions = () => (
     <div ref={actionRef} style={{ marginBottom: "12px" }}>
-      <div style={S.sectionBanner()}>📋 PRIORITY ACTIONS</div>
+      <table style={{ ...S.tbl, marginBottom: "0px" }}><tbody><tr><td style={S.sectionBanner()}>📋 PRIORITY ACTIONS</td></tr></tbody></table>
       <CopyButton targetRef={actionRef} label="Copy Section" />
       <table style={S.tbl}>
         <thead>
